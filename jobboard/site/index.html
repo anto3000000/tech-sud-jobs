@@ -18,6 +18,10 @@
     --chip:#F4F8FB; --chip-on:#16303F;
     --tag-eng:#2C6C9E; --tag-data:#7B4BD8; --tag-product:#2C9A6B; --tag-design:#D6455D; --tag-adj:#8A6D1F;
     --shadow:0 1px 2px rgba(22,48,63,.05), 0 12px 28px -16px rgba(22,48,63,.18);
+    --iris:
+      radial-gradient(105% 70% at 96% -8%,  color-mix(in srgb,var(--accent) 22%,transparent) 0%, transparent 55%),
+      radial-gradient(105% 80% at -8% -4%,  color-mix(in srgb,var(--brand) 46%,transparent) 0%, transparent 52%),
+      radial-gradient(120% 55% at 50% 118%, color-mix(in srgb,var(--brand) 16%,transparent) 0%, transparent 60%);
   }
   @media (prefers-color-scheme:dark){
     :root{
@@ -36,11 +40,7 @@
   body{margin:0;color:var(--ink);min-height:100vh;
     font:15px/1.55 "Hanken Grotesk",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
     -webkit-font-smoothing:antialiased;
-    background:
-      radial-gradient(105% 70% at 96% -8%,  color-mix(in srgb,var(--accent) 22%,transparent) 0%, transparent 55%),
-      radial-gradient(105% 80% at -8% -4%,  color-mix(in srgb,var(--brand) 46%,transparent) 0%, transparent 52%),
-      radial-gradient(120% 55% at 50% 118%, color-mix(in srgb,var(--brand) 16%,transparent) 0%, transparent 60%),
-      var(--bg);
+    background:var(--iris), var(--bg);
     background-attachment:fixed}
   a{color:var(--brand-ink);text-decoration:none}
   a:hover{text-decoration:underline}
@@ -65,7 +65,8 @@
   .stats b{color:var(--ink);font-weight:600}
 
   .controls{position:sticky;top:0;z-index:8;margin:0 -20px;padding:12px 20px 14px;
-    background:color-mix(in srgb,var(--bg) 78%,transparent);backdrop-filter:blur(10px);
+    background:var(--iris), color-mix(in srgb,var(--bg) 94%,transparent);
+    background-attachment:fixed;backdrop-filter:blur(6px);
     border-bottom:1px solid var(--line)}
   .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
   .row + .row{margin-top:10px}
