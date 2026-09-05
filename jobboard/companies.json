@@ -1,69 +1,708 @@
 [
-  { "name": "Voyage Privé", "city": "Aix-en-Provence", "dept": "13", "category": "E-Commerce", "domain": "voyage-prive.com", "ats": "greenhouse", "slug": "voyageprive",
-    "known": { "ats": "smartrecruiters", "slug": null, "careers_url": "https://www.people-voyage-prive.com/jobs/", "note": "verified 2026-09-06: real ATS = SmartRecruiters (careers site runs the official 'SmartRecruiters WP Job Importer' plugin). Public SR postings API returns nothing under tried slugs -> feed is private or company id unknown. Fallbacks: WTTJ https://www.welcometothejungle.com/fr/companies/voyage-prive/jobs (~10 jobs) or WP REST https://www.people-voyage-prive.com/wp-json/wp/v2/sr_job (21 imported)" } },
-  { "name": "Mailinblack", "city": "Marseille", "dept": "13", "category": "Cybersecurity", "domain": "mailinblack.com", "ats": "ashby", "slug": "mailinblack",
-    "known": { "ats": "taleez", "slug": "11298", "careers_url": "https://carriere.mailinblack.com/", "note": "verified 2026-09-05: Taleez (org 11298) via self-hosted front /api/careez, 2 jobs" } },
-  { "name": "Amadeus", "city": "Sophia Antipolis", "dept": "06", "category": "Traveltech / Cloud", "domain": "amadeus.com", "ats": "custom", "slug": "amadeus",
-    "known": { "ats": "custom", "careers_url": "https://careers.amadeus.com/", "note": "verified 2026-09-05: bespoke enterprise careers site, needs dedicated scraper" } },
-  { "name": "Gojob", "city": "Aix-en-Provence", "dept": "13", "category": "HRtech", "domain": "gojob.com", "ats": "lever", "slug": "gojob",
-    "known": { "ats": "lever", "slug": "gojob", "careers_url": "https://jobs.lever.co/gojob", "note": "verified 2026-09-05: Lever, 67 jobs (~16 PACA/remote)" } },
-  { "name": "ARM France", "city": "Sophia Antipolis", "dept": "06", "category": "Hardware / Semiconducteurs", "domain": "arm.com", "ats": "custom", "slug": "arm",
-    "known": { "ats": "icims", "slug": "arm", "careers_url": "https://careers.arm.com/", "note": "verified 2026-09-05: iCIMS, global board, needs browser + location filter" } },
-  { "name": "Median Technologies", "city": "Sophia Antipolis", "dept": "06", "category": "Healthtech / AI", "domain": "mediantechnologies.com", "ats": "custom", "slug": "mediantechnologies",
-    "known": { "ats": "recruitee", "slug": "mediantechnologies", "careers_url": "https://mediantechnologies.recruitee.com/", "note": "verified 2026-09-05: Recruitee, 5 offers" } },
-  { "name": "Skeepers", "city": "Marseille", "dept": "13", "category": "Martech", "domain": "skeepers.io", "ats": "greenhouse", "slug": "skeepers",
-    "known": { "ats": "workable", "slug": "skeepers", "careers_url": "https://apply.workable.com/skeepers/", "note": "verified 2026-09-05: Workable, 0 open jobs currently" } },
-  { "name": "Inventy", "city": "Aix-en-Provence", "dept": "13", "category": "SaaS / B2B", "domain": null, "ats": "lever", "slug": "inventy" },
-  { "name": "Monext", "city": "Aix-en-Provence", "dept": "13", "category": "Fintech / Paiement", "domain": "monext.com", "ats": "custom", "slug": "monext",
-    "known": { "ats": "smartrecruiters", "slug": "monext", "careers_url": "https://careers.smartrecruiters.com/monext", "note": "verified 2026-09-05: SmartRecruiters, 6 jobs, all Aix-en-Provence" } },
-  { "name": "Therapixel", "city": "Nice", "dept": "06", "category": "Healthtech / AI", "domain": "therapixel.com", "ats": "lever", "slug": "therapixel",
-    "known": { "ats": "custom", "careers_url": "https://www.therapixel.com/careers/", "note": "verified 2026-09-05: custom WordPress careers page, 0 public openings (spontaneous only)" } },
-  { "name": "Navya (Chasset)", "city": "Aix-en-Provence", "dept": "13", "category": "Mobility / AI", "domain": "navya.tech", "ats": "custom", "slug": "navya" },
-  { "name": "Ceva Santé Animale / E-Nov", "city": "Marseille", "dept": "13", "category": "Healthtech", "domain": "ceva.com", "ats": "custom", "slug": "ceva" },
-  { "name": "Qualisteo", "city": "Nice", "dept": "06", "category": "Cleantech / IoT", "domain": "qualisteo.com", "ats": "lever", "slug": "qualisteo" },
-  { "name": "Jaguar Network (Free Pro)", "city": "Marseille", "dept": "13", "category": "Telecom / Cloud", "domain": "jaguar-network.com", "ats": "custom", "slug": "freepro" },
-  { "name": "Traxens", "city": "Marseille", "dept": "13", "category": "Logistics / IoT", "domain": "traxens.com", "ats": "lever", "slug": "traxens" },
-  { "name": "Videtics", "city": "Sophia Antipolis", "dept": "06", "category": "Computer Vision / AI", "domain": "videtics.com", "ats": "ashby", "slug": "videtics" },
-  { "name": "Exotec (Bureaux Sud)", "city": "Aix-en-Provence", "dept": "13", "category": "Robotics / Scaleup", "domain": "exotec.com", "ats": "greenhouse", "slug": "exotec" },
-  { "name": "Qarnot Computing (Antenne Sud)", "city": "Marseille", "dept": "13", "category": "Cloud / Compute", "domain": "qarnot.com", "ats": "lever", "slug": "qarnot" },
-  { "name": "Crosscall", "city": "Aix-en-Provence", "dept": "13", "category": "Hardware / Mobile", "domain": "crosscall.com", "ats": "custom", "slug": "crosscall" },
-  { "name": "Criteo (Lab Sophia)", "city": "Sophia Antipolis", "dept": "06", "category": "Adtech / AI", "domain": "criteo.com", "ats": "greenhouse", "slug": "criteo" },
-  { "name": "Inria Méditerranée", "city": "Sophia Antipolis", "dept": "06", "category": "R&D / Deeptech", "domain": "inria.fr", "ats": "custom", "slug": "inria" },
-  { "name": "Virbac (Pôle Digital)", "city": "Carros", "dept": "06", "category": "Healthtech / ERP", "domain": "virbac.com", "ats": "custom", "slug": "virbac" },
-  { "name": "Bfore.Ai", "city": "Marseille", "dept": "13", "category": "Cybersecurity / AI", "domain": "bfore.ai", "ats": "ashby", "slug": "bforeai" },
-  { "name": "Nfinite (Antenne Sud)", "city": "Aix-en-Provence", "dept": "13", "category": "3D / E-Commerce", "domain": "nfinite.app", "ats": "greenhouse", "slug": "nfinite" },
-  { "name": "Syndic One", "city": "Marseille", "dept": "13", "category": "Proptech", "domain": null, "ats": "custom", "slug": "syndicone" },
-  { "name": "ExactCure", "city": "Nice", "dept": "06", "category": "Healthtech / AI", "domain": "exactcure.com", "ats": "lever", "slug": "exactcure" },
-  { "name": "Onet (Lab Innovation & Tech)", "city": "Marseille", "dept": "13", "category": "Enterprise Services", "domain": "groupe-onet.com", "ats": "custom", "slug": "onet" },
-  { "name": "Symag (BNP Paribas)", "city": "Aix-en-Provence", "dept": "13", "category": "Retailtech / Fintech", "domain": "symag.com", "ats": "custom", "slug": "symag" },
-  { "name": "Legalyspace", "city": "Marseille", "dept": "13", "category": "Legaltech / SaaS", "domain": "legalyspace.com", "ats": "custom", "slug": "legalyspace" },
-  { "name": "Schneider Electric (R&D Nice)", "city": "Nice", "dept": "06", "category": "IoT / Cleantech", "domain": "se.com", "ats": "custom", "slug": "schneider" },
-  { "name": "STMicroelectronics (Sites Sud)", "city": "Rousset", "dept": "13", "category": "Semiconducteurs", "domain": "st.com", "ats": "custom", "slug": "stmicro" },
-  { "name": "Eversafe", "city": "Aix-en-Provence", "dept": "13", "category": "Cybersecurity", "domain": null, "ats": "lever", "slug": "eversafe" },
-  { "name": "Woleet", "city": "Nice", "dept": "06", "category": "Web3 / Signature", "domain": "woleet.io", "ats": "custom", "slug": "woleet" },
-  { "name": "Izicap", "city": "Nice", "dept": "06", "category": "Fintech / CRM", "domain": "izicap.com", "ats": "lever", "slug": "izicap" },
-  { "name": "Ceva Logistics (Digital Hub)", "city": "Marseille", "dept": "13", "category": "Supply Chain Tech", "domain": "cevalogistics.com", "ats": "custom", "slug": "cevalogistics" },
-  { "name": "Centrale Méditerranée Incubateur", "city": "Marseille", "dept": "13", "category": "Deeptech Startups", "domain": "centrale-mediterranee.fr", "ats": "custom", "slug": "centralemarseille" },
-  { "name": "Nvidia (Lab Sophia)", "city": "Sophia Antipolis", "dept": "06", "category": "AI / GPU Hardware", "domain": "nvidia.com", "ats": "greenhouse", "slug": "nvidia" },
-  { "name": "Iad France (Pôle Digital)", "city": "Marseille", "dept": "13", "category": "Proptech", "domain": "iadfrance.fr", "ats": "greenhouse", "slug": "iad" },
-  { "name": "Vulog", "city": "Nice", "dept": "06", "category": "Mobility Tech", "domain": "vulog.com", "ats": "lever", "slug": "vulog" },
-  { "name": "Ekinops", "city": "Sophia Antipolis", "dept": "06", "category": "Telecom / Hardware", "domain": "ekinops.com", "ats": "custom", "slug": "ekinops" },
-  { "name": "Hopper", "city": "Nice", "dept": "06", "category": "Traveltech / App", "domain": "hopper.com", "ats": "greenhouse", "slug": "hopper" },
-  { "name": "Advans Group (Elsys / Avisto)", "city": "Sophia Antipolis", "dept": "06", "category": "Embedded Systems", "domain": "advansgroup.com", "ats": "custom", "slug": "advans" },
-  { "name": "Spallian", "city": "Marseille", "dept": "13", "category": "Data / Analytics", "domain": "spallian.com", "ats": "custom", "slug": "spallian" },
-  { "name": "Sunpartner Technologies", "city": "Rousset", "dept": "13", "category": "Cleantech / Solar", "domain": null, "ats": "custom", "slug": "sunpartner" },
-  { "name": "Ses-Imagotag (Équipe Sud)", "city": "Marseille", "dept": "13", "category": "IoT / Retail", "domain": "vusion.com", "ats": "custom", "slug": "sesimagotag" },
-  { "name": "Earthworm Foundation Tech", "city": "Marseille", "dept": "13", "category": "Agtech / GIS", "domain": "earthworm.org", "ats": "ashby", "slug": "earthworm" },
-  { "name": "EpicNPoc", "city": "Sophia Antipolis", "dept": "06", "category": "Automotive UX/Software", "domain": "epicnpoc.com", "ats": "lever", "slug": "epicnpoc" },
-  { "name": "Gemy Cars (Hub Digital)", "city": "Aix-en-Provence", "dept": "13", "category": "AutoTech / SaaS", "domain": null, "ats": "custom", "slug": "gemy" },
-  { "name": "Airbus Helicopters (Logiciel / R&D)", "city": "Marignane", "dept": "13", "category": "Avionics / Embedded", "domain": "airbus.com", "ats": "custom", "slug": "airbus" },
-  { "name": "STid", "city": "Aix-en-Provence", "dept": "13", "category": "IoT / RFID Security", "domain": "stid-security.com", "ats": "custom", "slug": "stid" },
-  { "name": "Alan", "city": "Marseille", "dept": "13", "category": "Healthtech / Scaleup", "domain": "alan.com", "ats": "greenhouse", "slug": "alan" },
-  { "name": "Digital Virgo", "city": "Aix-en-Provence", "dept": "13", "category": "Fintech / Mobile Payment", "domain": "digitalvirgo.com", "ats": "custom", "slug": "digitalvirgo" },
-  { "name": "fulll", "city": "Aix-en-Provence", "dept": "13", "category": "SaaS / B2B", "domain": "fulll.fr", "ats": "custom", "slug": "fulll" },
-  { "name": "Onatera", "city": "Aix-en-Provence", "dept": "13", "category": "E-Commerce", "domain": "onatera.com", "ats": "custom", "slug": "onatera" },
-  { "name": "Prozon", "city": "Marseille", "dept": "13", "category": "E-Commerce B2B", "domain": null, "ats": "custom", "slug": "prozon" },
-  { "name": "Searoutes", "city": "Marseille", "dept": "13", "category": "Greentech / Data", "domain": "searoutes.com", "ats": "lever", "slug": "searoutes" },
-  { "name": "SemiAI", "city": "Marseille", "dept": "13", "category": "AI / SaaS", "domain": null, "ats": "custom", "slug": "semiai" },
-  { "name": "Paradox EN", "city": "Marseille", "dept": "13", "category": "EdTech", "domain": null, "ats": "lever", "slug": "paradox" }
+  {
+    "name": "Voyage Privé",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "E-Commerce",
+    "domain": "voyage-prive.com",
+    "ats": "greenhouse",
+    "slug": "voyageprive",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": null,
+      "careers_url": "https://www.people-voyage-prive.com/jobs/",
+      "note": "verified 2026-09-06: real ATS = SmartRecruiters (careers site runs the official 'SmartRecruiters WP Job Importer' plugin). Public SR postings API returns nothing under tried slugs -> feed is private or company id unknown. Fallbacks: WTTJ https://www.welcometothejungle.com/fr/companies/voyage-prive/jobs (~10 jobs) or WP REST https://www.people-voyage-prive.com/wp-json/wp/v2/sr_job (21 imported)"
+    }
+  },
+  {
+    "name": "Mailinblack",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Cybersecurity",
+    "domain": "mailinblack.com",
+    "ats": "ashby",
+    "slug": "mailinblack",
+    "known": {
+      "ats": "taleez",
+      "slug": "11298",
+      "careers_url": "https://carriere.mailinblack.com/",
+      "note": "verified 2026-09-05: Taleez (org 11298) via self-hosted front /api/careez, 2 jobs"
+    }
+  },
+  {
+    "name": "Amadeus",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "Traveltech / Cloud",
+    "domain": "amadeus.com",
+    "ats": "custom",
+    "slug": "amadeus",
+    "known": {
+      "ats": "custom",
+      "careers_url": "https://careers.amadeus.com/",
+      "note": "verified 2026-09-05: bespoke enterprise careers site, needs dedicated scraper"
+    }
+  },
+  {
+    "name": "Gojob",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "HRtech",
+    "domain": "gojob.com",
+    "ats": "lever",
+    "slug": "gojob",
+    "known": {
+      "ats": "lever",
+      "slug": "gojob",
+      "careers_url": "https://jobs.lever.co/gojob",
+      "note": "verified 2026-09-05: Lever, 67 jobs (~16 PACA/remote)"
+    }
+  },
+  {
+    "name": "ARM France",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "Hardware / Semiconducteurs",
+    "domain": "arm.com",
+    "ats": "custom",
+    "slug": "arm",
+    "known": {
+      "ats": "icims",
+      "slug": "arm",
+      "careers_url": "https://careers.arm.com/",
+      "note": "verified 2026-09-05: iCIMS, global board, needs browser + location filter"
+    }
+  },
+  {
+    "name": "Median Technologies",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "Healthtech / AI",
+    "domain": "mediantechnologies.com",
+    "ats": "custom",
+    "slug": "mediantechnologies",
+    "known": {
+      "ats": "recruitee",
+      "slug": "mediantechnologies",
+      "careers_url": "https://mediantechnologies.recruitee.com/",
+      "note": "verified 2026-09-05: Recruitee, 5 offers"
+    }
+  },
+  {
+    "name": "Skeepers",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Martech",
+    "domain": "skeepers.io",
+    "ats": "greenhouse",
+    "slug": "skeepers",
+    "known": {
+      "ats": "workable",
+      "slug": "skeepers",
+      "careers_url": "https://apply.workable.com/skeepers/",
+      "note": "verified 2026-09-05: Workable, 0 open jobs currently"
+    }
+  },
+  {
+    "name": "Inventy",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "SaaS / B2B",
+    "domain": null,
+    "ats": "lever",
+    "slug": "inventy"
+  },
+  {
+    "name": "Monext",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Fintech / Paiement",
+    "domain": "monext.com",
+    "ats": "custom",
+    "slug": "monext",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "monext",
+      "careers_url": "https://careers.smartrecruiters.com/monext",
+      "note": "verified 2026-09-05: SmartRecruiters, 6 jobs, all Aix-en-Provence"
+    }
+  },
+  {
+    "name": "Therapixel",
+    "city": "Nice",
+    "dept": "06",
+    "category": "Healthtech / AI",
+    "domain": "therapixel.com",
+    "ats": "lever",
+    "slug": "therapixel",
+    "known": {
+      "ats": "custom",
+      "careers_url": "https://www.therapixel.com/careers/",
+      "note": "verified 2026-09-05: custom WordPress careers page, 0 public openings (spontaneous only)"
+    }
+  },
+  {
+    "name": "Navya (Chasset)",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Mobility / AI",
+    "domain": "navya.tech",
+    "ats": "custom",
+    "slug": "navya"
+  },
+  {
+    "name": "Ceva Santé Animale / E-Nov",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Healthtech",
+    "domain": "ceva.com",
+    "ats": "custom",
+    "slug": "ceva",
+    "known": {
+      "ats": "cornerstone",
+      "slug": "ceva",
+      "careers_url": "https://ceva.csod.com/",
+      "note": "verified 2026-09-06: Cornerstone OnDemand (ceva.csod.com)"
+    }
+  },
+  {
+    "name": "Qualisteo",
+    "city": "Nice",
+    "dept": "06",
+    "category": "Cleantech / IoT",
+    "domain": "qualisteo.com",
+    "ats": "lever",
+    "slug": "qualisteo"
+  },
+  {
+    "name": "Jaguar Network (Free Pro)",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Telecom / Cloud",
+    "domain": "jaguar-network.com",
+    "ats": "custom",
+    "slug": "freepro"
+  },
+  {
+    "name": "Traxens",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Logistics / IoT",
+    "domain": "traxens.com",
+    "ats": "lever",
+    "slug": "traxens",
+    "known": {
+      "ats": "welcometothejungle",
+      "slug": "traxens",
+      "careers_url": "https://www.welcometothejungle.com/fr/companies/traxens",
+      "note": "tentative 2026-09-06: WTTJ fingerprint on careers page; slug unconfirmed"
+    }
+  },
+  {
+    "name": "Videtics",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "Computer Vision / AI",
+    "domain": "videtics.com",
+    "ats": "ashby",
+    "slug": "videtics",
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.videtics.com/",
+      "note": "verified 2026-09-06: no ATS - /careers redirects to homepage, no jobs page (LinkedIn only)"
+    }
+  },
+  {
+    "name": "Exotec (Bureaux Sud)",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Robotics / Scaleup",
+    "domain": "exotec.com",
+    "ats": "greenhouse",
+    "slug": "exotec",
+    "known": {
+      "ats": "workable",
+      "slug": "exotec",
+      "careers_url": "https://apply.workable.com/exotec/",
+      "note": "verified 2026-09-06: Workable (apply.workable.com/exotec)"
+    }
+  },
+  {
+    "name": "Qarnot Computing (Antenne Sud)",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Cloud / Compute",
+    "domain": "qarnot.com",
+    "ats": "lever",
+    "slug": "qarnot",
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://qarnot.com/",
+      "note": "verified 2026-09-06: Qarnot acquired by Scaleway (2025) - no standalone hiring entity; check Scaleway/Iliad careers"
+    }
+  },
+  {
+    "name": "Crosscall",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Hardware / Mobile",
+    "domain": "crosscall.com",
+    "ats": "custom",
+    "slug": "crosscall",
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.crosscall.com/pages/job-offers",
+      "note": "verified 2026-09-06: no ATS - job posts are CMS pages on crosscall.com/pages/* (Shopify site). ~4-6 roles, mostly non-tech."
+    }
+  },
+  {
+    "name": "Criteo (Lab Sophia)",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "Adtech / AI",
+    "domain": "criteo.com",
+    "ats": "greenhouse",
+    "slug": "criteo",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Criteo2",
+      "careers_url": "https://careers.smartrecruiters.com/Criteo2",
+      "note": "verified 2026-09-06: SmartRecruiters (careers.smartrecruiters.com/Criteo2); also a Workday portal criteo.wd3.myworkdayjobs.com. Public SR postings feed may be disabled."
+    }
+  },
+  {
+    "name": "Inria Méditerranée",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "R&D / Deeptech",
+    "domain": "inria.fr",
+    "ats": "custom",
+    "slug": "inria",
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://jobs.inria.fr/",
+      "note": "tentative 2026-09-06: Inria runs its own public research-jobs portal jobs.inria.fr - unconfirmed this pass"
+    }
+  },
+  {
+    "name": "Virbac (Pôle Digital)",
+    "city": "Carros",
+    "dept": "06",
+    "category": "Healthtech / ERP",
+    "domain": "virbac.com",
+    "ats": "custom",
+    "slug": "virbac"
+  },
+  {
+    "name": "Bfore.Ai",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Cybersecurity / AI",
+    "domain": "bfore.ai",
+    "ats": "ashby",
+    "slug": "bforeai"
+  },
+  {
+    "name": "Nfinite (Antenne Sud)",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "3D / E-Commerce",
+    "domain": "nfinite.app",
+    "ats": "greenhouse",
+    "slug": "nfinite"
+  },
+  {
+    "name": "Syndic One",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Proptech",
+    "domain": null,
+    "ats": "custom",
+    "slug": "syndicone"
+  },
+  {
+    "name": "ExactCure",
+    "city": "Nice",
+    "dept": "06",
+    "category": "Healthtech / AI",
+    "domain": "exactcure.com",
+    "ats": "lever",
+    "slug": "exactcure"
+  },
+  {
+    "name": "Onet (Lab Innovation & Tech)",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Enterprise Services",
+    "domain": "groupe-onet.com",
+    "ats": "custom",
+    "slug": "onet"
+  },
+  {
+    "name": "Symag (BNP Paribas)",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Retailtech / Fintech",
+    "domain": "symag.com",
+    "ats": "custom",
+    "slug": "symag"
+  },
+  {
+    "name": "Legalyspace",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Legaltech / SaaS",
+    "domain": "legalyspace.com",
+    "ats": "custom",
+    "slug": "legalyspace",
+    "known": {
+      "ats": "welcometothejungle",
+      "slug": "legalyspace",
+      "careers_url": "https://www.welcometothejungle.com/fr/companies/legalyspace",
+      "note": "verified 2026-09-06: Welcome to the Jungle (site links to wttj.com/fr/companies/legalyspace)"
+    }
+  },
+  {
+    "name": "Schneider Electric (R&D Nice)",
+    "city": "Nice",
+    "dept": "06",
+    "category": "IoT / Cleantech",
+    "domain": "se.com",
+    "ats": "custom",
+    "slug": "schneider",
+    "known": {
+      "ats": "icims",
+      "slug": "careers-se",
+      "careers_url": "https://careers.se.com/",
+      "note": "verified 2026-09-06: iCIMS (careers-se.icims.com)"
+    }
+  },
+  {
+    "name": "STMicroelectronics (Sites Sud)",
+    "city": "Rousset",
+    "dept": "13",
+    "category": "Semiconducteurs",
+    "domain": "st.com",
+    "ats": "custom",
+    "slug": "stmicro",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": null,
+      "careers_url": "https://jobs.st.com/",
+      "note": "tentative 2026-09-06: ST careers historically SmartRecruiters (jobs.st.com) - unconfirmed this pass"
+    }
+  },
+  {
+    "name": "Eversafe",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Cybersecurity",
+    "domain": null,
+    "ats": "lever",
+    "slug": "eversafe"
+  },
+  {
+    "name": "Woleet",
+    "city": "Nice",
+    "dept": "06",
+    "category": "Web3 / Signature",
+    "domain": "woleet.io",
+    "ats": "custom",
+    "slug": "woleet"
+  },
+  {
+    "name": "Izicap",
+    "city": "Nice",
+    "dept": "06",
+    "category": "Fintech / CRM",
+    "domain": "izicap.com",
+    "ats": "lever",
+    "slug": "izicap"
+  },
+  {
+    "name": "Ceva Logistics (Digital Hub)",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Supply Chain Tech",
+    "domain": "cevalogistics.com",
+    "ats": "custom",
+    "slug": "cevalogistics"
+  },
+  {
+    "name": "Centrale Méditerranée Incubateur",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Deeptech Startups",
+    "domain": "centrale-mediterranee.fr",
+    "ats": "custom",
+    "slug": "centralemarseille"
+  },
+  {
+    "name": "Nvidia (Lab Sophia)",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "AI / GPU Hardware",
+    "domain": "nvidia.com",
+    "ats": "greenhouse",
+    "slug": "nvidia",
+    "known": {
+      "ats": "workday",
+      "slug": "nvidia",
+      "careers_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+      "note": "verified 2026-09-06: Workday (nvidia.wd5.myworkdayjobs.com)"
+    }
+  },
+  {
+    "name": "Iad France (Pôle Digital)",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Proptech",
+    "domain": "iadfrance.fr",
+    "ats": "greenhouse",
+    "slug": "iad",
+    "known": {
+      "ats": "welcometothejungle",
+      "slug": null,
+      "careers_url": "https://www.welcometothejungle.com/fr/companies/iad",
+      "note": "tentative 2026-09-06: iad frequently on WTTJ - unconfirmed this pass"
+    }
+  },
+  {
+    "name": "Vulog",
+    "city": "Nice",
+    "dept": "06",
+    "category": "Mobility Tech",
+    "domain": "vulog.com",
+    "ats": "lever",
+    "slug": "vulog",
+    "known": {
+      "ats": "welcometothejungle",
+      "slug": "vulog",
+      "careers_url": "https://www.welcometothejungle.com/en/companies/vulog/jobs",
+      "note": "verified 2026-09-06: Welcome to the Jungle (wttj.com/en/companies/vulog/jobs)"
+    }
+  },
+  {
+    "name": "Ekinops",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "Telecom / Hardware",
+    "domain": "ekinops.com",
+    "ats": "custom",
+    "slug": "ekinops"
+  },
+  {
+    "name": "Hopper",
+    "city": "Nice",
+    "dept": "06",
+    "category": "Traveltech / App",
+    "domain": "hopper.com",
+    "ats": "greenhouse",
+    "slug": "hopper",
+    "known": {
+      "ats": "ashby",
+      "slug": "hopper",
+      "careers_url": "https://jobs.ashbyhq.com/hopper",
+      "note": "verified 2026-09-06: Ashby (jobs.ashbyhq.com/hopper, ~36 postings)"
+    }
+  },
+  {
+    "name": "Advans Group (Elsys / Avisto)",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "Embedded Systems",
+    "domain": "advansgroup.com",
+    "ats": "custom",
+    "slug": "advans"
+  },
+  {
+    "name": "Spallian",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Data / Analytics",
+    "domain": "spallian.com",
+    "ats": "custom",
+    "slug": "spallian",
+    "known": {
+      "ats": "welcometothejungle",
+      "slug": "spallian",
+      "careers_url": "https://www.welcometothejungle.com/fr/companies/spallian",
+      "note": "verified 2026-09-06: Welcome Kit / WTTJ embed on spallian.com/join-us"
+    }
+  },
+  {
+    "name": "Sunpartner Technologies",
+    "city": "Rousset",
+    "dept": "13",
+    "category": "Cleantech / Solar",
+    "domain": null,
+    "ats": "custom",
+    "slug": "sunpartner"
+  },
+  {
+    "name": "Ses-Imagotag (Équipe Sud)",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "IoT / Retail",
+    "domain": "vusion.com",
+    "ats": "custom",
+    "slug": "sesimagotag",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "vusiongroupsa",
+      "careers_url": "https://careers.smartrecruiters.com/vusiongroupsa",
+      "note": "verified 2026-09-06: SmartRecruiters as VusionGroup (~54 postings)"
+    }
+  },
+  {
+    "name": "Earthworm Foundation Tech",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Agtech / GIS",
+    "domain": "earthworm.org",
+    "ats": "ashby",
+    "slug": "earthworm"
+  },
+  {
+    "name": "EpicNPoc",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "Automotive UX/Software",
+    "domain": "epicnpoc.com",
+    "ats": "lever",
+    "slug": "epicnpoc"
+  },
+  {
+    "name": "Gemy Cars (Hub Digital)",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "AutoTech / SaaS",
+    "domain": null,
+    "ats": "custom",
+    "slug": "gemy"
+  },
+  {
+    "name": "Airbus Helicopters (Logiciel / R&D)",
+    "city": "Marignane",
+    "dept": "13",
+    "category": "Avionics / Embedded",
+    "domain": "airbus.com",
+    "ats": "custom",
+    "slug": "airbus",
+    "known": {
+      "ats": "workday",
+      "slug": null,
+      "careers_url": "https://ag.wd3.myworkdayjobs.com/",
+      "note": "tentative 2026-09-06: Airbus group uses Workday - unconfirmed this pass"
+    }
+  },
+  {
+    "name": "STid",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "IoT / RFID Security",
+    "domain": "stid-security.com",
+    "ats": "custom",
+    "slug": "stid"
+  },
+  {
+    "name": "Alan",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Healthtech / Scaleup",
+    "domain": "alan.com",
+    "ats": "greenhouse",
+    "slug": "alan",
+    "known": {
+      "ats": "ashby",
+      "slug": "alan",
+      "careers_url": "https://jobs.ashbyhq.com/alan",
+      "note": "verified 2026-09-06: Ashby (jobs.ashbyhq.com/alan, ~111 postings)"
+    }
+  },
+  {
+    "name": "Digital Virgo",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Fintech / Mobile Payment",
+    "domain": "digitalvirgo.com",
+    "ats": "custom",
+    "slug": "digitalvirgo",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": null,
+      "careers_url": "https://www.digitalvirgo.com/",
+      "note": "tentative 2026-09-06: SmartRecruiters fingerprint; company id unconfirmed"
+    }
+  },
+  {
+    "name": "fulll",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "SaaS / B2B",
+    "domain": "fulll.fr",
+    "ats": "custom",
+    "slug": "fulll"
+  },
+  {
+    "name": "Onatera",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "E-Commerce",
+    "domain": "onatera.com",
+    "ats": "custom",
+    "slug": "onatera"
+  },
+  {
+    "name": "Prozon",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "E-Commerce B2B",
+    "domain": null,
+    "ats": "custom",
+    "slug": "prozon",
+    "known": {
+      "ats": "welcometothejungle",
+      "slug": "prozon",
+      "careers_url": "https://www.welcometothejungle.com/fr/companies/prozon/jobs",
+      "note": "verified 2026-09-06: Welcome to the Jungle (prozon.com links to wttj/companies/prozon/jobs)"
+    }
+  },
+  {
+    "name": "Searoutes",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Greentech / Data",
+    "domain": "searoutes.com",
+    "ats": "lever",
+    "slug": "searoutes",
+    "known": {
+      "ats": "workable",
+      "slug": "searoutes",
+      "careers_url": "https://apply.workable.com/searoutes/",
+      "note": "verified 2026-09-06: Workable (searoutes.com links to apply.workable.com/searoutes)"
+    }
+  },
+  {
+    "name": "SemiAI",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "AI / SaaS",
+    "domain": null,
+    "ats": "custom",
+    "slug": "semiai"
+  },
+  {
+    "name": "Paradox EN",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "EdTech",
+    "domain": null,
+    "ats": "lever",
+    "slug": "paradox"
+  }
 ]
