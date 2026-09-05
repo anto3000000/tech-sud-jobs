@@ -1,0 +1,4615 @@
+[
+  {
+    "name": "Wand’R",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wandr/",
+    "ft_slug": "wandr",
+    "domain": "wand-r.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Le Centre",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/le-centre/",
+    "ft_slug": "le-centre",
+    "domain": "lecentre.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mothair",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mothair/",
+    "ft_slug": "mothair",
+    "domain": "mothair.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Kolektivolt",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/kolektivolt/",
+    "ft_slug": "kolektivolt",
+    "domain": "kolektivolt.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Nosho",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nosho/",
+    "ft_slug": "nosho",
+    "domain": "nosho.ai",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MotorBioNet",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/motorbio-net/",
+    "ft_slug": "motorbio-net",
+    "domain": "motorbionet.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "AsoftConsultant",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/asoftconsultant/",
+    "ft_slug": "asoftconsultant",
+    "domain": "asoftconsultant.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Novaia",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/novaia/",
+    "ft_slug": "novaia",
+    "domain": "nova-ia.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "RosaLog",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/rosalog/",
+    "ft_slug": "rosalog",
+    "domain": "rosalog.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mage-X",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mage-x/",
+    "ft_slug": "mage-x",
+    "domain": "mage-x.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Hellocare",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hellocare/",
+    "ft_slug": "hellocare",
+    "domain": "hellocare.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LUMIASOL",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/lumiasol/",
+    "ft_slug": "lumiasol",
+    "domain": "lumiasol.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Carboneo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/carboneo/",
+    "ft_slug": "carboneo",
+    "domain": "carboneo.eu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Comect",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/comect/",
+    "ft_slug": "comect",
+    "domain": "comect.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Meanwhile Boutique",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/meanwhile-boutique/",
+    "ft_slug": "meanwhile-boutique",
+    "domain": "meanwhile.boutique",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Manta Consulting",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/manta-consulting/",
+    "ft_slug": "manta-consulting",
+    "domain": "mantaconsulting.pro",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CertifiK",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/certifik/",
+    "ft_slug": "certifik",
+    "domain": "certifik.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Staff-advisor",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/staff-advisor/",
+    "ft_slug": "staff-advisor",
+    "domain": "staff-advisor.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Maggy",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/maggy/",
+    "ft_slug": "maggy",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Docloop",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/docloop/",
+    "ft_slug": "docloop",
+    "domain": "docloop.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Heegee",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/heegee/",
+    "ft_slug": "heegee",
+    "domain": "heegee.care",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "The Freeconic",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/the-freeconic/",
+    "ft_slug": "the-freeconic",
+    "domain": "thefreeconic.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Otrera New Energy",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/otrera-new-energy/",
+    "ft_slug": "otrera-new-energy",
+    "domain": "otrera.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Snowlab",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/snowlab/",
+    "ft_slug": "snowlab",
+    "domain": "snowlab.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Skilit",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/skilit-2/",
+    "ft_slug": "skilit-2",
+    "domain": "skilit.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Jouga",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/jouga/",
+    "ft_slug": "jouga",
+    "domain": "jouga.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MonSauveteur",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/monsauveteur/",
+    "ft_slug": "monsauveteur",
+    "domain": "mon-sauveteur.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Betoobe",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/betoobe/",
+    "ft_slug": "betoobe",
+    "domain": "betoobe.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Fluiidd",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/fluiidd/",
+    "ft_slug": "fluiidd",
+    "domain": "fluiidd.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Iconik",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/iconik/",
+    "ft_slug": "iconik",
+    "domain": "iconik.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Cynoia",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/cynoia/",
+    "ft_slug": "cynoia",
+    "domain": "cynoia.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "GAPZEN",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/gapzen/",
+    "ft_slug": "gapzen",
+    "domain": "gapzen.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CarJager",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/carjager/",
+    "ft_slug": "carjager",
+    "domain": "carjager.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Troov RDV",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/troov-rdv/",
+    "ft_slug": "troov-rdv",
+    "domain": "troovrdv.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NEURONAIX",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/neuronaix/",
+    "ft_slug": "neuronaix",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Studio3615",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/studio3615/",
+    "ft_slug": "studio3615",
+    "domain": "studio3615.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Atom XR",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/atom-xr/",
+    "ft_slug": "atom-xr",
+    "domain": "atomxr.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Timao",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/timao/",
+    "ft_slug": "timao",
+    "domain": "timao.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Flying Secoya",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/flying-secoya/",
+    "ft_slug": "flying-secoya",
+    "domain": "flyingsecoya.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NERYA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nerya/",
+    "ft_slug": "nerya",
+    "domain": "nerya.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PHOCEA DC",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/phocea-dc/",
+    "ft_slug": "phocea-dc",
+    "domain": "phocea-dc.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ëstorik",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/estorik/",
+    "ft_slug": "estorik",
+    "domain": "estorik.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SINGA Marseille",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/singa-marseille/",
+    "ft_slug": "singa-marseille",
+    "domain": "wearesinga.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "KLAKBOAT",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/klakboat/",
+    "ft_slug": "klakboat",
+    "domain": "klakboat.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Incubateur inter-universitaire IMPULSE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/incubateur-inter-universitaire-impulse/",
+    "ft_slug": "incubateur-inter-universitaire-impulse",
+    "domain": "incubateur-impulse.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Refectory",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/refectory/",
+    "ft_slug": "refectory",
+    "domain": "refectory.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mayze",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mayze/",
+    "ft_slug": "mayze",
+    "domain": "mayze.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Focus Coworking",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/focus-coworking/",
+    "ft_slug": "focus-coworking",
+    "domain": "focus.work",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Dose of Good",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/dose-of-good/",
+    "ft_slug": "dose-of-good",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Rofim",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/rofim-3/",
+    "ft_slug": "rofim-3",
+    "domain": "rofim.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Hairdex",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hairdex-2/",
+    "ft_slug": "hairdex-2",
+    "domain": "hairdex.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Citiprofile",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/citiprofile-2/",
+    "ft_slug": "citiprofile-2",
+    "domain": "citiprofile.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Atrioom",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/atrioom-2/",
+    "ft_slug": "atrioom-2",
+    "domain": "atrioom.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Forgeron3",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/forgeron3/",
+    "ft_slug": "forgeron3",
+    "domain": "marcus-box.ai",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LABELiO",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/labelio/",
+    "ft_slug": "labelio",
+    "domain": "labelio.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LitterSnap",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/littersnap-3/",
+    "ft_slug": "littersnap-3",
+    "domain": "littersnap.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Be The Change – France (nom commercial Selfbar France)",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/be-the-change-france-nom-commercial-selfbar-france/",
+    "ft_slug": "be-the-change-france-nom-commercial-selfbar-france",
+    "domain": "beacons.ai",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NFBoat",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nfboat/",
+    "ft_slug": "nfboat",
+    "domain": "nfboat.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "HISSEO",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hisseo/",
+    "ft_slug": "hisseo",
+    "domain": "hisseo.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Eco Impact",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/eco-impact/",
+    "ft_slug": "eco-impact",
+    "domain": "eco-impact.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "GravitHy",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/gravithy/",
+    "ft_slug": "gravithy",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SAS WELL",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sas-well/",
+    "ft_slug": "sas-well",
+    "domain": "welltogether.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BOSLER",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/bosler/",
+    "ft_slug": "bosler",
+    "domain": "bosler.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "East Blue Company",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/east-blue-company/",
+    "ft_slug": "east-blue-company",
+    "domain": "elyesabassi.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "GENXMAP",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/genxmap/",
+    "ft_slug": "genxmap",
+    "domain": "genxmap.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Agentia",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/agentia/",
+    "ft_slug": "agentia",
+    "domain": "agentia.tech",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CLUST IN CLOUD",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/clust-in-cloud/",
+    "ft_slug": "clust-in-cloud",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "waste in peace",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/waste-in-peace-2/",
+    "ft_slug": "waste-in-peace-2",
+    "domain": "wasteinpeace.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Elyse Energy",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/elyse-energy-2/",
+    "ft_slug": "elyse-energy-2",
+    "domain": "elyse.energy",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Skinosive",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/skinosive/",
+    "ft_slug": "skinosive",
+    "domain": "skinosive.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "AFFLUENT MEDICAL",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/affluent-medical/",
+    "ft_slug": "affluent-medical",
+    "domain": "affluentmedical.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "StudiAva",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/studiava/",
+    "ft_slug": "studiava",
+    "domain": "studiava.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Clepsiidre",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/clepsiidre/",
+    "ft_slug": "clepsiidre",
+    "domain": "clepsiidre.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "mySofie",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mysofie-2/",
+    "ft_slug": "mysofie-2",
+    "domain": "mysofie.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Foodelles",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/foodelles/",
+    "ft_slug": "foodelles",
+    "domain": "foodelles.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Linkpick",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/linkpick-2/",
+    "ft_slug": "linkpick-2",
+    "domain": "linkpick.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Karbonalpha",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/karbonalpha-2/",
+    "ft_slug": "karbonalpha-2",
+    "domain": "karbonalpha.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "VIRTUAL FOREST",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/virtual-forest/",
+    "ft_slug": "virtual-forest",
+    "domain": "virtualforest.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "YVEA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/yvea/",
+    "ft_slug": "yvea",
+    "domain": "yvea.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "FISSSA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/fisssa/",
+    "ft_slug": "fisssa",
+    "domain": "fisssa.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Vocast",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/vocast/",
+    "ft_slug": "vocast",
+    "domain": "vocast.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ElixirCar",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/elixircar/",
+    "ft_slug": "elixircar",
+    "domain": "elixircar.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Marketing Méditerranée",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/marketing-mediterranee/",
+    "ft_slug": "marketing-mediterranee",
+    "domain": "market-med.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "AMACOUSTIQUE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/amacoustique/",
+    "ft_slug": "amacoustique",
+    "domain": "amacoustique.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Eden",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/eden/",
+    "ft_slug": "eden",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Qombo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/qombo/",
+    "ft_slug": "qombo",
+    "domain": "qombo.tech",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Veligrow",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/veligrow-2/",
+    "ft_slug": "veligrow-2",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Twiners",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/twiners/",
+    "ft_slug": "twiners",
+    "domain": "twiners.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Centurio",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/centurio/",
+    "ft_slug": "centurio",
+    "domain": "centurio.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "REMED-IA Technologies",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/remed-ia-technologies/",
+    "ft_slug": "remed-ia-technologies",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Coaching 4 Entrepreneurs",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/coaching-4-entrepreneurs/",
+    "ft_slug": "coaching-4-entrepreneurs",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BANSIRA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/bansira-2/",
+    "ft_slug": "bansira-2",
+    "domain": "bansira.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PCE Couveuse",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/pce-couveuse/",
+    "ft_slug": "pce-couveuse",
+    "domain": "pce-couveuse.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Bold’air",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/boldair/",
+    "ft_slug": "boldair",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TECMOLED",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/tecmoled/",
+    "ft_slug": "tecmoled",
+    "domain": "tecmoled.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Adalab",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/adalab/",
+    "ft_slug": "adalab",
+    "domain": "adalab.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Union Fondation",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/union-fondation/",
+    "ft_slug": "union-fondation",
+    "domain": "union-fondation.myshopify.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "COMPASS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/compass/",
+    "ft_slug": "compass",
+    "domain": "carte-compass.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "AKINOM (MONARC sas)",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/akinom-monarc-sas/",
+    "ft_slug": "akinom-monarc-sas",
+    "domain": "akinom.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Insusty",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/insusty/",
+    "ft_slug": "insusty",
+    "domain": "insusty.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Fairw.AI",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/fairw-ai/",
+    "ft_slug": "fairw-ai",
+    "domain": "fairw.ai",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mona Mare (e-dillyz)",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mona-mare-e-dillyz/",
+    "ft_slug": "mona-mare-e-dillyz",
+    "domain": "e-dillyz.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Cleansoft Services & Solutions",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/cleansoft-services-solutions/",
+    "ft_slug": "cleansoft-services-solutions",
+    "domain": "cleansoft.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SARL MASSILIA POUSSE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sarl-massilia-pousse/",
+    "ft_slug": "sarl-massilia-pousse",
+    "domain": "neopouss.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ChallengerZ",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/challengerz/",
+    "ft_slug": "challengerz",
+    "domain": "challengerz.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Joyloc",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/joyloc/",
+    "ft_slug": "joyloc",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Ehotil",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ehotil/",
+    "ft_slug": "ehotil",
+    "domain": "ehotil.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BASANNE EQUITATION",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/basanne-equitation/",
+    "ft_slug": "basanne-equitation",
+    "domain": "basanne.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Expansi",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/expansi/",
+    "ft_slug": "expansi",
+    "domain": "expansi.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CITADELLE DE MARSEILLE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/citadelle-de-marseille/",
+    "ft_slug": "citadelle-de-marseille",
+    "domain": "citadelledemarseille.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Réseau Entreprendre Provence",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/reseau-entreprendre-provence-2/",
+    "ft_slug": "reseau-entreprendre-provence-2",
+    "domain": "reseau-entreprendre.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Data2i",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/data2i/",
+    "ft_slug": "data2i",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Philomec",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/philomec/",
+    "ft_slug": "philomec",
+    "domain": "wwww.philomec.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Deeplayer AI",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/deeplayer-ai/",
+    "ft_slug": "deeplayer-ai",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "HIPPY SAS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hippy-sas/",
+    "ft_slug": "hippy-sas",
+    "domain": "indienov.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "WUP Networking",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wup-networking/",
+    "ft_slug": "wup-networking",
+    "domain": "wup-networking.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Le Lien Autonomie",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/le-lien-autonomie/",
+    "ft_slug": "le-lien-autonomie",
+    "domain": "lelienautonomie.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "UpClimbr",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/upclimbr/",
+    "ft_slug": "upclimbr",
+    "domain": "upclimbr.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Technopôle de l’environnement Arbois-Méditerranée / Pépinière d’entreprises #CleanTech",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/technopole-de-lenvironnement-arbois-mediterranee-pepiniere-dentreprises-cleantech-2/",
+    "ft_slug": "technopole-de-lenvironnement-arbois-mediterranee-pepiniere-dentreprises-cleantech-2",
+    "domain": "arbois-med.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "European Robotics Technology",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/european-robotics-technology-2/",
+    "ft_slug": "european-robotics-technology-2",
+    "domain": "eurobotec.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CRYSTTAL",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/crysttal/",
+    "ft_slug": "crysttal",
+    "domain": "crysttal.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Seanergy SAS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/seanergy-sas/",
+    "ft_slug": "seanergy-sas",
+    "domain": "seawards.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Holivia",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/holivia-2/",
+    "ft_slug": "holivia-2",
+    "domain": "holivia.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Dynergie",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/dynergie/",
+    "ft_slug": "dynergie",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "V2O Marine",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/v2o-marine-2/",
+    "ft_slug": "v2o-marine-2",
+    "domain": "v2omarine.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SATT PACA Corse",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/satt-paca-corse-2/",
+    "ft_slug": "satt-paca-corse-2",
+    "domain": "sattse.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "EXCEN Notaires & Conseils",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/excen-notaires-conseils/",
+    "ft_slug": "excen-notaires-conseils",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NOVACTIVA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/novactiva/",
+    "ft_slug": "novactiva",
+    "domain": "novactiva.com (en cours)",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Incubateur Belle de Mai",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/incubateur-belle-de-mai-2/",
+    "ft_slug": "incubateur-belle-de-mai-2",
+    "domain": "belledemai.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "JUNITO",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/junito-2/",
+    "ft_slug": "junito-2",
+    "domain": "xbross.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "RAEDIFICARE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/raedificare-2/",
+    "ft_slug": "raedificare-2",
+    "domain": "raedificare.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "INNOVACOM GESTION",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/innovacom-gestion/",
+    "ft_slug": "innovacom-gestion",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ZORTH",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/zorth/",
+    "ft_slug": "zorth",
+    "domain": "zorth.net",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ÉHO.LINK",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/eho-link-2/",
+    "ft_slug": "eho-link-2",
+    "domain": "eho.link",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Femmes Business Angels",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/femmes-business-angels-2/",
+    "ft_slug": "femmes-business-angels-2",
+    "domain": "femmesbusinessangels.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "IPEPPER PROVENCE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ipepper-provence/",
+    "ft_slug": "ipepper-provence",
+    "domain": "ipepper.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "INCérès",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/inceres/",
+    "ft_slug": "inceres",
+    "domain": "inceres.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Biomechatronics France Biomitech",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/biomechatronics-france-biomitech/",
+    "ft_slug": "biomechatronics-france-biomitech",
+    "domain": "biomitech.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Udicat",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/udicat/",
+    "ft_slug": "udicat",
+    "domain": "udicat.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "VH Quatrevingtreize",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/vh-quatrevingtreize-2/",
+    "ft_slug": "vh-quatrevingtreize-2",
+    "domain": "vhquatrevingtreize.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LIGN.O",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/lign-o-2/",
+    "ft_slug": "lign-o-2",
+    "domain": "lign-o.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "FRUIT AND FOOD",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/fruit-and-food-2/",
+    "ft_slug": "fruit-and-food-2",
+    "domain": "fruitandfood.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BIOPOOLTECH",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/biopooltech/",
+    "ft_slug": "biopooltech",
+    "domain": "biopooltech.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Qinomic",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/qinomic-3/",
+    "ft_slug": "qinomic-3",
+    "domain": "qinomic.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "KORNER",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/korner-2/",
+    "ft_slug": "korner-2",
+    "domain": "korner.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "UL CONTROL",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ul-control/",
+    "ft_slug": "ul-control",
+    "domain": "ulcontrol.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "IRCE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/irce/",
+    "ft_slug": "irce",
+    "domain": "irce.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mailoop",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mailoop-2/",
+    "ft_slug": "mailoop-2",
+    "domain": "mailoop.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Smart4",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/smart4/",
+    "ft_slug": "smart4",
+    "domain": "smart4.ai",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Provence promotion",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/provence-promotion-2/",
+    "ft_slug": "provence-promotion-2",
+    "domain": "investinprovence.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Dawan",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/dawan-2/",
+    "ft_slug": "dawan-2",
+    "domain": "pardawan.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Green PRAXIS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/green-praxis-2/",
+    "ft_slug": "green-praxis-2",
+    "domain": "greenpraxis.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Clear Drink",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/clear-drink/",
+    "ft_slug": "clear-drink",
+    "domain": "clear-drink.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "VENTIO",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ventio-2/",
+    "ft_slug": "ventio-2",
+    "domain": "ventio.net",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ORION tech",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/orion-tech/",
+    "ft_slug": "orion-tech",
+    "domain": "orion-tech.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "S3D Engineering United®",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/s3d-engineering-ingenierie-3d-mediterranee/",
+    "ft_slug": "s3d-engineering-ingenierie-3d-mediterranee",
+    "domain": "s3dengineering.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "VISITMOOV",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/visitmoov-2/",
+    "ft_slug": "visitmoov-2",
+    "domain": "visitmoov.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Modus Ædificandi",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/modus-aedificandi/",
+    "ft_slug": "modus-aedificandi",
+    "domain": "modus-aedificandi.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Dotmap",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/dotmap/",
+    "ft_slug": "dotmap",
+    "domain": "dotmap.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "DEEP SCOUTING",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/deep-scouting-2/",
+    "ft_slug": "deep-scouting-2",
+    "domain": "deepscouting.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Rentalake",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/rentalake/",
+    "ft_slug": "rentalake",
+    "domain": "rentalake.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "La Cigale et La Sardine",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/la-cigale-et-la-sardine/",
+    "ft_slug": "la-cigale-et-la-sardine",
+    "domain": "lacigaleetlasardine.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "INERSIO",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/inersio/",
+    "ft_slug": "inersio",
+    "domain": "inersio.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Simply Tab",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/simply-tab/",
+    "ft_slug": "simply-tab",
+    "domain": "simplytab.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ROKI",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/test2/",
+    "ft_slug": "test2",
+    "domain": "roki-team.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Smoothy Labs",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/smoothy-labs/",
+    "ft_slug": "smoothy-labs",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Berkail",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/berkail/",
+    "ft_slug": "berkail",
+    "domain": "berkail.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Airbus Développement",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/airbus-developpement/",
+    "ft_slug": "airbus-developpement",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "AINSI FONDS FONDS FONDS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ainsi-fonds-fonds-fonds/",
+    "ft_slug": "ainsi-fonds-fonds-fonds",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Adverco",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/adverco/",
+    "ft_slug": "adverco",
+    "domain": "adverco.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Abdtech Therapeutics",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/abdtech-therapeutics/",
+    "ft_slug": "abdtech-therapeutics",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CHIMERE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/chimere-2/",
+    "ft_slug": "chimere-2",
+    "domain": "chimere.eu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BIOCELLVIA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/biocellvia/",
+    "ft_slug": "biocellvia",
+    "domain": "biocellvia.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ANA Healthcare",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ana-healthcare/",
+    "ft_slug": "ana-healthcare",
+    "domain": "ana-healthcare.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Abtech Therapeutics",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/abtech-therapeutics/",
+    "ft_slug": "abtech-therapeutics",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SAS OOTENTIK",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ootentik/",
+    "ft_slug": "ootentik",
+    "domain": "ootentik.net",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "DIGDASH",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/digdash/",
+    "ft_slug": "digdash",
+    "domain": "digdash.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Sensia",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sensia/",
+    "ft_slug": "sensia",
+    "domain": "sensia.ai",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Superlative Apps",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/superlative-apps/",
+    "ft_slug": "superlative-apps",
+    "domain": "choozit.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LLenX",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/llenx/",
+    "ft_slug": "llenx",
+    "domain": "llenx.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "webNdev",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/webndev/",
+    "ft_slug": "webndev",
+    "domain": "webndev.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Postumo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/postumo/",
+    "ft_slug": "postumo",
+    "domain": "postumo.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Crypto Simple",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/crypto-simple/",
+    "ft_slug": "crypto-simple",
+    "domain": "cryptosimple.app",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Subclic",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/subclic/",
+    "ft_slug": "subclic",
+    "domain": "subclic.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "HelpMyFood!",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/helpmyfood/",
+    "ft_slug": "helpmyfood",
+    "domain": "helpmyfood.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Canicare",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/canicare/",
+    "ft_slug": "canicare",
+    "domain": "canicare.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "WINE IN BLOCK",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wine-in-block/",
+    "ft_slug": "wine-in-block",
+    "domain": "wineinblock.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Fitness Boost",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/fitness-boost/",
+    "ft_slug": "fitness-boost",
+    "domain": "fitnessboost.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Olythe",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/olythe/",
+    "ft_slug": "olythe",
+    "domain": "olythe.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "V.RTU",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/v-rtu/",
+    "ft_slug": "v-rtu",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Ottho",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ottho/",
+    "ft_slug": "ottho",
+    "domain": "ottho.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Leyton Capital Advisors",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/leyton-capital-advisors/",
+    "ft_slug": "leyton-capital-advisors",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MY CREO ACADEMY",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/my-creo-academy/",
+    "ft_slug": "my-creo-academy",
+    "domain": "lesentrepreneursaffranchis.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "VIEWS MULTIMEDIA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/views-multimedia/",
+    "ft_slug": "views-multimedia",
+    "domain": "https:",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Altassura",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/altassura/",
+    "ft_slug": "altassura",
+    "domain": "altassura.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Le Tracteur",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/le-tracteur/",
+    "ft_slug": "le-tracteur",
+    "domain": "letracteur.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Polytech Marseille",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/polytech-marseille/",
+    "ft_slug": "polytech-marseille",
+    "domain": "polytech.univ-amu.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ALIKAR INT",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/alikar-int/",
+    "ft_slug": "alikar-int",
+    "domain": "wayizi.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SAISIR",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/saisir/",
+    "ft_slug": "saisir",
+    "domain": "saisir.tech",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Team@Mines",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/teammines/",
+    "ft_slug": "teammines",
+    "domain": "mines-stetienne.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Flowbee",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/les-reufs-digital/",
+    "ft_slug": "les-reufs-digital",
+    "domain": "lesreufsdigital.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Syncrosome",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/syncrosome/",
+    "ft_slug": "syncrosome",
+    "domain": "etap-lab.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "OliviAnne",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/olivianne/",
+    "ft_slug": "olivianne",
+    "domain": "olivianne.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TravelHand",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/travelhand/",
+    "ft_slug": "travelhand",
+    "domain": "travelhand.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Koord",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/koord/",
+    "ft_slug": "koord",
+    "domain": "koord.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Predicting Med",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/predicting-med/",
+    "ft_slug": "predicting-med",
+    "domain": "https:",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Collection Pointue",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/collection-pointue/",
+    "ft_slug": "collection-pointue",
+    "domain": "collection-pointue.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "HEXAGON Solutions",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hexagon-solutions/",
+    "ft_slug": "hexagon-solutions",
+    "domain": "hexagonsolutions.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Indemnisation.com",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/indemnisation-com/",
+    "ft_slug": "indemnisation-com",
+    "domain": "indemnisation.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Azolis Sol",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/azolis-sol/",
+    "ft_slug": "azolis-sol",
+    "domain": "azolis.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SeADvance",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/seadvance/",
+    "ft_slug": "seadvance",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Youandco",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/youandco/",
+    "ft_slug": "youandco",
+    "domain": "youandco.online",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "FRENZZA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/frenzza/",
+    "ft_slug": "frenzza",
+    "domain": "frenzza.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Matcheed",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/matcheed/",
+    "ft_slug": "matcheed",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Thank You Max",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/thank-you-max/",
+    "ft_slug": "thank-you-max",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Entrelp",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/entrelp/",
+    "ft_slug": "entrelp",
+    "domain": "entrelp.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Aquapouss’",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/aquapouss/",
+    "ft_slug": "aquapouss",
+    "domain": "aquapouss.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Carmen & Simone",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/carmen-simone/",
+    "ft_slug": "carmen-simone",
+    "domain": "carmenetsimone.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NOVAMAP",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/novamap/",
+    "ft_slug": "novamap",
+    "domain": "novamap.eu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Nexsens",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nexsens/",
+    "ft_slug": "nexsens",
+    "domain": "nexsens.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NEOSYAD",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/neosyad/",
+    "ft_slug": "neosyad",
+    "domain": "neosyad.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TechnoCarbon",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/technocarbon/",
+    "ft_slug": "technocarbon",
+    "domain": "htttp:",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Squad App",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/squad-app/",
+    "ft_slug": "squad-app",
+    "domain": "squad-app.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "DesCodeuses",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/descodeuses/",
+    "ft_slug": "descodeuses",
+    "domain": "descodeuses.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LES PREMIERES SUD",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/les-premieres-sud-2/",
+    "ft_slug": "les-premieres-sud-2",
+    "domain": "lespremieressud.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Silent Breach",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/silent-breach/",
+    "ft_slug": "silent-breach",
+    "domain": "silentbreach.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BUTTERFLY JOB",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/butterfly-job/",
+    "ft_slug": "butterfly-job",
+    "domain": "butterfly-job.net",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "FOODIA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/foodia/",
+    "ft_slug": "foodia",
+    "domain": "foodia.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Signally",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/signally/",
+    "ft_slug": "signally",
+    "domain": "signally.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Food Me Up",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/food-me-up/",
+    "ft_slug": "food-me-up",
+    "domain": "melba.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mobility Metrix",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mobility-metrix/",
+    "ft_slug": "mobility-metrix",
+    "domain": "mobility-metrix.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Disign",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/disign/",
+    "ft_slug": "disign",
+    "domain": "disign.tv",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "4Tech Care",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/4tech-care/",
+    "ft_slug": "4tech-care",
+    "domain": "4techcare.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Magic Chess Online",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/magic-chess-online/",
+    "ft_slug": "magic-chess-online",
+    "domain": "fr.magicchessonline.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "FOOTSIDER",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/footsider/",
+    "ft_slug": "footsider",
+    "domain": "ww.footsider.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Aartemis",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/aartemis/",
+    "ft_slug": "aartemis",
+    "domain": "aartemis.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Sportechclub",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sportechclub/",
+    "ft_slug": "sportechclub",
+    "domain": "sportechclub.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "2J PROCESS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/2j-process/",
+    "ft_slug": "2j-process",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Wagli",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wagli/",
+    "ft_slug": "wagli",
+    "domain": "wagli.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ESSCA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/essca/",
+    "ft_slug": "essca",
+    "domain": "essca.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "XTRA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/xtra/",
+    "ft_slug": "xtra",
+    "domain": "xtras.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PROZON",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/prozon/",
+    "ft_slug": "prozon",
+    "domain": "prozon.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "O-KIDIA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/o-kidia/",
+    "ft_slug": "o-kidia",
+    "domain": "o-kidia.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "OVOCHAIN SAS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ovochain-sas/",
+    "ft_slug": "ovochain-sas",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Gene&GreenTK",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/genegreentk/",
+    "ft_slug": "genegreentk",
+    "domain": "gene-greentk.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Oreegami",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/oreegami/",
+    "ft_slug": "oreegami",
+    "domain": "oreegami.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "KARMA Search",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/13900/",
+    "ft_slug": "13900",
+    "domain": "karmasearch.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Ezeety",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ezeety-2/",
+    "ft_slug": "ezeety-2",
+    "domain": "ezeety.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "JUP’ON",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/jupon/",
+    "ft_slug": "jupon",
+    "domain": "juponscooter.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ORAMA SYSTEM",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/orama-system/",
+    "ft_slug": "orama-system",
+    "domain": "orama-system.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ASAPP",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/asapp/",
+    "ft_slug": "asapp",
+    "domain": "asapp.agency",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "REPLICK",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/replick/",
+    "ft_slug": "replick",
+    "domain": "replick.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "FAAR",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/faar/",
+    "ft_slug": "faar",
+    "domain": "faar-easyride.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Short Fuse Original",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/short-fuse-original/",
+    "ft_slug": "short-fuse-original",
+    "domain": "shortfuse.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ACWA Robotics",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/acwa-robotics-2/",
+    "ft_slug": "acwa-robotics-2",
+    "domain": "acwa-robotics.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Octarina",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/octarina-2/",
+    "ft_slug": "octarina-2",
+    "domain": "octarina.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TEED UP",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/teed-up-2/",
+    "ft_slug": "teed-up-2",
+    "domain": "teedup.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Holowind",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/holowind/",
+    "ft_slug": "holowind",
+    "domain": "holo-wind.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CryptoSimple",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/cryptosimple/",
+    "ft_slug": "cryptosimple",
+    "domain": "cryptosimple.app",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Voldoizo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/voldoizo/",
+    "ft_slug": "voldoizo",
+    "domain": "voldoizo.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Alegrant",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/alegrant-2/",
+    "ft_slug": "alegrant-2",
+    "domain": "alegrant.eu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "USERCUBE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/usercube-2/",
+    "ft_slug": "usercube-2",
+    "domain": "usercube.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Ajustea",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ajustea/",
+    "ft_slug": "ajustea",
+    "domain": "ajustea.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Visus Technology",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/visus-technology/",
+    "ft_slug": "visus-technology",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "OXBlaster",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/oxblaster/",
+    "ft_slug": "oxblaster",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SAS Sefic",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sas-sefic/",
+    "ft_slug": "sas-sefic",
+    "domain": "sassefic.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "my Sofie",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/my-sofie/",
+    "ft_slug": "my-sofie",
+    "domain": "mysofie.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PREAPHARM",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/preapharm/",
+    "ft_slug": "preapharm",
+    "domain": "preapharm.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PROTHÉLIOS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/prothelios/",
+    "ft_slug": "prothelios",
+    "domain": "prothélios (à venir)",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Lucca",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/lucca/",
+    "ft_slug": "lucca",
+    "domain": "lucca.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "OGGO Data",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/oggo-data/",
+    "ft_slug": "oggo-data",
+    "domain": "oggodata.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Walter Learning (ELOCE)",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/walter-learning-eloce/",
+    "ft_slug": "walter-learning-eloce",
+    "domain": "walter-learning.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "FGTECH",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/fgtech/",
+    "ft_slug": "fgtech",
+    "domain": "fgtech.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SAS PHÉNIX",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sas-phenix/",
+    "ft_slug": "sas-phenix",
+    "domain": "code-equilibre.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "EPSILON-PRODUCT",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/epsilon-product-2/",
+    "ft_slug": "epsilon-product-2",
+    "domain": "epsilon-product.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "HYDROECOTECH",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hydroecotech/",
+    "ft_slug": "hydroecotech",
+    "domain": "hydro-ecotech.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "webrivage",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/webrivage-2/",
+    "ft_slug": "webrivage-2",
+    "domain": "webrivage.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Hard Work Café",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hard-work-cafe/",
+    "ft_slug": "hard-work-cafe",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TWISE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/twise/",
+    "ft_slug": "twise",
+    "domain": "twise.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "E-Scopics",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/e-scopics/",
+    "ft_slug": "e-scopics",
+    "domain": "e-scopics.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "La Rue Française",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/la-rue-francaise/",
+    "ft_slug": "la-rue-francaise",
+    "domain": "ambre@laruefrancaise.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "OUPS Engineering",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/oups-engineering/",
+    "ft_slug": "oups-engineering",
+    "domain": "oups-eng.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Curso",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/curso/",
+    "ft_slug": "curso",
+    "domain": "curso.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NomoSense",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nomosense/",
+    "ft_slug": "nomosense",
+    "domain": "nomosense.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Shunt",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/shunt/",
+    "ft_slug": "shunt",
+    "domain": "shunt-app.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ABIM",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/abim/",
+    "ft_slug": "abim",
+    "domain": "a-bim.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ProTubeVR",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/protubevr/",
+    "ft_slug": "protubevr",
+    "domain": "protubevr.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ASE ENERGY",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ase-energy/",
+    "ft_slug": "ase-energy",
+    "domain": "ase-energy.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "OPTIPUS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/optipus/",
+    "ft_slug": "optipus",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "GREENBADG",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/greenbadg/",
+    "ft_slug": "greenbadg",
+    "domain": "https:",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Pets Owner Platerform",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/pets-owner-platerform/",
+    "ft_slug": "pets-owner-platerform",
+    "domain": "pop-petsownersplateform.bubbleapps.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "REFORM",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/reform/",
+    "ft_slug": "reform",
+    "domain": "joinreform.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SAS SOLUTION ECOLOGIQUE FUTUR INTERNATIONAL CORPORATE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sas-solution-ecologique-futur-international-corporate/",
+    "ft_slug": "sas-solution-ecologique-futur-international-corporate",
+    "domain": "sassefic.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MagDesign",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/magdesign/",
+    "ft_slug": "magdesign",
+    "domain": "mag-design.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Bitstack",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/bitstack/",
+    "ft_slug": "bitstack",
+    "domain": "bitstack.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ArchiReality",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/archireality/",
+    "ft_slug": "archireality",
+    "domain": "archireality.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "smsmode",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/smsmode/",
+    "ft_slug": "smsmode",
+    "domain": "smsmode.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "O Clock",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/o-clock/",
+    "ft_slug": "o-clock",
+    "domain": "oclock.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NIDAIX",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nidaix/",
+    "ft_slug": "nidaix",
+    "domain": "centre-affaires-aix-en-provence.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mid Transit",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mid-transit/",
+    "ft_slug": "mid-transit",
+    "domain": "mid-transit.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SWii Smart World Immo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/swii-smart-world-immo/",
+    "ft_slug": "swii-smart-world-immo",
+    "domain": "swii.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Protect Concept Innovation",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/protect-concept-innovation/",
+    "ft_slug": "protect-concept-innovation",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "IPSAGO",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ipsago/",
+    "ft_slug": "ipsago",
+    "domain": "ipsago.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Alpha10X",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/alpha10x/",
+    "ft_slug": "alpha10x",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Haltere It",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/haltere-it/",
+    "ft_slug": "haltere-it",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PROTECTUS SAS Société à Mission",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/protectus-sas-societe-a-mission/",
+    "ft_slug": "protectus-sas-societe-a-mission",
+    "domain": "protectus.eco",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NawaTechnologies",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nawa-technologies/",
+    "ft_slug": "nawa-technologies",
+    "domain": "nawatechnologies.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "OORAY",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ooray/",
+    "ft_slug": "ooray",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Datasol",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/datasol/",
+    "ft_slug": "datasol",
+    "domain": "datasol.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "New Way",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/new-way/",
+    "ft_slug": "new-way",
+    "domain": "newwaysas.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "One Third",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/one-third/",
+    "ft_slug": "one-third",
+    "domain": "one-third.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "HSTI France",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hsti-france/",
+    "ft_slug": "hsti-france",
+    "domain": "hydrascout.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Ever.li",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ever-li/",
+    "ft_slug": "ever-li",
+    "domain": "ever.li",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SportMed TV",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sportmed-tv/",
+    "ft_slug": "sportmed-tv",
+    "domain": "sportmedtv.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Promantis",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/promantis/",
+    "ft_slug": "promantis",
+    "domain": "promantis.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "JUSTILIB",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/justilib/",
+    "ft_slug": "justilib",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MOBEN & ROOSTER",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/moben-rooster/",
+    "ft_slug": "moben-rooster",
+    "domain": "mobenrooster.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NanoCAM Technologies",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nanocam-technologies/",
+    "ft_slug": "nanocam-technologies",
+    "domain": "nanocamtech.eu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Adkins Biosciences",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/adkins-biosciences/",
+    "ft_slug": "adkins-biosciences",
+    "domain": "adkins-biosciences.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Datamarkin",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/datamarkin/",
+    "ft_slug": "datamarkin",
+    "domain": "datamarkin.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Uchéal",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ucheal/",
+    "ft_slug": "ucheal",
+    "domain": "ucheal.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Yapu-k & Co",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/yapu-k-co/",
+    "ft_slug": "yapu-k-co",
+    "domain": "yapukandco.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Intellinium",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/intellinium/",
+    "ft_slug": "intellinium",
+    "domain": "intellinium.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "GENOMNIS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/genomnis/",
+    "ft_slug": "genomnis",
+    "domain": "genomnis.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Oward",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/oward/",
+    "ft_slug": "oward",
+    "domain": "oward.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Turenne Capital",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/turenne-capital/",
+    "ft_slug": "turenne-capital",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SEANERGY",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/seanergy/",
+    "ft_slug": "seanergy",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mon Petit CE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mon-petit-ce/",
+    "ft_slug": "mon-petit-ce",
+    "domain": "monpetitce.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Poulp’US",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/poulpus/",
+    "ft_slug": "poulpus",
+    "domain": "poulp.us",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Hello Proove",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hello-proove/",
+    "ft_slug": "hello-proove",
+    "domain": "helloproove.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Stratégie Podcast",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/strategie-podcast/",
+    "ft_slug": "strategie-podcast",
+    "domain": "strategie-podcast.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Planee",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/planee/",
+    "ft_slug": "planee",
+    "domain": "planee.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SCOLABS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/scolabs/",
+    "ft_slug": "scolabs",
+    "domain": "pepsup.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Naos",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/naos/",
+    "ft_slug": "naos",
+    "domain": "naos.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Componize Software",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/componize-software/",
+    "ft_slug": "componize-software",
+    "domain": "componize.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ICI Marseille",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ici-marseille/",
+    "ft_slug": "ici-marseille",
+    "domain": "makeici.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "EY VENTURY",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ey-ventury/",
+    "ft_slug": "ey-ventury",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Ma clinique digitale",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ma-clinique-digitale/",
+    "ft_slug": "ma-clinique-digitale",
+    "domain": "macliniquedigitale.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PLB",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/plb-formation/",
+    "ft_slug": "plb-formation",
+    "domain": "plb.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ITI Medics",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/iti-medics/",
+    "ft_slug": "iti-medics",
+    "domain": "itimedics.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Rookies",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/rookies/",
+    "ft_slug": "rookies",
+    "domain": "contact@rookiesprojects.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Voxler",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/voxler/",
+    "ft_slug": "voxler",
+    "domain": "voxler.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Inclusive Brains",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/inclusive-brains/",
+    "ft_slug": "inclusive-brains",
+    "domain": "inclusive-brains.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Emilabs",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/emilabs/",
+    "ft_slug": "emilabs",
+    "domain": "emi-labs.eu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Sakowin",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sakowin/",
+    "ft_slug": "sakowin",
+    "domain": "sakowin.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "STARTUPP",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/startupp/",
+    "ft_slug": "startupp",
+    "domain": "startupp.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "A5 Science",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/a5-sciences/",
+    "ft_slug": "a5-sciences",
+    "domain": "a5-science.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Garde ma licorne",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/garde-ma-licorne/",
+    "ft_slug": "garde-ma-licorne",
+    "domain": "wwwgardemalicorne.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TRES Ecodesign",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/tres-ecodesign/",
+    "ft_slug": "tres-ecodesign",
+    "domain": "tres-ecodesign.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Indewatt",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/indewatt/",
+    "ft_slug": "indewatt",
+    "domain": "sunleavs.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MiniGreens",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/minigreens/",
+    "ft_slug": "minigreens",
+    "domain": "minigreens.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Zeurone",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/zeurone/",
+    "ft_slug": "zeurone",
+    "domain": "zeurone.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BioHomeTech – BioPoolTech",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/biohometech-biopooltech/",
+    "ft_slug": "biohometech-biopooltech",
+    "domain": "biohome.tech",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Kwote",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/kwote/",
+    "ft_slug": "kwote",
+    "domain": "kwote.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Ikimo 9",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ikimo-9/",
+    "ft_slug": "ikimo-9",
+    "domain": "ikimo9",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Sky’Transplant",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/skytransplant/",
+    "ft_slug": "skytransplant",
+    "domain": "skytransplant.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Quantia",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/quantia/",
+    "ft_slug": "quantia",
+    "domain": "quantia.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BC Mining",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/bc-mining/",
+    "ft_slug": "bc-mining",
+    "domain": "bcmining.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ManyVerse",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/manyverse/",
+    "ft_slug": "manyverse",
+    "domain": "playmanyverse.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Miratlas",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/miratlas/",
+    "ft_slug": "miratlas",
+    "domain": "miratlas.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BioIntrant",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/biointrant/",
+    "ft_slug": "biointrant",
+    "domain": "biointrant.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "AdequaBio",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/adequabio/",
+    "ft_slug": "adequabio",
+    "domain": "adequabio.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CetraC.io",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/cetrac-io/",
+    "ft_slug": "cetrac-io",
+    "domain": "cetrac.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Bubo Initiative",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/bubo-initiative/",
+    "ft_slug": "bubo-initiative",
+    "domain": "bubo-cybersec.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LEI",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/lei/",
+    "ft_slug": "lei",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Kiro",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/kiro/",
+    "ft_slug": "kiro",
+    "domain": "alexandre@kiro.bio",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Moradian",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/moradian/",
+    "ft_slug": "moradian",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Opomise",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/opomise/",
+    "ft_slug": "opomise",
+    "domain": "opomise.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "GoField (Winshot)",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/gofield-winshot/",
+    "ft_slug": "gofield-winshot",
+    "domain": "winshot.net",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MasterCV",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mastercv/",
+    "ft_slug": "mastercv",
+    "domain": "mastercv.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Lady cocotte",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/lady-cocotte/",
+    "ft_slug": "lady-cocotte",
+    "domain": "ladycocotte.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Hack Your Care",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hack-your-care/",
+    "ft_slug": "hack-your-care",
+    "domain": "hackyourcare.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Yep Nature",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/yep-nature/",
+    "ft_slug": "yep-nature",
+    "domain": "lebonzeste.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Sympatoque",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sympatoque/",
+    "ft_slug": "sympatoque",
+    "domain": "sympatoque.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TicknCook",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/tickncook/",
+    "ft_slug": "tickncook",
+    "domain": "tickncook.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SoundForMind",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/soundformind/",
+    "ft_slug": "soundformind",
+    "domain": "soundformind.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TheMagicBox",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/themagicbox/",
+    "ft_slug": "themagicbox",
+    "domain": "the-magic-box.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Harissa thp",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/harissa-thp/",
+    "ft_slug": "harissa-thp",
+    "domain": "harissa-thp.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Helpp-Life",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/helpp-life/",
+    "ft_slug": "helpp-life",
+    "domain": "helpp-life.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PASS LAS ton année",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/pass-las-ton-annee/",
+    "ft_slug": "pass-las-ton-annee",
+    "domain": "passlastonannee.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Toode",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/toode/",
+    "ft_slug": "toode",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Food4Future",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/food4future/",
+    "ft_slug": "food4future",
+    "domain": "food4future.tech",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "RGPD Solution clé en main",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/rgpd-solution-cle-en-main/",
+    "ft_slug": "rgpd-solution-cle-en-main",
+    "domain": "rgpd-solution.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MC Boat",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mc-boat/",
+    "ft_slug": "mc-boat",
+    "domain": "mcboat.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "DeNoize",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/denoize/",
+    "ft_slug": "denoize",
+    "domain": "denoize.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Pampa Cruz",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/pampa-cruz/",
+    "ft_slug": "pampa-cruz",
+    "domain": "pampacruz.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SILINA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/silina/",
+    "ft_slug": "silina",
+    "domain": "silina.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Vertical Expense",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/vertical-expense/",
+    "ft_slug": "vertical-expense",
+    "domain": "verticalexpense.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SunOleo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sunoleo/",
+    "ft_slug": "sunoleo",
+    "domain": "sunoleo.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Hello Tag",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hello-tag/",
+    "ft_slug": "hello-tag",
+    "domain": "hellotag.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Travel Hand",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/travel-hand/",
+    "ft_slug": "travel-hand",
+    "domain": "travelhand.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Social Declik",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/social-declick/",
+    "ft_slug": "social-declick",
+    "domain": "socialdeclik.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Marmaï Couture",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/marmai-couture/",
+    "ft_slug": "marmai-couture",
+    "domain": "marmai-patterns.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "intheair",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/intheair/",
+    "ft_slug": "intheair",
+    "domain": "intheair.tech",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PHI Solutions",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/phi-solutions/",
+    "ft_slug": "phi-solutions",
+    "domain": "kookie.pet",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Maison.fr",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/maison-fr/",
+    "ft_slug": "maison-fr",
+    "domain": "maison.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "My Tour Live",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/my-tour-live/",
+    "ft_slug": "my-tour-live",
+    "domain": "mytourlive.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Bets Between Friends",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/bets-between-friends/",
+    "ft_slug": "bets-between-friends",
+    "domain": "bbf-market.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Korner (Klanik)",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/korner/",
+    "ft_slug": "korner",
+    "domain": "korner.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Pool-on",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/pool-on/",
+    "ft_slug": "pool-on",
+    "domain": "pool-on.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "INSTIRE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/instire/",
+    "ft_slug": "instire",
+    "domain": "instire.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Sulitest",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sulitest/",
+    "ft_slug": "sulitest",
+    "domain": "sulitest.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Hoot Bike",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hoot-bike/",
+    "ft_slug": "hoot-bike",
+    "domain": "hoot.bike",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Culture Top",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/culture-top/",
+    "ft_slug": "culture-top",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "weresomarseille",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wereso-marseille/",
+    "ft_slug": "wereso-marseille",
+    "domain": "wereso-marseille.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TOUK TOUK",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/touk-touk/",
+    "ft_slug": "touk-touk",
+    "domain": "touk-touk.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "FLX studio",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/flx-studio/",
+    "ft_slug": "flx-studio",
+    "domain": "instagram",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Colline Rose",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/colline-rose/",
+    "ft_slug": "colline-rose",
+    "domain": "vinsdurables.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Technology Based Magic",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/technology-based-magic/",
+    "ft_slug": "technology-based-magic",
+    "domain": "technologybasedmagic.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Société des Eaux de Marseille",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/societe-des-eaux-de-marseille/",
+    "ft_slug": "societe-des-eaux-de-marseille",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ImCheck Therapeutics",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/imcheck-therapeutics/",
+    "ft_slug": "imcheck-therapeutics",
+    "domain": "imchecktherapeutics.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "EKIP MEDITERRANEE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ekip/",
+    "ft_slug": "ekip",
+    "domain": "e-kip.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Openmotion",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/openmotion/",
+    "ft_slug": "openmotion",
+    "domain": "openmotion.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Ballons &co",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ballons-co/",
+    "ft_slug": "ballons-co",
+    "domain": "subscribepage.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Club des entreprises de Château-Gombert, Allauch et Plan-de-Cuques",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/club-des-entreprises-de-chateau-gombert-allauch-et-plan-de-cuques/",
+    "ft_slug": "club-des-entreprises-de-chateau-gombert-allauch-et-plan-de-cuques",
+    "domain": "club-des-entreprises-de-chateau.business.site",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BGE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/bge-provence-alpes-mediterranee/",
+    "ft_slug": "bge-provence-alpes-mediterranee",
+    "domain": "bge-provencealpesmediterranee.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Oooly",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/oooly/",
+    "ft_slug": "oooly",
+    "domain": "oooly.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "DAT Solutions",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/dat-solutions/",
+    "ft_slug": "dat-solutions",
+    "domain": "dat-solutions.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Volta Medical",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/volta-medical/",
+    "ft_slug": "volta-medical",
+    "domain": "volta-medical.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Circle Safe",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/circle-safe/",
+    "ft_slug": "circle-safe",
+    "domain": "circle-safe.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Totum",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/totum/",
+    "ft_slug": "totum",
+    "domain": "totumapp.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Sportingoodz",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sportingoodz/",
+    "ft_slug": "sportingoodz",
+    "domain": "sportingoodz.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SAS MAMIE DOUCE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sas-mamie-douce/",
+    "ft_slug": "sas-mamie-douce",
+    "domain": "njem.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "OVOCHAIN",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ovochain/",
+    "ft_slug": "ovochain",
+    "domain": "ovochain.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "KEDGE ENTREPRENEURSHIP",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/kedge-entrepreneurship/",
+    "ft_slug": "kedge-entrepreneurship",
+    "domain": "entrepreneurship.kedge.edu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Entrepreneurs dans la Ville",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/entrepreneurs-dans-la-ville/",
+    "ft_slug": "entrepreneurs-dans-la-ville",
+    "domain": "entrepreneursdanslaville.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Five Lives SAS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/five-lives-sas/",
+    "ft_slug": "five-lives-sas",
+    "domain": "fivelives.health",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "melba",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/melba/",
+    "ft_slug": "melba",
+    "domain": "melba.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Party Kitchens",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/party-kitchens/",
+    "ft_slug": "party-kitchens",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Meteoptim",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/meteoptim/",
+    "ft_slug": "meteoptim",
+    "domain": "meteoptim.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Wise Integration",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wise-integration/",
+    "ft_slug": "wise-integration",
+    "domain": "wise-integration.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Registre général",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/registre-general/",
+    "ft_slug": "registre-general",
+    "domain": "registregeneral.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Hello Pomelo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hello-pomelo/",
+    "ft_slug": "hello-pomelo",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Southside Manon",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/southside-manon/",
+    "ft_slug": "southside-manon",
+    "domain": "manonsouthside.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "REEL IT",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/dur-industries/",
+    "ft_slug": "dur-industries",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "IOSYA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/iosya/",
+    "ft_slug": "iosya",
+    "domain": "iosya.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Hippy Medtec Systems",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hippy-medtec-systems/",
+    "ft_slug": "hippy-medtec-systems",
+    "domain": "hippymedtecsystems.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Brains4",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/brains4/",
+    "ft_slug": "brains4",
+    "domain": "brains4.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "François Raphael",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/francois-raphael/",
+    "ft_slug": "francois-raphael",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "L’École O’clock",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/lecole-oclock/",
+    "ft_slug": "lecole-oclock",
+    "domain": "oclock.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CM.com",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/cm-com/",
+    "ft_slug": "cm-com",
+    "domain": "cm.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Bot2com",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/bot2com/",
+    "ft_slug": "bot2com",
+    "domain": "bot2com.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Vengalabs",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/vengalabs/",
+    "ft_slug": "vengalabs",
+    "domain": "vengalabs.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Carnets de voyage",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/carnets-de-voyage/",
+    "ft_slug": "carnets-de-voyage",
+    "domain": "carnets-de-voyage.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Wall Street English",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wall-street-english/",
+    "ft_slug": "wall-street-english",
+    "domain": "wallstreetenglish.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Izitek",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/izitek/",
+    "ft_slug": "izitek",
+    "domain": "izitek.net",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Perroquet",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/9956/",
+    "ft_slug": "9956",
+    "domain": "perroquet.eu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Cearitis",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/cearitis/",
+    "ft_slug": "cearitis",
+    "domain": "cearitis.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Ogaia",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ogaia/",
+    "ft_slug": "ogaia",
+    "domain": "ogaia.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Conciergery",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/conciergery/",
+    "ft_slug": "conciergery",
+    "domain": "conciergery.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Maghen",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/maghen/",
+    "ft_slug": "maghen",
+    "domain": "maghen.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Euridis",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/euridis/",
+    "ft_slug": "euridis",
+    "domain": "euridis-ecole.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CaptainZen",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/captainzen/",
+    "ft_slug": "captainzen",
+    "domain": "captainzen.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SEFIC",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sefic/",
+    "ft_slug": "sefic",
+    "domain": "sassefic.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Medisur",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/medisur/",
+    "ft_slug": "medisur",
+    "domain": "medisur.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "2i Tech Academy",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/2i-tech-academy-aix/",
+    "ft_slug": "2i-tech-academy-aix",
+    "domain": "2itechacademy.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Avencod",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/avencod/",
+    "ft_slug": "avencod",
+    "domain": "avencod.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Lifelines",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/lifelines/",
+    "ft_slug": "lifelines",
+    "domain": "lifelines-li.eu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Sabor Brasil",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sabor-brasil/",
+    "ft_slug": "sabor-brasil",
+    "domain": "saborbrasil.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Startway",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/startway/",
+    "ft_slug": "startway",
+    "domain": "start-way.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "lesdetermines",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/les-determines/",
+    "ft_slug": "les-determines",
+    "domain": "lesdetermines.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Articlaw",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/articlaw/",
+    "ft_slug": "articlaw",
+    "domain": "articlaw.net",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Horse Pilot",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/horse-pilot/",
+    "ft_slug": "horse-pilot",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "E-COUVEUZ – COUVEUSE D’ENTREPRISE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/e-couveuz-couveuse-dentreprise-a-marseille-aix-en-provence/",
+    "ft_slug": "e-couveuz-couveuse-dentreprise-a-marseille-aix-en-provence",
+    "domain": "e-couveuz.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Fora Ante",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/fora-ante/",
+    "ft_slug": "fora-ante",
+    "domain": "fora-ante.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BYCIAVATTI",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/byciavatti/",
+    "ft_slug": "byciavatti",
+    "domain": "en construction disponible en juillet",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Incoplex Sud",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/incoplex-sud/",
+    "ft_slug": "incoplex-sud",
+    "domain": "incoplex-sud.inco-group.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Digi-Certif",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/digi-certif/",
+    "ft_slug": "digi-certif",
+    "domain": "digi-certif.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MORGON TECHNOLOGIES",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/morgon-technologies/",
+    "ft_slug": "morgon-technologies",
+    "domain": "morgon.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Keiz.ai",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/keizai/",
+    "ft_slug": "keizai",
+    "domain": "keiz.ai",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NEURALIA SAS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/neuralia-sas/",
+    "ft_slug": "neuralia-sas",
+    "domain": "neuralia.life",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Prixtel",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/prixtel/",
+    "ft_slug": "prixtel",
+    "domain": "prixtel.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "marsdesign x marsdlight",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/marsdesign-x-marsdlight/",
+    "ft_slug": "marsdesign-x-marsdlight",
+    "domain": "marsdlight.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "DEKI",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/deki/",
+    "ft_slug": "deki",
+    "domain": "deki.team",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "KARMA LINE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/karma-line/",
+    "ft_slug": "karma-line",
+    "domain": "karmaline.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ITMARITIME",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/itmaritime/",
+    "ft_slug": "itmaritime",
+    "domain": "itmaritime.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "IADYS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/iadys/",
+    "ft_slug": "iadys",
+    "domain": "iadys.com www.jellyfishbot.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Factory 319",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/factory-319/",
+    "ft_slug": "factory-319",
+    "domain": "factory319.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Conexteo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/conexteo/",
+    "ft_slug": "conexteo",
+    "domain": "conexteo.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Pôle entrepreneurial MIKADO",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mikado-associaiton-du-pole-entrepreneurial/",
+    "ft_slug": "mikado-associaiton-du-pole-entrepreneurial",
+    "domain": "le-mikado-martigues.business.site",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Luna",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/luna/",
+    "ft_slug": "luna",
+    "domain": "lunaforhealth.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "HappyColis",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/happycolis/",
+    "ft_slug": "happycolis",
+    "domain": "happycolis.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "weSociety",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wesociety/",
+    "ft_slug": "wesociety",
+    "domain": "we-post.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "iCollective",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/icollective/",
+    "ft_slug": "icollective",
+    "domain": "icollective.ca",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Looctame",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/looctame/",
+    "ft_slug": "looctame",
+    "domain": "loocatme.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "COLIS PRIVE GROUP",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/colis-prive-group/",
+    "ft_slug": "colis-prive-group",
+    "domain": "en cours de réalisation",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "C4Diagnostics",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/c4diagnostics/",
+    "ft_slug": "c4diagnostics",
+    "domain": "c4diagnostics.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "La Plateforme",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/la-plateforme/",
+    "ft_slug": "la-plateforme",
+    "domain": "laplateforme.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "WI-POOL",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wipool/",
+    "ft_slug": "wipool",
+    "domain": "wi-pool.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Chef basil",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sas-chef-basil/",
+    "ft_slug": "sas-chef-basil",
+    "domain": "basil.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ProHacktive",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/prohacktive/",
+    "ft_slug": "prohacktive",
+    "domain": "prohacktive.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Association Locaux-Motiv’",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/association-locaux-motiv/",
+    "ft_slug": "association-locaux-motiv",
+    "domain": "locaux-motiv.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mycélium",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mycelium/",
+    "ft_slug": "mycelium",
+    "domain": "myceliumrecup.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Bocal Academy",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sarl-bcl-bocal-academy/",
+    "ft_slug": "sarl-bcl-bocal-academy",
+    "domain": "lebocal.academy",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TUITO – Solutions d’interaction par la voix",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/tuito/",
+    "ft_slug": "tuito",
+    "domain": "tuito.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MEDISAIL",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/medisail/",
+    "ft_slug": "medisail",
+    "domain": "medisail.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SAFNEST",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/safnest/",
+    "ft_slug": "safnest",
+    "domain": "safnest.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Heureux Hasard",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/heureux-hasard/",
+    "ft_slug": "heureux-hasard",
+    "domain": "mathlive.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Istya",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/istya/",
+    "ft_slug": "istya",
+    "domain": "istya.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CHARGEPOLY",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/chargepoly/",
+    "ft_slug": "chargepoly",
+    "domain": "chargepoly.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BOBEE Spot",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/bobee-spot/",
+    "ft_slug": "bobee-spot",
+    "domain": "bobeespot.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Périodes for Business",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/periodes-sas/",
+    "ft_slug": "periodes-sas",
+    "domain": "leclubperiodes.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Provence Travel Innovation – CERET",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/provence-travel-innovation-ceret/",
+    "ft_slug": "provence-travel-innovation-ceret",
+    "domain": "provencetravelinnovation.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Snooze",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hellosnooze-sas/",
+    "ft_slug": "hellosnooze-sas",
+    "domain": "hellosnooze.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MESSIBAT International",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/messibat-intrenational/",
+    "ft_slug": "messibat-intrenational",
+    "domain": "messibatinternational.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Comparateur électricité Hopenergie.com",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/comparateur-electricite-hopenergie-com/",
+    "ft_slug": "comparateur-electricite-hopenergie-com",
+    "domain": "hopenergie.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "HYNOVA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hynova/",
+    "ft_slug": "hynova",
+    "domain": "hynova-yachts.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Ma Formation Médicale",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ma-formation-dpc/",
+    "ft_slug": "ma-formation-dpc",
+    "domain": "maformationmedicale.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Greencityzen",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/greencityzen/",
+    "ft_slug": "greencityzen",
+    "domain": "greencityzen.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Keeskee",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/keeskee/",
+    "ft_slug": "keeskee",
+    "domain": "keeskee.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "DAILYWASH",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/dailywash/",
+    "ft_slug": "dailywash",
+    "domain": "dailywash.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Lemon Tri",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/lemon-tri/",
+    "ft_slug": "lemon-tri",
+    "domain": "lemontri.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Garage Comedy",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/garage-comedy/",
+    "ft_slug": "garage-comedy",
+    "domain": "garage-comedy.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PLEZI",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/plezi/",
+    "ft_slug": "plezi",
+    "domain": "plezi.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Repulp Design",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/repulp-design/",
+    "ft_slug": "repulp-design",
+    "domain": "repulp.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Exkee",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/exkee/",
+    "ft_slug": "exkee",
+    "domain": "exkee.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "exolis",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/exolis/",
+    "ft_slug": "exolis",
+    "domain": "exolis.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Devisubox",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/devisubox/",
+    "ft_slug": "devisubox",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Loop Aix-Marseille",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/loop-aix-marseille/",
+    "ft_slug": "loop-aix-marseille",
+    "domain": "loopam.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Epitech",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/epitech/",
+    "ft_slug": "epitech",
+    "domain": "epitech.eu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "T-SCOP",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/t-scop/",
+    "ft_slug": "t-scop",
+    "domain": "t-scop.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Youmoro",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wolfea/",
+    "ft_slug": "wolfea",
+    "domain": "youmoro.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Woozoo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/woozoo/",
+    "ft_slug": "woozoo",
+    "domain": "http:",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "YouandBlockchain",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/youandblockchain/",
+    "ft_slug": "youandblockchain",
+    "domain": "youandblockchain.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Univers-Vacances",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/univers-vacances-2/",
+    "ft_slug": "univers-vacances-2",
+    "domain": "univers-vacances.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "easiware",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/easiware/",
+    "ft_slug": "easiware",
+    "domain": "easiware.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "WIMMOV",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wimmov/",
+    "ft_slug": "wimmov",
+    "domain": "wimmov.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "VIRTUALEXPO",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/virtualexpo/",
+    "ft_slug": "virtualexpo",
+    "domain": "virtual-expo.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Anotherway",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/anotherway/",
+    "ft_slug": "anotherway",
+    "domain": "another-way.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Fydem",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/fintel/",
+    "ft_slug": "fintel",
+    "domain": "fydem.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Blue",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wecleen/",
+    "ft_slug": "wecleen",
+    "domain": "blue.how",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Tysilio Development",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/tysilio-development/",
+    "ft_slug": "tysilio-development",
+    "domain": "tysilio.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MUANCE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/muance-sas/",
+    "ft_slug": "muance-sas",
+    "domain": "muance.construction",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "La Maison Intelligente",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/la-maison-intelligente/",
+    "ft_slug": "la-maison-intelligente",
+    "domain": "lmi05.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "AIRMAAN",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/airmaan/",
+    "ft_slug": "airmaan",
+    "domain": "airmaan.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Virtuallyz",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/virtuallyz/",
+    "ft_slug": "virtuallyz",
+    "domain": "virtuallyz.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BIRDS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/birds/",
+    "ft_slug": "birds",
+    "domain": "birds-company.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Unistellar",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/unistellar/",
+    "ft_slug": "unistellar",
+    "domain": "unistellaroptics.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "WeCare@Work",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/kepler-hr/",
+    "ft_slug": "kepler-hr",
+    "domain": "wecareatwork.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "WeCashUp",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/infinity-space-_-wecashup/",
+    "ft_slug": "infinity-space-_-wecashup",
+    "domain": "wecashup.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Entrepreneurs pour la Planète",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/entrepreneurs-pour-la-planete/",
+    "ft_slug": "entrepreneurs-pour-la-planete",
+    "domain": "entrepreneurspourlaplanete.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "URBIZ",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/urbiz/",
+    "ft_slug": "urbiz",
+    "domain": "ur-biz.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Monte Ma Vidéo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/monte-ma-video/",
+    "ft_slug": "monte-ma-video",
+    "domain": "montemavideo.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SMILZZ",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/smilzz-ostendere/",
+    "ft_slug": "smilzz-ostendere",
+    "domain": "smilzz.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TWINLIFY",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/twinlify/",
+    "ft_slug": "twinlify",
+    "domain": "twinlify.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Plateo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/plateo/",
+    "ft_slug": "plateo",
+    "domain": "plateo.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BRYD",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/bryd/",
+    "ft_slug": "bryd",
+    "domain": "bryd.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Listen Léon",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/listen-leon/",
+    "ft_slug": "listen-leon",
+    "domain": "listenleon.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NepTech",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/neptech/",
+    "ft_slug": "neptech",
+    "domain": "neptech.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "IRCE (Institut Régional des Chefs d’Entreprise)",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/irce-institut-regional-des-chefs-dentreprise/",
+    "ft_slug": "irce-institut-regional-des-chefs-dentreprise",
+    "domain": "irce-paca.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Le Wagon Marseille",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/le-wagon-marseille/",
+    "ft_slug": "le-wagon-marseille",
+    "domain": "lewagon.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "GoTattoo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/inkway/",
+    "ft_slug": "inkway",
+    "domain": "gotattoo.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "My MedicalBox",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/msjr-solutions-sante/",
+    "ft_slug": "msjr-solutions-sante",
+    "domain": "mymedicalbox.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Asgard",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/unicacces-groupe-asgard/",
+    "ft_slug": "unicacces-groupe-asgard",
+    "domain": "asgard-access.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "RINGOVER",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ringover/",
+    "ft_slug": "ringover",
+    "domain": "ringover.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "AGROVE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/agrove/",
+    "ft_slug": "agrove",
+    "domain": "agrove.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Cool Clean Researches & Technologies",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/cool-clean-researches-technologies/",
+    "ft_slug": "cool-clean-researches-technologies",
+    "domain": "ccrtek.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Fil Dream",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/fil-dream/",
+    "ft_slug": "fil-dream",
+    "domain": "fil-dream.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "GREEN CITY ORGANISATION",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/green-city-organisation/",
+    "ft_slug": "green-city-organisation",
+    "domain": "greencityorganisation.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "iCare Sciences",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/icare-sciences/",
+    "ft_slug": "icare-sciences",
+    "domain": "neuralup-solutions.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Tchek",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/tchek/",
+    "ft_slug": "tchek",
+    "domain": "tchek.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Tempo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/tempo-le-temps-dun-coup-de-main/",
+    "ft_slug": "tempo-le-temps-dun-coup-de-main",
+    "domain": "tempoapp.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Now coworking",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/now-coworking/",
+    "ft_slug": "now-coworking",
+    "domain": "now-coworking.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LED’s CHAT",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/leds-chat/",
+    "ft_slug": "leds-chat",
+    "domain": "leds-chat.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CITYWAY",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/cityway/",
+    "ft_slug": "cityway",
+    "domain": "cityway.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LICA – LABORATOIRE D’INTELLIGENCE COLLECTIVE ET ARTIFICIELLE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/lica-laboratoire-dintelligence-collective-et-artificielle/",
+    "ft_slug": "lica-laboratoire-dintelligence-collective-et-artificielle",
+    "domain": "lica-europe.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MARSEILLE INNOVATION",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/marseille-innovation/",
+    "ft_slug": "marseille-innovation",
+    "domain": "marseille-innov.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "QISTA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/qista/",
+    "ft_slug": "qista",
+    "domain": "qista.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SOMEO Solutions",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/someo-solutions/",
+    "ft_slug": "someo-solutions",
+    "domain": "someo.net",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Black Euphoria",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/black-euphoria/",
+    "ft_slug": "black-euphoria",
+    "domain": "black-euphoria.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NANOZ",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nanoz/",
+    "ft_slug": "nanoz",
+    "domain": "nanoz-group.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Bionic Bird",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/xtim/",
+    "ft_slug": "xtim",
+    "domain": "bionicbird.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "airbus",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/airbus/",
+    "ft_slug": "airbus",
+    "domain": "airbus.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CROCOS GO DIGITAL",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/crocos-go-digital/",
+    "ft_slug": "crocos-go-digital",
+    "domain": "crocosgodigital.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Touchify",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/touchify/",
+    "ft_slug": "touchify",
+    "domain": "touchify.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Elleanor de Provence",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/elleanor-de-provence/",
+    "ft_slug": "elleanor-de-provence",
+    "domain": "elleanor-de-provence.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Enedis",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/enedis/",
+    "ft_slug": "enedis",
+    "domain": "enedis.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "TAMBA LABS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/tamba-labs/",
+    "ft_slug": "tamba-labs",
+    "domain": "tamba-labs.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Nivotech",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nivotech/",
+    "ft_slug": "nivotech",
+    "domain": "nivotech.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SATT SUD-EST",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/satt-paca-corse/",
+    "ft_slug": "satt-paca-corse",
+    "domain": "sattse.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "aiway",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/aiway/",
+    "ft_slug": "aiway",
+    "domain": "aiway.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "le Prospecteur",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ma-belle-maison/",
+    "ft_slug": "ma-belle-maison",
+    "domain": "leprospecteur.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Nunki",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/nunki/",
+    "ft_slug": "nunki",
+    "domain": "nunki.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Cooperative intiative jeunes sud",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/cooperative-intiative-jeunes-sud/",
+    "ft_slug": "cooperative-intiative-jeunes-sud",
+    "domain": "no",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ABDE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/abde/",
+    "ft_slug": "abde",
+    "domain": "abdepaca.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "DEV-ID Marseille",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/dev-id/",
+    "ft_slug": "dev-id",
+    "domain": "dev-id.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Pépinières d’entreprises innovantes de Pertuis / Hôtel technologique du Canet de Meyreuil",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/pepinieres-dentreprises-innovantes-de-pertuis/",
+    "ft_slug": "pepinieres-dentreprises-innovantes-de-pertuis",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "StoqueMarket",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/stoquemarket/",
+    "ft_slug": "stoquemarket",
+    "domain": "stoquemarket.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Lextan",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/lextan/",
+    "ft_slug": "lextan",
+    "domain": "lextan.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "INTER-MADE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/inter-made/",
+    "ft_slug": "inter-made",
+    "domain": "inter-made.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "MAILINBLACK",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mailinblack/",
+    "ft_slug": "mailinblack",
+    "domain": "mailinblack.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ENOGIA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/enogia/",
+    "ft_slug": "enogia",
+    "domain": "enogia.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Thecamp",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/le-village-caap-a-thecamp/",
+    "ft_slug": "le-village-caap-a-thecamp",
+    "domain": "thecamp.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LiBiWorks",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/libilab/",
+    "ft_slug": "libilab",
+    "domain": "libiworks.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "GetBack Sports",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sports-armour/",
+    "ft_slug": "sports-armour",
+    "domain": "getback-sports.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ioda consulting",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ioda-consulting/",
+    "ft_slug": "ioda-consulting",
+    "domain": "iodaconsulting.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Charles Richardson",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/charles-richardson/",
+    "ft_slug": "charles-richardson",
+    "domain": "charlesrichardson.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "People In",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/people-in/",
+    "ft_slug": "people-in",
+    "domain": "people-in.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Pépinière d’entreprises innovantes de Meyreuil",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/pepiniere-dentreprises-innovantes-de-meyreuil/",
+    "ft_slug": "pepiniere-dentreprises-innovantes-de-meyreuil",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "EUROBIOMED",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/eurobiomed/",
+    "ft_slug": "eurobiomed",
+    "domain": "eurobiomed.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Soft Mobility Company",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/soft-mobility-company/",
+    "ft_slug": "soft-mobility-company",
+    "domain": "softmobilitycompany.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "i wantit",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/i-wantit/",
+    "ft_slug": "i-wantit",
+    "domain": "i-wantit.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "LE CARBURATEUR",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/le-carburateur/",
+    "ft_slug": "le-carburateur",
+    "domain": "le-carburateur.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "DBSQWARE",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/dbsqware/",
+    "ft_slug": "dbsqware",
+    "domain": "dbsqware.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ENTENT",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/entent/",
+    "ft_slug": "entent",
+    "domain": "entent.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Vanilla Milk",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/maelittleone/",
+    "ft_slug": "maelittleone",
+    "domain": "vanillamilk.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Beforgo.com",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/beforgo-com/",
+    "ft_slug": "beforgo-com",
+    "domain": "beforgo.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ZEBOX",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/zebox/",
+    "ft_slug": "zebox",
+    "domain": "ze-box.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Travaux.Com",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/travaux-com/",
+    "ft_slug": "travaux-com",
+    "domain": null,
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "GOJOB",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/gojob/",
+    "ft_slug": "gojob",
+    "domain": "gojob.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SAS AltGr",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sas-altgr/",
+    "ft_slug": "sas-altgr",
+    "domain": "alt-gr.tech",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CAPENERGIES",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/capenergies/",
+    "ft_slug": "capenergies",
+    "domain": "capenergies.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PHARM’AGING",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/pharmaging/",
+    "ft_slug": "pharmaging",
+    "domain": "pharmaging.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "DataSolutions / RetailExplorer",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/datasolutions-retailexplorer/",
+    "ft_slug": "datasolutions-retailexplorer",
+    "domain": "data-solutions.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BIOTECH DENTAL",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/biotech-dental/",
+    "ft_slug": "biotech-dental",
+    "domain": "biotech-dental.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "FRENCH-ICO Ξ",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/french-ico-com/",
+    "ft_slug": "french-ico-com",
+    "domain": "french-ico.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "BuyCo",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/buyco/",
+    "ft_slug": "buyco",
+    "domain": "buyco.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "CARBOOKR",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/carbookr/",
+    "ft_slug": "carbookr",
+    "domain": "carbookr.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ArtSci Education Creative",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/artsci-education-creative/",
+    "ft_slug": "artsci-education-creative",
+    "domain": "artsci.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ULYSS.CO",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ulyss-co/",
+    "ft_slug": "ulyss-co",
+    "domain": "ulyss.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "NOVADEM",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/novadem/",
+    "ft_slug": "novadem",
+    "domain": "novadem.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Accelerateur M",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/accelerateur-m/",
+    "ft_slug": "accelerateur-m",
+    "domain": "accelerateurm.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "INTUITISOFT",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/intuitisoft/",
+    "ft_slug": "intuitisoft",
+    "domain": "intuitisoft.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Customer-Labs",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/customer-labs/",
+    "ft_slug": "customer-labs",
+    "domain": "customer-labs.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "EA ECO ENTREPRISES",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ea-eco-entreprises/",
+    "ft_slug": "ea-eco-entreprises",
+    "domain": "ea-ecoentreprises.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "WAITER",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/waiter/",
+    "ft_slug": "waiter",
+    "domain": "waiter.love",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "xRapid France",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/xrapid-france/",
+    "ft_slug": "xrapid-france",
+    "domain": "xrapid-group.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ERYLON",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/erylon/",
+    "ft_slug": "erylon",
+    "domain": "erylon.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Coq-trotteur",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/feelcity/",
+    "ft_slug": "feelcity",
+    "domain": "feelcity.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "AIOLIV",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/aioliv/",
+    "ft_slug": "aioliv",
+    "domain": "aioliv.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Geo Sentinel",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/geo-sentinel/",
+    "ft_slug": "geo-sentinel",
+    "domain": "geo-sentinel.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "PBFI",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/pbfi/",
+    "ft_slug": "pbfi",
+    "domain": "pbfi.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "HySiLabs",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/hysilabs/",
+    "ft_slug": "hysilabs",
+    "domain": "hysilabs.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ISOWAT Provence",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/isowat-provence/",
+    "ft_slug": "isowat-provence",
+    "domain": "isowat.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Kinathera",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/balmes-transplantation/",
+    "ft_slug": "balmes-transplantation",
+    "domain": "kinathera.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "POPUP House",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/popup-house/",
+    "ft_slug": "popup-house",
+    "domain": "popup-house.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "OMBREA",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/ombrea/",
+    "ft_slug": "ombrea",
+    "domain": "ombrea.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Perspective[S]",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/perspectives/",
+    "ft_slug": "perspectives",
+    "domain": "perspective-s.org",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "l’Aleph",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/laleph/",
+    "ft_slug": "laleph",
+    "domain": "laleph.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SELL&SIGN by Calinda Software",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sellsign-by-calinda-software/",
+    "ft_slug": "sellsign-by-calinda-software",
+    "domain": "sellandsign.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SP3H",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/sp3h/",
+    "ft_slug": "sp3h",
+    "domain": "sp3h.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ALUMNI BUSINESS ANGELS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/alumni-business-angels/",
+    "ft_slug": "alumni-business-angels",
+    "domain": "alumni-ba.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ICIA Technologies",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/icia-technologies/",
+    "ft_slug": "icia-technologies",
+    "domain": "ic-ia.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Re-SenS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/re-sens/",
+    "ft_slug": "re-sens",
+    "domain": "re-sens.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Transpare",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/transpare/",
+    "ft_slug": "transpare",
+    "domain": "transpare.eu",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mao boa",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mao-boa/",
+    "ft_slug": "mao-boa",
+    "domain": "maoboa.co",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Telaquaa",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/telaquaa/",
+    "ft_slug": "telaquaa",
+    "domain": "telaqua.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Mon Emile",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/mon-emile/",
+    "ft_slug": "mon-emile",
+    "domain": "monemile.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Aix Marseille Université",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/aix-marseille-universite/",
+    "ft_slug": "aix-marseille-universite",
+    "domain": "univ-amu.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Tedorthopedics",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/smartr/",
+    "ft_slug": "smartr",
+    "domain": "tedorthopedics.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Caravan Cowork In Aix-en-Provence",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/caravan-cowork-in-aix-en-provence/",
+    "ft_slug": "caravan-cowork-in-aix-en-provence",
+    "domain": "caravancowork.in",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "ALTO Solution",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/alto-solution/",
+    "ft_slug": "alto-solution",
+    "domain": "alto-solution.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "OBRATORI, L’OCCITANE Innovation Lab",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/obratori-loccitane-innovation-lab/",
+    "ft_slug": "obratori-loccitane-innovation-lab",
+    "domain": "obratori.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Jackfund",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/robeli/",
+    "ft_slug": "robeli",
+    "domain": "jack-fund.com",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "SmartEmbed",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/samartembed-sas/",
+    "ft_slug": "samartembed-sas",
+    "domain": "smartembed.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "P.Factory",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/p-factory/",
+    "ft_slug": "p-factory",
+    "domain": "pfactory.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "WINTUAL",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/wintual/",
+    "ft_slug": "wintual",
+    "domain": "wintual.fr",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Imparato",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/dacotha-sas/",
+    "ft_slug": "dacotha-sas",
+    "domain": "imparato.io",
+    "source": "frenchtech-aix-marseille"
+  },
+  {
+    "name": "Pole SCS",
+    "ft_page": "https://lafrenchtech-aixmarseille.fr/annuaire/pole-scs/",
+    "ft_slug": "pole-scs",
+    "domain": "pole-scs.org",
+    "source": "frenchtech-aix-marseille"
+  }
+]

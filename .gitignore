@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Job board — regenerable artefacts (kept OUT of git; CI rebuilds them)
+jobboard/data/cache/
+jobboard/data/wttj_paca.raw.json
+jobboard/jobs.json
+jobboard/jobs.csv
+jobboard/jobs.paca.json
+jobboard/jobs.paca.csv
+jobboard/data/ats_jobs.csv
+
+# Nested project with its own repo — not part of this one
+sonarfeed/

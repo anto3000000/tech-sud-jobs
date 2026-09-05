@@ -1,0 +1,67 @@
+name: Job board — refresh & deploy
+
+on:
+  schedule:
+    - cron: "17 5 * * *"      # ~07:17 Europe/Paris (summer) / 06:17 (winter), daily
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "jobboard/**"
+      - ".github/workflows/jobboard.yml"
+
+permissions:
+  contents: write     # commit the refreshed feed back
+  pages: write        # deploy to GitHub Pages
+  id-token: write
+
+concurrency:
+  group: jobboard
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache WTTJ detail responses
+        uses: actions/cache@v4
+        with:
+          path: jobboard/data/cache
+          key: wttj-cache-${{ github.run_id }}
+          restore-keys: |
+            wttj-cache-
+
+      - name: Run pipeline
+        run: ./jobboard/pipeline.sh
+
+      - name: Commit refreshed feed
+        run: |
+          git config user.name  "jobboard-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add jobboard/data/jobs.json jobboard/data/seen.json \
+                  jobboard/data/wttj_paca.json jobboard/data/ats_jobs.json \
+                  jobboard/site/jobs.json
+          if git diff --cached --quiet; then
+            echo "feed unchanged"
+          else
+            git commit -m "chore(jobboard): refresh feed $(date -u +%FT%TZ) [skip ci]"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: jobboard/site
+
+      - id: deploy
+        uses: actions/deploy-pages@v4
