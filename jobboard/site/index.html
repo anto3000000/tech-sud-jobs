@@ -58,11 +58,8 @@
     border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);border-radius:999px;
     padding:5px 10px;letter-spacing:.02em;white-space:nowrap}
   header h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:21px;line-height:1.35;
-    margin:18px 0 0;max-width:46ch;letter-spacing:-.01em;text-wrap:balance}
+    margin:18px 0 6px;max-width:46ch;letter-spacing:-.01em;text-wrap:balance}
   header h1 em{font-style:normal;color:var(--brand-ink)}
-  .stats{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0 2px;
-    font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted)}
-  .stats b{color:var(--ink);font-weight:600}
 
   .controls{position:sticky;top:0;z-index:8;margin:0 -20px;padding:12px 20px 14px;
     background:var(--iris), color-mix(in srgb,var(--bg) 94%,transparent);
@@ -72,6 +69,7 @@
   .row + .row{margin-top:10px}
 
   .search{display:flex;gap:10px;align-items:stretch}
+  .search + .geo{margin-top:7px}
   .search .box{flex:1;display:flex;align-items:center;gap:10px;min-width:0;
     background:var(--card);border:1.5px solid var(--line);border-radius:13px;padding:0 15px;
     box-shadow:var(--shadow)}
@@ -101,8 +99,10 @@
     border:1px solid var(--line);border-radius:9px;padding:7px 12px;cursor:pointer}
   select:focus{border-color:var(--brand);outline:none}
 
-  .count{margin:20px 0 10px;font-family:"IBM Plex Mono",monospace;color:var(--muted);font-size:12.5px}
+  .countbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0 10px}
+  .count{font-family:"IBM Plex Mono",monospace;color:var(--muted);font-size:12.5px}
   .count b{color:var(--ink)}
+  .countbar select{font-size:12.5px;padding:6px 10px}
   ul{list-style:none;margin:0;padding:0}
   li.job{background:var(--card);border:1px solid var(--line);border-radius:14px;
     padding:16px 18px;margin-bottom:12px;transition:border-color .12s ease,transform .12s ease}
@@ -170,7 +170,6 @@
       <span class="rb">RÉGION · PACA</span>
     </div>
     <h1>Les offres <em>dev, data, produit &amp; design</em> des boîtes tech du sud. De Marseille à Sophia-Antipolis, sans passer par Paris.</h1>
-    <div class="stats" id="stats"></div>
   </header>
 
   <div class="controls">
@@ -186,7 +185,6 @@
     </form>
     <div class="row geo" id="geo"></div>
     <div class="row" id="cats">
-      <span class="chip" data-all="1" aria-pressed="true">Tout</span>
       <span class="chip" data-new="1" aria-pressed="false">✨ Nouvelles</span>
       <span class="chip" data-cat="eng" aria-pressed="false">Dev / Infra</span>
       <span class="chip" data-cat="data" aria-pressed="false">Data / IA</span>
@@ -196,14 +194,16 @@
       <span class="chip" data-remote="1" aria-pressed="false">Télétravail</span>
       <select id="stackSel"><option value="">Toute techno</option></select>
       <select id="contract"><option value="">Tous contrats</option></select>
-      <select id="sort">
-        <option value="date">Plus récentes</option>
-        <option value="company">Par entreprise</option>
-      </select>
     </div>
   </div>
 
-  <div class="count" id="count"></div>
+  <div class="countbar">
+    <span class="count" id="count"></span>
+    <select id="sort">
+      <option value="date">Plus récentes</option>
+      <option value="company">Par entreprise</option>
+    </select>
+  </div>
   <ul id="list"></ul>
   <div class="load" id="load">Chargement des offres…</div>
   <div class="empty" id="empty" hidden>Aucune offre ne correspond à ces filtres.</div>
@@ -302,8 +302,7 @@ function apply(){
 function syncCats(){
   for(const chip of $("#cats").querySelectorAll(".chip")){
     let on;
-    if(chip.dataset.all) on = state.cats.size===0 && !state.onlyNew && !state.remote;
-    else if(chip.dataset.remote) on = state.remote;
+    if(chip.dataset.remote) on = state.remote;
     else if(chip.dataset.new) on = state.onlyNew;
     else on = state.cats.has(chip.dataset.cat);
     chip.setAttribute("aria-pressed", String(on));
@@ -315,13 +314,13 @@ function buildGeo(){
   for(const j of JOBS){ const c = j.city; if(c && c!=="Remote") cnt[c] = (cnt[c]||0)+1; }
   const top = Object.entries(cnt).sort((a,b)=>b[1]-a[1]).slice(0,8);
   const geo = $("#geo");
-  geo.innerHTML =
-    `<span class="chip" data-city="" aria-pressed="true">Toute la région<span class="n">${JOBS.length}</span></span>` +
-    top.map(([c,n])=>`<span class="chip" data-city="${esc(c)}" aria-pressed="false">${esc(c)}<span class="n">${n}</span></span>`).join("");
+  geo.innerHTML = top.map(([c,n])=>
+    `<span class="chip" data-city="${esc(c)}" aria-pressed="false">${esc(c)}<span class="n">${n}</span></span>`).join("");
   geo.addEventListener("click", e=>{
     const chip = e.target.closest(".chip"); if(!chip) return;
-    state.city = chip.dataset.city || "";
-    for(const c of geo.children) c.setAttribute("aria-pressed", String(c===chip));
+    const already = chip.getAttribute("aria-pressed")==="true";
+    state.city = already ? "" : (chip.dataset.city || "");
+    for(const c of geo.children) c.setAttribute("aria-pressed", String(c===chip && !already));
     apply();
   });
 }
@@ -347,13 +346,10 @@ function initFilters(){
   $("#sort").addEventListener("change", e=>{ state.sort=e.target.value; apply(); });
   $("#cats").addEventListener("click", e=>{
     const chip = e.target.closest(".chip"); if(!chip) return;
-    if(chip.dataset.all){ state.cats.clear(); state.onlyNew=false; state.remote=false; }
-    else {
-      const on = chip.getAttribute("aria-pressed")==="true";
-      if(chip.dataset.remote) state.remote = !on;
-      else if(chip.dataset.new) state.onlyNew = !on;
-      else { const c=chip.dataset.cat; on?state.cats.delete(c):state.cats.add(c); }
-    }
+    const on = chip.getAttribute("aria-pressed")==="true";
+    if(chip.dataset.remote) state.remote = !on;
+    else if(chip.dataset.new) state.onlyNew = !on;
+    else { const c=chip.dataset.cat; on?state.cats.delete(c):state.cats.add(c); }
     syncCats();
     apply();
   });
@@ -363,16 +359,9 @@ function initFilters(){
 fetch("jobs.json",{cache:"no-store"}).then(r=>r.json()).then(feed=>{
   JOBS = feed.jobs||[];
   $("#load").hidden = true;
-  const bc = feed.by_category||{};
-  const stacked = JOBS.filter(j=>j.stack&&j.stack.length).length;
-  $("#stats").innerHTML =
-    `<span><b>${feed.count}</b> offres</span>`+
-    `<span><b>${feed.companies}</b> entreprises</span>`+
-    `<span><b>${bc.eng||0}</b> dev · <b>${bc.data||0}</b> data · <b>${bc.product||0}</b> product · <b>${bc.design||0}</b> design</span>`+
-    (feed.new_count?`<span><b>${feed.new_count}</b> nouvelles</span>`:"")+
-    `<span>maj ${relDate(feed.generated_at)}</span>`;
   const d = new Date(feed.generated_at);
-  $("#foot").innerHTML = `Données agrégées le ${isNaN(d)?feed.generated_at:d.toLocaleDateString("fr-FR")} · `+
+  $("#foot").innerHTML = `${feed.count} offres · ${feed.companies} entreprises · `+
+    `màj ${relDate(feed.generated_at)} · `+
     `sources : Welcome to the Jungle + ATS (Ashby, Lever, SmartRecruiters, Taleez, Recruitee, Workable)`;
   initFilters();
   apply();
