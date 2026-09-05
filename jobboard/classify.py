@@ -162,6 +162,13 @@ def classify(title, profession=None, sector=None, stack=None):
     if prof in ("ui design", "ux design", "ux/ui design", "product design"):
         return "design"
 
+    # "business developer" / "business development" / "biz dev" / BDR is a
+    # sales role, not engineering — kill it even though "developer" / "developp"
+    # matches the eng net
+    if re.search(r"\bbusiness\s+develop\w*|\bbiz\s*dev\b|\bbusiness\s+dev\b|"
+                 r"\bbdr\b|\bbusiness development (manager|representative|rep)\b", t):
+        return None
+
     # recruiter / sourcer roles are people-ops, never eng/data even when the
     # copy is stuffed with "AI" / "engineering"
     if re.search(r"\b(recruit(er|eur|euse)|sourcer|talent acquisition|"
@@ -210,6 +217,8 @@ if __name__ == "__main__":
         "Ingénieur Développement Simulations", "Alternance Développeur Web",
         "Consultant SAP", "Technicien de maintenance industrielle",
         "Business Analyst", "Lead Tech", "Scrum Master", "SRE",
+        "Business Developer", "Business Developer Software", "Biz Dev",
+        "Business Development Manager",
         "Ingénieur systèmes embarqués", "Directeur Commercial",
     ]
     for t in (sys.argv[1:] or tests):

@@ -86,8 +86,13 @@ def load_wttj():
     rows = json.load(open(p, encoding="utf-8"))
     for r in rows:
         r.setdefault("source", "wttj")
+        fresh = classify(r.get("title"), r.get("profession"), stack=r.get("stack"))
         if not r.get("category"):
-            r["category"] = classify(r.get("title"), r.get("profession"))
+            r["category"] = fresh
+        elif fresh is None:
+            # pre-tagged row whose title is now explicitly excluded by the
+            # classifier (e.g. "Business Developer" — a sales role) -> drop it
+            r["category"] = None
     return rows
 
 
