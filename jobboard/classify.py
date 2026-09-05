@@ -39,6 +39,7 @@ _RULES = [
         r"intelligence artificielle", r"\bnlp\b", r"computer vision", r"\bllm\b", r"\bgenai\b",
         r"\bbi\b", r"business intelligence", r"analytics", r"\betl\b", r"dbt\b",
         r"\bbig ?data\b", r"data ?viz", r"statisticien", r"\bdatawarehouse\b",
+        r"business analyst", r"business analyste",
     ]),
     ("product", [
         r"product manager", r"product owner", r"\bpo\b", r"\bpm\b(?![a-z])",
@@ -93,7 +94,7 @@ _RULES = [
         r"customer success (engineer|manager)", r"implementation (specialist|consultant)",
         r"consultant (si|erp|sap|salesforce|crm|bi|data|cloud|cyber|it|technique|"
         r"fonctionnel|digital|dynamics|informatique)",
-        r"business analyst", r"\bmoa\b", r"\bmoe\b", r"assistance maitrise",
+        r"\bmoa\b", r"\bmoe\b", r"assistance maitrise",
         r"chef(fe)? de projet (si\b|it\b|informatique|digital|web|technique|erp|data|"
         r"applicatif|infrastructure|numerique|mobile|logiciel|software|cyber|cloud|"
         r"deploiement|integration|test)",
@@ -184,6 +185,11 @@ def classify(title, profession=None, sector=None, stack=None):
                 return bucket
         return None
 
+    # "Business Analyst / Product Owner" hybrid -> the product half wins
+    # (plain "business analyst" is data, see the data bucket)
+    if re.search(r"business analyst", t) and re.search(r"product (owner|manager)", t):
+        return "product"
+
     for bucket, pats in _COMPILED:
         if any(p.search(blob) for p in pats):
             return bucket
@@ -218,7 +224,8 @@ if __name__ == "__main__":
         "Consultant SAP", "Technicien de maintenance industrielle",
         "Business Analyst", "Lead Tech", "Scrum Master", "SRE",
         "Business Developer", "Business Developer Software", "Biz Dev",
-        "Business Development Manager",
+        "Business Development Manager", "Business Analyst", "Business Analyst SAP",
+        "Business Analyst / Product Owner",
         "Ingénieur systèmes embarqués", "Directeur Commercial",
     ]
     for t in (sys.argv[1:] or tests):
