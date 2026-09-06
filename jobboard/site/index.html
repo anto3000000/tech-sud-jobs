@@ -312,7 +312,8 @@ function apply(){
     if(state.contracts.size && !state.contracts.has(j.contract||"")) return false;
     if(state.remote){
       const r = norm([j.remote_detail,j.remote].join(" "));
-      if(!/remote|hybride|t.l.travail|ponctuel/.test(r)) return false;
+      if(/ponctuel/.test(r)) return false;
+      if(!/remote|hybride|t.l.travail/.test(r)) return false;
     }
     if(q.length){ const h = haystack(j); if(!q.every(w=>h.includes(w))) return false; }
     return true;
@@ -329,6 +330,7 @@ function apply(){
     const cat = j.category||"";
     let rem = j.remote_detail || (j.remote && !/sur site/i.test(j.remote) ? j.remote : "");
     if(rem === "remote") rem = "full remote";
+    if(/ponctuel/i.test(rem)) rem = "";
     const exp = j.experience ? (/ans/.test(j.experience) ? `${j.experience} d'expérience` : j.experience) : "";
     const logo = j.logo
       ? `<img class="logo" loading="lazy" src="${esc(j.logo)}" alt="">`
