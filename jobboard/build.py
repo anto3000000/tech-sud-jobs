@@ -218,6 +218,15 @@ def main():
     # keep core + adjacent; expose the split to the UI via `category`
     merged = [m for m in merged if m.get("category")]
 
+    # CI guard: if a source API silently changes shape we can end up with an
+    # almost-empty feed. Fail loudly instead of deploying it. Override locally
+    # with ALLOW_SMALL_FEED=1 (e.g. when testing on a partial dataset).
+    min_jobs = int(os.environ.get("MIN_JOBS", "150"))
+    if len(merged) < min_jobs and not os.environ.get("ALLOW_SMALL_FEED"):
+        sys.exit("ERROR: only %d jobs after merge (< %d) — refusing to write a "
+                 "near-empty feed. Set ALLOW_SMALL_FEED=1 to override."
+                 % (len(merged), min_jobs))
+
     now_iso = datetime.now(timezone.utc).isoformat(timespec="seconds")
     seen = stamp_first_seen(merged, now_iso)
     merged.sort(key=lambda j: (j.get("first_seen") or "", j.get("published_at") or ""),

@@ -21,6 +21,10 @@ echo "::group::merge + build feed"
 python3 jobboard/build.py
 echo "::endgroup::"
 
+echo "::group::render static SEO pages (layer 5)"
+python3 jobboard/render_pages.py
+echo "::endgroup::"
+
 # Layers not in the daily path (slow, rarely change) — run by hand when needed:
 #   python3 jobboard/annuaire/frenchtech_amp.py     # refresh company directory
 #   python3 jobboard/resolve.py                     # re-detect ATS per company

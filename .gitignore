@@ -7,6 +7,13 @@ __pycache__/
 .venv/
 venv/
 
+# Job board — static SEO pages (regenerated every run by render_pages.py,
+# deployed straight from the Pages artifact — not tracked)
+jobboard/site/offre/
+jobboard/site/emploi/
+jobboard/site/sitemap.xml
+jobboard/site/robots.txt
+
 # Job board — regenerable artefacts (kept OUT of git; CI rebuilds them)
 jobboard/data/cache/
 jobboard/data/wttj_paca.raw.json
