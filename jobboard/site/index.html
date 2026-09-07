@@ -172,6 +172,13 @@
     border:1px solid color-mix(in srgb,var(--accent) 42%,transparent);border-radius:8px;padding:5px 10px}
   .apply:hover{text-decoration:none;background:color-mix(in srgb,var(--accent) 26%,transparent)}
   .empty{text-align:center;color:var(--muted);padding:60px 0}
+  .pager{display:flex;gap:6px;justify-content:center;align-items:center;flex-wrap:wrap;margin:26px 0 0}
+  .pager .pg{min-width:36px;height:36px;padding:0 10px;border:1px solid var(--line);background:var(--card);
+    color:var(--ink);border-radius:9px;font:inherit;font-size:13px;font-weight:500;cursor:pointer}
+  .pager .pg:hover:not(:disabled):not(.on){border-color:var(--brand);color:var(--brand-ink)}
+  .pager .pg.on{background:var(--accent);color:var(--on-accent);border-color:var(--accent);font-weight:700}
+  .pager .pg:disabled{opacity:.4;cursor:not-allowed}
+  .pager .gap{color:var(--muted);padding:0 2px}
   footer{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);
     color:var(--muted);font-size:12px;text-align:center;line-height:1.7}
   .load{padding:60px 0;text-align:center;color:var(--muted)}
@@ -249,6 +256,13 @@
         <summary>Tous contrats</summary>
         <div class="panel"><div class="opts"></div></div>
       </details>
+      <details class="multi" id="mExp">
+        <summary>Expérience</summary>
+        <div class="panel">
+          <input type="search" data-filter placeholder="filtrer…" autocomplete="off">
+          <div class="opts"></div>
+        </div>
+      </details>
     </div>
   </div>
 
@@ -260,6 +274,7 @@
     </select>
   </div>
   <ul id="list"></ul>
+  <nav class="pager" id="pager" aria-label="Pagination" hidden></nav>
   <div class="load" id="load">Chargement des offres…</div>
   <div class="empty" id="empty" hidden>Aucune offre ne correspond à ces filtres.</div>
 
@@ -268,7 +283,8 @@
 
 <script>
 const state = {q:"", sort:"date", cats:new Set(), cities:new Set(), stacks:new Set(),
-  contracts:new Set(), remote:false, onlyNew:false};
+  contracts:new Set(), exps:new Set(), remote:false, onlyNew:false, page:1};
+const PER_PAGE = 20;
 let JOBS = [];
 const $ = s => document.querySelector(s);
 const norm = s => (s||"").toString().normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
@@ -296,7 +312,8 @@ function haystack(j){
     (j.stack||[]).join(" "),j.description_excerpt,j.profile_excerpt].join(" "));
 }
 
-function apply(){
+function apply(opts){
+  if(!(opts && opts.keepPage)) state.page = 1;
   const q = norm(state.q).split(/\s+/).filter(Boolean);
   let rows = JOBS.filter(j=>{
     if(state.onlyNew && !j.is_new) return false;
@@ -310,6 +327,7 @@ function apply(){
       if(![...state.stacks].some(s=>js.includes(norm(s)))) return false;
     }
     if(state.contracts.size && !state.contracts.has(j.contract||"")) return false;
+    if(state.exps.size && !state.exps.has(j.experience||"")) return false;
     if(state.remote){
       const r = norm([j.remote_detail,j.remote].join(" "));
       if(/ponctuel/.test(r)) return false;
@@ -322,10 +340,17 @@ function apply(){
     ? (a,b)=> (a.company||"").localeCompare(b.company||"") || (b.published_at||"").localeCompare(a.published_at||"")
     : (a,b)=> (b.published_at||"").localeCompare(a.published_at||""));
 
-  $("#count").textContent = `${rows.length} offre${rows.length>1?"s":""}`;
+  const pages = Math.max(1, Math.ceil(rows.length / PER_PAGE));
+  if(state.page > pages) state.page = pages;
+  const start = (state.page - 1) * PER_PAGE;
+  const pageRows = rows.slice(start, start + PER_PAGE);
+
+  $("#count").textContent = rows.length
+    ? `${rows.length} offre${rows.length>1?"s":""}` + (pages>1 ? ` · page ${state.page}/${pages}` : "")
+    : "0 offre";
   $("#empty").hidden = rows.length>0;
   const frag = document.createDocumentFragment();
-  for(const j of rows.slice(0,500)){
+  for(const j of pageRows){
     const li = document.createElement("li"); li.className = "job";
     const cat = j.category||"";
     let rem = j.remote_detail || (j.remote && !/sur site/i.test(j.remote) ? j.remote : "");
@@ -360,6 +385,25 @@ function apply(){
     frag.appendChild(li);
   }
   const list = $("#list"); list.innerHTML = ""; list.appendChild(frag);
+  renderPager(pages);
+}
+
+function renderPager(pages){
+  const el = $("#pager");
+  if(pages <= 1){ el.hidden = true; el.innerHTML = ""; return; }
+  el.hidden = false;
+  const p = state.page;
+  const show = [...new Set([1, 2, p-1, p, p+1, pages-1, pages])]
+    .filter(n => n >= 1 && n <= pages).sort((a,b)=>a-b);
+  let html = `<button class="pg" data-goto="${p-1}"${p===1?" disabled":""} aria-label="Page précédente">←</button>`;
+  let prev = 0;
+  for(const n of show){
+    if(n - prev > 1) html += `<span class="gap">…</span>`;
+    html += `<button class="pg${n===p?" on":""}" data-goto="${n}"${n===p?' aria-current="page"':""}>${n}</button>`;
+    prev = n;
+  }
+  html += `<button class="pg" data-goto="${p+1}"${p===pages?" disabled":""} aria-label="Page suivante">→</button>`;
+  el.innerHTML = html;
 }
 
 function syncCats(){
@@ -418,6 +462,20 @@ function initFilters(){
   makeMulti("#mContract",
     Object.entries(cc).sort((a,b)=>b[1]-a[1]),
     state.contracts, "Tous contrats");
+
+  const xp = {};
+  for(const j of JOBS) if(j.experience) xp[j.experience] = (xp[j.experience]||0)+1;
+  const xpRank = s => /d.butant|<\s*1/i.test(s) ? 0 : (s.match(/\d+/) ? +s.match(/\d+/)[0] : 99);
+  makeMulti("#mExp",
+    Object.entries(xp).filter(([,n])=>n>=2).sort((a,b)=>xpRank(a[0])-xpRank(b[0])),
+    state.exps, "Expérience");
+
+  $("#pager").addEventListener("click", e=>{
+    const b = e.target.closest("button[data-goto]"); if(!b || b.disabled) return;
+    state.page = +b.dataset.goto;
+    apply({keepPage:true});
+    $("#list").scrollIntoView({behavior:"smooth", block:"start"});
+  });
 
   $("#q").addEventListener("input", e=>{ state.q=e.target.value; apply(); });
   $("#searchForm").addEventListener("submit", e=>{
