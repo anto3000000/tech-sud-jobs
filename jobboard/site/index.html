@@ -247,11 +247,10 @@
     </form>
     <div class="row" id="cats">
       <span class="chip" data-new="1" aria-pressed="false">✨ Nouvelles</span>
-      <span class="chip" data-cat="eng" aria-pressed="false">Dev / Infra</span>
-      <span class="chip" data-cat="data" aria-pressed="false">Data / IA</span>
-      <span class="chip" data-cat="product" aria-pressed="false">Product</span>
-      <span class="chip" data-cat="design" aria-pressed="false">Design</span>
-      <span class="chip" data-cat="tech-adjacent" aria-pressed="false">IT &amp; autres</span>
+      <details class="multi" id="mCat">
+        <summary>Métier</summary>
+        <div class="panel"><div class="opts"></div></div>
+      </details>
       <span class="chip" data-remote="1" aria-pressed="false">Télétravail</span>
       <details class="multi" id="mTech">
         <summary>Toute techno</summary>
@@ -428,10 +427,7 @@ function renderPager(pages){
 
 function syncCats(){
   for(const chip of $("#cats").querySelectorAll(".chip")){
-    let on;
-    if(chip.dataset.remote) on = state.remote;
-    else if(chip.dataset.new) on = state.onlyNew;
-    else on = state.cats.has(chip.dataset.cat);
+    const on = chip.dataset.remote ? state.remote : state.onlyNew;
     chip.setAttribute("aria-pressed", String(on));
   }
 }
@@ -449,10 +445,11 @@ function makeMulti(sel, entries, selected, allLabel){
   const summary = root.querySelector("summary");
   const box = root.querySelector(".opts");
   const filter = root.querySelector("[data-filter]");
-  box.innerHTML = entries.map(([v,n])=>
-    `<label><input type="checkbox" value="${esc(v)}">${esc(v)}${n!=null?`<i>${n}</i>`:""}</label>`).join("");
+  const labelOf = new Map(entries.map(([v,,l])=>[v, l!=null?l:v]));
+  box.innerHTML = entries.map(([v,n,l])=>
+    `<label><input type="checkbox" value="${esc(v)}">${esc(l!=null?l:v)}${n!=null?`<i>${n}</i>`:""}</label>`).join("");
   const sync = ()=>{
-    const a = [...selected];
+    const a = [...selected].map(v=>labelOf.get(v)||v);
     summary.textContent = !a.length ? allLabel : a.length===1 ? a[0] : `${a[0]} +${a.length-1}`;
     summary.classList.toggle("on", a.length>0);
   };
@@ -470,6 +467,15 @@ function makeMulti(sel, entries, selected, allLabel){
 
 function initFilters(){
   buildCityFilter();
+
+  const CAT_LABELS = {eng:"Dev / Infra", data:"Data / IA", product:"Product",
+    design:"Design", "tech-adjacent":"IT & autres"};
+  const catCnt = {};
+  for(const j of JOBS) if(j.category) catCnt[j.category] = (catCnt[j.category]||0)+1;
+  makeMulti("#mCat",
+    ["eng","data","product","design","tech-adjacent"]
+      .filter(k=>catCnt[k]).map(k=>[k, catCnt[k], CAT_LABELS[k]]),
+    state.cats, "Métier");
 
   const tools = {};
   for(const j of JOBS) for(const s of (j.stack||[])) tools[s]=(tools[s]||0)+1;
@@ -508,7 +514,6 @@ function initFilters(){
     const on = chip.getAttribute("aria-pressed")==="true";
     if(chip.dataset.remote) state.remote = !on;
     else if(chip.dataset.new) state.onlyNew = !on;
-    else { const c=chip.dataset.cat; on?state.cats.delete(c):state.cats.add(c); }
     syncCats();
     apply();
   });
