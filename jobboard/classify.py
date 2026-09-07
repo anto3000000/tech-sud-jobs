@@ -170,6 +170,25 @@ def classify(title, profession=None, sector=None, stack=None):
                  r"\bbdr\b|\bbusiness development (manager|representative|rep)\b", t):
         return None
 
+    # French "développement" trips the eng net: "chargé de développement
+    # commercial / RH / foncier / stratégique…" are sales / HR / real-estate
+    # roles, not software. Kill them unless the title also names a real tech
+    # object (logiciel, produit, web, API, data…).
+    _dev_tech = re.compile(r"logiciel|software|produit|web|mobile|application|"
+                           r"back ?end|front ?end|full ?stack|\bapi\b|plateforme|"
+                           r"\bdata\b|informatique|numerique|\br ?& ?d\b|\brd\b|"
+                           r"embarque|firmware|\bsi\b")
+    if re.search(r"developp?ement\s+(commercial|rh\b|des ventes|de la clientele|"
+                 r"foncier|immobilier|de portefeuille|des affaires|international|"
+                 r"partenariat|strateg|durable|economique|territor|local|rural|"
+                 r"des ressources humaines|de l.?activite|reseau)", t) \
+            and not _dev_tech.search(t):
+        return None
+    if re.search(r"\b(charge[e]?|responsable|assistant[e]?|adjoint[e]?|directeur|"
+                 r"directrice|manager|conseiller[e]?)\b.{0,25}\bde\s+developp?ement\b", t) \
+            and not _dev_tech.search(t):
+        return None
+
     # recruiter / sourcer roles are people-ops, never eng/data even when the
     # copy is stuffed with "AI" / "engineering"
     if re.search(r"\b(recruit(er|eur|euse)|sourcer|talent acquisition|"
@@ -227,6 +246,19 @@ if __name__ == "__main__":
         "Business Development Manager", "Business Analyst", "Business Analyst SAP",
         "Business Analyst / Product Owner",
         "Ingénieur systèmes embarqués", "Directeur Commercial",
+        # "développement" false positives — all expected None
+        "Chargé de Développement Commercial F/H",
+        "Responsable Développement Stratégique F/H",
+        "Responsable Développement Foncier (H/F)",
+        "Chargé(e) de développement RH",
+        "Chargé(e) de Développement Commercial & Partenariats - Stage - Marseille - H/F",
+        "Développement commercial, apport d'affaires",
+        "Chargé de développement territorial",
+        # …but these stay eng / tech
+        "Ingénieur Développement Simulations",
+        "Ingénieur développement logiciel",
+        "Responsable développement produit",
+        "Chargé de développement d'applications web",
     ]
     for t in (sys.argv[1:] or tests):
         print("  %-45s -> %s" % (t, classify(t)))
