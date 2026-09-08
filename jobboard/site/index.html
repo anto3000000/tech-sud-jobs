@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="b11bf5e9-a867-4c49-8dc5-b1a7b4cc6eb6"></script>
 <style>
   :root{
     --bg:#EDF2F6; --card:#FFFFFF; --card-2:#F4F8FB;
@@ -310,6 +311,17 @@ const norm = s => (s||"").toString().normalize("NFD").replace(/[̀-ͯ]/g,"").toL
 const esc = s => (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const catLabel = c => ({eng:"Dev",data:"Data",product:"Product",design:"Design","tech-adjacent":"IT"}[c]||c||"–");
 
+// --- analytics (Umami) : événements custom, sans donnée perso ---
+const track = (name, data) => { try { window.umami && window.umami.track(name, data); } catch(_){} };
+let searchTimer;
+function trackSearch(){
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(()=>{
+    const q = state.q.trim();
+    if(q.length >= 2) track("search", {q: q.slice(0,80)});
+  }, 1200);
+}
+
 function relDate(iso){
   if(!iso) return "";
   const d = new Date(iso); if(isNaN(d)) return "";
@@ -457,6 +469,7 @@ function makeMulti(sel, entries, selected, allLabel){
     const cb = e.target;
     cb.checked ? selected.add(cb.value) : selected.delete(cb.value);
     sync(); apply();
+    if(cb.checked) track("filter", {type: allLabel, value: cb.value});
   });
   if(filter) filter.addEventListener("input", ()=>{
     const q = norm(filter.value);
@@ -503,12 +516,25 @@ function initFilters(){
     $("#list").scrollIntoView({behavior:"smooth", block:"start"});
   });
 
-  $("#q").addEventListener("input", e=>{ state.q=e.target.value; apply(); });
+  $("#q").addEventListener("input", e=>{ state.q=e.target.value; apply(); trackSearch(); });
   $("#searchForm").addEventListener("submit", e=>{
     e.preventDefault(); apply();
+    const q = state.q.trim();
+    if(q.length >= 2) track("search", {q: q.slice(0,80), submit: true});
     $("#list").scrollIntoView({behavior:"smooth", block:"start"});
   });
-  $("#sort").addEventListener("change", e=>{ state.sort=e.target.value; apply(); });
+  $("#sort").addEventListener("change", e=>{ state.sort=e.target.value; apply(); track("sort", {value:e.target.value}); });
+
+  $("#list").addEventListener("click", e=>{
+    const a = e.target.closest(".t a, a.apply"); if(!a) return;
+    const li = a.closest("li");
+    track("job_click", {
+      title: (li.querySelector(".t a")?.textContent || "").trim().slice(0,120),
+      company: (li.querySelector(".co b")?.textContent || "").trim().slice(0,80),
+      category: (li.querySelector(".tag")?.textContent || "").trim(),
+      direct: a.classList.contains("apply"),
+    });
+  });
   $("#cats").addEventListener("click", e=>{
     const chip = e.target.closest(".chip"); if(!chip) return;
     const on = chip.getAttribute("aria-pressed")==="true";
@@ -516,6 +542,7 @@ function initFilters(){
     else if(chip.dataset.new) state.onlyNew = !on;
     syncCats();
     apply();
+    if(!on) track("filter", {type: chip.dataset.remote ? "Télétravail" : "Nouveau", value: "on"});
   });
   syncCats();
 
