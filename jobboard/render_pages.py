@@ -138,47 +138,76 @@ def job_slug(j):
 #  HTML shell                                                                 #
 # --------------------------------------------------------------------------- #
 CSS = """
-*{box-sizing:border-box}
-html{background:#EDF2F6}
-body{margin:0;color:#16303F;font:15px/1.6 "Hanken Grotesk",ui-sans-serif,system-ui,
- -apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
-a{color:#2C6C9E;text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
-header{padding:22px 0 6px}
-.wm{font-weight:700;font-size:20px;letter-spacing:-.02em;color:#16303F}
-.wm i{color:#F2A63B;font-style:normal}
-nav.bc{font-size:12.5px;color:#5F7488;margin:14px 0 4px}
-nav.bc a{color:#5F7488}
-h1{font-size:23px;line-height:1.3;letter-spacing:-.01em;margin:12px 0 6px;text-wrap:balance}
-.sub{color:#5F7488;font-size:14px;margin:0 0 18px}
-.facets{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 22px}
-.facets a{font-size:12.5px;background:#fff;border:1px solid #DCE4EC;border-radius:8px;
- padding:5px 10px;color:#2C6C9E}
-.card{background:#fff;border:1px solid #DCE4EC;border-radius:13px;padding:15px 17px;margin:0 0 20px}
-.k{display:flex;flex-wrap:wrap;gap:7px;font-size:12px;color:#5F7488;margin:8px 0 0}
-.k span{background:#F4F8FB;border:1px solid #DCE4EC;border-radius:6px;padding:3px 8px}
-.k .sal{color:#2C7A55;border-color:#bfe0cf;background:#eaf6ef}
-.stack{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
-.stack b{font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;background:#F4F8FB;
- color:#2C6C9E;border:1px solid #DCE4EC;border-radius:6px;padding:4px 7px}
-.apply{display:inline-block;margin:16px 0 4px;font-weight:600;font-size:14px;
- background:#F2A63B;color:#3A2708;border-radius:10px;padding:10px 18px}
-.apply:hover{text-decoration:none;filter:brightness(1.04)}
-.desc{margin:18px 0 0}.desc p{margin:0 0 11px}
-h2{font-size:15px;margin:26px 0 8px}
-ul.jobs{list-style:none;margin:0;padding:0}
-ul.jobs li{background:#fff;border:1px solid #DCE4EC;border-radius:12px;padding:13px 15px;margin:0 0 11px}
-ul.jobs li a{font-weight:600;color:#16303F;font-size:15px}
-ul.jobs .co{color:#5F7488;font-size:13px;margin:3px 0 0}
-footer{margin-top:40px;padding-top:20px;border-top:1px solid #DCE4EC;color:#5F7488;font-size:12.5px}
-@media (prefers-color-scheme:dark){
- html{background:#0E1C27}body{color:#E4EDF3}
- a{color:#8CC6ED}.wm{color:#E4EDF3}.sub,nav.bc,nav.bc a,ul.jobs .co,footer{color:#8DA2B2}
- .card,.facets a,ul.jobs li{background:#162733;border-color:#263B49}
- ul.jobs li a{color:#E4EDF3}
- .k span,.stack b{background:#1C303D;border-color:#263B49}
- .k .sal{color:#7fd3a6;background:#16302a;border-color:#2c5a47}
+:root{
+  --bg:#EDF2F6; --card:#FFFFFF; --card-2:#F4F8FB;
+  --ink:#16303F; --muted:#5F7488; --line:#DCE4EC;
+  --accent:#F2A63B; --accent-ink:#93600F; --on-accent:#3A2708;
+  --brand:#7CBDE8; --brand-ink:#2C6C9E;
+  --wash:#FBEBD6; --pine:#2C9A6B;
+  --shadow:0 1px 2px rgba(22,48,63,.05), 0 12px 28px -16px rgba(22,48,63,.18);
+  --iris:
+    radial-gradient(105% 70% at 96% -8%,  color-mix(in srgb,var(--accent) 22%,transparent) 0%, transparent 55%),
+    radial-gradient(105% 80% at -8% -4%,  color-mix(in srgb,var(--brand) 46%,transparent) 0%, transparent 52%),
+    radial-gradient(120% 55% at 50% 118%, color-mix(in srgb,var(--brand) 16%,transparent) 0%, transparent 60%);
 }
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#0E1C27; --card:#162733; --card-2:#1C303D;
+    --ink:#E4EDF3; --muted:#8DA2B2; --line:#263B49;
+    --accent:#E7A24A; --accent-ink:#F1C089; --on-accent:#2A1B06;
+    --brand:#7CBDE8; --brand-ink:#8CC6ED;
+    --wash:#2A2013; --pine:#48B487;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 14px 32px -18px rgba(0,0,0,.6);
+  }
+}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;color:var(--ink);min-height:100vh;
+ font:15px/1.6 "Hanken Grotesk",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+ -webkit-font-smoothing:antialiased;background:var(--iris),var(--bg);background-attachment:fixed}
+a{color:var(--brand-ink);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:2.5px solid var(--accent);outline-offset:2px;border-radius:6px}
+.wrap{max-width:820px;margin:0 auto;padding:0 20px 80px}
+header{padding:24px 0 6px}
+.brandline{display:flex;align-items:center;gap:12px}
+.brandline svg{flex:none;width:40px;height:40px;filter:drop-shadow(0 4px 10px rgba(22,48,63,.16))}
+.brandline .wm{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:22px;
+ letter-spacing:-.02em;color:var(--ink);line-height:1}
+.brandline .wm i{color:var(--accent);font-style:normal}
+.brandline .rb{margin-left:auto;font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:500;
+ color:var(--accent-ink);background:color-mix(in srgb,var(--accent) 20%,transparent);
+ border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);border-radius:999px;
+ padding:5px 10px;letter-spacing:.02em;white-space:nowrap}
+a.brandline:hover{text-decoration:none}a.brandline:hover .wm{color:var(--brand-ink)}
+nav.bc{font-size:12.5px;color:var(--muted);margin:16px 0 4px}
+nav.bc a{color:var(--muted)}
+h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:23px;line-height:1.3;
+ letter-spacing:-.01em;margin:12px 0 6px;text-wrap:balance}
+.sub{color:var(--muted);font-size:14px;margin:0 0 18px}
+.facets{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 22px}
+.facets a{font-size:12.5px;background:var(--card);border:1px solid var(--line);border-radius:8px;
+ padding:5px 10px;color:var(--brand-ink);box-shadow:var(--shadow)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:15px 17px;
+ margin:0 0 20px;box-shadow:var(--shadow)}
+.k{display:flex;flex-wrap:wrap;gap:7px;font-size:12px;color:var(--muted);margin:8px 0 0}
+.k span{background:var(--card-2);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
+.k .sal{color:var(--pine);border-color:color-mix(in srgb,var(--pine) 35%,transparent);
+ background:color-mix(in srgb,var(--pine) 12%,transparent);font-weight:500}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
+.stack b{font:500 11.5px/1 "IBM Plex Mono",ui-monospace,monospace;background:var(--card-2);
+ color:var(--brand-ink);border:1px solid var(--line);border-radius:6px;padding:4px 7px}
+.apply{display:inline-block;margin:16px 0 4px;font-family:"IBM Plex Mono",monospace;font-weight:600;
+ font-size:13px;background:var(--accent);color:var(--on-accent);border-radius:10px;padding:11px 18px;
+ box-shadow:0 8px 22px -8px color-mix(in srgb,var(--accent) 75%,transparent)}
+.apply:hover{text-decoration:none;filter:brightness(1.05)}
+.desc{margin:18px 0 0}.desc p{margin:0 0 11px}
+h2{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;margin:26px 0 8px}
+ul.jobs{list-style:none;margin:0;padding:0}
+ul.jobs li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;
+ margin:0 0 11px;box-shadow:var(--shadow)}
+ul.jobs li a{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;color:var(--ink);font-size:15px}
+ul.jobs .co{color:var(--muted);font-size:13px;margin:3px 0 0}
+footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
 """
 
 
@@ -198,14 +227,27 @@ def shell(*, title, description, canonical, head_extra="", body):
 <meta name="twitter:card" content="summary">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b11bf5e9-a867-4c49-8dc5-b1a7b4cc6eb6"></script>
 <style>{css}</style>
 {head_extra}
 </head>
 <body>
 <div class="wrap">
-<header><span class="wm">sudtechjobs<i>.</i></span></header>
+<header>
+  <a class="brandline" href="{home}">
+    <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+      <rect x="5" y="8" width="42" height="34" rx="8" fill="var(--brand)" stroke="var(--ink)" stroke-width="3.5"/>
+      <path d="M22 42v6M14 50h16" stroke="var(--ink)" stroke-width="3.5" stroke-linecap="round"/>
+      <circle cx="20" cy="24" r="2.6" fill="var(--ink)"/><circle cx="32" cy="24" r="2.6" fill="var(--ink)"/>
+      <path d="M20 31c2.4 2.6 7.6 2.6 10 0" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="44" cy="40" r="12" fill="var(--wash)" stroke="var(--accent)" stroke-width="4.5"/>
+      <path d="M53 49l7 7" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"/>
+    </svg>
+    <span class="wm">sudtechjobs<i>.</i></span>
+    <span class="rb">RÉGION · PACA</span>
+  </a>
+</header>
 {body}
 <footer>
   <a href="{home}">Toutes les offres</a> ·
