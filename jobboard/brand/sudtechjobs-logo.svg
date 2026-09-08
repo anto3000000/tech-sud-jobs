@@ -1,0 +1,15 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="sudtechjobs">
+  <g transform="translate(64 86) scale(6)" stroke-linecap="round">
+    <!-- laptop screen -->
+    <rect x="5" y="8" width="42" height="34" rx="8" fill="#7CBDE8" stroke="#16303F" stroke-width="3.5"/>
+    <!-- stand + base -->
+    <path d="M22 42v6M14 50h16" stroke="#16303F" stroke-width="3.5"/>
+    <!-- face -->
+    <circle cx="20" cy="24" r="2.6" fill="#16303F"/>
+    <circle cx="32" cy="24" r="2.6" fill="#16303F"/>
+    <path d="M20 31c2.4 2.6 7.6 2.6 10 0" stroke="#16303F" stroke-width="3"/>
+    <!-- magnifying glass -->
+    <circle cx="44" cy="40" r="12" fill="#FBEBD6" stroke="#F2A63B" stroke-width="4.5"/>
+    <path d="M53 49l7 7" stroke="#F2A63B" stroke-width="5"/>
+  </g>
+</svg>
