@@ -274,7 +274,7 @@ def jsonld(obj):
 # --------------------------------------------------------------------------- #
 #  offer pages                                                                #
 # --------------------------------------------------------------------------- #
-def render_offer(j, similar):
+def render_offer(j, similar, same_company=None):
     slug = j["_slug"]
     canonical = "%s/offre/%s.html" % (SITE_URL, slug)
     city = j.get("city") or ""
@@ -328,13 +328,19 @@ def render_offer(j, similar):
         facet_link = '<p><a href="../emploi/%s.html">→ Toutes les offres %s%s</a></p>' % (
             fslug, esc(cat_label), where)
 
-    sim_html = ""
-    if similar:
-        sim_html = "<h2>Offres similaires</h2>\n<ul class=\"jobs\">%s</ul>" % "".join(
+    def _job_list(items):
+        return "<ul class=\"jobs\">%s</ul>" % "".join(
             '<li><a href="%s.html">%s</a><div class="co">%s%s</div></li>' % (
                 s["_slug"], esc(s["title"]), esc(s.get("company")),
                 " · " + esc(s.get("city")) if s.get("city") else "")
-            for s in similar)
+            for s in items)
+
+    sim_html = ""
+    if similar:
+        sim_html = "<h2>Offres similaires</h2>\n" + _job_list(similar)
+    if same_company:
+        sim_html += "\n<h2>Autres offres chez %s</h2>\n%s" % (
+            esc(j.get("company")), _job_list(same_company))
 
     meta_desc = (j.get("description_excerpt") or body_txt or
                  "%s chez %s" % (j.get("title"), j.get("company")))
@@ -612,17 +618,26 @@ def main():
 
     # ---- write offer pages --------------------------------------------------
     by_cat_city = {}
+    by_company = {}
     for j in jobs:
         by_cat_city.setdefault((j.get("category"), j.get("city")), []).append(j)
+        ckey = (j.get("company") or "").strip().lower()
+        if ckey:
+            by_company.setdefault(ckey, []).append(j)
 
     offer_files = set()
     for j in jobs:
+        ckey = (j.get("company") or "").strip().lower()
+        # other openings at the same company (shown in a dedicated block)
+        same_co = [s for s in by_company.get(ckey, []) if s is not j][:8]
+        same_co_ids = {id(s) for s in same_co}
+        # "similaires" = same métier×ville, but not the same company (that has its own block)
         sims = [s for s in by_cat_city.get((j.get("category"), j.get("city")), [])
-                if s is not j][:5]
+                if s is not j and id(s) not in same_co_ids][:5]
         fn = j["_slug"] + ".html"
         offer_files.add(fn)
         with open(os.path.join(offre_dir, fn), "w", encoding="utf-8") as fh:
-            fh.write(render_offer(j, sims))
+            fh.write(render_offer(j, sims, same_co))
 
     # ---- write facet pages ------------------------------------------------
     FAMILY = {
