@@ -208,6 +208,13 @@ def load_ft():
     return out
 
 
+def _excerpt(txt, n=340):
+    txt = re.sub(r"\s+", " ", (txt or "")).strip()
+    if not txt:
+        return None
+    return (txt[:n].rsplit(" ", 1)[0] + "…") if len(txt) > n else txt
+
+
 def load_ats():
     p = os.path.join(DATA, "ats_jobs.json")
     if not os.path.exists(p):
@@ -254,6 +261,8 @@ def load_ats():
             "url": j.get("url"),
             "source": j.get("source_ats") or "ats",
             "careers_url": j.get("careers_url"),
+            "description": j.get("description") or None,
+            "description_excerpt": _excerpt(j.get("description")),
         })
     return out
 

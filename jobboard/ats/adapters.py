@@ -19,6 +19,8 @@ import re
 import unicodedata
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from html import unescape
 
 from .http import get_json, get_text, post_json
 
@@ -27,10 +29,11 @@ from .http import get_json, get_text, post_json
 #  data types
 # --------------------------------------------------------------------------- #
 class Job:
-    __slots__ = ("title", "location", "department", "contract", "remote", "url", "published_at", "raw")
+    __slots__ = ("title", "location", "department", "contract", "remote", "url",
+                 "published_at", "description", "raw")
 
     def __init__(self, title, url, location=None, department=None, contract=None,
-                 remote=None, published_at=None, raw=None):
+                 remote=None, published_at=None, description=None, raw=None):
         self.title = (title or "").strip()
         self.url = url
         self.location = location
@@ -38,10 +41,11 @@ class Job:
         self.contract = contract
         self.remote = remote
         self.published_at = published_at
+        self.description = description
         self.raw = raw or {}
 
     def as_dict(self):
-        return {
+        d = {
             "title": self.title,
             "location": self.location,
             "department": self.department,
@@ -50,6 +54,9 @@ class Job:
             "url": self.url,
             "published_at": self.published_at,
         }
+        if self.description:
+            d["description"] = self.description
+        return d
 
 
 class FetchResult:
@@ -115,6 +122,31 @@ def _first(regexes, text):
     return None
 
 
+def _strip_html(s):
+    """HTML job body -> plain text with blank-line paragraphs / "• " bullets,
+    the shape render_pages.text_to_html expects (mirrors sources/wttj_enrich)."""
+    s = re.sub(r"<(br|/p|/li|/div|/h[1-6])\s*/?>", "\n", s or "", flags=re.I)
+    s = re.sub(r"<li[^>]*>", "• ", s, flags=re.I)
+    s = re.sub(r"<[^>]+>", "", s)
+    s = unescape(s)
+    s = re.sub(r"[ \t]+", " ", s)
+    s = re.sub(r"\n\s*\n+", "\n\n", s)
+    return s.strip()
+
+
+def _body(*parts, heads=None):
+    """Join a run of HTML fragments (optionally prefixed by <h4> headings) into
+    one plain-text job body. `heads` is a matching list of section titles; an
+    empty / falsy fragment is skipped along with its heading."""
+    chunks = []
+    for i, frag in enumerate(parts):
+        if not frag:
+            continue
+        h = (heads[i] if heads and i < len(heads) else None)
+        chunks.append(("<h4>%s</h4>" % h if h else "") + frag)
+    return _strip_html("\n\n".join(chunks)) or None
+
+
 # --------------------------------------------------------------------------- #
 #  adapter base
 # --------------------------------------------------------------------------- #
@@ -160,7 +192,7 @@ class Greenhouse(Adapter):
 
     def fetch(self, slug, careers_origin=None):
         for host in ("boards-api.greenhouse.io", "boards-api.eu.greenhouse.io"):
-            url = "https://%s/v1/boards/%s/jobs?content=false" % (host, slug)
+            url = "https://%s/v1/boards/%s/jobs?content=true" % (host, slug)
             r = get_json(url, retries=1)
             if r.ok:
                 break
@@ -172,8 +204,10 @@ class Greenhouse(Adapter):
         for j in data.get("jobs", []):
             loc = (j.get("location") or {}).get("name")
             depts = ", ".join(d.get("name", "") for d in j.get("departments", []) if d)
+            # `content` is HTML with the entities double-escaped (&lt;p&gt;)
             jobs.append(Job(j.get("title"), j.get("absolute_url"), location=loc,
-                            department=depts or None, published_at=j.get("updated_at"), raw=j))
+                            department=depts or None, published_at=j.get("updated_at"),
+                            description=_body(unescape(j.get("content") or "")), raw=j))
         return FetchResult(self.key, slug, True, jobs, endpoint=url)
 
 
@@ -197,11 +231,17 @@ class Lever(Adapter):
         jobs = []
         for j in r.json():
             cat = j.get("categories") or {}
+            # opening blurb + each titled list + closing "additional" block
+            lists = "".join(
+                "<h4>%s</h4>%s" % (lst.get("text") or "", lst.get("content") or "")
+                for lst in (j.get("lists") or []))
+            desc = _body(j.get("description") or j.get("opening"), lists, j.get("additional"))
             jobs.append(Job(j.get("text"), j.get("hostedUrl"),
                             location=cat.get("location"),
                             department=cat.get("team") or cat.get("department"),
                             contract=cat.get("commitment"),
-                            published_at=_iso_ms(j.get("createdAt")), raw=j))
+                            published_at=_iso_ms(j.get("createdAt")),
+                            description=desc, raw=j))
         return FetchResult(self.key, slug, True, jobs, endpoint=url)
 
 
@@ -224,12 +264,14 @@ class Ashby(Adapter):
             return FetchResult(self.key, slug, False, endpoint=url, note="HTTP %s" % r.status)
         jobs = []
         for j in r.json().get("jobs", []):
+            desc = j.get("descriptionPlain") or _body(j.get("descriptionHtml"))
             jobs.append(Job(j.get("title"), j.get("jobUrl") or j.get("applyUrl"),
                             location=j.get("location"),
                             department=j.get("department") or j.get("team"),
                             contract=j.get("employmentType"),
                             remote=j.get("isRemote"),
-                            published_at=j.get("publishedAt"), raw=j))
+                            published_at=j.get("publishedAt"),
+                            description=(desc or "").strip() or None, raw=j))
         return FetchResult(self.key, slug, True, jobs, endpoint=url)
 
 
@@ -260,7 +302,10 @@ class Recruitee(Adapter):
                             department=j.get("department"),
                             contract=j.get("employment_type_code") or j.get("kind"),
                             remote=j.get("remote"),
-                            published_at=j.get("published_at"), raw=j))
+                            published_at=j.get("published_at"),
+                            description=_body(j.get("description"), j.get("requirements"),
+                                              heads=(None, "Profil recherché")),
+                            raw=j))
         return FetchResult(self.key, slug, True, jobs, endpoint=url)
 
 
@@ -313,6 +358,22 @@ class SmartRecruiters(Adapter):
         r"api\.smartrecruiters\.com/v1/companies/([A-Za-z0-9-]+)",
     )
 
+    # the postings list carries no body; the per-posting detail does, under
+    # jobAd.sections {companyDescription, jobDescription, qualifications,
+    # additionalInformation}. Few postings per company -> one extra GET each.
+    _SECTIONS = ("companyDescription", "jobDescription", "qualifications",
+                 "additionalInformation")
+
+    def _ad_body(self, slug, jid):
+        if not jid:
+            return None
+        r = get_json("https://api.smartrecruiters.com/v1/companies/%s/postings/%s"
+                     % (slug, jid), retries=0)
+        if not r.ok:
+            return None
+        secs = ((r.json().get("jobAd") or {}).get("sections") or {})
+        return _body(*[(secs.get(k) or {}).get("text") for k in self._SECTIONS])
+
     def fetch(self, slug, careers_origin=None):
         out, offset = [], 0
         endpoint = "https://api.smartrecruiters.com/v1/companies/%s/postings" % slug
@@ -333,7 +394,8 @@ class SmartRecruiters(Adapter):
                                department=(j.get("department") or {}).get("label"),
                                contract=(j.get("typeOfEmployment") or {}).get("label"),
                                remote=loc.get("remote"),
-                               published_at=j.get("releasedDate"), raw=j))
+                               published_at=j.get("releasedDate"),
+                               description=self._ad_body(slug, jid), raw=j))
             total = data.get("totalFound", len(out))
             offset += 100
             if offset >= total or not data.get("content"):
@@ -370,10 +432,19 @@ class Personio(Adapter):
                     return el.text.strip() if el is not None and el.text else None
                 pid = g("id")
                 jurl = "https://%s.jobs.personio.%s/job/%s" % (slug, tld, pid) if pid else None
+                # <jobDescriptions><jobDescription><name/><value/> (value = HTML)
+                secs, heads = [], []
+                jd = pos.find("jobDescriptions")
+                for d in (jd.findall("jobDescription") if jd is not None else []):
+                    nm, vl = d.find("name"), d.find("value")
+                    if vl is not None and vl.text:
+                        heads.append(nm.text.strip() if nm is not None and nm.text else None)
+                        secs.append(vl.text)
                 jobs.append(Job(g("name"), jurl, location=g("office"),
                                 department=g("department"),
                                 contract=g("employmentType"),
-                                remote=None, published_at=g("createdAt"), raw={}))
+                                remote=None, published_at=g("createdAt"),
+                                description=_body(*secs, heads=heads), raw={}))
             return FetchResult(self.key, slug, True, jobs, endpoint=url)
         return FetchResult(self.key, slug, False, endpoint="jobs.personio.*", note="no feed")
 
@@ -534,7 +605,9 @@ class Teamtailor(Adapter):
                 jobs.append(Job(g("title"), g("link"), location=loc or None,
                                 department=g("%sdepartment" % ns) or g("%srole" % ns),
                                 remote=(remote if remote != "none" else None),
-                                published_at=g("pubDate"), raw={}))
+                                published_at=_rfc2822(g("pubDate")),
+                                description=_strip_html(g("description")) or None,
+                                raw={}))
             return FetchResult(self.key, slug, True, jobs, endpoint=url,
                                note="0 offers" if not jobs else None)
         return FetchResult(self.key, slug, False, method="browser",
@@ -601,6 +674,16 @@ class Custom(Adapter):
 
 
 # --------------------------------------------------------------------------- #
+def _rfc2822(v):
+    """RFC-2822 date (RSS pubDate) -> ISO8601, pass-through otherwise."""
+    if not v:
+        return None
+    try:
+        return parsedate_to_datetime(v).isoformat(timespec="seconds")
+    except (TypeError, ValueError):
+        return v
+
+
 def _iso_ms(v):
     """Epoch millis -> ISO8601, pass-through otherwise."""
     if isinstance(v, (int, float)) and v > 1_000_000_000:
