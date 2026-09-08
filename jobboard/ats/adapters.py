@@ -92,8 +92,10 @@ def slug_variants(name, declared_slug=None):
         out.append(declared_slug.strip().lower())
     # strip common parenthetical / suffix noise: "Navya (Chasset)" -> "Navya"
     clean = re.sub(r"\(.*?\)", "", name)
-    clean = re.sub(r"\b(group|groupe|france|sud|technologies|technology|inc|sa|sas)\b",
-                   "", clean, flags=re.I)
+    clean = re.sub(
+        r"\b(group|groupe|france|sud|technologies|technology|solutions?|consulting|"
+        r"software|systems?|syst[eè]mes?|digital|inc|sa|sas)\b",
+        "", clean, flags=re.I)
     for base in (clean, name):
         for v in (slugify(base, "-"), slugify(base, "")):
             if v and v not in out:
@@ -145,17 +147,23 @@ class Adapter:
 class Greenhouse(Adapter):
     key = "greenhouse"
     has_api = True
+    # EU-hosted boards live on *.eu.greenhouse.io (e.g. job-boards.eu.greenhouse.io/iothink).
     signatures = ("boards.greenhouse.io", "job-boards.greenhouse.io",
-                  "boards-api.greenhouse.io", "grnhse", "greenhouse.io/embed")
+                  "boards.eu.greenhouse.io", "job-boards.eu.greenhouse.io",
+                  "boards-api.greenhouse.io", "boards-api.eu.greenhouse.io",
+                  "grnhse", "greenhouse.io/embed")
     slug_regexes = (
-        r"(?:job-)?boards\.greenhouse\.io/(?:embed/job_board\?for=)?([a-z0-9_-]+)",
-        r"boards-api\.greenhouse\.io/v1/boards/([a-z0-9_-]+)",
+        r"(?:job-)?boards(?:\.eu)?\.greenhouse\.io/(?:embed/job_board\?for=)?([a-z0-9_-]+)",
+        r"boards-api(?:\.eu)?\.greenhouse\.io/v1/boards/([a-z0-9_-]+)",
         r"grnhse\.io/([a-z0-9_-]+)",
     )
 
     def fetch(self, slug, careers_origin=None):
-        url = "https://boards-api.greenhouse.io/v1/boards/%s/jobs?content=false" % slug
-        r = get_json(url, retries=1)
+        for host in ("boards-api.greenhouse.io", "boards-api.eu.greenhouse.io"):
+            url = "https://%s/v1/boards/%s/jobs?content=false" % (host, slug)
+            r = get_json(url, retries=1)
+            if r.ok:
+                break
         if not r.ok:
             return FetchResult(self.key, slug, False, endpoint=url,
                                note="HTTP %s" % r.status)
@@ -379,14 +387,30 @@ class Taleez(Adapter):
     has_api = True
     signatures = ("taleez.com", "files.taleez.com", "/api/careez", "taleezhq")
     slug_regexes = (
+        r"([a-z0-9][a-z0-9-]*)\.taleez\.com",                 # <slug>.taleez.com hosted front
         r"taleez\.com/(?:careers|jobs|widget)/([a-z0-9-]+)",
         r"files\.taleez\.com/files/(\d+)/",   # org id fallback
     )
+    _GENERIC = {"www", "app", "files", "api", "cdn", "static"}
+
+    def extract_slug(self, html, final_url):
+        for rx in self.slug_regexes:
+            for m in re.finditer(rx, (html or "") + "\n" + (final_url or ""), re.I):
+                cand = m.group(1).lower()
+                if cand not in self._GENERIC:
+                    return cand
+        return None
 
     def fetch(self, slug, careers_origin=None):
         origins = []
         if careers_origin:
             origins.append(careers_origin.rstrip("/"))
+        # the fingerprint often lands on the company site, not the Taleez front —
+        # <slug>.taleez.com proxies /api/careez unauthenticated.
+        if slug and not slug.isdigit() and slug not in self._GENERIC:
+            tz = "https://%s.taleez.com" % slug
+            if tz not in origins:
+                origins.append(tz)
         for origin in origins:
             for path in ("/api/careez", "/api/jobs"):
                 url = origin + path
@@ -459,15 +483,107 @@ class ICIMS(Adapter):
 
 
 class Teamtailor(Adapter):
+    """Teamtailor exposes a keyless JSON/RSS feed on the *career site* origin
+    (``<careers_origin>/jobs.rss``), whether that's ``<slug>.teamtailor.com`` or
+    a customer CNAME like ``recrutement.norsys.fr``. The RSS carries structured
+    location / department / remote (the JSON Feed at ``/jobs.json`` doesn't)."""
     key = "teamtailor"
-    has_api = False
+    has_api = True
     signatures = ("teamtailor.com", "teamtailor-cdn")
     slug_regexes = (r"([a-z0-9-]+)\.teamtailor\.com",)
+    _GENERIC = {"app", "www", "career", "careers", "jobs", "assets", "cdn", "static", "api"}
+    _TT_NS = "{https://teamtailor.com/locations}"
+
+    def extract_slug(self, html, final_url):
+        for m in re.finditer(self.slug_regexes[0], (html or "") + "\n" + (final_url or ""), re.I):
+            cand = m.group(1).lower()
+            if cand not in self._GENERIC:
+                return cand
+        return None
+
+    def _origins(self, slug, careers_origin):
+        out = []
+        if careers_origin:
+            out.append(careers_origin.rstrip("/"))
+        if slug and slug not in self._GENERIC:
+            tt = "https://%s.teamtailor.com" % slug
+            if tt not in out:
+                out.append(tt)
+        return out
+
+    def fetch(self, slug, careers_origin=None):
+        for origin in self._origins(slug, careers_origin):
+            url = origin + "/jobs.rss"
+            r = get_text(url, retries=0)
+            if not r.ok or "<rss" not in r.body[:400].lower():
+                continue
+            try:
+                root = ET.fromstring(r.body.encode("utf-8"))
+            except ET.ParseError:
+                continue
+            jobs = []
+            for it in root.iter("item"):
+                def g(path):
+                    el = it.find(path)
+                    return el.text.strip() if el is not None and el.text else None
+                ns = self._TT_NS
+                # tt:city / tt:country are nested under tt:locations/tt:location
+                loc = ", ".join(x for x in (g(".//%scity" % ns), g(".//%scountry" % ns)) if x)
+                rs = (g("remoteStatus") or "").lower()
+                remote = {"fully": "remote", "temporary": "hybrid"}.get(rs, rs) or None
+                jobs.append(Job(g("title"), g("link"), location=loc or None,
+                                department=g("%sdepartment" % ns) or g("%srole" % ns),
+                                remote=(remote if remote != "none" else None),
+                                published_at=g("pubDate"), raw={}))
+            return FetchResult(self.key, slug, True, jobs, endpoint=url,
+                               note="0 offers" if not jobs else None)
+        return FetchResult(self.key, slug, False, method="browser",
+                           endpoint="https://%s.teamtailor.com/jobs" % (slug or "app"),
+                           note="no keyless /jobs.rss at the resolved origin -> headless browser")
+
+
+class Flatchr(Adapter):
+    """FR ATS (Cegid). Career sites are `<slug>.flatchr.io` Next.js SPAs; the
+    vacancy list loads client-side and the public REST API needs a key, so we
+    only detect + note the slug for a browser pass or a manual `known` block."""
+    key = "flatchr"
+    has_api = False
+    signatures = ("flatchr.io", "flatchr.com")
+    slug_regexes = (r"([a-z0-9][a-z0-9-]*)\.flatchr\.io",)
+    _GENERIC = {"www", "app", "api", "careers", "career", "jobs", "static", "cdn"}
+
+    def extract_slug(self, html, final_url):
+        for m in re.finditer(self.slug_regexes[0], (html or "") + "\n" + (final_url or ""), re.I):
+            cand = m.group(1).lower()
+            if cand not in self._GENERIC:
+                return cand
+        return None
 
     def fetch(self, slug, careers_origin=None):
         return FetchResult(self.key, slug, False, method="browser",
-                           endpoint="https://%s.teamtailor.com/jobs" % slug,
-                           note="Teamtailor public feed needs an API token -> headless browser")
+                           endpoint="https://%s.flatchr.io/" % (slug or "") or careers_origin,
+                           note="Flatchr vacancy list is client-side; public API needs a key "
+                                "-> headless browser or manual `known` block")
+
+
+class Talentsoft(Adapter):
+    """FR / EU enterprise ATS (Cegid Talentsoft). Per-tenant ASP.NET career
+    site at `<tenant>.talent-soft.com` (tenant often `<name>-career[s]`). No
+    consistent keyless feed -> detect + note the tenant for a browser pass."""
+    key = "talentsoft"
+    has_api = False
+    signatures = ("talent-soft.com", "talentsoft")
+    slug_regexes = (r"([a-z0-9][a-z0-9-]*)\.talent-soft\.com",)
+
+    def extract_slug(self, html, final_url):
+        raw = _first(self.slug_regexes, (html or "") + "\n" + (final_url or ""))
+        return re.sub(r"-careers?$", "", raw) if raw else None
+
+    def fetch(self, slug, careers_origin=None):
+        host = ("%s-career.talent-soft.com" % slug) if slug else None
+        return FetchResult(self.key, slug, False, method="browser",
+                           endpoint=("https://%s/" % host) if host else careers_origin,
+                           note="Talentsoft per-tenant site, no keyless feed -> headless browser")
 
 
 class Custom(Adapter):
@@ -498,8 +614,9 @@ def _iso_ms(v):
 # order matters for detection: most specific / least ambiguous first
 ADAPTERS = [
     Greenhouse(), Lever(), Ashby(), Recruitee(), Workable(),
-    SmartRecruiters(), Personio(), Taleez(),
-    WelcomeToTheJungle(), ICIMS(), Teamtailor(),
+    SmartRecruiters(), Personio(), Taleez(), Teamtailor(),
+    Flatchr(), Talentsoft(),
+    WelcomeToTheJungle(), ICIMS(),
 ]
 BY_KEY = {a.key: a for a in ADAPTERS}
 BY_KEY["custom"] = Custom()

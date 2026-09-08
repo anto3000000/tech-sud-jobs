@@ -31,7 +31,8 @@ CAREERS_PATHS = [
     "/fr/careers", "/en/careers", "/company/careers", "/about/careers",
     "/company/jobs", "/who-we-are/careers", "/life", "/team",
 ]
-CAREERS_SUBDOMAINS = ["careers.", "jobs.", "career.", "carriere.", "carrieres.", "work.", "join."]
+CAREERS_SUBDOMAINS = ["careers.", "jobs.", "career.", "carriere.", "carrieres.",
+                      "recrutement.", "emploi.", "recrute.", "work.", "join."]
 
 # ATS with a public jobs API we can probe directly with slug guesses.
 # The direct-probe pass calls the adapter's real API (not a marketing URL),
@@ -45,6 +46,81 @@ def _norm_domain(domain):
     d = domain.strip().lower()
     d = re.sub(r"^https?://", "", d).split("/")[0].strip()
     return d or None
+
+
+# --------------------------------------------------------------------------- #
+#  geo verification
+# --------------------------------------------------------------------------- #
+# A blind direct-probe guesses the slug from the company name, so a generic
+# name ("Blue", "Tempo", "CM") lands on an unrelated org's public board. Before
+# trusting such a hit we check that the board's jobs are actually in France.
+FR_GEO_RX = re.compile(
+    r"\bfrance\b|\bfrench\b(?!\s+guiana)|t[ée]l[ée]travail|"
+    r"\bremote\s*[-–—:]?\s*(?:france|europe|emea|fr)\b|"
+    r"\b(?:paris|marseille|lyon|toulouse|bordeaux|lille|nantes|nice|strasbourg|"
+    r"montpellier|rennes|reims|le\s+havre|saint[- ][ée]tienne|toulon|grenoble|"
+    r"dijon|angers|n[iî]mes|clermont[- ]ferrand|aix[- ]en[- ]provence|"
+    r"sophia[- ]antipolis|antibes|cannes|avignon|valbonne|biot|la\s+ciotat|"
+    r"aubagne|rousset|g[ée]menos|carros|meyreuil|manosque|gap\b|"
+    r"villeneuve[- ]loubet|mougins|le\s+cannet|cagnes[- ]sur[- ]mer)\b",
+    re.I)
+
+
+# plainly-abroad markers: big non-FR cities + "Remote - US/UK/APAC".
+FOREIGN_GEO_RX = re.compile(
+    r"\b(?:madrid|barcelona|lisbon|lisboa|porto|london|manchester|dublin|berlin|"
+    r"munich|hamburg|frankfurt|amsterdam|rotterdam|brussels|bruxelles|milan|milano|"
+    r"roma|rome|new\s+york|nyc|san\s+francisco|seattle|austin|boston|chicago|denver|"
+    r"atlanta|miami|los\s+angeles|toronto|montreal|vancouver|sydney|melbourne|"
+    r"singapore|bangalore|bengaluru|mumbai|hyderabad|tokyo|warsaw|krak[oó]w|prague|"
+    r"bucharest|sofia|tallinn|vilnius|casablanca|tunis|cairo|dubai|tel\s+aviv|"
+    r"bangkok|s[ãa]o\s+paulo|mexico\s+city|bogot[aá]|buenos\s+aires)\b|"
+    r"\bremote\s*[-–—:,]?\s*(?:us|usa|u\.s\.|uk|emea|apac|latam|na|north\s+america|"
+    r"germany|spain|italy|india|poland|portugal|brazil|canada|australia)\b",
+    re.I)
+# US state abbreviations after a comma ("Waukegan, IL"). Case-SENSITIVE — French
+# region/city strings are never a bare 2-letter uppercase token.
+_US_STATE_RX = re.compile(
+    r",\s*(?:A[LKZR]|C[AOT]|DE|FL|GA|HI|I[ADLN]|K[SY]|LA|M[ADEINOST]|"
+    r"N[CDEHJMVY]|O[HKR]|PA|RI|S[CD]|T[NX]|UT|V[AT]|W[AIVY])\b")
+
+
+def text_looks_french(*parts):
+    return bool(FR_GEO_RX.search(" ".join(str(p or "") for p in parts)))
+
+
+def _job_blob(j):
+    return " ".join(str(getattr(j, a, None) or "") for a in ("location", "department", "remote", "title"))
+
+
+def _looks_foreign(blob):
+    return bool(FOREIGN_GEO_RX.search(blob) or _US_STATE_RX.search(blob))
+
+
+def board_geo_profile(jobs, sample=60):
+    """(fr_count, foreign_count, n) over a sample of a probed board's jobs."""
+    fr = foreign = 0
+    seen = jobs[:sample]
+    for j in seen:
+        blob = _job_blob(j)
+        if FR_GEO_RX.search(blob):
+            fr += 1
+        elif _looks_foreign(blob):
+            foreign += 1
+    return fr, foreign, len(seen)
+
+
+def _jobs_look_french(jobs, sample=60):
+    """The board is *our* French org, not a foreign homonym. A real FR company
+    posts a solid block of FR jobs even when its board is global (Aircall: 13 FR
+    / 46 abroad -> ours); a homonym US board has ~none (Menta: 1 stray
+    "French/English bilingual" listing / 58 US -> not ours)."""
+    fr, foreign, n = board_geo_profile(jobs, sample)
+    if not n:
+        return False
+    if fr >= 3:
+        return True
+    return fr >= 1 and foreign == 0
 
 
 def guess_domains(name, domain):
@@ -115,6 +191,8 @@ def direct_probe(name, declared_ats, declared_slug):
                 "careers_origin": _origin(res.endpoint),
                 "via": "direct-probe", "evidence": res.endpoint,
                 "job_count": len(res.jobs),
+                "fr_geo": _jobs_look_french(res.jobs),
+                "probed_slug": s,
             }
     return None
 
@@ -210,6 +288,15 @@ def resolve_company(company, do_direct=True, do_page=True):
             collision_prone = len(slug) <= 8 or "-" not in slug
             if declared_ats and declared_ats not in ("custom", hit["ats"]) and collision_prone:
                 conf, needs_review, via = "medium", True, "direct-probe-unverified"
+            # geo check: the slug was guessed from the company name. Trust it
+            # only if a human declared this exact slug, or the board's jobs are
+            # actually in France. Otherwise it's almost certainly a different
+            # org's public board (see Emilabs / Blue / DAT Solutions).
+            declared_match = bool(declared_slug) and declared_slug == (hit.get("probed_slug") or slug)
+            if not needs_review and not declared_match and not hit.get("fr_geo"):
+                why = "no France/PACA jobs on board" if hit.get("job_count") else "empty board"
+                conf, needs_review, via = "low", True, "direct-probe-unverified"
+                hit["evidence"] = "%s — %s" % (hit.get("evidence") or "", why)
         result.update(
             resolved_ats=hit["ats"],
             resolved_slug=hit["slug"],

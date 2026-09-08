@@ -19,6 +19,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from jobboard.ats.adapters import fetch_jobs  # noqa: E402
+from jobboard.ats.resolver import board_geo_profile  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -41,6 +42,9 @@ def main():
     ap.add_argument("-i", "--input", default=os.path.join(HERE, "companies.resolved.json"))
     ap.add_argument("-o", "--output", default=os.path.join(HERE, "jobs.json"))
     ap.add_argument("--paca-only", action="store_true", help="filter to PACA / remote-FR locations")
+    ap.add_argument("--include-unverified", action="store_true",
+                    help="also fetch companies flagged needs_review (blind direct-probe "
+                         "hits whose board has no France/PACA jobs)")
     args = ap.parse_args()
 
     with open(args.input, encoding="utf-8") as f:
@@ -50,19 +54,35 @@ def main():
     needs_browser = []
     errors = []
     per_company = []
+    unverified = []
+    dropped_geo = []
 
     for r in resolved:
         ats = r.get("resolved_ats")
         slug = r.get("resolved_slug")
         method = r.get("method")
-        if method != "api" or not ats or not slug:
-            needs_browser.append((r["name"], ats or "?", r.get("resolved_via")))
+        via = r.get("resolved_via") or ""
+        # teamtailor / taleez fetch from the career-site origin, not the slug,
+        # so a missing slug is fine as long as we resolved a careers_origin.
+        if method != "api" or not ats or (not slug and not r.get("careers_origin")):
+            needs_browser.append((r["name"], ats or "?", via))
+            continue
+        if r.get("needs_review") and not args.include_unverified:
+            unverified.append((r["name"], ats, slug, via))
             continue
         res = fetch_jobs(ats, slug, careers_origin=r.get("careers_origin"))
         per_company.append((r["name"], ats, res.ok, len(res.jobs), res.note))
         if not res.ok and not res.jobs:
             errors.append((r["name"], ats, res.note))
             continue
+        # geo guard: a direct-probe slug is name-derived; a real FR org posts a
+        # solid block of FR jobs (>=3) even on a global board, a foreign homonym
+        # posts ~none. Drop the latter.
+        if via.startswith("direct-probe") and res.jobs:
+            fr, foreign, n = board_geo_profile(res.jobs)
+            if not (fr >= 3 or (fr >= 1 and foreign == 0)):
+                dropped_geo.append((r["name"], ats, slug, len(res.jobs)))
+                continue
         for j in res.jobs:
             d = j.as_dict()
             d.update(company=r["name"], source_ats=ats, careers_url=r.get("careers_url"),
@@ -78,7 +98,7 @@ def main():
         json.dump(all_jobs, f, ensure_ascii=False, indent=2)
     _write_csv(all_jobs, os.path.splitext(args.output)[0] + ".csv")
 
-    _summary(per_company, all_jobs, needs_browser, errors)
+    _summary(per_company, all_jobs, needs_browser, errors, unverified, dropped_geo)
     print("\nwrote %s (%d jobs) + %s.csv"
           % (args.output, len(all_jobs), os.path.splitext(args.output)[0]), file=sys.stderr)
 
@@ -98,11 +118,19 @@ def _write_csv(jobs, path):
             w.writerow(j)
 
 
-def _summary(per_company, jobs, needs_browser, errors):
+def _summary(per_company, jobs, needs_browser, errors, unverified=(), dropped_geo=()):
     print("\n=== per company (API) ===")
     for name, ats, ok, n, note in sorted(per_company, key=lambda x: -x[3]):
         flag = "ok " if ok else "ERR"
         print("  %-30s %-15s %s %3d  %s" % (name[:30], ats, flag, n, note or ""))
+    if unverified:
+        print("\n=== skipped: unverified slug (needs_review; --include-unverified to fetch) ===")
+        for name, ats, slug, via in unverified:
+            print("  %-30s %-15s %-22s (%s)" % (name[:30], ats, slug, via))
+    if dropped_geo:
+        print("\n=== dropped: direct-probe board had 0 France/PACA jobs (slug collision) ===")
+        for name, ats, slug, n in dropped_geo:
+            print("  %-30s %-15s %-22s %d jobs, none FR" % (name[:30], ats, slug, n))
     print("\n=== needs headless browser / dedicated scraper ===")
     for name, ats, via in needs_browser:
         print("  %-30s %-18s (%s)" % (name[:30], ats, via))

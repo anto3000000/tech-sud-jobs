@@ -1,0 +1,2183 @@
+[
+  {
+    "name": "360&1",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "360and1.com",
+    "city": "Nice"
+  },
+  {
+    "name": "3ECO CONCEPT",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "microelectronique",
+    "domain": "3eco-concept.com",
+    "city": "Sophia Antipolis"
+  },
+  {
+    "name": "A2M1XY",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics, iot, microelectronique",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "Abak.Tech",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "abak.tech",
+    "city": "Marseille"
+  },
+  {
+    "name": "Abeeway",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "abeeway.com",
+    "city": "Biot"
+  },
+  {
+    "name": "ACCELIOT France",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "acceliot.com",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "AccurConsulting",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "accurtech-consulting.fr",
+    "city": "06 130"
+  },
+  {
+    "name": "Active Asset Allocation",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "active-asset-allocation.com",
+    "city": "06 000"
+  },
+  {
+    "name": "ADECE",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "microelectronique",
+    "domain": "adece.eu",
+    "city": "Valbonne"
+  },
+  {
+    "name": "ADICENS",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "microelectronique",
+    "domain": "adicens.com",
+    "city": "Toulon"
+  },
+  {
+    "name": "Aeonics",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "iot",
+    "domain": "aeonics.io",
+    "city": "Momalle"
+  },
+  {
+    "name": "AGENCE SMART INDUSTRY",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "autres, cyber-securite-numerique, ia-data-analytics",
+    "domain": "agencesi.tech",
+    "city": "L'Isle-sur-la-Sorgue"
+  },
+  {
+    "name": "AI Guardian Pro",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone, hors-region-sud",
+    "techno": "ia-data-analytics, iot",
+    "domain": "aiguardianpro.com",
+    "city": "Poilly-Lez-Gien"
+  },
+  {
+    "name": "AI Verse",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "ai-verse.com",
+    "city": "Sophia Antipolis"
+  },
+  {
+    "name": "AICO Technology",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "microelectronique",
+    "domain": "aico.technology",
+    "city": "Metropole Nice Côte d'Azur"
+  },
+  {
+    "name": "AIRMOD",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "airmod.tech",
+    "city": "La Ciotat"
+  },
+  {
+    "name": "Aiway",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "aiway.fr",
+    "city": "Aix en Provence Cedex 3"
+  },
+  {
+    "name": "Aix Marseille Université (AMU)",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, cyber-securite-numerique, ia-data-analytics, iot, microelectronique",
+    "domain": "univ-amu.fr",
+    "city": "MARSEILLE"
+  },
+  {
+    "name": "Akidaia",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "akidaia.com",
+    "city": "Nice"
+  },
+  {
+    "name": "ALISE",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique, ia-data-analytics",
+    "domain": "alise.net",
+    "city": "Venelles"
+  },
+  {
+    "name": "Amadeus",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "amadeus.com",
+    "city": "SOPHIA ANTIPOLIS"
+  },
+  {
+    "name": "AMB ELECTRONIQUE",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique",
+    "domain": "ambelectronique.com",
+    "city": "Auriol"
+  },
+  {
+    "name": "AMD-GROUP",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "microelectronique",
+    "domain": "amd-group.fr",
+    "city": "Valbonne"
+  },
+  {
+    "name": "ANAPIX MEDICAL",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "anapix-medical.com",
+    "city": "Meyreuil"
+  },
+  {
+    "name": "ANJEON NEO (Simaptiq)",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique, iot",
+    "domain": "simaptiq.com",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "Anse Technology",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "microelectronique",
+    "domain": "anse-technology.com",
+    "city": "Toulon"
+  },
+  {
+    "name": "ANTEOS AI SOLUTIONS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "anteos-ai.net",
+    "city": "Marseille"
+  },
+  {
+    "name": "Apical Technologies",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "apical.fr",
+    "city": "Les Pennes Mirabeau"
+  },
+  {
+    "name": "ARMONA SYSTEMS",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "cyber-securite-numerique",
+    "domain": "armona.fr",
+    "city": "Colomars"
+  },
+  {
+    "name": "ArtinLeap",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "ia-data-analytics",
+    "domain": "artinleap.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "ATG Technologies",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "microelectronique",
+    "domain": "atg-group.fr",
+    "city": "Avignon"
+  },
+  {
+    "name": "AUSMOSYS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "ausmosys.com",
+    "city": "13 541"
+  },
+  {
+    "name": "Avencod",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "avencod.fr",
+    "city": "Nice"
+  },
+  {
+    "name": "Avisto",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, ia-data-analytics, iot",
+    "domain": "avisto.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Axires",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "axires.tech",
+    "city": "Marseille"
+  },
+  {
+    "name": "AzurIA",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "azuria.space",
+    "city": "Valbonne"
+  },
+  {
+    "name": "BeNomad",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "benomad.com",
+    "city": "VILLENEUVE LOUBET"
+  },
+  {
+    "name": "Bertin Technologies",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "bertin-technologies.fr",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "BIGNON LEBRAY",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "bignonlebray.com",
+    "city": "Aix en Provence"
+  },
+  {
+    "name": "BitSparkles",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "bitsparkles.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Bkube",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "cyber-securite-numerique",
+    "domain": "bkube.fr",
+    "city": "Nice"
+  },
+  {
+    "name": "Bluedrop.fr",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "bluedrop.fr",
+    "city": "MARSEILLE"
+  },
+  {
+    "name": "BrandSilver",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "brandsilver.fr",
+    "city": "Saint-Vallier-de-Thiey"
+  },
+  {
+    "name": "BUBO CYBERSEC (Bubo Initiative)",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "bubo-cybersec.com",
+    "city": "Gardanne"
+  },
+  {
+    "name": "Calenco (NeoDoc)",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "calenco.com",
+    "city": "Venelles"
+  },
+  {
+    "name": "Caractérisation PF",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique",
+    "domain": "pf-caracterisation.org",
+    "city": "Rousset"
+  },
+  {
+    "name": "Caranx Medical",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "caranx-medical.com",
+    "city": "Nice"
+  },
+  {
+    "name": "Carform.io",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": null,
+    "domain": "carform.io",
+    "city": "Valbonne"
+  },
+  {
+    "name": "CCI Aix Marseille Provence (Ecole Pratique et ISBA-TP)",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "ecolepratique.com",
+    "city": "Marseille 1er Arrondissement"
+  },
+  {
+    "name": "CEA",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, cyber-securite-numerique, ia-data-analytics, iot, microelectronique",
+    "domain": "www-cadarache.cea.fr",
+    "city": "Saint-Paul lez Durance"
+  },
+  {
+    "name": "Centiloc",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, ia-data-analytics, iot",
+    "domain": "centiloc.com",
+    "city": "Meyreuil"
+  },
+  {
+    "name": "Centrale Méditerranée",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "centrale-mediterranee.fr",
+    "city": "Marseille 13e Arrondissement"
+  },
+  {
+    "name": "CERSA MCI – CONCEPTION ETUDE ET REALISATION DE SYSTEMES AUTOMATISES",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "cersa-mci.com",
+    "city": "Cabriès"
+  },
+  {
+    "name": "CHIMERE",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "chimere.eu",
+    "city": "Marseille 1er Arrondissement"
+  },
+  {
+    "name": "CIC Lyonnaise de Banque",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "cic.fr",
+    "city": "Marseille"
+  },
+  {
+    "name": "Cilas",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "cilas.com",
+    "city": "Aubagne"
+  },
+  {
+    "name": "CLARANOR",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "photonique-imagerie",
+    "domain": "claranor.com",
+    "city": "\"862 Rue André Jean Boudoy Agroparc"
+  },
+  {
+    "name": "Clearsy",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "clearsy.com",
+    "city": "AIX EN PROVENCE"
+  },
+  {
+    "name": "Cluj IT Cluster",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "clujit.ro",
+    "city": "400114"
+  },
+  {
+    "name": "CNRS Délégation Côte d’Azur",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, ia-data-analytics, iot",
+    "domain": "c-a.cnrs.fr",
+    "city": "Sophia Antipolis"
+  },
+  {
+    "name": "CODIX",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, cyber-securite-numerique",
+    "domain": "codix.eu",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Coeur-Net",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "cyber-securite-numerique, ia-data-analytics",
+    "domain": "coeur-net.fr",
+    "city": "Valbonne"
+  },
+  {
+    "name": "COLLABORATIVE ENERGY",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "autres, ia-data-analytics",
+    "domain": "collaborative.energy",
+    "city": "Cotignac"
+  },
+  {
+    "name": "COMECT (myDid)",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "mydid.com",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "CONFIANCE SAS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique, microelectronique",
+    "city": "Marseille"
+  },
+  {
+    "name": "Constencia",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "constencia.fr",
+    "city": "Valbonne"
+  },
+  {
+    "name": "CREDIT AGRICOLE Alpes Provence INNOV’ECO",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "ca-alpesprovence.fr",
+    "city": "Aix en Provence"
+  },
+  {
+    "name": "Cust’Home",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "custhome.net",
+    "city": "Saint-Laurent-du-Var"
+  },
+  {
+    "name": "D.FI",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "city": "Martigues"
+  },
+  {
+    "name": "DAIA",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": null,
+    "domain": "daia.tech",
+    "city": "Mougins"
+  },
+  {
+    "name": "Data ScienceTech Institute (DSTI)",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "datasciencetech.institute",
+    "city": "Biot"
+  },
+  {
+    "name": "DataAgents",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "dataagents.io",
+    "city": "Biot"
+  },
+  {
+    "name": "Datagreen",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "ia-data-analytics",
+    "domain": "datagreen.cloud",
+    "city": "Nice"
+  },
+  {
+    "name": "Deep IOTech",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "iot",
+    "domain": "deepiotech.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "DEEP2DRIVE",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "deep2drive.com",
+    "city": "Marseille"
+  },
+  {
+    "name": "DigDash",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "digdash.com",
+    "city": "MEYREUIL"
+  },
+  {
+    "name": "Digitech Group",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, ia-data-analytics",
+    "domain": "digitech.fr",
+    "city": "Marseille 16e Arrondissement"
+  },
+  {
+    "name": "DiplomAdvisor",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "diplomadvisor.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "DOCAPOSTE",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, cyber-securite-numerique, ia-data-analytics, iot",
+    "domain": "docaposte.com",
+    "city": "Sophia Antipolis Cedex"
+  },
+  {
+    "name": "Easytech",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique",
+    "domain": "easytechsas.com",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "Editag",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "editag.eu",
+    "city": "MEYREUIL"
+  },
+  {
+    "name": "Effiblue",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "microelectronique",
+    "domain": "effiblue.com",
+    "city": "Grasse"
+  },
+  {
+    "name": "EHO.LINK",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "eho.link",
+    "city": "Marseille"
+  },
+  {
+    "name": "ELDA TECHNOLOGY",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "photonique-imagerie",
+    "domain": "eldatechnology.fr",
+    "city": "Toulouse"
+  },
+  {
+    "name": "Electronie",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, iot, microelectronique",
+    "domain": "electronie.fr",
+    "city": "Mouans-Sartoux"
+  },
+  {
+    "name": "Elsys Design",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "microelectronique",
+    "domain": "elsys-design.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "ELYNE CORP",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "elynecorp.fr",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "Epicnpoc",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "epicnpoc.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Epseed",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "cyber-securite-numerique",
+    "domain": "epseed.com",
+    "city": "Cagnes-sur-Mer"
+  },
+  {
+    "name": "EquiNordic France",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": null,
+    "domain": "equinordic.com",
+    "city": "Mougins"
+  },
+  {
+    "name": "EquipIC Supply Chain",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot, microelectronique",
+    "domain": "equipic.com",
+    "city": "Sophia Antipolis"
+  },
+  {
+    "name": "ERGOMONTIS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "Eura Nova",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "euranova.eu",
+    "city": "Marseille 6e Arrondissement"
+  },
+  {
+    "name": "EURECOM",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, cyber-securite-numerique, ia-data-analytics, iot",
+    "domain": "eurecom.fr",
+    "city": "BIOT"
+  },
+  {
+    "name": "Eurofins | Biophy Research",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique",
+    "domain": "tescan-analytics.com",
+    "city": "FUVEAU"
+  },
+  {
+    "name": "EVA – ENTREPRISE DE VALORISATION ADAPTEE",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique",
+    "domain": "evad3e.fr",
+    "city": "Vitrolles"
+  },
+  {
+    "name": "Eyco",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique",
+    "domain": "eyco.eu",
+    "city": "Peynier"
+  },
+  {
+    "name": "EZAKO",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "ezako.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "F-Initiatives",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "f-initiatives.com",
+    "city": "Biot"
+  },
+  {
+    "name": "FASTLITE",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "photonique-imagerie",
+    "domain": "fastlite.com",
+    "city": "Antibes"
+  },
+  {
+    "name": "Firecell",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "firecell.io",
+    "city": "Nice"
+  },
+  {
+    "name": "First Light Imaging",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "first-light-imaging.com",
+    "city": "Meyreuil"
+  },
+  {
+    "name": "Flatlight",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "photonique-imagerie",
+    "domain": "flatlight.fr",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Fluiidd",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "fluiidd.com",
+    "city": "La Ciotat"
+  },
+  {
+    "name": "FRAMATECH",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "framatech.fr",
+    "city": "Marseille"
+  },
+  {
+    "name": "French Tech Côte d’Azur",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "frenchtechcotedazur.fr",
+    "city": "Nice"
+  },
+  {
+    "name": "GAIA NEXUS",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "ia-data-analytics",
+    "domain": "dashboard.gaianexus.fr",
+    "city": "La Seyne-sur-Mer"
+  },
+  {
+    "name": "GALVASENS",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "ia-data-analytics, iot",
+    "city": "Solliès-Pont"
+  },
+  {
+    "name": "GARMIN France",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "garmin.com",
+    "city": "Rousset"
+  },
+  {
+    "name": "GECO-IT",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "autres, cyber-securite-numerique",
+    "domain": "geco-it.fr",
+    "city": "84 800"
+  },
+  {
+    "name": "Genaro",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "genaro.fr",
+    "city": "Marseille"
+  },
+  {
+    "name": "Gips Vision",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "gipsvision.fr",
+    "city": "Marseille"
+  },
+  {
+    "name": "Glanum (Tzav Design)",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "ia-data-analytics",
+    "domain": "glanum.com",
+    "city": "Avignon"
+  },
+  {
+    "name": "GRAFFITI",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "graffiti.ai",
+    "city": "Marseille"
+  },
+  {
+    "name": "GS2X",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique",
+    "city": "Fuveau"
+  },
+  {
+    "name": "Hackmosphere",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "cyber-securite-numerique",
+    "domain": "hackmosphere.fr",
+    "city": "Biot"
+  },
+  {
+    "name": "Heeding",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Himydata",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "himydata.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "HITACHI Europe R&D",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, ia-data-analytics, iot",
+    "domain": "hitachi.eu",
+    "city": "VALBONNE"
+  },
+  {
+    "name": "Hive Computing Services",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "iot",
+    "domain": "hivenet.com",
+    "city": "Cannes"
+  },
+  {
+    "name": "HOASYS",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "photonique-imagerie",
+    "domain": "hoasys.fr",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Horus 3D",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "microelectronique",
+    "domain": "horus3d.fr",
+    "city": "Mouans-Sartoux"
+  },
+  {
+    "name": "HUMANFAB",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "iAdaptime",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "city": "Vallauris"
+  },
+  {
+    "name": "IBS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique",
+    "domain": "ion-beam-services.com",
+    "city": "PEYNIER"
+  },
+  {
+    "name": "IDEMIA StarChip",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, cyber-securite-numerique, microelectronique",
+    "domain": "starchip-ic.com",
+    "city": "MEYREUIL"
+  },
+  {
+    "name": "Ignitera",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique, ia-data-analytics",
+    "domain": "ignitera.com",
+    "city": "Marseille"
+  },
+  {
+    "name": "IMRA EUROPE SAS",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "city": "Valbonne"
+  },
+  {
+    "name": "In Extenso Innovation Croissance",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "inextenso-innovation.fr",
+    "city": "BIOT"
+  },
+  {
+    "name": "Incubateur Multimédia Belle de Mai",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "belledemai.org",
+    "city": "Marseille"
+  },
+  {
+    "name": "INDIWAY Consulting",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics, iot",
+    "city": "Bouc-Bel-Air"
+  },
+  {
+    "name": "INLO Avocats",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "inlo.fr",
+    "city": "Marseille"
+  },
+  {
+    "name": "Inniz",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "inniz.fr",
+    "city": "Nice"
+  },
+  {
+    "name": "InnoFacto",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "innofacto.com",
+    "city": "Marseille"
+  },
+  {
+    "name": "Inocess",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "microelectronique",
+    "domain": "inocess.fr",
+    "city": "Nice"
+  },
+  {
+    "name": "INOZIS",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "ia-data-analytics",
+    "domain": "inozis.com",
+    "city": "La Seyne-sur-Mer"
+  },
+  {
+    "name": "Inria Sophia Antipolis",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "inria.fr",
+    "city": "SOPHIA ANTIPOLIS"
+  },
+  {
+    "name": "Insight Plus",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "city": "Nice"
+  },
+  {
+    "name": "Insight Sip",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, iot, microelectronique",
+    "domain": "insightsip.com",
+    "city": "SOPHIA ANTIPOLIS"
+  },
+  {
+    "name": "Instant System",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "instant-system.com",
+    "city": "Biot"
+  },
+  {
+    "name": "IOSYA – Intellect Objective System",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "iosya.com",
+    "city": "Meyreuil"
+  },
+  {
+    "name": "IPCONTACT GROUP / LOGICIELNET",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "ipcontactgroup.com",
+    "city": "Meyreuil"
+  },
+  {
+    "name": "IPEPPER GROUP",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": null,
+    "domain": "ipepper.fr",
+    "city": "Mouans Sartoux"
+  },
+  {
+    "name": "IPSUM TEK",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "iot",
+    "domain": "ipsumtek.com",
+    "city": "Avignon"
+  },
+  {
+    "name": "iQsim (Spark Technology France)",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, iot",
+    "domain": "iqsim.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "ISEN Méditerranée",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "autres, cyber-securite-numerique, iot",
+    "domain": "isen-mediterranee.fr",
+    "city": "Toulon"
+  },
+  {
+    "name": "iTransform 365",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "itransform365.com",
+    "city": "VALBONNE"
+  },
+  {
+    "name": "IWE",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "iwecloud.com",
+    "city": "Biot"
+  },
+  {
+    "name": "KEEEX",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "keeex.me",
+    "city": "Marseille"
+  },
+  {
+    "name": "Kheops",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "kheops.ai",
+    "city": "Nice"
+  },
+  {
+    "name": "Kincy",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": null,
+    "domain": "kincy.fr",
+    "city": "Marseille 16e Arrondissement"
+  },
+  {
+    "name": "KLETEL MULTIMEDIA",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "kletel.net",
+    "city": "Nice"
+  },
+  {
+    "name": "Kontron",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "autres, cyber-securite-numerique, iot",
+    "domain": "kontron.com",
+    "city": "83078"
+  },
+  {
+    "name": "LIFLAB",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, ia-data-analytics, iot",
+    "domain": "liflab.fr",
+    "city": "Arles"
+  },
+  {
+    "name": "Littersnap",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics, iot",
+    "domain": "littersnap.com",
+    "city": "Marseille"
+  },
+  {
+    "name": "Ludotic",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "ludotic.com",
+    "city": "VALBONNE"
+  },
+  {
+    "name": "Maaé",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "city": "Mougins"
+  },
+  {
+    "name": "magDesign",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "mag-design.fr",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "MAJE CONSEIL",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "autres",
+    "domain": "majeconseil.com",
+    "city": "La Seyne-sur-Mer"
+  },
+  {
+    "name": "MANTA TECH",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "cyber-securite-numerique, ia-data-analytics, iot",
+    "domain": "manta-tech.io",
+    "city": "Mougins"
+  },
+  {
+    "name": "MARE NOSTRUM ADVISING GROUPE",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "mnagroupe.com",
+    "city": "Marseille"
+  },
+  {
+    "name": "Marseille Innovation",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "marseille-innov.org",
+    "city": "Marseille"
+  },
+  {
+    "name": "MAYÉ entreprise",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "city": "Théoule-sur-Mer"
+  },
+  {
+    "name": "Med’invent Consulting",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "medinventconsulting.com",
+    "city": "La Ciotat"
+  },
+  {
+    "name": "Menta",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": null,
+    "domain": "menta-efpga.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Method",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "city": "Biot"
+  },
+  {
+    "name": "Metraware",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "autres, iot, microelectronique",
+    "domain": "metraware.com",
+    "city": "CABRIERES D'AIGUES"
+  },
+  {
+    "name": "Micro-PackS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, cyber-securite-numerique, iot, microelectronique",
+    "domain": "pf-micropacks.org",
+    "city": "Gardanne"
+  },
+  {
+    "name": "MICROTEST",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "microelectronique",
+    "domain": "microtest-semi.com",
+    "city": "Sérignan-du-Comtat"
+  },
+  {
+    "name": "Mines de Saint-Etienne Campus Aix-Marseille-Provence",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, cyber-securite-numerique, iot, microelectronique",
+    "domain": "mines-stetienne.fr",
+    "city": "GARDANNE"
+  },
+  {
+    "name": "Moabi Solutions",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": null,
+    "domain": "moabi.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Mobility Metrix",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "mobility-metrix.fr",
+    "city": "Auriol"
+  },
+  {
+    "name": "NAIXES",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, cyber-securite-numerique, ia-data-analytics",
+    "domain": "naixes.com",
+    "city": "Aix en Provence"
+  },
+  {
+    "name": "NanoCam Technologies",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "nanocamtech.eu",
+    "city": "Marignane"
+  },
+  {
+    "name": "NANOZ",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, iot, microelectronique",
+    "domain": "nanoz-group.eu",
+    "city": "Fuveau"
+  },
+  {
+    "name": "Neoditel",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "neoditel.fr",
+    "city": "Biot"
+  },
+  {
+    "name": "Neos Technologie",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, iot, microelectronique",
+    "domain": "neos-technologie.com",
+    "city": "Gardanne"
+  },
+  {
+    "name": "Neowave",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "neowave.fr",
+    "city": "GARDANNE"
+  },
+  {
+    "name": "NEURONAIX",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "city": "Marignane"
+  },
+  {
+    "name": "Nexess",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": null,
+    "domain": "nexess-solutions.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "NEXTRA PARTNERS GROUP",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, ia-data-analytics, iot",
+    "domain": "nextra-partners.com",
+    "city": "Marseille 2e Arrondissement"
+  },
+  {
+    "name": "NEXUS-WAN",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique, ia-data-analytics",
+    "domain": "nexus-wan.fr",
+    "city": "Arles"
+  },
+  {
+    "name": "Nexvision",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "nexvision.fr",
+    "city": "Marseille"
+  },
+  {
+    "name": "NGE ENERGIES SOLUTIONS (NGE Connect)",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": null,
+    "domain": "nge.fr",
+    "city": "Biot"
+  },
+  {
+    "name": "NomoSense",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "nomosense.com",
+    "city": "Gardanne"
+  },
+  {
+    "name": "NSP (Net Solution Partner)",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "nsp-fr.com",
+    "city": "VALBONNE"
+  },
+  {
+    "name": "NXP SemiConductors Sophia Antipolis",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, cyber-securite-numerique, microelectronique",
+    "domain": "nxp.com",
+    "city": "Mougins"
+  },
+  {
+    "name": "OOTENTIK",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics, iot",
+    "domain": "ootentik.net",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "OpenMotion",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "openmotion.fr",
+    "city": "Marseille 1er Arrondissement"
+  },
+  {
+    "name": "OPKI",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "opki-vacuum.com",
+    "city": "Meyreuil"
+  },
+  {
+    "name": "OPTIM Wafer Services",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique",
+    "domain": "optimwaferservices.com",
+    "city": "GREASQUE"
+  },
+  {
+    "name": "OPTIPUS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "optipus-pv.com",
+    "city": "Marseille"
+  },
+  {
+    "name": "ORAMA System",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "orama-system.com",
+    "city": "Meyreuil"
+  },
+  {
+    "name": "Orange Innovation",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "orange.com",
+    "city": "SOPHIA ANTIPOLIS"
+  },
+  {
+    "name": "OREUS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "oreus.ai",
+    "city": "Marseille"
+  },
+  {
+    "name": "Orkis",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "orkis.com",
+    "city": "Les Milles"
+  },
+  {
+    "name": "ORPHEA DIGITAL CONSULTING",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "orpheadc.io",
+    "city": "Saint-Cannat"
+  },
+  {
+    "name": "Orsay Physics",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique",
+    "domain": "orsayphysics.com",
+    "city": "FUVEAU"
+  },
+  {
+    "name": "Oticon Medical",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "oticonmedical.com",
+    "city": "VALLAURIS"
+  },
+  {
+    "name": "Ovochain",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "ovochain.com",
+    "city": "Marseille 3e Arrondissement"
+  },
+  {
+    "name": "Panoptes",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": null,
+    "domain": "panoptes-fr.com",
+    "city": "Cavaillon"
+  },
+  {
+    "name": "Pays d’aix développement",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "provence-pad.com",
+    "city": "Aix en Provence"
+  },
+  {
+    "name": "Pearcode.io",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "pearcode.io",
+    "city": "Sophia-Antipolis"
+  },
+  {
+    "name": "PERROQUET",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "perroquet.eu",
+    "city": "Marseille"
+  },
+  {
+    "name": "PHARMACIE AUTOMATISME",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "autres",
+    "domain": "pharmax.fr",
+    "city": "Roquebrune sur Argens"
+  },
+  {
+    "name": "PHLOX",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "phlox-gc.com",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "PHOCEA DC",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "phocea-dc.com",
+    "city": "Marseille"
+  },
+  {
+    "name": "PIVER",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "cyber-securite-numerique",
+    "domain": "piver.ai",
+    "city": "Cavaillon"
+  },
+  {
+    "name": "POLICLOUD",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "policloud.com",
+    "city": "Cannes"
+  },
+  {
+    "name": "Prolexia",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "ia-data-analytics, microelectronique, photonique-imagerie",
+    "domain": "prolexia.fr",
+    "city": "La Seyne sur Mer"
+  },
+  {
+    "name": "ProTubeVR",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "protubevr.com",
+    "city": "Marseille 2e Arrondissement"
+  },
+  {
+    "name": "Pytheas Navigation",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "pytheasnavigation.com",
+    "city": "Marseille 16e Arrondissement"
+  },
+  {
+    "name": "QENVI",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "iot",
+    "domain": "qenvi.com",
+    "city": "Sophia Antipolis"
+  },
+  {
+    "name": "Qinomic SAS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "qinomic.com",
+    "city": "Venelles"
+  },
+  {
+    "name": "Qista",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, ia-data-analytics, iot",
+    "domain": "qista.com",
+    "city": "Sénas"
+  },
+  {
+    "name": "Qwamplify Activation",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "qwamplify.com",
+    "city": "Rousset"
+  },
+  {
+    "name": "RAISIN.AI",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "raisin.ai",
+    "city": "Nice"
+  },
+  {
+    "name": "REEL IT",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "reelit.fr",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "RPCE",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "microelectronique",
+    "domain": "rpce.fr",
+    "city": "Valbonne"
+  },
+  {
+    "name": "S-MA-C-H",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "iot",
+    "domain": "s-ma-c-h.com",
+    "city": "Sainte-Cécile-les-Vignes"
+  },
+  {
+    "name": "SCALIA",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "ia-data-analytics",
+    "domain": "scalia-company.com",
+    "city": "Carpentras"
+  },
+  {
+    "name": "Scanlitt",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "scanlitt.com",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Schneider Electric France",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "se.com",
+    "city": "CARROS"
+  },
+  {
+    "name": "SecOps Forces",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "secopsforces.com",
+    "city": "Marseille"
+  },
+  {
+    "name": "SEED",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics, iot",
+    "domain": "seed-services.fr",
+    "city": "Sausset-les-Pins"
+  },
+  {
+    "name": "SELERYS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "selerys.fr",
+    "city": "Rousset"
+  },
+  {
+    "name": "Sesterce (THE MINING COMPAGNY)",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, ia-data-analytics, microelectronique",
+    "domain": "sesterce.systems",
+    "city": "Marseille 12e Arrondissement"
+  },
+  {
+    "name": "SESTERCE France",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "sesterce.com",
+    "city": "Marseille"
+  },
+  {
+    "name": "SHARING WORKER",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "sharingworker.com",
+    "city": "13 590"
+  },
+  {
+    "name": "SILIOS Technologies",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "silios.com",
+    "city": "PEYNIER"
+  },
+  {
+    "name": "SIMPLON.CO",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": null,
+    "domain": "paca.simplon.co",
+    "city": "Marseille 13e Arrondissement"
+  },
+  {
+    "name": "Skilit",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "skilit.io",
+    "city": "Ventabren"
+  },
+  {
+    "name": "SKRIBI",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "skribi.fr",
+    "city": "Antibes"
+  },
+  {
+    "name": "Sl3J Systems",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": null,
+    "domain": "sl3j.com",
+    "city": "Simiane Collongue"
+  },
+  {
+    "name": "Smart Packaging Solutions (SPS)",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, cyber-securite-numerique, microelectronique",
+    "domain": "s-p-s.com",
+    "city": "ROUSSET"
+  },
+  {
+    "name": "Smartaly",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "smartaly.fr",
+    "city": "La Roquette-sur-Siagne"
+  },
+  {
+    "name": "Smartcom",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, iot",
+    "domain": "smartcom.com",
+    "city": "BIOT"
+  },
+  {
+    "name": "Société du Canal de Provence",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "canaldeprovence.com",
+    "city": "Le Tholonet"
+  },
+  {
+    "name": "SOLNIL",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "photonique-imagerie",
+    "domain": "solnil.com",
+    "city": "95 Rue de la République"
+  },
+  {
+    "name": "Sparky Flow",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "ia-data-analytics",
+    "domain": "sparkyflow.com",
+    "city": "Marseille"
+  },
+  {
+    "name": "Spectronite",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "iot",
+    "domain": "spectronite.com",
+    "city": "Biot"
+  },
+  {
+    "name": "STid",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique, iot",
+    "domain": "stid.com",
+    "city": "GREASQUE"
+  },
+  {
+    "name": "STIL",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "microelectronique, photonique-imagerie",
+    "domain": "stil-sensors.com",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "STMicroelectronics Rousset",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, cyber-securite-numerique, iot, microelectronique",
+    "domain": "st.com",
+    "city": "ROUSSET"
+  },
+  {
+    "name": "Streamlane",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "streamlane.eu",
+    "city": "Valbonne"
+  },
+  {
+    "name": "Supponor",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "city": "Biot"
+  },
+  {
+    "name": "Symes",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "microelectronique",
+    "domain": "symes.fr",
+    "city": "Cagnes-sur-Mer"
+  },
+  {
+    "name": "Tas France",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "tasgroup.fr",
+    "city": "SOPHIA ANTIPOLIS"
+  },
+  {
+    "name": "TEAM Henri-Fabre",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": null,
+    "domain": "team-henri-fabre.com",
+    "city": "Marignane"
+  },
+  {
+    "name": "TechNext",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres, ia-data-analytics, iot",
+    "domain": "technext.eu",
+    "city": "Cannes"
+  },
+  {
+    "name": "Tekshelf",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "tekshelf.fr",
+    "city": "Fuveau"
+  },
+  {
+    "name": "TELLUS",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "tellus.fr",
+    "city": "Biot"
+  },
+  {
+    "name": "TERA sensor",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "tera-sensor.com",
+    "city": "Rousset"
+  },
+  {
+    "name": "Thales DIS France SAS",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, cyber-securite-numerique, ia-data-analytics, iot",
+    "domain": "thalesgroup.com",
+    "city": "Gémenos"
+  },
+  {
+    "name": "ToumAI",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "toum.ai",
+    "city": "Cannes"
+  },
+  {
+    "name": "Trust & Cie",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "trustandcie.fr",
+    "city": "Aubagne"
+  },
+  {
+    "name": "Trusted Objects",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres, cyber-securite-numerique, iot",
+    "domain": "trusted-objects.com",
+    "city": "Aix-en-Provence"
+  },
+  {
+    "name": "Twinlify",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "iot",
+    "domain": "twinlify.com",
+    "city": "Bouc-Bel-Air"
+  },
+  {
+    "name": "Ultimlux",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics, iot",
+    "domain": "ultimlux.fr",
+    "city": "Avignon"
+  },
+  {
+    "name": "UNIVERSITE COTE D’AZUR (UCA)",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "unice.fr",
+    "city": "NICE cedex 2"
+  },
+  {
+    "name": "Université D’Avignon",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "autres",
+    "domain": "univ-avignon.fr",
+    "city": "AVIGNON Cedex 01"
+  },
+  {
+    "name": "Université de Toulon (UTLN)",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "autres, iot",
+    "domain": "univ-tln.fr",
+    "city": "La Garde"
+  },
+  {
+    "name": "UNIY",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "autres, cyber-securite-numerique",
+    "domain": "uniy.fr",
+    "city": "La Seyne-sur-Mer"
+  },
+  {
+    "name": "Uperia – Digital Legal Solutions",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": null,
+    "domain": "uperia.tech",
+    "city": "Biot"
+  },
+  {
+    "name": "VANKORE",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics, iot",
+    "domain": "vankore.com",
+    "city": "Nice"
+  },
+  {
+    "name": "Viapass",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "autres",
+    "domain": "viapass.com",
+    "city": "CANNES"
+  },
+  {
+    "name": "Virage.AI",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "virage.ai",
+    "city": "Grasse"
+  },
+  {
+    "name": "Virtubiopsy",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "city": "Valbonne"
+  },
+  {
+    "name": "We Are Cyber",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "city": "Marseille"
+  },
+  {
+    "name": "WEVER",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "wever.fr",
+    "city": "Nice"
+  },
+  {
+    "name": "WildMoka",
+    "source": "aktantis",
+    "zone": "alpes-maritimes",
+    "techno": "ia-data-analytics",
+    "domain": "wildmoka.com",
+    "city": "Sophia Antipolis"
+  },
+  {
+    "name": "WISE-INTEGRATION",
+    "source": "aktantis",
+    "zone": "var",
+    "techno": "microelectronique",
+    "domain": "wise-integration.com",
+    "city": "Hyères"
+  },
+  {
+    "name": "WIXAR (WideWebVR)",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "autres",
+    "domain": "wixar.io",
+    "city": "Marseille"
+  },
+  {
+    "name": "XiLAB 3D+",
+    "source": "aktantis",
+    "zone": "region-sud",
+    "techno": "ia-data-analytics",
+    "domain": "xilab.tech",
+    "city": "Sisteron"
+  },
+  {
+    "name": "YVES LE FLOCH CONSEIL",
+    "source": "aktantis",
+    "zone": "bouches-du-rhone",
+    "techno": "cyber-securite-numerique",
+    "domain": "le-floch.pro",
+    "city": "Aix-en-Provence"
+  }
+]

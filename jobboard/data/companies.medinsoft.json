@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Market Academy",
+    "source": "medinsoft",
+    "domain": "market-academy.com",
+    "city": "Aix-en-Provence",
+    "tags": [
+      "Services numériques",
+      "Digital marketing & sales",
+      "Édition de logiciel & Apps",
+      "Outils B2B",
+      "IoT",
+      "IA"
+    ]
+  },
+  {
+    "name": "ACSES",
+    "source": "medinsoft",
+    "domain": "acses-coaching.com",
+    "city": "Marseille",
+    "tags": [
+      "Emploi recrutement formation",
+      "Outils B2B",
+      "Conseils indépendants",
+      "Services aux entreprises"
+    ]
+  },
+  {
+    "name": "Agrove",
+    "source": "medinsoft",
+    "domain": "agrove.fr",
+    "city": "Aix-en-Provence",
+    "tags": [
+      "Agriculture / sylviculture / pêche",
+      "FoodTech",
+      "GreenTech",
+      "IoT",
+      "Smartcity / mobilité / transport",
+      "Sport / bien-être (Tech for good)"
+    ]
+  },
+  {
+    "name": "1000 partenaires",
+    "source": "medinsoft",
+    "domain": "1000partenaires.fr",
+    "city": "Plan-de-Cuques",
+    "tags": [
+      "Outils B2B",
+      "Services aux entreprises"
+    ]
+  }
+]

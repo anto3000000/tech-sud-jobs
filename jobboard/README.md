@@ -4,18 +4,41 @@ Agrégateur d'offres **Tech / Data / Product / Design** en Provence-Alpes-Côte
 d'Azur. Zéro scraping HTML fragile : on tape les mêmes API publiques que les
 sites sources.
 
-## Les 3 couches
+## Les couches
 
 | # | Source | Ce qu'on en tire | Script |
 |---|--------|------------------|--------|
 | 1 | **Welcome to the Jungle** — index Algolia public `wk_cms_jobs_production` | ~5 300 offres PACA actives, filtrées Tech via classifieur de titres | `sources/wttj.py` |
 | 1b | **WTTJ detail API** `api.welcometothejungle.com/api/v1/organizations/<org>/jobs/<slug>` | stack technique (`tools`), description, niveau d'xp, lien de candidature direct, logo | `sources/wttj_enrich.py` |
+| 1c | **France Travail** — API officielle *Offres d'emploi v2* | offres PACA des 6 dép. sur `grandDomaine=M18` (info & télécoms), filtrées Tech ; employeur masqué / intérim / ESN écartés ; **lien de candidature sur un ATS connu** (pas d'agrégateur type Meteojob) ; **cap 5 offres / employeur** (anti-régie) | `sources/francetravail.py` |
 | 2 | **Annuaire French Tech Aix-Marseille** — WordPress REST `/wp-json/wp/v2/annuaire` | ~660 boîtes + domaine (résolu via le lien "site" de leur fiche) | `annuaire/frenchtech_amp.py` |
+| 2b | **Annuaire French Tech Côte d'Azur** (Sophia / Nice) — CPT `portfolio` non exposé en REST, lu depuis la grille Nectar de la page *Nos Start-up* | ~100 boîtes + domaine (le lien de la carte = le site de la boîte) | `annuaire/frenchtech_cotedazur.py` |
+| 2c | **Telecom Valley** (cluster Sophia) — WordPress REST `/wp-json/wp/v2/project` | ~125 membres + domaine (texte de l'extrait) + tags territoire / structure / secteur | `annuaire/telecom_valley.py` |
+| 2d | **Aktantis** (ex-Pôle SCS, deeptech PACA) — archive WordPress `/annuaire-des-membres/page/N/` | ~275 membres PACA + domaine + `data-zone` / `data-techno` (µélectronique, IoT, IA, cyber, photonique) | `annuaire/aktantis.py` |
+| 2e | **Medinsoft** (Marseille / Aix) — collection Wix Data `Annuaire` dans le blob `wix-warmup-data` | poignée de boîtes seulement (collection publique à peine peuplée depuis déc. 2024) | `annuaire/medinsoft.py` |
 | 3 | **ATS des boîtes** (Ashby, Lever, SmartRecruiters, Taleez, Recruitee, Workable, Greenhouse, Personio) | offres en direct de l'employeur, lien de candidature natif | `resolve.py` + `fetch_jobs.py` |
 
-La couche 2 alimente la couche 3 : on part de la liste d'entreprises, on
-détecte l'ATS (`resolve.py` ping les boards + fingerprint la page carrières),
-puis `fetch_jobs.py` récupère les offres via l'API JSON de chaque ATS.
+Les couches 2* alimentent la couche 3 : `merge_companies.py` concatène la liste
+curée + tous les annuaires (dédup domaine puis nom, la source la plus fiable
+gagne) → `data/companies.all.json`. Puis `resolve.py` détecte l'ATS (ping des
+boards + fingerprint de la page carrières) et `fetch_jobs.py` récupère les
+offres via l'API JSON de chaque ATS. Les scrapers d'annuaire sont stdlib pur ;
+un User-Agent de navigateur suffit (cf. `annuaire/_common.py`) — pas besoin de
+navigateur headless, sauf si un hôte se remet à renvoyer 403 en CI (dans ce cas
+`--html-file` pour parser une copie récupérée à la main).
+
+**Vérification géo (couche 3).** Une sonde directe *devine* le slug depuis le
+nom de la boîte → un nom générique (« Blue », « Tempo », « CM ») tombe sur le
+board d'un homonyme étranger. `resolve.py` ne garde donc un hit `direct-probe`
+que si (a) un humain a déclaré ce slug exact, ou (b) au moins une offre du board
+est localisée en France. Sinon → `needs_review` + `resolved_via=direct-probe-unverified`,
+et `fetch_jobs.py` l'ignore (`--include-unverified` pour forcer ; un second
+garde-fou géo re-vérifie les offres réellement récupérées).
+
+Couche 1c : c'est une source d'*offres*, pas de *boîtes* — on récupère
+l'annonce et son lien de candidature directement, donc pas de slug à deviner,
+pas de risque d'homonyme. Au `build`, un lien ATS direct > lien WTTJ > lien
+France Travail (agrégateur).
 
 ## Pipeline
 
@@ -30,33 +53,60 @@ python3 jobboard/sources/wttj_enrich.py          # complète data/wttj_paca.json
 #   -> réponses cachées dans data/cache/wttj/ ; re-runs = réseau seulement pour les offres nouvelles
 #   -> re-classe chaque offre avec la liste `tools` (titre vague + stack dev => eng/data)
 
-# 2. annuaire French Tech Aix-Marseille (~5 min avec résolution de domaine)
-python3 jobboard/annuaire/frenchtech_amp.py      # -> data/companies.frenchtech-amp.json
+# 1 ter. France Travail (API officielle ; ~10 s)
+#   creds : jobboard/.env  ->  FT_CLIENT_ID=... / FT_CLIENT_SECRET=...  (app sur https://francetravail.io)
+python3 jobboard/sources/francetravail.py        # -> data/francetravail_paca.json
+#   défauts : tech only ; sans employeur masqué / intérim / ESN ; lien de candidature
+#   sur un ATS connu uniquement (--links direct) ; max 5 offres par employeur
+python3 jobboard/sources/francetravail.py --links no-aggregator --max-per-company 0  # plus permissif
+python3 jobboard/sources/francetravail.py --keep-agencies --keep-anonymous --links any  # tout garder
+python3 jobboard/sources/francetravail.py --rome M1805,M1806,M1810           # cibler des codes ROME précis
 
-# 3. ATS : résoudre puis récupérer
-python3 jobboard/resolve.py                      # companies.json (+ annuaire) -> companies.resolved.json
+# 2. annuaires institutionnels / clusters (chacun -> data/companies.<source>.json)
+python3 jobboard/annuaire/frenchtech_amp.py        # French Tech Aix-Marseille (~5 min, résout les domaines)
+python3 jobboard/annuaire/frenchtech_cotedazur.py  # French Tech Côte d'Azur / Sophia-Nice (~100)
+python3 jobboard/annuaire/telecom_valley.py        # cluster Telecom Valley, Sophia (~125)
+python3 jobboard/annuaire/aktantis.py              # Aktantis / ex-Pôle SCS, deeptech PACA (~275 ; --all-regions pour Occitanie)
+python3 jobboard/annuaire/medinsoft.py             # Medinsoft, Marseille/Aix (collection publique quasi vide)
+
+# 3. ATS : fusionner curated + tous les annuaires, résoudre, récupérer
+python3 jobboard/merge_companies.py              # -> data/companies.all.json  (~1140 boîtes, dédup domaine/nom)
+python3 jobboard/resolve.py -i jobboard/data/companies.all.json \
+        -o jobboard/companies.resolved.json --workers 20      # détecte ATS + slug (~25 min, vérif géo incluse)
 python3 jobboard/fetch_jobs.py -o jobboard/data/ats_jobs.json
 
 # 4. fusion -> feed unique du site
 python3 jobboard/build.py                        # -> site/jobs.json  (+ data/jobs.json)
 
-# 5. servir le site statique
+# 5. pages statiques SEO (offre par offre + listes filtrées + sitemap)
+python3 jobboard/render_pages.py                 # -> site/offre/*.html, site/emploi/*.html, sitemap.xml, robots.txt
+
+# 6. servir le site statique
 cd jobboard/site && python3 -m http.server 8777  # http://localhost:8777
 ```
 
 `build.py` : normalise, garde PACA + Tech/Data/Product, dé-duplique
-(`entreprise + intitulé` ; un lien ATS direct l'emporte sur un lien WTTJ),
-trie par date.
+(`entreprise + intitulé` ; ordre de préférence du lien : ATS direct > WTTJ >
+France Travail), trie par date. **Garde-fou** : si le merge sort moins de
+`MIN_JOBS` offres (défaut 150) il quitte en erreur au lieu d'écrire un feed
+quasi vide — `ALLOW_SMALL_FEED=1` pour forcer en local.
 
 ## Déploiement (GitHub Actions + Pages)
 
 `.github/workflows/jobboard.yml` — tous les jours ~07 h (Paris) + à chaque push
 sur `jobboard/**` + manuel (`workflow_dispatch`) :
 
-1. `./jobboard/pipeline.sh` (wttj → enrich → ats best-effort → build)
+1. `./jobboard/pipeline.sh` (wttj → enrich → **france travail** → ats best-effort → build → **render_pages**)
 2. commit du feed rafraîchi (`data/*.json`, `site/jobs.json`) avec `[skip ci]`
    — c'est ce qui fait persister `seen.json` d'un run à l'autre (badge « nouveau »)
-3. déploiement de `jobboard/site/` sur GitHub Pages
+3. déploiement de `jobboard/site/` sur GitHub Pages — l'artefact inclut les
+   pages statiques régénérées à l'étape 1 (`site/offre/`, `site/emploi/`,
+   `sitemap.xml`), qui sont *git-ignorées* : jamais commitées, reconstruites à
+   chaque run.
+
+> Couche 1c (France Travail) : ajouter `FT_CLIENT_ID` / `FT_CLIENT_SECRET` dans
+> les *repository secrets* et les exporter dans le job du workflow. Sans eux
+> l'étape est sautée (best-effort), le reste du pipeline tourne.
 
 Le cache des réponses détail WTTJ est porté par `actions/cache` (`data/cache/`),
 donc chaque run ne re-télécharge que les offres nouvelles.
@@ -81,6 +131,34 @@ recherche plein-texte, ville, contrat, catégorie, télétravail, tri.
 Déployable tel quel sur n'importe quel hébergement statique (Pages, Netlify,
 S3…) — il suffit d'y déposer `index.html` + `jobs.json` régénéré par un cron.
 
+## SEO — pages statiques (`render_pages.py`)
+
+Le front est une SPA à une seule URL : invisible pour Google. `render_pages.py`
+lit `site/jobs.json` (déjà construit par `build.py`) et écrit, dans `site/` :
+
+| Sortie | Quoi |
+|--------|------|
+| `offre/<slug>.html` | une page par offre — `<title>` / OpenGraph / **JSON-LD `JobPosting`** (rich snippets Google Jobs), fil d'ariane, description complète, offres similaires, lien vers la liste filtrée correspondante |
+| `emploi/<facette>.html` | listes pré-rendues : métier (`eng`, `data`, `product`…), ville, **métier × ville** (`eng-marseille`), techno (`stack-react`), **techno × ville**, télétravail. Seuil : ≥ 3 offres (`MIN_FACET`), ≥ 8 pour une techno seule (`MIN_STACK`) |
+| `emploi/index.html` | hub qui pointe vers toutes les facettes |
+| `sitemap.xml` | home + toutes les facettes + toutes les offres, avec `lastmod` |
+| `robots.txt` | pointe le sitemap |
+
+Tout est du **build output** : `.gitignore`-é, reconstruit à chaque run,
+déployé depuis l'artefact Pages (pas depuis git). La SPA `index.html` n'est pas
+touchée — juste enrichie une fois de son `<head>` SEO + d'un `<nav>` de liens
+vers le hub.
+
+Base des URL : `SITE_URL` (défaut `https://anto3000000.github.io/tech-sud-jobs`).
+Les liens internes sont relatifs (marchent quel que soit le domaine) ;
+`canonical` / OG / `sitemap` sont absolus.
+
+**À faire côté Google** : soumettre `…/sitemap.xml` dans la Search Console
+(propriété *préfixe d'URL* `https://anto3000000.github.io/tech-sud-jobs/`,
+vérifiée par fichier HTML déposé dans `site/`). `robots.txt` sur un projet
+github.io n'est pas lu (pas à la racine du domaine) — sans effet tant qu'il n'y
+a pas de domaine perso, mais correct si on en ajoute un.
+
 ## Clés WTTJ
 
 `sources/wttj.py` embarque la clé de recherche publique (restreinte par
@@ -104,8 +182,23 @@ python3 jobboard/sources/wttj.py --state "Auvergne-Rhone-Alpes" -o jobboard/data
 - **Date de première vue** : persister l'ensemble des `objectID` vus + un
   `first_seen` par offre (le `published_at` WTTJ est parfois une re-publication),
   et exposer un badge "nouveau" / un filtre "ajoutées cette semaine".
-- Couche 2 bis : annuaire French Tech Côte d'Azur (Sophia / Nice) — le site
-  renvoie 403 sur `curl`, à récupérer via navigateur headless ou leur API.
-- Couche 3 : beaucoup de slugs ATS non vérifiés (404). Alimenter `resolve.py`
-  avec `data/companies.frenchtech-amp.json` (605 domaines) pour du fingerprint
-  réel plutôt que des devinettes.
+- ~~Couche 2 bis : annuaire French Tech Côte d'Azur (Sophia / Nice)~~ ✅ fait
+  (`annuaire/frenchtech_cotedazur.py`) — plus Telecom Valley, Aktantis (ex-Pôle
+  SCS) et Medinsoft. Un UA de navigateur passe le 403, pas de headless.
+- French Tech Côte d'Azur : la grille publique plafonne à 100 des ~208 fiches
+  `portfolio` (triées A→Z). Le reste passe par l'archive
+  `/?post_type=portfolio&paged=N`, mais la plupart de ces fiches n'ont pas de
+  lien "site" → elles ne donneraient au résolveur que des devinettes de domaine.
+- Medinsoft : la collection Wix `Annuaire` n'a que ~4 lignes publiques
+  (lancée déc. 2024). Re-scraper quand `datasetSize.total` grimpe.
+- Couche 3 : beaucoup de slugs ATS non vérifiés (404). Le fingerprint réel
+  tourne maintenant sur ~1050 domaines (`data/companies.all.json`).
+- **Classifieur — faux positifs `eng`** : « Chargé de **développement** commercial »,
+  « Responsable **développement** foncier », « Chargé de **développement** RH »
+  passent en catégorie *Développeur* (le mot français). Peu visible dans la SPA,
+  mais chaque page `emploi/eng-*.html` les référence maintenant sous « Emplois
+  Développeur à … ». Ajouter à `classify.py` un négatif sur
+  `d[ée]veloppement (commercial|rh|foncier|immobilier|des ventes|de la client)`.
+- SEO : après indexation, générer des pages **entreprise** (`entreprise/<slug>.html`,
+  toutes les offres d'une boîte + JSON-LD `Organization`) et **`validThrough`**
+  réel plutôt que `datePosted + 90 j`.

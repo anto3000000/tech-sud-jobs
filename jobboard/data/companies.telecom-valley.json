@@ -1,0 +1,1710 @@
+[
+  {
+    "name": "ACOSS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/acoss/",
+    "domain": "acoss.fr",
+    "tags": [
+      "Développement économique",
+      "FinTech",
+      "Institutionnel",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "ALL4TEST",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/all4test/",
+    "domain": "all4test.fr",
+    "tags": [
+      "B2B Enablers",
+      "Cannes",
+      "Ingénierie Logicielle & ESN",
+      "PME"
+    ]
+  },
+  {
+    "name": "ALYC TECHNOLOGIES",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/alyc-technologies/",
+    "domain": "alyctech.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "IoT & Systèmes embarqués",
+      "Startup",
+      "Var"
+    ]
+  },
+  {
+    "name": "AMADEUS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/amadeus/",
+    "domain": "amadeus.com",
+    "tags": [
+      "B2B Enablers",
+      "Edition de Logiciels",
+      "Grands groupes",
+      "Sophia Antipolis",
+      "TravelTech"
+    ]
+  },
+  {
+    "name": "ARION",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/arion/",
+    "domain": "ariontraining.com",
+    "tags": [
+      "Conseil Juridique & Financier",
+      "EdTech",
+      "Indépendant",
+      "LegalTech",
+      "Recherche & Formation",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "ARTINLEAP",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/artinleap/",
+    "domain": "artinleap.com",
+    "tags": [
+      "B2B Enablers",
+      "Deeptech",
+      "Intelligence Artificielle & Data",
+      "Smart City",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "Attestis",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/attestis/",
+    "domain": "attestis.com",
+    "tags": [
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "IoT & Systèmes embarqués",
+      "PropTech",
+      "Smart City",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "Avangarde Cyber Sécurité",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/avangarde-cyber-securite/",
+    "domain": "avangardecyber.fr",
+    "tags": [
+      "B2B Enablers",
+      "Cybersécurité & identité",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "AYMING",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ayming/",
+    "domain": "ayming.fr",
+    "tags": [
+      "B2B Enablers",
+      "Conseil Juridique & Financier",
+      "Développement économique",
+      "FinTech",
+      "Grands groupes",
+      "Hors Côte d'Azur"
+    ]
+  },
+  {
+    "name": "BENDA THIERRY",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/benda-thierry/",
+    "domain": "bendathierry.com",
+    "tags": [
+      "B2B Enablers",
+      "Indépendant",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "Var"
+    ]
+  },
+  {
+    "name": "BERTRANDT",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/bertrandt/",
+    "domain": "bertrandt.com",
+    "tags": [
+      "Grands groupes",
+      "Ingénierie Logicielle & ESN",
+      "MobilityTech",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "BEYOURSALES",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/beyoursales/",
+    "domain": "beyoursales.com",
+    "tags": [
+      "B2B Enablers",
+      "Cannes",
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "MarTech",
+      "Startup"
+    ]
+  },
+  {
+    "name": "BPI FRANCE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/bpi-france/",
+    "domain": "bpifrance.fr",
+    "tags": [
+      "Cannes",
+      "Ecosystème",
+      "Grasse",
+      "Hors Côte d'Azur",
+      "Institutionnel",
+      "Monaco",
+      "Nice",
+      "Sophia Antipolis",
+      "Var"
+    ]
+  },
+  {
+    "name": "CAPSTAN AVOCATS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/capstan/",
+    "domain": "capstan.fr",
+    "tags": [
+      "Conseil Juridique & Financier",
+      "LegalTech",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "CCI NICE COTE D’AZUR",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/cci-nice-cote-dazur/",
+    "domain": "cote-azur.cci.fr",
+    "tags": [
+      "B2B Enablers",
+      "Développement économique",
+      "Ecosystème",
+      "Institutionnel",
+      "Nice",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "CIBLEMUT",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ciblemut/",
+    "domain": "ciblemut.net",
+    "tags": [
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "InsurTech",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "COMMUNAUTE D’AGGLOMERATION SOPHIA ANTIPOLIS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/communaute-dagglomeration-sophia-antipolis/",
+    "domain": "agglo-sophiaantipolis.fr",
+    "tags": [
+      "B2B Enablers",
+      "Développement économique",
+      "Ecosystème",
+      "Institutionnel",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "COOPTEO INNOVATION",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/coopteo-innovation/",
+    "domain": "coopteo.fr",
+    "tags": [
+      "B2B Enablers",
+      "Conseil Juridique & Financier",
+      "Développement économique",
+      "FinTech",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "CSTB",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/cstb/",
+    "domain": "cstb.fr",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Développement économique",
+      "GreenTech",
+      "Innovation d'usage",
+      "Institutionnel",
+      "PropTech",
+      "Recherche & Formation",
+      "Smart City",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "DELIGEO",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/deligeo/",
+    "domain": "deligeo.fr",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Edition de Logiciels",
+      "Indépendant",
+      "Innovation d'usage",
+      "Var"
+    ]
+  },
+  {
+    "name": "DEPARTEMENT DES ALPES-MARITIMES",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/departement-des-alpes-maritimes/",
+    "domain": "departement06.fr",
+    "tags": [
+      "B2B Enablers",
+      "Développement économique",
+      "Ecosystème",
+      "Institutionnel",
+      "Nice"
+    ]
+  },
+  {
+    "name": "DEVELOPTIMUM",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/developtimum/",
+    "domain": "developtimum.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil RH Tech",
+      "HRTech",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "DEVELOP YOUR DREAMS CONSULTING",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/develop-your-dreams-consulting/",
+    "tags": [
+      "B2B Enablers",
+      "Cannes",
+      "Indépendant",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage"
+    ]
+  },
+  {
+    "name": "DIJIPART",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/dijipart/",
+    "domain": "dijipart.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Indépendant",
+      "Ingénierie Logicielle & ESN",
+      "Monaco"
+    ]
+  },
+  {
+    "name": "DO INGENIA",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/do-ingenia/",
+    "domain": "doingenia.com",
+    "tags": [
+      "B2B Enablers",
+      "Marketing digital",
+      "MarTech",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "ECASTE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ecaste/",
+    "domain": "ecaste.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Indépendant",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "ECY CONSEIL",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ecy-conseil/",
+    "domain": "ecy-conseil.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Indépendant",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "EDHEC BUSINESS SCHOOL",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/edhec-business-school/",
+    "domain": "edhec.edu",
+    "tags": [
+      "Académiques",
+      "EdTech",
+      "Nice",
+      "Recherche & Formation"
+    ]
+  },
+  {
+    "name": "ELLIPSO FACTO",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ellipso-facto/",
+    "domain": "ellipsofacto.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Indépendant",
+      "Innovation d'usage",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "ENGIT",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/engit/",
+    "domain": "engit.fr",
+    "tags": [
+      "B2B Enablers",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "EPITECH",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/epitech/",
+    "domain": "epitech.eu",
+    "tags": [
+      "Académiques",
+      "EdTech",
+      "Nice",
+      "Recherche & Formation"
+    ]
+  },
+  {
+    "name": "EUROFIBER BUSINESS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/eurofiber-business/",
+    "domain": "eurofiberbusiness.fr",
+    "tags": [
+      "B2B Enablers",
+      "Grands groupes",
+      "Nice"
+    ]
+  },
+  {
+    "name": "EverUp",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/everup/",
+    "domain": "everup.co",
+    "tags": [
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "MarTech",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "Fairval",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/fairval/",
+    "domain": "fairval.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Indépendant",
+      "Sophia Antipolis",
+      "TravelTech"
+    ]
+  },
+  {
+    "name": "FENYX CONSULT",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/fenyx-consult/",
+    "domain": "fenyx.fr",
+    "tags": [
+      "B2B Enablers",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "EDF",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/edf/",
+    "domain": "edf.fr",
+    "tags": [
+      "Autres Services",
+      "B2B Enablers",
+      "Grands groupes",
+      "GreenTech",
+      "Nice",
+      "Smart City"
+    ]
+  },
+  {
+    "name": "FONDATION SOPHIA ANTIPOLIS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/fondation-sophia-antipolis/",
+    "domain": "sophia-antipolis.org",
+    "tags": [
+      "Ecosystème",
+      "Institutionnel",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "FRANCE LABS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/france-labs/",
+    "domain": "francelabs.com",
+    "tags": [
+      "B2B Enablers",
+      "Deeptech",
+      "Edition de Logiciels",
+      "Intelligence Artificielle & Data",
+      "Nice",
+      "PME"
+    ]
+  },
+  {
+    "name": "HACKMOSPHERE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/hackmosphere/",
+    "domain": "hackmosphere.fr",
+    "tags": [
+      "B2B Enablers",
+      "Cybersécurité & identité",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "I3E KURSOR",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/i3e-kursor/",
+    "domain": "kursor.io",
+    "tags": [
+      "B2B Enablers",
+      "Edition de Logiciels",
+      "Grasse",
+      "GreenTech",
+      "Innovation d'usage",
+      "Smart City",
+      "Startup"
+    ]
+  },
+  {
+    "name": "IBIKKO",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ibikko/",
+    "domain": "ibikko.com",
+    "tags": [
+      "B2B Enablers",
+      "Marketing digital",
+      "MarTech",
+      "PME",
+      "Sophia Antipolis",
+      "TravelTech"
+    ]
+  },
+  {
+    "name": "IBM FRANCE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ibm-france/",
+    "domain": "ibm.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Edition de Logiciels",
+      "Grands groupes",
+      "Hors Côte d'Azur",
+      "Innovation d'usage",
+      "Intelligence Artificielle & Data",
+      "Smart City",
+      "Sophia Antipolis",
+      "Télécoms & Cloud"
+    ]
+  },
+  {
+    "name": "INCLUDDY",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/includdy/",
+    "domain": "includdy.com",
+    "tags": [
+      "Accessibilité",
+      "B2B Enablers",
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "Nice",
+      "Startup",
+      "Tech for Good"
+    ]
+  },
+  {
+    "name": "INNIZ",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/inniz/",
+    "domain": "inniz.fr",
+    "tags": [
+      "B2B Enablers",
+      "Conseil RH Tech",
+      "Edition de Logiciels",
+      "HealthTech",
+      "Innovation d'usage",
+      "Nice",
+      "Startup"
+    ]
+  },
+  {
+    "name": "IESF COTE D’AZUR",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/iesf-cote-dazur/",
+    "domain": "iesf-ca.fr",
+    "tags": [
+      "Association",
+      "B2B Enablers",
+      "Développement économique",
+      "Nice"
+    ]
+  },
+  {
+    "name": "INCUBATEUR PROVENCE COTE D’AZUR",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/incubateur-pca/",
+    "domain": "incubateurpca.org",
+    "tags": [
+      "Cannes",
+      "Ecosystème",
+      "Grasse",
+      "Hors Côte d'Azur",
+      "Institutionnel",
+      "Monaco",
+      "Nice",
+      "Sophia Antipolis",
+      "Var"
+    ]
+  },
+  {
+    "name": "INRIA MEDITERRANEE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/inria-mediterranee/",
+    "domain": "inria.fr",
+    "tags": [
+      "Académiques",
+      "B2B Enablers",
+      "Biotech",
+      "Deeptech",
+      "EdTech",
+      "HealthTech",
+      "Hors Côte d'Azur",
+      "Intelligence Artificielle & Data",
+      "Recherche & Formation",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "INTENTSITE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/intentsite/",
+    "domain": "intentsite.com",
+    "tags": [
+      "B2B Enablers",
+      "Deeptech",
+      "Edition de Logiciels",
+      "Intelligence Artificielle & Data",
+      "Sophia Antipolis",
+      "Startup",
+      "TravelTech"
+    ]
+  },
+  {
+    "name": "IPEPPER",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ipepper/",
+    "domain": "ipepper.fr",
+    "tags": [
+      "B2B Enablers",
+      "Grasse",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "Intelligence Artificielle & Data",
+      "PME",
+      "Télécoms & Cloud"
+    ]
+  },
+  {
+    "name": "IPKOL",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ipkol/",
+    "domain": "ipkol.fr",
+    "tags": [
+      "B2B Enablers",
+      "Cybersécurité & identité",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis",
+      "Télécoms & Cloud"
+    ]
+  },
+  {
+    "name": "CRT Région Sud LINKEUS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/linkeus/",
+    "domain": "linkeus.fr",
+    "tags": [
+      "Développement économique",
+      "Ecosystème",
+      "Hors Côte d'Azur",
+      "Institutionnel",
+      "Partenaires",
+      "TravelTech"
+    ]
+  },
+  {
+    "name": "IPSSI",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ipssi/",
+    "domain": "ecole-ipssi.com",
+    "tags": [
+      "Académiques",
+      "EdTech",
+      "Nice",
+      "Recherche & Formation"
+    ]
+  },
+  {
+    "name": "JANUA",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/janua/",
+    "domain": "jaguards.com",
+    "tags": [
+      "B2B Enablers",
+      "Cybersécurité & identité",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "KABIA",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/kabia/",
+    "domain": "kabia.eu",
+    "tags": [
+      "B2B Enablers",
+      "Cybersécurité & identité",
+      "Innovation d'usage",
+      "Nice",
+      "PME",
+      "Télécoms & Cloud"
+    ]
+  },
+  {
+    "name": "LA GRAINE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/la-graine/",
+    "domain": "maisonlagraine.co",
+    "tags": [
+      "Autres Services",
+      "B2B Enablers",
+      "Nice",
+      "PME"
+    ]
+  },
+  {
+    "name": "LE CODE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/le-code/",
+    "domain": "le-code.dev",
+    "tags": [
+      "Académiques",
+      "B2B Enablers",
+      "EdTech",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "PME",
+      "Recherche & Formation",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "LE VILLAGE BY CA",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/village-by-ca/",
+    "domain": "levillagebyca.com",
+    "tags": [
+      "B2B Enablers",
+      "Développement économique",
+      "Institutionnel",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "LIFELIDAR",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/lifelidar/",
+    "domain": "lifelidar.com",
+    "tags": [
+      "BlueTech",
+      "Deeptech",
+      "Intelligence Artificielle & Data",
+      "Smart City",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "LES DECCIDEUSES",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/les-deccideuses/",
+    "domain": "les-deccideuses.com",
+    "tags": [
+      "B2B Enablers",
+      "Développement économique",
+      "Ecosystème",
+      "Institutionnel",
+      "Partenaires",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "LUDOTIC",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ludotic/",
+    "domain": "ludotic.fr",
+    "tags": [
+      "Accessibilité",
+      "B2B Enablers",
+      "Conseil IT",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis",
+      "Tech for Good"
+    ]
+  },
+  {
+    "name": "LUMAPPS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/lumapps/",
+    "domain": "lumapps.com",
+    "tags": [
+      "B2B Enablers",
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "MAESTRIA",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/maestria/",
+    "domain": "maestria-digital.fr",
+    "tags": [
+      "B2B Enablers",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "M2I FORMATION",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/m2i-formation/",
+    "domain": "m2iformation.fr",
+    "tags": [
+      "B2B Enablers",
+      "EdTech",
+      "PME",
+      "Recherche & Formation",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "MENSAUCTA",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/mensaucta/",
+    "domain": "mensaucta.com",
+    "tags": [
+      "B2B Enablers",
+      "Edition de Logiciels",
+      "HRTech",
+      "Innovation d'usage",
+      "Intelligence Artificielle & Data",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "MON CTO",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/mon-cto/",
+    "domain": "mon-cto.pro",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Indépendant",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "NEGOCIATIS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/negociatis/",
+    "domain": "negociatis.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "MarTech",
+      "PME",
+      "Var"
+    ]
+  },
+  {
+    "name": "NLIGHTEN",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/nlighten/",
+    "domain": "nlighten.com",
+    "tags": [
+      "B2B Enablers",
+      "PME",
+      "Sophia Antipolis",
+      "Télécoms & Cloud",
+      "TelecomTech"
+    ]
+  },
+  {
+    "name": "NEODITEL",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/neoditel/",
+    "tags": [
+      "B2B Enablers",
+      "Hors Côte d'Azur",
+      "PME",
+      "Sophia Antipolis",
+      "Télécoms & Cloud",
+      "TelecomTech"
+    ]
+  },
+  {
+    "name": "NEOMOVE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/neomove/",
+    "domain": "neomove.app",
+    "tags": [
+      "Edition de Logiciels",
+      "HealthTech",
+      "HRTech",
+      "Innovation d'usage",
+      "Monaco",
+      "Startup"
+    ]
+  },
+  {
+    "name": "NEWTON",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/newton/",
+    "domain": "newton.care",
+    "tags": [
+      "B2B Enablers",
+      "Conseil RH Tech",
+      "Grasse",
+      "HRTech",
+      "Indépendant"
+    ]
+  },
+  {
+    "name": "NORSYS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/norsys/",
+    "domain": "norsys.fr",
+    "tags": [
+      "B2B Enablers",
+      "Grands groupes",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "Sophia Antipolis",
+      "Tech for Good"
+    ]
+  },
+  {
+    "name": "NOTERBEL INNOVATION",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/noterbel-innovation/",
+    "domain": "noterbel.fr",
+    "tags": [
+      "B2B Enablers",
+      "Cannes",
+      "Conseil IT"
+    ]
+  },
+  {
+    "name": "NUBEVIA",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/nubevia/",
+    "domain": "nubevia.com",
+    "tags": [
+      "B2B Enablers",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis",
+      "Télécoms & Cloud",
+      "TelecomTech"
+    ]
+  },
+  {
+    "name": "NXP SEMICONDUCTORS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/nxp-semiconductors/",
+    "domain": "nxp.com",
+    "tags": [
+      "B2B Enablers",
+      "Grands groupes",
+      "Innovation d'usage",
+      "IoT & Systèmes embarqués",
+      "Smart City",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "OPEN-IAM",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/open-iam/",
+    "domain": "janua.fr",
+    "tags": [
+      "B2B Enablers",
+      "Cybersécurité & identité",
+      "Innovation d'usage",
+      "Smart City",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "ORANGE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/orange/",
+    "domain": "orange.com",
+    "tags": [
+      "B2B Enablers",
+      "Grands groupes",
+      "Hors Côte d'Azur",
+      "Innovation d'usage",
+      "Sophia Antipolis",
+      "Télécoms & Cloud",
+      "TelecomTech"
+    ]
+  },
+  {
+    "name": "ORANGE BUSINESS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/orange-business-services/",
+    "domain": "orange-business.com",
+    "tags": [
+      "B2B Enablers",
+      "Grands groupes",
+      "Hors Côte d'Azur",
+      "Ingénierie Logicielle & ESN",
+      "Sophia Antipolis",
+      "Télécoms & Cloud"
+    ]
+  },
+  {
+    "name": "PIRINOLI AVOCAT",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/pirinoli-avocat/",
+    "domain": "pirinoliavocats.com",
+    "tags": [
+      "B2B Enablers",
+      "Cannes",
+      "Conseil Juridique & Financier",
+      "Indépendant",
+      "LegalTech"
+    ]
+  },
+  {
+    "name": "Polytech Nice Sophia",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/polytech-nice-sophia/",
+    "domain": "polytech.univ-cotedazur.fr",
+    "tags": [
+      "Académiques",
+      "B2B Enablers",
+      "EdTech",
+      "Recherche & Formation",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "POPPY SKINCARE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/poppy-skincare/",
+    "domain": "poppyskincare.fr",
+    "tags": [
+      "Autres Services",
+      "Biotech",
+      "Nice",
+      "Startup"
+    ]
+  },
+  {
+    "name": "PRO BTP",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/pro-btp/",
+    "domain": "probtp.com",
+    "tags": [
+      "Autres Services",
+      "Grands groupes",
+      "Innovation d'usage",
+      "InsurTech",
+      "Nice"
+    ]
+  },
+  {
+    "name": "PRODECYS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/prodecys/",
+    "domain": "prodecys.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "Proelan",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/proelan/",
+    "domain": "proelan.com",
+    "tags": [
+      "B2B Enablers",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "PROPTEXX",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/proptexx/",
+    "domain": "proptexx.com",
+    "tags": [
+      "B2B Enablers",
+      "PropTech",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "RECHERCHE ET AVENIR",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/recherche-et-avenir/",
+    "domain": "rechercheetavenir.eu",
+    "tags": [
+      "Association",
+      "Deeptech",
+      "Développement économique",
+      "EdTech",
+      "Partenaires",
+      "Recherche & Formation",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "REGION SUD",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/region-sud/",
+    "domain": "maregionsud.fr",
+    "tags": [
+      "Développement économique",
+      "Ecosystème",
+      "Hors Côte d'Azur",
+      "Institutionnel"
+    ]
+  },
+  {
+    "name": "RESEAU ENTREPRENDRE COTE D’AZUR",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/reseau-entreprendre-cote-dazur/",
+    "domain": "reseau-entreprendre-cote-d-azur.fr",
+    "tags": [
+      "Association",
+      "Développement économique",
+      "Partenaires",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SAFE CLUSTER",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/safe-cluster/",
+    "domain": "safecluster.com",
+    "tags": [
+      "Association",
+      "DefTech",
+      "Développement économique",
+      "Hors Côte d'Azur",
+      "Partenaires",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SEO PERF",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/seo-perf/",
+    "domain": "seo-perf.com",
+    "tags": [
+      "Marketing digital",
+      "MarTech",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SII",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/sii/",
+    "domain": "groupe-sii.fr",
+    "tags": [
+      "B2B Enablers",
+      "Grands groupes",
+      "Hors Côte d'Azur",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SKEMA BUSINESS SCHOOL",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/skema-business-school/",
+    "domain": "skema-bs.fr",
+    "tags": [
+      "Académiques",
+      "EdTech",
+      "Recherche & Formation",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SKRIBI",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/skribi/",
+    "domain": "skribi.fr",
+    "tags": [
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "Intelligence Artificielle & Data",
+      "Sophia Antipolis",
+      "Startup",
+      "Tech for Good"
+    ]
+  },
+  {
+    "name": "SMART & CONNECTIVE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/smart-connective/",
+    "tags": [
+      "B2B Enablers",
+      "GreenTech",
+      "Innovation d'usage",
+      "IoT & Systèmes embarqués",
+      "PropTech",
+      "Smart City",
+      "Sophia Antipolis",
+      "Startup",
+      "Tech for Good"
+    ]
+  },
+  {
+    "name": "SKILL’N’JOY",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/skillnjoy/",
+    "domain": "skillnjoy.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil RH Tech",
+      "HRTech",
+      "Indépendant",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SMART DPO",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/smart-dpo/",
+    "domain": "smartdpo.fr",
+    "tags": [
+      "B2B Enablers",
+      "Cybersécurité & identité",
+      "Indépendant",
+      "Innovation d'usage",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SMARTPROFILE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/net-solution-partner/",
+    "domain": "nsp-fr.com",
+    "tags": [
+      "B2B Enablers",
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "MarTech",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SMART RH",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/smart-rh/",
+    "domain": "ginger-coach.com",
+    "tags": [
+      "B2B Enablers",
+      "Cannes",
+      "Edition de Logiciels",
+      "HealthTech",
+      "HRTech",
+      "Innovation d'usage",
+      "Startup"
+    ]
+  },
+  {
+    "name": "SOCCA SYSTEMS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/socca-systems/",
+    "domain": "soccasys.com",
+    "tags": [
+      "B2B Enablers",
+      "Grasse",
+      "Indépendant",
+      "Innovation d'usage",
+      "IoT & Systèmes embarqués"
+    ]
+  },
+  {
+    "name": "SOFTEAM",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/softeam/",
+    "domain": "softeam.fr",
+    "tags": [
+      "B2B Enablers",
+      "Grands groupes",
+      "Hors Côte d'Azur",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SOFTFLUENT",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/softfluent/",
+    "domain": "softfluent.fr",
+    "tags": [
+      "B2B Enablers",
+      "Hors Côte d'Azur",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "STATERA PACA",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/statera-paca/",
+    "domain": "statera-corp.com",
+    "tags": [
+      "B2B Enablers",
+      "Grasse",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "PME"
+    ]
+  },
+  {
+    "name": "STRALES",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/strales/",
+    "domain": "strales.io",
+    "tags": [
+      "B2B Enablers",
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "MarTech",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "STUDIEL",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/studiel/",
+    "domain": "studielgroup.com",
+    "tags": [
+      "B2B Enablers",
+      "Grands groupes",
+      "Ingénierie Logicielle & ESN",
+      "Innovation d'usage",
+      "IoT & Systèmes embarqués",
+      "Nice",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SWANTRAD",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/swantrad/",
+    "domain": "swantrad.com",
+    "tags": [
+      "B2B Enablers",
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "LegalTech",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "SYMISA",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/symisa/",
+    "domain": "sophia-antipolis.fr",
+    "tags": [
+      "Ecosystème",
+      "Institutionnel",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SYNHARMONIE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/synharmonie/",
+    "domain": "synharmonie.fr",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Indépendant",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "SYSTEM FACTORY",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/system-factory/",
+    "domain": "systemfactory.fr",
+    "tags": [
+      "Association",
+      "DefTech",
+      "Développement économique",
+      "Innovation d'usage",
+      "Partenaires",
+      "Var"
+    ]
+  },
+  {
+    "name": "SYSTEV",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/systev/",
+    "domain": "systev.com",
+    "tags": [
+      "B2B Enablers",
+      "Grasse",
+      "Indépendant",
+      "IoT & Systèmes embarqués"
+    ]
+  },
+  {
+    "name": "THALES DMS / UWS FRANCE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/thales-dms-uws-france/",
+    "domain": "thalesgroup.com",
+    "tags": [
+      "B2B Enablers",
+      "BlueTech",
+      "Deeptech",
+      "DefTech",
+      "Edition de Logiciels",
+      "Grands groupes",
+      "IoT & Systèmes embarqués",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "THD 06",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/thd-06/",
+    "domain": "la-fibre-06.fr",
+    "tags": [
+      "B2B Enablers",
+      "Innovation d'usage",
+      "Institutionnel",
+      "Sophia Antipolis",
+      "Télécoms & Cloud",
+      "TelecomTech"
+    ]
+  },
+  {
+    "name": "THE NEOSHIELDS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/the-neoshields/",
+    "domain": "dpms.eu",
+    "tags": [
+      "B2B Enablers",
+      "Cannes",
+      "Cybersécurité & identité",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "TENDBBLE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/tendbble/",
+    "domain": "tendbble.com",
+    "tags": [
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "MarTech",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "THOODY CONSULTING",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/thoody-consulting/",
+    "domain": "thoody.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Innovation d'usage",
+      "Monaco",
+      "PME"
+    ]
+  },
+  {
+    "name": "TSE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/tse/",
+    "domain": "tse.energy",
+    "tags": [
+      "Autres Services",
+      "Deeptech",
+      "GreenTech",
+      "PME",
+      "Sophia Antipolis",
+      "Tech for Good"
+    ]
+  },
+  {
+    "name": "TYDIG",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/tydig/",
+    "domain": "tydig.xyz",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Indépendant",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "EUR DS4H",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/eur_ds4h/",
+    "domain": "ds4h.univ-cotedazur.eu",
+    "tags": [
+      "Académiques",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "UNIVERSITE COTE D’AZUR",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/universite-cote-dazur/",
+    "domain": "univ-cotedazur.fr",
+    "tags": [
+      "Académiques",
+      "Cannes",
+      "Deeptech",
+      "EdTech",
+      "HealthTech",
+      "Intelligence Artificielle & Data",
+      "Nice",
+      "Recherche & Formation",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "UPE 06",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/upe-06/",
+    "domain": "upe06.com",
+    "tags": [
+      "Association",
+      "B2B Enablers",
+      "Développement économique",
+      "Ecosystème",
+      "Institutionnel",
+      "Nice"
+    ]
+  },
+  {
+    "name": "URAEUS CONSULT",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/uraeus-consult/",
+    "domain": "uraeus-consult.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Cybersécurité & identité",
+      "Grasse",
+      "Indépendant"
+    ]
+  },
+  {
+    "name": "VALIANCE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/valiance/",
+    "domain": "valiance-bm.com",
+    "tags": [
+      "B2B Enablers",
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "VERVEINE CONSULTING",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/verveine-consulting/",
+    "domain": "verveineconsulting.com",
+    "tags": [
+      "B2B Enablers",
+      "Conseil IT",
+      "Innovation d'usage",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "VIDETICS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/videtics/",
+    "domain": "videtics.com",
+    "tags": [
+      "B2B Enablers",
+      "Deeptech",
+      "Edition de Logiciels",
+      "Intelligence Artificielle & Data",
+      "MobilityTech",
+      "Smart City",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  },
+  {
+    "name": "VILLE DE MOUGINS",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/ville-de-mougins/",
+    "domain": "mougins.fr",
+    "tags": [
+      "Développement économique",
+      "Institutionnel",
+      "Sophia Antipolis",
+      "TravelTech"
+    ]
+  },
+  {
+    "name": "VIRTEEM",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/virteem/",
+    "domain": "virteem-companion.fr",
+    "tags": [
+      "B2B Enablers",
+      "Edition de Logiciels",
+      "Innovation d'usage",
+      "Intelligence Artificielle & Data",
+      "MarTech",
+      "PME",
+      "PropTech",
+      "Sophia Antipolis",
+      "TravelTech"
+    ]
+  },
+  {
+    "name": "WITWAVE",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/witwave/",
+    "domain": "witwave.io",
+    "tags": [
+      "B2B Enablers",
+      "Deeptech",
+      "IoT & Systèmes embarqués",
+      "PME",
+      "Sophia Antipolis"
+    ]
+  },
+  {
+    "name": "XPERT",
+    "source": "telecom-valley",
+    "ft_page": "https://www.telecom-valley.fr/project/xpert/",
+    "domain": "x-pert.fr",
+    "tags": [
+      "B2B Enablers",
+      "BlueTech",
+      "DefTech",
+      "Innovation d'usage",
+      "IoT & Systèmes embarqués",
+      "Sophia Antipolis",
+      "Startup"
+    ]
+  }
+]

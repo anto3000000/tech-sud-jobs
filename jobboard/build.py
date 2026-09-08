@@ -4,8 +4,9 @@
     python jobboard/build.py
 
 Inputs (whichever exist):
-    jobboard/data/wttj_paca.json     Layer 1  (already normalized, tech-filtered)
-    jobboard/data/ats_jobs.json      Layer 3  (fetch_jobs.py output, raw shape)
+    jobboard/data/wttj_paca.json          Layer 1  (already normalized, tech-filtered)
+    jobboard/data/francetravail_paca.json Layer 1c (already normalized, tech-filtered)
+    jobboard/data/ats_jobs.json           Layer 3  (fetch_jobs.py output, raw shape)
 
 Steps: normalize -> keep PACA + Tech/Data/Product -> de-duplicate
 (company+title; a direct-ATS link beats a WTTJ link) -> sort newest first.
@@ -40,6 +41,26 @@ PACA_RX = re.compile(
 )
 REMOTE_RX = re.compile(r"\b(remote|t[eé]l[eé]travail|full.?remote|100%\s*remote|"
                        r"anywhere|partout en france)\b", re.I)
+# ATS boards are worldwide; a Lever/Greenhouse feed for an FR company still lists
+# its Madrid / NYC / Bangalore roles. Reject anything explicitly anchored abroad.
+FOREIGN_RX = re.compile(
+    r"\b(madrid|barcelona|sevilla|lisbon|lisboa|porto|london|manchester|dublin|"
+    r"berlin|munich|münchen|hamburg|frankfurt|cologne|amsterdam|rotterdam|"
+    r"brussels|bruxelles|antwerp|milan|milano|rome|roma|turin|madrid|"
+    r"new york|nyc|san francisco|sfo|seattle|austin|boston|chicago|denver|"
+    r"atlanta|miami|los angeles|toronto|montreal|vancouver|"
+    r"sydney|melbourne|singapore|bangalore|bengaluru|mumbai|hyderabad|tokyo|"
+    r"warsaw|warszawa|krakow|kraków|prague|praha|bucharest|bucurești|sofia|"
+    r"tallinn|vilnius|casablanca|tunis|cairo|dubai|tel aviv|bangkok|"
+    r"são paulo|sao paulo|mexico city|bogota|bogotá|buenos aires|"
+    r"remote\s*[-–,]?\s*(?:us|usa|u\.s\.|uk|emea|apac|latam|na\b|north america|"
+    r"germany|spain|italy|india|poland|portugal|brazil|canada|australia))\b",
+    re.I,
+)
+
+
+def _is_foreign(*fields):
+    return bool(FOREIGN_RX.search(" ".join(str(f or "") for f in fields)))
 
 
 def _slug(s):
@@ -94,6 +115,27 @@ def load_wttj():
     return rows
 
 
+def load_ft():
+    """Layer 1c — France Travail. Rows are already normalized + tech-filtered
+    by sources/francetravail.py; re-run the classifier to stay in sync with
+    rule changes, and keep only PACA-located ones."""
+    p = os.path.join(DATA, "francetravail_paca.json")
+    if not os.path.exists(p):
+        return []
+    rows = json.load(open(p, encoding="utf-8"))
+    out = []
+    for r in rows:
+        r.setdefault("source", "francetravail")
+        r["category"] = classify(r.get("title"), r.get("profession"))
+        if not r.get("category"):
+            continue
+        if not (_is_paca(r.get("city"), r.get("department"), r.get("region"))
+                or REMOTE_RX.search(str(r.get("remote") or ""))):
+            continue
+        out.append(r)
+    return out
+
+
 def load_ats():
     p = os.path.join(DATA, "ats_jobs.json")
     if not os.path.exists(p):
@@ -102,9 +144,15 @@ def load_ats():
     out = []
     for j in raw:
         loc = j.get("location") or ""
-        remote = j.get("remote")
-        is_remote = bool(remote) or bool(REMOTE_RX.search(loc))
-        if not (_is_paca(loc, j.get("department")) or is_remote):
+        remote = str(j.get("remote") or "")
+        # a foreign office (or "Remote - US") is a hard no, whatever else matches
+        if _is_foreign(loc):
+            continue
+        # "hybrid" / "none" are not remote; only an explicit remote marker counts.
+        # NB: department is a free-text category (Aircall ships "13009 - Onboarding")
+        # -> never feed it to the PACA postal-code regex.
+        is_remote = bool(REMOTE_RX.search(loc)) or remote.lower() in ("remote", "fully", "true", "yes")
+        if not (_is_paca(loc) or is_remote):
             continue
         cat = classify(j.get("title"), j.get("department"))
         if cat is None:
@@ -138,7 +186,9 @@ def load_ats():
     return out
 
 
-SOURCE_RANK = {"wttj": 0}   # everything else (direct ATS) ranks higher = preferred
+# link-quality rank when the same (company, title) shows up in several sources:
+# a direct ATS link beats a WTTJ link beats a France Travail aggregator link.
+SOURCE_RANK = {"francetravail": 0, "wttj": 1}   # anything else (direct ATS) = 2
 
 
 def dedupe(rows):
@@ -151,10 +201,10 @@ def dedupe(rows):
         if cur is None:
             best[key] = r
             continue
-        # prefer a non-wttj (direct) source, then the one with a salary, then newest
+        # prefer the best link source, then the one with a salary, then newest
         def score(x):
             return (
-                0 if x.get("source") == "wttj" else 1,
+                SOURCE_RANK.get(x.get("source"), 2),
                 1 if x.get("salary") else 0,
                 x.get("published_at") or "",
             )
@@ -197,15 +247,17 @@ def stamp_first_seen(jobs, now_iso):
 
 def main():
     wttj = load_wttj()
+    ft = load_ft()
     ats = load_ats()
     print("  wttj rows : %d" % len(wttj), file=sys.stderr)
+    print("  ft   rows : %d (PACA+tech)" % len(ft), file=sys.stderr)
     print("  ats  rows : %d (PACA+tech)" % len(ats), file=sys.stderr)
 
     lead_contract = re.compile(
         r"^\s*(cdi|cdd|stage|stagiaire|alternance|apprentissage|freelance|vie|"
         r"internship|apprenticeship|contract|full[ -]?time|part[ -]?time|interim)\b"
         r"[\s:_/–-]*", re.I)
-    for r in wttj + ats:
+    for r in wttj + ft + ats:
         t = (r.get("title") or "").strip()
         stripped = lead_contract.sub("", t).strip(" :–-—/")
         if len(stripped) > 6:
@@ -214,7 +266,7 @@ def main():
             r["city"] = canon_city(r["city"])
         r["cities"] = sorted({canon_city(c) for c in (r.get("cities") or []) if c})
 
-    merged = dedupe(wttj + ats)
+    merged = dedupe(wttj + ft + ats)
     # keep core + adjacent; expose the split to the UI via `category`
     merged = [m for m in merged if m.get("category")]
 

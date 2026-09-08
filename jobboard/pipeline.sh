@@ -12,6 +12,15 @@ echo "::group::WTTJ enrich (layer 1b)"
 python3 jobboard/sources/wttj_enrich.py --workers 10
 echo "::endgroup::"
 
+echo "::group::France Travail (layer 1c, best effort — needs FT_CLIENT_ID/SECRET)"
+if [ -n "${FT_CLIENT_ID:-}" ] || [ -f jobboard/.env ]; then
+  python3 jobboard/sources/francetravail.py \
+    || echo "France Travail fetch failed — skipping layer 1c"
+else
+  echo "no France Travail credentials — skipping layer 1c"
+fi
+echo "::endgroup::"
+
 echo "::group::ATS fetch (layer 3, best effort)"
 python3 jobboard/fetch_jobs.py -o jobboard/data/ats_jobs.json \
   || echo "ATS fetch failed — building with WTTJ only"
@@ -26,5 +35,11 @@ python3 jobboard/render_pages.py
 echo "::endgroup::"
 
 # Layers not in the daily path (slow, rarely change) — run by hand when needed:
-#   python3 jobboard/annuaire/frenchtech_amp.py     # refresh company directory
-#   python3 jobboard/resolve.py                     # re-detect ATS per company
+#   python3 jobboard/annuaire/frenchtech_amp.py         # French Tech Aix-Marseille
+#   python3 jobboard/annuaire/frenchtech_cotedazur.py   # French Tech Côte d'Azur / Sophia-Nice
+#   python3 jobboard/annuaire/telecom_valley.py         # cluster Telecom Valley
+#   python3 jobboard/annuaire/aktantis.py               # Aktantis / ex-Pôle SCS (deeptech PACA)
+#   python3 jobboard/annuaire/medinsoft.py              # Medinsoft (Marseille/Aix)
+#   python3 jobboard/merge_companies.py                 # curated + annuaires -> companies.all.json
+#   python3 jobboard/resolve.py -i jobboard/data/companies.all.json \
+#           -o jobboard/companies.resolved.json --workers 20   # re-detect ATS per company

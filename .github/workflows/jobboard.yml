@@ -41,6 +41,9 @@ jobs:
             wttj-cache-
 
       - name: Run pipeline
+        env:
+          FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
+          FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
         run: ./jobboard/pipeline.sh
 
       - name: Commit refreshed feed
@@ -49,6 +52,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add jobboard/data/jobs.json jobboard/data/seen.json \
                   jobboard/data/wttj_paca.json jobboard/data/ats_jobs.json \
+                  jobboard/data/francetravail_paca.json \
                   jobboard/site/jobs.json
           if git diff --cached --quiet; then
             echo "feed unchanged"

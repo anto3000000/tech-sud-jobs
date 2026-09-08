@@ -704,5 +704,122 @@
     "domain": null,
     "ats": "lever",
     "slug": "paradox"
+  },
+  {
+    "name": "Kincy",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "ESN / Infogérance",
+    "domain": "kincy.fr",
+    "ats": "teamtailor",
+    "slug": null,
+    "known": {
+      "ats": "teamtailor",
+      "careers_url": "https://careers.kincy.fr/",
+      "note": "verified 2026-09-08: Teamtailor, keyless /jobs.rss on the career-site origin (Telecom Valley annuaire)"
+    }
+  },
+  {
+    "name": "Instant System",
+    "city": "Biot",
+    "dept": "06",
+    "category": "MobilityTech",
+    "domain": "instant-system.com",
+    "ats": "recruitee",
+    "slug": "instantsystem",
+    "known": {
+      "ats": "recruitee",
+      "slug": "instantsystem",
+      "careers_url": "https://instantsystem.recruitee.com/",
+      "note": "verified 2026-09-08: Recruitee (Telecom Valley annuaire)"
+    }
+  },
+  {
+    "name": "IWE",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Cloud / DevOps",
+    "domain": "iwecloud.com",
+    "ats": "recruitee",
+    "slug": "iwe",
+    "known": {
+      "ats": "recruitee",
+      "slug": "iwe",
+      "careers_url": "https://iwe.recruitee.com/",
+      "note": "verified 2026-09-08: Recruitee (Aktantis annuaire)"
+    }
+  },
+  {
+    "name": "Bertin Technologies",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Deeptech / Instrumentation",
+    "domain": "bertin-technologies.fr",
+    "ats": "taleez",
+    "slug": "bertintechnologies",
+    "known": {
+      "ats": "taleez",
+      "slug": "bertintechnologies",
+      "careers_url": "https://bertintechnologies.taleez.com/",
+      "note": "verified 2026-09-08: Taleez hosted front bertintechnologies.taleez.com, /api/careez unauthenticated (Telecom Valley annuaire). Site fingerprint lands on bertin-technologies.com, not the Taleez host."
+    }
+  },
+  {
+    "name": "Safe Cluster",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Cluster / Sécurité",
+    "domain": "safecluster.com",
+    "ats": "taleez",
+    "slug": null,
+    "known": {
+      "ats": "taleez",
+      "careers_url": "https://emploi.safecluster.com/",
+      "note": "verified 2026-09-08: Taleez, /api/careez on emploi.safecluster.com (Aktantis annuaire)"
+    }
+  },
+  {
+    "name": "Crédit Agricole Alpes Provence",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Banque / IT",
+    "domain": "ca-alpesprovence.fr",
+    "ats": "teamtailor",
+    "slug": null,
+    "known": {
+      "ats": "teamtailor",
+      "careers_url": "https://recrutement.ca-alpesprovence.fr/",
+      "note": "verified 2026-09-08: Teamtailor, keyless /jobs.rss (French Tech Côte d'Azur annuaire). Mostly banque roles — the classifier keeps only the IT ones."
+    }
+  },
+  {
+    "name": "NLIGHTEN",
+    "city": "Antibes",
+    "dept": "06",
+    "category": "Facility / Energy Data",
+    "domain": "nlighten.com",
+    "ats": "greenhouse",
+    "slug": "nlighten",
+    "known": {
+      "ats": "greenhouse",
+      "slug": "nlighten",
+      "careers_url": "https://job-boards.greenhouse.io/nlighten",
+      "note": "verified 2026-09-08: Greenhouse (Aktantis annuaire)"
+    }
+  },
+  {
+    "name": "IoThink Solutions",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "IoT / Software",
+    "domain": "iothink-solutions.com",
+    "ats": "greenhouse",
+    "slug": "iothink",
+    "known": {
+      "ats": "greenhouse",
+      "slug": "iothink",
+      "careers_url": "https://job-boards.eu.greenhouse.io/iothink",
+      "note": "verified 2026-09-08: Greenhouse EU board (French Tech Côte d'Azur annuaire). 0 open roles as of this date — board confirmed live."
+    }
   }
 ]

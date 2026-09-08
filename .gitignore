@@ -7,6 +7,10 @@ __pycache__/
 .venv/
 venv/
 
+# Secrets (France Travail API creds etc.)
+jobboard/.env
+.env
+
 # Job board — static SEO pages (regenerated every run by render_pages.py,
 # deployed straight from the Pages artifact — not tracked)
 jobboard/site/offre/
