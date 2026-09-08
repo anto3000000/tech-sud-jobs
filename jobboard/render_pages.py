@@ -29,7 +29,7 @@ SITE = os.path.join(HERE, "site")
 FEED = os.path.join(SITE, "jobs.json")
 
 SITE_URL = os.environ.get(
-    "SITE_URL", "https://anto3000000.github.io/tech-sud-jobs"
+    "SITE_URL", "https://sudtechjobs.com"
 ).rstrip("/")
 
 MIN_FACET = 3        # min jobs for a ville / métier×ville / techno×ville page
