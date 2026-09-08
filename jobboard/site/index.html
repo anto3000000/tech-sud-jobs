@@ -393,11 +393,16 @@ function apply(opts){
     const logo = j.logo
       ? `<img class="logo" loading="lazy" src="${esc(j.logo)}" alt="">`
       : `<div class="logo ph">${esc((j.company||"?").slice(0,1))}</div>`;
+    // card title -> our own offer page (full description + SEO + "Postuler" out);
+    // fall back to the external link only for a stale feed without `slug`
+    const titleLink = j.slug
+      ? `<a href="offre/${esc(j.slug)}.html">${esc(j.title)}</a>`
+      : `<a href="${esc(j.url||j.apply_url||"#")}" target="_blank" rel="noopener">${esc(j.title)}</a>`;
     li.innerHTML = `
       <div class="head">
         ${logo}
         <div>
-          <div class="t"><a href="${esc(j.url||j.apply_url||"#")}" target="_blank" rel="noopener">${esc(j.title)}</a></div>
+          <div class="t">${titleLink}</div>
           <div class="co"><b>${esc(j.company)}</b>${j.city?` · ${esc(j.city)}`:""}</div>
         </div>
         ${j.apply_url?`<a class="apply" href="${esc(j.apply_url)}" target="_blank" rel="noopener">Postuler en direct →</a>`:""}

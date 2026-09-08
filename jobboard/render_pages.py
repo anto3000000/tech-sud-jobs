@@ -520,7 +520,7 @@ def main():
     generated = (feed.get("generated_at") or "")[:10]
 
     for j in jobs:
-        j["_slug"] = job_slug(j)
+        j["_slug"] = j.get("slug") or job_slug(j)   # build.py stamps `slug`; recompute if absent
 
     offre_dir = os.path.join(SITE, "offre")
     emploi_dir = os.path.join(SITE, "emploi")

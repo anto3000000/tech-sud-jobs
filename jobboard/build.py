@@ -75,6 +75,25 @@ def _norm_title(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
+def _page_slugify(s):
+    """dash-slug for URLs — MUST stay in sync with render_pages.slugify."""
+    s = str(s or "").lower()
+    for a, b in (("c++", "cpp"), ("c#", "csharp"), (".net", "dotnet"), ("f#", "fsharp"),
+                 ("node.js", "nodejs"), ("next.js", "nextjs")):
+        s = s.replace(a, b)
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode()
+    s = re.sub(r"[^a-z0-9]+", "-", s).strip("-")
+    return re.sub(r"-{2,}", "-", s)
+
+
+def job_slug(j):
+    """Stable per-offer slug -> site/offre/<slug>.html.
+    MUST stay in sync with render_pages.job_slug (the SPA links to these files)."""
+    base = _page_slugify("%s-%s" % (j.get("company", ""), j.get("title", "")))[:70].strip("-")
+    h = hashlib.sha1(j["id"].encode()).hexdigest()[:6]
+    return "%s-%s" % (base, h) if base else h
+
+
 def canon_city(c):
     if not c:
         return None
@@ -93,6 +112,59 @@ def canon_city(c):
     if low in table:
         return table[low]
     return c[:1].upper() + c[1:]
+
+
+# raw contract strings are a mess across the three sources: "FullTime",
+# "Permanent Contract", "fulltime_permanent", "CDD - 7 Mois", English vs French,
+# and — worst — stages / alternances mis-tagged "CDI" / "Full-time" by the ATS.
+# Fold everything to a small closed set. The title wins when it explicitly names
+# a stage / alternance / VIE, because that is exactly where the source lies.
+_CONTRACT_TITLE_RX = [
+    ("Stage",      re.compile(r"\b(?:stage|stagiaire|internship|intern)\b", re.I)),
+    ("Alternance", re.compile(r"\b(?:alternance|alternant\w*|apprenti\w*|"
+                              r"contrat\s+pro\w*|work[ -]?study)\b", re.I)),
+    ("VIE",        re.compile(r"\bVIE\b|\bV\.I\.E\.?\b|[Vv]olontariat [Ii]nternational")),
+]
+_CONTRACT_MAP = {
+    "cdi": "CDI", "fulltime": "CDI", "full time": "CDI", "full-time": "CDI",
+    "permanent": "CDI", "permanent contract": "CDI", "fulltime_permanent": "CDI",
+    "permanent full time employee": "CDI", "regular": "CDI",
+    "cdd": "CDD", "temporary": "CDD", "temporary contract": "CDD",
+    "contract": "CDD", "fixed-term": "CDD", "fulltime_fixed_term": "CDD",
+    "stage": "Stage", "stagiaire": "Stage", "intern": "Stage", "internship": "Stage",
+    "alternance": "Alternance", "apprentissage": "Alternance",
+    "apprenticeship": "Alternance", "contrat de professionnalisation": "Alternance",
+    "vie": "VIE", "v.i.e": "VIE", "volontariat international": "VIE",
+    "freelance": "Freelance", "contractor": "Freelance", "independant": "Freelance",
+    "interim": "Intérim", "temp": "Intérim",
+    "parttime": "Temps partiel", "part time": "Temps partiel",
+    "part-time": "Temps partiel",
+}
+_CONTRACT_FRAGS = [
+    ("stagiaire", "Stage"), ("stage", "Stage"), ("internship", "Stage"),
+    ("intern", "Stage"), ("alternance", "Alternance"), ("apprenti", "Alternance"),
+    ("fixed", "CDD"), ("cdd", "CDD"), ("temporary", "CDD"),
+    ("cdi", "CDI"), ("permanent", "CDI"), ("full", "CDI"),
+    ("freelance", "Freelance"), ("interim", "Intérim"), ("vie", "VIE"),
+]
+
+
+def canon_contract(raw, title=None):
+    for label, rx in _CONTRACT_TITLE_RX:
+        if title and rx.search(title):
+            return label
+    if not raw:
+        return None
+    key = unicodedata.normalize("NFKD", str(raw)).encode("ascii", "ignore").decode().lower()
+    key = re.sub(r"\s+", " ", key).strip(" .")
+    key = re.sub(r"\s*[-–—/]\s*\d+\s*(?:mois|month|months|an|ans|year|years|"
+                 r"semaines?|weeks?|jours?|days?)\b.*$", "", key).strip()
+    if key in _CONTRACT_MAP:
+        return _CONTRACT_MAP[key]
+    for frag, label in _CONTRACT_FRAGS:
+        if frag in key:
+            return label
+    return raw  # unknown value: keep it rather than hide the job from the facet
 
 
 def _is_paca(*fields):
@@ -259,6 +331,10 @@ def main():
         r"[\s:_/–-]*", re.I)
     for r in wttj + ft + ats:
         t = (r.get("title") or "").strip()
+        # fold the contract to the closed set, letting the *raw* title (before we
+        # strip its "Stage -" / "Alternance :" prefix below) override a source
+        # that mis-tagged a work-study role as CDI / Full-time
+        r["contract"] = canon_contract(r.get("contract"), t)
         stripped = lead_contract.sub("", t).strip(" :–-—/")
         if len(stripped) > 6:
             r["title"] = stripped
@@ -283,6 +359,9 @@ def main():
     seen = stamp_first_seen(merged, now_iso)
     merged.sort(key=lambda j: (j.get("first_seen") or "", j.get("published_at") or ""),
                 reverse=True)
+
+    for m in merged:
+        m["slug"] = job_slug(m)   # link target for the SPA -> site/offre/<slug>.html
 
     by_cat, by_src, by_city = {}, {}, {}
     for m in merged:
