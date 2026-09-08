@@ -253,6 +253,9 @@ def shell(*, title, description, canonical, head_extra="", body):
   <a href="{home}">Toutes les offres</a> ·
   <a href="{hub}">Parcourir par ville &amp; techno</a> ·
   job board tech du sud de la France
+  <br><br>Une offre à ajouter, une remarque, ou juste envie de papoter du Sud&nbsp;?
+  Écrivez-moi, ça fait toujours plaisir 🫰
+  <a href="mailto:hello@sudtechjobs.com">✉️ hello@sudtechjobs.com</a>
 </footer>
 </div>
 </body>
