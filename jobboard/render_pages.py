@@ -203,10 +203,12 @@ h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:23px;l
 .desc{margin:18px 0 0}.desc p{margin:0 0 11px}
 h2{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;margin:26px 0 8px}
 ul.jobs{list-style:none;margin:0;padding:0}
-ul.jobs li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px;
- margin:0 0 11px;box-shadow:var(--shadow)}
-ul.jobs li a{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;color:var(--ink);font-size:15px}
-ul.jobs .co{color:var(--muted);font-size:13px;margin:3px 0 0}
+ul.jobs li{background:var(--card);border:1px solid var(--line);border-radius:12px;
+ margin:0 0 11px;box-shadow:var(--shadow);overflow:hidden}
+ul.jobs li a{display:block;padding:13px 15px;font-family:"Bricolage Grotesque",sans-serif;
+ font-weight:600;color:var(--ink);font-size:15px}
+ul.jobs li a:hover{text-decoration:none;background:var(--card-2)}
+ul.jobs .co{display:block;color:var(--muted);font-size:13px;font-weight:400;margin:3px 0 0}
 footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
 """
 
@@ -282,6 +284,15 @@ def render_offer(j, similar, same_company=None):
     posted = j.get("published_at") or j.get("first_seen") or ""
     apply_href = j.get("apply_url") or j.get("url") or ""
 
+    # apply button: only when the offer resolves to a real ATS — the plain
+    # "Postuler en direct" (scraped source URL) button is dropped
+    ats_name = (j.get("ats") or "").strip()
+    has_ats = bool(ats_name) and ats_name.lower() != "external"
+    apply_btn = (
+        '<a class="apply" href="%s" target="_blank" rel="nofollow noopener">'
+        "Postuler sur %s</a>" % (esc(apply_href), esc(ats_name.title()))
+    ) if (has_ats and apply_href) else ""
+
     posted_h = ""
     try:
         posted_h = datetime.fromisoformat(
@@ -307,9 +318,11 @@ def render_offer(j, similar, same_company=None):
 
     body_txt = j.get("description") or j.get("description_excerpt") or ""
     desc_html = text_to_html(body_txt) or (
-        "<p>Offre publiée par %s%s. Consultez l'annonce complète et postulez en "
-        "direct via le bouton ci-dessus.</p>" % (
-            esc(j.get("company")), " à " + esc(city) if city and not is_remote else ""))
+        "<p>Offre publiée par %s%s.%s</p>" % (
+            esc(j.get("company")),
+            " à " + esc(city) if city and not is_remote else "",
+            " Consultez l'annonce complète et postulez via le bouton ci-dessus."
+            if apply_btn else ""))
     profile_html = ""
     if j.get("profile_excerpt"):
         profile_html = "<h2>Profil recherché</h2>\n" + text_to_html(j["profile_excerpt"])
@@ -330,7 +343,8 @@ def render_offer(j, similar, same_company=None):
 
     def _job_list(items):
         return "<ul class=\"jobs\">%s</ul>" % "".join(
-            '<li><a href="%s.html">%s</a><div class="co">%s%s</div></li>' % (
+            '<li><a href="%s.html"><span class="t">%s</span>'
+            '<span class="co">%s%s</span></a></li>' % (
                 s["_slug"], esc(s["title"]), esc(s.get("company")),
                 " · " + esc(s.get("city")) if s.get("city") else "")
             for s in items)
@@ -409,7 +423,7 @@ def render_offer(j, similar, same_company=None):
 <div class="card">
   <div class="k">{krow}</div>
   {stack}
-  <a class="apply" href="{apply}" target="_blank" rel="nofollow noopener">Postuler{ats}</a>
+  {apply_btn}
 </div>
 <div class="desc">{desc}</div>
 {profile}
@@ -420,9 +434,7 @@ def render_offer(j, similar, same_company=None):
         home=SITE_URL + "/", catslug=slugify(cat or "tech"), catlabel=esc(cat_label),
         title=esc(j.get("title")), company=esc(j.get("company")),
         cityline=(" — télétravail" if is_remote else (" — " + esc(city) if city else "")),
-        krow=krow, stack=stack_html, apply=esc(apply_href),
-        ats=(" sur " + esc(j["ats"].title())
-             if j.get("ats") and j["ats"].lower() != "external" else " en direct"),
+        krow=krow, stack=stack_html, apply_btn=apply_btn,
         desc=desc_html, profile=profile_html, benefits=benefits_html,
         facet_link=facet_link, similar=sim_html,
     )
