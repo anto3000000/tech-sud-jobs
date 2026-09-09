@@ -449,6 +449,16 @@
 "last_seen": "2026-09-09",
 "title": "Administrateur systèmes infra virtualisées H/F"
 },
+"atos-analyste-soc-f-h-5429c2": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Atos",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Analyste SOC (F/H)"
+},
 "atos-architecte-logiciel-h-f-27b737": {
 "category": "eng",
 "city": "Aix-en-Provence",
@@ -479,6 +489,16 @@
 "last_seen": "2026-09-09",
 "title": "Architecte systèmes de systèmes F/H"
 },
+"atos-business-analyst-experimente-f-h-c6c3cf": {
+"category": "data",
+"city": "Valbonne",
+"company": "Atos",
+"expired_at": null,
+"facet_slug": "data-valbonne",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Business Analyst Expérimenté (F/H)"
+},
 "atos-business-analyst-product-owner-ia-f-h-a44d32": {
 "category": "product",
 "city": "Aix-en-Provence",
@@ -488,6 +508,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-09",
 "title": "Business Analyst / Product Owner IA (F/H)"
+},
+"atos-consultant-cybersecurite-senior-f-h-0b0e8a": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Atos",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Consultant CyberSécurité Sénior (F/H)"
 },
 "atos-developpeur-java-systemes-tactiques-pour-les-forces-armees-f-h-4b7c51": {
 "category": "eng",
@@ -519,6 +549,16 @@
 "last_seen": "2026-09-09",
 "title": "Ingénieur DevOps Expérimenté (F/H)"
 },
+"atos-ingenieur-devops-f-h-4ddb5a": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Atos",
+"expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Ingénieur DevOps (F/H)"
+},
 "atos-ingenieur-devops-mise-en-production-f-h-e4f830": {
 "category": "eng",
 "city": "Aix-en-Provence",
@@ -538,6 +578,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-09",
 "title": "Ingénieur Expert en Cybersécurité des Systèmes H/F"
+},
+"atos-ingenieur-production-applicative-devops-f-h-34be25": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Atos",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Ingénieur Production Applicative / DevOps (F/H)"
 },
 "atos-principal-llm-inference-engineer-f-h-d3f624": {
 "category": "data",
@@ -573,7 +623,7 @@
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Atos",
-"expired_at": null,
+"expired_at": "2026-09-09",
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-09",
@@ -643,7 +693,7 @@
 "category": "eng",
 "city": "Nice",
 "company": "Bluecoders",
-"expired_at": null,
+"expired_at": "2026-09-09",
 "facet_slug": "eng-nice",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-09",
@@ -873,9 +923,19 @@
 "category": "eng",
 "city": "Valbonne",
 "company": "Capgemini",
-"expired_at": null,
+"expired_at": "2026-09-09",
 "facet_slug": "eng-valbonne",
 "first_seen": "2026-09-05",
+"last_seen": "2026-09-09",
+"title": "Cloud DevOps Engineer"
+},
+"capgemini-cloud-devops-engineer-b86ca4": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-09",
 "last_seen": "2026-09-09",
 "title": "Cloud DevOps Engineer"
 },
@@ -883,9 +943,19 @@
 "category": "eng",
 "city": "Nice",
 "company": "Capgemini",
-"expired_at": null,
+"expired_at": "2026-09-09",
 "facet_slug": "eng-nice",
 "first_seen": "2026-09-05",
+"last_seen": "2026-09-09",
+"title": "Cloud DevOps Engineer Senior Sophia-Antipolis"
+},
+"capgemini-cloud-devops-engineer-senior-sophia-antipolis-dc8015": {
+"category": "eng",
+"city": "Nice",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-nice",
+"first_seen": "2026-09-09",
 "last_seen": "2026-09-09",
 "title": "Cloud DevOps Engineer Senior Sophia-Antipolis"
 },
@@ -939,31 +1009,61 @@
 "last_seen": "2026-09-09",
 "title": "Ingénieure / Ingénieur Études Probabilistes de Sûreté"
 },
-"capgemini-ingenieure-ingenieur-reseau-d11d8f": {
+"capgemini-ingenieure-ingenieur-reseau-24853c": {
 "category": "eng",
 "city": "Toulon",
 "company": "Capgemini",
 "expired_at": null,
 "facet_slug": "eng-toulon",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Ingénieure/Ingénieur Réseau"
+},
+"capgemini-ingenieure-ingenieur-reseau-d11d8f": {
+"category": "eng",
+"city": "Toulon",
+"company": "Capgemini",
+"expired_at": "2026-09-09",
+"facet_slug": "eng-toulon",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-09",
 "title": "Ingénieure/Ingénieur Réseau"
 },
-"capgemini-ingenieure-ingenieur-systeme-linux-windows-b31d4a": {
+"capgemini-ingenieure-ingenieur-systeme-linux-windows-28cfb5": {
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
 "facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Ingénieure / Ingénieur système Linux & Windows"
+},
+"capgemini-ingenieure-ingenieur-systeme-linux-windows-b31d4a": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": "2026-09-09",
+"facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-09",
 "title": "Ingénieure / Ingénieur système Linux & Windows"
+},
+"capgemini-ingenieure-ingenieur-systeme-windows-2317b0": {
+"category": "eng",
+"city": "Toulon",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-toulon",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Ingénieure / Ingénieur système Windows"
 },
 "capgemini-ingenieure-ingenieur-systeme-windows-f18d2f": {
 "category": "eng",
 "city": "Toulon",
 "company": "Capgemini",
-"expired_at": null,
+"expired_at": "2026-09-09",
 "facet_slug": "eng-toulon",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-09",
@@ -979,15 +1079,35 @@
 "last_seen": "2026-09-09",
 "title": "Leader technique Fullstack - Java / Javascript"
 },
-"capgemini-network-security-engineer-senior-aix-en-provence-458c0d": {
+"capgemini-network-security-engineer-senior-aix-en-provence-2bfc63": {
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
 "facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Network & Security Engineer Senior Aix-en-Provence"
+},
+"capgemini-network-security-engineer-senior-aix-en-provence-458c0d": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": "2026-09-09",
+"facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-09",
 "title": "Network & Security Engineer Senior Aix-en-Provence"
+},
+"capgemini-sales-developer-7311fd": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Sales Developer"
 },
 "capgemini-tech-lead-ignition-0e66c0": {
 "category": "eng",
@@ -1309,6 +1429,16 @@
 "last_seen": "2026-09-09",
 "title": "Technico Commercial Itinérant - EPI (F/H)"
 },
+"descours-cabaud-technico-commercial-itinerant-tp-f-h-719d59": {
+"category": "tech-adjacent",
+"city": "Sorgues",
+"company": "DESCOURS & CABAUD",
+"expired_at": null,
+"facet_slug": "tech-adjacent",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "Technico-Commercial Itinérant  TP (F/H)"
+},
 "dga-tech-france-travail-chef-fe-de-projet-data-gouvernance-ab9290": {
 "category": "data",
 "city": "Aix-en-Provence",
@@ -1473,7 +1603,7 @@
 "category": "data",
 "city": "Marseille",
 "company": "EDF",
-"expired_at": null,
+"expired_at": "2026-09-09",
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-09",
@@ -1559,11 +1689,21 @@
 "last_seen": "2026-09-09",
 "title": "DEVELOPPEUR JAVA (F/H)"
 },
-"euro-protection-surveillance-responsable-d-equipe-developpement-inform-e7aa52": {
+"euro-protection-surveillance-responsable-d-equipe-developpement-inform-e54dad": {
 "category": "eng",
 "city": "Cagnes-sur-Mer",
 "company": "Euro Protection Surveillance",
 "expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-09",
+"last_seen": "2026-09-09",
+"title": "RESPONSABLE D'EQUIPE - DEVELOPPEMENT INFORMATIQUE (F/H)"
+},
+"euro-protection-surveillance-responsable-d-equipe-developpement-inform-e7aa52": {
+"category": "eng",
+"city": "Cagnes-sur-Mer",
+"company": "Euro Protection Surveillance",
+"expired_at": "2026-09-09",
 "facet_slug": "eng",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-09",
