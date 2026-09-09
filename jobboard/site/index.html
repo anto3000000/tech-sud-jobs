@@ -144,9 +144,14 @@
   .count b{color:var(--ink)}
   .countbar select{font-size:12.5px;padding:6px 10px}
   ul{list-style:none;margin:0;padding:0}
-  li.job{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  li.job{position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;
     padding:16px 18px;margin-bottom:12px;transition:border-color .12s ease,transform .12s ease}
   li.job:hover{border-color:var(--brand);transform:translateY(-1px)}
+  li.job.linked{cursor:pointer}
+  /* whole-card click -> offer page: stretch the title link over the card.
+     the <a> must stay unpositioned so ::after resolves against li.job */
+  li.job.linked .head .t a::after{content:"";position:absolute;inset:0}
+  li.job .apply,li.job .desc{position:relative;z-index:1}
   .head{display:flex;gap:13px;align-items:flex-start}
   .logo{width:44px;height:44px;border-radius:11px;object-fit:contain;background:var(--card);
     border:1px solid var(--line);flex:none}
@@ -387,7 +392,7 @@ function apply(opts){
   $("#empty").hidden = rows.length>0;
   const frag = document.createDocumentFragment();
   for(const j of pageRows){
-    const li = document.createElement("li"); li.className = "job";
+    const li = document.createElement("li"); li.className = j.slug ? "job linked" : "job";
     const cat = j.category||"";
     let rem = j.remote_detail || (j.remote && !/sur site/i.test(j.remote) ? j.remote : "");
     if(rem === "remote") rem = "full remote";
@@ -536,13 +541,19 @@ function initFilters(){
   $("#sort").addEventListener("change", e=>{ state.sort=e.target.value; apply(); track("sort", {value:e.target.value}); });
 
   $("#list").addEventListener("click", e=>{
-    const a = e.target.closest(".t a, a.apply"); if(!a) return;
-    const li = a.closest("li");
+    const li = e.target.closest("li.job"); if(!li) return;
+    const direct = !!e.target.closest("a.apply");
+    // a plain click on the card body only navigates when the card is linked;
+    // clicking the description just expands it — not a job open
+    if(!direct){
+      if(!li.classList.contains("linked")) return;
+      if(e.target.closest(".desc")) return;
+    }
     track("job_click", {
       title: (li.querySelector(".t a")?.textContent || "").trim().slice(0,120),
       company: (li.querySelector(".co b")?.textContent || "").trim().slice(0,80),
       category: (li.querySelector(".tag")?.textContent || "").trim(),
-      direct: a.classList.contains("apply"),
+      direct,
     });
   });
   $("#cats").addEventListener("click", e=>{
