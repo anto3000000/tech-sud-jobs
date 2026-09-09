@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-09T07:40:13+00:00",
+  "generated_at": "2026-09-09T10:59:57+00:00",
   "region": "Provence-Alpes-Côte d'Azur",
-  "count": 465,
+  "count": 470,
   "companies": 120,
-  "new_count": 465,
+  "new_count": 470,
   "by_category": {
-    "eng": 305,
-    "tech-adjacent": 52,
+    "eng": 308,
+    "data": 77,
+    "tech-adjacent": 53,
     "product": 27,
-    "data": 76,
     "design": 5
   },
   "by_source": {
-    "wttj": 377,
+    "wttj": 382,
     "teamtailor": 10,
     "francetravail": 23,
     "smartrecruiters": 7,
@@ -22,6 +22,555 @@
     "taleez": 1
   },
   "jobs": [
+    {
+      "id": "wttj:4268114",
+      "title": "Ingénieure / Ingénieur système Linux & Windows",
+      "company": "Capgemini",
+      "company_slug": "capgemini",
+      "city": "Aix-en-Provence",
+      "cities": [
+        "Aix-en-Provence"
+      ],
+      "department": "Bouches-du-Rhône",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "",
+      "category": "eng",
+      "profession": null,
+      "salary": null,
+      "experience_min_years": 4,
+      "published_at": "2026-09-09T12:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/ingenieure-ingenieur-systeme-linux-windows_aix-en-provence_CAPGE_Z9AMOOq?o=CAPGE_Z9AMOOq",
+      "source": "wttj",
+      "stack": [
+        "Windows",
+        "Centos",
+        "Linux",
+        "Ubuntu",
+        "Redhat"
+      ],
+      "soft_skills": [
+        "Gestion des systèmes d'information"
+      ],
+      "description": "Dans le cadre du renforcement de nos équipes à Aix-en-Provence, nous recherchons un Ingénieur Systèmes Linux et / ou Windows pour intervenir sur des environnements complexes et critiques du périmètre client.\n\n Vous interviendrez sur l’ensemble du cycle de vie des systèmes et infrastructures :\n\n • Installer, configurer, tester et maintenir les systèmes d’exploitation et composants d’infrastructure (postes de travail, serveurs, calculateurs)\n • Administrer des environnements Linux (RedHat, CentOS, Ubuntu) et / ou des environnements Windows Server\n • Assurer le MCO (Maintien en Condition Opérationnelle) et le MCS (Maintien en Condition de Sécurité) des systèmes d’information\n • Traiter et résoudre les incidents de niveau 2 et 3 liés aux serveurs et gérer les problèmes récurrents\n • Maintenir en condition opérationnelle les matériels du périmètre client\n • Suggérer des recommandations techniques et planifier/exécuter les mises à niveau des systèmes d’exploitation et composants d’infrastructure\n • Participer aux projets d’évolution des infrastructures Linux et / ou Windows",
+      "description_excerpt": "Dans le cadre du renforcement de nos équipes à Aix-en-Provence, nous recherchons un Ingénieur Systèmes Linux et / ou Windows pour intervenir sur des environnements complexes et critiques du périmètre client.\n\n Vous interviendrez sur l’ensemble du cycle de vie des systèmes et infrastructures :\n\n • Installer, configurer, tester et…",
+      "profile_excerpt": "Description du profil :\n\n Votre profil \n\n • Formation en informatique Bac+5\n • Solide expérience en administration de systèmes Linux (RedHat, CentOS, Ubuntu) et / ou Windows Server\n • Bonne maîtrise des environnements de production et des infrastructures critiques\n • Capacité à…",
+      "experience": null,
+      "education_level": "bac_5",
+      "remote_detail": null,
+      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44429061",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
+      "benefits_preview": [],
+      "benefits_count": null,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:51+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "capgemini-ingenieure-ingenieur-systeme-linux-windows-28cfb5"
+    },
+    {
+      "id": "wttj:4268105",
+      "title": "Ingénieure/Ingénieur Réseau",
+      "company": "Capgemini",
+      "company_slug": "capgemini",
+      "city": "Toulon",
+      "cities": [
+        "Toulon"
+      ],
+      "department": "Var",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "hybride",
+      "category": "eng",
+      "profession": null,
+      "salary": null,
+      "experience_min_years": 5,
+      "published_at": "2026-09-09T12:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/ingenieure-ingenieur-reseau_toulon_CAPGE_KgZLYd0?o=CAPGE_KgZLYd0",
+      "source": "wttj",
+      "stack": [
+        "Glpi",
+        "Azure",
+        "AWS"
+      ],
+      "soft_skills": [
+        "Gestion de réseaux"
+      ],
+      "description": "Dans le cadre du renforcement de nos équipes techniques, nous recherchons un Administrateur Réseaux pour assurer l’exploitation, l’évolution et la sécurisation des infrastructures réseaux du périmètre client.\n En tant qu’Administrateur Réseaux, vous interviendrez sur les activités suivantes :\n • Installer, configurer, tester et maintenir les équipements d’infrastructure réseau (switchs, routeurs, firewalls)\n • Paramétrer et administrer des équipements réseau de niveaux 1, 2 et 3\n • Assurer le Maintien en Condition Opérationnelle (MCO) et le Maintien en Condition de Sécurité (MCS) des systèmes d’information\n • Traiter et résoudre les incidents de niveau 2 et 3 et assurer la gestion des problèmes\n • Maintenir en condition opérationnelle les matériels du périmètre client\n • Proposer des recommandations techniques, planifier et exécuter les mises à niveau des équipements et composants d’infrastructure\n • Superviser les infrastructures à l’aide des outils dédiés\n • Suivre et tracer l’activité dans l’outil de gestion GLPI\n • Être force de proposition et de conseil auprès des équipes et des clients\n • Créer, mettre à jour et enrichir la base de connaissances, et diffuser les bonnes pratiques\n • Reporter l’activité, les alertes et les incidents auprès des responsables d’équipe\n • Participer aux projets d’évolution des infrastructures réseau\n • Assurer la liaison avec les autres équipes (systèmes, sécurité, support) dans le cadre de la gestion des incidents, changements et problèmes",
+      "description_excerpt": "Dans le cadre du renforcement de nos équipes techniques, nous recherchons un Administrateur Réseaux pour assurer l’exploitation, l’évolution et la sécurisation des infrastructures réseaux du périmètre client.\n En tant qu’Administrateur Réseaux, vous interviendrez sur les activités suivantes :\n • Installer, configurer, tester et maintenir…",
+      "profile_excerpt": "Description du profil :\n\n Votre profil \n • Formation en informatique\n • Solide expérience en administration et exploitation de réseaux\n • Bonne maîtrise des protocoles de routage et des architectures LAN/WAN\n • Capacité à gérer des incidents complexes et des environnements…",
+      "experience": "5–7 ans",
+      "education_level": "bac_5",
+      "remote_detail": "hybride",
+      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44428995",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
+      "benefits_preview": [],
+      "benefits_count": null,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:51+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "capgemini-ingenieure-ingenieur-reseau-24853c"
+    },
+    {
+      "id": "wttj:4268101",
+      "title": "Ingénieure / Ingénieur système Windows",
+      "company": "Capgemini",
+      "company_slug": "capgemini",
+      "city": "Toulon",
+      "cities": [
+        "Toulon"
+      ],
+      "department": "Var",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "",
+      "category": "eng",
+      "profession": null,
+      "salary": null,
+      "experience_min_years": 5,
+      "published_at": "2026-09-09T12:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/ingenieure-ingenieur-systeme-windows_toulon_CAPGE_AJb5qYq?o=CAPGE_AJb5qYq",
+      "source": "wttj",
+      "stack": [
+        "Windows",
+        "Azure",
+        "PowerShell",
+        "AWS"
+      ],
+      "soft_skills": [
+        "Diagnostic",
+        "Outils d'automatisation",
+        "Administration des systèmes",
+        "Collaboration et travail d'équipe"
+      ],
+      "description": "Dans le cadre du renforcement de nos activités Infrastructure, nous recherchons un Administrateur Systèmes Windows (H/F) afin d’intervenir sur l’installation, la configuration, la maintenance et l’exploitation des environnements systèmes de nos clients.\n • Installer, configurer, tester et maintenir les systèmes d’exploitation (PC et serveurs).\n • Intervenir sur un parc allant de Windows XP à Windows 11 et de Windows Server 2008 à 2022.\n • Gérer et maintenir les composants d’infrastructure (AD, DNS, GPO, serveurs de fichiers, d’impression…).\n • Assurer la disponibilité opérationnelle du périmètre client.\n • Traiter et résoudre les incidents N2/N3 liés aux serveurs et infrastructures. \n • Assurer le diagnostic, l’analyse et la résolution des problèmes complexes. \n • Collaborer avec les autres équipes pour la gestion des incidents, changements et problèmes. \n • Proposer des recommandations d’évolution et planifier les mises à niveau systèmes. \n • Participer aux projets d’évolution et d’industrialisation. \n • Automatiser les processus via scripting (PowerShell principalement). \n • Créer, mettre à jour et diffuser les bonnes pratiques au sein de la base de connaissances.",
+      "description_excerpt": "Dans le cadre du renforcement de nos activités Infrastructure, nous recherchons un Administrateur Systèmes Windows (H/F) afin d’intervenir sur l’installation, la configuration, la maintenance et l’exploitation des environnements systèmes de nos clients.\n • Installer, configurer, tester et maintenir les systèmes d’exploitation (PC et…",
+      "profile_excerpt": "Description du profil :\n\n Votre profil \n\n • Expérience confirmée en administration systèmes Windows.\n • Maîtrise des environnements virtualisés et technologies Microsoft.\n • Compétences en gestion d’incidents N2/N3 sur serveurs.\n • Bonne connaissance des outils de sauvegarde,…",
+      "experience": "5–7 ans",
+      "education_level": "bac_5",
+      "remote_detail": null,
+      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44428958",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
+      "benefits_preview": [],
+      "benefits_count": null,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:51+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "capgemini-ingenieure-ingenieur-systeme-windows-2317b0"
+    },
+    {
+      "id": "wttj:4268095",
+      "title": "Cloud DevOps Engineer",
+      "company": "Capgemini",
+      "company_slug": "capgemini",
+      "city": "Valbonne",
+      "cities": [
+        "Valbonne"
+      ],
+      "department": "Maritime Alps",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "ponctuel",
+      "category": "eng",
+      "profession": null,
+      "salary": null,
+      "experience_min_years": 5,
+      "published_at": "2026-09-09T12:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/cloud-devops-engineer_valbonne_CAPGE_5OAmg8D?o=CAPGE_5OAmg8D",
+      "source": "wttj",
+      "stack": [
+        "Java",
+        "Linux",
+        "Kubernetes",
+        "Git",
+        "Ansible",
+        "Shell",
+        "Jenkins",
+        "ArgoCD",
+        "Azure",
+        "Kafka",
+        "Artifactory",
+        "Docker",
+        "Python"
+      ],
+      "soft_skills": [
+        "Travail d'équipe",
+        "Méthode Agile",
+        "Outils d'automatisation"
+      ],
+      "description": "Vous serez au service d’un leader technologique international, au cœur d’un écosystème qui connecte des millions de voyageurs à travers le monde.\n Vos missions seront les suivantes :\n • Automatiser les déploiements et améliorer la productivité des développeurs\n • Maintenir des plateformes robustes et performantes\n • Accompagner les utilisateurs dans un environnement cloud et on-premise\n • Gérer les environnements Linux, scripting (Shell, Python), CI/CD (Jenkins, ArgoCD)\n • Déployer et maintenir des clusters Kafka (Strimzi, MirrorMaker2)\n • Utiliser des outils comme Git, Artifactory, Ansible, Docker, Kubernetes, Azure\n • Assurer le support aux utilisateurs en environnement de test et de production\n • Participer à la gestion des incidents, à l’amélioration continue et à l’automatisation\n Profil :\n • Expérience confirmée en DevOps, scripting, CI/CD\n • Connaissances en Kafka, Python, Java, conteneurisation\n • Bonne maîtrise de l’anglais\n • Esprit d’équipe, rigueur, curiosité technique\n • Expérience en environnement Agile (SAFe, Scrum)",
+      "description_excerpt": "Vous serez au service d’un leader technologique international, au cœur d’un écosystème qui connecte des millions de voyageurs à travers le monde.\n Vos missions seront les suivantes :\n • Automatiser les déploiements et améliorer la productivité des développeurs\n • Maintenir des plateformes robustes et performantes\n • Accompagner les…",
+      "profile_excerpt": "Description du profil :\n\nProfil :\n • Expérience confirmée en DevOps, scripting, CI/CD\n • Connaissances en Kafka, Python, Java, conteneurisation\n • Bonne maîtrise de l’anglais\n • Esprit d’équipe, rigueur, curiosité technique\n • Expérience en environnement Agile (SAFe,…",
+      "experience": "5–7 ans",
+      "education_level": "bac_5",
+      "remote_detail": "ponctuel",
+      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44428919",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
+      "benefits_preview": [],
+      "benefits_count": null,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:51+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "capgemini-cloud-devops-engineer-b86ca4"
+    },
+    {
+      "id": "wttj:4268089",
+      "title": "Business Analyst Expérimenté (F/H)",
+      "company": "Atos",
+      "company_slug": "atos",
+      "city": "Valbonne",
+      "cities": [
+        "Valbonne"
+      ],
+      "department": "Maritime Alps",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "",
+      "category": "data",
+      "profession": null,
+      "salary": null,
+      "experience_min_years": 3,
+      "published_at": "2026-09-09T12:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/business-analyst-experimente-f-h_valbonne_ATOS_zYYM413?o=ATOS_zYYM413",
+      "source": "wttj",
+      "stack": [
+        "C++",
+        "Java",
+        "Angular",
+        "JavaScript"
+      ],
+      "soft_skills": [
+        "Communication"
+      ],
+      "description": "Atos Sophia-Antipolis est situé au cœur du premier technopôle d’Europe, dans une région ensoleillée. Vous serez immergé(e) dans une entreprise innovante aux missions diverses, notamment dans les secteurs des télécommunications, du voyage, des collectivités territoriales et du sport. \n\nLe poste en quelques mots :\nAu sein d'une équipe agile de 10 personnes, vous interviendrez en tant que Business Analyst sur l'analyse et le développement de nouvelles solutions logicielles.\n\nCe que vous allez faire si vous nous rejoignez :\n • Évaluer les besoins;\n • Expression des besoins / rédaction des cahiers des charges ;\n • Construire, maintenir et partager la connaissance fonctionnelle de nos processus, de nos services et de l'utilisation des produits par les utilisateurs finaux ;\n • Analyser les exigences commerciales soumises par la gestion des produits ;\n • Consolider et articuler les besoins de l'entreprise en concepts de nouveaux produits ou de mises à niveau ;\n • Vous êtes en charge de la spécification de la taille et du travail de validation ;\n • Soutenir les parties prenantes dans la réalisation d'une analyse suffisante pour s'assurer que les exigences sont prêtes à être travaillées.\n Stack technique : \nConnaissances globales sur du Java / C++ / Angular / Javascript / HTML / CSS / Agile.",
+      "description_excerpt": "Atos Sophia-Antipolis est situé au cœur du premier technopôle d’Europe, dans une région ensoleillée. Vous serez immergé(e) dans une entreprise innovante aux missions diverses, notamment dans les secteurs des télécommunications, du voyage, des collectivités territoriales et du sport. \n\nLe poste en quelques mots :\nAu sein d'une équipe…",
+      "profile_excerpt": "Description du profil :\n\nVotre profil :\n • Titulaire d’un bac+5 ou d’un titre d’ingénieur ;\n • Vous possédez une expérience de 4 ans minimum en tant qu’Analyste fonctionnel F/H ainsi qu’une connaissance d’environnement technique. Le but est d’être capable de rédiger les…",
+      "experience": null,
+      "education_level": "bac_5",
+      "remote_detail": null,
+      "apply_url": "https://atos.contactrh.com/jobs/10425/44428835",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/GpTmQiDECB8lhF8RFrOMACq1s4Ayk0y_FdDYmpAhE4w/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni8wOGI3YTNhMC0wZWM3LTRmNDgtYTljMi05N2VmMzRhZWJlNDAuanBn",
+      "benefits_preview": [
+        "Plan de développement professionnel",
+        "Entre 3-4 jours de télétravail",
+        "Équipe dédiée à la Diversité & inclusivité",
+        "Prime de cooptation",
+        "Compte épargne-temps (CET)"
+      ],
+      "benefits_count": 12,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:51+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "atos-business-analyst-experimente-f-h-c6c3cf"
+    },
+    {
+      "id": "wttj:4268086",
+      "title": "Consultant CyberSécurité Sénior (F/H)",
+      "company": "Atos",
+      "company_slug": "atos",
+      "city": "Aix-en-Provence",
+      "cities": [
+        "Aix-en-Provence"
+      ],
+      "department": "Bouches-du-Rhône",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "",
+      "category": "eng",
+      "profession": null,
+      "salary": null,
+      "experience_min_years": 7,
+      "published_at": "2026-09-09T12:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/consultant-cybersecurite-senior-f-h_aix-en-provence_ATOS_wQK1e91?o=ATOS_wQK1e91",
+      "source": "wttj",
+      "stack": [
+        "Splunk"
+      ],
+      "soft_skills": [
+        "Connaissances en cybersécurité",
+        "Aptitude à résoudre les problèmes"
+      ],
+      "description": "Dans le cadre du développement des activités cybersécurité en région PACA, et plus précisément des activités d'intégration, d'architecture et des projets, nous renforçons l'équipe qui est actuellement composée d'un Leader technique expérimenté et d'un consultant junior, dont les capacités sont pleinement mobilisées sur les projets en cours. \n\nObjectifs du poste :\n • Assurer l’intégration, la configuration, et le déploiement de solutions de sécurité chez nos clients, dans des environnements hétérogènes, de niveaux d'expositions variés y compris des missions sensibles. \n • Analyser les besoins de nos clients, de définir des architectures de sécurité, ainsi que d'apporter un support technique lors des phases d’implémentation ou de maintien en conditions opérationnelles.",
+      "description_excerpt": "Dans le cadre du développement des activités cybersécurité en région PACA, et plus précisément des activités d'intégration, d'architecture et des projets, nous renforçons l'équipe qui est actuellement composée d'un Leader technique expérimenté et d'un consultant junior, dont les capacités sont pleinement mobilisées sur les projets en…",
+      "profile_excerpt": "Description du profil :\n\nProfil recherché :\n- Bac+5 en cybersécurité, sécurité informatique, ou diplôme équivalent (école d’ingénieur, master)\n- 5 ans d’expérience dans des missions similaires en cabinet de conseil, ESN ou grande organisation\n- Certifications fournisseurs…",
+      "experience": "7–10 ans",
+      "education_level": "bac_5",
+      "remote_detail": null,
+      "apply_url": "https://atos.contactrh.com/jobs/10425/44428772",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/GpTmQiDECB8lhF8RFrOMACq1s4Ayk0y_FdDYmpAhE4w/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni8wOGI3YTNhMC0wZWM3LTRmNDgtYTljMi05N2VmMzRhZWJlNDAuanBn",
+      "benefits_preview": [
+        "Plan de développement professionnel",
+        "Entre 3-4 jours de télétravail",
+        "Équipe dédiée à la Diversité & inclusivité",
+        "Prime de cooptation",
+        "Compte épargne-temps (CET)"
+      ],
+      "benefits_count": 12,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:50+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "atos-consultant-cybersecurite-senior-f-h-0b0e8a"
+    },
+    {
+      "id": "wttj:4268073",
+      "title": "Cloud DevOps Engineer Senior Sophia-Antipolis",
+      "company": "Capgemini",
+      "company_slug": "capgemini",
+      "city": "Nice",
+      "cities": [
+        "Nice"
+      ],
+      "department": "Maritime Alps",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "ponctuel",
+      "category": "eng",
+      "profession": null,
+      "salary": null,
+      "experience_min_years": 5,
+      "published_at": "2026-09-09T12:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/cloud-devops-engineer-senior-sophia-antipolis_nice_CAPGE_ApwLg3d?o=CAPGE_ApwLg3d",
+      "source": "wttj",
+      "stack": [
+        "Windows",
+        "GitLab",
+        "Linux",
+        "Kubernetes",
+        "Harbor",
+        "Jenkins",
+        "OpenStack",
+        "Docker",
+        "Keycloak"
+      ],
+      "soft_skills": [
+        "Outils d'automatisation",
+        "Gestion de l’infrastructure cloud"
+      ],
+      "description": "• Caractériser le besoin en ressources matérielles/infrastructure \n\n • Mettre en place l’infrastructure  (physique, cloud, systèmes, librairies, authentification) \n\n • Installer, configurer, mettre à disposition les outils (outils DevOps, CI/CD, MLOps, mais aussi d’ingénierie système, gestion des exigences, conception, ou IA) \n\n • Documenter les travaux réalisés\n\n • Faire la mise à jour et le maintien en conditions opérationnelles de l’usine logicielle DevOps \n\n • Gérer l'administration d’un cluster kubernetes \n\n • Gérer l'administration Système de serveurs linux et de ressources cloud \n\n • Faire la mise à jour des applicatifs métier \n\n • Faire le Support aux utilisateurs dans les projets de l’IRT mise en place de la CI/CD, déploiement d’applicatifs projet, support docker, kubernetes ou OpenStack\n\n Votre profil :\n • Nous recherchons un Ingénieur DevOPS qui a évolué au travers des environnements grands comptes sur des sujets transverses d'infrastructure. \n\n • Des certifications sont appréciées (techniques, projet, ou architecture)\n\n • Gestion et maintenance d’outillage d’usine logicielle : Gitlab, Jenkins, docker, Harbor, keycloak… \n\n • Vous maîtrisez l'administration Kubernetes, Système Linux et Windows, administration OpenStack idéalement ou expérience administration cloud\n\n • Vous avez des compétences techniques DevOps, CI/CD \n\n 3 raisons de nous rejoindre :\n Qualité de vie au travail : accord de télétravail en France et à l’international, accord sur l’égalité professionnelle, la parentalité, l’équilibre des temps et la mobilité durable.\n Apprentissage en continu : certifications et formations en libre accès, accompagnement sur mesure avec votre carreer manager, parcours d’intégration sur 9 mois.\n Avantages groupe & CSE : plan actionnariat, tarif préférentiels, remboursement partiel vacances, remboursement de votre abonnement sportif ou culturel.\n\n Nos engagements et priorités :\n Le groupe Capgemini encourage une culture inclusive dans un cadre multiculturel et handi-accueillant. En nous rejoignant, vous intégrez un collectif qui valorise la diversité, développe le potentiel de ses talents, s’engage dans des initiatives solidaires avec ses partenaires, et se mobilise pour réduire son impact environnemental sur tous ses sites et auprès de ses clients",
+      "description_excerpt": "• Caractériser le besoin en ressources matérielles/infrastructure \n\n • Mettre en place l’infrastructure  (physique, cloud, systèmes, librairies, authentification) \n\n • Installer, configurer, mettre à disposition les outils (outils DevOps, CI/CD, MLOps, mais aussi d’ingénierie système, gestion des exigences, conception, ou IA) \n\n •…",
+      "profile_excerpt": "Description du profil :\n\nVotre profil :\n • Nous recherchons un Ingénieur DevOPS qui a évolué au travers des environnements grands comptes sur des sujets transverses d’infrastructure. \n\n • Des certifications sont appréciées (techniques, projet, ou architecture)\n\n • Gestion et…",
+      "experience": "5–7 ans",
+      "education_level": "bac_5",
+      "remote_detail": "ponctuel",
+      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44428519",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
+      "benefits_preview": [],
+      "benefits_count": null,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:51+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "capgemini-cloud-devops-engineer-senior-sophia-antipolis-dc8015"
+    },
+    {
+      "id": "wttj:4268069",
+      "title": "Network & Security Engineer Senior Aix-en-Provence",
+      "company": "Capgemini",
+      "company_slug": "capgemini",
+      "city": "Aix-en-Provence",
+      "cities": [
+        "Aix-en-Provence"
+      ],
+      "department": "Bouches-du-Rhône",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "sur site",
+      "category": "eng",
+      "profession": null,
+      "salary": null,
+      "experience_min_years": 5,
+      "published_at": "2026-09-09T12:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/network-security-engineer-senior-aix-en-provence_aix-en-provence_CAPGE_NGaA8wl?o=CAPGE_NGaA8wl",
+      "source": "wttj",
+      "stack": [],
+      "soft_skills": [
+        "Connaissances en cybersécurité",
+        "Gestion de réseaux"
+      ],
+      "description": "En tant qu'Ingénieure / Inégnieur  réseau et sécurité vos missions seront les suivantes : \n • Assurer l'exploitation et la MCO des équipements et services réseau\n\n • Gestion du BUILD et pilotage de projets réseaux\n\n • Traiter les incidents N2/N3 et réaliser les mises en production\n\n • Participer à la mise en oeuvre et à l'exploitation des infrastructures réseau\n\n • En équipe, vous participerez également à l'industrialisation/optimisation et à l'intégration d'évolutions d'infrastructures ou applications tout en rédigeant les dossiers d'exploitations et procédures\n\n • Administrer des équipements et solutions de sécurité réseaux, serveurs, plateformes virtuelles et dispositifs de sécurité \n\n • Assurer le support technique N3 auprès des équipes\n\n • Elaborer des architectures techniques\n\n Votre profil :\n\n • Vous disposez d’au moins 3 années d’expérience sur des postes d’administrateur réseaux et sécurité ou équivalent.\n\n • Vous avez des bases en construction d'architectures, en gestion de projets et/ou d'équipe.\n\n • Pour finir, nous recherchons des collaborateurs autonomes, impliqué(e)s et avec un bon esprit d’équipe. \n\n • Disposer de certifications et de notions de performance soumises au KPI et/ou SLA sont des + \n\n 3 raisons de nous rejoindre\n\n Qualité de vie au travail : accord de télétravail en France et à l’international, accord sur l’égalité professionnelle, la parentalité, l’équilibre des temps et la mobilité durable.\n Apprentissage en continu : certifications et formations en libre accès, accompagnement sur mesure avec votre carreer manager, parcours d’intégration sur 9 mois.\n Avantages groupe & CSE : plan actionnariat, activités à tarifs préférentiels, remboursement partiel vacances, remboursement de votre abonnement sportif ou culturel",
+      "description_excerpt": "En tant qu'Ingénieure / Inégnieur  réseau et sécurité vos missions seront les suivantes : \n • Assurer l'exploitation et la MCO des équipements et services réseau\n\n • Gestion du BUILD et pilotage de projets réseaux\n\n • Traiter les incidents N2/N3 et réaliser les mises en production\n\n • Participer à la mise en oeuvre et à l'exploitation…",
+      "profile_excerpt": "Description du profil :\n\nVotre profil :\n • Vous disposez d’au moins 3 années d’expérience sur des postes d’administrateur réseaux et sécurité ou équivalent.\n\n • Vous avez des bases en construction d’architectures, en gestion de projets et/ou d’équipe.\n\n • Pour finir, nous…",
+      "experience": "5–7 ans",
+      "education_level": "bac_5",
+      "remote_detail": "sur site",
+      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44428408",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
+      "benefits_preview": [],
+      "benefits_count": null,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:51+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "capgemini-network-security-engineer-senior-aix-en-provence-2bfc63"
+    },
+    {
+      "id": "wttj:4267971",
+      "title": "Technico-Commercial Itinérant  TP (F/H)",
+      "company": "DESCOURS & CABAUD",
+      "company_slug": "descours-cabaud",
+      "city": "Sorgues",
+      "cities": [
+        "Sorgues"
+      ],
+      "department": "Vaucluse",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "",
+      "category": "tech-adjacent",
+      "profession": null,
+      "salary": "35000–40000 EUR",
+      "experience_min_years": 1,
+      "published_at": "2026-09-09T11:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/descours-cabaud/jobs/technico-commercial-itinerant-tp-f-h_sorgues?o=DC_PD9QzMW",
+      "source": "wttj",
+      "stack": [],
+      "soft_skills": [
+        "Aptitudes à motiver les autres",
+        "Négociation",
+        "Définition d'objectifs"
+      ],
+      "description": "Construisons l'avenir en commençant par le vôtre ! \n\nAnimé(e) par la relation clients et la négociation, vous avez le sens du service et une appétence pour les produits techniques ? Nous avons le poste qu'il vous faut !\n\nPROLIANS - PROVENCE COTE D'AZUR, partenaire des métiers de la construction et filiale du Groupe DESCOURS & CABAUD recherche pour son agence de Sorgues , un/une :\n\nTechnico-Commercial Itinérant  TP (F/H) - CDI\n\nVOTRE AVENIR CHEZ NOUS :\n\nRattaché(e) au Responsable du département de la cellule Travaux Publics, vous rejoignez une équipe de 4 collaborateurs, qui vous accompagnera tout au long de votre parcours d'intégration.\nEn tant que véritable expert des produits de Travaux Publics vous :\n• Êtes un réel appui technique des équipes commerciales sur la famille de produits TP\n• Développez le chiffre d'affaires sur votre secteur géographique\n• Identifiez et qualifiez les besoins des clients\n• Apportez les meilleures solutions techniques et orientez les choix sur nos produits TP\n• Assurez le suivi des affaires jusqu'au déroulement final en collaboration avec l'équipe interne",
+      "description_excerpt": "Construisons l'avenir en commençant par le vôtre ! \n\nAnimé(e) par la relation clients et la négociation, vous avez le sens du service et une appétence pour les produits techniques ? Nous avons le poste qu'il vous faut !\n\nPROLIANS - PROVENCE COTE D'AZUR, partenaire des métiers de la construction et filiale du Groupe DESCOURS & CABAUD…",
+      "profile_excerpt": "Vous êtes issu(e) d'une formation commerciale/technique (Bac+2).\nVous êtes reconnu(e) pour votre talent de négociateur, et vous démontrez de solides capacités à gérer un relationnel sur le long terme. \nVotre sens du commerce, votre rigueur et organisation sont vos principaux…",
+      "experience": "1–2 ans",
+      "education_level": "bac_2",
+      "remote_detail": null,
+      "apply_url": "https://api-v2-multidiff.xtramile.io/collect/624a682b0fa4475197e2ff2ff83e4704",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/Xwz_5YYs5AbFHoT-g-DKlM6cLmImnxSu8pv4l-fEu-s/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby83ODYyLzE2NDA4Ny80ZmVkNDQ0MC1mYTAxLTQ5YzUtOTg5Yy04NjA4ZjUzYmVmMDgucG5n",
+      "benefits_preview": [],
+      "benefits_count": null,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:51+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "descours-cabaud-technico-commercial-itinerant-tp-f-h-719d59"
+    },
+    {
+      "id": "wttj:4267957",
+      "title": "Ingénieur Production Applicative / DevOps (F/H)",
+      "company": "Atos",
+      "company_slug": "atos",
+      "city": "Aix-en-Provence",
+      "cities": [
+        "Aix-en-Provence"
+      ],
+      "department": "Bouches-du-Rhône",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "hybride",
+      "category": "eng",
+      "profession": null,
+      "salary": null,
+      "experience_min_years": 4,
+      "published_at": "2026-09-09T11:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/ingenieur-production-applicative-devops-f-h_aix-en-provence_ATOS_AxYD3gQ?o=ATOS_AxYD3gQ",
+      "source": "wttj",
+      "stack": [
+        "Kubernetes",
+        "Shell",
+        "Python"
+      ],
+      "soft_skills": [
+        "Communication",
+        "Aptitude à résoudre les problèmes"
+      ],
+      "description": "Le poste en quelques mots :\nNous sommes à la recherche de notre futur·e Ingénieur Production Applicative pour assurer l’exploitation, la fiabilité et la mise en production des applications dans un environnement technique structuré. Vous interviendrez sur des plateformes industrialisées intégrant Kubernetes et des solutions d’automatisation.",
+      "description_excerpt": "Le poste en quelques mots :\nNous sommes à la recherche de notre futur·e Ingénieur Production Applicative pour assurer l’exploitation, la fiabilité et la mise en production des applications dans un environnement technique structuré. Vous interviendrez sur des plateformes industrialisées intégrant Kubernetes et des solutions…",
+      "profile_excerpt": "Description du profil :\n\nVotre profil :\n • Expérience confirmée en production applicative ou exploitation IT\n\n • Bonne maîtrise des environnements Kubernetes\n\n • Compétences en scripting Shell et/ou Python\n\n • Connaissance des processus ITIL\n\n • Expérience dans la gestion…",
+      "experience": null,
+      "education_level": "bac_5",
+      "remote_detail": "hybride",
+      "apply_url": "https://atos.contactrh.com/jobs/10425/44428331",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/GpTmQiDECB8lhF8RFrOMACq1s4Ayk0y_FdDYmpAhE4w/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni8wOGI3YTNhMC0wZWM3LTRmNDgtYTljMi05N2VmMzRhZWJlNDAuanBn",
+      "benefits_preview": [
+        "Plan de développement professionnel",
+        "Entre 3-4 jours de télétravail",
+        "Équipe dédiée à la Diversité & inclusivité",
+        "Prime de cooptation",
+        "Compte épargne-temps (CET)"
+      ],
+      "benefits_count": 12,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:51+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "atos-ingenieur-production-applicative-devops-f-h-34be25"
+    },
+    {
+      "id": "wttj:4267944",
+      "title": "Ingénieur DevOps (F/H)",
+      "company": "Atos",
+      "company_slug": "atos",
+      "city": "Valbonne",
+      "cities": [
+        "Valbonne"
+      ],
+      "department": "Maritime Alps",
+      "region": "Provence-Alpes-Cote d'Azur",
+      "contract": "CDI",
+      "remote": "hybride",
+      "category": "eng",
+      "profession": null,
+      "salary": "42000–52000 EUR",
+      "experience_min_years": 5,
+      "published_at": "2026-09-09T11:00:00.000+02:00",
+      "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/ingenieur-devops-f-h_valbonne_ATOS_QdK9m66?o=ATOS_QdK9m66",
+      "source": "wttj",
+      "stack": [
+        "Kubernetes",
+        "Terraform",
+        "Azure",
+        "AWS",
+        "Docker"
+      ],
+      "soft_skills": [
+        "Conteneurisation et orchestration",
+        "Amélioration continue",
+        "Gestion de la documentation",
+        "Infrastructure as Code (IaC)",
+        "Outils d'automatisation",
+        "Collaboration et travail d'équipe",
+        "Gestion de l’infrastructure cloud",
+        "Aptitude à résoudre les problèmes"
+      ],
+      "description": "Gestion de l'Infrastructure :\n•    Configurer et gérer des environnements cloud, y compris le réseau, le stockage et les ressources de calcul.\n•    Optimiser les coûts cloud en mettant en œuvre des pratiques exemplaires et des stratégies de gestion des ressources.\nAutomatisation et Scriptage :\n•    Développer des scripts et des outils d'automatisation pour faciliter les tâches de déploiement et de gestion de l'infrastructure.\n•   Utiliser des outils d'Infrastructure as Code (IaC) tels que Terraform ou CloudFormation pour un provisionnement d'infrastructure cohérent et répétable.\nCollaboration et Support :\n•    Travailler en étroite collaboration avec des équipes interfonctionnelles pour résoudre les problèmes, mettre en œuvre des solutions et améliorer le processus de développement global.\n•   Fournir un support pour les systèmes de production, en résolvant les incidents et en mettant en œuvre des actions correctives si nécessaire.\nDocumentation :\n•  Créer et maintenir une documentation complète pour l'architecture cloud, les processus de déploiement et les procédures opérationnelles.\n•    Partager les connaissances et les meilleures pratiques avec les membres de l'équipe pour favoriser une culture d'amélioration continue.",
+      "description_excerpt": "Gestion de l'Infrastructure :\n•    Configurer et gérer des environnements cloud, y compris le réseau, le stockage et les ressources de calcul.\n•    Optimiser les coûts cloud en mettant en œuvre des pratiques exemplaires et des stratégies de gestion des ressources.\nAutomatisation et Scriptage :\n•    Développer des scripts et des outils…",
+      "profile_excerpt": "Description du profil :\n\n•    Diplôme de master en informatique, ingénierie ou dans un domaine connexe.\n •    Expérience avérée en tant qu’Ingénieur DevOps ou dans un rôle similaire, avec une expérience pratique des plateformes cloud (Azure, AWS, GCP).\n •    Solide connaissance…",
+      "experience": "5–7 ans",
+      "education_level": "bac_5",
+      "remote_detail": "hybride",
+      "apply_url": "https://atos.contactrh.com/jobs/10425/44427890",
+      "ats": "external",
+      "logo": "https://cdn-images.welcometothejungle.com/GpTmQiDECB8lhF8RFrOMACq1s4Ayk0y_FdDYmpAhE4w/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni8wOGI3YTNhMC0wZWM3LTRmNDgtYTljMi05N2VmMzRhZWJlNDAuanBn",
+      "benefits_preview": [
+        "Plan de développement professionnel",
+        "Entre 3-4 jours de télétravail",
+        "Équipe dédiée à la Diversité & inclusivité",
+        "Prime de cooptation",
+        "Compte épargne-temps (CET)"
+      ],
+      "benefits_count": 12,
+      "start_date": null,
+      "enriched_at": "2026-09-09T10:58:51+00:00",
+      "first_seen": "2026-09-09T10:59:57+00:00",
+      "is_new": true,
+      "slug": "atos-ingenieur-devops-f-h-4ddb5a"
+    },
     {
       "id": "wttj:4267276",
       "title": "Ingénieur Développement Confirmé C++ - Systèmes Critiques (F/H)",
@@ -64,7 +613,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T22:33:16+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-developpement-confirme-cpp-systemes-critiques-f-h-bd5dbd"
@@ -124,7 +673,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T22:15:25+00:00",
       "is_new": true,
       "slug": "sopra-steria-ingenieur-e-devops-infrastructure-cloud-biot-99d363"
@@ -190,7 +739,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T22:15:25+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-chef-de-projet-si-scrum-master-f-h-964298"
@@ -259,7 +808,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T22:15:25+00:00",
       "is_new": true,
       "slug": "cba-informatique-administrateur-systemes-et-reseaux-sysops-h-f-27bf3d"
@@ -314,7 +863,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T22:15:25+00:00",
       "is_new": true,
       "slug": "meritis-ingenieur-sre-observabilite-h-f-a0ab0d"
@@ -363,7 +912,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T22:15:25+00:00",
       "is_new": true,
       "slug": "meritis-developpeur-cpp-h-f-5059b8"
@@ -413,7 +962,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T22:15:25+00:00",
       "is_new": true,
       "slug": "meritis-developpeur-golang-h-f-bc6a4a"
@@ -1553,7 +2102,7 @@
       ],
       "benefits_count": 14,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "septeo-senior-offensive-security-engineer-h-f-6520db"
@@ -1626,7 +2175,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-11-30T23:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "omnidoc-senior-staff-product-designer-full-time-1b37ed"
@@ -1670,7 +2219,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-07-05T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "linking-talents-technicien-systemes-de-surete-electronique-h-f-691119"
@@ -1731,7 +2280,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "sopra-steria-developpeur-se-d-applications-de-simulation-cpp-qt-defens-2e63ff"
@@ -1783,7 +2332,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "sopra-steria-developpeur-se-dotnet-bl-region-aix-en-provence-73b905"
@@ -1845,7 +2394,7 @@
       ],
       "benefits_count": 31,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "cgi-tech-lead-java-f-h-f5288f"
@@ -1905,7 +2454,7 @@
       ],
       "benefits_count": 31,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "cgi-ingenieur-e-qa-f-h-bf9c41"
@@ -1956,7 +2505,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "linking-talents-developpeur-se-sirh-senior-h-f-59d44a"
@@ -2005,7 +2554,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-09-20T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "dishop-account-growth-manager-foodtech-d76145"
@@ -2064,7 +2613,7 @@
       ],
       "benefits_count": 28,
       "start_date": "2026-09-06T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "the-adecco-group-ingenieur-systeme-h-f-d82551"
@@ -2146,7 +2695,7 @@
       ],
       "benefits_count": 9,
       "start_date": "2026-07-08T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-08T20:48:35+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-business-analyst-it-parcours-client-f-h-720c1a"
@@ -2235,7 +2784,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-06T17:06:22+00:00",
       "is_new": true,
       "slug": "atos-ingenieur-devops-mise-en-production-f-h-e4f830"
@@ -2283,7 +2832,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-responsable-integration-verification-validation-infrast-fe428e"
@@ -2346,7 +2895,7 @@
       ],
       "benefits_count": 20,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "open-responsable-technique-java-h-f-821bf3"
@@ -2402,7 +2951,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-expert-e-openshift-genai-aix-en-provence-e446f6"
@@ -2449,7 +2998,7 @@
       ],
       "benefits_count": 11,
       "start_date": "2026-09-14T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "prozon-product-builder-ecommerce-4d0bb0"
@@ -2512,7 +3061,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "eskimoz-consultant-e-analytics-tracking-vie-madrid-3ae03d"
@@ -2575,7 +3124,7 @@
       ],
       "benefits_count": 6,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "smef-azur-technicien-informatique-support-utilisateur-polyvalent-h-f-1-e9a345"
@@ -2622,7 +3171,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-senior-consultant-data-et-ia-h-f-6f45ba"
@@ -2686,7 +3235,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-ingenieur-e-devops-toulon-a1e0e0"
@@ -2733,7 +3282,7 @@
       ],
       "benefits_count": 10,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-e-454684"
@@ -2783,7 +3332,7 @@
       ],
       "benefits_count": 10,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-m-c275ad"
@@ -2833,7 +3382,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-responsable-engineering-site-reliability-engineering-sre-h-f-1f5eec"
@@ -2883,7 +3432,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-datadog-cloud-kubernetes-h-f-193459"
@@ -2936,7 +3485,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-testeur-automaticien-developpeur-python-f-h-bde0fa"
@@ -2978,7 +3527,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-08-05T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "setec-ingenieur-d-etudes-en-traitement-de-l-eau-h-f-9c41bc"
@@ -3032,7 +3581,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-devops-ci-assemblage-integrateur-logiciel-h-f-16b672"
@@ -3081,7 +3630,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cs-developpeur-e-integrateur-ice-dotnet-csharp-cpp-transport-aix-en-pr-0c533d"
@@ -3132,7 +3681,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-product-owner-f-h-99222d"
@@ -3186,7 +3735,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-ingenieur-systeme-aeronautique-f-h-8dc9b2"
@@ -3235,7 +3784,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bnp-paribas-real-estate-responsable-du-developpement-h-f-a5035d"
@@ -3278,7 +3827,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "linking-talents-technicien-hotline-bilingue-allemand-h-f-eceea7"
@@ -3329,7 +3878,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-responsable-systeme-cloud-infrastructures-numeriques-em-fa5879"
@@ -3377,7 +3926,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-electronique-systemes-embarques-f-h-966cb2"
@@ -3425,7 +3974,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-charge-e-d-etudes-systemes-embarques-armes-sous-marines-8be119"
@@ -3473,7 +4022,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-developpement-et-integration-de-systemes-electronique-2353a3"
@@ -3523,7 +4072,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "vinci-energies-en-france-tech-lead-f-h-2453c4"
@@ -3576,7 +4125,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-data-engineer-gcp-h-f-739011"
@@ -3626,7 +4175,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-chef-de-projet-it-h-f-f6b34b"
@@ -3669,7 +4218,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "capgemini-consultante-consultant-fonctionnel-plm-stage-130a20"
@@ -3723,7 +4272,7 @@
       ],
       "benefits_count": 6,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "rofim-chef-de-projet-deploiement-interoperabilite-77d1e3"
@@ -3778,7 +4327,7 @@
       ],
       "benefits_count": 8,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "the-product-crew-tech-product-recruiter-independant-e-engineering-ai-p-149a98"
@@ -3834,7 +4383,7 @@
       ],
       "benefits_count": 8,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "the-product-crew-tech-recruiter-engineering-ai-71bc14"
@@ -3880,7 +4429,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "capgemini-developpeuse-developpeur-logiciel-plm-stage-57e820"
@@ -3933,7 +4482,7 @@
       ],
       "benefits_count": 28,
       "start_date": "2026-09-30T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "the-adecco-group-architecte-logiciel-cpp-h-f-1d0f5c"
@@ -3994,7 +4543,7 @@
       ],
       "benefits_count": 28,
       "start_date": "2026-10-01T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "the-adecco-group-ingenieur-devops-h-f-304959"
@@ -4035,7 +4584,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "linking-talents-ingenieur-etude-et-travaux-cfo-cfa-h-f-ae5592"
@@ -4090,7 +4639,7 @@
       ],
       "benefits_count": 28,
       "start_date": "2026-10-07T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "the-adecco-group-developpeur-java-h-f-a1a509"
@@ -4146,7 +4695,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-09-14T20:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "roads-performance-manager-sea-sma-h-f-98c23a"
@@ -4185,7 +4734,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sessun-web-data-business-analyst-h-f-f778a2"
@@ -4236,7 +4785,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-data-ingenieur-e-snowflake-experimente-e-developpement-re-035771"
@@ -4298,7 +4847,7 @@
       ],
       "benefits_count": 20,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "open-data-engineer-ops-h-f-5acb20"
@@ -4356,7 +4905,7 @@
       ],
       "benefits_count": 5,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "nexton-developpeur-go-python-h-f-f69c38"
@@ -4404,7 +4953,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-product-owner-h-f-1e0538"
@@ -4458,7 +5007,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-front-end-reactjs-f-h-3bb94d"
@@ -4506,7 +5055,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-business-analyst-it-h-f-d6d5c5"
@@ -4563,7 +5112,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-systemes-embarques-f-h-4df9f7"
@@ -4623,7 +5172,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-devops-sre-h-f-642558"
@@ -4682,7 +5231,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-principal-llm-inference-engineer-f-h-d3f624"
@@ -4769,7 +5318,7 @@
       ],
       "benefits_count": 17,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "adforall-consultant-e-expert-e-sma-avant-vente-paid-social-f91cd3"
@@ -4874,7 +5423,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-systeme-detection-sous-marine-h-f-d9576f"
@@ -4933,7 +5482,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-responsable-developpement-logiciel-frameworks-h-f-60906c"
@@ -4984,7 +5533,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-architecte-systeme-h-f-59b2d0"
@@ -5036,7 +5585,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-analyste-gestion-des-vulnerabilites-cybersecurite-aix-en-0d356a"
@@ -5077,7 +5626,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "la-poste-groupe-test-ne-pas-postuler-chef-de-projet-si-f-h-098d8f"
@@ -5136,7 +5685,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-java-angular-f-h-8e57e4"
@@ -5201,7 +5750,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-java-f-h-252d9a"
@@ -5255,7 +5804,7 @@
       ],
       "benefits_count": 26,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bdo-france-administrateur-systemes-et-reseaux-experimente-f-h-800749"
@@ -5314,7 +5863,7 @@
       ],
       "benefits_count": 7,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "voyage-prive-data-analyst-data-partner-m-f-d-c9302d"
@@ -5369,7 +5918,7 @@
       ],
       "benefits_count": 7,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "voyage-prive-seo-analyst-m-f-d-d8ffc8"
@@ -5413,7 +5962,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "capgemini-tech-lead-ignition-0e66c0"
@@ -5470,7 +6019,7 @@
       ],
       "benefits_count": 3,
       "start_date": "2026-08-31T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "players-developpeur-fullstack-h-f-e937ad"
@@ -5515,7 +6064,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "b-hive-ingenieur-securite-exploitation-nucleaire-h-f-87dbe7"
@@ -5573,7 +6122,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-architecte-logiciel-liaisons-de-donnees-tactiques-h-f-95929a"
@@ -5621,7 +6170,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-charge-e-d-etude-electronique-h-f-e18855"
@@ -5676,7 +6225,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-electronique-video-pour-chaines-optroniques-5f2ac1"
@@ -5739,7 +6288,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-chef-de-projet-si-test-manager-f-h-09b11e"
@@ -5789,7 +6338,7 @@
       ],
       "benefits_count": 5,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "nexton-product-designer-h-f-33f0e5"
@@ -5841,7 +6390,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-senior-consultant-cloud-finops-h-f-dec76b"
@@ -5896,7 +6445,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-developpeur-euse-experimente-e-java-angular-toulon-a6ea6d"
@@ -5946,7 +6495,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "deloitte-technicien-support-it-f-h-687e41"
@@ -5996,7 +6545,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-expert-e-cybersecurite-industrielle-cybersecurite-aix-en-6fc5b8"
@@ -6046,7 +6595,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-ingenieur-e-epp-edr-cybersecurite-aix-en-provence-5ff975"
@@ -6096,7 +6645,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-expert-e-cybersecurite-industrielle-cybersecurite-toulon-552bee"
@@ -6172,7 +6721,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "capgemini-ingenieur-ingenieure-developpement-full-stack-confirme-aix-e-4ede52"
@@ -6230,7 +6779,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "capgemini-leader-technique-fullstack-java-javascript-42093e"
@@ -6278,7 +6827,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "salsa-developpeur-commercial-h-f-de6fdf"
@@ -6328,7 +6877,7 @@
       ],
       "benefits_count": 14,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "septeo-consultant-fonctionnel-crs-pms-h-f-c961c0"
@@ -6371,7 +6920,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "b-hive-referent-fpga-f-h-d3b91c"
@@ -6414,7 +6963,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "b-hive-ingenieur-fpga-f-h-341790"
@@ -6457,7 +7006,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "b-hive-ingenieur-electronique-numerique-f-h-4bd05c"
@@ -6513,7 +7062,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-expert-securite-developpement-h-f-8cb934"
@@ -6564,7 +7113,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-e-developpement-fullstack-angular-h-f-a82348"
@@ -6618,7 +7167,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-developpement-confirme-nodejs-fullstack-react-f-h-efdb3a"
@@ -6677,7 +7226,7 @@
       ],
       "benefits_count": 6,
       "start_date": "2026-08-31T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ekstend-group-data-analyst-et-tracking-h-f-ea9e75"
@@ -6767,7 +7316,7 @@
       ],
       "benefits_count": 17,
       "start_date": "2026-06-30T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-developpeur-java-spring-h-f-exaltprovence-2089d5"
@@ -6813,7 +7362,7 @@
       ],
       "benefits_count": 17,
       "start_date": "2026-03-01T23:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-product-owner-exalt-provence-4e7155"
@@ -6866,7 +7415,7 @@
       ],
       "benefits_count": 17,
       "start_date": "2026-06-30T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-data-analyst-exalt-provence-2eb6c3"
@@ -6938,7 +7487,7 @@
       ],
       "benefits_count": 17,
       "start_date": "2026-06-30T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-testeur-qa-fonct-auto-exalt-aix-marseille-86d439"
@@ -7004,7 +7553,7 @@
       ],
       "benefits_count": 7,
       "start_date": "2026-09-30T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "docoon-lead-dev-developpeur-fullstack-senior-f-h-6121eb"
@@ -7069,7 +7618,7 @@
       ],
       "benefits_count": 7,
       "start_date": "2026-09-30T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "docoon-developpeur-fullstack-f-h-9ecee8"
@@ -7121,7 +7670,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "eskimoz-consultant-e-paid-media-sea-sma-vie-madrid-e4357a"
@@ -7172,7 +7721,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "eskimoz-consultant-e-paid-media-sea-sma-senior-france-979a16"
@@ -7229,7 +7778,7 @@
       ],
       "benefits_count": 23,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "wyll-ingenieur-cloud-confirme-a-expert-multi-cloud-aws-gcp-azure-scale-9c3f1b"
@@ -7290,7 +7839,7 @@
       ],
       "benefits_count": 23,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "wyll-ingenieur-devops-confirme-a-expert-aix-en-provence-a98250"
@@ -7341,7 +7890,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-integration-verification-qualification-h-f-08286a"
@@ -7393,7 +7942,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-systeme-h-f-c32e5f"
@@ -7466,7 +8015,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-cloud-certifie-h-f-0bdcd1"
@@ -7514,7 +8063,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-07-19T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "linking-talents-conducteur-de-travaux-surete-electronique-h-f-f9df4a"
@@ -7563,7 +8112,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-e-initie-e-systemes-embarques-armes-h-f-616237"
@@ -7612,7 +8161,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-systeme-en-telecommunications-h-f-9adb89"
@@ -7672,7 +8221,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-devsecops-engineer-h-f-f60532"
@@ -7719,7 +8268,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-developpement-cpp-systemes-critiques-h-f-1b0e3c"
@@ -7785,7 +8334,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-chef-de-projet-scrum-master-h-f-45a2e0"
@@ -7839,7 +8388,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-developpeur-full-stack-csharp-angular-h-f-68acc0"
@@ -7888,7 +8437,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-technical-product-owner-f-h-6bc1ae"
@@ -7946,7 +8495,7 @@
       ],
       "benefits_count": 25,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "matera-senior-genai-engineer-469a66"
@@ -8015,7 +8564,7 @@
       ],
       "benefits_count": 25,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "matera-staff-software-engineer-backend-56bca4"
@@ -8088,7 +8637,7 @@
       ],
       "benefits_count": 25,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "matera-senior-software-engineer-78116b"
@@ -8147,7 +8696,7 @@
       ],
       "benefits_count": 25,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "matera-genai-engineer-bea64d"
@@ -8193,7 +8742,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "capgemini-ingenieure-ingenieur-etudes-probabilistes-de-surete-23ec6f"
@@ -8278,7 +8827,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-developpeur-euse-java-aix-en-provence-63e834"
@@ -8327,7 +8876,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cs-consultant-e-cybersecurite-confirme-industrie-aix-en-provence-35f248"
@@ -8384,7 +8933,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-architecte-logiciel-f-h-df29b1"
@@ -8450,7 +8999,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-ingenieur-devops-f-h-407ffd"
@@ -8502,7 +9051,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "media-start-growth-marketer-9a96d4"
@@ -8645,7 +9194,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-administrateur-systemes-infra-virtualisees-h-f-aad321"
@@ -8707,7 +9256,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-ingenieur-expert-en-cybersecurite-des-systemes-h-f-de3e4f"
@@ -8767,7 +9316,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-architecte-logiciel-h-f-27b737"
@@ -8816,7 +9365,7 @@
       ],
       "benefits_count": 10,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "in-extenso-controleur-de-gestion-data-finance-h-f-cdd-9-mois-4fcd96"
@@ -8869,7 +9418,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-developpeur-java-angular-h-f-790e5c"
@@ -8920,7 +9469,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-c-embarque-f-h-4baf22"
@@ -8988,7 +9537,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-administrateur-systeme-linux-experimente-f-h-f26992"
@@ -9049,7 +9598,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-tech-lead-angular-f-h-75d08f"
@@ -9104,7 +9653,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-ingenieur-systemes-embarques-et-temps-reel-f-h-26c842"
@@ -9152,303 +9701,10 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-product-manager-a-i-f-h-83147e"
-    },
-    {
-      "id": "wttj:4245393",
-      "title": "Ingénieure / Ingénieur système Linux & Windows",
-      "company": "Capgemini",
-      "company_slug": "capgemini",
-      "city": "Aix-en-Provence",
-      "cities": [
-        "Aix-en-Provence"
-      ],
-      "department": "Bouches-du-Rhône",
-      "region": "Provence-Alpes-Cote d'Azur",
-      "contract": "CDI",
-      "remote": "",
-      "category": "eng",
-      "profession": null,
-      "salary": null,
-      "experience_min_years": 4,
-      "published_at": "2026-08-26T12:00:00.000+02:00",
-      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/ingenieure-ingenieur-systeme-linux-windows_aix-en-provence_CAPGE_VmGO0Je?o=CAPGE_VmGO0Je",
-      "source": "wttj",
-      "stack": [
-        "Windows",
-        "Centos",
-        "Linux",
-        "Ubuntu",
-        "Redhat"
-      ],
-      "soft_skills": [
-        "Gestion des systèmes d'information"
-      ],
-      "description": "Dans le cadre du renforcement de nos équipes à Aix-en-Provence, nous recherchons un Ingénieur Systèmes Linux et / ou Windows pour intervenir sur des environnements complexes et critiques du périmètre client.\n\n Vous interviendrez sur l’ensemble du cycle de vie des systèmes et infrastructures :\n\n • Installer, configurer, tester et maintenir les systèmes d’exploitation et composants d’infrastructure (postes de travail, serveurs, calculateurs)\n • Administrer des environnements Linux (RedHat, CentOS, Ubuntu) et / ou des environnements Windows Server\n • Assurer le MCO (Maintien en Condition Opérationnelle) et le MCS (Maintien en Condition de Sécurité) des systèmes d’information\n • Traiter et résoudre les incidents de niveau 2 et 3 liés aux serveurs et gérer les problèmes récurrents\n • Maintenir en condition opérationnelle les matériels du périmètre client\n • Suggérer des recommandations techniques et planifier/exécuter les mises à niveau des systèmes d’exploitation et composants d’infrastructure\n • Participer aux projets d’évolution des infrastructures Linux et / ou Windows",
-      "description_excerpt": "Dans le cadre du renforcement de nos équipes à Aix-en-Provence, nous recherchons un Ingénieur Systèmes Linux et / ou Windows pour intervenir sur des environnements complexes et critiques du périmètre client.\n\n Vous interviendrez sur l’ensemble du cycle de vie des systèmes et infrastructures :\n\n • Installer, configurer, tester et…",
-      "profile_excerpt": "Description du profil :\n\n Votre profil \n\n • Formation en informatique Bac+5\n • Solide expérience en administration de systèmes Linux (RedHat, CentOS, Ubuntu) et / ou Windows Server\n • Bonne maîtrise des environnements de production et des infrastructures critiques\n • Capacité à…",
-      "experience": null,
-      "education_level": "bac_5",
-      "remote_detail": null,
-      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44403766",
-      "ats": "external",
-      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
-      "benefits_preview": [],
-      "benefits_count": null,
-      "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
-      "first_seen": "2026-09-05T17:55:59+00:00",
-      "is_new": true,
-      "slug": "capgemini-ingenieure-ingenieur-systeme-linux-windows-b31d4a"
-    },
-    {
-      "id": "wttj:4245389",
-      "title": "Ingénieure/Ingénieur Réseau",
-      "company": "Capgemini",
-      "company_slug": "capgemini",
-      "city": "Toulon",
-      "cities": [
-        "Toulon"
-      ],
-      "department": "Var",
-      "region": "Provence-Alpes-Cote d'Azur",
-      "contract": "CDI",
-      "remote": "hybride",
-      "category": "eng",
-      "profession": null,
-      "salary": null,
-      "experience_min_years": 5,
-      "published_at": "2026-08-26T12:00:00.000+02:00",
-      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/ingenieure-ingenieur-reseau_toulon_CAPGE_RRRd7wd?o=CAPGE_RRRd7wd",
-      "source": "wttj",
-      "stack": [
-        "Glpi",
-        "Azure",
-        "AWS"
-      ],
-      "soft_skills": [
-        "Gestion de réseaux"
-      ],
-      "description": "Dans le cadre du renforcement de nos équipes techniques, nous recherchons un Administrateur Réseaux pour assurer l’exploitation, l’évolution et la sécurisation des infrastructures réseaux du périmètre client.\n En tant qu’Administrateur Réseaux, vous interviendrez sur les activités suivantes :\n • Installer, configurer, tester et maintenir les équipements d’infrastructure réseau (switchs, routeurs, firewalls)\n • Paramétrer et administrer des équipements réseau de niveaux 1, 2 et 3\n • Assurer le Maintien en Condition Opérationnelle (MCO) et le Maintien en Condition de Sécurité (MCS) des systèmes d’information\n • Traiter et résoudre les incidents de niveau 2 et 3 et assurer la gestion des problèmes\n • Maintenir en condition opérationnelle les matériels du périmètre client\n • Proposer des recommandations techniques, planifier et exécuter les mises à niveau des équipements et composants d’infrastructure\n • Superviser les infrastructures à l’aide des outils dédiés\n • Suivre et tracer l’activité dans l’outil de gestion GLPI\n • Être force de proposition et de conseil auprès des équipes et des clients\n • Créer, mettre à jour et enrichir la base de connaissances, et diffuser les bonnes pratiques\n • Reporter l’activité, les alertes et les incidents auprès des responsables d’équipe\n • Participer aux projets d’évolution des infrastructures réseau\n • Assurer la liaison avec les autres équipes (systèmes, sécurité, support) dans le cadre de la gestion des incidents, changements et problèmes",
-      "description_excerpt": "Dans le cadre du renforcement de nos équipes techniques, nous recherchons un Administrateur Réseaux pour assurer l’exploitation, l’évolution et la sécurisation des infrastructures réseaux du périmètre client.\n En tant qu’Administrateur Réseaux, vous interviendrez sur les activités suivantes :\n • Installer, configurer, tester et maintenir…",
-      "profile_excerpt": "Description du profil :\n\n Votre profil \n • Formation en informatique\n • Solide expérience en administration et exploitation de réseaux\n • Bonne maîtrise des protocoles de routage et des architectures LAN/WAN\n • Capacité à gérer des incidents complexes et des environnements…",
-      "experience": "5–7 ans",
-      "education_level": "bac_5",
-      "remote_detail": "hybride",
-      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44403745",
-      "ats": "external",
-      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
-      "benefits_preview": [],
-      "benefits_count": null,
-      "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
-      "first_seen": "2026-09-05T17:55:59+00:00",
-      "is_new": true,
-      "slug": "capgemini-ingenieure-ingenieur-reseau-d11d8f"
-    },
-    {
-      "id": "wttj:4245388",
-      "title": "Ingénieure / Ingénieur système Windows",
-      "company": "Capgemini",
-      "company_slug": "capgemini",
-      "city": "Toulon",
-      "cities": [
-        "Toulon"
-      ],
-      "department": "Var",
-      "region": "Provence-Alpes-Cote d'Azur",
-      "contract": "CDI",
-      "remote": "",
-      "category": "eng",
-      "profession": null,
-      "salary": null,
-      "experience_min_years": 5,
-      "published_at": "2026-08-26T12:00:00.000+02:00",
-      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/ingenieure-ingenieur-systeme-windows_toulon_CAPGE_XVN66Q2?o=CAPGE_XVN66Q2",
-      "source": "wttj",
-      "stack": [
-        "Windows",
-        "Azure",
-        "PowerShell",
-        "AWS"
-      ],
-      "soft_skills": [
-        "Diagnostic",
-        "Outils d'automatisation",
-        "Administration des systèmes",
-        "Collaboration et travail d'équipe"
-      ],
-      "description": "Dans le cadre du renforcement de nos activités Infrastructure, nous recherchons un Administrateur Systèmes Windows (H/F) afin d’intervenir sur l’installation, la configuration, la maintenance et l’exploitation des environnements systèmes de nos clients.\n • Installer, configurer, tester et maintenir les systèmes d’exploitation (PC et serveurs).\n • Intervenir sur un parc allant de Windows XP à Windows 11 et de Windows Server 2008 à 2022.\n • Gérer et maintenir les composants d’infrastructure (AD, DNS, GPO, serveurs de fichiers, d’impression…).\n • Assurer la disponibilité opérationnelle du périmètre client.\n • Traiter et résoudre les incidents N2/N3 liés aux serveurs et infrastructures. \n • Assurer le diagnostic, l’analyse et la résolution des problèmes complexes. \n • Collaborer avec les autres équipes pour la gestion des incidents, changements et problèmes. \n • Proposer des recommandations d’évolution et planifier les mises à niveau systèmes. \n • Participer aux projets d’évolution et d’industrialisation. \n • Automatiser les processus via scripting (PowerShell principalement). \n • Créer, mettre à jour et diffuser les bonnes pratiques au sein de la base de connaissances.",
-      "description_excerpt": "Dans le cadre du renforcement de nos activités Infrastructure, nous recherchons un Administrateur Systèmes Windows (H/F) afin d’intervenir sur l’installation, la configuration, la maintenance et l’exploitation des environnements systèmes de nos clients.\n • Installer, configurer, tester et maintenir les systèmes d’exploitation (PC et…",
-      "profile_excerpt": "Description du profil :\n\n Votre profil \n\n • Expérience confirmée en administration systèmes Windows.\n • Maîtrise des environnements virtualisés et technologies Microsoft.\n • Compétences en gestion d’incidents N2/N3 sur serveurs.\n • Bonne connaissance des outils de sauvegarde,…",
-      "experience": "5–7 ans",
-      "education_level": "bac_5",
-      "remote_detail": null,
-      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44403742",
-      "ats": "external",
-      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
-      "benefits_preview": [],
-      "benefits_count": null,
-      "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
-      "first_seen": "2026-09-05T17:55:59+00:00",
-      "is_new": true,
-      "slug": "capgemini-ingenieure-ingenieur-systeme-windows-f18d2f"
-    },
-    {
-      "id": "wttj:4245387",
-      "title": "Cloud DevOps Engineer",
-      "company": "Capgemini",
-      "company_slug": "capgemini",
-      "city": "Valbonne",
-      "cities": [
-        "Valbonne"
-      ],
-      "department": "Maritime Alps",
-      "region": "Provence-Alpes-Cote d'Azur",
-      "contract": "CDI",
-      "remote": "ponctuel",
-      "category": "eng",
-      "profession": null,
-      "salary": null,
-      "experience_min_years": 5,
-      "published_at": "2026-08-26T12:00:00.000+02:00",
-      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/cloud-devops-engineer_valbonne_CAPGE_mWYNXyq?o=CAPGE_mWYNXyq",
-      "source": "wttj",
-      "stack": [
-        "Java",
-        "Linux",
-        "Kubernetes",
-        "Git",
-        "Ansible",
-        "Shell",
-        "Jenkins",
-        "ArgoCD",
-        "Azure",
-        "Kafka",
-        "Artifactory",
-        "Docker",
-        "Python"
-      ],
-      "soft_skills": [
-        "Travail d'équipe",
-        "Méthode Agile",
-        "Outils d'automatisation",
-        "Principes DevOps"
-      ],
-      "description": "Vous serez au service d’un leader technologique international, au cœur d’un écosystème qui connecte des millions de voyageurs à travers le monde.\n Vos missions seront les suivantes :\n • Automatiser les déploiements et améliorer la productivité des développeurs\n • Maintenir des plateformes robustes et performantes\n • Accompagner les utilisateurs dans un environnement cloud et on-premise\n • Gérer les environnements Linux, scripting (Shell, Python), CI/CD (Jenkins, ArgoCD)\n • Déployer et maintenir des clusters Kafka (Strimzi, MirrorMaker2)\n • Utiliser des outils comme Git, Artifactory, Ansible, Docker, Kubernetes, Azure\n • Assurer le support aux utilisateurs en environnement de test et de production\n • Participer à la gestion des incidents, à l’amélioration continue et à l’automatisation\n Profil :\n • Expérience confirmée en DevOps, scripting, CI/CD\n • Connaissances en Kafka, Python, Java, conteneurisation\n • Bonne maîtrise de l’anglais\n • Esprit d’équipe, rigueur, curiosité technique\n • Expérience en environnement Agile (SAFe, Scrum)",
-      "description_excerpt": "Vous serez au service d’un leader technologique international, au cœur d’un écosystème qui connecte des millions de voyageurs à travers le monde.\n Vos missions seront les suivantes :\n • Automatiser les déploiements et améliorer la productivité des développeurs\n • Maintenir des plateformes robustes et performantes\n • Accompagner les…",
-      "profile_excerpt": "Description du profil :\n\nProfil :\n • Expérience confirmée en DevOps, scripting, CI/CD\n • Connaissances en Kafka, Python, Java, conteneurisation\n • Bonne maîtrise de l’anglais\n • Esprit d’équipe, rigueur, curiosité technique\n • Expérience en environnement Agile (SAFe,…",
-      "experience": "5–7 ans",
-      "education_level": "bac_5",
-      "remote_detail": "ponctuel",
-      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44403732",
-      "ats": "external",
-      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
-      "benefits_preview": [],
-      "benefits_count": null,
-      "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
-      "first_seen": "2026-09-05T17:55:59+00:00",
-      "is_new": true,
-      "slug": "capgemini-cloud-devops-engineer-50fc56"
-    },
-    {
-      "id": "wttj:4245384",
-      "title": "Cloud DevOps Engineer Senior Sophia-Antipolis",
-      "company": "Capgemini",
-      "company_slug": "capgemini",
-      "city": "Nice",
-      "cities": [
-        "Nice"
-      ],
-      "department": "Maritime Alps",
-      "region": "Provence-Alpes-Cote d'Azur",
-      "contract": "CDI",
-      "remote": "ponctuel",
-      "category": "eng",
-      "profession": null,
-      "salary": null,
-      "experience_min_years": 5,
-      "published_at": "2026-08-26T12:00:00.000+02:00",
-      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/cloud-devops-engineer-senior-sophia-antipolis_nice_CAPGE_9qr46aA?o=CAPGE_9qr46aA",
-      "source": "wttj",
-      "stack": [
-        "Windows",
-        "GitLab",
-        "Linux",
-        "Kubernetes",
-        "Harbor",
-        "Jenkins",
-        "OpenStack",
-        "Docker",
-        "Keycloak"
-      ],
-      "soft_skills": [
-        "Outils d'automatisation",
-        "Gestion de l’infrastructure cloud"
-      ],
-      "description": "• Caractériser le besoin en ressources matérielles/infrastructure \n\n • Mettre en place l’infrastructure  (physique, cloud, systèmes, librairies, authentification) \n\n • Installer, configurer, mettre à disposition les outils (outils DevOps, CI/CD, MLOps, mais aussi d’ingénierie système, gestion des exigences, conception, ou IA) \n\n • Documenter les travaux réalisés\n\n • Faire la mise à jour et le maintien en conditions opérationnelles de l’usine logicielle DevOps \n\n • Gérer l'administration d’un cluster kubernetes \n\n • Gérer l'administration Système de serveurs linux et de ressources cloud \n\n • Faire la mise à jour des applicatifs métier \n\n • Faire le Support aux utilisateurs dans les projets de l’IRT mise en place de la CI/CD, déploiement d’applicatifs projet, support docker, kubernetes ou OpenStack\n\n Votre profil :\n • Nous recherchons un Ingénieur DevOPS qui a évolué au travers des environnements grands comptes sur des sujets transverses d'infrastructure. \n\n • Des certifications sont appréciées (techniques, projet, ou architecture)\n\n • Gestion et maintenance d’outillage d’usine logicielle : Gitlab, Jenkins, docker, Harbor, keycloak… \n\n • Vous maîtrisez l'administration Kubernetes, Système Linux et Windows, administration OpenStack idéalement ou expérience administration cloud\n\n • Vous avez des compétences techniques DevOps, CI/CD \n\n 3 raisons de nous rejoindre :\n Qualité de vie au travail : accord de télétravail en France et à l’international, accord sur l’égalité professionnelle, la parentalité, l’équilibre des temps et la mobilité durable.\n Apprentissage en continu : certifications et formations en libre accès, accompagnement sur mesure avec votre carreer manager, parcours d’intégration sur 9 mois.\n Avantages groupe & CSE : plan actionnariat, tarif préférentiels, remboursement partiel vacances, remboursement de votre abonnement sportif ou culturel.\n\n Nos engagements et priorités :\n Le groupe Capgemini encourage une culture inclusive dans un cadre multiculturel et handi-accueillant. En nous rejoignant, vous intégrez un collectif qui valorise la diversité, développe le potentiel de ses talents, s’engage dans des initiatives solidaires avec ses partenaires, et se mobilise pour réduire son impact environnemental sur tous ses sites et auprès de ses clients",
-      "description_excerpt": "• Caractériser le besoin en ressources matérielles/infrastructure \n\n • Mettre en place l’infrastructure  (physique, cloud, systèmes, librairies, authentification) \n\n • Installer, configurer, mettre à disposition les outils (outils DevOps, CI/CD, MLOps, mais aussi d’ingénierie système, gestion des exigences, conception, ou IA) \n\n •…",
-      "profile_excerpt": "Description du profil :\n\nVotre profil :\n • Nous recherchons un Ingénieur DevOPS qui a évolué au travers des environnements grands comptes sur des sujets transverses d’infrastructure. \n\n • Des certifications sont appréciées (techniques, projet, ou architecture)\n\n • Gestion et…",
-      "experience": "5–7 ans",
-      "education_level": "bac_5",
-      "remote_detail": "ponctuel",
-      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44403706",
-      "ats": "external",
-      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
-      "benefits_preview": [],
-      "benefits_count": null,
-      "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
-      "first_seen": "2026-09-05T17:55:59+00:00",
-      "is_new": true,
-      "slug": "capgemini-cloud-devops-engineer-senior-sophia-antipolis-448542"
-    },
-    {
-      "id": "wttj:4245382",
-      "title": "Network & Security Engineer Senior Aix-en-Provence",
-      "company": "Capgemini",
-      "company_slug": "capgemini",
-      "city": "Aix-en-Provence",
-      "cities": [
-        "Aix-en-Provence"
-      ],
-      "department": "Bouches-du-Rhône",
-      "region": "Provence-Alpes-Cote d'Azur",
-      "contract": "CDI",
-      "remote": "sur site",
-      "category": "eng",
-      "profession": null,
-      "salary": null,
-      "experience_min_years": 5,
-      "published_at": "2026-08-26T12:00:00.000+02:00",
-      "url": "https://www.welcometothejungle.com/fr/companies/capgemini/jobs/network-security-engineer-senior-aix-en-provence_aix-en-provence_CAPGE_QRAVOY1?o=CAPGE_QRAVOY1",
-      "source": "wttj",
-      "stack": [],
-      "soft_skills": [
-        "Connaissances en cybersécurité",
-        "Gestion de réseaux"
-      ],
-      "description": "En tant qu'Ingénieure / Inégnieur  réseau et sécurité vos missions seront les suivantes : \n • Assurer l'exploitation et la MCO des équipements et services réseau\n\n • Gestion du BUILD et pilotage de projets réseaux\n\n • Traiter les incidents N2/N3 et réaliser les mises en production\n\n • Participer à la mise en oeuvre et à l'exploitation des infrastructures réseau\n\n • En équipe, vous participerez également à l'industrialisation/optimisation et à l'intégration d'évolutions d'infrastructures ou applications tout en rédigeant les dossiers d'exploitations et procédures\n\n • Administrer des équipements et solutions de sécurité réseaux, serveurs, plateformes virtuelles et dispositifs de sécurité \n\n • Assurer le support technique N3 auprès des équipes\n\n • Elaborer des architectures techniques\n\n Votre profil :\n\n • Vous disposez d’au moins 3 années d’expérience sur des postes d’administrateur réseaux et sécurité ou équivalent.\n\n • Vous avez des bases en construction d'architectures, en gestion de projets et/ou d'équipe.\n\n • Pour finir, nous recherchons des collaborateurs autonomes, impliqué(e)s et avec un bon esprit d’équipe. \n\n • Disposer de certifications et de notions de performance soumises au KPI et/ou SLA sont des + \n\n 3 raisons de nous rejoindre\n\n Qualité de vie au travail : accord de télétravail en France et à l’international, accord sur l’égalité professionnelle, la parentalité, l’équilibre des temps et la mobilité durable.\n Apprentissage en continu : certifications et formations en libre accès, accompagnement sur mesure avec votre carreer manager, parcours d’intégration sur 9 mois.\n Avantages groupe & CSE : plan actionnariat, activités à tarifs préférentiels, remboursement partiel vacances, remboursement de votre abonnement sportif ou culturel",
-      "description_excerpt": "En tant qu'Ingénieure / Inégnieur  réseau et sécurité vos missions seront les suivantes : \n • Assurer l'exploitation et la MCO des équipements et services réseau\n\n • Gestion du BUILD et pilotage de projets réseaux\n\n • Traiter les incidents N2/N3 et réaliser les mises en production\n\n • Participer à la mise en oeuvre et à l'exploitation…",
-      "profile_excerpt": "Description du profil :\n\nVotre profil :\n • Vous disposez d’au moins 3 années d’expérience sur des postes d’administrateur réseaux et sécurité ou équivalent.\n\n • Vous avez des bases en construction d’architectures, en gestion de projets et/ou d’équipe.\n\n • Pour finir, nous…",
-      "experience": "5–7 ans",
-      "education_level": "bac_5",
-      "remote_detail": "sur site",
-      "apply_url": "https://capgemini-service-sas.contactrh.com/jobs/10425/44403695",
-      "ats": "external",
-      "logo": "https://cdn-images.welcometothejungle.com/EztKe0Oc-HE5EnCYIvO9Ufn8rSFzaorijutcAFj5GSk/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81NTEwLzE0OTQzMy8yNjA4YjQ4OS0yZjEwLTQ2OTUtYjkyMy1hZWU4NTcxYWY1MmMuanBn",
-      "benefits_preview": [],
-      "benefits_count": null,
-      "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
-      "first_seen": "2026-09-05T17:55:59+00:00",
-      "is_new": true,
-      "slug": "capgemini-network-security-engineer-senior-aix-en-provence-458c0d"
     },
     {
       "id": "wttj:4245017",
@@ -9488,7 +9744,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "linking-talents-consultant-sirh-gestion-adp-h-f-920859"
@@ -9546,7 +9802,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-python-f-h-dc3359"
@@ -9602,7 +9858,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-expert-cybersecurite-f-h-862ef1"
@@ -9661,7 +9917,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-logiciel-devops-f-h-f9d512"
@@ -9716,7 +9972,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-full-stack-node-reactjs-f-h-0197f9"
@@ -9761,7 +10017,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-responsable-marketing-iot-h-f-7382f7"
@@ -9817,7 +10073,7 @@
       ],
       "benefits_count": 31,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cgi-ingenieur-e-cpp-f-h-19cd23"
@@ -9863,7 +10119,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-go-f-h-308138"
@@ -9915,7 +10171,7 @@
       ],
       "benefits_count": 31,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cgi-data-engineer-dbt-f-h-acd18f"
@@ -9993,7 +10249,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bluecoders-lead-senior-product-manager-full-remote-6fec15"
@@ -10043,7 +10299,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-systemes-de-telecommunication-h-f-bcbc94"
@@ -10092,7 +10348,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-e-experimente-e-systemes-embarques-lutte-air-9240fc"
@@ -10155,7 +10411,7 @@
       ],
       "benefits_count": 20,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "open-developpeur-fullstack-h-f-969684"
@@ -10219,7 +10475,7 @@
       ],
       "benefits_count": 5,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "nexton-developpeur-fullstack-java-groovy-react-h-f-86752f"
@@ -10285,7 +10541,7 @@
       ],
       "benefits_count": 3,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "docaposte-ingenieur-sre-alternance-f-h-80b2e1"
@@ -10327,7 +10583,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "capgemini-architecte-solution-3dexperience-37095f"
@@ -10385,7 +10641,7 @@
       ],
       "benefits_count": 5,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "matawan-qa-tester-fe6053"
@@ -10446,7 +10702,7 @@
       ],
       "benefits_count": 28,
       "start_date": "2026-09-14T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "the-adecco-group-developpeur-full-stack-angular-java-h-f-ab8ec1"
@@ -10501,7 +10757,7 @@
       ],
       "benefits_count": 28,
       "start_date": "2026-11-30T23:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "the-adecco-group-developpeur-cpp-temps-reel-h-f-bde577"
@@ -10560,7 +10816,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-devops-h-f-749232"
@@ -10616,7 +10872,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-ingenieur-devops-experimente-f-h-a3419b"
@@ -10672,7 +10928,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-data-engineer-aeroline-aix-en-provence-28e787"
@@ -10726,7 +10982,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-business-analyst-product-owner-ia-f-h-a44d32"
@@ -10772,7 +11028,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "schneider-electric-energy-analytics-consultant-carros-france-f-h-fa1d48"
@@ -10825,7 +11081,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-business-analyst-bancaire-senior-h-f-a2ac9a"
@@ -10887,7 +11143,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bespoke-developpeur-web-fullstack-experimente-f-h-cdi-rousset-21c42b"
@@ -10940,7 +11196,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-concepteur-developpeur-logiciel-java-h-f-955af2"
@@ -10988,7 +11244,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-e-systemes-embarques-h-f-a93282"
@@ -11048,7 +11304,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-sre-f-h-e13b12"
@@ -11090,7 +11346,7 @@
       ],
       "benefits_count": 3,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "docaposte-chef-de-projet-infrastructure-alternance-f-h-f0e368"
@@ -11139,7 +11395,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cs-ingenieur-e-developpeur-se-scientifique-nucleaire-aix-en-provence-f10e70"
@@ -11194,7 +11450,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "capgemini-data-architect-406641"
@@ -11236,7 +11492,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "capgemini-architecte-cloud-c0c333"
@@ -11291,7 +11547,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-responsable-technique-pour-le-developpement-de-solution-cd1a46"
@@ -11352,7 +11608,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-devsecops-iaas-paas-h-f-4d966e"
@@ -11411,7 +11667,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-tech-lead-java-fullstack-assurance-de-per-09aa3c"
@@ -11468,7 +11724,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-developpeur-java-systemes-tactiques-pour-les-forces-armees-f-h-4b7c51"
@@ -11525,7 +11781,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "shotgun-revenue-data-operations-engineer-2e4cd4"
@@ -11573,7 +11829,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-architecte-systemes-de-systemes-f-h-3c653b"
@@ -11616,7 +11872,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-orlade-pmo-it-a15f7e"
@@ -11657,7 +11913,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-08-16T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ponant-explorations-group-charge-developpement-produit-destination-h-f-c60203"
@@ -11715,7 +11971,7 @@
       ],
       "benefits_count": 28,
       "start_date": "2026-09-06T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "the-adecco-group-developpeur-fullstack-java-angular-h-f-4a534c"
@@ -11805,7 +12061,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-architecte-logiciel-h-f-bea92d"
@@ -11852,7 +12108,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cs-ingenieur-e-developpement-logiciel-defense-securite-aix-en-provence-189e0e"
@@ -11899,7 +12155,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "deloitte-ou-alternance-consultant-informatique-et-financement-de-l-inn-978a65"
@@ -11953,7 +12209,7 @@
       ],
       "benefits_count": 17,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-product-designer-h-f-exalt-azur-64063f"
@@ -12008,7 +12264,7 @@
       ],
       "benefits_count": 17,
       "start_date": "2025-03-02T23:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-consultant-e-chef-de-projet-moa-comptabilite-h-f-37290d"
@@ -12059,7 +12315,7 @@
       ],
       "benefits_count": 17,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-product-owner-h-f-exalt-azur-d80a46"
@@ -12132,7 +12388,7 @@
       ],
       "benefits_count": 17,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-developpeur-java-h-f-exalt-azur-09894e"
@@ -12187,7 +12443,7 @@
       ],
       "benefits_count": 17,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-scrum-master-h-f-exalt-azur-5209f9"
@@ -12240,7 +12496,7 @@
       ],
       "benefits_count": 17,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-qa-auto-fonctionnel-h-f-exalt-azur-a412ad"
@@ -12288,7 +12544,7 @@
       ],
       "benefits_count": 17,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "exalt-business-analyst-h-f-exalt-azur-59b477"
@@ -12338,7 +12594,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-testeur-qa-f-h-766cd6"
@@ -12392,7 +12648,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "silae-dotnet-developer-full-remote-possible-765aca"
@@ -12481,7 +12737,7 @@
       ],
       "benefits_count": 22,
       "start_date": "2026-10-04T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "boond-ingenieur-developpeur-fullstack-php-js-100-remote-40bb40"
@@ -12530,7 +12786,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-product-manager-ia-f-h-57c5e8"
@@ -12579,7 +12835,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "temporis-experts-cadres-ingenieur-electronique-h-f-4f018a"
@@ -12632,7 +12888,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-data-scientist-recherche-operationnelle-f-h-60dc39"
@@ -12678,7 +12934,7 @@
       ],
       "benefits_count": 13,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "epsa-dev-consultant-technique-en-financement-de-l-innovation-aix-h-f-d1bc38"
@@ -12728,7 +12984,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "capgemini-administratrice-administrateur-systemes-reseaux-9abcc0"
@@ -12784,7 +13040,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-architecte-securite-du-cloud-cybersecurite-aix-en-provenc-59f4c3"
@@ -12844,7 +13100,7 @@
       ],
       "benefits_count": 20,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "open-tech-lead-java-h-f-fc44b9"
@@ -12892,7 +13148,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "deloitte-ou-alternance-consultant-e-electronique-micro-electronique-el-1e46e0"
@@ -12972,7 +13228,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-04-19T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "smart-tribune-team-lead-developpeur-front-end-marseille-h-f-x-68629b"
@@ -13027,7 +13283,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-tech-lead-devsecops-h-f-cce3f2"
@@ -13083,7 +13339,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-lead-tech-java-angular-aix-en-provence-16da70"
@@ -13140,7 +13396,7 @@
       ],
       "benefits_count": 31,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cgi-tech-lead-api-f-h-1d7693"
@@ -13191,7 +13447,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-modern-data-architect-cloud-on-premise-h-f-nb-5139eb"
@@ -13245,7 +13501,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-tech-lead-java-h-f-88b60b"
@@ -13294,7 +13550,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-architecte-logiciel-systemes-tactiques-de-defense-h-f-65e17d"
@@ -13351,7 +13607,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-administrateur-systeme-devops-h-f-fe63f2"
@@ -13402,7 +13658,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-leader-technique-data-informatica-idmc-dcoe-france-8ff450"
@@ -13445,7 +13701,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-08-12T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ponant-explorations-group-administrateur-systeme-et-reseau-h-f-772a3e"
@@ -13526,7 +13782,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-leader-technique-experimente-e-spring-boot-angular-aeroli-a594bc"
@@ -13589,7 +13845,7 @@
       ],
       "benefits_count": 12,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "atos-devops-h-f-f2a4c1"
@@ -13639,7 +13895,7 @@
       ],
       "benefits_count": 10,
       "start_date": "2026-09-14T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "olys-engineering-ingenieur-systemes-fluides-h-f-579816"
@@ -13686,7 +13942,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-electronique-rfid-gestion-de-projet-f-h-dca6f8"
@@ -13725,7 +13981,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-08-31T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sessun-assistant-e-developpement-et-collection-h-f-en-stage-0adef9"
@@ -13771,7 +14027,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "agpm-data-analyst-h-f-08f0ec"
@@ -13821,7 +14077,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "agpm-ingenieur-systemes-et-reseaux-h-f-998d11"
@@ -13870,7 +14126,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cs-ingenieur-e-developpeur-c-cpp-confirme-industrie-aix-en-provence-0798ec"
@@ -13922,7 +14178,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-chef-de-projet-it-f-h-7bbc27"
@@ -13981,7 +14237,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-ingenieur-devops-h-f-1dda9b"
@@ -14043,7 +14299,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-tech-lead-ia-f-h-edb821"
@@ -14096,7 +14352,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-devsecops-engineer-confirme-h-f-15503e"
@@ -14148,7 +14404,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-consultant-power-bi-confirme-sud-est-h-f-nb-aix-en-provence-sop-1825ee"
@@ -14198,7 +14454,7 @@
       ],
       "benefits_count": 14,
       "start_date": "2026-11-08T23:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "dualsun-customer-success-manager-b2c-b2b-cdd-9522d6"
@@ -14247,7 +14503,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "mindflow-pre-sales-solutions-engineer-cybersecurity-it-ai-786778"
@@ -14293,7 +14549,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "mindflow-forward-deployed-engineer-cybersecurity-ai-ae4c80"
@@ -14359,7 +14615,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-chef-de-projet-si-relais-squad-eurotitres-83d582"
@@ -14404,7 +14660,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "socomec-technico-commercial-itinerant-f-h-x-936f70"
@@ -14472,7 +14728,7 @@
       ],
       "benefits_count": 4,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "quantilia-developpeur-fullstack-senior-0b81a4"
@@ -14524,7 +14780,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "livecampus-ingenieur-cybersecurite-h-f-marseille-13-f6c5a5"
@@ -14581,7 +14837,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "livecampus-developpeur-full-stack-intelligence-artificielle-h-f-marsei-2dca8d"
@@ -14628,7 +14884,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-systemes-sonar-f-h-344933"
@@ -14694,7 +14950,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-chef-de-projet-si-h-f-8b2ee0"
@@ -14752,7 +15008,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-devops-engineer-aix-en-provence-b6421a"
@@ -14793,7 +15049,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "vinci-energies-en-france-technicien-de-maintenance-electrotechnique-da-0dbae1"
@@ -14871,7 +15127,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-tech-lead-front-end-design-system-f-h-eb5134"
@@ -14933,7 +15189,7 @@
       ],
       "benefits_count": 3,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "docaposte-site-reliability-engineer-sre-f-h-b0975f"
@@ -14998,7 +15254,7 @@
       ],
       "benefits_count": 14,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "euro-protection-surveillance-responsable-d-equipe-developpement-inform-e7aa52"
@@ -15063,7 +15319,7 @@
       ],
       "benefits_count": 14,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "euro-protection-surveillance-developpeur-java-f-h-f05923"
@@ -15117,7 +15373,7 @@
       ],
       "benefits_count": 31,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cgi-developpeur-se-jahia-f-h-43b6f2"
@@ -15172,7 +15428,7 @@
       ],
       "benefits_count": 4,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "quantilia-pre-sales-integration-specialist-fintech-data-saas-b2b-26a77b"
@@ -15229,7 +15485,7 @@
       ],
       "benefits_count": 4,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "quantilia-ia-financial-data-engineering-2be8d2"
@@ -15285,7 +15541,7 @@
       ],
       "benefits_count": 4,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "quantilia-financial-data-analyst-5c62f5"
@@ -15337,7 +15593,7 @@
       ],
       "benefits_count": 9,
       "start_date": "2026-10-31T23:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "commandement-de-la-cyberdefense-comcyber-administrateur-cybersecurite-a3bf1b"
@@ -15419,7 +15675,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-ingenieur-e-devsecops-aeroline-toulon-71dae6"
@@ -15473,7 +15729,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-tech-lead-java-angular-developpement-regional-aix-en-prov-33bcb3"
@@ -15516,7 +15772,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "agap2-testeur-qa-469c16"
@@ -15570,7 +15826,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "agap2-developpeur-cpp-qt-senior-h-f-f1018c"
@@ -15615,7 +15871,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-ingenieur-cybersecurite-h-f-d7ee27"
@@ -15669,7 +15925,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-architecte-systeme-d-information-inds-h-f-73bbc8"
@@ -15732,7 +15988,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-systeme-iaas-paas-navire-h-f-b0d102"
@@ -15793,7 +16049,7 @@
       ],
       "benefits_count": 19,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "oodrive-ingenieure-qualite-process-it-devops-alternance-53e220"
@@ -15841,7 +16097,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-consultant-e-securite-des-si-grc-cybersecurite-aix-en-pro-87aceb"
@@ -15891,7 +16147,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-leader-technique-java-services-publics-aix-en-provence-bc3d06"
@@ -15940,7 +16196,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-business-analyste-experimente-e-aeroline-aix-en-provence-f40588"
@@ -15991,7 +16247,7 @@
       ],
       "benefits_count": 31,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cgi-business-analyst-f-h-8a5bf4"
@@ -16041,7 +16297,7 @@
       ],
       "benefits_count": 9,
       "start_date": "2026-08-31T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "commandement-de-la-cyberdefense-comcyber-realisation-de-controle-cyber-29bc93"
@@ -16088,7 +16344,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-presales-bid-manager-f-h-b91a46"
@@ -16130,7 +16386,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "vinci-construction-ingenieur-etudes-de-prix-be-travaux-publics-f-h-48e2c2"
@@ -16192,7 +16448,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-cloud-automation-data-engineering-aix-en-provence-12bbed"
@@ -16250,7 +16506,7 @@
       ],
       "benefits_count": 3,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "docaposte-ingenieur-cloud-vmware-vcf-f-h-393bdf"
@@ -16319,7 +16575,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "abb-france-ingenieur-technicien-support-h-f-58ebd4"
@@ -16376,7 +16632,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-administrateur-systeme-et-reseaux-h-f-bd3f5c"
@@ -16424,7 +16680,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-bid-quality-assurance-manager-h-f-e95368"
@@ -16486,7 +16742,7 @@
       ],
       "benefits_count": 23,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "volta-medical-lead-data-scientist-h-f-f19a09"
@@ -16541,7 +16797,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-administrateur-linux-support-technique-mco-f-h-8f446c"
@@ -16595,7 +16851,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "agap2-data-analyst-bi-sqlserver-1365fc"
@@ -16648,7 +16904,7 @@
       ],
       "benefits_count": 6,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "france-travail-dga-tech-chef-fe-de-projet-qualite-des-donnees-h-f-3b7d99"
@@ -16699,7 +16955,7 @@
       ],
       "benefits_count": 6,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "france-travail-dga-tech-chef-fe-de-projet-data-gouvernance-h-f-c36187"
@@ -16747,7 +17003,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-08-31T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "hello-pomelo-product-builder-experience-digitale-dxp-20b203"
@@ -16812,7 +17068,7 @@
       ],
       "benefits_count": 4,
       "start_date": "2026-08-02T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "panier-des-sens-chef-de-projet-it-erp-h-f-edd289"
@@ -16859,7 +17115,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-product-owner-manager-issuance-services-f-h-74f9c4"
@@ -16926,7 +17182,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-tech-lead-mainframe-h-f-c46f53"
@@ -16972,7 +17228,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cs-developpeur-se-logiciel-cpp-senior-defense-securite-aix-en-provence-f49b32"
@@ -17023,7 +17279,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cs-developpeur-se-logiciel-cpp-qt-defense-securite-aix-en-provence-265efb"
@@ -17074,7 +17330,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cs-developpeur-se-logiciel-cpp-defense-securite-aix-en-provence-ad9525"
@@ -17122,7 +17378,7 @@
       ],
       "benefits_count": 14,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "weeneo-consulting-charge-e-de-recrutement-it-f-h-36c463"
@@ -17212,7 +17468,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-developpeur-concepteur-mainframe-h-f-f13fca"
@@ -17259,7 +17515,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ensol-customer-success-manager-relation-client-energie-solaire-residen-5eb475"
@@ -17316,7 +17572,7 @@
       ],
       "benefits_count": 7,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "trainsweateat-data-analyst-marketing-0ad761"
@@ -17370,7 +17626,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-systeme-confirme-drones-teleoperes-h-f-dbe033"
@@ -17424,7 +17680,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-software-solutions-engineer-java-fullstack-react-f-h-76b80f"
@@ -17473,7 +17729,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-systeme-optronique-h-f-fea1bc"
@@ -17537,7 +17793,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-architecte-transverse-cybersecurite-aix-en-provence-81232e"
@@ -17587,7 +17843,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-developpeur-java-h-f-f2790c"
@@ -17640,7 +17896,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-ingenieur-dev-devops-h-f-274f0e"
@@ -17693,7 +17949,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ferchau-france-ingenieur-systeme-m-f-d-4e0856"
@@ -17741,7 +17997,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cs-ingenieur-e-d-etude-developpeur-se-simulateurs-dentrainement-tactiq-a40c48"
@@ -17790,7 +18046,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-chef-de-projet-data-gouvernance-h-f-nb-marseille-65a536"
@@ -17841,7 +18097,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-lead-tech-talend-h-f-nb-be1f6e"
@@ -17888,7 +18144,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-career-manager-data-h-f-nb-aix-en-provence-6f2c5e"
@@ -17937,7 +18193,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-expert-data-architectures-cloud-on-premise-h-f-nb-c4ce7e"
@@ -17989,7 +18245,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-data-analyst-experimente-h-f-nb-be4fa2"
@@ -18039,7 +18295,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-chef-de-projet-technique-data-h-f-nb-13-et-06-51bd82"
@@ -18090,7 +18346,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-lead-tech-talend-h-f-nb-aix-en-provence-f6b1a9"
@@ -18145,7 +18401,7 @@
       ],
       "benefits_count": 7,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "trainsweateat-traffic-manager-4ffa02"
@@ -18201,7 +18457,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ferchau-france-ingenieur-e-developpement-simulations-h-f-214f1f"
@@ -18244,7 +18500,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "vinci-energies-en-france-consultant-cybersecurite-et-grc-f-h-2bebee"
@@ -18291,7 +18547,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "vinci-energies-en-france-responsable-d-affaires-cybersecurite-f-h-179eca"
@@ -18332,7 +18588,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-09-30T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ponant-explorations-group-chef-de-projet-it-h-f-4c4ede"
@@ -18380,7 +18636,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-07-26T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "odhcom-freelancerepublik-charge-de-recrutement-it-talent-advocate-h-f-846d53"
@@ -18434,7 +18690,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-architecte-logiciel-drones-cpp-h-f-496629"
@@ -18483,7 +18739,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-concepteur-carte-electronique-f-h-90ab42"
@@ -18554,7 +18810,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cba-informatique-ingenieur-devsecops-h-f-fe6b25"
@@ -18629,7 +18885,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-07-14T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "logiadapt-customer-success-manager-projets-d-adaptation-du-logement-cd-d648e1"
@@ -18676,7 +18932,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ai-ux-researcher-f-h-7c7add"
@@ -18740,7 +18996,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-business-analyst-it-h-f-2ef5eb"
@@ -18806,7 +19062,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-developpeur-senior-dotnet-4866fe"
@@ -18851,7 +19107,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-responsable-support-produits-electroniques-f-h-e9ae66"
@@ -18894,7 +19150,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-09-30T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "antea-group-eau-ingenieur-etudes-hydrogeologie-a-aubagne-h-f-ant-197-aa867c"
@@ -18961,7 +19217,7 @@
       ],
       "benefits_count": 16,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "les-filles-les-garcons-de-la-tech-ingenieur-devops-h-f-f8cfbe"
@@ -19013,7 +19269,7 @@
       ],
       "benefits_count": 7,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "trainsweateat-chef-de-projet-web-seo-1ed14d"
@@ -19067,7 +19323,7 @@
       ],
       "benefits_count": 7,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "trainsweateat-content-manager-seo-sea-design-35e2fd"
@@ -19115,7 +19371,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-systeme-embarque-artillerie-h-f-fcb8bc"
@@ -19160,7 +19416,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-responsable-achats-composants-electroniques-specifiques-h-f-1e5dfc"
@@ -19209,7 +19465,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-developpement-logiciel-traitement-du-signal-cpp-h-f-8ee50a"
@@ -19256,7 +19512,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cs-ingenieur-e-developpement-logiciel-cpp-defense-securite-toulon-a3aac5"
@@ -19365,7 +19621,7 @@
       ],
       "benefits_count": 20,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "open-developpeur-talend-h-f-f8abe1"
@@ -19411,7 +19667,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-design-authority-solution-logiciel-logiciel-embarque-bancs-de-t-2c9a61"
@@ -19464,7 +19720,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-site-reliability-engineer-f-h-422d86"
@@ -19509,7 +19765,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ministere-de-l-interieur-electronicien-maintenance-recherche-et-develo-baf6f5"
@@ -19561,7 +19817,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-technicien-implementation-logiciels-securite-hardware-h-f-eb81a3"
@@ -19635,7 +19891,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-ingenieur-e-devops-aix-en-provence-710070"
@@ -19689,7 +19945,7 @@
       ],
       "benefits_count": 31,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "cgi-tech-lead-apriso-f-h-d46586"
@@ -19739,7 +19995,7 @@
       ],
       "benefits_count": 10,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-a-8353d6"
@@ -19795,7 +20051,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-ingenieur-logiciel-simulation-h-f-a0a58b"
@@ -19845,7 +20101,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-responsable-technique-et-concepteur-hardware-electronique-dacqu-af2e5c"
@@ -19896,7 +20152,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ingenieur-devops-senior-plateformes-ia-et-ia-generative-f-h-629258"
@@ -19947,7 +20203,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-release-manager-logiciel-ai-engineering-solutions-f-h-892322"
@@ -19993,7 +20249,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-ai-product-owner-f-h-bc6a9c"
@@ -20034,7 +20290,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "vinci-energies-en-france-axiansalternance-chef-de-projet-mobile-f-h-952d2e"
@@ -20081,7 +20337,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ministere-de-l-interieur-ensosp-technicien-audiovisuel-et-support-info-1e25da"
@@ -20127,7 +20383,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ministere-de-l-interieur-alsn-rssi-dipn-06-f-h-a50edd"
@@ -20180,7 +20436,7 @@
       ],
       "benefits_count": 28,
       "start_date": "2026-09-06T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "the-adecco-group-tech-lead-java-angular-f-h-2002f6"
@@ -20229,7 +20485,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-architecte-systeme-cms-h-f-c59da5"
@@ -20275,7 +20531,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "thales-supply-chain-quality-manager-equipements-electroniques-f-h-f94410"
@@ -20323,7 +20579,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "sopra-steria-chef-fe-de-projet-cybersecurite-aix-en-provence-cfd0c9"
@@ -20374,7 +20630,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-logiciels-de-simulation-f-h-ef4b1b"
@@ -20445,7 +20701,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-software-engineer-h-f-nb-537de2"
@@ -20499,7 +20755,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-data-trust-ai-governance-manager-h-f-nb-3250e3"
@@ -20553,7 +20809,7 @@
       ],
       "benefits_count": 21,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "keyrus-ai-engineer-h-f-nb-a714f9"
@@ -20605,7 +20861,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "agap2-developpeur-java-senior-h-f-8c64d3"
@@ -20646,7 +20902,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-07-09T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "setec-ingenieur-d-etudes-hydrauliques-assainissement-h-f-e0c06c"
@@ -20688,7 +20944,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "descours-cabaud-technico-commercial-itinerant-epi-f-h-ce2c60"
@@ -20743,7 +20999,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-business-analyst-it-parcours-conseillers-b61ea3"
@@ -20786,7 +21042,7 @@
       "benefits_preview": [],
       "benefits_count": null,
       "start_date": "2026-07-08T22:00:00Z",
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "constructa-services-responsable-de-projets-si-amoa-po-cd441a"
@@ -20835,7 +21091,7 @@
       ],
       "benefits_count": 27,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "naval-group-fr-responsable-du-departement-ingenierie-developpement-log-bbff47"
@@ -20892,7 +21148,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-logiciel-embarque-golang-h-f-8353d8"
@@ -20963,7 +21219,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "bpce-solutions-informatiques-chef-de-projet-si-f-h-pilote-de-portefeui-d473d3"
@@ -21017,7 +21273,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-developpeur-cpp-qt-h-f-92b4db"
@@ -21066,7 +21322,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-consultant-electronique-h-f-62f14c"
@@ -21121,7 +21377,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "groupe-sii-ingenieur-systeme-naval-f-h-bd938b"
@@ -21180,7 +21436,7 @@
       ],
       "benefits_count": 14,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "septeo-data-engineer-h-f-37d4b0"
@@ -21236,7 +21492,7 @@
       ],
       "benefits_count": 24,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "meritis-testeur-qa-automaticien-h-f-b6d485"
@@ -21283,7 +21539,7 @@
       ],
       "benefits_count": 32,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "adista-ingenieur-e-avant-vente-f-h-32e958"
@@ -21392,7 +21648,7 @@
       ],
       "benefits_count": 8,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "walter-learning-senior-staff-engineer-architecture-ownership-f-h-5ec81a"
@@ -21574,7 +21830,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "free-pro-developpeur-full-stack-779b0d"
@@ -21633,7 +21889,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "free-pro-developpeur-back-end-2a6f14"
@@ -21689,7 +21945,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "free-pro-developpeur-front-end-522314"
@@ -21751,7 +22007,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "free-pro-referent-technique-sre-site-reliability-engineer-cloud-linux-5d81fd"
@@ -21806,7 +22062,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "free-pro-technicien-support-systemes-ou-reseaux-44b42e"
@@ -21865,7 +22121,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "free-pro-lead-developer-back-end-8e6ebc"
@@ -21949,7 +22205,7 @@
       ],
       "benefits_count": 28,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "free-pro-ingenieur-cybersecurite-b084fe"
@@ -22142,7 +22398,7 @@
       ],
       "benefits_count": 9,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "ferchau-france-ingenieur-developpement-simulations-m-f-d-a82cc8"
@@ -22512,7 +22768,7 @@
       ],
       "benefits_count": 20,
       "start_date": null,
-      "enriched_at": "2026-09-09T07:39:02+00:00",
+      "enriched_at": "2026-09-09T10:58:51+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
       "slug": "la-securite-sociale-product-owner-referente-fonctionnelle-business-ana-01e9a6"
