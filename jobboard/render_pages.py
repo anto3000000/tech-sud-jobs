@@ -4,13 +4,19 @@
 Reads jobboard/site/jobs.json (built by build.py) and writes, into jobboard/site/:
 
     offre/<slug>.html     one page per job — JobPosting JSON-LD, OpenGraph, canonical
+                          (or a noindex tombstone once the offer leaves the feed)
     emploi/<facet>.html   filtered list pages (métier × ville, techno × ville, télétravail…)
     emploi/index.html     hub linking every facet page
-    sitemap.xml           every URL above + the home
-    robots.txt            points crawlers at the sitemap
+    sitemap.xml           sitemap index -> sitemap-pages.xml + sitemap-offres.xml
+    robots.txt            points crawlers at the sitemap index
 
-All of this is build output: git-ignored, regenerated on every run, deployed from
-the GitHub Pages artifact (not from git). The SPA home (index.html) is untouched.
+A closed posting is de-listed the Google-for-Jobs way: dropped from the offers
+sitemap, JobPosting markup removed, `noindex` + a redirect to its métier facet,
+kept TOMBSTONE_DAYS then left to 404. State lives in data/offer_index.json
+(committed by CI, like data/seen.json).
+
+All the HTML/XML is build output: git-ignored, regenerated on every run, deployed
+from the GitHub Pages artifact (not from git). The SPA home (index.html) is untouched.
 
     python3 jobboard/render_pages.py
     SITE_URL=https://exemple.fr python3 jobboard/render_pages.py   # override the base URL
@@ -26,7 +32,15 @@ from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.join(HERE, "site")
+DATA = os.path.join(HERE, "data")
 FEED = os.path.join(SITE, "jobs.json")
+
+# slug -> {first_seen,last_seen,expired_at,title,company,city,category,facet_slug}
+# persisted (committed by CI, like data/seen.json) so a job that drops out of the
+# feed leaves a noindex tombstone instead of a bare 404 — Google for Jobs wants
+# closed postings de-listed, not 404-storming its crawler.
+OFFER_INDEX = os.path.join(DATA, "offer_index.json")
+TOMBSTONE_DAYS = 120   # keep the tombstone this long after an offer vanishes, then let it 404
 
 SITE_URL = os.environ.get(
     "SITE_URL", "https://sudtechjobs.com"
@@ -48,6 +62,45 @@ CATS = {
     "design":        ("Design", "Design · UX"),
     "tech-adjacent": ("IT & Tech", "IT & support"),
 }
+
+# PACA département code -> (slug, name, "dans <article+name>" for the H1).
+PACA_DEPTS = {
+    "04": ("alpes-de-haute-provence", "Alpes-de-Haute-Provence", "dans les Alpes-de-Haute-Provence"),
+    "05": ("hautes-alpes", "Hautes-Alpes", "dans les Hautes-Alpes"),
+    "06": ("alpes-maritimes", "Alpes-Maritimes", "dans les Alpes-Maritimes"),
+    "13": ("bouches-du-rhone", "Bouches-du-Rhône", "dans les Bouches-du-Rhône"),
+    "83": ("var", "Var", "dans le Var"),
+    "84": ("vaucluse", "Vaucluse", "dans le Vaucluse"),
+}
+
+# slugify(city) -> département code. Cities missing here simply don't roll up
+# into a département page (harmless); render_pages prints the misses so the map
+# can be extended. Covers what the feed carries today plus other likely PACA
+# towns so a feed refresh doesn't silently drop offers from the dept pages.
+CITY_DEPT = {c: "13" for c in (
+    "aix-en-provence", "ais-en-provence", "marseille",
+    "marseille-2e-arrondissement", "la-ciotat", "la-ciotat-la-vigie",
+    "vitrolles", "marignane", "aubagne", "gemenos", "rousset", "berre-l-etang",
+    "la-penne-sur-huveaune", "penne-sur-huveaune", "la-fare-les-oliviers",
+    "saint-paul-les-durance", "meyreuil", "port-de-bouc", "fos-sur-mer",
+    "martigues", "salon-de-provence", "istres", "gardanne", "bouc-bel-air",
+    "cabries", "les-pennes-mirabeau", "chateauneuf-les-martigues", "peynier",
+)}
+CITY_DEPT.update({c: "06" for c in (
+    "sophia-antipolis", "valbonne", "nice", "biot", "cannes", "mougins",
+    "cagnes-sur-mer", "carros", "la-trinite", "antibes", "grasse", "vallauris",
+    "le-cannet", "menton", "villeneuve-loubet", "saint-laurent-du-var",
+)})
+CITY_DEPT.update({c: "83" for c in (
+    "ollioules", "toulon", "six-fours-les-plages", "saint-tropez",
+    "la-valette-du-var", "valette-du-var", "frejus", "la-seyne-sur-mer",
+    "draguignan", "la-garde", "hyeres", "sanary-sur-mer", "cuers", "brignoles",
+    "saint-raphael", "le-pradet",
+)})
+CITY_DEPT.update({c: "84" for c in (
+    "avignon", "orange", "carpentras", "cavaillon", "sorgues", "le-pontet",
+    "l-isle-sur-la-sorgue", "pertuis", "apt",
+)})
 
 # schema.org employmentType, matched on a cleaned contract string
 EMP_TYPE = [
@@ -378,14 +431,22 @@ def render_offer(j, similar, same_company=None):
         "hiringOrganization": org,
         "url": canonical,
         "directApply": False,
+        # Google for Jobs: `identifier` is recommended and helps it dedupe the
+        # same posting seen through several aggregators.
+        "identifier": {
+            "@type": "PropertyValue",
+            "name": j.get("company") or "sudtechjobs",
+            "value": j.get("id") or slug,
+        },
     }
-    if posted:
-        ld["datePosted"] = posted[:10]
-        try:
-            d0 = datetime.fromisoformat(posted.replace("Z", "+00:00"))
-            ld["validThrough"] = (d0 + timedelta(days=VALID_DAYS)).date().isoformat()
-        except ValueError:
-            pass
+    # `datePosted` is REQUIRED — never emit a JobPosting without it.
+    dp = (posted or "")[:10] or datetime.now(timezone.utc).date().isoformat()
+    ld["datePosted"] = dp
+    try:
+        d0 = datetime.fromisoformat((posted or dp).replace("Z", "+00:00"))
+        ld["validThrough"] = (d0 + timedelta(days=VALID_DAYS)).date().isoformat()
+    except ValueError:
+        pass
     et = emp_type(j.get("contract"))
     if et:
         ld["employmentType"] = et
@@ -398,6 +459,17 @@ def render_offer(j, similar, same_company=None):
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": city,
+                "addressRegion": "Provence-Alpes-Côte d'Azur",
+                "addressCountry": "FR",
+            },
+        }
+    elif not is_remote:
+        # REQUIRED unless the role is TELECOMMUTE: fall back to a region-level
+        # place so the posting still validates when we have no precise city.
+        ld["jobLocation"] = {
+            "@type": "Place",
+            "address": {
+                "@type": "PostalAddress",
                 "addressRegion": "Provence-Alpes-Côte d'Azur",
                 "addressCountry": "FR",
             },
@@ -448,6 +520,43 @@ def render_offer(j, similar, same_company=None):
             ", " + city if city and city != "Remote" else ""),
         description=meta_desc, canonical=canonical, head_extra=head_extra, body=body,
     )
+
+
+def render_tombstone(slug, e):
+    """Page kept at a vanished offer's URL: no JobPosting markup, `noindex`, and a
+    redirect to the matching facet list. Google for Jobs then drops the closed
+    posting; a human arriving from a stale Google result still lands somewhere
+    useful instead of a 404."""
+    canonical = "%s/offre/%s.html" % (SITE_URL, slug)
+    cat = e.get("category")
+    cat_label = CATS.get(cat, (cat, cat))[0] if cat else "tech"
+    # point at the broad métier facet (always built, threshold 1) rather than the
+    # métier×ville one, which can fall below MIN_FACET and 404 months from now.
+    facet = slugify(cat) if cat else None
+    dest = ("%s/emploi/%s.html" % (SITE_URL, facet)) if facet else (SITE_URL + "/emploi/")
+    title = e.get("title") or "Cette offre"
+    company = e.get("company") or ""
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Emplois</a> › offre expirée</nav>
+<h1>Offre pourvue ou expirée</h1>
+<p class="sub">«&nbsp;{title}&nbsp;»{co} n'est plus en ligne.</p>
+<div class="card">
+  <p>Cette annonce a été retirée du board&nbsp;: la source ne la diffuse plus,
+  elle a sans doute été pourvue.</p>
+  <p><a class="apply" href="{dest}">Voir les offres {catlabel} toujours ouvertes →</a></p>
+</div>
+<p class="sub">Redirection automatique dans quelques secondes…</p>
+<script>setTimeout(function(){{location.replace({dest_js})}},5000)</script>
+""".format(
+        home=SITE_URL + "/", hub=SITE_URL + "/emploi/",
+        title=esc(title), co=(" chez " + esc(company)) if company else "",
+        dest=esc(dest), dest_js=json.dumps(dest), catlabel=esc(cat_label),
+    )
+    head_extra = ('<meta name="robots" content="noindex, follow">\n'
+                  '<meta http-equiv="refresh" content="5; url=%s">' % esc(dest))
+    return shell(title="Offre expirée | sudtechjobs",
+                 description="Cette offre n'est plus disponible.",
+                 canonical=canonical, head_extra=head_extra, body=body)
 
 
 # --------------------------------------------------------------------------- #
@@ -571,6 +680,25 @@ def main():
                   "Offres dev, data, produit & design à %s et alentours." % city,
                   (lambda c: (lambda j: j.get("city") == c))(city), "ville")
 
+    # ---- département roll-ups (PACA) ------------------------------------
+    # One page per département, aggregating its cities. Thin ones (04/05 and
+    # usually 84) fall below MIN_FACET and are dropped by the live_facets gate.
+    seen_depts = {CITY_DEPT.get(slugify(c)) for c in cities}
+    unknown = sorted({c for c in cities if slugify(c) not in CITY_DEPT})
+    if unknown:
+        print("render_pages: cities with no département mapping: %s"
+              % ", ".join(unknown), file=sys.stderr)
+    for code, (dslug, _dname, dwhere) in PACA_DEPTS.items():
+        if code not in seen_depts:
+            continue
+        add_facet(
+            "dept-%s" % dslug,
+            "Emplois tech %s" % dwhere,
+            "Toutes les offres dev, data, produit & design des entreprises tech "
+            "%s (%s) et de ses villes." % (dwhere, code),
+            (lambda cd: (lambda j: CITY_DEPT.get(slugify(j.get("city") or "")) == cd))(code),
+            "département")
+
     for cat, (label, _short) in CATS.items():
         for city in cities:
             n = sum(1 for j in jobs if j.get("category") == cat and j.get("city") == city)
@@ -654,11 +782,63 @@ def main():
         with open(os.path.join(offre_dir, fn), "w", encoding="utf-8") as fh:
             fh.write(render_offer(j, sims, same_co))
 
+    # ---- expired-offer hygiene -----------------------------------------------
+    # Track every slug we have ever published. When one drops out of the feed,
+    # keep its URL alive as a `noindex` tombstone (redirect to the facet) for
+    # TOMBSTONE_DAYS, then let it 404. Tombstones are NOT put in the sitemap.
+    today = datetime.now(timezone.utc).date().isoformat()
+    tomb_cutoff = (datetime.now(timezone.utc)
+                   - timedelta(days=TOMBSTONE_DAYS)).date().isoformat()
+    try:
+        oindex = json.load(open(OFFER_INDEX, encoding="utf-8"))
+    except (OSError, ValueError):
+        oindex = {}
+
+    live_slugs = set()
+    for j in jobs:
+        s = j["_slug"]
+        live_slugs.add(s)
+        e = oindex.get(s) or {}
+        e.update({
+            "title": j.get("title"), "company": j.get("company"),
+            "city": j.get("city"), "category": j.get("category"),
+            "facet_slug": j.get("_facet_slug"),
+            "last_seen": today, "expired_at": None,
+        })
+        e.setdefault("first_seen",
+                     (j.get("first_seen") or j.get("published_at") or today)[:10])
+        oindex[s] = e
+
+    for s, e in oindex.items():
+        if s not in live_slugs and not e.get("expired_at"):
+            e["expired_at"] = today
+
+    tombstone_files = set()
+    for s in list(oindex):
+        e = oindex[s]
+        exp = e.get("expired_at")
+        if not exp:
+            continue
+        if exp < tomb_cutoff:
+            del oindex[s]                       # long gone — forget it, let it 404
+            continue
+        fn = s + ".html"
+        if fn in offer_files:                   # somehow back in the feed — skip
+            continue
+        tombstone_files.add(fn)
+        with open(os.path.join(offre_dir, fn), "w", encoding="utf-8") as fh:
+            fh.write(render_tombstone(s, e))
+
+    os.makedirs(DATA, exist_ok=True)
+    with open(OFFER_INDEX, "w", encoding="utf-8") as fh:
+        json.dump(oindex, fh, ensure_ascii=False, indent=0, sort_keys=True)
+
     # ---- write facet pages ------------------------------------------------
     FAMILY = {
         "métier": ("métier", "métier×ville"),
         "métier×ville": ("métier", "métier×ville"),
-        "ville": ("ville",),
+        "ville": ("ville", "département"),
+        "département": ("département", "ville"),
         "techno": ("techno", "techno×ville"),
         "techno×ville": ("techno", "techno×ville"),
         "télétravail": ("télétravail", "métier×télétravail"),
@@ -668,7 +848,8 @@ def main():
     def siblings_for(slug, f):
         want = FAMILY.get(f["kind"], (f["kind"],))
         toks = set(slug.split("-"))
-        fam = [(s2, f2["h1"].replace("Emplois ", "").replace("tech à ", ""))
+        fam = [(s2, f2["h1"].replace("Emplois ", "")
+                              .replace("tech dans ", "").replace("tech à ", ""))
                for s2, f2 in live_facets.items()
                if s2 != slug and f2["kind"] in want]
         # related first (shares a city / techno / métier token with this slug)
@@ -691,6 +872,7 @@ def main():
             key=lambda x: x[1])
     groups = [
         ("Par ville", grp(("ville",), "Emplois tech à ")),
+        ("Par département", grp(("département",), "Emplois tech dans ")),
         ("Par métier", grp(("métier", "métier×ville"), "Emplois ")),
         ("Par techno", grp(("techno", "techno×ville"), "Emplois ")),
         ("Télétravail", grp(("télétravail", "métier×télétravail"), "Emplois ")),
@@ -699,35 +881,52 @@ def main():
         fh.write(render_hub(groups, generated))
     facet_files.add("index.html")
 
-    # ---- sitemap + robots ----------------------------------------------
-    today = datetime.now(timezone.utc).date().isoformat()
-    urls = ['<url><loc>%s/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>'
-            % SITE_URL]
-    urls.append('<url><loc>%s/emploi/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>'
-                % SITE_URL)
+    # ---- sitemaps + robots -------------------------------------------------
+    # A sitemap index pointing at two children: the browse pages, and a dedicated
+    # offers sitemap (live postings only — Google for Jobs discovers JobPosting
+    # pages from this one). Tombstones and 404s stay out of both.
+    def _urlset(entries):
+        return ('<?xml version="1.0" encoding="UTF-8"?>\n'
+                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+                + "\n".join(entries) + "\n</urlset>\n")
+
+    pages = ['<url><loc>%s/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>'
+             % SITE_URL,
+             '<url><loc>%s/emploi/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>'
+             % SITE_URL]
     for slug in sorted(live_facets):
-        urls.append('<url><loc>%s/emploi/%s.html</loc><lastmod>%s</lastmod>'
-                    '<changefreq>daily</changefreq><priority>0.7</priority></url>'
-                    % (SITE_URL, slug, today))
+        pages.append('<url><loc>%s/emploi/%s.html</loc><lastmod>%s</lastmod>'
+                     '<changefreq>daily</changefreq><priority>0.7</priority></url>'
+                     % (SITE_URL, slug, today))
+
+    offers = []
     for j in jobs:
         lm = (j.get("first_seen") or j.get("published_at") or today)[:10]
-        urls.append('<url><loc>%s/offre/%s.html</loc><lastmod>%s</lastmod>'
-                    '<changefreq>weekly</changefreq><priority>0.6</priority></url>'
-                    % (SITE_URL, j["_slug"], lm))
-    sitemap = ('<?xml version="1.0" encoding="UTF-8"?>\n'
-               '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-               + "\n".join(urls) + "\n</urlset>\n")
+        offers.append('<url><loc>%s/offre/%s.html</loc><lastmod>%s</lastmod>'
+                      '<changefreq>daily</changefreq><priority>0.6</priority></url>'
+                      % (SITE_URL, j["_slug"], lm))
+
+    with open(os.path.join(SITE, "sitemap-pages.xml"), "w", encoding="utf-8") as fh:
+        fh.write(_urlset(pages))
+    with open(os.path.join(SITE, "sitemap-offres.xml"), "w", encoding="utf-8") as fh:
+        fh.write(_urlset(offers))
+    index = ('<?xml version="1.0" encoding="UTF-8"?>\n'
+             '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+             '<sitemap><loc>%s/sitemap-pages.xml</loc><lastmod>%s</lastmod></sitemap>\n'
+             '<sitemap><loc>%s/sitemap-offres.xml</loc><lastmod>%s</lastmod></sitemap>\n'
+             '</sitemapindex>\n' % (SITE_URL, today, SITE_URL, today))
     with open(os.path.join(SITE, "sitemap.xml"), "w", encoding="utf-8") as fh:
-        fh.write(sitemap)
+        fh.write(index)
     with open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8") as fh:
         fh.write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SITE_URL)
 
     # ---- prune stale files -------------------------------------------------
-    wipe_html(offre_dir, offer_files)
+    wipe_html(offre_dir, offer_files | tombstone_files)
     wipe_html(emploi_dir, facet_files)
 
-    print("render_pages: %d offers, %d facet pages, sitemap %d urls"
-          % (len(offer_files), len(facet_files), len(urls)), file=sys.stderr)
+    print("render_pages: %d offers, %d tombstones, %d facet pages, %d sitemap urls"
+          % (len(offer_files), len(tombstone_files), len(facet_files),
+             len(pages) + len(offers)), file=sys.stderr)
 
 
 if __name__ == "__main__":

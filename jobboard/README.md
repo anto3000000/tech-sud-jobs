@@ -138,11 +138,16 @@ lit `site/jobs.json` (déjà construit par `build.py`) et écrit, dans `site/` :
 
 | Sortie | Quoi |
 |--------|------|
-| `offre/<slug>.html` | une page par offre — `<title>` / OpenGraph / **JSON-LD `JobPosting`** (rich snippets Google Jobs), fil d'ariane, description complète, offres similaires, lien vers la liste filtrée correspondante |
-| `emploi/<facette>.html` | listes pré-rendues : métier (`eng`, `data`, `product`…), ville, **métier × ville** (`eng-marseille`), techno (`stack-react`), **techno × ville**, télétravail. Seuil : ≥ 3 offres (`MIN_FACET`), ≥ 8 pour une techno seule (`MIN_STACK`) |
+| `offre/<slug>.html` | une page par offre — `<title>` / OpenGraph / **JSON-LD `JobPosting`** (Google for Jobs : `title`, `description` HTML complète, `datePosted`, `validThrough`, `hiringOrganization`, `jobLocation` **ou** `jobLocationType: TELECOMMUTE` + `applicantLocationRequirements`, `employmentType`, `baseSalary`, `identifier`), fil d'ariane, offres similaires, lien vers la liste filtrée |
+| `offre/<slug>.html` *(pierre tombale)* | quand une offre sort du feed, la page est **conservée** en `noindex, follow` + `<meta refresh>` / JS vers la facette métier, **sans** balisage `JobPosting` — retirée du sitemap. Purgée après `TOMBSTONE_DAYS` (120 j) → 404. État dans `data/offer_index.json` (commit CI, comme `seen.json`) |
+| `emploi/<facette>.html` | listes pré-rendues : métier (`eng`, `data`, `product`…), ville, **métier × ville** (`eng-marseille`), **département** (`dept-bouches-du-rhone`, agrège les villes via `CITY_DEPT`), techno (`stack-react`), **techno × ville**, télétravail. Seuil : ≥ 3 offres (`MIN_FACET`), ≥ 8 pour une techno seule (`MIN_STACK`) |
 | `emploi/index.html` | hub qui pointe vers toutes les facettes |
-| `sitemap.xml` | home + toutes les facettes + toutes les offres, avec `lastmod` |
-| `robots.txt` | pointe le sitemap |
+| `sitemap.xml` | **index** → `sitemap-pages.xml` (home + facettes) + `sitemap-offres.xml` (offres vivantes seules, `lastmod` = première vue). Google for Jobs découvre les `JobPosting` via ce dernier |
+| `robots.txt` | pointe l'index sitemap |
+
+Dé-doublonnage inter-sources (même offre vue via WTTJ *et* son ATS) : `build.py`
+`dedupe()` clé `(entreprise, titre normalisé)` + rang de lien
+`ATS direct > WTTJ > France Travail` — vérifié, 0 doublon cross-source résiduel.
 
 Tout est du **build output** : `.gitignore`-é, reconstruit à chaque run,
 déployé depuis l'artefact Pages (pas depuis git). La SPA `index.html` n'est pas
@@ -153,11 +158,20 @@ Base des URL : `SITE_URL` (défaut `https://anto3000000.github.io/tech-sud-jobs`
 Les liens internes sont relatifs (marchent quel que soit le domaine) ;
 `canonical` / OG / `sitemap` sont absolus.
 
-**À faire côté Google** : soumettre `…/sitemap.xml` dans la Search Console
-(propriété *préfixe d'URL* `https://anto3000000.github.io/tech-sud-jobs/`,
-vérifiée par fichier HTML déposé dans `site/`). `robots.txt` sur un projet
-github.io n'est pas lu (pas à la racine du domaine) — sans effet tant qu'il n'y
-a pas de domaine perso, mais correct si on en ajoute un.
+**À faire côté Google** :
+1. Search Console → propriété `https://sudtechjobs.com/`, soumettre
+   `https://sudtechjobs.com/sitemap.xml` (l'index ; les deux enfants sont lus
+   automatiquement).
+2. Rich Results Test sur une page `offre/` pour confirmer que le `JobPosting`
+   passe, puis surveiller *Améliorations → Offres d'emploi* dans la Search
+   Console (erreurs, offres valides, expirées).
+3. Google for Jobs exige que les offres fermées disparaissent : c'est le rôle des
+   pierres tombales `noindex` + du retrait du `sitemap-offres.xml` ci-dessus. Un
+   vrai `410`/`301` est impossible sur Pages (hébergement statique) — le
+   `noindex` + `<meta refresh>` en est l'équivalent praticable.
+
+`robots.txt` est désormais servi à la racine du domaine perso (`sudtechjobs.com`)
+donc bien pris en compte.
 
 ## Clés WTTJ
 
