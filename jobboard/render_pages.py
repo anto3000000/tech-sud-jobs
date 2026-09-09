@@ -50,6 +50,34 @@ SITE_URL = os.environ.get(
     "SITE_URL", "https://sudtechjobs.com"
 ).rstrip("/")
 
+# destination host -> label for the "Postuler sur …" button. Keyed on a
+# substring of the apply URL's host; first match wins.
+APPLY_HOSTS = (
+    ("welcometothejungle.com", "Welcome to the Jungle"),
+    ("smartrecruiters.com", "SmartRecruiters"),
+    ("lever.co", "Lever"),
+    ("ashbyhq.com", "Ashby"),
+    ("teamtailor.com", "Teamtailor"),
+    ("recruitee.com", "Recruitee"),
+    ("taleez.com", "Taleez"),
+    ("greenhouse.io", "Greenhouse"),
+    ("workable.com", "Workable"),
+    ("francetravail.fr", "France Travail"),
+    ("pole-emploi.fr", "France Travail"),
+)
+
+
+def apply_dest_label(url):
+    """Human label for the apply destination, or "" when we can't name it
+    (plain "Postuler" then)."""
+    if not url:
+        return ""
+    host = re.sub(r"^https?://", "", url).split("/", 1)[0].lower()
+    for frag, label in APPLY_HOSTS:
+        if frag in host:
+            return label
+    return ""
+
 MIN_FACET = 3        # min jobs for a ville / métier×ville / techno×ville page
 MIN_STACK = 8        # min jobs for a techno-only page
 VALID_DAYS = 90      # JobPosting.validThrough = datePosted + this
@@ -261,6 +289,8 @@ h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:23px;l
  box-shadow:0 8px 22px -8px color-mix(in srgb,var(--accent) 75%,transparent)}
 .apply:hover{text-decoration:none;filter:brightness(1.05)}
 .desc{margin:18px 0 0}.desc p{margin:0 0 11px}
+.about{margin:6px 0 0}.about .sub{font-size:12.5px;margin:0 0 8px}
+.about a{color:var(--brand-ink)}
 h2{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;margin:26px 0 8px}
 ul.jobs{list-style:none;margin:0;padding:0}
 ul.jobs li{background:var(--card);border:1px solid var(--line);border-radius:12px;
@@ -413,16 +443,18 @@ def render_offer(j, similar, same_company=None):
     city = j.get("city") or ""
     is_remote = city == "Remote" or (j.get("remote") or "") in REMOTE_FULL
     posted = j.get("published_at") or j.get("first_seen") or ""
+    # apply button: there is always a destination — `apply_url` (the real ATS
+    # deep link, when the WTTJ enrichment resolved one) or, failing that, the
+    # `url` (the WTTJ posting, which has its own "Postuler" flow). The label is
+    # derived from the destination host, not the noisy `ats` field.
     apply_href = j.get("apply_url") or j.get("url") or ""
-
-    # apply button: only when the offer resolves to a real ATS — the plain
-    # "Postuler en direct" (scraped source URL) button is dropped
-    ats_name = (j.get("ats") or "").strip()
-    has_ats = bool(ats_name) and ats_name.lower() != "external"
+    dest_label = apply_dest_label(apply_href)
     apply_btn = (
         '<a class="apply" href="%s" target="_blank" rel="nofollow noopener">'
-        "Postuler sur %s</a>" % (esc(apply_href), esc(ats_name.title()))
-    ) if (has_ats and apply_href) else ""
+        "Postuler%s</a>" % (
+            esc(apply_href),
+            " sur " + esc(dest_label) if dest_label else "")
+    ) if apply_href else ""
 
     posted_h = ""
     try:
@@ -461,6 +493,31 @@ def render_offer(j, similar, same_company=None):
     if j.get("benefits_preview"):
         benefits_html = "<h2>Avantages</h2>\n<ul>%s</ul>" % "".join(
             "<li>%s</li>" % esc(b) for b in j["benefits_preview"])
+
+    # ---- "À propos de {company}" — a short company blurb + key facts, reusing
+    # the WTTJ profile we already carry for the company page (≈75% of companies).
+    about_html = ""
+    crec = j.get("_company") or {}
+    cprof = crec.get("profile") or {}
+    about_txt = re.sub(r"\s+", " ", (cprof.get("description") or "")).strip()
+    if about_txt:
+        if len(about_txt) > 340:
+            about_txt = about_txt[:340].rsplit(" ", 1)[0].rstrip(".,;:") + " […]"
+        cfacts = " · ".join(x for x in [
+            (cprof.get("sectors") or [None])[0],
+            _fmt_headcount(cprof.get("headcount")) if cprof.get("headcount") else None,
+            ("créée en %s" % cprof["founded"]) if cprof.get("founded") else None,
+            ("siège à %s" % cprof["hq_city"]) if cprof.get("hq_city") else None,
+        ] if x)
+        more = ('<a href="../entreprise/%s.html">→ Fiche complète de %s : '
+                "toutes ses offres, sa stack, ses chiffres</a>"
+                % (crec["slug"], esc(crec["name"]))) if crec.get("slug") else ""
+        about_html = (
+            '<h2>À propos de %s</h2>\n<div class="desc about"><p>%s</p>%s%s</div>' % (
+                esc(crec.get("name") or j.get("company") or ""),
+                esc(about_txt),
+                ('<p class="sub">%s</p>' % esc(cfacts)) if cfacts else "",
+                ("<p>%s</p>" % more) if more else ""))
 
     cat = j.get("category")
     cat_label = CATS.get(cat, (cat, cat))[0]
@@ -584,6 +641,7 @@ def render_offer(j, similar, same_company=None):
 <div class="desc">{desc}</div>
 {profile}
 {benefits}
+{about}
 {facet_link}
 {similar}
 """.format(
@@ -592,7 +650,7 @@ def render_offer(j, similar, same_company=None):
         cityline=(" — télétravail" if is_remote else (" — " + esc(city) if city else "")),
         krow=krow, stack=stack_html, apply_btn=apply_btn,
         desc=desc_html, profile=profile_html, benefits=benefits_html,
-        facet_link=facet_link, similar=sim_html,
+        about=about_html, facet_link=facet_link, similar=sim_html,
     )
     head_extra = jsonld(ld) + "\n" + jsonld(crumbs)
     return shell(
@@ -1239,6 +1297,7 @@ def main():
         c = company_by_name.get(j.get("company"))
         if c:
             j["_company_slug"] = c["slug"]
+            j["_company"] = c
 
     offre_dir = os.path.join(SITE, "offre")
     emploi_dir = os.path.join(SITE, "emploi")
