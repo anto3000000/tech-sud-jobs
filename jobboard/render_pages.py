@@ -328,6 +328,7 @@ dl.facts dd{margin:2px 0 0;font-size:14px;font-weight:500}
 .mini a,.mini span{font-size:12.5px;background:var(--card-2);border:1px solid var(--line);border-radius:8px;
  padding:4px 9px;color:var(--brand-ink)}
 /* audience-notice bar (Umami is cookieless — informational, not a consent gate) */
+#cookie-notice[hidden]{display:none}
 #cookie-notice{position:fixed;left:12px;right:12px;bottom:12px;max-width:560px;margin:0 auto;
  background:var(--card);border:1px solid var(--line);border-radius:12px;
  box-shadow:0 12px 34px -12px rgba(22,48,63,.32);padding:11px 14px;display:flex;gap:12px;
