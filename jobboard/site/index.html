@@ -151,7 +151,7 @@
   /* whole-card click -> offer page: stretch the title link over the card.
      the <a> must stay unpositioned so ::after resolves against li.job */
   li.job.linked .head .t a::after{content:"";position:absolute;inset:0}
-  li.job .apply,li.job .desc,li.job .head .co b a{position:relative;z-index:1}
+  li.job .apply,li.job .head .co b a{position:relative;z-index:1}
   .head{display:flex;gap:13px;align-items:flex-start}
   .logo{width:44px;height:44px;border-radius:11px;object-fit:contain;background:var(--card);
     border:1px solid var(--line);flex:none}
@@ -168,7 +168,8 @@
     text-decoration-color:color-mix(in srgb,var(--brand-ink) 35%,transparent);text-underline-offset:2px}
   .head .co b a:hover{text-decoration-color:currentColor}
   .desc{margin:10px 0 0;color:var(--muted);font-size:13px;white-space:pre-line;
-    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  li.job:not(.linked) .desc{cursor:pointer}
   li.job.open .desc{-webkit-line-clamp:unset}
   .stack{display:flex;gap:6px;flex-wrap:wrap;margin-top:11px}
   .stack b{font-family:"IBM Plex Mono",monospace;font-size:11.5px;font-weight:500;
@@ -472,7 +473,9 @@ function apply(opts){
         ${exp?`<span>${esc(exp)}</span>`:""}
         ${j.salary?`<span class="sal">${esc(j.salary)}</span>`:""}
       </div>`;
-    if(j.description_excerpt){
+    // linked cards: a click on the excerpt opens the offer through the stretched
+    // title link, like the rest of the card. only stale, unlinked cards expand.
+    if(j.description_excerpt && !j.slug){
       li.querySelector(".desc").addEventListener("click",()=>li.classList.toggle("open"));
     }
     frag.appendChild(li);
@@ -592,11 +595,9 @@ function initFilters(){
     const direct = !!e.target.closest("a.apply");
     // clicking the company name is a navigation to its page, not a job open
     if(e.target.closest(".co b a")) return;
-    // a plain click on the card body only navigates when the card is linked;
-    // clicking the description just expands it — not a job open
+    // a plain click on the card body only navigates when the card is linked
     if(!direct){
       if(!li.classList.contains("linked")) return;
-      if(e.target.closest(".desc")) return;
     }
     track("job_click", {
       title: (li.querySelector(".t a")?.textContent || "").trim().slice(0,120),
