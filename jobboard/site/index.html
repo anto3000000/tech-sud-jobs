@@ -151,7 +151,7 @@
   /* whole-card click -> offer page: stretch the title link over the card.
      the <a> must stay unpositioned so ::after resolves against li.job */
   li.job.linked .head .t a::after{content:"";position:absolute;inset:0}
-  li.job .apply,li.job .desc{position:relative;z-index:1}
+  li.job .apply,li.job .desc,li.job .head .co b a{position:relative;z-index:1}
   .head{display:flex;gap:13px;align-items:flex-start}
   .logo{width:44px;height:44px;border-radius:11px;object-fit:contain;background:var(--card);
     border:1px solid var(--line);flex:none}
@@ -164,6 +164,9 @@
   .head .t a{color:var(--ink)}
   .head .co{color:var(--muted);font-size:13px;margin-top:3px}
   .head .co b{color:var(--ink);font-weight:600}
+  .head .co b a{color:var(--brand-ink);text-decoration:underline;
+    text-decoration-color:color-mix(in srgb,var(--brand-ink) 35%,transparent);text-underline-offset:2px}
+  .head .co b a:hover{text-decoration-color:currentColor}
   .desc{margin:10px 0 0;color:var(--muted);font-size:13px;white-space:pre-line;
     display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;cursor:pointer}
   li.job.open .desc{-webkit-line-clamp:unset}
@@ -201,6 +204,16 @@
   footer .contact{display:inline-block;margin-top:8px}
   footer .contact a{color:var(--brand-ink);font-weight:600;white-space:nowrap}
   .load{padding:60px 0;text-align:center;color:var(--muted)}
+  .legalnav{margin-top:10px;text-align:center;font-size:12px;line-height:2;color:var(--muted)}
+  #cookie-notice{position:fixed;left:12px;right:12px;bottom:12px;max-width:560px;margin:0 auto;
+    background:var(--card);border:1px solid var(--line);border-radius:12px;
+    box-shadow:0 12px 34px -12px rgba(22,48,63,.32);padding:11px 14px;display:flex;gap:12px;
+    align-items:center;font-size:12.5px;color:var(--muted);z-index:60}
+  #cookie-notice p{margin:0}
+  #cookie-notice a{color:var(--brand-ink)}
+  #cookie-notice button{flex:none;font:inherit;font-weight:600;border:1px solid var(--line);
+    background:var(--card-2);color:var(--ink);border-radius:8px;padding:6px 13px;cursor:pointer}
+  #cookie-notice button:hover{border-color:var(--brand)}
   @media (max-width:520px){
     header h1{font-size:11px;line-height:1.5;margin:12px 0 4px;max-width:none}
     .search .multi>summary{font-size:13px;padding:0 26px 0 12px}
@@ -309,7 +322,27 @@
     <a href="emploi/product.html">Product</a> ·
     <a href="emploi/teletravail.html">Télétravail</a>
   </nav>
+  <nav aria-label="Informations légales" class="legalnav">
+    <a href="mentions-legales.html">Mentions légales</a> ·
+    <a href="cgu.html">CGU</a> ·
+    <a href="confidentialite.html">Confidentialité</a>
+  </nav>
 </div>
+
+<div id="cookie-notice" hidden>
+  <p>Mesure d’audience sans cookie ni donnée personnelle (Umami).
+  <a href="confidentialite.html">En savoir plus</a>.</p>
+  <button type="button" id="cookie-ok">OK</button>
+</div>
+<script>
+(function(){try{
+  var k="sjt-notice-ok";if(localStorage.getItem(k))return;
+  var n=document.getElementById("cookie-notice");if(!n)return;n.hidden=false;
+  document.getElementById("cookie-ok").addEventListener("click",function(){
+    n.hidden=true;try{localStorage.setItem(k,"1")}catch(e){}
+  });
+}catch(e){}})();
+</script>
 
 <script>
 const state = {q:"", sort:"date", cats:new Set(), cities:new Set(), stacks:new Set(),
@@ -317,8 +350,22 @@ const state = {q:"", sort:"date", cats:new Set(), cities:new Set(), stacks:new S
 const PER_PAGE = 20;
 let JOBS = [];
 const $ = s => document.querySelector(s);
+// scroll the results into view, but stop just under the sticky search bar
+// (a bare scrollIntoView tucks the first cards behind .controls)
+function scrollToResults(){
+  const list = $("#list"), controls = $(".controls");
+  if(!list) return;
+  const offset = (controls ? controls.getBoundingClientRect().height : 0) + 8;
+  const top = window.scrollY + list.getBoundingClientRect().top - offset;
+  window.scrollTo({top: Math.max(0, top), behavior: "smooth"});
+}
 const norm = s => (s||"").toString().normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 const esc = s => (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+// company page slug — MUST match render_pages.slugify / build_companies.page_slug
+const companySlug = s => (s||"").toString().toLowerCase()
+  .replace(/c\+\+/g,"cpp").replace(/c#/g,"csharp").replace(/\.net/g,"dotnet")
+  .replace(/node\.js/g,"nodejs").replace(/next\.js/g,"nextjs")
+  .normalize("NFKD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").replace(/-{2,}/g,"-");
 const catLabel = c => ({eng:"Dev",data:"Data",product:"Product",design:"Design","tech-adjacent":"IT"}[c]||c||"–");
 
 // --- analytics (Umami) : événements custom, sans donnée perso ---
@@ -411,7 +458,7 @@ function apply(opts){
         ${logo}
         <div>
           <div class="t">${titleLink}</div>
-          <div class="co"><b>${esc(j.company)}</b>${j.city?` · ${esc(j.city)}`:""}</div>
+          <div class="co"><b><a href="entreprise/${esc(companySlug(j.company))}.html">${esc(j.company)}</a></b>${j.city?` · ${esc(j.city)}`:""}</div>
         </div>
         ${j.apply_url?`<a class="apply" href="${esc(j.apply_url)}" target="_blank" rel="noopener">Postuler en direct →</a>`:""}
       </div>
@@ -528,7 +575,7 @@ function initFilters(){
     const b = e.target.closest("button[data-goto]"); if(!b || b.disabled) return;
     state.page = +b.dataset.goto;
     apply({keepPage:true});
-    $("#list").scrollIntoView({behavior:"smooth", block:"start"});
+    scrollToResults();
   });
 
   $("#q").addEventListener("input", e=>{ state.q=e.target.value; apply(); trackSearch(); });
@@ -536,13 +583,15 @@ function initFilters(){
     e.preventDefault(); apply();
     const q = state.q.trim();
     if(q.length >= 2) track("search", {q: q.slice(0,80), submit: true});
-    $("#list").scrollIntoView({behavior:"smooth", block:"start"});
+    scrollToResults();
   });
   $("#sort").addEventListener("change", e=>{ state.sort=e.target.value; apply(); track("sort", {value:e.target.value}); });
 
   $("#list").addEventListener("click", e=>{
     const li = e.target.closest("li.job"); if(!li) return;
     const direct = !!e.target.closest("a.apply");
+    // clicking the company name is a navigation to its page, not a job open
+    if(e.target.closest(".co b a")) return;
     // a plain click on the card body only navigates when the card is linked;
     // clicking the description just expands it — not a job open
     if(!direct){

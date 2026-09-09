@@ -30,6 +30,10 @@ echo "::group::merge + build feed"
 python3 jobboard/build.py
 echo "::endgroup::"
 
+echo "::group::company profiles (layer 4)"
+python3 jobboard/build_companies.py
+echo "::endgroup::"
+
 echo "::group::render static SEO pages (layer 5)"
 python3 jobboard/render_pages.py
 echo "::endgroup::"

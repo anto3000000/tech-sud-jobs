@@ -42,6 +42,10 @@ FEED = os.path.join(SITE, "jobs.json")
 OFFER_INDEX = os.path.join(DATA, "offer_index.json")
 TOMBSTONE_DAYS = 120   # keep the tombstone this long after an offer vanishes, then let it 404
 
+# one row per hiring company (build_companies.py); optional — company pages are
+# skipped with a warning if it's missing.
+COMPANIES = os.path.join(SITE, "companies.json")
+
 SITE_URL = os.environ.get(
     "SITE_URL", "https://sudtechjobs.com"
 ).rstrip("/")
@@ -237,6 +241,9 @@ nav.bc a{color:var(--muted)}
 h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:23px;line-height:1.3;
  letter-spacing:-.01em;margin:12px 0 6px;text-wrap:balance}
 .sub{color:var(--muted);font-size:14px;margin:0 0 18px}
+.sub a{color:var(--brand-ink);text-decoration:underline;text-underline-offset:2px;
+ text-decoration-color:color-mix(in srgb,var(--brand-ink) 38%,transparent)}
+.sub a:hover{text-decoration-color:currentColor}
 .facets{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 22px}
 .facets a{font-size:12.5px;background:var(--card);border:1px solid var(--line);border-radius:8px;
  padding:5px 10px;color:var(--brand-ink);box-shadow:var(--shadow)}
@@ -263,6 +270,55 @@ ul.jobs li a{display:block;padding:13px 15px;font-family:"Bricolage Grotesque",s
 ul.jobs li a:hover{text-decoration:none;background:var(--card-2)}
 ul.jobs .co{display:block;color:var(--muted);font-size:13px;font-weight:400;margin:3px 0 0}
 footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+/* company page */
+.cover{height:150px;border-radius:14px;background:var(--card-2) center/cover no-repeat;
+ border:1px solid var(--line);margin:8px 0 12px}
+.cohead{display:flex;gap:15px;align-items:flex-end;padding:0 4px}
+.cohead .lg{width:74px;height:74px;border-radius:16px;background:#fff;border:1px solid var(--line);
+ object-fit:contain;padding:7px;box-shadow:var(--shadow);flex:none}
+.cover + .cohead .lg{margin-top:-56px}
+.cohead .lg.ph{display:flex;align-items:center;justify-content:center;font-family:"Bricolage Grotesque",sans-serif;
+ font-weight:700;font-size:30px;color:var(--brand-ink);background:var(--card)}
+.cohead h1{margin:0 0 3px}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 20px}
+.badges span{font-size:11.5px;background:color-mix(in srgb,var(--brand) 16%,transparent);color:var(--brand-ink);
+ border:1px solid color-mix(in srgb,var(--brand) 34%,transparent);border-radius:999px;padding:3px 9px}
+.badges span.eco{background:color-mix(in srgb,var(--pine) 14%,transparent);color:var(--pine);
+ border-color:color-mix(in srgb,var(--pine) 34%,transparent)}
+dl.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px 18px;margin:0}
+dl.facts div{margin:0}
+dl.facts dt{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+dl.facts dd{margin:2px 0 0;font-size:14px;font-weight:500}
+.social{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0 0}
+.social a{font-size:12px;background:var(--card-2);border:1px solid var(--line);border-radius:8px;padding:5px 10px}
+.spark{display:flex;align-items:flex-end;gap:3px;height:44px;margin:8px 0 4px}
+.spark i{flex:1;background:var(--brand);border-radius:2px 2px 0 0;min-height:2px;opacity:.75}
+.spark i.now{background:var(--accent);opacity:1}
+.mini{display:flex;flex-wrap:wrap;gap:7px;margin:6px 0 0}
+.mini a,.mini span{font-size:12.5px;background:var(--card-2);border:1px solid var(--line);border-radius:8px;
+ padding:4px 9px;color:var(--brand-ink)}
+/* audience-notice bar (Umami is cookieless — informational, not a consent gate) */
+#cookie-notice{position:fixed;left:12px;right:12px;bottom:12px;max-width:560px;margin:0 auto;
+ background:var(--card);border:1px solid var(--line);border-radius:12px;
+ box-shadow:0 12px 34px -12px rgba(22,48,63,.32);padding:11px 14px;display:flex;gap:12px;
+ align-items:center;font-size:12.5px;color:var(--muted);z-index:60}
+#cookie-notice p{margin:0}
+#cookie-notice a{color:var(--brand-ink)}
+#cookie-notice button{flex:none;font:inherit;font-weight:600;border:1px solid var(--line);
+ background:var(--card-2);color:var(--ink);border-radius:8px;padding:6px 13px;cursor:pointer}
+#cookie-notice button:hover{border-color:var(--brand)}
+/* legal pages */
+.legal{max-width:680px}
+.legal h2{font-family:"Bricolage Grotesque",sans-serif;font-size:16px;margin:28px 0 8px}
+.legal p,.legal li{font-size:14px;line-height:1.65;color:var(--ink)}
+.legal ul{margin:6px 0 13px;padding-left:20px}
+.legal li{margin:0 0 5px}
+.legal a{color:var(--brand-ink);text-decoration:underline}
+.legal code{font:500 12.5px/1 "IBM Plex Mono",ui-monospace,monospace;background:var(--card-2);
+ border:1px solid var(--line);border-radius:5px;padding:1px 5px}
+.legal .upd{color:var(--muted);font-size:12.5px;margin:0 0 4px}
+.legal .note{background:var(--card-2);border:1px solid var(--line);border-radius:10px;
+ padding:12px 14px;font-size:13px;color:var(--muted);margin:16px 0}
 """
 
 
@@ -310,17 +366,36 @@ def shell(*, title, description, canonical, head_extra="", body):
 <footer>
   <a href="{home}">Toutes les offres</a> ·
   <a href="{hub}">Parcourir par ville &amp; techno</a> ·
+  <a href="{companies}">Entreprises</a> ·
   job board tech du sud de la France
   <br><br>Une offre à ajouter, une remarque, ou juste envie de papoter du Sud&nbsp;?
   Écrivez-moi, ça fait toujours plaisir 🫰
   <a href="mailto:hello@sudtechjobs.com">✉️ hello@sudtechjobs.com</a>
+  <br><br><a href="/mentions-legales.html">Mentions légales</a> ·
+  <a href="/cgu.html">CGU</a> ·
+  <a href="/confidentialite.html">Confidentialité</a>
 </footer>
 </div>
+<div id="cookie-notice" hidden>
+  <p>Mesure d’audience sans cookie ni donnée personnelle (Umami).
+  <a href="/confidentialite.html">En savoir plus</a>.</p>
+  <button type="button" id="cookie-ok">OK</button>
+</div>
+<script>
+(function(){{try{{
+  var k="sjt-notice-ok";if(localStorage.getItem(k))return;
+  var n=document.getElementById("cookie-notice");if(!n)return;n.hidden=false;
+  document.getElementById("cookie-ok").addEventListener("click",function(){{
+    n.hidden=true;try{{localStorage.setItem(k,"1")}}catch(e){{}}
+  }});
+}}catch(e){{}}}})();
+</script>
 </body>
 </html>""".format(
         title=esc(title), desc=esc(description), canon=esc(canonical),
         css=CSS, head_extra=head_extra, body=body,
         home=SITE_URL + "/", hub=SITE_URL + "/emploi/",
+        companies=SITE_URL + "/entreprise/",
     )
 
 
@@ -408,9 +483,15 @@ def render_offer(j, similar, same_company=None):
     sim_html = ""
     if similar:
         sim_html = "<h2>Offres similaires</h2>\n" + _job_list(similar)
+    cslug = j.get("_company_slug")
+    co_link = ('<a href="../entreprise/%s.html">%s</a>' % (cslug, esc(j.get("company")))) \
+        if cslug else esc(j.get("company"))
     if same_company:
-        sim_html += "\n<h2>Autres offres chez %s</h2>\n%s" % (
-            esc(j.get("company")), _job_list(same_company))
+        sim_html += "\n<h2>Autres offres chez %s</h2>\n%s" % (co_link, _job_list(same_company))
+    if cslug:
+        sim_html += ('\n<p><a href="../entreprise/%s.html">→ Fiche entreprise %s : '
+                     "toutes ses offres, sa stack, ses chiffres</a></p>"
+                     % (cslug, esc(j.get("company"))))
 
     meta_desc = (j.get("description_excerpt") or body_txt or
                  "%s chez %s" % (j.get("title"), j.get("company")))
@@ -507,7 +588,7 @@ def render_offer(j, similar, same_company=None):
 {similar}
 """.format(
         home=SITE_URL + "/", catslug=slugify(cat or "tech"), catlabel=esc(cat_label),
-        title=esc(j.get("title")), company=esc(j.get("company")),
+        title=esc(j.get("title")), company=co_link,
         cityline=(" — télétravail" if is_remote else (" — " + esc(city) if city else "")),
         krow=krow, stack=stack_html, apply_btn=apply_btn,
         desc=desc_html, profile=profile_html, benefits=benefits_html,
@@ -630,6 +711,499 @@ et par techno. Mis à jour le {gen}.</p>
 
 
 # --------------------------------------------------------------------------- #
+#  legal pages  (/mentions-legales, /cgu, /confidentialite — site root)       #
+# --------------------------------------------------------------------------- #
+# Bump this whenever the wording below changes (the pages are rebuilt on every
+# CI run but the text is static, so the date must not track the build).
+LEGAL_UPDATED = "9 septembre 2026"
+
+MENTIONS_LEGALES = """
+<h2>Éditeur du site</h2>
+<p>Le site <strong>sudtechjobs</strong> (<a href="https://sudtechjobs.com">sudtechjobs.com</a>)
+est édité à titre non professionnel par une personne physique.</p>
+<p>Conformément à l’article 6 III 2 de la loi n° 2004-575 du 21 juin 2004 pour la confiance
+dans l’économie numérique (LCEN), l’éditeur, personne physique non professionnelle, a choisi
+de ne pas rendre publiques ses coordonnées d’identité. Celles-ci ont été communiquées à
+l’hébergeur du site, qui les tiendra à la disposition de toute autorité judiciaire qui en
+ferait la demande.</p>
+<p><strong>Contact :</strong>
+<a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a></p>
+<p><strong>Directeur de la publication :</strong> l’éditeur du site.</p>
+<div class="note">sudtechjobs est un projet personnel et gratuit. Dès qu’une activité
+commerciale sera exercée (première facturation), ces mentions seront complétées par
+l’identité complète de l’éditeur — nom ou dénomination sociale, statut, numéro SIREN,
+adresse — conformément à l’article 6 III 1 de la LCEN.</div>
+
+<h2>Hébergement</h2>
+<p>Le site est hébergé par <strong>GitHub, Inc.</strong> (service GitHub Pages),
+88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis —
+<a href="https://github.com">github.com</a>, support :
+<a href="https://support.github.com">support.github.com</a>.</p>
+<p>La mesure d’audience est opérée par <strong>Umami Software, Inc.</strong>
+(<a href="https://umami.is">umami.is</a>). Voir la
+<a href="/confidentialite.html">politique de confidentialité</a>.</p>
+
+<h2>Origine des offres d’emploi</h2>
+<p>sudtechjobs est un agrégateur. Les offres affichées sont collectées automatiquement
+depuis des sources publiques : Welcome to the Jungle et les pages de recrutement (ATS)
+publiques des entreprises (Ashby, Lever, SmartRecruiters, Taleez, Recruitee, Workable).
+Chaque annonce renvoie vers sa source d’origine, où s’effectue la candidature.</p>
+<p>L’éditeur n’est pas l’auteur des annonces. Les marques, logos, dénominations et contenus
+des offres restent la propriété de leurs titulaires respectifs et ne sont repris qu’à des
+fins d’information et de référencement.</p>
+<p>Toute entreprise ou ayant droit peut demander la rectification ou le retrait d’une
+annonce, d’un logo ou d’une fiche entreprise en écrivant à
+<a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a> ; la demande est traitée
+sous 7 jours ouvrés.</p>
+
+<h2>Propriété intellectuelle</h2>
+<p>En dehors des contenus tiers mentionnés ci-dessus, la structure du site, sa charte
+graphique, ses textes de présentation et son code sont la propriété de l’éditeur. Toute
+reproduction ou réutilisation non autorisée est interdite.</p>
+
+<h2>Responsabilité</h2>
+<p>Les informations sont fournies « en l’état », sans garantie d’exactitude, d’exhaustivité
+ni d’actualité. Les intitulés, rémunérations, localisations, modalités de télétravail et la
+disponibilité des postes dépendent des sources et doivent être vérifiés auprès de
+l’employeur. L’éditeur ne saurait être tenu responsable d’un dommage lié à l’utilisation du
+site ou au contenu des sites tiers vers lesquels il renvoie.</p>
+
+<h2>Droit applicable</h2>
+<p>Les présentes mentions sont soumises au droit français.</p>
+"""
+
+CGU = """
+<h2>1. Objet</h2>
+<p>sudtechjobs est un service gratuit d’agrégation d’offres d’emploi dans les métiers de la
+tech (développement, data, produit, design) en Provence-Alpes-Côte d’Azur et dans le sud de
+la France. Il référence des annonces publiées par des tiers et renvoie vers leur source
+d’origine. Les présentes conditions générales d’utilisation (CGU) régissent l’accès et
+l’usage du site.</p>
+
+<h2>2. Acceptation</h2>
+<p>L’utilisation du site vaut acceptation pleine et entière des présentes CGU. Si vous ne
+les acceptez pas, n’utilisez pas le site.</p>
+
+<h2>3. Accès au service</h2>
+<p>Le site est fourni gratuitement et « en l’état », sans garantie de disponibilité
+continue. L’éditeur peut à tout moment faire évoluer, suspendre ou interrompre tout ou
+partie du service, sans préavis ni indemnité.</p>
+
+<h2>4. Contenu des offres</h2>
+<p>Les annonces sont collectées automatiquement depuis des sources publiques (Welcome to the
+Jungle, pages ATS publiques des entreprises). L’éditeur n’en est pas l’auteur et ne garantit
+ni leur exactitude, ni leur actualité, ni la disponibilité des postes, ni les conditions
+annoncées (rémunération, lieu, télétravail, type de contrat). Aucune relation de
+recrutement, de mandat, de courtage ou de placement n’est établie entre sudtechjobs et
+l’utilisateur ou l’employeur.</p>
+
+<h2>5. Candidatures</h2>
+<p>Les candidatures se font exclusivement auprès de l’employeur, via le lien « postuler » de
+chaque annonce. sudtechjobs ne reçoit, ne stocke et ne transmet aucun CV ni aucune
+candidature.</p>
+
+<h2>6. Obligations de l’utilisateur</h2>
+<ul>
+<li>utiliser le site conformément à la loi et aux présentes CGU ;</li>
+<li>ne pas procéder à une extraction massive ou automatisée du contenu (<em>scraping</em>)
+au-delà de ce qu’autorise le fichier <a href="/robots.txt">robots.txt</a> ;</li>
+<li>ne pas porter atteinte au fonctionnement ou à la sécurité du site.</li>
+</ul>
+
+<h2>7. Propriété intellectuelle</h2>
+<p>Les marques, logos et contenus des offres appartiennent à leurs titulaires respectifs.
+Les autres éléments du site (structure, design, textes, code) sont la propriété de
+l’éditeur. Voir les <a href="/mentions-legales.html">mentions légales</a>.</p>
+
+<h2>8. Signalement et retrait</h2>
+<p>Toute entreprise ou ayant droit peut demander la correction ou le retrait d’une annonce,
+d’un logo ou d’une fiche à
+<a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>.</p>
+
+<h2>9. Responsabilité</h2>
+<p>L’éditeur ne saurait être tenu responsable d’un préjudice direct ou indirect résultant de
+l’utilisation du site, de l’indisponibilité d’une offre, d’informations erronées issues des
+sources, ou du contenu des sites tiers vers lesquels le site renvoie.</p>
+
+<h2>10. Données personnelles</h2>
+<p>Le traitement des données est décrit dans la
+<a href="/confidentialite.html">politique de confidentialité</a>.</p>
+
+<h2>11. Droit applicable et litiges</h2>
+<p>Les présentes CGU sont soumises au droit français. En cas de différend, une solution
+amiable sera recherchée avant toute action judiciaire (contact :
+<a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>). À défaut, les tribunaux
+français sont compétents.</p>
+
+<h2>12. Évolution des CGU</h2>
+<p>Les présentes CGU peuvent être modifiées à tout moment. La version applicable est celle
+en ligne à la date de votre visite.</p>
+"""
+
+CONFIDENTIALITE = """
+<p>Cette politique décrit les traitements de données à caractère personnel liés au site
+<strong>sudtechjobs</strong> (<a href="https://sudtechjobs.com">sudtechjobs.com</a>).</p>
+
+<h2>Responsable de traitement</h2>
+<p>L’éditeur du site (voir les <a href="/mentions-legales.html">mentions légales</a>).
+Contact : <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>.</p>
+
+<h2>En résumé</h2>
+<ul>
+<li>Aucun compte, aucun formulaire, aucune inscription.</li>
+<li>Aucun cookie, aucun traceur publicitaire, aucune revente de données.</li>
+<li>Une mesure d’audience sans cookie et sans donnée personnelle (Umami).</li>
+</ul>
+
+<h2>Mesure d’audience (Umami)</h2>
+<p>Le site utilise <strong>Umami</strong> pour comptabiliser la fréquentation. Umami
+fonctionne <strong>sans cookie</strong> et sans empreinte numérique
+(<em>fingerprinting</em>). Les données collectées sont agrégées et anonymes : pages vues,
+site référent, pays, navigateur, système d’exploitation, type d’appareil. L’adresse IP et
+l’agent utilisateur servent uniquement, de façon transitoire, à calculer un identifiant de
+visite haché, renouvelé chaque jour et non réversible ; ils ne sont pas conservés.</p>
+<p><strong>Base légale :</strong> intérêt légitime de l’éditeur (article 6.1.f du RGPD) à
+mesurer l’audience de son site. Ce traitement, anonyme et sans cookie, ne requiert pas votre
+consentement et s’inscrit dans les recommandations de la CNIL sur la mesure d’audience.</p>
+<p><strong>Sous-traitant :</strong> Umami Software, Inc. —
+<a href="https://umami.is/privacy">umami.is/privacy</a>.</p>
+
+<h2>Courriels</h2>
+<p>Si vous écrivez à <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>, votre
+adresse électronique et le contenu de votre message sont traités dans le seul but de vous
+répondre et d’assurer le suivi de l’échange (base légale : intérêt légitime). Ces messages
+sont conservés au maximum 12 mois après le dernier contact, sauf obligation légale
+contraire.</p>
+
+<h2>Cookies et stockage local</h2>
+<p>Le site ne dépose <strong>aucun cookie</strong>. Il utilise une seule clé de stockage
+local (<code>localStorage</code>), purement technique, pour mémoriser que vous avez fermé le
+bandeau d’information. Cette donnée reste sur votre appareil et n’est jamais transmise.</p>
+
+<h2>Hébergement et transferts hors Union européenne</h2>
+<p>Le site est servi par GitHub Pages (GitHub, Inc., États-Unis). À ce titre, des journaux
+techniques de serveur — dont l’adresse IP — peuvent être traités aux États-Unis par
+GitHub, Inc. Ces transferts sont encadrés par les clauses contractuelles types de la
+Commission européenne et/ou le <em>Data Privacy Framework</em> UE–États-Unis.</p>
+
+<h2>Destinataires</h2>
+<p>L’éditeur ; le sous-traitant de mesure d’audience (Umami) ; l’hébergeur (GitHub Pages)
+pour les seuls journaux techniques. Aucune donnée n’est cédée ni louée à des tiers.</p>
+
+<h2>Vos droits</h2>
+<p>Conformément au RGPD (articles 15 à 21), vous disposez d’un droit d’accès, de
+rectification, d’effacement, de limitation, d’opposition et de portabilité. Vous pouvez les
+exercer à <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>.</p>
+<p>Vous pouvez introduire une réclamation auprès de la CNIL : 3 place de Fontenoy,
+TSA 80715, 75334 Paris Cedex 07 — <a href="https://www.cnil.fr">www.cnil.fr</a>.</p>
+
+<h2>Modifications</h2>
+<p>Cette politique peut être mise à jour ; la version applicable est celle publiée sur cette
+page, datée en tête de document.</p>
+"""
+
+
+def render_legal(*, slug, title, description, h1, inner):
+    canonical = "%s/%s.html" % (SITE_URL, slug)
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › {h1}</nav>
+<h1>{h1}</h1>
+<div class="legal">
+<p class="upd">Dernière mise à jour : {upd}</p>
+{inner}
+</div>
+""".format(home=SITE_URL + "/", h1=esc(h1), upd=esc(LEGAL_UPDATED), inner=inner)
+    return shell(title=title, description=description, canonical=canonical, body=body)
+
+
+# --------------------------------------------------------------------------- #
+#  company pages                                                              #
+# --------------------------------------------------------------------------- #
+CAT_LABEL = {k: v[0] for k, v in CATS.items()}
+
+
+def _fmt_headcount(n):
+    if not n:
+        return None
+    if n >= 1000:
+        return "%s salarié·es" % (("%.1f" % (n / 1000)).rstrip("0").rstrip(".") + " k")
+    return "%d salarié·es" % n
+
+
+def _company_list(jobs):
+    return '<ul class="jobs">%s</ul>' % "".join(
+        '<li><a href="../offre/{s}.html"><span class="t">{t}</span>'
+        '<span class="co">{meta}</span></a></li>'.format(
+            s=j["_slug"], t=esc(j.get("title")),
+            meta=esc(" · ".join(x for x in [
+                CAT_LABEL.get(j.get("category"), j.get("category")),
+                j.get("contract"),
+                "télétravail" if (j.get("city") == "Remote") else j.get("city"),
+            ] if x)))
+        for j in jobs)
+
+
+def render_company(rec, jobs, generated, live_facets):
+    slug = rec["slug"]
+    name = rec["name"]
+    canonical = "%s/entreprise/%s.html" % (SITE_URL, slug)
+    p = rec.get("profile") or {}
+    city = rec.get("city") or ""
+    n = rec.get("open_roles", len(jobs))
+
+    # ---- header: cover banner + big logo straddling it, then badges --------
+    cover = ('<div class="cover" style="background-image:url(%s)"></div>' % esc(p["cover_image"])) \
+        if p.get("cover_image") else ""
+    if rec.get("logo"):
+        logo_html = '<img class="lg" src="%s" alt="%s" loading="lazy">' % (esc(rec["logo"]), esc(name))
+    else:
+        logo_html = '<div class="lg ph">%s</div>' % esc((name or "?")[:1])
+
+    badges = []
+    for eco in rec.get("ecosystems") or []:
+        badges.append('<span class="eco">%s</span>' % esc(eco))
+    for s in (p.get("sectors") or [])[:3]:
+        badges.append("<span>%s</span>" % esc(s))
+    for t in (rec.get("tags") or [])[:4]:
+        if not p.get("sectors"):
+            badges.append("<span>%s</span>" % esc(t))
+    badges_html = ('<div class="badges">%s</div>' % "".join(badges)) if badges else ""
+
+    # ---- facts grid ----------------------------------------------------------
+    facts = []
+
+    def fact(dt, dd):
+        if dd:
+            facts.append("<div><dt>%s</dt><dd>%s</dd></div>" % (esc(dt), dd))
+
+    fact("Postes ouverts", str(n))
+    fact("Type", esc(rec.get("type")) if rec.get("type") else None)
+    fact("Effectif", esc(_fmt_headcount(p.get("headcount"))) if p.get("headcount") else None)
+    fact("Création", esc(p.get("founded")) if p.get("founded") else None)
+    hq = p.get("hq_city")
+    if hq and hq.lower() != (city or "").lower():
+        fact("Siège", esc(hq))
+    fact("Sur le board", esc(city) if city else None)
+    if p.get("parity_women") is not None:
+        fact("Parité F/H", "%s%% / %s%%" % (esc(p.get("parity_women")), esc(p.get("parity_men"))))
+    if p.get("equality_index") is not None:
+        fact("Index égalité", "%s/100" % esc(p["equality_index"]))
+    if rec.get("experience_min_years") is not None:
+        fact("Exp. moyenne demandée", "%s ans" % esc(rec["experience_min_years"]))
+    if rec.get("ats"):
+        fact("Recrutement via", esc(str(rec["ats"]).title()))
+    dom = p.get("socials", {}).get("website") or (
+        ("https://" + rec["domain"]) if rec.get("domain") else None)
+    if dom:
+        fact("Site", '<a href="%s" target="_blank" rel="nofollow noopener">%s</a>'
+             % (esc(dom), esc(re.sub(r"^https?://(www\.)?", "", dom).rstrip("/"))))
+    if rec.get("careers_url"):
+        fact("Page carrières", '<a href="%s" target="_blank" rel="nofollow noopener">voir</a>'
+             % esc(rec["careers_url"]))
+    if p.get("wttj_url"):
+        fact("Fiche WTTJ", '<a href="%s" target="_blank" rel="nofollow noopener">'
+             "Welcome to the Jungle</a>" % esc(p["wttj_url"]))
+    facts_html = ('<dl class="facts">%s</dl>' % "".join(facts)) if facts else ""
+
+    SOCIAL_LABEL = {"linkedin": "LinkedIn", "twitter": "X / Twitter", "instagram": "Instagram",
+                    "youtube": "YouTube", "facebook": "Facebook"}
+    social = "".join(
+        '<a href="%s" target="_blank" rel="nofollow noopener">%s</a>' % (esc(u), esc(lbl))
+        for k, lbl in SOCIAL_LABEL.items()
+        for u in [p.get("socials", {}).get(k)] if u)
+    social_html = ('<div class="social">%s</div>' % social) if social else ""
+
+    desc_html = ""
+    if p.get("description"):
+        desc_html = '<div class="desc">%s</div>' % text_to_html(p["description"])
+
+    # ---- hiring rhythm sparkline ------------------------------------------
+    hm = rec.get("hiring_months") or {}
+    counts = hm.get("counts") or []
+    spark = ""
+    # only worth a chart once there's a bit of signal (≥1 non-empty month among
+    # several, or a real backlog) — a lone bar on a 1-role company says nothing
+    if sum(1 for c in counts if c) >= 2 or rec.get("posted_90d", 0) >= 5:
+        mx = max(counts) or 1
+        bars = "".join(
+            '<i class="%s" style="height:%d%%" title="%s : %d"></i>' % (
+                "now" if i == len(counts) - 1 else "", max(4, round(c / mx * 100)),
+                esc((hm.get("labels") or [""] * len(counts))[i]), c)
+            for i, c in enumerate(counts))
+        rhythm = "%d offre%s repérée%s ces 90 jours" % (
+            rec.get("posted_90d", 0), "s" if rec.get("posted_90d", 0) > 1 else "",
+            "s" if rec.get("posted_90d", 0) > 1 else "")
+        spark = ('<h2>Rythme de recrutement</h2>\n<div class="spark">%s</div>'
+                 '<p class="sub">%s · sur 12 mois (première apparition sur le board).</p>'
+                 % (bars, esc(rhythm)))
+
+    # ---- stack cloud (links to techno facets when they exist) -----------
+    stack_html = ""
+    if rec.get("stack"):
+        chips = []
+        for item in rec["stack"]:
+            s = item["name"]
+            fslug = "stack-%s" % slugify(s)
+            label = "%s<span style='opacity:.55'> ·%d</span>" % (esc(s), item["n"])
+            if fslug in live_facets:
+                chips.append('<a href="../emploi/%s.html"><b>%s</b></a>' % (fslug, label))
+            else:
+                chips.append("<b>%s</b>" % label)
+        stack_html = ('<h2>Stack technique</h2>\n<div class="stack">%s</div>'
+                      % "".join(chips))
+
+    # ---- breakdowns (métier / contrat / ville) --------------------------
+    def mini(pairs, href=None):
+        out = []
+        for lbl, cnt in pairs:
+            txt = "%s · %d" % (esc(lbl), cnt)
+            h = href(lbl) if href else None
+            out.append('<a href="../emploi/%s.html">%s</a>' % (h, txt) if h and h in live_facets
+                       else "<span>%s</span>" % txt)
+        return '<div class="mini">%s</div>' % "".join(out)
+
+    bre = []
+    if rec.get("by_category"):
+        brec = [(CAT_LABEL.get(k, k), v) for k, v in rec["by_category"].items()]
+        brec_href = None
+        # a métier facet is <cat-slug>; métier×ville is <cat>-<city>
+        cat_by_label = {CAT_LABEL.get(k, k): k for k in rec["by_category"]}
+        brec_href = lambda lbl: slugify(cat_by_label.get(lbl, lbl))
+        bre.append("<h2>Par métier</h2>\n" + mini(brec, brec_href))
+    if rec.get("by_contract"):
+        bre.append("<h2>Par contrat</h2>\n" + mini(list(rec["by_contract"].items())))
+    if rec.get("by_city"):
+        bre.append("<h2>Où ils recrutent</h2>\n"
+                   + mini(list(rec["by_city"].items()), lambda c: slugify(c)))
+    if rec.get("remote_roles"):
+        bre.append('<p class="sub">%d poste%s ouvert%s au télétravail.</p>' % (
+            rec["remote_roles"], "s" if rec["remote_roles"] > 1 else "",
+            "s" if rec["remote_roles"] > 1 else ""))
+    breakdown_html = "\n".join(bre)
+
+    sal_html = ""
+    if rec.get("salary_samples"):
+        sal_html = ("<h2>Salaires affichés</h2>\n<div class=\"k\">%s</div>" % "".join(
+            '<span class="sal">%s</span>' % esc(s) for s in rec["salary_samples"]))
+
+    benefits_html = ""
+    if rec.get("benefits"):
+        benefits_html = ('<h2>Avantages mentionnés dans les offres</h2>\n<div class="mini">%s</div>'
+                         % "".join("<span>%s</span>" % esc(b) for b in rec["benefits"]))
+
+    jobs_sorted = sorted(jobs, key=lambda j: (j.get("first_seen") or "", j.get("published_at") or ""),
+                         reverse=True)
+    jobs_html = "<h2>Offres ouvertes (%d)</h2>\n%s" % (len(jobs_sorted), _company_list(jobs_sorted))
+
+    # ---- JSON-LD -------------------------------------------------------------
+    org_ld = {"@context": "https://schema.org", "@type": "Organization", "name": name,
+              "url": dom or canonical}
+    if rec.get("logo"):
+        org_ld["logo"] = rec["logo"]
+    if p.get("description"):
+        org_ld["description"] = p["description"]
+    same_as = [u for u in p.get("socials", {}).values() if u]
+    if same_as:
+        org_ld["sameAs"] = same_as
+    if p.get("headcount"):
+        org_ld["numberOfEmployees"] = {"@type": "QuantitativeValue", "value": p["headcount"]}
+    if p.get("founded"):
+        org_ld["foundingDate"] = str(p["founded"])
+    if p.get("hq_city"):
+        org_ld["address"] = {"@type": "PostalAddress", "addressLocality": p["hq_city"],
+                             "addressCountry": p.get("hq_country") or "FR"}
+    list_ld = {
+        "@context": "https://schema.org", "@type": "ItemList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1,
+             "url": "%s/offre/%s.html" % (SITE_URL, j["_slug"])}
+            for i, j in enumerate(jobs_sorted)],
+    }
+    crumbs = {
+        "@context": "https://schema.org", "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": SITE_URL + "/"},
+            {"@type": "ListItem", "position": 2, "name": "Entreprises",
+             "item": SITE_URL + "/entreprise/"},
+            {"@type": "ListItem", "position": 3, "name": name, "item": canonical},
+        ],
+    }
+
+    where = (" à " + esc(city)) if city else " en PACA"
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Entreprises</a> › {name}</nav>
+{cover}
+<div class="cohead">{logo}
+  <div><h1>Emplois tech chez {name}</h1>
+  <p class="sub" style="margin:0">{n} offre{s} dev · data · produit · design{where}.</p></div>
+</div>
+{badges}
+<div class="card">
+  {facts}
+  {social}
+  {desc}
+</div>
+{spark}
+{stack}
+{breakdown}
+{benefits}
+{sal}
+{jobs}
+<p class="sub" style="margin-top:22px">Données agrégées depuis les offres publiées, mises à jour le {gen}.
+Une info à corriger ? <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a></p>
+""".format(
+        home=SITE_URL + "/", hub=SITE_URL + "/entreprise/", name=esc(name),
+        cover=cover, logo=logo_html,
+        n=n, s="s" if n > 1 else "", where=where,
+        badges=badges_html, facts=facts_html, social=social_html, desc=desc_html,
+        spark=spark, stack=stack_html, breakdown=breakdown_html,
+        benefits=benefits_html, sal=sal_html, jobs=jobs_html, gen=esc(generated),
+    )
+    meta = "%s recrute : %d offre%s tech (dev, data, produit, design)%s sur sudtechjobs." % (
+        name, n, "s" if n > 1 else "", where)
+    if p.get("description"):
+        meta = re.sub(r"\s+", " ", p["description"])[:180]
+    head_extra = jsonld(org_ld) + "\n" + jsonld(list_ld) + "\n" + jsonld(crumbs)
+    return shell(title="%s — emplois tech%s | sudtechjobs" % (name, where),
+                 description=meta, canonical=canonical, head_extra=head_extra, body=body)
+
+
+def render_companies_hub(companies, generated):
+    canonical = SITE_URL + "/entreprise/"
+    rows = "".join(
+        '<li><a href="{s}.html">{n}</a><div class="co">{meta}</div></li>'.format(
+            s=c["slug"], n=esc(c["name"]),
+            meta=esc(" · ".join(x for x in [
+                "%d offre%s" % (c["open_roles"], "s" if c["open_roles"] > 1 else ""),
+                c.get("city") or "",
+                (c.get("profile") or {}).get("sectors", [None])[0] or "",
+                (c.get("ecosystems") or [None])[0] or "",
+            ] if x)))
+        for c in companies)
+    ld = {
+        "@context": "https://schema.org", "@type": "ItemList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": c["name"],
+             "url": "%s/entreprise/%s.html" % (SITE_URL, c["slug"])}
+            for i, c in enumerate(companies)],
+    }
+    total = sum(c["open_roles"] for c in companies)
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › Entreprises</nav>
+<h1>Les entreprises qui recrutent dans la tech en PACA</h1>
+<p class="sub">{nc} entreprises, {total} offres dev, data, produit &amp; design dans le sud
+de la France. Mis à jour le {gen}.</p>
+<ul class="jobs">{rows}</ul>
+""".format(home=SITE_URL + "/", nc=len(companies), total=total, gen=esc(generated), rows=rows)
+    return shell(
+        title="Entreprises tech qui recrutent en PACA | sudtechjobs",
+        description="Toutes les boîtes tech du sud de la France qui recrutent : "
+                    "effectif, secteur, stack, offres ouvertes. Marseille, Aix, Nice, "
+                    "Sophia-Antipolis, Toulon, Avignon.",
+        canonical=canonical, head_extra=jsonld(ld), body=body)
+
+
+# --------------------------------------------------------------------------- #
 #  main                                                                       #
 # --------------------------------------------------------------------------- #
 def wipe_html(dirpath, keep):
@@ -652,10 +1226,26 @@ def main():
     for j in jobs:
         j["_slug"] = j.get("slug") or job_slug(j)   # build.py stamps `slug`; recompute if absent
 
+    # company rows (build_companies.py). Optional: without it the offer/facet
+    # pages still render, just with no company pages and no cross-links.
+    companies = []
+    try:
+        companies = json.load(open(COMPANIES, encoding="utf-8")).get("companies", [])
+    except (OSError, ValueError):
+        print("render_pages: no %s — skipping company pages "
+              "(run jobboard/build_companies.py)" % COMPANIES, file=sys.stderr)
+    company_by_name = {c["name"]: c for c in companies}
+    for j in jobs:
+        c = company_by_name.get(j.get("company"))
+        if c:
+            j["_company_slug"] = c["slug"]
+
     offre_dir = os.path.join(SITE, "offre")
     emploi_dir = os.path.join(SITE, "emploi")
+    entreprise_dir = os.path.join(SITE, "entreprise")
     os.makedirs(offre_dir, exist_ok=True)
     os.makedirs(emploi_dir, exist_ok=True)
+    os.makedirs(entreprise_dir, exist_ok=True)
 
     # ---- facets ----------------------------------------------------------
     # slug -> dict(h1, intro, test, kind)
@@ -881,6 +1471,45 @@ def main():
         fh.write(render_hub(groups, generated))
     facet_files.add("index.html")
 
+    # ---- company pages --------------------------------------------------
+    jobs_by_company = {}
+    for j in jobs:
+        jobs_by_company.setdefault(j.get("company"), []).append(j)
+    company_files = set()
+    for c in companies:
+        cjobs = jobs_by_company.get(c["name"]) or []
+        if not cjobs:
+            continue
+        fn = c["slug"] + ".html"
+        company_files.add(fn)
+        with open(os.path.join(entreprise_dir, fn), "w", encoding="utf-8") as fh:
+            fh.write(render_company(c, cjobs, generated, live_facets))
+    if companies:
+        live_companies = [c for c in companies if (c["slug"] + ".html") in company_files]
+        with open(os.path.join(entreprise_dir, "index.html"), "w", encoding="utf-8") as fh:
+            fh.write(render_companies_hub(live_companies, generated))
+        company_files.add("index.html")
+
+    # ---- legal pages (site root) ----------------------------------------
+    legal = [
+        ("mentions-legales", "Mentions légales | sudtechjobs",
+         "Mentions légales de sudtechjobs : éditeur, hébergeur, origine des offres, "
+         "propriété intellectuelle, responsabilité.",
+         "Mentions légales", MENTIONS_LEGALES),
+        ("cgu", "Conditions générales d’utilisation | sudtechjobs",
+         "Conditions générales d’utilisation de sudtechjobs, agrégateur gratuit d’offres "
+         "d’emploi tech dans le sud de la France.",
+         "Conditions générales d’utilisation", CGU),
+        ("confidentialite", "Politique de confidentialité | sudtechjobs",
+         "Politique de confidentialité (RGPD) de sudtechjobs : mesure d’audience sans "
+         "cookie, données traitées, vos droits.",
+         "Politique de confidentialité", CONFIDENTIALITE),
+    ]
+    for slug, title, desc, h1, inner in legal:
+        with open(os.path.join(SITE, slug + ".html"), "w", encoding="utf-8") as fh:
+            fh.write(render_legal(slug=slug, title=title, description=desc,
+                                  h1=h1, inner=inner))
+
     # ---- sitemaps + robots -------------------------------------------------
     # A sitemap index pointing at two children: the browse pages, and a dedicated
     # offers sitemap (live postings only — Google for Jobs discovers JobPosting
@@ -894,10 +1523,23 @@ def main():
              % SITE_URL,
              '<url><loc>%s/emploi/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>'
              % SITE_URL]
+    for slug in ("mentions-legales", "cgu", "confidentialite"):
+        pages.append('<url><loc>%s/%s.html</loc><changefreq>yearly</changefreq>'
+                     '<priority>0.2</priority></url>' % (SITE_URL, slug))
     for slug in sorted(live_facets):
         pages.append('<url><loc>%s/emploi/%s.html</loc><lastmod>%s</lastmod>'
                      '<changefreq>daily</changefreq><priority>0.7</priority></url>'
                      % (SITE_URL, slug, today))
+    if companies:
+        pages.append('<url><loc>%s/entreprise/</loc><lastmod>%s</lastmod>'
+                     '<changefreq>daily</changefreq><priority>0.7</priority></url>'
+                     % (SITE_URL, today))
+        for fn in sorted(company_files):
+            if fn == "index.html":
+                continue
+            pages.append('<url><loc>%s/entreprise/%s</loc><lastmod>%s</lastmod>'
+                         '<changefreq>weekly</changefreq><priority>0.6</priority></url>'
+                         % (SITE_URL, fn, today))
 
     offers = []
     for j in jobs:
@@ -923,10 +1565,12 @@ def main():
     # ---- prune stale files -------------------------------------------------
     wipe_html(offre_dir, offer_files | tombstone_files)
     wipe_html(emploi_dir, facet_files)
+    wipe_html(entreprise_dir, company_files)
 
-    print("render_pages: %d offers, %d tombstones, %d facet pages, %d sitemap urls"
+    print("render_pages: %d offers, %d tombstones, %d facet pages, %d company pages, "
+          "%d sitemap urls"
           % (len(offer_files), len(tombstone_files), len(facet_files),
-             len(pages) + len(offers)), file=sys.stderr)
+             len(company_files), len(pages) + len(offers)), file=sys.stderr)
 
 
 if __name__ == "__main__":

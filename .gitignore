@@ -15,8 +15,13 @@ jobboard/.env
 # deployed straight from the Pages artifact — not tracked)
 jobboard/site/offre/
 jobboard/site/emploi/
+jobboard/site/entreprise/
+jobboard/site/companies.json
 jobboard/site/sitemap*.xml
 jobboard/site/robots.txt
+jobboard/site/mentions-legales.html
+jobboard/site/cgu.html
+jobboard/site/confidentialite.html
 
 # Job board — regenerable artefacts (kept OUT of git; CI rebuilds them)
 jobboard/data/cache/

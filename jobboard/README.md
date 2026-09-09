@@ -17,6 +17,7 @@ sites sources.
 | 2d | **Aktantis** (ex-Pôle SCS, deeptech PACA) — archive WordPress `/annuaire-des-membres/page/N/` | ~275 membres PACA + domaine + `data-zone` / `data-techno` (µélectronique, IoT, IA, cyber, photonique) | `annuaire/aktantis.py` |
 | 2e | **Medinsoft** (Marseille / Aix) — collection Wix Data `Annuaire` dans le blob `wix-warmup-data` | poignée de boîtes seulement (collection publique à peine peuplée depuis déc. 2024) | `annuaire/medinsoft.py` |
 | 3 | **ATS des boîtes** (Ashby, Lever, SmartRecruiters, Taleez, Recruitee, Workable, Greenhouse, Personio) | offres en direct de l'employeur, lien de candidature natif | `resolve.py` + `fetch_jobs.py` |
+| 4 | **Profils entreprise** — feed + cache WTTJ + annuaires | 1 ligne par boîte qui recrute : agrégats des offres (postes ouverts, split métier/contrat/ville, stack consolidée, rythme d'embauche, avantages) + profil WTTJ **fr** (description, effectif, secteur, création, siège, parité, réseaux, lien WTTJ) + type d'employeur dérivé (startup / scale-up / ETI / grand groupe / ESN) + écosystème / ATS résolu | `build_companies.py` → `site/companies.json` |
 
 Les couches 2* alimentent la couche 3 : `merge_companies.py` concatène la liste
 curée + tous les annuaires (dédup domaine puis nom, la source la plus fiable
@@ -78,8 +79,15 @@ python3 jobboard/fetch_jobs.py -o jobboard/data/ats_jobs.json
 # 4. fusion -> feed unique du site
 python3 jobboard/build.py                        # -> site/jobs.json  (+ data/jobs.json)
 
-# 5. pages statiques SEO (offre par offre + listes filtrées + sitemap)
-python3 jobboard/render_pages.py                 # -> site/offre/*.html, site/emploi/*.html, sitemap.xml, robots.txt
+# 4 bis. profils entreprise (1 ligne par boîte qui recrute)
+python3 jobboard/build_companies.py              # -> site/companies.json
+#   agrège les offres de chaque boîte (postes ouverts, split métier/contrat/ville,
+#   stack consolidée, rythme d'embauche) + profil WTTJ distillé depuis data/cache/wttj/
+#   (effectif, secteur, année de création, siège, parité, réseaux, cover) + appartenance
+#   écosystème / ATS résolu (match domaine/nom sur data/companies.all.json + companies.resolved.json)
+
+# 5. pages statiques SEO (offre par offre + listes filtrées + fiches entreprise + sitemap)
+python3 jobboard/render_pages.py                 # -> site/offre/*.html, site/emploi/*.html, site/entreprise/*.html, sitemap.xml, robots.txt
 
 # 6. servir le site statique
 cd jobboard/site && python3 -m http.server 8777  # http://localhost:8777
@@ -142,7 +150,10 @@ lit `site/jobs.json` (déjà construit par `build.py`) et écrit, dans `site/` :
 | `offre/<slug>.html` *(pierre tombale)* | quand une offre sort du feed, la page est **conservée** en `noindex, follow` + `<meta refresh>` / JS vers la facette métier, **sans** balisage `JobPosting` — retirée du sitemap. Purgée après `TOMBSTONE_DAYS` (120 j) → 404. État dans `data/offer_index.json` (commit CI, comme `seen.json`) |
 | `emploi/<facette>.html` | listes pré-rendues : métier (`eng`, `data`, `product`…), ville, **métier × ville** (`eng-marseille`), **département** (`dept-bouches-du-rhone`, agrège les villes via `CITY_DEPT`), techno (`stack-react`), **techno × ville**, télétravail. Seuil : ≥ 3 offres (`MIN_FACET`), ≥ 8 pour une techno seule (`MIN_STACK`) |
 | `emploi/index.html` | hub qui pointe vers toutes les facettes |
-| `sitemap.xml` | **index** → `sitemap-pages.xml` (home + facettes) + `sitemap-offres.xml` (offres vivantes seules, `lastmod` = première vue). Google for Jobs découvre les `JobPosting` via ce dernier |
+| `entreprise/<slug>.html` | une fiche par boîte qui recrute (source : `site/companies.json`, cf. `build_companies.py`) — en-tête bannière (cover WTTJ) + gros logo, badges écosystème / secteur, carte de chiffres (type d'employeur, effectif, création, siège, parité, index égalité, ATS, site, lien WTTJ), description WTTJ **en français**, sparkline du rythme d'embauche, **stack consolidée** (liens vers `stack-*`), split par métier / contrat / ville (liens vers les facettes), avantages mentionnés, salaires affichés, liste des offres ouvertes. JSON-LD `Organization` + `ItemList` + `BreadcrumbList`. Pages offre et SPA lient le nom de la boîte vers sa fiche |
+| `entreprise/index.html` | hub qui liste toutes les entreprises (nb d'offres, ville, secteur, écosystème) |
+| `mentions-legales.html`, `cgu.html`, `confidentialite.html` | pages légales statiques (racine du site) : éditeur non pro + hébergeur, CGU de l'agrégateur, politique RGPD (Umami sans cookie). Texte figé (`LEGAL_UPDATED`), rebâti à chaque run. Lien en pied de page + bandeau d'info audience (sans consentement, Umami étant cookieless) sur toutes les pages et la SPA |
+| `sitemap.xml` | **index** → `sitemap-pages.xml` (home + facettes + fiches entreprise) + `sitemap-offres.xml` (offres vivantes seules, `lastmod` = première vue). Google for Jobs découvre les `JobPosting` via ce dernier |
 | `robots.txt` | pointe l'index sitemap |
 
 Dé-doublonnage inter-sources (même offre vue via WTTJ *et* son ATS) : `build.py`
@@ -150,9 +161,11 @@ Dé-doublonnage inter-sources (même offre vue via WTTJ *et* son ATS) : `build.p
 `ATS direct > WTTJ > France Travail` — vérifié, 0 doublon cross-source résiduel.
 
 Tout est du **build output** : `.gitignore`-é, reconstruit à chaque run,
-déployé depuis l'artefact Pages (pas depuis git). La SPA `index.html` n'est pas
-touchée — juste enrichie une fois de son `<head>` SEO + d'un `<nav>` de liens
-vers le hub.
+déployé depuis l'artefact Pages (pas depuis git) — `site/companies.json` inclus
+(intermédiaire lu par `render_pages.py`, pas commité, mais poussé dans l'artefact
+Pages avec le reste de `site/`). La SPA `index.html` est quasi intacte : `<head>`
+SEO, `<nav>` vers le hub, et le nom de l'entreprise sur chaque carte lie vers sa
+fiche (`companySlug()` en JS, aligné sur `render_pages.slugify`).
 
 Base des URL : `SITE_URL` (défaut `https://anto3000000.github.io/tech-sud-jobs`).
 Les liens internes sont relatifs (marchent quel que soit le domaine) ;
