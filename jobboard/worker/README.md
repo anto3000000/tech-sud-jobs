@@ -10,9 +10,10 @@ Le double opt-in est géré par EmailOctopus (activé au niveau de la liste), pa
 ## Prérequis côté EmailOctopus
 
 - Liste « Alertes sudtechjobs » avec **double opt-in activé**.
-- Deux champs personnalisés sur la liste, de type texte, tags **exactement**
-  `search` et `search_label`. Si tu utilises d'autres tags, reporte-les dans
-  `wrangler.toml` (`EO_FIELD_SEARCH`, `EO_FIELD_LABEL`).
+- Deux champs personnalisés sur la liste, de type texte. Leur **merge tag**
+  (onglet Fields -> colonne « Merge tag », sans les `{{ }}`) doit être reporté
+  dans `wrangler.toml` : `EO_FIELD_SEARCH` et `EO_FIELD_LABEL`. Chez nous ce
+  sont `Search` et `Searchlabel` (EmailOctopus capitalise et retire les `_`).
 
 ## Déploiement (une fois)
 

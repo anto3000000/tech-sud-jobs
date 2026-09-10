@@ -58,8 +58,8 @@ export default {
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return json({ error: "bad_email" }, 400, ch);
 
     const fields = {};
-    fields[env.EO_FIELD_SEARCH || "search"] = search;
-    fields[env.EO_FIELD_LABEL || "search_label"] = label;
+    fields[env.EO_FIELD_SEARCH || "Search"] = search;
+    fields[env.EO_FIELD_LABEL || "Searchlabel"] = label;
 
     let r;
     try {

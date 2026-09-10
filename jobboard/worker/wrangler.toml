@@ -5,8 +5,9 @@ workers_dev = true
 
 [vars]
 ALLOW_ORIGIN = "https://sudtechjobs.com"
-EO_FIELD_SEARCH = "search"
-EO_FIELD_LABEL = "search_label"
+# Merge tags EmailOctopus (onglet Fields -> colonne "Merge tag", sans les {{ }})
+EO_FIELD_SEARCH = "Search"
+EO_FIELD_LABEL = "Searchlabel"
 
 # Secrets (hors de ce fichier) :
 #   wrangler secret put EO_API_KEY
