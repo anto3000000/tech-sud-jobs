@@ -629,8 +629,7 @@ fetch("jobs.json",{cache:"no-store"}).then(r=>r.json()).then(feed=>{
   $("#load").hidden = true;
   const d = new Date(feed.generated_at);
   $("#foot").innerHTML = `${feed.count} offres · ${feed.companies} entreprises · `+
-    `màj ${relDate(feed.generated_at)} · `+
-    `sources : Welcome to the Jungle + ATS (Ashby, Lever, SmartRecruiters, Taleez, Recruitee, Workable)`+
+    `màj ${relDate(feed.generated_at)}`+
     `<br><span class="contact">Une offre à ajouter, une remarque, ou juste envie de papoter du Sud&nbsp;? `+
     `Écrivez-moi, ça fait toujours plaisir 🫰 `+
     `<a href="mailto:hello@sudtechjobs.com">✉️ hello@sudtechjobs.com</a></span>`;
