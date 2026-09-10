@@ -233,6 +233,34 @@
       width:auto;max-width:none}
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+  /* --- alerte email --- */
+  .cb-right{display:flex;align-items:center;gap:10px}
+  .alert-cta{font:inherit;font-size:12.5px;font-weight:600;cursor:pointer;white-space:nowrap;
+    color:var(--accent-ink);background:color-mix(in srgb,var(--accent) 16%,transparent);
+    border:1px solid color-mix(in srgb,var(--accent) 42%,transparent);border-radius:9px;padding:6px 12px}
+  .alert-cta:hover{background:color-mix(in srgb,var(--accent) 26%,transparent)}
+  dialog.alert-dlg{border:1px solid var(--line);border-radius:16px;padding:0;max-width:440px;
+    width:calc(100vw - 32px);background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+  dialog.alert-dlg::backdrop{background:rgba(22,48,63,.42);backdrop-filter:blur(2px)}
+  .alert-dlg form{padding:20px 22px 22px;display:flex;flex-direction:column;gap:12px}
+  .alert-dlg h2{font-family:"Bricolage Grotesque",sans-serif;font-size:18px;font-weight:600;margin:0}
+  .alert-dlg .alert-sum{margin:0;font-size:13px;color:var(--muted);line-height:1.5;
+    background:var(--card-2);border:1px solid var(--line);border-radius:9px;padding:8px 10px}
+  .alert-dlg label{display:flex;flex-direction:column;gap:5px;font-size:13px;font-weight:600;color:var(--ink)}
+  .alert-dlg input[type=email]{font:inherit;border:1.5px solid var(--line);border-radius:10px;
+    padding:10px 12px;background:var(--card);color:var(--ink)}
+  .alert-dlg input[type=email]:focus{outline:none;border-color:var(--brand)}
+  .alert-dlg .alert-consent{margin:0;font-size:11.5px;color:var(--muted);line-height:1.5}
+  .alert-dlg .alert-actions{display:flex;gap:8px;justify-content:flex-end;margin-top:2px}
+  .alert-dlg .alert-actions button{font:inherit;font-size:13px;font-weight:600;cursor:pointer;
+    border-radius:10px;padding:8px 16px;border:1px solid var(--line)}
+  .alert-dlg #alertCancel{background:var(--card);color:var(--muted)}
+  .alert-dlg #alertSubmit{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+  .alert-dlg #alertSubmit:disabled{opacity:.55;cursor:not-allowed}
+  .alert-dlg .alert-msg{margin:0;font-size:13px;font-weight:500;line-height:1.5}
+  .alert-dlg .alert-msg.ok{color:var(--pine)}
+  .alert-dlg .alert-msg.err{color:var(--tag-design)}
 </style>
 </head>
 <body>
@@ -306,10 +334,13 @@
 
   <div class="countbar">
     <span class="count" id="count"></span>
-    <select id="sort">
-      <option value="date">Plus récentes</option>
-      <option value="company">Par entreprise</option>
-    </select>
+    <div class="cb-right">
+      <button type="button" id="alertBtn" class="alert-cta">🔔 Recevoir par email</button>
+      <select id="sort">
+        <option value="date">Plus récentes</option>
+        <option value="company">Par entreprise</option>
+      </select>
+    </div>
   </div>
   <ul id="list"></ul>
   <nav class="pager" id="pager" aria-label="Pagination" hidden></nav>
@@ -344,6 +375,24 @@
     <a href="confidentialite.html">Confidentialité</a>
   </nav>
 </div>
+
+<dialog id="alertDlg" class="alert-dlg">
+  <form id="alertForm">
+    <h2>Recevoir ces offres par email</h2>
+    <p class="alert-sum" id="alertSum"></p>
+    <label for="alertEmail">Ton email
+      <input type="email" id="alertEmail" required autocomplete="email" placeholder="toi@exemple.fr">
+    </label>
+    <p class="alert-consent">Un email dès que de nouvelles offres correspondent à cette recherche.
+      Désinscription en un clic dans chaque email.
+      <a href="confidentialite.html" target="_blank" rel="noopener">Confidentialité</a>.</p>
+    <div class="alert-actions">
+      <button type="button" id="alertCancel">Annuler</button>
+      <button type="submit" id="alertSubmit">M'abonner</button>
+    </div>
+    <p class="alert-msg" id="alertMsg" hidden></p>
+  </form>
+</dialog>
 
 <div id="cookie-notice" hidden>
   <p>Mesure d’audience sans cookie ni donnée personnelle (Umami).
@@ -402,6 +451,20 @@ function writeStateToURL(){
     const qs = p.toString();
     history.replaceState(null, "", qs ? "?" + qs : location.pathname);
   }catch(e){}
+}
+// libellé lisible de la recherche courante — récap de la modale d'alerte
+// + champ `search_label` envoyé à EmailOctopus.
+function describeSearch(){
+  const parts = [];
+  if(state.q.trim()) parts.push(`« ${state.q.trim()} »`);
+  state.cats.forEach(c=>parts.push(catLabel(c)));
+  state.cities.forEach(c=>parts.push(c));
+  state.stacks.forEach(s=>parts.push(s));
+  state.contracts.forEach(c=>parts.push(c));
+  state.exps.forEach(x=>parts.push(x));
+  if(state.remote) parts.push("Télétravail");
+  if(state.onlyNew) parts.push("Nouvelles offres");
+  return parts.length ? parts.join(" · ") : "Toutes les offres";
 }
 // scroll the results into view, but stop just under the sticky search bar
 // (a bare scrollIntoView tucks the first cards behind .controls)
@@ -675,6 +738,55 @@ function initFilters(){
       if(!d.contains(e.target)) d.open = false;
   });
 }
+
+// --- alertes email : la recherche courante (querystring) + un email -> contact
+// "pending" EmailOctopus via le worker. La clé API ne touche jamais le front.
+// voir jobboard/worker/ pour le déploiement ; reporter l'URL déployée ici.
+const ALERT_ENDPOINT = "https://sudtechjobs-alerts.CHANGE-ME.workers.dev/subscribe";
+
+function initAlerts(){
+  const dlg = $("#alertDlg"), form = $("#alertForm"), msg = $("#alertMsg"),
+        submit = $("#alertSubmit"), btn = $("#alertBtn");
+  if(!btn) return;
+  if(!dlg || typeof dlg.showModal !== "function"){ btn.remove(); return; }
+  const resetMsg = ()=>{ msg.hidden = true; msg.textContent = ""; msg.className = "alert-msg"; };
+  const currentSearch = ()=> new URLSearchParams(location.search).toString();
+
+  btn.addEventListener("click", ()=>{
+    resetMsg(); form.reset(); submit.disabled = false;
+    $("#alertSum").textContent = describeSearch();
+    dlg.showModal();
+    track("alert_open", {search: currentSearch().slice(0,120)});
+  });
+  $("#alertCancel").addEventListener("click", ()=> dlg.close());
+  dlg.addEventListener("click", e=>{ if(e.target === dlg) dlg.close(); });
+
+  form.addEventListener("submit", async e=>{
+    e.preventDefault();
+    const email = $("#alertEmail").value.trim();
+    if(!email) return;
+    submit.disabled = true;
+    resetMsg(); msg.hidden = false; msg.textContent = "Envoi…";
+    const search = currentSearch();
+    try{
+      const r = await fetch(ALERT_ENDPOINT, {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({email, search, search_label: describeSearch().slice(0,150)}),
+      });
+      if(!r.ok) throw new Error("http " + r.status);
+      msg.className = "alert-msg ok";
+      msg.textContent = "✅ Presque fini — clique sur le lien dans l'email de confirmation qu'on vient de t'envoyer.";
+      track("alert_subscribe", {search: search.slice(0,120)});
+      setTimeout(()=> dlg.close(), 4500);
+    }catch(err){
+      submit.disabled = false;
+      msg.className = "alert-msg err";
+      msg.textContent = "Aïe, l'inscription a échoué. Réessaie, ou écris à hello@sudtechjobs.com.";
+    }
+  });
+}
+initAlerts();
 
 fetch("jobs.json",{cache:"no-store"}).then(r=>r.json()).then(feed=>{
   JOBS = feed.jobs||[];

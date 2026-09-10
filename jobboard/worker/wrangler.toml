@@ -1,0 +1,13 @@
+name = "sudtechjobs-alerts"
+main = "subscribe.js"
+compatibility_date = "2026-01-01"
+workers_dev = true
+
+[vars]
+ALLOW_ORIGIN = "https://sudtechjobs.com"
+EO_FIELD_SEARCH = "search"
+EO_FIELD_LABEL = "search_label"
+
+# Secrets (hors de ce fichier) :
+#   wrangler secret put EO_API_KEY
+#   wrangler secret put EO_LIST_ID
