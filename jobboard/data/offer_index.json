@@ -43,7 +43,7 @@
 "category": "data",
 "city": "Fos-Sur-Mer",
 "company": "agap2",
-"expired_at": null,
+"expired_at": "2026-09-10",
 "facet_slug": "data",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
@@ -68,6 +68,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
 "title": "Développeur java senior (H/F)"
+},
+"agap2-ingenieur-data-1365fc": {
+"category": "data",
+"city": "Nice",
+"company": "agap2",
+"expired_at": null,
+"facet_slug": "data-nice",
+"first_seen": "2026-09-05",
+"last_seen": "2026-09-10",
+"title": "Ingénieur data"
 },
 "agap2-testeur-qa-469c16": {
 "category": "eng",
@@ -309,6 +319,16 @@
 "last_seen": "2026-09-10",
 "title": "Ops & Product Builder"
 },
+"alan-platform-engineer-x-f-m-tech-foundations-d82be5": {
+"category": "eng",
+"city": "Remote",
+"company": "Alan",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-10",
+"last_seen": "2026-09-10",
+"title": "Platform Engineer (x/f/m) - Tech Foundations"
+},
 "alan-portfolio-analytics-and-forecasts-actuary-896c1e": {
 "category": "data",
 "city": "Remote",
@@ -543,7 +563,7 @@
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Atos",
-"expired_at": null,
+"expired_at": "2026-09-10",
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
@@ -789,11 +809,21 @@
 "last_seen": "2026-09-10",
 "title": "Chef de projet SI (F/H) - Pilote de Portefeuille Projets Titres et Parts Sociales"
 },
+"bpce-solutions-informatiques-chef-de-projet-si-h-f-3c2655": {
+"category": "tech-adjacent",
+"city": "Aix-en-Provence",
+"company": "BPCE Solutions informatiques",
+"expired_at": null,
+"facet_slug": "tech-adjacent-aix-en-provence",
+"first_seen": "2026-09-10",
+"last_seen": "2026-09-10",
+"title": "Chef de Projet SI (H/F)"
+},
 "bpce-solutions-informatiques-chef-de-projet-si-h-f-8b2ee0": {
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "BPCE Solutions informatiques",
-"expired_at": null,
+"expired_at": "2026-09-10",
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
@@ -839,6 +869,16 @@
 "last_seen": "2026-09-10",
 "title": "Développeur-Concepteur Mainframe (H/F)"
 },
+"bpce-solutions-informatiques-developpeur-ios-f-h-106cee": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "BPCE Solutions informatiques",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-10",
+"last_seen": "2026-09-10",
+"title": "Développeur iOS (F/H)"
+},
 "bpce-solutions-informatiques-developpeur-senior-dotnet-4866fe": {
 "category": "eng",
 "city": "Aix-en-Provence",
@@ -858,6 +898,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
 "title": "Expert Sécurité Développement (H/F)"
+},
+"bpce-solutions-informatiques-tech-lead-angular-java-h-f-916a57": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "BPCE Solutions informatiques",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-10",
+"last_seen": "2026-09-10",
+"title": "Tech Lead Angular/Java (H/F)"
 },
 "bpce-solutions-informatiques-tech-lead-front-end-design-system-f-h-eb5134": {
 "category": "design",
@@ -988,6 +1038,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
 "title": "Data Architect"
+},
+"capgemini-developpeuse-developpeur-cpp-d8a177": {
+"category": "eng",
+"city": "Cannes",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-cannes",
+"first_seen": "2026-09-10",
+"last_seen": "2026-09-10",
+"title": "Développeuse/Développeur C++"
 },
 "capgemini-developpeuse-developpeur-logiciel-plm-stage-57e820": {
 "category": "eng",
@@ -2033,7 +2093,7 @@
 "category": "tech-adjacent",
 "city": "Toulon",
 "company": "Groupe Orlade",
-"expired_at": null,
+"expired_at": "2026-09-10",
 "facet_slug": "tech-adjacent",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
@@ -2669,11 +2729,21 @@
 "last_seen": "2026-09-10",
 "title": "Consultant SIRH - Gestion ADP (H/F)"
 },
-"linking-talents-developpeur-se-sirh-senior-h-f-59d44a": {
+"linking-talents-developpeur-se-sirh-senior-h-f-16fd6f": {
 "category": "eng",
 "city": "Marseille",
 "company": "Linking Talents",
 "expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-10",
+"last_seen": "2026-09-10",
+"title": "Développeur(se) SIRH Senior (H/F)"
+},
+"linking-talents-developpeur-se-sirh-senior-h-f-59d44a": {
+"category": "eng",
+"city": "Marseille",
+"company": "Linking Talents",
+"expired_at": "2026-09-10",
 "facet_slug": "eng-marseille",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-10",
@@ -3843,7 +3913,7 @@
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Silae",
-"expired_at": null,
+"expired_at": "2026-09-10",
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
@@ -3993,9 +4063,19 @@
 "category": "data",
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
-"expired_at": null,
+"expired_at": "2026-09-10",
 "facet_slug": "data-aix-en-provence",
 "first_seen": "2026-09-05",
+"last_seen": "2026-09-10",
+"title": "Data Ingénieur(e) Snowflake expérimenté(e) – Développement Régional - Aix-en-Provence"
+},
+"sopra-steria-data-ingenieur-e-snowflake-experimente-e-developpement-re-e2a771": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Sopra Steria",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-10",
 "last_seen": "2026-09-10",
 "title": "Data Ingénieur(e) Snowflake expérimenté(e) – Développement Régional - Aix-en-Provence"
 },
@@ -4089,11 +4169,21 @@
 "last_seen": "2026-09-10",
 "title": "Ingénieur(e) DevOps - Aix-en-Provence"
 },
-"sopra-steria-ingenieur-e-devops-infrastructure-cloud-biot-99d363": {
+"sopra-steria-ingenieur-e-devops-digital-platform-services-biot-f6d8fc": {
 "category": "eng",
 "city": "Biot",
 "company": "Sopra Steria",
 "expired_at": null,
+"facet_slug": "eng-biot",
+"first_seen": "2026-09-10",
+"last_seen": "2026-09-10",
+"title": "Ingénieur(e) DevOps - Digital Platform Services - Biot"
+},
+"sopra-steria-ingenieur-e-devops-infrastructure-cloud-biot-99d363": {
+"category": "eng",
+"city": "Biot",
+"company": "Sopra Steria",
+"expired_at": "2026-09-10",
 "facet_slug": "eng-biot",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-10",
