@@ -338,6 +338,7 @@
     </a>
   </nav>
   <nav aria-label="Informations légales" class="legalnav">
+    <a href="a-propos.html">À propos</a> ·
     <a href="mentions-legales.html">Mentions légales</a> ·
     <a href="cgu.html">CGU</a> ·
     <a href="confidentialite.html">Confidentialité</a>
@@ -365,6 +366,43 @@ const state = {q:"", sort:"date", cats:new Set(), cities:new Set(), stacks:new S
 const PER_PAGE = 20;
 let JOBS = [];
 const $ = s => document.querySelector(s);
+
+// --- état de recherche <-> URL : rend chaque recherche partageable, bookmarkable,
+// et donne le format qu'une future alerte email "suit". replaceState (pas push) :
+// pas de spam d'historique à chaque frappe.
+function readStateFromURL(){
+  try{
+    const p = new URLSearchParams(location.search);
+    if(p.has("q")) state.q = p.get("q");
+    p.getAll("cat").forEach(v=>v && state.cats.add(v));
+    p.getAll("city").forEach(v=>v && state.cities.add(v));
+    p.getAll("tech").forEach(v=>v && state.stacks.add(v));
+    p.getAll("contract").forEach(v=>v && state.contracts.add(v));
+    p.getAll("exp").forEach(v=>v && state.exps.add(v));
+    state.remote = p.get("remote") === "1";
+    state.onlyNew = p.get("new") === "1";
+    if(p.get("sort") === "company") state.sort = "company";
+    const pg = parseInt(p.get("page") || "1", 10);
+    if(Number.isFinite(pg) && pg > 1) state.page = pg;
+  }catch(e){}
+}
+function writeStateToURL(){
+  try{
+    const p = new URLSearchParams();
+    if(state.q.trim()) p.set("q", state.q.trim());
+    state.cats.forEach(v=>p.append("cat", v));
+    state.cities.forEach(v=>p.append("city", v));
+    state.stacks.forEach(v=>p.append("tech", v));
+    state.contracts.forEach(v=>p.append("contract", v));
+    state.exps.forEach(v=>p.append("exp", v));
+    if(state.remote) p.set("remote", "1");
+    if(state.onlyNew) p.set("new", "1");
+    if(state.sort && state.sort !== "date") p.set("sort", state.sort);
+    if(state.page > 1) p.set("page", String(state.page));
+    const qs = p.toString();
+    history.replaceState(null, "", qs ? "?" + qs : location.pathname);
+  }catch(e){}
+}
 // scroll the results into view, but stop just under the sticky search bar
 // (a bare scrollIntoView tucks the first cards behind .controls)
 function scrollToResults(){
@@ -496,6 +534,7 @@ function apply(opts){
   }
   const list = $("#list"); list.innerHTML = ""; list.appendChild(frag);
   renderPager(pages);
+  writeStateToURL();
 }
 
 function renderPager(pages){
@@ -538,7 +577,7 @@ function makeMulti(sel, entries, selected, allLabel){
   const filter = root.querySelector("[data-filter]");
   const labelOf = new Map(entries.map(([v,,l])=>[v, l!=null?l:v]));
   box.innerHTML = entries.map(([v,n,l])=>
-    `<label><input type="checkbox" value="${esc(v)}">${esc(l!=null?l:v)}${n!=null?`<i>${n}</i>`:""}</label>`).join("");
+    `<label><input type="checkbox" value="${esc(v)}"${selected.has(v)?" checked":""}>${esc(l!=null?l:v)}${n!=null?`<i>${n}</i>`:""}</label>`).join("");
   const sync = ()=>{
     const a = [...selected].map(v=>labelOf.get(v)||v);
     summary.textContent = !a.length ? allLabel : a.length===1 ? a[0] : `${a[0]} +${a.length-1}`;
@@ -646,8 +685,11 @@ fetch("jobs.json",{cache:"no-store"}).then(r=>r.json()).then(feed=>{
     `<br><span class="contact">Une offre à ajouter, une remarque, ou juste envie de papoter du Sud&nbsp;? `+
     `Écrivez-moi, ça fait toujours plaisir 🫰 `+
     `<a href="mailto:hello@sudtechjobs.com">✉️ hello@sudtechjobs.com</a></span>`;
+  readStateFromURL();
+  $("#q").value = state.q;
+  $("#sort").value = state.sort;
   initFilters();
-  apply();
+  apply({keepPage:true});
 }).catch(err=>{
   $("#load").textContent = "Impossible de charger jobs.json — lancez `python3 jobboard/build.py` puis servez ce dossier.";
   console.error(err);
