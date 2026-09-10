@@ -578,14 +578,30 @@ def render_offer(j, similar, same_company=None):
             "value": j.get("id") or slug,
         },
     }
-    # `datePosted` is REQUIRED — never emit a JobPosting without it.
-    dp = (posted or "")[:10] or datetime.now(timezone.utc).date().isoformat()
-    ld["datePosted"] = dp
-    try:
-        d0 = datetime.fromisoformat((posted or dp).replace("Z", "+00:00"))
-        ld["validThrough"] = (d0 + timedelta(days=VALID_DAYS)).date().isoformat()
-    except ValueError:
-        pass
+    # `datePosted` is REQUIRED. Prefer our own first-seen date over the source's
+    # `published_at`: WTTJ frequently re-publishes with a months-old date, which
+    # makes a live listing look stale and drags `validThrough` into the past, so
+    # Google for Jobs drops it. Clamp so datePosted is never in the future.
+    now_d = datetime.now(timezone.utc).date()
+
+    def _as_date(s):
+        try:
+            return datetime.fromisoformat(
+                (s or "").replace("Z", "+00:00")).date()
+        except ValueError:
+            return None
+
+    dp_date = (_as_date(j.get("first_seen"))
+               or _as_date(j.get("published_at")) or now_d)
+    if dp_date > now_d:
+        dp_date = now_d
+    ld["datePosted"] = dp_date.isoformat()
+    # A `validThrough` in the past signals a closed posting. This offer is still
+    # in the feed, so keep the window open.
+    vt_date = dp_date + timedelta(days=VALID_DAYS)
+    if vt_date <= now_d:
+        vt_date = now_d + timedelta(days=30)
+    ld["validThrough"] = vt_date.isoformat()
     et = emp_type(j.get("contract"))
     if et:
         ld["employmentType"] = et
