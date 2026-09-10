@@ -413,11 +413,21 @@
 "category": "eng",
 "city": "Remote",
 "company": "Alan",
-"expired_at": null,
+"expired_at": "2026-09-10",
 "facet_slug": "eng",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
 "title": "Software Engineer Internship (6 months)"
+},
+"alan-software-engineer-internship-6-months-from-feb-march-2027-1e9121": {
+"category": "eng",
+"city": "Remote",
+"company": "Alan",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-10",
+"last_seen": "2026-09-10",
+"title": "Software Engineer Internship (6 months from feb/march 2027)"
 },
 "antea-group-eau-ingenieur-etudes-hydrogeologie-a-aubagne-h-f-ant-197-aa867c": {
 "category": "eng",
@@ -2791,10 +2801,10 @@
 },
 "media-start-growth-marketer-9a96d4": {
 "category": "eng",
-"city": "Aix-en-Provence",
+"city": "Marseille",
 "company": "Media-Start",
 "expired_at": null,
-"facet_slug": "eng-aix-en-provence",
+"facet_slug": "eng-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
 "title": "Growth Marketer"
@@ -3733,7 +3743,7 @@
 "category": "eng",
 "city": "Marseille",
 "company": "Sessùn",
-"expired_at": null,
+"expired_at": "2026-09-10",
 "facet_slug": "eng-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
@@ -4654,7 +4664,7 @@
 "city": "Biot",
 "company": "Trainsweateat",
 "expired_at": null,
-"facet_slug": "tech-adjacent-biot",
+"facet_slug": "tech-adjacent",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
 "title": "Chef de Projet Web SEO"
@@ -4663,7 +4673,7 @@
 "category": "tech-adjacent",
 "city": "Biot",
 "company": "Trainsweateat",
-"expired_at": null,
+"expired_at": "2026-09-10",
 "facet_slug": "tech-adjacent-biot",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
@@ -4684,7 +4694,7 @@
 "city": "Biot",
 "company": "Trainsweateat",
 "expired_at": null,
-"facet_slug": "tech-adjacent-biot",
+"facet_slug": "tech-adjacent",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
 "title": "Traffic Manager"
