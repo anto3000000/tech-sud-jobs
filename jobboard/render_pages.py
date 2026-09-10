@@ -302,6 +302,11 @@ ul.jobs li a{display:block;padding:13px 15px;font-family:"Bricolage Grotesque",s
 ul.jobs li a:hover{text-decoration:none;background:var(--card-2)}
 ul.jobs .co{display:block;color:var(--muted);font-size:13px;font-weight:400;margin:3px 0 0}
 footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+footer .social{display:flex;gap:10px;margin:14px 0 0}
+footer .social a{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
+ border:1px solid var(--line);border-radius:8px;color:var(--muted);background:var(--card)}
+footer .social a:hover{color:var(--brand-ink);border-color:var(--brand);text-decoration:none}
+footer .social svg{width:15px;height:15px;fill:currentColor}
 /* company page */
 .cover{height:150px;border-radius:14px;background:var(--card-2) center/cover no-repeat;
  border:1px solid var(--line);margin:8px 0 12px}
@@ -408,6 +413,14 @@ def shell(*, title, description, canonical, head_extra="", body):
   <br><br><a href="/mentions-legales.html">Mentions légales</a> ·
   <a href="/cgu.html">CGU</a> ·
   <a href="/confidentialite.html">Confidentialité</a>
+  <div class="social">
+    <a href="/feed.xml" title="Fil RSS des offres" aria-label="Fil RSS des offres">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415a3.294 3.294 0 100 6.588 3.294 3.294 0 000-6.588zM15.909 24h-4.665c0-6.169-5.075-11.244-11.244-11.244V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/company/sudtechjobs/" target="_blank" rel="noopener" title="sudtechjobs sur LinkedIn" aria-label="sudtechjobs sur LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+  </div>
 </footer>
 </div>
 <div id="cookie-notice" hidden>
