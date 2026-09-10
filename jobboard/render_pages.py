@@ -8,6 +8,7 @@ Reads jobboard/site/jobs.json (built by build.py) and writes, into jobboard/site
     emploi/<facet>.html   filtered list pages (métier × ville, techno × ville, télétravail…)
     emploi/index.html     hub linking every facet page
     sitemap.xml           sitemap index -> sitemap-pages.xml + sitemap-offres.xml
+    feed.xml              RSS 2.0 of the 50 newest postings (Slack/Discord bots, social auto-post)
     robots.txt            points crawlers at the sitemap index
 
 A closed posting is de-listed the Google-for-Jobs way: dropped from the offers
@@ -29,6 +30,7 @@ import re
 import sys
 import unicodedata
 from datetime import datetime, timedelta, timezone
+from email.utils import format_datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.join(HERE, "site")
@@ -367,6 +369,7 @@ def shell(*, title, description, canonical, head_extra="", body):
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{canon}">
 <meta name="twitter:card" content="summary">
+<link rel="alternate" type="application/rss+xml" title="sudtechjobs — dernières offres" href="{feed}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -426,7 +429,7 @@ def shell(*, title, description, canonical, head_extra="", body):
         title=esc(title), desc=esc(description), canon=esc(canonical),
         css=CSS, head_extra=head_extra, body=body,
         home=SITE_URL + "/", hub=SITE_URL + "/emploi/",
-        companies=SITE_URL + "/entreprise/",
+        companies=SITE_URL + "/entreprise/", feed=SITE_URL + "/feed.xml",
     )
 
 
@@ -1638,15 +1641,86 @@ def main():
     with open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8") as fh:
         fh.write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SITE_URL)
 
+    # ---- RSS feed (site/feed.xml) ----------------------------------------
+    # A machine-readable stream of the newest postings. Less a reader feature
+    # than plumbing: Slack/Discord RSS bots in the PACA ecosystems can point a
+    # channel at it, and the social auto-posters read it as their "what's new"
+    # source. Global feed only — per-facet feeds can come later if asked for.
+    RSS_MAX = 50
+
+    def _rfc822(s):
+        try:
+            dt = datetime.fromisoformat((s or "").replace("Z", "+00:00"))
+        except ValueError:
+            return None
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return format_datetime(dt)
+
+    rss_jobs = sorted(
+        jobs,
+        key=lambda j: (j.get("first_seen") or j.get("published_at") or "", j["_slug"]),
+        reverse=True,
+    )[:RSS_MAX]
+
+    rss_items = []
+    for j in rss_jobs:
+        link = "%s/offre/%s.html" % (SITE_URL, j["_slug"])
+        city = j.get("city") or ""
+        is_remote = city == "Remote" or (j.get("remote") or "") in REMOTE_FULL
+        cat_label = CATS.get(j.get("category"), (j.get("category"), ""))[0] or "Tech"
+        meta = " · ".join(x for x in [
+            cat_label, j.get("contract"),
+            "télétravail" if is_remote else (city or None),
+        ] if x)
+        excerpt = re.sub(r"\s+", " ", (j.get("description_excerpt")
+                                      or j.get("description") or "")).strip()
+        if len(excerpt) > 300:
+            excerpt = excerpt[:300].rsplit(" ", 1)[0].rstrip(".,;:") + "…"
+        desc = meta + ((" — " + excerpt) if excerpt else "")
+        pub = _rfc822(j.get("first_seen") or j.get("published_at"))
+        rss_items.append(
+            "<item>"
+            "<title>%s — %s</title>"
+            "<link>%s</link>"
+            '<guid isPermaLink="true">%s</guid>'
+            "%s"
+            "<description>%s</description>"
+            "</item>" % (
+                esc(j.get("title")), esc(j.get("company") or "—"),
+                esc(link), esc(link),
+                ("<pubDate>%s</pubDate>" % pub) if pub else "",
+                esc(desc)))
+
+    rss = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+        "<channel>\n"
+        "<title>sudtechjobs — offres tech en PACA</title>\n"
+        "<link>%s/</link>\n"
+        '<atom:link href="%s/feed.xml" rel="self" type="application/rss+xml"/>\n'
+        "<description>Les dernières offres dev, data, produit &amp; design des "
+        "entreprises tech du sud de la France.</description>\n"
+        "<language>fr-FR</language>\n"
+        "<lastBuildDate>%s</lastBuildDate>\n"
+        "%s\n"
+        "</channel>\n</rss>\n" % (
+            SITE_URL, SITE_URL,
+            format_datetime(datetime.now(timezone.utc)),
+            "\n".join(rss_items)))
+    with open(os.path.join(SITE, "feed.xml"), "w", encoding="utf-8") as fh:
+        fh.write(rss)
+
     # ---- prune stale files -------------------------------------------------
     wipe_html(offre_dir, offer_files | tombstone_files)
     wipe_html(emploi_dir, facet_files)
     wipe_html(entreprise_dir, company_files)
 
     print("render_pages: %d offers, %d tombstones, %d facet pages, %d company pages, "
-          "%d sitemap urls"
+          "%d sitemap urls, feed.xml (%d items)"
           % (len(offer_files), len(tombstone_files), len(facet_files),
-             len(company_files), len(pages) + len(offers)), file=sys.stderr)
+             len(company_files), len(pages) + len(offers), len(rss_items)),
+          file=sys.stderr)
 
 
 if __name__ == "__main__":
