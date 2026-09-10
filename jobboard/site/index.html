@@ -742,7 +742,7 @@ function initFilters(){
 // --- alertes email : la recherche courante (querystring) + un email -> contact
 // "pending" EmailOctopus via le worker. La clé API ne touche jamais le front.
 // voir jobboard/worker/ pour le déploiement ; reporter l'URL déployée ici.
-const ALERT_ENDPOINT = "https://sudtechjobs-alerts.CHANGE-ME.workers.dev/subscribe";
+const ALERT_ENDPOINT = "https://sudtechjobs-alerts.sudtechjobs.workers.dev/subscribe";
 
 function initAlerts(){
   const dlg = $("#alertDlg"), form = $("#alertForm"), msg = $("#alertMsg"),
