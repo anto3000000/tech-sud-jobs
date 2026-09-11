@@ -1043,7 +1043,7 @@
 "category": "eng",
 "city": "Valbonne",
 "company": "Capgemini",
-"expired_at": null,
+"expired_at": "2026-09-11",
 "facet_slug": "eng-valbonne",
 "first_seen": "2026-09-09",
 "last_seen": "2026-09-11",
@@ -2789,11 +2789,21 @@
 "last_seen": "2026-09-11",
 "title": "Consultant SIRH - Gestion ADP (H/F)"
 },
-"linking-talents-developpeur-se-sirh-senior-h-f-16fd6f": {
+"linking-talents-developpeur-java-h-f-e93396": {
 "category": "eng",
 "city": "Marseille",
 "company": "Linking Talents",
 "expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-11",
+"last_seen": "2026-09-11",
+"title": "Développeur Java (H/F)"
+},
+"linking-talents-developpeur-se-sirh-senior-h-f-16fd6f": {
+"category": "eng",
+"city": "Marseille",
+"company": "Linking Talents",
+"expired_at": "2026-09-11",
 "facet_slug": "eng-marseille",
 "first_seen": "2026-09-10",
 "last_seen": "2026-09-11",
@@ -2868,6 +2878,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-11",
 "title": "Customer Success Manager – projets d'adaptation du logement (CDI)"
+},
+"mailinblack-administrateur-systeme-et-reseaux-h-f-c5c743": {
+"category": "eng",
+"city": "Marseille",
+"company": "Mailinblack",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-11",
+"last_seen": "2026-09-11",
+"title": "Administrateur système et réseaux (h/f)"
 },
 "mailinblack-devops-h-f-f3e6ef": {
 "category": "eng",
@@ -3743,7 +3763,7 @@
 "category": "product",
 "city": "Marseille",
 "company": "Prozon",
-"expired_at": null,
+"expired_at": "2026-09-11",
 "facet_slug": "product-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-11",
