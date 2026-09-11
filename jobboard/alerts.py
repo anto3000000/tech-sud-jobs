@@ -252,7 +252,16 @@ def main():
         print("alerts: EMAILOCTOPUS_API_KEY / EMAILOCTOPUS_LIST_ID manquants — abandon.", file=sys.stderr)
         return
     else:
-        contacts = eo_get_contacts()
+        try:
+            contacts = eo_get_contacts()
+        except urllib.error.HTTPError as e:
+            detail = e.read()[:400]
+            print(f"alerts: échec lecture des contacts EmailOctopus ({e.code} {e.reason}): {detail}",
+                  file=sys.stderr)
+            return
+        except Exception as e:
+            print(f"alerts: échec lecture des contacts EmailOctopus: {e}", file=sys.stderr)
+            return
     print(f"alerts: {len(contacts)} contact(s)")
 
     if not args.dry_run and not RESEND_API_KEY:
