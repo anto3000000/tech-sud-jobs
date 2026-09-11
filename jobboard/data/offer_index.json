@@ -9,6 +9,26 @@
 "last_seen": "2026-09-11",
 "title": "Ingénieur technicien support H/F"
 },
+"accenture-france-product-owner-f-h-f296af": {
+"category": "product",
+"city": "Biot",
+"company": "Accenture France",
+"expired_at": null,
+"facet_slug": "product",
+"first_seen": "2026-09-11",
+"last_seen": "2026-09-11",
+"title": "Product Owner F/H"
+},
+"accenture-france-qa-engineer-h-f-767fcd": {
+"category": "eng",
+"city": "Biot",
+"company": "Accenture France",
+"expired_at": null,
+"facet_slug": "eng-biot",
+"first_seen": "2026-09-11",
+"last_seen": "2026-09-11",
+"title": "QA Engineer - H/F"
+},
 "achat-solutions-ingenieur-qa-automatisation-10fa79": {
 "category": "eng",
 "city": "Six-Fours-les-Plages",
@@ -559,6 +579,16 @@
 "last_seen": "2026-09-11",
 "title": "Développeur Java - Systèmes tactiques pour les forces armées F/H"
 },
+"atos-developpeur-logiciel-telecom-c-cpp-h-f-9b1cff": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Atos",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-11",
+"last_seen": "2026-09-11",
+"title": "Développeur Logiciel Télécom C/C++ H/F"
+},
 "atos-devops-h-f-f2a4c1": {
 "category": "eng",
 "city": "Aix-en-Provence",
@@ -969,6 +999,16 @@
 "last_seen": "2026-09-11",
 "title": "Architecte Cloud"
 },
+"capgemini-architecte-logiciel-embarque-bas-niveau-37c1c5": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-11",
+"last_seen": "2026-09-11",
+"title": "Architecte logiciel embarqué bas niveau"
+},
 "capgemini-architecte-solution-3dexperience-37095f": {
 "category": "eng",
 "city": "Aix-en-Provence",
@@ -978,6 +1018,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-11",
 "title": "Architecte Solution 3DEXPERIENCE"
+},
+"capgemini-architecte-solutions-logiciel-aeronautique-defense-43d313": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-11",
+"last_seen": "2026-09-11",
+"title": "Architecte Solutions logiciel Aéronautique/Défense"
 },
 "capgemini-cloud-devops-engineer-50fc56": {
 "category": "eng",
