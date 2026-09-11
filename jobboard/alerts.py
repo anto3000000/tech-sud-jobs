@@ -166,13 +166,23 @@ def save_state(state):
 
 # --- EmailOctopus : lecture des abonnés (pas d'envoi) ---
 
+# api.emailoctopus.com est derriere Cloudflare, dont le pare-feu anti-bot
+# rejette (erreur Cloudflare 1010, pas une erreur EmailOctopus) le
+# User-Agent par defaut de urllib. Un UA "normal" suffit a passer.
+API_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; sudtechjobs-alerts/1.0; +https://sudtechjobs.com)",
+    "Accept": "application/json",
+}
+
+
 def eo_get_contacts():
     contacts, cursor = [], None
     while True:
         url = f"https://api.emailoctopus.com/lists/{EO_LIST_ID}/contacts?limit=100"
         if cursor:
             url += f"&starting_after={cursor}"
-        req = urllib.request.Request(url, headers={"Authorization": f"Bearer {EO_API_KEY}"})
+        req = urllib.request.Request(
+            url, headers={**API_HEADERS, "Authorization": f"Bearer {EO_API_KEY}"})
         with urllib.request.urlopen(req, timeout=20) as r:
             payload = json.loads(r.read())
         batch = payload.get("data", [])
@@ -216,7 +226,8 @@ def send_email(to_addr, subject, html):
     body = json.dumps({"from": ALERT_FROM, "to": [to_addr], "subject": subject, "html": html}).encode()
     req = urllib.request.Request(
         "https://api.resend.com/emails", data=body, method="POST",
-        headers={"Authorization": f"Bearer {RESEND_API_KEY}", "Content-Type": "application/json"},
+        headers={**API_HEADERS, "Authorization": f"Bearer {RESEND_API_KEY}",
+                 "Content-Type": "application/json"},
     )
     with urllib.request.urlopen(req, timeout=20) as r:
         return json.loads(r.read())
