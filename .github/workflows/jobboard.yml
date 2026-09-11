@@ -44,6 +44,9 @@ jobs:
         env:
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
+          EMAILOCTOPUS_LIST_ID: ${{ secrets.EMAILOCTOPUS_LIST_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: ./jobboard/pipeline.sh
 
       - name: Commit refreshed feed
@@ -54,6 +57,7 @@ jobs:
                   jobboard/data/offer_index.json \
                   jobboard/data/wttj_paca.json jobboard/data/ats_jobs.json \
                   jobboard/data/francetravail_paca.json \
+                  jobboard/data/alerts_state.json \
                   jobboard/site/jobs.json
           if git diff --cached --quiet; then
             echo "feed unchanged"

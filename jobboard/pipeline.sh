@@ -38,6 +38,10 @@ echo "::group::render static SEO pages (layer 5)"
 python3 jobboard/render_pages.py
 echo "::endgroup::"
 
+echo "::group::email alerts (layer 6, best effort — needs EMAILOCTOPUS_*/RESEND_API_KEY)"
+python3 jobboard/alerts.py || echo "alerts failed — continuing"
+echo "::endgroup::"
+
 # Layers not in the daily path (slow, rarely change) — run by hand when needed:
 #   python3 jobboard/annuaire/frenchtech_amp.py         # French Tech Aix-Marseille
 #   python3 jobboard/annuaire/frenchtech_cotedazur.py   # French Tech Côte d'Azur / Sophia-Nice
