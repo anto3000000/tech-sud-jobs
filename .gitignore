@@ -23,6 +23,7 @@ jobboard/site/robots.txt
 jobboard/site/mentions-legales.html
 jobboard/site/cgu.html
 jobboard/site/confidentialite.html
+jobboard/site/a-propos.html
 
 # Job board — regenerable artefacts (kept OUT of git; CI rebuilds them)
 jobboard/data/cache/

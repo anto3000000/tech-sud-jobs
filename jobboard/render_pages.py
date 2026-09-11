@@ -410,7 +410,8 @@ def shell(*, title, description, canonical, head_extra="", body):
   <br><br>Une offre à ajouter, une remarque, ou juste envie de papoter du Sud&nbsp;?
   Écrivez-moi, ça fait toujours plaisir 🫰
   <a href="mailto:hello@sudtechjobs.com">✉️ hello@sudtechjobs.com</a>
-  <br><br><a href="/mentions-legales.html">Mentions légales</a> ·
+  <br><br><a href="/a-propos.html">À propos</a> ·
+  <a href="/mentions-legales.html">Mentions légales</a> ·
   <a href="/cgu.html">CGU</a> ·
   <a href="/confidentialite.html">Confidentialité</a>
   <div class="social">
@@ -1008,6 +1009,91 @@ def render_legal(*, slug, title, description, h1, inner):
 
 
 # --------------------------------------------------------------------------- #
+#  à propos                                                                   #
+# --------------------------------------------------------------------------- #
+ABOUT = """
+<p class="sub">Le job board des métiers de la tech dans le sud de la France.</p>
+
+<h2>Pourquoi ce site</h2>
+<p>La tech dans le sud de la France, c'est Sophia-Antipolis, Marseille, Aix, Nice,
+Montpellier, Toulon, des scale-ups, des ESN, des labos et les pôles French Tech
+d'Aix-Marseille et de la Côte d'Azur. Mais quand on cherche un poste tech, tout
+ramène à Paris. sudtechjobs rassemble au même endroit les offres tech, data,
+produit et design de la région PACA (les autres régions du Sud suivront), mises à
+jour tous les jours.</p>
+
+<h2>Qui est derrière</h2>
+<p>Anto. Je travaille dans la tech et j'adore le Sud. C'est un projet perso, fait
+sur mon temps libre. Pas de société derrière, pas de levée, pas d'agenda caché :
+juste l'envie d'un job board du Sud qui soit correct.</p>
+
+<h2>D'où viennent les offres</h2>
+<p>sudtechjobs est un agrégateur. Les annonces sont collectées automatiquement
+depuis&nbsp;:</p>
+<ul>
+<li>Welcome to the Jungle (index public) ;</li>
+<li>les outils de recrutement des entreprises en direct (Greenhouse, Lever, Ashby,
+Teamtailor, Taleez, Recruitee et d'autres) ;</li>
+<li>France Travail ;</li>
+<li>les annuaires French Tech Aix-Marseille et Côte d'Azur, Telecom Valley,
+Aktantis.</li>
+</ul>
+<p>Ce qui est fait dessus&nbsp;:</p>
+<ul>
+<li>un tri tech, data, produit, design par un classifieur maison (la catégorie
+«&nbsp;métier&nbsp;» des sources est trop lacunaire pour s'y fier) ;</li>
+<li>une déduplication quand la même offre apparaît sur plusieurs sources, en
+gardant le lien vers le canal officiel ;</li>
+<li>le retrait des offres expirées&nbsp;: la page devient un cul-de-sac, puis
+disparaît ;</li>
+<li>chaque offre renvoie vers l'annonce d'origine pour postuler. Je ne reçois
+aucune candidature et aucun CV.</li>
+</ul>
+<p>Je ne suis affilié à aucune des entreprises listées. Une offre en trop, une
+erreur, une demande de retrait&nbsp;? Écrivez à
+<a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>, je corrige vite.</p>
+
+<h2>Combien ça coûte</h2>
+<p>Gratuit pour les candidats. Gratuit aussi pour les entreprises, pour l'instant.
+Pas de compte à créer. La mesure d'audience se fait sans cookie ni donnée
+personnelle (Umami). Voir la
+<a href="/confidentialite.html">politique de confidentialité</a>.</p>
+
+<h2>La suite</h2>
+<p>Au programme&nbsp;: des alertes email par recherche enregistrée, plus de villes
+et de régions du Sud, des pages salaires. Un flux
+<a href="/feed.xml">RSS</a> est déjà en ligne. Une idée, une source à ajouter, ou
+juste envie de papoter du Sud 🫰&nbsp;? Écrivez-moi, ça fait toujours plaisir&nbsp;:
+<a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>
+· <a href="https://www.linkedin.com/company/sudtechjobs/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+"""
+
+
+def render_about():
+    canonical = "%s/a-propos.html" % SITE_URL
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "À propos de sudtechjobs",
+        "url": canonical,
+        "publisher": {"@type": "Organization", "name": "sudtechjobs",
+                      "url": SITE_URL + "/"},
+    }
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › À propos</nav>
+<h1>À propos de sudtechjobs</h1>
+<div class="legal">
+{inner}
+</div>
+""".format(home=SITE_URL + "/", inner=ABOUT)
+    return shell(
+        title="À propos | sudtechjobs",
+        description="Qui est derrière sudtechjobs, pourquoi le site existe et d'où "
+                    "viennent les offres d'emploi tech du sud de la France.",
+        canonical=canonical, head_extra=jsonld(ld), body=body)
+
+
+# --------------------------------------------------------------------------- #
 #  company pages                                                              #
 # --------------------------------------------------------------------------- #
 CAT_LABEL = {k: v[0] for k, v in CATS.items()}
@@ -1601,6 +1687,8 @@ def main():
         with open(os.path.join(SITE, slug + ".html"), "w", encoding="utf-8") as fh:
             fh.write(render_legal(slug=slug, title=title, description=desc,
                                   h1=h1, inner=inner))
+    with open(os.path.join(SITE, "a-propos.html"), "w", encoding="utf-8") as fh:
+        fh.write(render_about())
 
     # ---- sitemaps + robots -------------------------------------------------
     # A sitemap index pointing at two children: the browse pages, and a dedicated
@@ -1615,6 +1703,8 @@ def main():
              % SITE_URL,
              '<url><loc>%s/emploi/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>'
              % SITE_URL]
+    pages.append('<url><loc>%s/a-propos.html</loc><changefreq>monthly</changefreq>'
+                 '<priority>0.5</priority></url>' % SITE_URL)
     for slug in ("mentions-legales", "cgu", "confidentialite"):
         pages.append('<url><loc>%s/%s.html</loc><changefreq>yearly</changefreq>'
                      '<priority>0.2</priority></url>' % (SITE_URL, slug))
