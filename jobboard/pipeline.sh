@@ -42,6 +42,13 @@ echo "::group::email alerts (layer 6, best effort — needs EMAILOCTOPUS_*/RESEN
 python3 jobboard/alerts.py || echo "alerts failed — continuing"
 echo "::endgroup::"
 
+echo "::group::LinkedIn daily card (layer 7, best effort)"
+python3 jobboard/linkedin_post.py --generate || echo "LinkedIn card generation failed — continuing"
+echo "::endgroup::"
+# Posting to LinkedIn (jobboard/linkedin_post.py --publish) needs the card's
+# image live on sudtechjobs.com first, so it runs as its own workflow step
+# after the Pages deploy — see .github/workflows/jobboard.yml.
+
 # Layers not in the daily path (slow, rarely change) — run by hand when needed:
 #   python3 jobboard/annuaire/frenchtech_amp.py         # French Tech Aix-Marseille
 #   python3 jobboard/annuaire/frenchtech_cotedazur.py   # French Tech Côte d'Azur / Sophia-Nice

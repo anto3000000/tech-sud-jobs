@@ -32,6 +32,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install Pillow (LinkedIn card rendering)
+        run: pip install "Pillow==11.3.0"
+
       - name: Cache WTTJ detail responses
         uses: actions/cache@v4
         with:
@@ -58,6 +61,7 @@ jobs:
                   jobboard/data/wttj_paca.json jobboard/data/ats_jobs.json \
                   jobboard/data/francetravail_paca.json \
                   jobboard/data/alerts_state.json \
+                  jobboard/data/linkedin_state.json \
                   jobboard/site/jobs.json
           if git diff --cached --quiet; then
             echo "feed unchanged"
@@ -74,3 +78,11 @@ jobs:
 
       - id: deploy
         uses: actions/deploy-pages@v4
+
+      - name: Publish daily LinkedIn card
+        # Runs after deploy so the card's image is actually live at
+        # sudtechjobs.com/linkedin/<date>.png — Buffer fetches it by URL.
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
+        run: python3 jobboard/linkedin_post.py --publish || echo "LinkedIn publish failed — continuing"
