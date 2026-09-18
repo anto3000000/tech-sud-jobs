@@ -392,7 +392,9 @@ def cmd_publish(args):
         return 0
 
     meta = json.loads(meta_path.read_text())
-    caption = Path(meta["caption_path"]).read_text()
+    # caption_path est stocké relatif à ROOT (jobboard/), pas au cwd du process
+    # — le step "Publish" tourne depuis la racine du repo, d'où le join ici.
+    caption = (ROOT / meta["caption_path"]).read_text()
 
     # Input inlined as a GraphQL literal (rather than a $variable) since
     # Buffer's exact input-object type name isn't confirmed — this mirrors
