@@ -114,6 +114,12 @@ REMOTE_FR = {
     "partial": "hybride", "punctual": "ponctuel", "none": "sur site",
     "no": "sur site", "unknown": "", "": "",
 }
+# WTTJ's own org.name is stale for a few orgs (rebrand never propagated there,
+# even in their detail API) while slug / apply_url / description all agree on
+# the real name. Patch those by slug rather than trusting org.name blindly.
+ORG_NAME_FIXES = {
+    "tiime": "Tiime",
+}
 
 
 def normalize(hit, category):
@@ -146,7 +152,7 @@ def normalize(hit, category):
     return {
         "id": "wttj:%s" % hit.get("objectID"),
         "title": (hit.get("name") or "").strip(),
-        "company": org.get("name") or org_slug or "?",
+        "company": ORG_NAME_FIXES.get(org_slug) or org.get("name") or org_slug or "?",
         "company_slug": org_slug,
         "city": o0.get("city"),
         "cities": cities,

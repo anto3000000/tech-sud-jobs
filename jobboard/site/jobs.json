@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T12:51:17+00:00",
+  "generated_at": "2026-09-11T15:43:23+00:00",
   "region": "Provence-Alpes-Côte d'Azur",
   "count": 474,
   "companies": 119,
@@ -287,7 +287,7 @@
     {
       "id": "wttj:4271912",
       "title": "Head of Security Engineer - Paris (F/H)",
-      "company": "Salsa",
+      "company": "Tiime",
       "company_slug": "tiime",
       "city": "Marseille",
       "cities": [
@@ -337,7 +337,7 @@
       "enriched_at": "2026-09-11T12:50:01+00:00",
       "first_seen": "2026-09-11T09:54:25+00:00",
       "is_new": true,
-      "slug": "salsa-head-of-security-engineer-paris-f-h-9af7c9"
+      "slug": "tiime-head-of-security-engineer-paris-f-h-9af7c9"
     },
     {
       "id": "wttj:1074554",
@@ -8157,7 +8157,7 @@
     {
       "id": "wttj:4253488",
       "title": "Développeur commercial (H/F)",
-      "company": "Salsa",
+      "company": "Tiime",
       "company_slug": "tiime",
       "city": "Marseille",
       "cities": [
@@ -8200,7 +8200,7 @@
       "enriched_at": "2026-09-11T12:50:01+00:00",
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": true,
-      "slug": "salsa-developpeur-commercial-h-f-de6fdf"
+      "slug": "tiime-developpeur-commercial-h-f-de6fdf"
     },
     {
       "id": "wttj:4253415",
