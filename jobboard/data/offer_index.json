@@ -23,7 +23,7 @@
 "category": "eng",
 "city": "Biot",
 "company": "Accenture France",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "eng-biot",
 "first_seen": "2026-09-11",
 "last_seen": "2026-09-18",
@@ -233,7 +233,7 @@
 "category": "eng",
 "city": "Remote",
 "company": "Alan",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "eng",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
@@ -313,7 +313,7 @@
 "category": "eng",
 "city": "Remote",
 "company": "Alan",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "eng",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
@@ -629,6 +629,16 @@
 "last_seen": "2026-09-18",
 "title": "Consultant CyberSécurité Sénior (F/H)"
 },
+"atos-developpeur-java-confirme-f-h-16ca29": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Atos",
+"expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur Java Confirmé (F/H)"
+},
 "atos-developpeur-java-systemes-tactiques-pour-les-forces-armees-f-h-4b7c51": {
 "category": "eng",
 "city": "Six-Fours-Les-Plages",
@@ -663,9 +673,19 @@
 "category": "eng",
 "city": "Valbonne",
 "company": "Atos",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "eng-valbonne",
 "first_seen": "2026-09-05",
+"last_seen": "2026-09-18",
+"title": "Ingénieur DevOps Expérimenté (F/H)"
+},
+"atos-ingenieur-devops-experimente-f-h-fffffb": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Atos",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
 "last_seen": "2026-09-18",
 "title": "Ingénieur DevOps Expérimenté (F/H)"
 },
@@ -843,7 +863,7 @@
 "category": "product",
 "city": "Marseille",
 "company": "Bluecoders",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "product-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
@@ -1138,6 +1158,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-14",
 "title": "Administratrice / Administrateur Systèmes & Réseaux"
+},
+"capgemini-analyste-soc-stage-55fa19": {
+"category": "eng",
+"city": "Sophia Antipolis",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-sophia-antipolis",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Analyste SOC - Stage"
 },
 "capgemini-architecte-cloud-c0c333": {
 "category": "eng",
@@ -2239,6 +2269,26 @@
 "last_seen": "2026-09-18",
 "title": "Développeur Java /Spring H/F @eXaltProvence"
 },
+"exalt-ingenieur-electronique-dessais-h-f-0b6c27": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "eXalt",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur électronique d’essais H/F"
+},
+"exalt-ingenieur-systemes-equipements-electroniques-h-f-481e36": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "eXalt",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur Systèmes & Équipements Électroniques H/F"
+},
 "exalt-product-designer-h-f-exalt-azur-64063f": {
 "category": "design",
 "city": "Valbonne",
@@ -2794,7 +2844,7 @@
 "city": "Marseille",
 "company": "Hello Pomelo",
 "expired_at": null,
-"facet_slug": "product-marseille",
+"facet_slug": "product",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "Product Builder - Expérience Digitale (DXP)"
@@ -3144,7 +3194,7 @@
 "city": "Marseille",
 "company": "La Sécurité Sociale",
 "expired_at": null,
-"facet_slug": "product-marseille",
+"facet_slug": "product",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "PRODUCT OWNER / REFERENT·E FONCTIONNEL·LE / BUSINESS ANALYST"
@@ -3293,11 +3343,21 @@
 "category": "eng",
 "city": "Marseille",
 "company": "Mailinblack",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "eng-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "DevOps (h/f)"
+},
+"mailinblack-sre-h-f-09fd30": {
+"category": "eng",
+"city": "Marseille",
+"company": "Mailinblack",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "SRE (h/f)"
 },
 "matawan-qa-tester-fe6053": {
 "category": "eng",
@@ -4423,7 +4483,7 @@
 "category": "eng",
 "city": "Marseille",
 "company": "Salsa",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "eng-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
@@ -4433,7 +4493,7 @@
 "category": "eng",
 "city": "Marseille",
 "company": "Salsa",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "eng-marseille",
 "first_seen": "2026-09-11",
 "last_seen": "2026-09-18",
@@ -4648,6 +4708,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-15",
 "title": "Technicien informatique & Support utilisateur polyvalent H/F (13)"
+},
+"smg-swiss-marketplace-group-ex-ricardo-data-engineer-hybrid-work-cfa35c": {
+"category": "data",
+"city": "Valbonne",
+"company": "SMG swiss marketplace group (ex Ricardo)",
+"expired_at": null,
+"facet_slug": "data-valbonne",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data Engineer | Hybrid work"
 },
 "socomec-technico-commercial-itinerant-f-h-x-936f70": {
 "category": "tech-adjacent",
@@ -5559,6 +5629,16 @@
 "last_seen": "2026-09-16",
 "title": "Tech Lead Java/Angular (F/H)"
 },
+"the-adecco-group-tech-lead-java-angular-h-f-5dbd90": {
+"category": "eng",
+"city": "Toulon",
+"company": "The Adecco Group",
+"expired_at": null,
+"facet_slug": "eng-toulon",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Tech Lead Java / Angular (H/F)"
+},
 "the-product-crew-tech-product-recruiter-independant-e-engineering-ai-p-149a98": {
 "category": "tech-adjacent",
 "city": "Marseille",
@@ -5578,6 +5658,26 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "Tech Recruiter - Engineering, AI"
+},
+"tiime-developpeur-commercial-h-f-de6fdf": {
+"category": "eng",
+"city": "Marseille",
+"company": "Tiime",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-05",
+"last_seen": "2026-09-18",
+"title": "Développeur commercial (H/F)"
+},
+"tiime-head-of-security-engineer-paris-f-h-9af7c9": {
+"category": "eng",
+"city": "Marseille",
+"company": "Tiime",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-11",
+"last_seen": "2026-09-18",
+"title": "Head of Security Engineer - Paris (F/H)"
 },
 "trainsweateat-chef-de-projet-web-seo-1ed14d": {
 "category": "tech-adjacent",
