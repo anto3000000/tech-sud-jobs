@@ -2012,6 +2012,108 @@ def render_sophia_guide(jobs, generated):
                     "réellement diffusées sur sudtechjobs.")
 
 
+def render_reconversion_guide(jobs, generated):
+    """Unlike the other guides, there's no 'career change' field on a job posting —
+    this one leans on general knowledge + the few real anchors the board does have
+    (junior/débutant volume, stage & alternance), not a fresh stats breakdown."""
+    slug = "guide-reconversion-tech-paca"
+    jr = compute_junior_stats(jobs)
+    it = compute_intern_stats(jobs)
+    pct_undisclosed = round(100 * jr["n_undisclosed"] / jr["n_total"]) if jr["n_total"] else 0
+
+    faq = [
+        ("Une reconversion vers la tech est-elle réaliste en PACA, ou faut-il "
+         "partir à Paris ?",
+         "<p>Réaliste, mais avec un marché plus restreint qu’à Paris&nbsp;: moins "
+         "d’offres au total, et une bonne part du volume junior/débutant vient d’ESN et "
+         "de grands groupes (voir le <a href=\"/guide-premier-emploi-junior-tech-paca."
+         "html\">guide premier emploi junior</a>) plutôt que de startups en forte "
+         "croissance. Ce n’est pas un obstacle en soi — l’essentiel des embauches en "
+         "reconversion se fait via ce type d’employeur, pas seulement en startup — mais "
+         "le volume d’offres à cibler est mécaniquement plus réduit qu’en Île-de-France.</p>"),
+
+        ("Faut-il repasser par une formation, ou peut-on candidater directement "
+         "avec un projet perso ?",
+         "<p>Les deux se voient. Un projet perso solide (une vraie application "
+         "déployée, du code public, pas un simple tutoriel terminé) peut suffire à "
+         "décrocher un entretien, surtout côté développement web&nbsp;; mais une formation "
+         "structurée (bootcamp, titre professionnel, alternance) reste le chemin le plus "
+         "prévisible pour la majorité, notamment parce qu’elle inclut souvent un stage ou "
+         "une mission qui sert de premier CDI. %d%% des offres du site ne précisent "
+         "aucune expérience minimale&nbsp;: beaucoup ne filtrent pas aussi strictement sur "
+         "le diplôme ou le parcours qu’on pourrait le croire.</p>" % pct_undisclosed),
+
+        ("Quelles formations reconversion existent dans le Sud ?",
+         "<p>Plusieurs écoles et organismes forment au développement et à la data dans la "
+         "région&nbsp;: 42 Nice, Epitech, Ynov, Simplon (souvent en alternance ou avec des "
+         "frais réduits, orienté profils en reconversion) et Polytech pour un format plus "
+         "académique. Comparer leur taux de retour à l’emploi réel et leurs partenariats "
+         "entreprises locaux avant de s’engager reste le meilleur réflexe&nbsp;: tous ne se "
+         "valent pas sur ce point.</p>"),
+
+        ("Quels métiers sont les plus accessibles en reconversion ?",
+         "<p>Le développement web reste le point d’entrée le plus courant&nbsp;: c’est "
+         "aussi, de loin, le métier avec le plus d’offres débutant et de stages/"
+         "alternances sur sudtechjobs (voir les guides "
+         "<a href=\"/guide-premier-emploi-junior-tech-paca.html\">premier emploi</a> et "
+         "<a href=\"/guide-stage-alternance-tech-paca.html\">stage &amp; alternance</a>). "
+         "La data et le support technique (QA, no-code) sont d’autres portes d’entrée "
+         "courantes, souvent perçues comme moins verrouillées sur un diplôme d’ingénieur "
+         "que les postes de développement senior.</p>"),
+
+        ("Quelles entreprises embauchent des profils en reconversion en PACA ?",
+         "<p>Le board ne permet pas d’identifier ça directement&nbsp;: aucune offre ne se "
+         "déclare « ouverte à la reconversion ». Une bonne indication indirecte&nbsp;: les "
+         "entreprises qui recrutent le plus de profils débutants (ESN comme Meritis ou "
+         "Capgemini, voir le <a href=\"/guide-premier-emploi-junior-tech-paca.html\">guide "
+         "premier emploi</a>) ont en général des process de recrutement junior moins "
+         "centrés sur le diplôme d’origine que sur les compétences démontrées en "
+         "entretien technique — c’est une inférence raisonnable, pas une donnée mesurée.</p>"),
+
+        ("Le diplôme compte-t-il vraiment moins en reconversion qu’ailleurs ?",
+         "<p>Sur le papier, oui&nbsp;: la majorité des offres du site (plus de la moitié) "
+         "ne précisent aucun niveau d’études. Dans les faits, dès qu’un niveau est "
+         "affiché, c’est très souvent un bac+5&nbsp;— même sur des postes qui acceptent "
+         "des débutants. Le diplôme pèse donc moins comme filtre explicite que comme "
+         "défaut implicite du recruteur&nbsp;: à combler par un dossier de compétences "
+         "concret plutôt qu’à contourner en espérant qu’il ne soit pas remarqué.</p>"),
+
+        ("Combien de temps ça prend, entre la décision et le premier poste ?",
+         "<p>Compter, dans les grandes lignes&nbsp;: quelques mois de formation intensive "
+         "(bootcamp) à un an ou plus en alternance, puis une recherche de premier poste "
+         "qui peut prendre de quelques semaines à plusieurs mois selon le réseau déjà "
+         "construit pendant la formation — le stage ou la mission de fin de formation "
+         "reste souvent le raccourci le plus direct vers un premier CDI.</p>"),
+
+        ("Comment mettre toutes les chances de son côté avec sudtechjobs ?",
+         "<p>Suivre les offres <a href=\"/guide-premier-emploi-junior-tech-paca.html\">"
+         "premier emploi</a> et <a href=\"/guide-stage-alternance-tech-paca.html\">stage "
+         "&amp; alternance</a> plutôt que de se limiter aux intitulés « développeur "
+         "confirmé »&nbsp;; regarder les fiches entreprise pour repérer celles qui "
+         "recrutent en volume (souvent plus ouvertes à un parcours atypique qu’une petite "
+         "structure qui recrute un seul profil très spécifique)&nbsp;; et créer une alerte "
+         "email sur une recherche large (métier + « débutant ») pour ne rien rater sans "
+         "devoir repasser tous les jours.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide reconversion",
+        h1="Reconversion vers la tech en PACA en 2026&nbsp;: par où commencer&nbsp;?",
+        intro="Formations, métiers accessibles, diplôme ou pas&nbsp;: ce que montrent "
+              "les offres réellement diffusées sur <a href=\"%s/\">sudtechjobs</a>, et ce "
+              "qu’il faut savoir en plus, quand on change de métier vers la tech dans le "
+              "Sud." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/guide-premier-emploi-junior-tech-paca.html">Guide premier '
+                   'emploi</a> · <a href="/guide-stage-alternance-tech-paca.html">Guide '
+                   'stage &amp; alternance</a>.</p>',
+        title="Reconversion vers la tech en PACA en 2026 : par où commencer | sudtechjobs",
+        description="Formations, métiers accessibles, entreprises qui recrutent des "
+                    "profils juniors : ce qu'il faut savoir pour une reconversion vers "
+                    "la tech dans le Sud de la France.")
+
+
 # --------------------------------------------------------------------------- #
 #  company pages                                                              #
 # --------------------------------------------------------------------------- #
@@ -2612,7 +2714,8 @@ def main():
     # ---- guides (FAQ articles, site root + /guides/ hub) -------------------
     guides_meta = []
     for build_guide in (render_salary_guide, render_remote_guide, render_hiring_guide,
-                        render_intern_guide, render_junior_guide, render_sophia_guide):
+                        render_intern_guide, render_junior_guide, render_sophia_guide,
+                        render_reconversion_guide):
         guide_slug, guide_html, card_title, card_desc = build_guide(jobs, generated)
         guides_meta.append((guide_slug, card_title, card_desc))
         with open(os.path.join(SITE, guide_slug + ".html"), "w", encoding="utf-8") as fh:
