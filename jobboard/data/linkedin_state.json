@@ -4,7 +4,12 @@
     "eng-13": "2026-09-17",
     "eng-06": "2026-09-18",
     "eng-83": "2026-09-18",
-    "eng-84": "2026-09-18"
+    "eng-84": "2026-09-18",
+    "eng-paca": "2026-09-18",
+    "data-13": "2026-09-18",
+    "data-06": "2026-09-18",
+    "data-83": "2026-09-18",
+    "data-paca": "2026-09-18"
   },
   "recent_slugs": {
     "atos-developpeur-logiciel-telecom-c-cpp-h-f-9b1cff": "2026-09-17",
@@ -26,7 +31,32 @@
     "cba-informatique-administrateur-systemes-et-reseaux-sysops-h-f-27bf3d": "2026-09-18",
     "b-hive-ingenieur-securite-exploitation-nucleaire-h-f-87dbe7": "2026-09-18",
     "cba-informatique-ingenieur-devsecops-h-f-fe6b25": "2026-09-18",
-    "cgi-tech-lead-api-f-h-1d7693": "2026-09-18"
+    "cgi-tech-lead-api-f-h-1d7693": "2026-09-18",
+    "atos-ingenieur-devops-experimente-f-h-fffffb": "2026-09-18",
+    "bpce-solutions-informatiques-techlead-api-java-espace-client-particuli-ebdb3d": "2026-09-18",
+    "exalt-ingenieur-electronique-dessais-h-f-0b6c27": "2026-09-18",
+    "exalt-ingenieur-systemes-equipements-electroniques-h-f-481e36": "2026-09-18",
+    "mailinblack-sre-h-f-09fd30": "2026-09-18",
+    "sopra-steria-data-ingenieur-e-snowflake-experimente-e-developpement-re-7992b7": "2026-09-18",
+    "cs-responsable-avant-vente-liaisons-de-donnees-tactiques-defense-et-se-b6e010": "2026-09-18",
+    "capgemini-business-analyst-stage-8032df": "2026-09-18",
+    "sopra-steria-expert-e-openshift-genai-aix-en-provence-066c2f": "2026-09-18",
+    "bpce-solutions-informatiques-data-engineer-f-h-a102ad": "2026-09-18",
+    "smg-swiss-marketplace-group-ex-ricardo-data-engineer-hybrid-work-cfa35c": "2026-09-18",
+    "capgemini-business-analyst-386989": "2026-09-18",
+    "meritis-business-analyst-h-f-fcc301": "2026-09-18",
+    "schneider-electric-lead-solution-architect-industrial-ai-data-platform-163c89": "2026-09-18",
+    "atos-business-analyst-experimente-f-h-c6c3cf": "2026-09-18",
+    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-c-23817f": "2026-09-18",
+    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-e-4515d1": "2026-09-18",
+    "sonovision-groupe-ortec-codificateur-otan-cb209a": "2026-09-18",
+    "agpm-data-analyst-h-f-08f0ec": "2026-09-18",
+    "naval-group-fr-architecte-logiciel-liaisons-de-donnees-tactiques-h-f-95929a": "2026-09-18",
+    "bpce-solutions-informatiques-manager-leader-adjoint-produit-data-solut-bfe7ed": "2026-09-18",
+    "bpce-solutions-informatiques-manager-leader-adjoint-produit-data-usage-c3742e": "2026-09-18",
+    "cgi-data-engineer-snowflake-f-h-fd312b": "2026-09-18",
+    "keyrus-data-engineer-databricks-h-f-nb-59841f": "2026-09-18",
+    "simplon-formateur-rice-ia-data-python-mlops-b569b2": "2026-09-18"
   },
   "last_published_date": "2026-09-18"
 }
