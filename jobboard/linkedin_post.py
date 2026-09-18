@@ -436,7 +436,13 @@ def cmd_publish(args):
 def cmd_generate(args):
     date = datetime.now(timezone.utc).date().isoformat()
     state = load_state()
-    if not args.dry_run and not args.force and state.get("last_generated_date") == date:
+    # image/légende du jour ne sont pas committés (gitignore) : sur un nouveau
+    # checkout (ex. relance CI après un run précédent qui avait déjà généré
+    # mais planté avant --publish), le fichier a disparu même si l'état dit
+    # "déjà fait" — dans ce cas on régénère plutôt que de laisser --publish
+    # bredouille.
+    already_done = state.get("last_generated_date") == date and (OUT_DATA_DIR / f"{date}.json").exists()
+    if not args.dry_run and not args.force and already_done:
         print(f"linkedin_post: déjà généré aujourd'hui ({date}) — on saute.")
         return 0
 
