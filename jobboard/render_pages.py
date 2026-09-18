@@ -1288,7 +1288,7 @@ def render_salary_guide(jobs, generated):
          "d’avancer dans un process pour découvrir un écart trop grand à la fin.</p>"),
     ]
 
-    return slug, _render_faq_guide(
+    return (slug,) + _render_faq_guide(
         slug=slug, breadcrumb="Guide salaires tech PACA",
         h1="Quel salaire pour un poste tech en PACA en 2026&nbsp;? (dev, data, produit, design)",
         intro="Développeur, data/IA, produit, design&nbsp;: combien ça paie à Marseille, Aix, "
@@ -1320,24 +1320,28 @@ def _render_faq_guide(*, slug, breadcrumb, h1, intro, faq, generated, links_html
         "@type": "FAQPage",
         "mainEntity": [{
             "@type": "Question", "name": q,
-            "acceptedAnswer": {"@type": "Answer", "answerText": re.sub(r"<[^>]+>", "", a)},
+            "acceptedAnswer": {"@type": "Answer",
+                               "answerText": re.sub(r"<[^>]+>", "", a).replace("&nbsp;", " ")},
         } for q, a in faq],
     }
 
     body = """
-<nav class="bc"><a href="{home}">Accueil</a> › {breadcrumb}</nav>
+<nav class="bc"><a href="{home}">Accueil</a> › <a href="{home}guides/">Guides</a> › {breadcrumb}</nav>
 <h1>{h1}</h1>
 <div class="legal">
 <p class="upd">Chiffres recalculés à chaque mise à jour du site — dernière génération&nbsp;: {gen}.</p>
 <p class="sub">{intro}</p>
 {faq}
 {links}
+<p class="sub"><a href="{home}guides/">← Tous les guides sudtechjobs</a></p>
 </div>
 """.format(home=SITE_URL + "/", breadcrumb=esc(breadcrumb), h1=h1, gen=esc(generated),
            intro=intro, faq=faq_html, links=links_html)
 
-    return shell(title=title, description=description, canonical=canonical,
-                 head_extra=jsonld(ld), body=body)
+    card_title = h1.replace("&nbsp;", " ")
+    html = shell(title=title, description=description, canonical=canonical,
+                head_extra=jsonld(ld), body=body)
+    return html, card_title, description
 
 
 def _remote_bucket(j):
@@ -1470,7 +1474,7 @@ def render_remote_guide(jobs, generated):
          "plus.</p>"),
     ]
 
-    return slug, _render_faq_guide(
+    return (slug,) + _render_faq_guide(
         slug=slug, breadcrumb="Guide télétravail tech PACA",
         h1="Télétravail dans la tech en PACA en 2026&nbsp;: quelles entreprises, quel rythme&nbsp;?",
         intro="Full remote, hybride, ponctuel&nbsp;: quelle part des offres tech du Sud propose "
@@ -1479,12 +1483,171 @@ def render_remote_guide(jobs, generated):
               "sur <a href=\"%s/\">sudtechjobs</a>." % SITE_URL,
         faq=faq, generated=generated,
         links_html='<p class="sub">Voir directement les offres&nbsp;? '
-                   '<a href="/emploi/teletravail.html">Télétravail</a> · '
-                   '<a href="/guide-salaires-tech-paca.html">Guide des salaires tech PACA</a>.</p>',
+                   '<a href="/emploi/teletravail.html">Télétravail</a>.</p>',
         title="Télétravail tech en PACA en 2026 : quelles entreprises, quel rythme | sudtechjobs",
         description="Full remote, hybride, ponctuel : quelle part des offres tech en PACA "
                     "propose du télétravail, pour quels métiers, et quelles entreprises "
                     "recrutent en ce moment sans exiger d'être sur site ?")
+
+
+def compute_hiring_stats(jobs):
+    """Recomputed on every build, like the other guides — a live snapshot, not a ranking."""
+    counts = Counter()
+    slug_by_company = {}
+    for j in jobs:
+        c = j.get("company")
+        counts[c] += 1
+        if j.get("_company_slug"):
+            slug_by_company[c] = j["_company_slug"]
+
+    by_cat = {cat: Counter() for cat in CATS}
+    for j in jobs:
+        cat = j.get("category")
+        if cat in by_cat:
+            by_cat[cat][j.get("company")] += 1
+
+    by_zone = {zone: Counter() for zone in SALARY_ZONES}
+    for j in jobs:
+        z = CITY_ZONE.get(j.get("city"))
+        if z:
+            by_zone[z][j.get("company")] += 1
+
+    return {
+        "n_total": len(jobs), "n_companies": len(counts),
+        "overall_top": counts.most_common(10),
+        "by_cat_top": {cat: by_cat[cat].most_common(5) for cat in CATS},
+        "by_zone_top": {zone: by_zone[zone].most_common(3) for zone in SALARY_ZONES},
+        "slug_by_company": slug_by_company,
+    }
+
+
+def _company_link(name, slugs):
+    slug = slugs.get(name)
+    if slug:
+        return '<a href="/entreprise/%s.html">%s</a>' % (esc(slug), esc(name))
+    return "<b>%s</b>" % esc(name)
+
+
+def render_hiring_guide(jobs, generated):
+    slug = "guide-entreprises-qui-recrutent-tech-paca"
+    st = compute_hiring_stats(jobs)
+    slugs = st["slug_by_company"]
+
+    def name_list(rows, with_n=True):
+        if not rows:
+            return "pas assez d’offres pour dégager une tendance nette en ce moment"
+        return ", ".join(
+            "%s%s" % (_company_link(c, slugs),
+                      " (%d offre%s)" % (n, "s" if n > 1 else "") if with_n else "")
+            for c, n in rows)
+
+    top10_html = "<ol style=\"margin:6px 0 13px;padding-left:20px\">%s</ol>" % "".join(
+        "<li>%s — %d offre%s ouvertes</li>" % (_company_link(c, slugs), n, "s" if n > 1 else "")
+        for c, n in st["overall_top"])
+
+    cat_list = "".join(
+        "<li><b>%s</b> — %s</li>" % (esc(CATS[cat][0]), name_list(st["by_cat_top"][cat]))
+        for cat in ("eng", "data", "product", "design", "tech-adjacent")
+        if st["by_cat_top"][cat])
+
+    zone_list = "".join(
+        "<li><b>%s</b> — %s</li>" % (esc(zone), name_list(st["by_zone_top"][zone]))
+        for zone in SALARY_ZONES if st["by_zone_top"][zone])
+
+    faq = [
+        ("Quelles entreprises tech recrutent le plus en PACA en ce moment ?",
+         "<p>Sur les %d offres tech, data, produit et design actuellement diffusées sur "
+         "sudtechjobs (réparties sur %d entreprises), les 10 employeurs avec le plus "
+         "d’offres ouvertes en ce moment&nbsp;:</p>%s"
+         "<p>C’est un volume d’offres publiées, pas un classement qualité employeur ni une "
+         "recommandation&nbsp;: une grosse entreprise avec beaucoup de turnover peut publier "
+         "plus d’offres qu’une petite boîte qui recrute rarement mais dans de bonnes "
+         "conditions.</p>" % (st["n_total"], st["n_companies"], top10_html)),
+
+        ("Ce classement est-il figé ?",
+         "<p>Non, il est recalculé à chaque mise à jour du site à partir des offres "
+         "réellement en ligne&nbsp;: une entreprise qui pourvoit ses postes ou arrête de "
+         "recruter en sort, une autre qui ouvre une campagne de recrutement y entre. Ce "
+         "n’est pas une liste d’entreprises figée à surveiller une fois pour toutes.</p>"),
+
+        ("Qui recrute le plus en développement, data ou produit ?",
+         "<p>Le classement change sensiblement selon le métier&nbsp;:</p><ul>%s</ul>"
+         "<p>Les gros volumes en développement viennent surtout de l’industrie (défense, "
+         "naval) et des ESN&nbsp;; la data et le produit sont davantage portés par des "
+         "éditeurs et des scale-ups.</p>" % cat_list),
+
+        ("Marseille, Aix, Sophia Antipolis, Toulon : les mêmes entreprises "
+         "recrutent-elles partout ?",
+         "<p>Non, chaque bassin d’emploi a sa propre dominante&nbsp;:</p><ul>%s</ul>"
+         "<p>C’est souvent plus révélateur que le classement global&nbsp;: une entreprise "
+         "très présente dans le top 10 national du Sud peut être quasi absente d’une ville "
+         "donnée, et inversement.</p>" % zone_list),
+
+        ("Pourquoi des groupes industriels comme Thales ou Naval Group apparaissent "
+         "dans une recherche « tech » ?",
+         "<p>Parce qu’ils en sont, dans le Sud plus qu’ailleurs&nbsp;: Sophia Antipolis et "
+         "le bassin toulonnais concentrent une grosse activité d’ingénierie logicielle "
+         "embarquée, systèmes et cybersécurité pour la défense et le naval — des postes de "
+         "développeur, d’ingénieur systèmes ou de data au même titre qu’en startup, "
+         "simplement chez un industriel plutôt qu’un éditeur. Le classement les inclut "
+         "parce que le poste est réellement technique, pas parce que l’entreprise est "
+         "labellisée « tech ».</p>"),
+
+        ("ESN vs entreprises qui recrutent en direct : comment les distinguer "
+         "dans cette liste ?",
+         "<p>Une bonne partie du volume vient de sociétés de conseil informatique (ESN) qui "
+         "recrutent pour ensuite placer le profil chez un client — Sopra Steria, Capgemini, "
+         "CGI, Groupe SII, Atos, Keyrus ou eXalt en sont des exemples connus. En face, des "
+         "entreprises comme Alan, Thales ou Naval Group recrutent en direct&nbsp;: vous "
+         "travaillez pour elles, pas pour un client qu’elles vous affectent. Ni l’un ni "
+         "l’autre n’est un meilleur choix dans l’absolu&nbsp;: l’ESN donne de la variété de "
+         "missions et souvent plus de flexibilité géographique, le direct donne plus de "
+         "visibilité sur le produit final et l’équipe. À vérifier en entretien si l’intitulé "
+         "de poste ne le précise pas.</p>"),
+
+        ("Comment être alerté quand une de ces entreprises publie une nouvelle offre ?",
+         "<p>La fiche de chaque entreprise (accessible depuis <a href=\"/entreprise/\">la "
+         "liste des entreprises</a>) liste ses offres du moment. Pour ne rien rater "
+         "automatiquement&nbsp;: une alerte email sur une recherche enregistrée (bouton "
+         "« recevoir ces offres par email » sur la page d’accueil), ou le "
+         "<a href=\"/feed.xml\">flux RSS</a> de sudtechjobs.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide entreprises qui recrutent",
+        h1="Quelles entreprises tech recrutent le plus en PACA en 2026&nbsp;?",
+        intro="Thales, Naval Group, Alan, Sopra Steria, Capgemini&nbsp;: qui recrute vraiment "
+              "dans la tech en PACA en ce moment, pour quels métiers et dans quelle ville&nbsp;? "
+              "Classement calculé à partir des offres réellement diffusées sur "
+              "<a href=\"%s/\">sudtechjobs</a>, pas d’un baromètre marque employeur." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/entreprise/">Toutes les entreprises</a>.</p>',
+        title="Quelles entreprises tech recrutent le plus en PACA en 2026 | sudtechjobs",
+        description="Thales, Naval Group, Alan, Sopra Steria, Capgemini : classement des "
+                    "entreprises qui recrutent le plus dans la tech en PACA en ce moment, "
+                    "par métier et par ville, calculé à partir des offres réelles.")
+
+
+def render_guides_hub(guides, generated):
+    """guides: [(slug, title, description), ...] in display order."""
+    cards = "".join(
+        '<li><a href="/%s.html"><span class="t">%s</span>'
+        '<span class="co">%s</span></a></li>' % (esc(slug), esc(title), esc(desc))
+        for slug, title, desc in guides)
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › Guides</nav>
+<h1>Guides sudtechjobs</h1>
+<p class="sub">Des réponses aux questions les plus fréquentes sur la tech en PACA, calculées
+à partir des offres réellement diffusées sur sudtechjobs — jamais figées, recalculées à
+chaque mise à jour du site.</p>
+<ul class="jobs">{cards}</ul>
+""".format(home=SITE_URL + "/", cards=cards)
+    return shell(
+        title="Guides sudtechjobs : salaires, télétravail, recrutement tech en PACA",
+        description="Tous les guides sudtechjobs sur la tech en PACA : salaires, "
+                    "télétravail, entreprises qui recrutent, et plus à venir.",
+        canonical="%s/guides/" % SITE_URL, body=body)
 
 
 # --------------------------------------------------------------------------- #
@@ -2084,13 +2247,18 @@ def main():
     with open(os.path.join(SITE, "a-propos.html"), "w", encoding="utf-8") as fh:
         fh.write(render_about())
 
-    # ---- guides (FAQ articles, site root) --------------------------------
-    guide_slugs = []
-    for build_guide in (render_salary_guide, render_remote_guide):
-        guide_slug, guide_html = build_guide(jobs, generated)
-        guide_slugs.append(guide_slug)
+    # ---- guides (FAQ articles, site root + /guides/ hub) -------------------
+    guides_meta = []
+    for build_guide in (render_salary_guide, render_remote_guide, render_hiring_guide):
+        guide_slug, guide_html, card_title, card_desc = build_guide(jobs, generated)
+        guides_meta.append((guide_slug, card_title, card_desc))
         with open(os.path.join(SITE, guide_slug + ".html"), "w", encoding="utf-8") as fh:
             fh.write(guide_html)
+    guide_slugs = [g[0] for g in guides_meta]
+    guides_dir = os.path.join(SITE, "guides")
+    os.makedirs(guides_dir, exist_ok=True)
+    with open(os.path.join(guides_dir, "index.html"), "w", encoding="utf-8") as fh:
+        fh.write(render_guides_hub(guides_meta, generated))
 
     # ---- sitemaps + robots -------------------------------------------------
     # A sitemap index pointing at two children: the browse pages, and a dedicated
@@ -2107,6 +2275,8 @@ def main():
              % SITE_URL]
     pages.append('<url><loc>%s/a-propos.html</loc><changefreq>monthly</changefreq>'
                  '<priority>0.5</priority></url>' % SITE_URL)
+    pages.append('<url><loc>%s/guides/</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
+                 '<priority>0.7</priority></url>' % (SITE_URL, today))
     for guide_slug in guide_slugs:
         pages.append('<url><loc>%s/%s.html</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
                      '<priority>0.7</priority></url>' % (SITE_URL, guide_slug, today))
