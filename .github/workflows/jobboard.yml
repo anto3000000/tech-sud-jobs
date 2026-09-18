@@ -86,3 +86,19 @@ jobs:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
         run: python3 jobboard/linkedin_post.py --publish || echo "LinkedIn publish failed — continuing"
+
+      - name: Persist LinkedIn publish state
+        # --publish only updates last_published_date in-memory on this
+        # runner; the earlier "Commit refreshed feed" step ran before it,
+        # so without this it would never reach git — and a second push
+        # later the same day would publish again (no committed guard).
+        run: |
+          git config user.name  "jobboard-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add jobboard/data/linkedin_state.json
+          if git diff --cached --quiet; then
+            echo "linkedin state unchanged"
+          else
+            git commit -m "chore(jobboard): record LinkedIn publish $(date -u +%FT%TZ) [skip ci]"
+            git push
+          fi
