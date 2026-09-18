@@ -19,6 +19,7 @@ jobboard/site/entreprise/
 jobboard/site/companies.json
 jobboard/site/sitemap*.xml
 jobboard/site/feed.xml
+jobboard/site/feed-dept-*.xml
 jobboard/site/robots.txt
 jobboard/site/mentions-legales.html
 jobboard/site/cgu.html
