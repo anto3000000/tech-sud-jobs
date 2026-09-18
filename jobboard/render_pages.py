@@ -9,6 +9,8 @@ Reads jobboard/site/jobs.json (built by build.py) and writes, into jobboard/site
     emploi/index.html     hub linking every facet page
     sitemap.xml           sitemap index -> sitemap-pages.xml + sitemap-offres.xml
     feed.xml              RSS 2.0 of the 50 newest postings (Slack/Discord bots, social auto-post)
+    feed-dept-<dept>.xml  same, scoped to one PACA département (partner imports, e.g. a
+                          French Tech chapter re-feeding its own stale job page)
     robots.txt            points crawlers at the sitemap index
 
 A closed posting is de-listed the Google-for-Jobs way: dropped from the offers
@@ -27,6 +29,7 @@ import html
 import json
 import os
 import re
+import statistics
 import sys
 import unicodedata
 from datetime import datetime, timedelta, timezone
@@ -1061,8 +1064,9 @@ personnelle (Umami). Voir la
 
 <h2>La suite</h2>
 <p>Au programme&nbsp;: des alertes email par recherche enregistrée, plus de villes
-et de régions du Sud, des pages salaires. Un flux
-<a href="/feed.xml">RSS</a> est déjà en ligne. Une idée, une source à ajouter, ou
+et de régions du Sud. Un <a href="/guide-salaires-tech-paca.html">guide des
+salaires tech en PACA</a> et un flux <a href="/feed.xml">RSS</a> sont déjà en
+ligne. Une idée, une source à ajouter, ou
 juste envie de papoter du Sud 🫰&nbsp;? Écrivez-moi, ça fait toujours plaisir&nbsp;:
 <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>
 · <a href="https://www.linkedin.com/company/sudtechjobs/" target="_blank" rel="noopener">LinkedIn</a>.</p>
@@ -1090,6 +1094,234 @@ def render_about():
         title="À propos | sudtechjobs",
         description="Qui est derrière sudtechjobs, pourquoi le site existe et d'où "
                     "viennent les offres d'emploi tech du sud de la France.",
+        canonical=canonical, head_extra=jsonld(ld), body=body)
+
+
+# --------------------------------------------------------------------------- #
+#  guides (FAQ articles — /guide-....html, site root)                        #
+# --------------------------------------------------------------------------- #
+# City -> hiring zone, for the geographic breakdown. Only the cities that show
+# up often enough in salary-disclosed postings to be worth a bucket; anything
+# else is left out of that breakdown rather than mis-bucketed.
+SALARY_ZONES = {
+    "Marseille / Aix-en-Provence": (
+        "Marseille", "Aix-en-Provence", "Vitrolles", "Marignane", "Aubagne",
+        "La Ciotat", "Six-Fours-les-Plages", "La Seyne-sur-Mer"),
+    "Nice / Sophia Antipolis": (
+        "Sophia Antipolis", "Nice", "Valbonne", "Cagnes-sur-Mer", "Biot"),
+    "Toulon / Var": ("Toulon", "Saint-Tropez"),
+}
+CITY_ZONE = {c: z for z, cities in SALARY_ZONES.items() for c in cities}
+
+MIN_SAMPLE = 5  # below this, show the count but skip median/range as unreliable
+
+
+def _parse_salary_eur(s):
+    """'Annuel de 45000 Euros à 55000 Euros' / '45000–50000 EUR' -> (lo, hi) or None."""
+    if not s:
+        return None
+    nums = [int(n) for n in re.findall(r"\d+", s.replace(" ", "").replace("\xa0", ""))]
+    nums = [n for n in nums if n > 5000]  # drop stray small numbers (e.g. a duration)
+    if not nums:
+        return None
+    return min(nums), max(nums)
+
+
+def _fmt_keur(v):
+    v = round(v / 500) * 500  # round to the nearest 500€, salaries are rarely finer
+    return ("%.1f k€" % (v / 1000)) if v % 1000 else ("%d k€" % (v // 1000))
+
+
+def compute_salary_stats(jobs):
+    """Recomputed on every build from the live feed — the guide never goes stale."""
+    parsed = []
+    for j in jobs:
+        p = _parse_salary_eur(j.get("salary"))
+        if not p:
+            continue
+        lo, hi = p
+        parsed.append({
+            "mid": (lo + hi) / 2, "cat": j.get("category"),
+            "exp": j.get("experience_min_years") or 0,
+            "zone": CITY_ZONE.get(j.get("city")),
+        })
+
+    def stat(rows):
+        n = len(rows)
+        if n == 0:
+            return {"n": 0}
+        vals = sorted(r["mid"] for r in rows)
+        return {"n": n, "median": statistics.median(vals),
+                "lo": min(vals), "hi": max(vals)}
+
+    by_cat = {}
+    for cat in CATS:
+        by_cat[cat] = stat([r for r in parsed if r["cat"] == cat])
+
+    eng = [r for r in parsed if r["cat"] == "eng"]
+
+    def exp_bucket(r):
+        if r["exp"] < 2:
+            return "junior"
+        if r["exp"] < 5:
+            return "confirme"
+        return "senior"
+
+    by_exp = {}
+    for b in ("junior", "confirme", "senior"):
+        by_exp[b] = stat([r for r in eng if exp_bucket(r) == b])
+
+    by_zone = {}
+    for zone in SALARY_ZONES:
+        by_zone[zone] = stat([r for r in eng if r["zone"] == zone])
+
+    return {
+        "n_total": len(jobs), "n_salary": len(parsed),
+        "overall": stat(parsed), "by_cat": by_cat,
+        "by_exp": by_exp, "by_zone": by_zone,
+    }
+
+
+def _stat_line(label, s):
+    if s["n"] < MIN_SAMPLE:
+        return "<li><b>%s</b> — seulement %d offre%s avec salaire affiché, pas assez pour un chiffre fiable.</li>" % (
+            esc(label), s["n"], "s" if s["n"] > 1 else "")
+    return ("<li><b>%s</b> — médiane <b>%s</b> brut/an (%s offres, de %s à %s)</li>"
+            % (esc(label), _fmt_keur(s["median"]), s["n"],
+               _fmt_keur(s["lo"]), _fmt_keur(s["hi"])))
+
+
+def render_salary_guide(jobs, generated):
+    slug = "guide-salaires-tech-paca"
+    canonical = "%s/%s.html" % (SITE_URL, slug)
+    st = compute_salary_stats(jobs)
+    ov = st["overall"]
+    pct = round(100 * st["n_salary"] / st["n_total"]) if st["n_total"] else 0
+
+    cat_list = "".join(
+        _stat_line(CATS[cat][0], st["by_cat"][cat])
+        for cat in ("eng", "data", "product", "design", "tech-adjacent")
+        if st["by_cat"][cat]["n"] > 0)
+    exp_list = "".join(
+        _stat_line(label, st["by_exp"][key]) for key, label in (
+            ("junior", "Junior (moins de 2 ans d’expérience)"),
+            ("confirme", "Confirmé (2 à 5 ans)"),
+            ("senior", "Senior (5 ans et plus)"),
+        ))
+    zone_list = "".join(_stat_line(zone, st["by_zone"][zone]) for zone in SALARY_ZONES)
+
+    faq = [
+        ("Quel est le salaire moyen dans la tech en PACA en 2026 ?",
+         "<p>Sur les offres actuellement diffusées sur sudtechjobs qui affichent un "
+         "salaire (%d offres sur %d, soit %d%% du flux), la médiane tous métiers "
+         "confondus se situe autour de <b>%s brut par an</b>, avec un éventail qui va "
+         "typiquement de %s à %s selon le métier, l’expérience et l’entreprise.</p>"
+         % (ov["n"], st["n_total"], pct, _fmt_keur(ov["median"]) if ov["n"] else "n/a",
+            _fmt_keur(ov["lo"]) if ov["n"] else "n/a", _fmt_keur(ov["hi"]) if ov["n"] else "n/a")),
+
+        ("Le salaire change-t-il selon le métier (dev, data, produit, design) ?",
+         "<p>Oui, et c’est souvent l’écart le plus net. D’après les offres avec salaire "
+         "affiché en ce moment&nbsp;:</p><ul class=\"faq-stats\">%s</ul>"
+         "<p>Le design et le produit ont trop peu d’offres avec salaire affiché pour un "
+         "chiffre fiable : ces métiers sont sous-représentés dans l’agrégat par rapport "
+         "au développement, pas forcément moins bien payés.</p>" % cat_list),
+
+        ("Quel est l’écart de salaire entre un profil junior et un profil senior ?",
+         "<p>Sur les postes de développement (l’échantillon le plus large)&nbsp;:</p>"
+         "<ul class=\"faq-stats\">%s</ul>"
+         "<p>L’écart type entre profils est réel mais souvent plus resserré qu’attendu sur "
+         "la médiane : l’expérience élargit surtout le haut de fourchette (les postes "
+         "seniors les mieux payés) plutôt qu’elle ne déplace la médiane. Beaucoup de grilles "
+         "d’ESN et de PME du Sud restent proches d’une bande commune, indépendamment du "
+         "niveau affiché.</p>" % exp_list),
+
+        ("Marseille, Aix, Nice, Sophia Antipolis, Toulon : où les salaires "
+         "tech sont-ils les plus élevés en PACA ?",
+         "<p>Sur les postes de développement, avec assez de volume pour comparer&nbsp;:</p>"
+         "<ul class=\"faq-stats\">%s</ul>"
+         "<p>Les écarts entre bassins d’emploi de la région restent faibles : la vraie "
+         "différence de salaire en PACA se joue sur le métier, le niveau d’expérience et "
+         "le type d’entreprise (ESN, scale-up, grand groupe), pas sur la ville.</p>"
+         % zone_list),
+
+        ("Le salaire tech en PACA est-il plus bas qu’à Paris ?",
+         "<p>En valeur affichée, souvent un peu, notamment sur les postes seniors et les "
+         "profils rares (data/IA, plateformes). L’écart se réduit une fois pris en compte "
+         "le coût de la vie et du logement, nettement plus élevé en Île-de-France, et il "
+         "s’efface presque complètement pour les postes en full remote payés au même "
+         "niveau national. C’est justement l’argument de beaucoup d’entreprises du Sud "
+         "pour attirer des candidats parisiens : le salaire net d’un côté, le cadre de vie "
+         "de l’autre.</p>"),
+
+        ("Le télétravail change-t-il le salaire proposé ?",
+         "<p>Pas de règle générale observée dans les offres du Sud : un poste en télétravail "
+         "partiel (2–3 jours) proposé par une entreprise locale suit en général la même "
+         "grille que ses postes sur site. C’est surtout le <i>type</i> d’entreprise qui fait "
+         "varier le niveau — une scale-up ou une entreprise parisienne qui recrute en full "
+         "remote depuis le Sud aligne parfois ses salaires sur sa propre grille nationale, "
+         "au-dessus de la médiane régionale.</p>"),
+
+        ("Pourquoi autant d’offres n’affichent pas de salaire ?",
+         "<p>Seule environ une offre sur quatre (%d%% du flux actuel) précise une "
+         "fourchette. C’est une habitude française plus qu’un signal en soi : beaucoup "
+         "d’entreprises du Sud (ESN, PME, grands groupes) ne communiquent le montant qu’en "
+         "entretien. Ne pas afficher de salaire ne veut pas dire qu’il est bas — mais ça "
+         "vaut le coup de le demander tôt dans le process pour ne pas perdre de temps.</p>"
+         % pct),
+
+        ("Comment ces chiffres sont-ils calculés ?",
+         "<p>Ce guide n’est pas une étude de marché figée : les chiffres ci-dessus sont "
+         "recalculés à chaque mise à jour du site, directement à partir des %d offres tech, "
+         "data, produit et design actuellement diffusées sur sudtechjobs en PACA, parmi "
+         "lesquelles %d affichent une fourchette de salaire exploitable. Un chiffre reposant "
+         "sur moins de %d offres n’est pas publié tel quel : le nombre d’offres est indiqué à "
+         "chaque fois pour que vous puissiez juger vous-même de sa fiabilité.</p>"
+         % (st["n_total"], st["n_salary"], MIN_SAMPLE)),
+
+        ("Comment négocier son salaire avec ces chiffres en main ?",
+         "<p>Trois réflexes simples&nbsp;: comparez-vous d’abord au même métier (dev, data, "
+         "produit…), pas à la moyenne tous métiers confondus qui ne veut rien dire pour vous "
+         "personnellement&nbsp;; regardez la fourchette haute de votre tranche d’expérience, "
+         "pas seulement la médiane, si votre stack ou votre séniorité sort du lot&nbsp;; et "
+         "demandez le budget dès le premier échange quand l’offre n’en affiche pas — ça évite "
+         "d’avancer dans un process pour découvrir un écart trop grand à la fin.</p>"),
+    ]
+
+    faq_html = "".join(
+        '<h2 id="q%d">%s</h2>%s' % (i, esc(q), a) for i, (q, a) in enumerate(faq, 1))
+
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question", "name": q,
+            "acceptedAnswer": {"@type": "Answer", "answerText": re.sub(r"<[^>]+>", "", a)},
+        } for q, a in faq],
+    }
+
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › Guide salaires tech PACA</nav>
+<h1>Quel salaire pour un poste tech en PACA en 2026&nbsp;? (dev, data, produit, design)</h1>
+<div class="legal">
+<p class="upd">Chiffres recalculés à chaque mise à jour du site — dernière génération&nbsp;: {gen}.</p>
+<p class="sub">Développeur, data/IA, produit, design&nbsp;: combien ça paie à Marseille, Aix,
+Nice, Sophia Antipolis ou Toulon&nbsp;? Ce guide répond aux questions les plus fréquentes à
+partir des offres réellement diffusées sur <a href="{home}">sudtechjobs</a>, pas d’une étude
+de marché nationale hors-sol.</p>
+{faq}
+<p class="sub">Vous voulez comparer directement des offres&nbsp;?
+<a href="/emploi/eng.html">Développement</a> ·
+<a href="/emploi/data.html">Data / IA</a> ·
+<a href="/emploi/product.html">Produit</a> ·
+<a href="/emploi/design.html">Design</a>.</p>
+</div>
+""".format(home=SITE_URL + "/", gen=esc(generated), faq=faq_html)
+
+    return slug, shell(
+        title="Salaire tech en PACA en 2026 : dev, data, produit, design | sudtechjobs",
+        description="Combien gagne un développeur, un data/IA, un product manager ou un "
+                    "designer en PACA en 2026 ? Chiffres calculés à partir des offres "
+                    "réellement diffusées sur sudtechjobs, par métier, expérience et ville.",
         canonical=canonical, head_extra=jsonld(ld), body=body)
 
 
@@ -1690,6 +1922,11 @@ def main():
     with open(os.path.join(SITE, "a-propos.html"), "w", encoding="utf-8") as fh:
         fh.write(render_about())
 
+    # ---- guides (FAQ articles, site root) --------------------------------
+    guide_slug, guide_html = render_salary_guide(jobs, generated)
+    with open(os.path.join(SITE, guide_slug + ".html"), "w", encoding="utf-8") as fh:
+        fh.write(guide_html)
+
     # ---- sitemaps + robots -------------------------------------------------
     # A sitemap index pointing at two children: the browse pages, and a dedicated
     # offers sitemap (live postings only — Google for Jobs discovers JobPosting
@@ -1705,6 +1942,8 @@ def main():
              % SITE_URL]
     pages.append('<url><loc>%s/a-propos.html</loc><changefreq>monthly</changefreq>'
                  '<priority>0.5</priority></url>' % SITE_URL)
+    pages.append('<url><loc>%s/%s.html</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
+                 '<priority>0.7</priority></url>' % (SITE_URL, guide_slug, today))
     for slug in ("mentions-legales", "cgu", "confidentialite"):
         pages.append('<url><loc>%s/%s.html</loc><changefreq>yearly</changefreq>'
                      '<priority>0.2</priority></url>' % (SITE_URL, slug))
@@ -1744,11 +1983,13 @@ def main():
     with open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8") as fh:
         fh.write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SITE_URL)
 
-    # ---- RSS feed (site/feed.xml) ----------------------------------------
+    # ---- RSS feeds (site/feed.xml + site/feed-dept-<dept>.xml) --------------
     # A machine-readable stream of the newest postings. Less a reader feature
     # than plumbing: Slack/Discord RSS bots in the PACA ecosystems can point a
-    # channel at it, and the social auto-posters read it as their "what's new"
-    # source. Global feed only — per-facet feeds can come later if asked for.
+    # channel at it, the social auto-posters read it as their "what's new"
+    # source, and partners with their own (often stale, manually-fed) job page
+    # — a French Tech chapter, a cluster — can import a département-scoped feed
+    # to keep theirs fresh without anyone re-posting by hand.
     RSS_MAX = 50
 
     def _rfc822(s):
@@ -1760,59 +2001,77 @@ def main():
             dt = dt.replace(tzinfo=timezone.utc)
         return format_datetime(dt)
 
-    rss_jobs = sorted(
-        jobs,
-        key=lambda j: (j.get("first_seen") or j.get("published_at") or "", j["_slug"]),
-        reverse=True,
-    )[:RSS_MAX]
+    def _write_rss(job_list, filename, title, description):
+        rss_jobs = sorted(
+            job_list,
+            key=lambda j: (j.get("first_seen") or j.get("published_at") or "", j["_slug"]),
+            reverse=True,
+        )[:RSS_MAX]
+        items = []
+        for j in rss_jobs:
+            link = "%s/offre/%s.html" % (SITE_URL, j["_slug"])
+            city = j.get("city") or ""
+            is_remote = city == "Remote" or (j.get("remote") or "") in REMOTE_FULL
+            cat_label = CATS.get(j.get("category"), (j.get("category"), ""))[0] or "Tech"
+            meta = " · ".join(x for x in [
+                cat_label, j.get("contract"),
+                "télétravail" if is_remote else (city or None),
+            ] if x)
+            excerpt = re.sub(r"\s+", " ", (j.get("description_excerpt")
+                                          or j.get("description") or "")).strip()
+            if len(excerpt) > 300:
+                excerpt = excerpt[:300].rsplit(" ", 1)[0].rstrip(".,;:") + "…"
+            desc = meta + ((" — " + excerpt) if excerpt else "")
+            pub = _rfc822(j.get("first_seen") or j.get("published_at"))
+            items.append(
+                "<item>"
+                "<title>%s — %s</title>"
+                "<link>%s</link>"
+                '<guid isPermaLink="true">%s</guid>'
+                "%s"
+                "<description>%s</description>"
+                "</item>" % (
+                    esc(j.get("title")), esc(j.get("company") or "—"),
+                    esc(link), esc(link),
+                    ("<pubDate>%s</pubDate>" % pub) if pub else "",
+                    esc(desc)))
+        rss = (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+            "<channel>\n"
+            "<title>%s</title>\n"
+            "<link>%s/</link>\n"
+            '<atom:link href="%s/%s" rel="self" type="application/rss+xml"/>\n'
+            "<description>%s</description>\n"
+            "<language>fr-FR</language>\n"
+            "<lastBuildDate>%s</lastBuildDate>\n"
+            "%s\n"
+            "</channel>\n</rss>\n" % (
+                esc(title), SITE_URL, SITE_URL, filename, esc(description),
+                format_datetime(datetime.now(timezone.utc)),
+                "\n".join(items)))
+        with open(os.path.join(SITE, filename), "w", encoding="utf-8") as fh:
+            fh.write(rss)
+        return len(items)
 
-    rss_items = []
-    for j in rss_jobs:
-        link = "%s/offre/%s.html" % (SITE_URL, j["_slug"])
-        city = j.get("city") or ""
-        is_remote = city == "Remote" or (j.get("remote") or "") in REMOTE_FULL
-        cat_label = CATS.get(j.get("category"), (j.get("category"), ""))[0] or "Tech"
-        meta = " · ".join(x for x in [
-            cat_label, j.get("contract"),
-            "télétravail" if is_remote else (city or None),
-        ] if x)
-        excerpt = re.sub(r"\s+", " ", (j.get("description_excerpt")
-                                      or j.get("description") or "")).strip()
-        if len(excerpt) > 300:
-            excerpt = excerpt[:300].rsplit(" ", 1)[0].rstrip(".,;:") + "…"
-        desc = meta + ((" — " + excerpt) if excerpt else "")
-        pub = _rfc822(j.get("first_seen") or j.get("published_at"))
-        rss_items.append(
-            "<item>"
-            "<title>%s — %s</title>"
-            "<link>%s</link>"
-            '<guid isPermaLink="true">%s</guid>'
-            "%s"
-            "<description>%s</description>"
-            "</item>" % (
-                esc(j.get("title")), esc(j.get("company") or "—"),
-                esc(link), esc(link),
-                ("<pubDate>%s</pubDate>" % pub) if pub else "",
-                esc(desc)))
+    n_global = _write_rss(
+        jobs, "feed.xml",
+        "sudtechjobs — offres tech en PACA",
+        "Les dernières offres dev, data, produit & design des entreprises tech "
+        "du sud de la France.")
 
-    rss = (
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
-        "<channel>\n"
-        "<title>sudtechjobs — offres tech en PACA</title>\n"
-        "<link>%s/</link>\n"
-        '<atom:link href="%s/feed.xml" rel="self" type="application/rss+xml"/>\n'
-        "<description>Les dernières offres dev, data, produit &amp; design des "
-        "entreprises tech du sud de la France.</description>\n"
-        "<language>fr-FR</language>\n"
-        "<lastBuildDate>%s</lastBuildDate>\n"
-        "%s\n"
-        "</channel>\n</rss>\n" % (
-            SITE_URL, SITE_URL,
-            format_datetime(datetime.now(timezone.utc)),
-            "\n".join(rss_items)))
-    with open(os.path.join(SITE, "feed.xml"), "w", encoding="utf-8") as fh:
-        fh.write(rss)
+    dept_feed_counts = {}
+    for code, (dslug, _dname, dwhere) in PACA_DEPTS.items():
+        dept_jobs = [j for j in jobs
+                     if CITY_DEPT.get(slugify(j.get("city") or "")) == code]
+        if not dept_jobs:
+            continue
+        fname = "feed-dept-%s.xml" % dslug
+        dept_feed_counts[fname] = _write_rss(
+            dept_jobs, fname,
+            "sudtechjobs — offres tech %s" % dwhere,
+            "Les dernières offres dev, data, produit & design des entreprises "
+            "tech %s (%s)." % (dwhere, code))
 
     # ---- prune stale files -------------------------------------------------
     wipe_html(offre_dir, offer_files | tombstone_files)
@@ -1820,9 +2079,11 @@ def main():
     wipe_html(entreprise_dir, company_files)
 
     print("render_pages: %d offers, %d tombstones, %d facet pages, %d company pages, "
-          "%d sitemap urls, feed.xml (%d items)"
+          "%d sitemap urls, feed.xml (%d items), %s"
           % (len(offer_files), len(tombstone_files), len(facet_files),
-             len(company_files), len(pages) + len(offers), len(rss_items)),
+             len(company_files), len(pages) + len(offers), n_global,
+             ", ".join("%s (%d)" % (f, n) for f, n in dept_feed_counts.items())
+             or "no dept feeds"),
           file=sys.stderr)
 
 
