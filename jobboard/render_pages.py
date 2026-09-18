@@ -8,6 +8,9 @@ Reads jobboard/site/jobs.json (built by build.py) and writes, into jobboard/site
     emploi/<facet>.html   filtered list pages (métier × ville, techno × ville, télétravail…)
     emploi/index.html     hub linking every facet page
     sitemap.xml           sitemap index -> sitemap-pages.xml + sitemap-offres.xml
+    feed.xml              RSS 2.0 of the 50 newest postings (Slack/Discord bots, social auto-post)
+    feed-dept-<dept>.xml  same, scoped to one PACA département (partner imports, e.g. a
+                          French Tech chapter re-feeding its own stale job page)
     robots.txt            points crawlers at the sitemap index
 
 A closed posting is de-listed the Google-for-Jobs way: dropped from the offers
@@ -26,9 +29,12 @@ import html
 import json
 import os
 import re
+import statistics
 import sys
 import unicodedata
+from collections import Counter
 from datetime import datetime, timedelta, timezone
+from email.utils import format_datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.join(HERE, "site")
@@ -300,6 +306,11 @@ ul.jobs li a{display:block;padding:13px 15px;font-family:"Bricolage Grotesque",s
 ul.jobs li a:hover{text-decoration:none;background:var(--card-2)}
 ul.jobs .co{display:block;color:var(--muted);font-size:13px;font-weight:400;margin:3px 0 0}
 footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+footer .social{display:flex;gap:10px;margin:14px 0 0}
+footer .social a{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
+ border:1px solid var(--line);border-radius:8px;color:var(--muted);background:var(--card)}
+footer .social a:hover{color:var(--brand-ink);border-color:var(--brand);text-decoration:none}
+footer .social svg{width:15px;height:15px;fill:currentColor}
 /* company page */
 .cover{height:150px;border-radius:14px;background:var(--card-2) center/cover no-repeat;
  border:1px solid var(--line);margin:8px 0 12px}
@@ -328,6 +339,7 @@ dl.facts dd{margin:2px 0 0;font-size:14px;font-weight:500}
 .mini a,.mini span{font-size:12.5px;background:var(--card-2);border:1px solid var(--line);border-radius:8px;
  padding:4px 9px;color:var(--brand-ink)}
 /* audience-notice bar (Umami is cookieless — informational, not a consent gate) */
+#cookie-notice[hidden]{display:none}
 #cookie-notice{position:fixed;left:12px;right:12px;bottom:12px;max-width:560px;margin:0 auto;
  background:var(--card);border:1px solid var(--line);border-radius:12px;
  box-shadow:0 12px 34px -12px rgba(22,48,63,.32);padding:11px 14px;display:flex;gap:12px;
@@ -366,6 +378,7 @@ def shell(*, title, description, canonical, head_extra="", body):
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{canon}">
 <meta name="twitter:card" content="summary">
+<link rel="alternate" type="application/rss+xml" title="sudtechjobs — dernières offres" href="{feed}">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -401,9 +414,18 @@ def shell(*, title, description, canonical, head_extra="", body):
   <br><br>Une offre à ajouter, une remarque, ou juste envie de papoter du Sud&nbsp;?
   Écrivez-moi, ça fait toujours plaisir 🫰
   <a href="mailto:hello@sudtechjobs.com">✉️ hello@sudtechjobs.com</a>
-  <br><br><a href="/mentions-legales.html">Mentions légales</a> ·
+  <br><br><a href="/a-propos.html">À propos</a> ·
+  <a href="/mentions-legales.html">Mentions légales</a> ·
   <a href="/cgu.html">CGU</a> ·
   <a href="/confidentialite.html">Confidentialité</a>
+  <div class="social">
+    <a href="/feed.xml" title="Fil RSS des offres" aria-label="Fil RSS des offres">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415a3.294 3.294 0 100 6.588 3.294 3.294 0 000-6.588zM15.909 24h-4.665c0-6.169-5.075-11.244-11.244-11.244V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/company/sudtechjobs/" target="_blank" rel="noopener" title="sudtechjobs sur LinkedIn" aria-label="sudtechjobs sur LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+  </div>
 </footer>
 </div>
 <div id="cookie-notice" hidden>
@@ -425,7 +447,7 @@ def shell(*, title, description, canonical, head_extra="", body):
         title=esc(title), desc=esc(description), canon=esc(canonical),
         css=CSS, head_extra=head_extra, body=body,
         home=SITE_URL + "/", hub=SITE_URL + "/emploi/",
-        companies=SITE_URL + "/entreprise/",
+        companies=SITE_URL + "/entreprise/", feed=SITE_URL + "/feed.xml",
     )
 
 
@@ -577,14 +599,30 @@ def render_offer(j, similar, same_company=None):
             "value": j.get("id") or slug,
         },
     }
-    # `datePosted` is REQUIRED — never emit a JobPosting without it.
-    dp = (posted or "")[:10] or datetime.now(timezone.utc).date().isoformat()
-    ld["datePosted"] = dp
-    try:
-        d0 = datetime.fromisoformat((posted or dp).replace("Z", "+00:00"))
-        ld["validThrough"] = (d0 + timedelta(days=VALID_DAYS)).date().isoformat()
-    except ValueError:
-        pass
+    # `datePosted` is REQUIRED. Prefer our own first-seen date over the source's
+    # `published_at`: WTTJ frequently re-publishes with a months-old date, which
+    # makes a live listing look stale and drags `validThrough` into the past, so
+    # Google for Jobs drops it. Clamp so datePosted is never in the future.
+    now_d = datetime.now(timezone.utc).date()
+
+    def _as_date(s):
+        try:
+            return datetime.fromisoformat(
+                (s or "").replace("Z", "+00:00")).date()
+        except ValueError:
+            return None
+
+    dp_date = (_as_date(j.get("first_seen"))
+               or _as_date(j.get("published_at")) or now_d)
+    if dp_date > now_d:
+        dp_date = now_d
+    ld["datePosted"] = dp_date.isoformat()
+    # A `validThrough` in the past signals a closed posting. This offer is still
+    # in the feed, so keep the window open.
+    vt_date = dp_date + timedelta(days=VALID_DAYS)
+    if vt_date <= now_d:
+        vt_date = now_d + timedelta(days=30)
+    ld["validThrough"] = vt_date.isoformat()
     et = emp_type(j.get("contract"))
     if et:
         ld["employmentType"] = et
@@ -972,6 +1010,1108 @@ def render_legal(*, slug, title, description, h1, inner):
 </div>
 """.format(home=SITE_URL + "/", h1=esc(h1), upd=esc(LEGAL_UPDATED), inner=inner)
     return shell(title=title, description=description, canonical=canonical, body=body)
+
+
+# --------------------------------------------------------------------------- #
+#  à propos                                                                   #
+# --------------------------------------------------------------------------- #
+ABOUT = """
+<p class="sub">Le job board des métiers de la tech dans le sud de la France.</p>
+
+<h2>Pourquoi ce site</h2>
+<p>La tech dans le sud de la France, c'est Sophia-Antipolis, Marseille, Aix, Nice,
+Montpellier, Toulon, des scale-ups, des ESN, des labos et les pôles French Tech
+d'Aix-Marseille et de la Côte d'Azur. Mais quand on cherche un poste tech, tout
+ramène à Paris. sudtechjobs rassemble au même endroit les offres tech, data,
+produit et design de la région PACA (les autres régions du Sud suivront), mises à
+jour tous les jours.</p>
+
+<h2>Qui est derrière</h2>
+<p>Anto. Je travaille dans la tech et j'adore le Sud. C'est un projet perso, fait
+sur mon temps libre. Pas de société derrière, pas de levée, pas d'agenda caché :
+juste l'envie d'un job board du Sud qui soit correct.</p>
+
+<h2>D'où viennent les offres</h2>
+<p>sudtechjobs est un agrégateur. Les annonces sont collectées automatiquement
+depuis&nbsp;:</p>
+<ul>
+<li>Welcome to the Jungle (index public) ;</li>
+<li>les outils de recrutement des entreprises en direct (Greenhouse, Lever, Ashby,
+Teamtailor, Taleez, Recruitee et d'autres) ;</li>
+<li>France Travail ;</li>
+<li>les annuaires French Tech Aix-Marseille et Côte d'Azur, Telecom Valley,
+Aktantis.</li>
+</ul>
+<p>Ce qui est fait dessus&nbsp;:</p>
+<ul>
+<li>un tri tech, data, produit, design par un classifieur maison (la catégorie
+«&nbsp;métier&nbsp;» des sources est trop lacunaire pour s'y fier) ;</li>
+<li>une déduplication quand la même offre apparaît sur plusieurs sources, en
+gardant le lien vers le canal officiel ;</li>
+<li>le retrait des offres expirées&nbsp;: la page devient un cul-de-sac, puis
+disparaît ;</li>
+<li>chaque offre renvoie vers l'annonce d'origine pour postuler. Je ne reçois
+aucune candidature et aucun CV.</li>
+</ul>
+<p>Je ne suis affilié à aucune des entreprises listées. Une offre en trop, une
+erreur, une demande de retrait&nbsp;? Écrivez à
+<a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>, je corrige vite.</p>
+
+<h2>Combien ça coûte</h2>
+<p>Gratuit pour les candidats. Gratuit aussi pour les entreprises, pour l'instant.
+Pas de compte à créer. La mesure d'audience se fait sans cookie ni donnée
+personnelle (Umami). Voir la
+<a href="/confidentialite.html">politique de confidentialité</a>.</p>
+
+<h2>La suite</h2>
+<p>Au programme&nbsp;: des alertes email par recherche enregistrée, plus de villes
+et de régions du Sud. Un <a href="/guide-salaires-tech-paca.html">guide des
+salaires tech en PACA</a> et un flux <a href="/feed.xml">RSS</a> sont déjà en
+ligne. Une idée, une source à ajouter, ou
+juste envie de papoter du Sud 🫰&nbsp;? Écrivez-moi, ça fait toujours plaisir&nbsp;:
+<a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>
+· <a href="https://www.linkedin.com/company/sudtechjobs/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+"""
+
+
+def render_about():
+    canonical = "%s/a-propos.html" % SITE_URL
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "À propos de sudtechjobs",
+        "url": canonical,
+        "publisher": {"@type": "Organization", "name": "sudtechjobs",
+                      "url": SITE_URL + "/"},
+    }
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › À propos</nav>
+<h1>À propos de sudtechjobs</h1>
+<div class="legal">
+{inner}
+</div>
+""".format(home=SITE_URL + "/", inner=ABOUT)
+    return shell(
+        title="À propos | sudtechjobs",
+        description="Qui est derrière sudtechjobs, pourquoi le site existe et d'où "
+                    "viennent les offres d'emploi tech du sud de la France.",
+        canonical=canonical, head_extra=jsonld(ld), body=body)
+
+
+# --------------------------------------------------------------------------- #
+#  guides (FAQ articles — /guide-....html, site root)                        #
+# --------------------------------------------------------------------------- #
+# City -> hiring zone, for the geographic breakdown. Only the cities that show
+# up often enough in salary-disclosed postings to be worth a bucket; anything
+# else is left out of that breakdown rather than mis-bucketed.
+SALARY_ZONES = {
+    "Marseille / Aix-en-Provence": (
+        "Marseille", "Aix-en-Provence", "Vitrolles", "Marignane", "Aubagne",
+        "La Ciotat", "Six-Fours-les-Plages", "La Seyne-sur-Mer"),
+    "Nice / Sophia Antipolis": (
+        "Sophia Antipolis", "Nice", "Valbonne", "Cagnes-sur-Mer", "Biot"),
+    "Toulon / Var": ("Toulon", "Saint-Tropez"),
+}
+CITY_ZONE = {c: z for z, cities in SALARY_ZONES.items() for c in cities}
+
+MIN_SAMPLE = 5  # below this, show the count but skip median/range as unreliable
+
+
+def _parse_salary_eur(s):
+    """'Annuel de 45000 Euros à 55000 Euros' / '45000–50000 EUR' -> (lo, hi) or None."""
+    if not s:
+        return None
+    nums = [int(n) for n in re.findall(r"\d+", s.replace(" ", "").replace("\xa0", ""))]
+    nums = [n for n in nums if n > 5000]  # drop stray small numbers (e.g. a duration)
+    if not nums:
+        return None
+    return min(nums), max(nums)
+
+
+def _fmt_keur(v):
+    v = round(v / 500) * 500  # round to the nearest 500€, salaries are rarely finer
+    return ("%.1f k€" % (v / 1000)) if v % 1000 else ("%d k€" % (v // 1000))
+
+
+def compute_salary_stats(jobs):
+    """Recomputed on every build from the live feed — the guide never goes stale."""
+    parsed = []
+    for j in jobs:
+        p = _parse_salary_eur(j.get("salary"))
+        if not p:
+            continue
+        lo, hi = p
+        parsed.append({
+            "mid": (lo + hi) / 2, "cat": j.get("category"),
+            "exp": j.get("experience_min_years") or 0,
+            "zone": CITY_ZONE.get(j.get("city")),
+        })
+
+    def stat(rows):
+        n = len(rows)
+        if n == 0:
+            return {"n": 0}
+        vals = sorted(r["mid"] for r in rows)
+        return {"n": n, "median": statistics.median(vals),
+                "lo": min(vals), "hi": max(vals)}
+
+    by_cat = {}
+    for cat in CATS:
+        by_cat[cat] = stat([r for r in parsed if r["cat"] == cat])
+
+    eng = [r for r in parsed if r["cat"] == "eng"]
+
+    def exp_bucket(r):
+        if r["exp"] < 2:
+            return "junior"
+        if r["exp"] < 5:
+            return "confirme"
+        return "senior"
+
+    by_exp = {}
+    for b in ("junior", "confirme", "senior"):
+        by_exp[b] = stat([r for r in eng if exp_bucket(r) == b])
+
+    by_zone = {}
+    for zone in SALARY_ZONES:
+        by_zone[zone] = stat([r for r in eng if r["zone"] == zone])
+
+    return {
+        "n_total": len(jobs), "n_salary": len(parsed),
+        "overall": stat(parsed), "by_cat": by_cat,
+        "by_exp": by_exp, "by_zone": by_zone,
+    }
+
+
+def _stat_line(label, s):
+    if s["n"] < MIN_SAMPLE:
+        return "<li><b>%s</b> — seulement %d offre%s avec salaire affiché, pas assez pour un chiffre fiable.</li>" % (
+            esc(label), s["n"], "s" if s["n"] > 1 else "")
+    return ("<li><b>%s</b> — médiane <b>%s</b> brut/an (%s offres, de %s à %s)</li>"
+            % (esc(label), _fmt_keur(s["median"]), s["n"],
+               _fmt_keur(s["lo"]), _fmt_keur(s["hi"])))
+
+
+def render_salary_guide(jobs, generated):
+    slug = "guide-salaires-tech-paca"
+    canonical = "%s/%s.html" % (SITE_URL, slug)
+    st = compute_salary_stats(jobs)
+    ov = st["overall"]
+    pct = round(100 * st["n_salary"] / st["n_total"]) if st["n_total"] else 0
+
+    cat_list = "".join(
+        _stat_line(CATS[cat][0], st["by_cat"][cat])
+        for cat in ("eng", "data", "product", "design", "tech-adjacent")
+        if st["by_cat"][cat]["n"] > 0)
+    exp_list = "".join(
+        _stat_line(label, st["by_exp"][key]) for key, label in (
+            ("junior", "Junior (moins de 2 ans d’expérience)"),
+            ("confirme", "Confirmé (2 à 5 ans)"),
+            ("senior", "Senior (5 ans et plus)"),
+        ))
+    zone_list = "".join(_stat_line(zone, st["by_zone"][zone]) for zone in SALARY_ZONES)
+
+    faq = [
+        ("Quel est le salaire moyen dans la tech en PACA en 2026 ?",
+         "<p>Sur les offres actuellement diffusées sur sudtechjobs qui affichent un "
+         "salaire (%d offres sur %d, soit %d%% du flux), la médiane tous métiers "
+         "confondus se situe autour de <b>%s brut par an</b>, avec un éventail qui va "
+         "typiquement de %s à %s selon le métier, l’expérience et l’entreprise.</p>"
+         % (ov["n"], st["n_total"], pct, _fmt_keur(ov["median"]) if ov["n"] else "n/a",
+            _fmt_keur(ov["lo"]) if ov["n"] else "n/a", _fmt_keur(ov["hi"]) if ov["n"] else "n/a")),
+
+        ("Le salaire change-t-il selon le métier (dev, data, produit, design) ?",
+         "<p>Oui, et c’est souvent l’écart le plus net. D’après les offres avec salaire "
+         "affiché en ce moment&nbsp;:</p><ul class=\"faq-stats\">%s</ul>"
+         "<p>Le design et le produit ont trop peu d’offres avec salaire affiché pour un "
+         "chiffre fiable : ces métiers sont sous-représentés dans l’agrégat par rapport "
+         "au développement, pas forcément moins bien payés.</p>" % cat_list),
+
+        ("Quel est l’écart de salaire entre un profil junior et un profil senior ?",
+         "<p>Sur les postes de développement (l’échantillon le plus large)&nbsp;:</p>"
+         "<ul class=\"faq-stats\">%s</ul>"
+         "<p>L’écart type entre profils est réel mais souvent plus resserré qu’attendu sur "
+         "la médiane : l’expérience élargit surtout le haut de fourchette (les postes "
+         "seniors les mieux payés) plutôt qu’elle ne déplace la médiane. Beaucoup de grilles "
+         "d’ESN et de PME du Sud restent proches d’une bande commune, indépendamment du "
+         "niveau affiché.</p>" % exp_list),
+
+        ("Marseille, Aix, Nice, Sophia Antipolis, Toulon : où les salaires "
+         "tech sont-ils les plus élevés en PACA ?",
+         "<p>Sur les postes de développement, avec assez de volume pour comparer&nbsp;:</p>"
+         "<ul class=\"faq-stats\">%s</ul>"
+         "<p>Les écarts entre bassins d’emploi de la région restent faibles : la vraie "
+         "différence de salaire en PACA se joue sur le métier, le niveau d’expérience et "
+         "le type d’entreprise (ESN, scale-up, grand groupe), pas sur la ville.</p>"
+         % zone_list),
+
+        ("Le salaire tech en PACA est-il plus bas qu’à Paris ?",
+         "<p>En valeur affichée, souvent un peu, notamment sur les postes seniors et les "
+         "profils rares (data/IA, plateformes). L’écart se réduit une fois pris en compte "
+         "le coût de la vie et du logement, nettement plus élevé en Île-de-France, et il "
+         "s’efface presque complètement pour les postes en full remote payés au même "
+         "niveau national. C’est justement l’argument de beaucoup d’entreprises du Sud "
+         "pour attirer des candidats parisiens : le salaire net d’un côté, le cadre de vie "
+         "de l’autre.</p>"),
+
+        ("Le télétravail change-t-il le salaire proposé ?",
+         "<p>Pas de règle générale observée dans les offres du Sud : un poste en télétravail "
+         "partiel (2–3 jours) proposé par une entreprise locale suit en général la même "
+         "grille que ses postes sur site. C’est surtout le <i>type</i> d’entreprise qui fait "
+         "varier le niveau — une scale-up ou une entreprise parisienne qui recrute en full "
+         "remote depuis le Sud aligne parfois ses salaires sur sa propre grille nationale, "
+         "au-dessus de la médiane régionale.</p>"),
+
+        ("Pourquoi autant d’offres n’affichent pas de salaire ?",
+         "<p>Seule environ une offre sur quatre (%d%% du flux actuel) précise une "
+         "fourchette. C’est une habitude française plus qu’un signal en soi : beaucoup "
+         "d’entreprises du Sud (ESN, PME, grands groupes) ne communiquent le montant qu’en "
+         "entretien. Ne pas afficher de salaire ne veut pas dire qu’il est bas — mais ça "
+         "vaut le coup de le demander tôt dans le process pour ne pas perdre de temps.</p>"
+         % pct),
+
+        ("Comment ces chiffres sont-ils calculés ?",
+         "<p>Ce guide n’est pas une étude de marché figée : les chiffres ci-dessus sont "
+         "recalculés à chaque mise à jour du site, directement à partir des %d offres tech, "
+         "data, produit et design actuellement diffusées sur sudtechjobs en PACA, parmi "
+         "lesquelles %d affichent une fourchette de salaire exploitable. Un chiffre reposant "
+         "sur moins de %d offres n’est pas publié tel quel : le nombre d’offres est indiqué à "
+         "chaque fois pour que vous puissiez juger vous-même de sa fiabilité.</p>"
+         % (st["n_total"], st["n_salary"], MIN_SAMPLE)),
+
+        ("Comment négocier son salaire avec ces chiffres en main ?",
+         "<p>Trois réflexes simples&nbsp;: comparez-vous d’abord au même métier (dev, data, "
+         "produit…), pas à la moyenne tous métiers confondus qui ne veut rien dire pour vous "
+         "personnellement&nbsp;; regardez la fourchette haute de votre tranche d’expérience, "
+         "pas seulement la médiane, si votre stack ou votre séniorité sort du lot&nbsp;; et "
+         "demandez le budget dès le premier échange quand l’offre n’en affiche pas — ça évite "
+         "d’avancer dans un process pour découvrir un écart trop grand à la fin.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide salaires tech PACA",
+        h1="Quel salaire pour un poste tech en PACA en 2026&nbsp;? (dev, data, produit, design)",
+        intro="Développeur, data/IA, produit, design&nbsp;: combien ça paie à Marseille, Aix, "
+              "Nice, Sophia Antipolis ou Toulon&nbsp;? Ce guide répond aux questions les plus "
+              "fréquentes à partir des offres réellement diffusées sur "
+              "<a href=\"%s/\">sudtechjobs</a>, pas d’une étude de marché nationale hors-sol."
+              % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Vous voulez comparer directement des offres&nbsp;?'
+                   '<a href="/emploi/eng.html">Développement</a> · '
+                   '<a href="/emploi/data.html">Data / IA</a> · '
+                   '<a href="/emploi/product.html">Produit</a> · '
+                   '<a href="/emploi/design.html">Design</a>.</p>',
+        title="Salaire tech en PACA en 2026 : dev, data, produit, design | sudtechjobs",
+        description="Combien gagne un développeur, un data/IA, un product manager ou un "
+                    "designer en PACA en 2026 ? Chiffres calculés à partir des offres "
+                    "réellement diffusées sur sudtechjobs, par métier, expérience et ville.")
+
+
+def _render_faq_guide(*, slug, breadcrumb, h1, intro, faq, generated, links_html,
+                       title, description):
+    """Shared scaffold for a data-backed FAQ guide: Q&A body + FAQPage JSON-LD."""
+    canonical = "%s/%s.html" % (SITE_URL, slug)
+    faq_html = "".join(
+        '<h2 id="q%d">%s</h2>%s' % (i, esc(q), a) for i, (q, a) in enumerate(faq, 1))
+
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question", "name": q,
+            "acceptedAnswer": {"@type": "Answer",
+                               "answerText": re.sub(r"<[^>]+>", "", a).replace("&nbsp;", " ")},
+        } for q, a in faq],
+    }
+
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › <a href="{home}guides/">Guides</a> › {breadcrumb}</nav>
+<h1>{h1}</h1>
+<div class="legal">
+<p class="upd">Chiffres recalculés à chaque mise à jour du site — dernière génération&nbsp;: {gen}.</p>
+<p class="sub">{intro}</p>
+{faq}
+{links}
+<p class="sub"><a href="{home}guides/">← Tous les guides sudtechjobs</a></p>
+</div>
+""".format(home=SITE_URL + "/", breadcrumb=esc(breadcrumb), h1=h1, gen=esc(generated),
+           intro=intro, faq=faq_html, links=links_html)
+
+    card_title = h1.replace("&nbsp;", " ")
+    html = shell(title=title, description=description, canonical=canonical,
+                head_extra=jsonld(ld), body=body)
+    return html, card_title, description
+
+
+def _remote_bucket(j):
+    r = j.get("remote") or j.get("remote_detail") or ""
+    if r in REMOTE_FULL:
+        return "remote"
+    if r in ("hybride", "sur site", "ponctuel"):
+        return r
+    return None  # policy not disclosed
+
+
+def compute_remote_stats(jobs):
+    """Recomputed on every build, like compute_salary_stats — never goes stale."""
+    def stat(rows):
+        n = len(rows)
+        known = [r for r in rows if r["bucket"]]
+        n_known = len(known)
+        if n_known == 0:
+            return {"n": n, "n_known": 0}
+        some_remote = sum(1 for r in known if r["bucket"] != "sur site")
+        return {"n": n, "n_known": n_known,
+                "pct_remote": round(100 * some_remote / n_known),
+                "pct_full": round(100 * sum(1 for r in known if r["bucket"] == "remote") / n_known)}
+
+    rows = [{"cat": j.get("category"), "bucket": _remote_bucket(j)} for j in jobs]
+
+    by_cat = {cat: stat([r for r in rows if r["cat"] == cat]) for cat in CATS}
+
+    top_remote = Counter()
+    top_hybride = Counter()
+    for j in jobs:
+        b = _remote_bucket(j)
+        if b == "remote":
+            top_remote[j.get("company")] += 1
+        elif b == "hybride":
+            top_hybride[j.get("company")] += 1
+
+    return {
+        "overall": stat(rows), "by_cat": by_cat,
+        "top_remote": [(c, n) for c, n in top_remote.most_common(6) if n >= 2],
+        "top_hybride": [(c, n) for c, n in top_hybride.most_common(6) if n >= 3],
+    }
+
+
+def _remote_pct_line(label, s):
+    if s.get("n_known", 0) < MIN_SAMPLE:
+        return "<li><b>%s</b> — trop peu d’offres précisant leur politique de télétravail " \
+               "pour un chiffre fiable.</li>" % esc(label)
+    return ("<li><b>%s</b> — <b>%d%%</b> proposent au moins du télétravail ponctuel "
+            "(dont %d%% en full remote), sur %d offres qui précisent leur politique.</li>"
+            % (esc(label), s["pct_remote"], s["pct_full"], s["n_known"]))
+
+
+def render_remote_guide(jobs, generated):
+    slug = "guide-teletravail-tech-paca"
+    st = compute_remote_stats(jobs)
+    ov = st["overall"]
+    pct_disclosed = round(100 * ov["n_known"] / ov["n"]) if ov["n"] else 0
+
+    cat_list = "".join(
+        _remote_pct_line(CATS[cat][0], st["by_cat"][cat])
+        for cat in ("eng", "data", "product", "design", "tech-adjacent")
+        if st["by_cat"][cat]["n"] > 0)
+
+    def company_list(rows, word):
+        if not rows:
+            return "pas assez d’offres pour dégager des entreprises récurrentes en ce moment"
+        return ", ".join("<b>%s</b> (%d offre%s %s)" % (esc(c), n, "s" if n > 1 else "", word)
+                          for c, n in rows)
+
+    faq = [
+        ("Quelle part des offres tech en PACA propose du télétravail ?",
+         "<p>Sur les offres tech, data, produit et design actuellement diffusées sur "
+         "sudtechjobs, %d%% précisent une politique de télétravail (le reste ne dit rien, "
+         "voir plus bas). Parmi celles qui le précisent, <b>%d%%</b> proposent au moins du "
+         "télétravail ponctuel — hybride, ponctuel ou full remote — et <b>%d%%</b> sont "
+         "en full remote.</p>" % (pct_disclosed, ov.get("pct_remote", 0), ov.get("pct_full", 0))),
+
+        ("Full remote, hybride, ponctuel : quelle est la différence, et qu’est-ce qui domine ?",
+         "<p><b>Full remote</b>&nbsp;: le poste se fait entièrement à distance, aucun jour "
+         "sur site imposé. <b>Hybride</b>&nbsp;: un rythme fixe de jours au bureau (souvent "
+         "2 à 4 jours/semaine dans les offres du Sud). <b>Ponctuel</b>&nbsp;: télétravail "
+         "possible occasionnellement, sans rythme fixe, à la discrétion du manager. En PACA, "
+         "c’est <b>l’hybride qui domine largement</b> les offres qui précisent une politique "
+         "— le full remote reste minoritaire, contrairement à ce qu’on voit parfois sur des "
+         "boards nationaux dominés par des postes 100% à distance.</p>"),
+
+        ("Le télétravail est-il plus fréquent pour un poste dev, data ou produit ?",
+         "<p>Oui, nettement. D’après les offres qui précisent leur politique&nbsp;:</p>"
+         "<ul class=\"faq-stats\">%s</ul>"
+         "<p>Les postes produit et data ont proportionnellement plus de télétravail que le "
+         "développement pur — une partie du développement en PACA passe par des ESN qui "
+         "placent leurs consultants chez le client, ce qui pousse vers l’hybride ou le sur "
+         "site plutôt que le full remote.</p>" % cat_list),
+
+        ("Quelles entreprises proposent du full remote en PACA ?",
+         "<p>Parmi les entreprises qui recrutent actuellement en full remote sur "
+         "sudtechjobs&nbsp;: %s. Ce ne sont que les entreprises les plus présentes dans le "
+         "flux du moment, pas une liste exhaustive ni figée — elle change avec les offres "
+         "publiées.</p>" % company_list(st["top_remote"], "en full remote")),
+
+        ("Quelles entreprises proposent le plus d’hybride, et à quel rythme ?",
+         "<p>Sur le même principe, les entreprises les plus présentes en hybride en ce "
+         "moment&nbsp;: %s. Le rythme exact (2, 3 ou 4 jours de télétravail) n’est presque "
+         "jamais le même d’une entreprise à l’autre — il se négocie souvent en entretien "
+         "plutôt qu’il n’est figé dans l’annonce, à demander explicitement si l’offre reste "
+         "vague.</p>" % company_list(st["top_hybride"], "en hybride")),
+
+        ("Pourquoi tant d’offres ne précisent pas leur politique de télétravail ?",
+         "<p>Environ %d%% du flux actuel ne mentionne rien. C’est plus transparent que pour "
+         "le salaire (où seule une offre sur quatre communique un montant), mais ça reste "
+         "un angle mort fréquent&nbsp;: beaucoup de PME et d’ESN du Sud gèrent le télétravail "
+         "au cas par cas plutôt que comme une politique affichée. Ne pas voir de mention ne "
+         "veut pas dire « zéro télétravail » — ça vaut le coup de demander en entretien.</p>"
+         % (100 - pct_disclosed)),
+
+        ("Un poste « télétravail » en PACA est-il vraiment basé dans le Sud ?",
+         "<p>Pas toujours. Une partie des offres en full remote proviennent d’entreprises "
+         "dont le siège est ailleurs (souvent Paris) et qui recrutent à distance sans "
+         "exiger de présence dans le Sud&nbsp;: le poste est ouvert aux candidats basés en "
+         "PACA, mais l’équipe et les rares journées sur site, s’il y en a, seront ailleurs. "
+         "Pour un poste réellement ancré dans l’écosystème local (rencontrer l’équipe, les "
+         "meetups, les bureaux du Sud), l’hybride avec une ville PACA précisée est un "
+         "signal plus fiable que « full remote » seul.</p>"),
+
+        ("Comment filtrer uniquement les offres télétravail sur sudtechjobs ?",
+         "<p>Le plus simple&nbsp;: la page <a href=\"/emploi/teletravail.html\">Emplois en "
+         "télétravail</a>, ou le filtre télétravail directement sur la <a href=\"/\">page "
+         "d’accueil</a>, à combiner avec un filtre métier ou ville pour restreindre encore "
+         "plus.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide télétravail tech PACA",
+        h1="Télétravail dans la tech en PACA en 2026&nbsp;: quelles entreprises, quel rythme&nbsp;?",
+        intro="Full remote, hybride, ponctuel&nbsp;: quelle part des offres tech du Sud propose "
+              "vraiment du télétravail, et quelles entreprises recrutent en ce moment sans "
+              "exiger d’être sur site&nbsp;? Réponses à partir des offres réellement diffusées "
+              "sur <a href=\"%s/\">sudtechjobs</a>." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/emploi/teletravail.html">Télétravail</a>.</p>',
+        title="Télétravail tech en PACA en 2026 : quelles entreprises, quel rythme | sudtechjobs",
+        description="Full remote, hybride, ponctuel : quelle part des offres tech en PACA "
+                    "propose du télétravail, pour quels métiers, et quelles entreprises "
+                    "recrutent en ce moment sans exiger d'être sur site ?")
+
+
+def compute_hiring_stats(jobs):
+    """Recomputed on every build, like the other guides — a live snapshot, not a ranking."""
+    counts = Counter()
+    slug_by_company = {}
+    for j in jobs:
+        c = j.get("company")
+        counts[c] += 1
+        if j.get("_company_slug"):
+            slug_by_company[c] = j["_company_slug"]
+
+    by_cat = {cat: Counter() for cat in CATS}
+    for j in jobs:
+        cat = j.get("category")
+        if cat in by_cat:
+            by_cat[cat][j.get("company")] += 1
+
+    by_zone = {zone: Counter() for zone in SALARY_ZONES}
+    for j in jobs:
+        z = CITY_ZONE.get(j.get("city"))
+        if z:
+            by_zone[z][j.get("company")] += 1
+
+    return {
+        "n_total": len(jobs), "n_companies": len(counts),
+        "overall_top": counts.most_common(10),
+        "by_cat_top": {cat: by_cat[cat].most_common(5) for cat in CATS},
+        "by_zone_top": {zone: by_zone[zone].most_common(3) for zone in SALARY_ZONES},
+        "slug_by_company": slug_by_company,
+    }
+
+
+def _company_link(name, slugs):
+    slug = slugs.get(name)
+    if slug:
+        return '<a href="/entreprise/%s.html">%s</a>' % (esc(slug), esc(name))
+    return "<b>%s</b>" % esc(name)
+
+
+def render_hiring_guide(jobs, generated):
+    slug = "guide-entreprises-qui-recrutent-tech-paca"
+    st = compute_hiring_stats(jobs)
+    slugs = st["slug_by_company"]
+
+    def name_list(rows, with_n=True):
+        if not rows:
+            return "pas assez d’offres pour dégager une tendance nette en ce moment"
+        return ", ".join(
+            "%s%s" % (_company_link(c, slugs),
+                      " (%d offre%s)" % (n, "s" if n > 1 else "") if with_n else "")
+            for c, n in rows)
+
+    top10_html = "<ol style=\"margin:6px 0 13px;padding-left:20px\">%s</ol>" % "".join(
+        "<li>%s — %d offre%s ouvertes</li>" % (_company_link(c, slugs), n, "s" if n > 1 else "")
+        for c, n in st["overall_top"])
+
+    cat_list = "".join(
+        "<li><b>%s</b> — %s</li>" % (esc(CATS[cat][0]), name_list(st["by_cat_top"][cat]))
+        for cat in ("eng", "data", "product", "design", "tech-adjacent")
+        if st["by_cat_top"][cat])
+
+    zone_list = "".join(
+        "<li><b>%s</b> — %s</li>" % (esc(zone), name_list(st["by_zone_top"][zone]))
+        for zone in SALARY_ZONES if st["by_zone_top"][zone])
+
+    faq = [
+        ("Quelles entreprises tech recrutent le plus en PACA en ce moment ?",
+         "<p>Sur les %d offres tech, data, produit et design actuellement diffusées sur "
+         "sudtechjobs (réparties sur %d entreprises), les 10 employeurs avec le plus "
+         "d’offres ouvertes en ce moment&nbsp;:</p>%s"
+         "<p>C’est un volume d’offres publiées, pas un classement qualité employeur ni une "
+         "recommandation&nbsp;: une grosse entreprise avec beaucoup de turnover peut publier "
+         "plus d’offres qu’une petite boîte qui recrute rarement mais dans de bonnes "
+         "conditions.</p>" % (st["n_total"], st["n_companies"], top10_html)),
+
+        ("Ce classement est-il figé ?",
+         "<p>Non, il est recalculé à chaque mise à jour du site à partir des offres "
+         "réellement en ligne&nbsp;: une entreprise qui pourvoit ses postes ou arrête de "
+         "recruter en sort, une autre qui ouvre une campagne de recrutement y entre. Ce "
+         "n’est pas une liste d’entreprises figée à surveiller une fois pour toutes.</p>"),
+
+        ("Qui recrute le plus en développement, data ou produit ?",
+         "<p>Le classement change sensiblement selon le métier&nbsp;:</p><ul>%s</ul>"
+         "<p>Les gros volumes en développement viennent surtout de l’industrie (défense, "
+         "naval) et des ESN&nbsp;; la data et le produit sont davantage portés par des "
+         "éditeurs et des scale-ups.</p>" % cat_list),
+
+        ("Marseille, Aix, Sophia Antipolis, Toulon : les mêmes entreprises "
+         "recrutent-elles partout ?",
+         "<p>Non, chaque bassin d’emploi a sa propre dominante&nbsp;:</p><ul>%s</ul>"
+         "<p>C’est souvent plus révélateur que le classement global&nbsp;: une entreprise "
+         "très présente dans le top 10 national du Sud peut être quasi absente d’une ville "
+         "donnée, et inversement.</p>" % zone_list),
+
+        ("Pourquoi des groupes industriels comme Thales ou Naval Group apparaissent "
+         "dans une recherche « tech » ?",
+         "<p>Parce qu’ils en sont, dans le Sud plus qu’ailleurs&nbsp;: Sophia Antipolis et "
+         "le bassin toulonnais concentrent une grosse activité d’ingénierie logicielle "
+         "embarquée, systèmes et cybersécurité pour la défense et le naval — des postes de "
+         "développeur, d’ingénieur systèmes ou de data au même titre qu’en startup, "
+         "simplement chez un industriel plutôt qu’un éditeur. Le classement les inclut "
+         "parce que le poste est réellement technique, pas parce que l’entreprise est "
+         "labellisée « tech ».</p>"),
+
+        ("ESN vs entreprises qui recrutent en direct : comment les distinguer "
+         "dans cette liste ?",
+         "<p>Une bonne partie du volume vient de sociétés de conseil informatique (ESN) qui "
+         "recrutent pour ensuite placer le profil chez un client — Sopra Steria, Capgemini, "
+         "CGI, Groupe SII, Atos, Keyrus ou eXalt en sont des exemples connus. En face, des "
+         "entreprises comme Alan, Thales ou Naval Group recrutent en direct&nbsp;: vous "
+         "travaillez pour elles, pas pour un client qu’elles vous affectent. Ni l’un ni "
+         "l’autre n’est un meilleur choix dans l’absolu&nbsp;: l’ESN donne de la variété de "
+         "missions et souvent plus de flexibilité géographique, le direct donne plus de "
+         "visibilité sur le produit final et l’équipe. À vérifier en entretien si l’intitulé "
+         "de poste ne le précise pas.</p>"),
+
+        ("Comment être alerté quand une de ces entreprises publie une nouvelle offre ?",
+         "<p>La fiche de chaque entreprise (accessible depuis <a href=\"/entreprise/\">la "
+         "liste des entreprises</a>) liste ses offres du moment. Pour ne rien rater "
+         "automatiquement&nbsp;: une alerte email sur une recherche enregistrée (bouton "
+         "« recevoir ces offres par email » sur la page d’accueil), ou le "
+         "<a href=\"/feed.xml\">flux RSS</a> de sudtechjobs.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide entreprises qui recrutent",
+        h1="Quelles entreprises tech recrutent le plus en PACA en 2026&nbsp;?",
+        intro="Thales, Naval Group, Alan, Sopra Steria, Capgemini&nbsp;: qui recrute vraiment "
+              "dans la tech en PACA en ce moment, pour quels métiers et dans quelle ville&nbsp;? "
+              "Classement calculé à partir des offres réellement diffusées sur "
+              "<a href=\"%s/\">sudtechjobs</a>, pas d’un baromètre marque employeur." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/entreprise/">Toutes les entreprises</a>.</p>',
+        title="Quelles entreprises tech recrutent le plus en PACA en 2026 | sudtechjobs",
+        description="Thales, Naval Group, Alan, Sopra Steria, Capgemini : classement des "
+                    "entreprises qui recrutent le plus dans la tech en PACA en ce moment, "
+                    "par métier et par ville, calculé à partir des offres réelles.")
+
+
+def render_guides_hub(guides, generated):
+    """guides: [(slug, title, description), ...] in display order."""
+    cards = "".join(
+        '<li><a href="/%s.html"><span class="t">%s</span>'
+        '<span class="co">%s</span></a></li>' % (esc(slug), esc(title), esc(desc))
+        for slug, title, desc in guides)
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › Guides</nav>
+<h1>Guides sudtechjobs</h1>
+<p class="sub">Des réponses aux questions les plus fréquentes sur la tech en PACA, calculées
+à partir des offres réellement diffusées sur sudtechjobs — jamais figées, recalculées à
+chaque mise à jour du site.</p>
+<ul class="jobs">{cards}</ul>
+""".format(home=SITE_URL + "/", cards=cards)
+    return shell(
+        title="Guides sudtechjobs : salaires, télétravail, recrutement tech en PACA",
+        description="Tous les guides sudtechjobs sur la tech en PACA : salaires, "
+                    "télétravail, entreprises qui recrutent, et plus à venir.",
+        canonical="%s/guides/" % SITE_URL, body=body)
+
+
+def compute_intern_stats(jobs):
+    """Recomputed on every build, like the other guides."""
+    rows = [j for j in jobs if j.get("contract") in ("Stage", "Alternance")]
+
+    by_contract = Counter(j.get("contract") for j in rows)
+    by_cat = Counter(j.get("category") for j in rows)
+    by_company = Counter(j.get("company") for j in rows)
+    by_zone = Counter()
+    for j in rows:
+        z = CITY_ZONE.get(j.get("city"))
+        if z:
+            by_zone[z] += 1
+
+    return {
+        "n_total": len(jobs), "n": len(rows),
+        "by_contract": by_contract,
+        "by_cat_top": [(cat, n) for cat, n in by_cat.most_common() if n > 0],
+        "top_companies": [(c, n) for c, n in by_company.most_common(6) if n >= 2],
+        "by_zone": [(z, by_zone.get(z, 0)) for z in SALARY_ZONES if by_zone.get(z, 0) > 0],
+    }
+
+
+def render_intern_guide(jobs, generated):
+    slug = "guide-stage-alternance-tech-paca"
+    st = compute_intern_stats(jobs)
+    pct = round(100 * st["n"] / st["n_total"]) if st["n_total"] else 0
+
+    cat_list = "".join(
+        "<li><b>%s</b> — %d offre%s</li>" % (esc(CATS.get(cat, (cat,))[0]), n, "s" if n > 1 else "")
+        for cat, n in st["by_cat_top"])
+
+    if st["top_companies"]:
+        company_txt = ", ".join(
+            "<b>%s</b> (%d)" % (esc(c), n) for c, n in st["top_companies"])
+    else:
+        company_txt = "pas assez d’offres pour dégager des entreprises récurrentes en ce moment"
+
+    if st["by_zone"]:
+        zone_txt = ", ".join("<b>%s</b> (%d)" % (esc(z), n) for z, n in st["by_zone"])
+    else:
+        zone_txt = "pas assez d’offres pour comparer les bassins d’emploi en ce moment"
+
+    faq = [
+        ("Combien y a-t-il d’offres de stage et d’alternance tech en PACA en ce moment ?",
+         "<p>%d offres sur les %d actuellement diffusées sur sudtechjobs (%d%% du flux), "
+         "dont %d stages et %d alternances. C’est un volume réel mais modeste&nbsp;: la "
+         "tech en PACA reste un marché où l’essentiel des offres est en CDI direct.</p>"
+         % (st["n"], st["n_total"], pct,
+            st["by_contract"].get("Stage", 0), st["by_contract"].get("Alternance", 0))),
+
+        ("Stage ou alternance : quelle est la différence ?",
+         "<p>Le <b>stage</b> est une période temporaire (quelques mois) intégrée à une "
+         "formation, sans contrat de travail classique, avec une gratification (pas un "
+         "vrai salaire). L’<b>alternance</b> (apprentissage ou professionnalisation) est un "
+         "vrai contrat de travail à temps partagé entre l’entreprise et l’école, rémunéré "
+         "selon une grille légale liée à l’âge et au niveau d’études, et débouche plus "
+         "souvent sur une embauche directe à la clé.</p>"),
+
+        ("Quelles entreprises recrutent le plus en stage/alternance en ce moment ?",
+         "<p>%s. Ce sont surtout des grands groupes et ESN (Capgemini, Sopra Steria, "
+         "Wavestone, Deloitte…) qui structurent des campagnes de recrutement stage/"
+         "alternance chaque année&nbsp;: une bonne partie du volume vient d’elles plutôt "
+         "que de petites startups qui recrutent au coup par coup.</p>" % company_txt),
+
+        ("Dans quelles villes trouve-t-on le plus de stages et d’alternances ?",
+         "<p>%s. Sans surprise, ce sont les bassins qui concentrent aussi le plus gros "
+         "volume d’offres tech tout court (voir le <a href=\"/guide-entreprises-qui-"
+         "recrutent-tech-paca.html\">guide des entreprises qui recrutent</a>).</p>"
+         % zone_txt),
+
+        ("Pour quels métiers trouve-t-on des stages et alternances ?",
+         "<p>La répartition par métier&nbsp;:</p><ul>%s</ul>"
+         "<p>Le développement domine très largement&nbsp;: c’est le métier qui a le plus "
+         "besoin de volume junior à former en continu.</p>" % cat_list),
+
+        ("Ce volume est-il représentatif de tout ce qui existe réellement ?",
+         "<p>Non, probablement pas complètement. Une bonne partie des stages et "
+         "alternances tech se pourvoit via les réseaux d’écoles (42 Nice, Epitech, Ynov, "
+         "Simplon, Polytech…), les forums étudiants et le bouche-à-oreille, sans jamais "
+         "passer par Welcome to the Jungle ni par les pages carrière publiques que "
+         "sudtechjobs agrège. Le nombre réel d’opportunités est très certainement plus "
+         "élevé que ce que montre ce guide — considérez-le comme un aperçu du marché "
+         "« public », pas comme l’inventaire complet.</p>"),
+
+        ("Comment repérer une offre sérieuse et bien préparer sa candidature ?",
+         "<p>Quelques signaux utiles&nbsp;: une fiche de poste précise (missions, stack, "
+         "durée, gratification/rémunération annoncée) plutôt qu’une annonce vague et "
+         "recyclée d’année en année&nbsp;; un tuteur ou maître d’apprentissage identifié "
+         "dès l’entretien&nbsp;; et, pour l’alternance, la confirmation que l’entreprise a "
+         "déjà accueilli des alternants (le rythme école/entreprise, souvent mal expliqué "
+         "en entretien, vaut la peine d’être posé comme question directe).</p>"),
+
+        ("Comment être alerté sur les nouvelles offres de stage et d’alternance ?",
+         "<p>Sur la <a href=\"/\">page d’accueil</a>, le filtre « Tous contrats » permet de "
+         "restreindre l’affichage au stage ou à l’alternance, à combiner avec une ville ou "
+         "un métier&nbsp;; une alerte email peut ensuite être créée sur cette recherche "
+         "précise pour être prévenu à chaque nouvelle offre.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide stage & alternance",
+        h1="Stage et alternance tech en PACA en 2026&nbsp;: où et comment postuler&nbsp;?",
+        intro="Développement, data, design&nbsp;: combien de stages et d’alternances tech "
+              "sont réellement ouverts en PACA en ce moment, chez qui, et dans quelle "
+              "ville&nbsp;? Chiffres calculés à partir des offres diffusées sur "
+              "<a href=\"%s/\">sudtechjobs</a>." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/">Page d’accueil (filtre « Tous contrats »)</a>.</p>',
+        title="Stage et alternance tech en PACA en 2026 : où et comment postuler | sudtechjobs",
+        description="Combien de stages et d'alternances tech sont ouverts en PACA en ce "
+                    "moment, chez quelles entreprises et dans quelle ville, calculé à "
+                    "partir des offres réellement diffusées sur sudtechjobs.")
+
+
+def compute_junior_stats(jobs):
+    """Recomputed on every build. Only experience_min_years == 0 counts as
+    'débutant accepté' — a None value means undisclosed, not junior-friendly."""
+    junior = [j for j in jobs if j.get("experience_min_years") == 0]
+
+    by_cat = Counter(j.get("category") for j in junior)
+    by_company = Counter(j.get("company") for j in junior)
+    by_zone = Counter()
+    for j in junior:
+        z = CITY_ZONE.get(j.get("city"))
+        if z:
+            by_zone[z] += 1
+    n_bac5 = sum(1 for j in junior if j.get("education_level") == "bac_5")
+    n_edu_known = sum(1 for j in junior if j.get("education_level"))
+
+    return {
+        "n_total": len(jobs), "n": len(junior),
+        "n_undisclosed": sum(1 for j in jobs if j.get("experience_min_years") is None),
+        "by_cat_top": [(cat, n) for cat, n in by_cat.most_common() if n > 0],
+        "top_companies": [(c, n) for c, n in by_company.most_common(6) if n >= 2],
+        "by_zone": [(z, by_zone.get(z, 0)) for z in SALARY_ZONES if by_zone.get(z, 0) > 0],
+        "n_bac5": n_bac5, "n_edu_known": n_edu_known,
+    }
+
+
+def render_junior_guide(jobs, generated):
+    slug = "guide-premier-emploi-junior-tech-paca"
+    st = compute_junior_stats(jobs)
+    pct = round(100 * st["n"] / st["n_total"]) if st["n_total"] else 0
+    pct_undisclosed = round(100 * st["n_undisclosed"] / st["n_total"]) if st["n_total"] else 0
+
+    cat_list = "".join(
+        "<li><b>%s</b> — %d offre%s</li>" % (esc(CATS.get(cat, (cat,))[0]), n, "s" if n > 1 else "")
+        for cat, n in st["by_cat_top"])
+
+    company_txt = (", ".join("<b>%s</b> (%d)" % (esc(c), n) for c, n in st["top_companies"])
+                   if st["top_companies"]
+                   else "pas assez d’offres pour dégager des entreprises récurrentes en ce moment")
+    zone_txt = (", ".join("<b>%s</b> (%d)" % (esc(z), n) for z, n in st["by_zone"])
+                if st["by_zone"]
+                else "pas assez d’offres pour comparer les bassins d’emploi en ce moment")
+    pct_bac5 = round(100 * st["n_bac5"] / st["n_edu_known"]) if st["n_edu_known"] else None
+
+    faq = [
+        ("Combien d’offres tech en PACA sont vraiment accessibles sans expérience ?",
+         "<p>%d offres sur les %d actuellement diffusées sur sudtechjobs affichent "
+         "explicitement « débutant accepté, 0 an d’expérience » (%d%% du flux). Ce n’est "
+         "qu’un plancher&nbsp;: %d%% des offres du site ne précisent aucune expérience "
+         "minimale — elles ne sont pas forcément fermées aux débutants, l’information "
+         "manque simplement.</p>" % (st["n"], st["n_total"], pct, pct_undisclosed)),
+
+        ("Sur quels métiers ces offres débutant sont-elles les plus fréquentes ?",
+         "<p>La répartition par métier parmi les offres « 0 an d’expérience »&nbsp;:</p>"
+         "<ul>%s</ul>"
+         "<p>Le développement concentre l’essentiel du volume débutant, comme pour le "
+         "reste du marché&nbsp;: voir aussi le <a href=\"/guide-stage-alternance-tech-"
+         "paca.html\">guide stage &amp; alternance</a> pour les profils encore en "
+         "formation.</p>" % cat_list),
+
+        ("Quelles entreprises recrutent le plus de profils débutants en ce moment ?",
+         "<p>%s. Comme pour le stage et l’alternance, ce sont surtout des ESN et grands "
+         "groupes qui structurent un volume régulier de recrutement junior, plutôt que des "
+         "petites structures qui recrutent au coup par coup.</p>" % company_txt),
+
+        ("Faut-il un bac+5 pour décrocher un premier poste tech, même sans "
+         "expérience exigée ?",
+         "<p>%s Beaucoup d’offres « débutant accepté » ne précisent pas de niveau "
+         "d’études du tout — l’absence de bac+5 affiché n’est pas un rejet, mais un "
+         "diplôme d’ingénieur reste, dans les faits, le profil le plus visible sur cette "
+         "partie du marché.</p>"
+         % ("Pas systématiquement, mais c’est fréquent&nbsp;: parmi les offres débutant "
+            "qui précisent un niveau d’études, %d%% demandent un bac+5." % pct_bac5
+            if pct_bac5 is not None else
+            "Les données actuelles ne permettent pas de trancher avec assez de recul.")),
+
+        ("Où se trouvent le plus d’offres débutant en PACA ?",
+         "<p>%s. Même logique que pour le reste du marché tech régional&nbsp;: le volume "
+         "suit la taille du bassin d’emploi plus qu’une politique « junior friendly » "
+         "propre à telle ou telle ville.</p>" % zone_txt),
+
+        ("Et si aucune offre « débutant » ne correspond, que faire ?",
+         "<p>Élargir la recherche à ce qui n’affiche <i>aucune</i> expérience minimale "
+         "(%d%% du flux) plutôt que de se limiter aux offres explicitement « débutant » — "
+         "beaucoup d’entreprises ne filtrent pas aussi strictement qu’annoncé, surtout "
+         "pour un profil motivé avec un projet ou un stage concret à montrer. Le "
+         "<a href=\"/guide-stage-alternance-tech-paca.html\">stage et l’alternance</a> "
+         "restent aussi le sas le plus direct vers un premier CDI, souvent chez la même "
+         "entreprise.</p>" % pct_undisclosed),
+
+        ("Le salaire d’un premier poste tech en PACA, ça donne quoi ?",
+         "<p>Voir le détail dans le <a href=\"/guide-salaires-tech-paca.html\">guide des "
+         "salaires tech PACA</a>, section junior&nbsp;: la médiane observée sur les postes "
+         "de développement junior (moins de 2 ans) tourne autour de 45&nbsp;k€ brut par "
+         "an, un chiffre étonnamment proche de celui des profils confirmés sur ce marché.</p>"),
+
+        ("Comment repérer une offre qui accepte les débutants sans le dire explicitement ?",
+         "<p>Ouvrir la description complète plutôt que de se fier au résumé&nbsp;: une "
+         "fourchette d’expérience large (« 0 à 3 ans »), une formulation du type "
+         "« autodidacte bienvenu » ou l’absence totale de mention d’ancienneté dans la "
+         "section profil sont de meilleurs signaux qu’un simple filtre. En cas de doute, "
+         "candidater reste la meilleure façon de vérifier — beaucoup d’annonces généralistes "
+         "sont recyclées d’un recrutement à l’autre sans être ajustées au profil réellement "
+         "reçu.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide premier emploi junior",
+        h1="Premier emploi tech en PACA en 2026&nbsp;: comment décrocher un poste "
+           "sans expérience&nbsp;?",
+        intro="Quelles offres tech du Sud sont vraiment ouvertes aux débutants, chez "
+              "quelles entreprises, et pour quels métiers&nbsp;? Chiffres calculés à "
+              "partir des offres diffusées sur <a href=\"%s/\">sudtechjobs</a>." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/guide-stage-alternance-tech-paca.html">Guide stage & '
+                   'alternance</a> · <a href="/guide-salaires-tech-paca.html">Guide des '
+                   'salaires</a>.</p>',
+        title="Premier emploi tech en PACA en 2026 : décrocher un poste sans "
+              "expérience | sudtechjobs",
+        description="Quelles offres tech en PACA sont vraiment accessibles aux "
+                    "débutants, chez quelles entreprises et pour quels métiers, calculé "
+                    "à partir des offres réellement diffusées sur sudtechjobs.")
+
+
+SOPHIA_CITIES = ("Sophia Antipolis", "Nice", "Valbonne", "Cagnes-sur-Mer", "Biot")
+
+
+def compute_sophia_stats(jobs):
+    """Recomputed on every build, scoped to the Nice / Sophia Antipolis bassin."""
+    rows = [j for j in jobs if j.get("city") in SOPHIA_CITIES]
+
+    by_cat = Counter(j.get("category") for j in rows)
+    by_company = Counter(j.get("company") for j in rows)
+
+    sal = []
+    for j in rows:
+        p = _parse_salary_eur(j.get("salary"))
+        if p:
+            sal.append((p[0] + p[1]) / 2)
+
+    remote_n = sum(1 for j in rows if _remote_bucket(j) and _remote_bucket(j) != "sur site")
+    remote_known = sum(1 for j in rows if _remote_bucket(j))
+
+    return {
+        "n_total": len(jobs), "n": len(rows),
+        "by_cat_top": [(cat, n) for cat, n in by_cat.most_common() if n > 0],
+        "top_companies": [(c, n) for c, n in by_company.most_common(8) if n >= 2],
+        "sal_n": len(sal), "sal_median": statistics.median(sal) if sal else None,
+        "remote_n": remote_n, "remote_known": remote_known,
+    }
+
+
+def render_sophia_guide(jobs, generated):
+    slug = "guide-emploi-tech-sophia-antipolis-cote-dazur"
+    st = compute_sophia_stats(jobs)
+    pct = round(100 * st["n"] / st["n_total"]) if st["n_total"] else 0
+
+    cat_list = "".join(
+        "<li><b>%s</b> — %d offre%s</li>" % (esc(CATS.get(cat, (cat,))[0]), n, "s" if n > 1 else "")
+        for cat, n in st["by_cat_top"])
+    company_txt = (", ".join("<b>%s</b> (%d)" % (esc(c), n) for c, n in st["top_companies"])
+                   if st["top_companies"]
+                   else "pas assez d’offres pour dégager des entreprises récurrentes en ce moment")
+    pct_remote = (round(100 * st["remote_n"] / st["remote_known"])
+                  if st["remote_known"] >= MIN_SAMPLE else None)
+    sal_txt = (_fmt_keur(st["sal_median"]) if st["sal_n"] >= MIN_SAMPLE
+               else "pas assez d’offres avec salaire affiché pour un chiffre fiable")
+
+    faq = [
+        ("Combien d’offres tech à Sophia Antipolis et sur la Côte d’Azur en ce moment ?",
+         "<p>%d offres sur les %d actuellement diffusées sur sudtechjobs pour le bassin "
+         "Nice / Sophia Antipolis / Valbonne / Biot (%d%% du flux PACA) — le deuxième "
+         "bassin d’emploi tech de la région derrière l’axe Marseille / Aix-en-Provence.</p>"
+         % (st["n"], st["n_total"], pct)),
+
+        ("Quelles entreprises recrutent le plus sur ce bassin ?",
+         "<p>%s. Le mix est révélateur&nbsp;: de gros industriels de la défense et des "
+         "télécoms côtoient des ESN qui staffent leurs clients locaux — moins de "
+         "startups pures que ce que l’image « tech park » de Sophia Antipolis suggère.</p>"
+         % company_txt),
+
+        ("Quels métiers dominent à Sophia Antipolis ?",
+         "<p>La répartition par métier&nbsp;:</p><ul>%s</ul>"
+         "<p>Le développement écrase largement le reste, avec une bonne part "
+         "d’ingénierie systèmes/embarqué liée à l’activité télécom et défense du bassin.</p>"
+         % cat_list),
+
+        ("Le salaire est-il différent à Sophia Antipolis par rapport au reste de "
+         "la PACA ?",
+         "<p>La médiane observée sur ce bassin tourne autour de %s brut par an — voir le "
+         "détail complet, par métier et par expérience, dans le <a href=\"/guide-salaires-"
+         "tech-paca.html\">guide des salaires tech PACA</a>, qui ne montre pas d’écart "
+         "marqué entre les grands bassins d’emploi de la région.</p>" % sal_txt),
+
+        ("Le télétravail à Sophia Antipolis, c’est comment ?",
+         "<p>%s</p>" % (
+             "Sur les offres qui précisent leur politique, environ %d%% proposent au "
+             "moins du télétravail ponctuel — voir le <a href=\"/guide-teletravail-tech-"
+             "paca.html\">guide télétravail</a> pour la répartition détaillée par métier "
+             "et par entreprise." % pct_remote
+             if pct_remote is not None else
+             "Pas assez d’offres précisant leur politique de télétravail sur ce bassin "
+             "pour un chiffre fiable — voir le <a href=\"/guide-teletravail-tech-paca."
+             "html\">guide télétravail</a> à l’échelle de toute la région.")),
+
+        ("Qu’est-ce que French Tech Côte d’Azur, et à quoi ça sert pour chercher "
+         "un job ?",
+         "<p>French Tech Côte d’Azur est le réseau labellisé qui fédère les startups et "
+         "scale-ups de Sophia Antipolis et de la région niçoise&nbsp;: annuaire "
+         "d’entreprises, événements, mise en réseau. Beaucoup de ces startups ne publient "
+         "pas systématiquement sur Welcome to the Jungle ni sur les job boards "
+         "généralistes&nbsp;: consulter directement leur annuaire, ou aller à leurs "
+         "meetups, reste un bon complément à une recherche par job board.</p>"),
+
+        ("Sophia Antipolis, c’est vraiment un « pôle tech », ou surtout de "
+         "l’industrie et des ESN ?",
+         "<p>Les deux à la fois, et c’est important de le savoir avant de candidater&nbsp;: "
+         "à côté des startups French Tech, une bonne partie du volume d’offres vient de "
+         "grands comptes télécom/défense (ingénierie logicielle embarquée, systèmes, "
+         "cybersécurité) et d’ESN qui y placent des consultants. Le poste « développeur à "
+         "Sophia Antipolis » peut aussi bien être chez une startup de 15 personnes que "
+         "chez un sous-traitant d’un grand groupe&nbsp;: à clarifier dès l’offre ou en "
+         "entretien.</p>"),
+
+        ("Comment suivre les nouvelles offres sur ce bassin spécifiquement ?",
+         "<p>Les pages <a href=\"/emploi/sophia-antipolis.html\">Sophia Antipolis</a> et "
+         "<a href=\"/emploi/nice.html\">Nice</a> listent les offres du moment, avec une "
+         "alerte email possible sur cette recherche précise depuis la page d’accueil.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide Sophia Antipolis & Côte d’Azur",
+        h1="Trouver un job tech à Sophia Antipolis et sur la Côte d’Azur en 2026",
+        intro="Deuxième bassin d’emploi tech de la région derrière Marseille/Aix&nbsp;: "
+              "qui recrute à Sophia Antipolis et à Nice, pour quels métiers, et à quel "
+              "salaire&nbsp;? Chiffres calculés à partir des offres diffusées sur "
+              "<a href=\"%s/\">sudtechjobs</a>." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/emploi/sophia-antipolis.html">Sophia Antipolis</a> · '
+                   '<a href="/emploi/nice.html">Nice</a>.</p>',
+        title="Trouver un job tech à Sophia Antipolis et Nice en 2026 | sudtechjobs",
+        description="Qui recrute dans la tech à Sophia Antipolis et sur la Côte d'Azur, "
+                    "pour quels métiers et à quel salaire, calculé à partir des offres "
+                    "réellement diffusées sur sudtechjobs.")
+
+
+def render_reconversion_guide(jobs, generated):
+    """Unlike the other guides, there's no 'career change' field on a job posting —
+    this one leans on general knowledge + the few real anchors the board does have
+    (junior/débutant volume, stage & alternance), not a fresh stats breakdown."""
+    slug = "guide-reconversion-tech-paca"
+    jr = compute_junior_stats(jobs)
+    it = compute_intern_stats(jobs)
+    pct_undisclosed = round(100 * jr["n_undisclosed"] / jr["n_total"]) if jr["n_total"] else 0
+
+    faq = [
+        ("Une reconversion vers la tech est-elle réaliste en PACA, ou faut-il "
+         "partir à Paris ?",
+         "<p>Réaliste, mais avec un marché plus restreint qu’à Paris&nbsp;: moins "
+         "d’offres au total, et une bonne part du volume junior/débutant vient d’ESN et "
+         "de grands groupes (voir le <a href=\"/guide-premier-emploi-junior-tech-paca."
+         "html\">guide premier emploi junior</a>) plutôt que de startups en forte "
+         "croissance. Ce n’est pas un obstacle en soi — l’essentiel des embauches en "
+         "reconversion se fait via ce type d’employeur, pas seulement en startup — mais "
+         "le volume d’offres à cibler est mécaniquement plus réduit qu’en Île-de-France.</p>"),
+
+        ("Faut-il repasser par une formation, ou peut-on candidater directement "
+         "avec un projet perso ?",
+         "<p>Les deux se voient. Un projet perso solide (une vraie application "
+         "déployée, du code public, pas un simple tutoriel terminé) peut suffire à "
+         "décrocher un entretien, surtout côté développement web&nbsp;; mais une formation "
+         "structurée (bootcamp, titre professionnel, alternance) reste le chemin le plus "
+         "prévisible pour la majorité, notamment parce qu’elle inclut souvent un stage ou "
+         "une mission qui sert de premier CDI. %d%% des offres du site ne précisent "
+         "aucune expérience minimale&nbsp;: beaucoup ne filtrent pas aussi strictement sur "
+         "le diplôme ou le parcours qu’on pourrait le croire.</p>" % pct_undisclosed),
+
+        ("Quelles formations reconversion existent dans le Sud ?",
+         "<p>Plusieurs écoles et organismes forment au développement et à la data dans la "
+         "région&nbsp;: 42 Nice, Epitech, Ynov, Simplon (souvent en alternance ou avec des "
+         "frais réduits, orienté profils en reconversion) et Polytech pour un format plus "
+         "académique. Comparer leur taux de retour à l’emploi réel et leurs partenariats "
+         "entreprises locaux avant de s’engager reste le meilleur réflexe&nbsp;: tous ne se "
+         "valent pas sur ce point.</p>"),
+
+        ("Quels métiers sont les plus accessibles en reconversion ?",
+         "<p>Le développement web reste le point d’entrée le plus courant&nbsp;: c’est "
+         "aussi, de loin, le métier avec le plus d’offres débutant et de stages/"
+         "alternances sur sudtechjobs (voir les guides "
+         "<a href=\"/guide-premier-emploi-junior-tech-paca.html\">premier emploi</a> et "
+         "<a href=\"/guide-stage-alternance-tech-paca.html\">stage &amp; alternance</a>). "
+         "La data et le support technique (QA, no-code) sont d’autres portes d’entrée "
+         "courantes, souvent perçues comme moins verrouillées sur un diplôme d’ingénieur "
+         "que les postes de développement senior.</p>"),
+
+        ("Quelles entreprises embauchent des profils en reconversion en PACA ?",
+         "<p>Le board ne permet pas d’identifier ça directement&nbsp;: aucune offre ne se "
+         "déclare « ouverte à la reconversion ». Une bonne indication indirecte&nbsp;: les "
+         "entreprises qui recrutent le plus de profils débutants (ESN comme Meritis ou "
+         "Capgemini, voir le <a href=\"/guide-premier-emploi-junior-tech-paca.html\">guide "
+         "premier emploi</a>) ont en général des process de recrutement junior moins "
+         "centrés sur le diplôme d’origine que sur les compétences démontrées en "
+         "entretien technique — c’est une inférence raisonnable, pas une donnée mesurée.</p>"),
+
+        ("Le diplôme compte-t-il vraiment moins en reconversion qu’ailleurs ?",
+         "<p>Sur le papier, oui&nbsp;: la majorité des offres du site (plus de la moitié) "
+         "ne précisent aucun niveau d’études. Dans les faits, dès qu’un niveau est "
+         "affiché, c’est très souvent un bac+5&nbsp;— même sur des postes qui acceptent "
+         "des débutants. Le diplôme pèse donc moins comme filtre explicite que comme "
+         "défaut implicite du recruteur&nbsp;: à combler par un dossier de compétences "
+         "concret plutôt qu’à contourner en espérant qu’il ne soit pas remarqué.</p>"),
+
+        ("Combien de temps ça prend, entre la décision et le premier poste ?",
+         "<p>Compter, dans les grandes lignes&nbsp;: quelques mois de formation intensive "
+         "(bootcamp) à un an ou plus en alternance, puis une recherche de premier poste "
+         "qui peut prendre de quelques semaines à plusieurs mois selon le réseau déjà "
+         "construit pendant la formation — le stage ou la mission de fin de formation "
+         "reste souvent le raccourci le plus direct vers un premier CDI.</p>"),
+
+        ("Comment mettre toutes les chances de son côté avec sudtechjobs ?",
+         "<p>Suivre les offres <a href=\"/guide-premier-emploi-junior-tech-paca.html\">"
+         "premier emploi</a> et <a href=\"/guide-stage-alternance-tech-paca.html\">stage "
+         "&amp; alternance</a> plutôt que de se limiter aux intitulés « développeur "
+         "confirmé »&nbsp;; regarder les fiches entreprise pour repérer celles qui "
+         "recrutent en volume (souvent plus ouvertes à un parcours atypique qu’une petite "
+         "structure qui recrute un seul profil très spécifique)&nbsp;; et créer une alerte "
+         "email sur une recherche large (métier + « débutant ») pour ne rien rater sans "
+         "devoir repasser tous les jours.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide reconversion",
+        h1="Reconversion vers la tech en PACA en 2026&nbsp;: par où commencer&nbsp;?",
+        intro="Formations, métiers accessibles, diplôme ou pas&nbsp;: ce que montrent "
+              "les offres réellement diffusées sur <a href=\"%s/\">sudtechjobs</a>, et ce "
+              "qu’il faut savoir en plus, quand on change de métier vers la tech dans le "
+              "Sud." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/guide-premier-emploi-junior-tech-paca.html">Guide premier '
+                   'emploi</a> · <a href="/guide-stage-alternance-tech-paca.html">Guide '
+                   'stage &amp; alternance</a>.</p>',
+        title="Reconversion vers la tech en PACA en 2026 : par où commencer | sudtechjobs",
+        description="Formations, métiers accessibles, entreprises qui recrutent des "
+                    "profils juniors : ce qu'il faut savoir pour une reconversion vers "
+                    "la tech dans le Sud de la France.")
 
 
 # --------------------------------------------------------------------------- #
@@ -1568,6 +2708,23 @@ def main():
         with open(os.path.join(SITE, slug + ".html"), "w", encoding="utf-8") as fh:
             fh.write(render_legal(slug=slug, title=title, description=desc,
                                   h1=h1, inner=inner))
+    with open(os.path.join(SITE, "a-propos.html"), "w", encoding="utf-8") as fh:
+        fh.write(render_about())
+
+    # ---- guides (FAQ articles, site root + /guides/ hub) -------------------
+    guides_meta = []
+    for build_guide in (render_salary_guide, render_remote_guide, render_hiring_guide,
+                        render_intern_guide, render_junior_guide, render_sophia_guide,
+                        render_reconversion_guide):
+        guide_slug, guide_html, card_title, card_desc = build_guide(jobs, generated)
+        guides_meta.append((guide_slug, card_title, card_desc))
+        with open(os.path.join(SITE, guide_slug + ".html"), "w", encoding="utf-8") as fh:
+            fh.write(guide_html)
+    guide_slugs = [g[0] for g in guides_meta]
+    guides_dir = os.path.join(SITE, "guides")
+    os.makedirs(guides_dir, exist_ok=True)
+    with open(os.path.join(guides_dir, "index.html"), "w", encoding="utf-8") as fh:
+        fh.write(render_guides_hub(guides_meta, generated))
 
     # ---- sitemaps + robots -------------------------------------------------
     # A sitemap index pointing at two children: the browse pages, and a dedicated
@@ -1582,6 +2739,13 @@ def main():
              % SITE_URL,
              '<url><loc>%s/emploi/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>'
              % SITE_URL]
+    pages.append('<url><loc>%s/a-propos.html</loc><changefreq>monthly</changefreq>'
+                 '<priority>0.5</priority></url>' % SITE_URL)
+    pages.append('<url><loc>%s/guides/</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
+                 '<priority>0.7</priority></url>' % (SITE_URL, today))
+    for guide_slug in guide_slugs:
+        pages.append('<url><loc>%s/%s.html</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
+                     '<priority>0.7</priority></url>' % (SITE_URL, guide_slug, today))
     for slug in ("mentions-legales", "cgu", "confidentialite"):
         pages.append('<url><loc>%s/%s.html</loc><changefreq>yearly</changefreq>'
                      '<priority>0.2</priority></url>' % (SITE_URL, slug))
@@ -1621,15 +2785,108 @@ def main():
     with open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8") as fh:
         fh.write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SITE_URL)
 
+    # ---- RSS feeds (site/feed.xml + site/feed-dept-<dept>.xml) --------------
+    # A machine-readable stream of the newest postings. Less a reader feature
+    # than plumbing: Slack/Discord RSS bots in the PACA ecosystems can point a
+    # channel at it, the social auto-posters read it as their "what's new"
+    # source, and partners with their own (often stale, manually-fed) job page
+    # — a French Tech chapter, a cluster — can import a département-scoped feed
+    # to keep theirs fresh without anyone re-posting by hand.
+    RSS_MAX = 50
+
+    def _rfc822(s):
+        try:
+            dt = datetime.fromisoformat((s or "").replace("Z", "+00:00"))
+        except ValueError:
+            return None
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return format_datetime(dt)
+
+    def _write_rss(job_list, filename, title, description):
+        rss_jobs = sorted(
+            job_list,
+            key=lambda j: (j.get("first_seen") or j.get("published_at") or "", j["_slug"]),
+            reverse=True,
+        )[:RSS_MAX]
+        items = []
+        for j in rss_jobs:
+            link = "%s/offre/%s.html" % (SITE_URL, j["_slug"])
+            city = j.get("city") or ""
+            is_remote = city == "Remote" or (j.get("remote") or "") in REMOTE_FULL
+            cat_label = CATS.get(j.get("category"), (j.get("category"), ""))[0] or "Tech"
+            meta = " · ".join(x for x in [
+                cat_label, j.get("contract"),
+                "télétravail" if is_remote else (city or None),
+            ] if x)
+            excerpt = re.sub(r"\s+", " ", (j.get("description_excerpt")
+                                          or j.get("description") or "")).strip()
+            if len(excerpt) > 300:
+                excerpt = excerpt[:300].rsplit(" ", 1)[0].rstrip(".,;:") + "…"
+            desc = meta + ((" — " + excerpt) if excerpt else "")
+            pub = _rfc822(j.get("first_seen") or j.get("published_at"))
+            items.append(
+                "<item>"
+                "<title>%s — %s</title>"
+                "<link>%s</link>"
+                '<guid isPermaLink="true">%s</guid>'
+                "%s"
+                "<description>%s</description>"
+                "</item>" % (
+                    esc(j.get("title")), esc(j.get("company") or "—"),
+                    esc(link), esc(link),
+                    ("<pubDate>%s</pubDate>" % pub) if pub else "",
+                    esc(desc)))
+        rss = (
+            '<?xml version="1.0" encoding="UTF-8"?>\n'
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+            "<channel>\n"
+            "<title>%s</title>\n"
+            "<link>%s/</link>\n"
+            '<atom:link href="%s/%s" rel="self" type="application/rss+xml"/>\n'
+            "<description>%s</description>\n"
+            "<language>fr-FR</language>\n"
+            "<lastBuildDate>%s</lastBuildDate>\n"
+            "%s\n"
+            "</channel>\n</rss>\n" % (
+                esc(title), SITE_URL, SITE_URL, filename, esc(description),
+                format_datetime(datetime.now(timezone.utc)),
+                "\n".join(items)))
+        with open(os.path.join(SITE, filename), "w", encoding="utf-8") as fh:
+            fh.write(rss)
+        return len(items)
+
+    n_global = _write_rss(
+        jobs, "feed.xml",
+        "sudtechjobs — offres tech en PACA",
+        "Les dernières offres dev, data, produit & design des entreprises tech "
+        "du sud de la France.")
+
+    dept_feed_counts = {}
+    for code, (dslug, _dname, dwhere) in PACA_DEPTS.items():
+        dept_jobs = [j for j in jobs
+                     if CITY_DEPT.get(slugify(j.get("city") or "")) == code]
+        if not dept_jobs:
+            continue
+        fname = "feed-dept-%s.xml" % dslug
+        dept_feed_counts[fname] = _write_rss(
+            dept_jobs, fname,
+            "sudtechjobs — offres tech %s" % dwhere,
+            "Les dernières offres dev, data, produit & design des entreprises "
+            "tech %s (%s)." % (dwhere, code))
+
     # ---- prune stale files -------------------------------------------------
     wipe_html(offre_dir, offer_files | tombstone_files)
     wipe_html(emploi_dir, facet_files)
     wipe_html(entreprise_dir, company_files)
 
     print("render_pages: %d offers, %d tombstones, %d facet pages, %d company pages, "
-          "%d sitemap urls"
+          "%d sitemap urls, feed.xml (%d items), %s"
           % (len(offer_files), len(tombstone_files), len(facet_files),
-             len(company_files), len(pages) + len(offers)), file=sys.stderr)
+             len(company_files), len(pages) + len(offers), n_global,
+             ", ".join("%s (%d)" % (f, n) for f, n in dept_feed_counts.items())
+             or "no dept feeds"),
+          file=sys.stderr)
 
 
 if __name__ == "__main__":

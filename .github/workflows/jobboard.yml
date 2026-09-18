@@ -32,6 +32,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install Pillow (LinkedIn card rendering)
+        run: pip install "Pillow==11.3.0"
+
       - name: Cache WTTJ detail responses
         uses: actions/cache@v4
         with:
@@ -44,6 +47,9 @@ jobs:
         env:
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
+          EMAILOCTOPUS_API_KEY: ${{ secrets.EMAILOCTOPUS_API_KEY }}
+          EMAILOCTOPUS_LIST_ID: ${{ secrets.EMAILOCTOPUS_LIST_ID }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         run: ./jobboard/pipeline.sh
 
       - name: Commit refreshed feed
@@ -54,6 +60,8 @@ jobs:
                   jobboard/data/offer_index.json \
                   jobboard/data/wttj_paca.json jobboard/data/ats_jobs.json \
                   jobboard/data/francetravail_paca.json \
+                  jobboard/data/alerts_state.json \
+                  jobboard/data/linkedin_state.json \
                   jobboard/site/jobs.json
           if git diff --cached --quiet; then
             echo "feed unchanged"
@@ -70,3 +78,27 @@ jobs:
 
       - id: deploy
         uses: actions/deploy-pages@v4
+
+      - name: Publish daily LinkedIn card
+        # Runs after deploy so the card's image is actually live at
+        # sudtechjobs.com/linkedin/<date>.png — Buffer fetches it by URL.
+        env:
+          BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
+          BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
+        run: python3 jobboard/linkedin_post.py --publish || echo "LinkedIn publish failed — continuing"
+
+      - name: Persist LinkedIn publish state
+        # --publish only updates last_published_date in-memory on this
+        # runner; the earlier "Commit refreshed feed" step ran before it,
+        # so without this it would never reach git — and a second push
+        # later the same day would publish again (no committed guard).
+        run: |
+          git config user.name  "jobboard-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add jobboard/data/linkedin_state.json
+          if git diff --cached --quiet; then
+            echo "linkedin state unchanged"
+          else
+            git commit -m "chore(jobboard): record LinkedIn publish $(date -u +%FT%TZ) [skip ci]"
+            git push
+          fi

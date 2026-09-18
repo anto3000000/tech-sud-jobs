@@ -154,6 +154,7 @@ lit `site/jobs.json` (déjà construit par `build.py`) et écrit, dans `site/` :
 | `entreprise/index.html` | hub qui liste toutes les entreprises (nb d'offres, ville, secteur, écosystème) |
 | `mentions-legales.html`, `cgu.html`, `confidentialite.html` | pages légales statiques (racine du site) : éditeur non pro + hébergeur, CGU de l'agrégateur, politique RGPD (Umami sans cookie). Texte figé (`LEGAL_UPDATED`), rebâti à chaque run. Lien en pied de page + bandeau d'info audience (sans consentement, Umami étant cookieless) sur toutes les pages et la SPA |
 | `sitemap.xml` | **index** → `sitemap-pages.xml` (home + facettes + fiches entreprise) + `sitemap-offres.xml` (offres vivantes seules, `lastmod` = première vue). Google for Jobs découvre les `JobPosting` via ce dernier |
+| `feed.xml` | RSS 2.0 des **50 offres les plus récentes** (tri par `first_seen`), lien vers la page `offre/` (pas l'ATS, pour garder le clic sur le site). Pas une feature lecteur : c'est le format d'entrée des bots RSS Slack/Discord des écosystèmes PACA et des auto-posts Twitter/LinkedIn. Feed global uniquement ; les feeds par facette viendront si besoin. Autodiscovery `<link rel="alternate">` dans le `<head>` de toutes les pages statiques |
 | `robots.txt` | pointe l'index sitemap |
 
 Dé-doublonnage inter-sources (même offre vue via WTTJ *et* son ATS) : `build.py`

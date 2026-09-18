@@ -1,0 +1,14 @@
+name = "sudtechjobs-alerts"
+main = "subscribe.js"
+compatibility_date = "2026-01-01"
+workers_dev = true
+
+[vars]
+ALLOW_ORIGIN = "https://sudtechjobs.com"
+# Merge tags EmailOctopus (onglet Fields -> colonne "Merge tag", sans les {{ }})
+EO_FIELD_SEARCH = "Search"
+EO_FIELD_LABEL = "Searchlabel"
+
+# Secrets (hors de ce fichier) :
+#   wrangler secret put EO_API_KEY
+#   wrangler secret put EO_LIST_ID

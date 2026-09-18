@@ -889,6 +889,214 @@
     "source": "curated"
   },
   {
+    "name": "CMA CGM",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Supply Chain Tech",
+    "domain": "cmacgm-group.com",
+    "ats": "jobs2web",
+    "slug": "Marseille",
+    "known": {
+      "ats": "jobs2web",
+      "slug": "Marseille",
+      "careers_url": "https://jobs.cmacgm-group.com",
+      "note": "verified 2026-09-18: SAP SuccessFactors Recruiting Marketing (Jobs2Web/\"j2w\") board at jobs.cmacgm-group.com. No JSON API, but the search results are plain server-rendered HTML (GET /search/?q=&locationsearch=<city>&startrow=<n>) -> scraped by the dedicated 'jobs2web' adapter (jobboard/ats/adapters.py) instead of a JSON call. 196 Marseille postings as of this date, incl. several Product Owner/Manager roles; the adapter walks all of them and only fetches the (slower) per-job description for titles classify() flags as tech-relevant. Biggest employer headquartered in Marseille (~6000 local staff)."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Smile",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "ESN / Infogérance",
+    "domain": "smile.eu",
+    "ats": "teamtailor",
+    "slug": null,
+    "known": {
+      "ats": "teamtailor",
+      "slug": null,
+      "careers_url": "https://jobs.smile.eu",
+      "note": "verified 2026-09-18: Teamtailor on a CNAME'd career domain (jobs.smile.eu, not smile.eu itself). Keyless RSS confirmed at https://jobs.smile.eu/jobs.rss."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Scalian",
+    "city": "Vitrolles",
+    "dept": "13",
+    "category": "Engineering / Conseil",
+    "domain": "scalian.com",
+    "ats": "smartrecruiters",
+    "slug": "Scalian",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Scalian",
+      "careers_url": "https://careers.scalian.com/jobs/",
+      "note": "verified 2026-09-18: SmartRecruiters, slug 'Scalian'. Public API confirmed: https://api.smartrecruiters.com/v1/companies/Scalian/postings (698 postings group-wide as of this date, France/PACA subset via geo filter)."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Groupe LR Technologies",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Engineering / Conseil",
+    "domain": "lrtechnologies.fr",
+    "ats": "teamtailor",
+    "slug": "groupelrtechnologies",
+    "known": {
+      "ats": "teamtailor",
+      "slug": "groupelrtechnologies",
+      "careers_url": "https://groupelrtechnologies.teamtailor.com",
+      "note": "verified 2026-09-18: Teamtailor on a separate hosted domain (groupelrtechnologies.teamtailor.com), not a subdomain of lrtechnologies.fr -> unreachable by page-fingerprint auto-discovery, needs this known override. Keyless RSS confirmed."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Onepoint",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "ESN / Infogérance",
+    "domain": "groupeonepoint.com",
+    "ats": "workday",
+    "slug": "onepoint.wd3.myworkdayjobs.com/OnepointFR",
+    "known": {
+      "ats": "workday",
+      "slug": "onepoint.wd3.myworkdayjobs.com/OnepointFR",
+      "careers_url": "https://onepoint.wd3.myworkdayjobs.com/fr-FR/OnepointFR",
+      "note": "verified 2026-09-18: migrated from SmartRecruiters (careers.smartrecruiters.com/onepoint still resolves but returns 0 postings, stale) to Workday. Public CXS API confirmed unauthenticated, 291 postings group-wide."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "PTC",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Software / PLM",
+    "domain": "ptc.com",
+    "ats": "workday",
+    "slug": "ptc.wd1.myworkdayjobs.com/PTC",
+    "known": {
+      "ats": "workday",
+      "slug": "ptc.wd1.myworkdayjobs.com/PTC",
+      "careers_url": "https://ptc.wd1.myworkdayjobs.com/PTC",
+      "note": "verified 2026-09-18: Workday CXS API confirmed unauthenticated; includes the 'Product Manager – Learning Management System for Technical Enablement' (Paris) posting also seen on LinkedIn under the Aix-en-Provence search radius."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Capgemini",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "ESN / Infogérance",
+    "domain": "capgemini.com",
+    "ats": "macs",
+    "slug": "Capgemini",
+    "known": {
+      "ats": "macs",
+      "slug": "Capgemini",
+      "careers_url": "https://www.capgemini.com",
+      "note": "verified 2026-09-18: in-house WordPress jobs plugin ('cg-jobs' / MACS), keyless REST at /wp-json/macs/v1/jobs?brand=Capgemini&country_code=fr-fr (552 FR postings as of this date, incl. Aix-en-Provence). Same API shape as Sogeti (see that entry) -> shared Capgemini Group infrastructure, first-class adapter added instead of a one-off scraper."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Sogeti",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "ESN / Infogérance",
+    "domain": "sogeti.com",
+    "ats": "macs",
+    "slug": "Sogeti",
+    "known": {
+      "ats": "macs",
+      "slug": "Sogeti",
+      "careers_url": "https://www.sogeti.com",
+      "note": "verified 2026-09-18: same in-house 'MACS' WordPress jobs API as parent Capgemini (see that entry), keyless REST at /wp-json/macs/v1/jobs?brand=Sogeti&country_code=fr-fr (131 FR postings as of this date, incl. 'Product Owner' in Aix-en-Provence)."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "LOCKSIGHT",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Cybersecurity",
+    "domain": "locksight.fr",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://locksight.fr/tableau-de-bord-des-offres-demploi/",
+      "note": "verified 2026-09-18: WP Job Manager plugin, but the site's WP REST API is locked down (Kadence Security 'itsec_rest_api_access_restricted', 401 on /wp-json/*) -> no public API, needs a dedicated HTML scraper."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Klanik",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Data / Analytics",
+    "domain": "klanik.com",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.klanik.com/jobs",
+      "note": "verified 2026-09-18: bespoke Next.js site with its own GraphQL backend (POST /api/graphql), not a known ATS -> would need a dedicated scraper against that GraphQL endpoint."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Devoteam",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "ESN / Infogérance",
+    "domain": "devoteam.com",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.devoteam.com/fr/jobs/",
+      "note": "verified 2026-09-18: bespoke careers portal, no recognized ATS fingerprint found on the page -> needs a dedicated scraper."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Synchrone",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "ESN / Infogérance",
+    "domain": "synchrone.fr",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.synchrone.fr/fr/carrieres/",
+      "note": "verified 2026-09-18: no structured job board at all -> the careers page lists expertise areas only and points candidates to Hellowork, LinkedIn or a direct recrutement@synchrone.fr email. Nothing scrapable; would need to go through Hellowork/LinkedIn instead."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "IT Mates",
+    "city": "Bouches-du-Rhône",
+    "dept": "13",
+    "category": "ESN / Infogérance",
+    "domain": "itmates.fr",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://itmates.fr",
+      "note": "verified 2026-09-18: tiny boutique site, no job board — 'Rejoindre l'équipe' just links to a contact form. Nothing to fetch programmatically; the LinkedIn posting is likely the only way it surfaces."
+    },
+    "source": "curated"
+  },
+  {
     "name": "Wand’R",
     "source": "frenchtech-aix-marseille",
     "domain": "wand-r.com",

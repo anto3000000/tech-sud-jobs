@@ -21,8 +21,20 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from html import unescape
+from urllib.parse import quote
 
 from .http import get_json, get_text, post_json
+
+
+def _classify(title):
+    """Lazy import of jobboard.classify — keeps it an optional dependency for
+    every adapter that doesn't need it (only Jobs2Web does, as a cheap gate
+    on which postings are worth an extra per-job description GET)."""
+    try:
+        from jobboard.classify import classify
+    except ImportError:
+        return True  # can't tell -> don't skip the fetch
+    return bool(classify(title))
 
 
 # --------------------------------------------------------------------------- #
@@ -112,6 +124,16 @@ def slug_variants(name, declared_slug=None):
 
 def _now():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+# light France/PACA hint for Workday's `locationsText` — only worth an extra
+# per-job detail GET (Workday has no bulk-description endpoint) when the
+# listing is plausibly ours; a non-FR posting gets no description (it's
+# dropped by the pipeline's PACA filter downstream anyway).
+_FR_LOC_RX = re.compile(
+    r"\bfrance\b|\b(?:paris|marseille|lyon|toulouse|bordeaux|lille|nantes|nice|strasbourg|"
+    r"montpellier|rennes|aix[- ]en[- ]provence|sophia[- ]antipolis|antibes|cannes|avignon|"
+    r"valbonne|la\s+ciotat|aubagne|rousset|g[ée]menos|meyreuil|vitrolles|marignane)\b", re.I)
 
 
 def _first(regexes, text):
@@ -514,6 +536,182 @@ class Taleez(Adapter):
 
 
 # --------------------------------------------------------------------------- #
+#  Workday (CXS) — big-corp ATS. No API key: the same JSON the career site's
+#  own search box calls is open at <host>/wday/cxs/<tenant>/<site>/jobs.
+# --------------------------------------------------------------------------- #
+class Workday(Adapter):
+    """slug is '<tenant>.wd<N>.myworkdayjobs.com/<site>' (host + site; tenant is
+    the host's first label). Career sites almost never live on the company's
+    own domain, so this is reached via a `known` override in practice, not
+    page-fingerprint discovery."""
+    key = "workday"
+    has_api = True
+    signatures = ("myworkdayjobs.com", "wday/cxs")
+    slug_regexes = (
+        r"https?://([a-z0-9-]+\.wd\d+\.myworkdayjobs\.com)/(?:[a-z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]+)",
+    )
+    _PAGE = 20
+    _CAP = 2000  # safety ceiling on total postings walked
+
+    def extract_slug(self, html, final_url):
+        m = re.search(self.slug_regexes[0], (html or "") + "\n" + (final_url or ""), re.I)
+        return "%s/%s" % (m.group(1), m.group(2)) if m else None
+
+    def _detail(self, host, tenant, site, external_path):
+        if not external_path:
+            return None
+        r = get_json("https://%s/wday/cxs/%s/%s%s" % (host, tenant, site, external_path), retries=0)
+        if not r.ok:
+            return None
+        return _body((r.json().get("jobPostingInfo") or {}).get("jobDescription"))
+
+    def fetch(self, slug, careers_origin=None):
+        if not slug or "/" not in slug:
+            return FetchResult(self.key, slug, False, note="slug must be '<host>/<site>'")
+        host, site = slug.split("/", 1)
+        tenant = host.split(".")[0]
+        url = "https://%s/wday/cxs/%s/%s/jobs" % (host, tenant, site)
+        jobs, seen, offset, first_total = [], set(), 0, None
+        while True:
+            r = post_json(url, {"appliedFacets": {}, "limit": self._PAGE,
+                                "offset": offset, "searchText": ""}, retries=1)
+            if not r.ok:
+                return FetchResult(self.key, slug, False, endpoint=url, note="HTTP %s" % r.status)
+            data = r.json()
+            # some tenants report `total` only on the first page (0 or stale
+            # afterwards) and the postings list can wrap around past the true
+            # end -> trust the first page's count, dedupe by URL as a backstop.
+            if offset == 0:
+                first_total = data.get("total", 0)
+            postings = data.get("jobPostings") or []
+            if not postings:
+                break
+            new = 0
+            for p in postings:
+                ext = p.get("externalPath")
+                jurl = ("https://%s%s" % (host, ext)) if ext else None
+                if not jurl or jurl in seen:
+                    continue
+                seen.add(jurl)
+                new += 1
+                loc = p.get("locationsText") or ""
+                desc = self._detail(host, tenant, site, ext) if _FR_LOC_RX.search(loc) else None
+                jobs.append(Job(p.get("title"), jurl, location=loc,
+                                published_at=p.get("postedOn"), description=desc, raw=p))
+            offset += self._PAGE
+            if not new or offset >= (first_total or 0) or offset >= self._CAP:
+                break
+        return FetchResult(self.key, slug, True, jobs, endpoint=url,
+                           note="0 postings" if not jobs else None)
+
+
+# --------------------------------------------------------------------------- #
+#  MACS — Capgemini Group's in-house WordPress jobs plugin, shared verbatim
+#  by Capgemini and its sub-brands (Sogeti confirmed same shape). Keyless
+#  JSON, and the ?country_code filter does the geo-scoping for us.
+# --------------------------------------------------------------------------- #
+class Macs(Adapter):
+    key = "macs"
+    has_api = True
+    signatures = ("wp-json/macs/v1", "macs-react-jobs", "cg-jobs-search-frontend")
+    slug_regexes = (r"[?&]brand=([A-Za-z0-9_-]+)",)
+
+    def fetch(self, slug, careers_origin=None):
+        if not careers_origin:
+            return FetchResult(self.key, slug, False, note="MACS needs careers_origin (the WP site)")
+        brand = slug or "Capgemini"
+        url = "%s/wp-json/macs/v1/jobs?brand=%s&country_code=fr-fr&size=1000" % (
+            careers_origin.rstrip("/"), brand)
+        r = get_json(url, retries=1)
+        if not r.ok:
+            return FetchResult(self.key, slug, False, endpoint=url, note="HTTP %s" % r.status)
+        data = r.json()
+        jobs = []
+        for j in data.get("data", []):
+            jobs.append(Job(j.get("title"), j.get("apply_job_url"),
+                            location=j.get("location"),
+                            department=j.get("professional_communities") or j.get("sbu") or None,
+                            contract=j.get("contract_type"),
+                            published_at=_epoch_s(j.get("updated_at")),
+                            description=_body(j.get("description")), raw=j))
+        return FetchResult(self.key, slug, True, jobs, endpoint=url,
+                           note="0 postings" if not jobs else None)
+
+
+# --------------------------------------------------------------------------- #
+#  Jobs2Web — SAP SuccessFactors Recruiting Marketing. No JSON API, but the
+#  search results are plain server-rendered HTML
+#  (<origin>/search/?q=&locationsearch=<city>&startrow=<n>), so a regex
+#  scrape works without a headless browser (confirmed live on CMA CGM).
+# --------------------------------------------------------------------------- #
+class Jobs2Web(Adapter):
+    """slug is the `locationsearch` value (a city name, e.g. 'Marseille')."""
+    key = "jobs2web"
+    has_api = True
+    signatures = ("/platform/js/j2w/", "j2w.search", "jobtitle-link", 'id="searchresults"')
+
+    _ROW_RX = re.compile(
+        r'<span class="jobFacility">(?P<id>[^<]*)</span>.*?'
+        r'<span class="jobTitle hidden-phone">\s*<a href="(?P<href>[^"]+)"[^>]*>(?P<title>[^<]*)</a>.*?'
+        r'<span class="jobLocation">\s*(?P<location>[^<]*?)\s*</span>.*?'
+        r'<span class="jobShifttype">(?P<contract>[^<]*)</span>.*?'
+        r'<span class="jobDepartment">(?P<dept>[^<]*)</span>',
+        re.S)
+    _TOTAL_RX = re.compile(r"of <b>(\d+)</b>")
+    _DESC_RX = re.compile(r'<span class="jobdescription">(.*?)<p class="job-location">', re.S)
+    _PAGE = 25
+    _CAP = 500  # safety ceiling on total postings walked for one city
+
+    def _detail(self, origin, href):
+        r = get_text(origin + href, retries=0, timeout=15)
+        if not r.ok:
+            return None
+        m = self._DESC_RX.search(r.body)
+        return _body(m.group(1)) if m else None
+
+    def fetch(self, slug, careers_origin=None):
+        if not careers_origin:
+            return FetchResult(self.key, slug, False, note="needs careers_origin (the Jobs2Web site)")
+        origin = careers_origin.rstrip("/")
+        city = slug or ""
+        jobs, seen, offset, first_total = [], set(), 0, None
+        while True:
+            url = "%s/search/?q=&locationsearch=%s&startrow=%d" % (
+                origin, quote(city), offset)
+            r = get_text(url, retries=1, timeout=20)
+            if not r.ok:
+                return FetchResult(self.key, slug, False, endpoint=url, note="HTTP %s" % r.status)
+            if offset == 0:
+                m = self._TOTAL_RX.search(r.body)
+                first_total = int(m.group(1)) if m else 0
+            rows = list(self._ROW_RX.finditer(r.body))
+            if not rows:
+                break
+            new = 0
+            for m in rows:
+                href = m.group("href")
+                if href in seen:
+                    continue
+                seen.add(href)
+                new += 1
+                title = unescape(m.group("title")).strip()
+                # a classify() hit gates the extra per-job GET; every row is
+                # still returned (unfiltered) so the pipeline's own PACA/tech
+                # filter in build.py stays the single source of truth.
+                desc = self._detail(origin, href) if _classify(title) else None
+                jobs.append(Job(title, origin + href,
+                                location=unescape(m.group("location")).strip(),
+                                department=unescape(m.group("dept")).strip() or None,
+                                contract=unescape(m.group("contract")).strip() or None,
+                                description=desc, raw={"id": m.group("id").strip()}))
+            offset += self._PAGE
+            if not new or offset >= first_total or offset >= self._CAP:
+                break
+        return FetchResult(self.key, slug, True, jobs, endpoint="%s/search/" % origin,
+                           note="0 postings" if not jobs else None)
+
+
+# --------------------------------------------------------------------------- #
 #  Detection-only adapters (no clean public JSON API -> route to browser)
 # --------------------------------------------------------------------------- #
 class WelcomeToTheJungle(Adapter):
@@ -684,6 +882,20 @@ def _rfc2822(v):
         return v
 
 
+def _epoch_s(v):
+    """Epoch seconds (int or numeric string) -> ISO8601, pass-through otherwise."""
+    try:
+        v = float(v)
+    except (TypeError, ValueError):
+        return v
+    if v > 1_000_000_000:
+        try:
+            return datetime.fromtimestamp(v, tz=timezone.utc).isoformat(timespec="seconds")
+        except (OverflowError, OSError, ValueError):
+            return None
+    return None
+
+
 def _iso_ms(v):
     """Epoch millis -> ISO8601, pass-through otherwise."""
     if isinstance(v, (int, float)) and v > 1_000_000_000:
@@ -698,7 +910,7 @@ def _iso_ms(v):
 ADAPTERS = [
     Greenhouse(), Lever(), Ashby(), Recruitee(), Workable(),
     SmartRecruiters(), Personio(), Taleez(), Teamtailor(),
-    Flatchr(), Talentsoft(),
+    Flatchr(), Talentsoft(), Workday(), Macs(), Jobs2Web(),
     WelcomeToTheJungle(), ICIMS(),
 ]
 BY_KEY = {a.key: a for a in ADAPTERS}
