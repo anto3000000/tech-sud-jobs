@@ -1650,6 +1650,121 @@ chaque mise à jour du site.</p>
         canonical="%s/guides/" % SITE_URL, body=body)
 
 
+def compute_intern_stats(jobs):
+    """Recomputed on every build, like the other guides."""
+    rows = [j for j in jobs if j.get("contract") in ("Stage", "Alternance")]
+
+    by_contract = Counter(j.get("contract") for j in rows)
+    by_cat = Counter(j.get("category") for j in rows)
+    by_company = Counter(j.get("company") for j in rows)
+    by_zone = Counter()
+    for j in rows:
+        z = CITY_ZONE.get(j.get("city"))
+        if z:
+            by_zone[z] += 1
+
+    return {
+        "n_total": len(jobs), "n": len(rows),
+        "by_contract": by_contract,
+        "by_cat_top": [(cat, n) for cat, n in by_cat.most_common() if n > 0],
+        "top_companies": [(c, n) for c, n in by_company.most_common(6) if n >= 2],
+        "by_zone": [(z, by_zone.get(z, 0)) for z in SALARY_ZONES if by_zone.get(z, 0) > 0],
+    }
+
+
+def render_intern_guide(jobs, generated):
+    slug = "guide-stage-alternance-tech-paca"
+    st = compute_intern_stats(jobs)
+    pct = round(100 * st["n"] / st["n_total"]) if st["n_total"] else 0
+
+    cat_list = "".join(
+        "<li><b>%s</b> — %d offre%s</li>" % (esc(CATS.get(cat, (cat,))[0]), n, "s" if n > 1 else "")
+        for cat, n in st["by_cat_top"])
+
+    if st["top_companies"]:
+        company_txt = ", ".join(
+            "<b>%s</b> (%d)" % (esc(c), n) for c, n in st["top_companies"])
+    else:
+        company_txt = "pas assez d’offres pour dégager des entreprises récurrentes en ce moment"
+
+    if st["by_zone"]:
+        zone_txt = ", ".join("<b>%s</b> (%d)" % (esc(z), n) for z, n in st["by_zone"])
+    else:
+        zone_txt = "pas assez d’offres pour comparer les bassins d’emploi en ce moment"
+
+    faq = [
+        ("Combien y a-t-il d’offres de stage et d’alternance tech en PACA en ce moment ?",
+         "<p>%d offres sur les %d actuellement diffusées sur sudtechjobs (%d%% du flux), "
+         "dont %d stages et %d alternances. C’est un volume réel mais modeste&nbsp;: la "
+         "tech en PACA reste un marché où l’essentiel des offres est en CDI direct.</p>"
+         % (st["n"], st["n_total"], pct,
+            st["by_contract"].get("Stage", 0), st["by_contract"].get("Alternance", 0))),
+
+        ("Stage ou alternance : quelle est la différence ?",
+         "<p>Le <b>stage</b> est une période temporaire (quelques mois) intégrée à une "
+         "formation, sans contrat de travail classique, avec une gratification (pas un "
+         "vrai salaire). L’<b>alternance</b> (apprentissage ou professionnalisation) est un "
+         "vrai contrat de travail à temps partagé entre l’entreprise et l’école, rémunéré "
+         "selon une grille légale liée à l’âge et au niveau d’études, et débouche plus "
+         "souvent sur une embauche directe à la clé.</p>"),
+
+        ("Quelles entreprises recrutent le plus en stage/alternance en ce moment ?",
+         "<p>%s. Ce sont surtout des grands groupes et ESN (Capgemini, Sopra Steria, "
+         "Wavestone, Deloitte…) qui structurent des campagnes de recrutement stage/"
+         "alternance chaque année&nbsp;: une bonne partie du volume vient d’elles plutôt "
+         "que de petites startups qui recrutent au coup par coup.</p>" % company_txt),
+
+        ("Dans quelles villes trouve-t-on le plus de stages et d’alternances ?",
+         "<p>%s. Sans surprise, ce sont les bassins qui concentrent aussi le plus gros "
+         "volume d’offres tech tout court (voir le <a href=\"/guide-entreprises-qui-"
+         "recrutent-tech-paca.html\">guide des entreprises qui recrutent</a>).</p>"
+         % zone_txt),
+
+        ("Pour quels métiers trouve-t-on des stages et alternances ?",
+         "<p>La répartition par métier&nbsp;:</p><ul>%s</ul>"
+         "<p>Le développement domine très largement&nbsp;: c’est le métier qui a le plus "
+         "besoin de volume junior à former en continu.</p>" % cat_list),
+
+        ("Ce volume est-il représentatif de tout ce qui existe réellement ?",
+         "<p>Non, probablement pas complètement. Une bonne partie des stages et "
+         "alternances tech se pourvoit via les réseaux d’écoles (42 Nice, Epitech, Ynov, "
+         "Simplon, Polytech…), les forums étudiants et le bouche-à-oreille, sans jamais "
+         "passer par Welcome to the Jungle ni par les pages carrière publiques que "
+         "sudtechjobs agrège. Le nombre réel d’opportunités est très certainement plus "
+         "élevé que ce que montre ce guide — considérez-le comme un aperçu du marché "
+         "« public », pas comme l’inventaire complet.</p>"),
+
+        ("Comment repérer une offre sérieuse et bien préparer sa candidature ?",
+         "<p>Quelques signaux utiles&nbsp;: une fiche de poste précise (missions, stack, "
+         "durée, gratification/rémunération annoncée) plutôt qu’une annonce vague et "
+         "recyclée d’année en année&nbsp;; un tuteur ou maître d’apprentissage identifié "
+         "dès l’entretien&nbsp;; et, pour l’alternance, la confirmation que l’entreprise a "
+         "déjà accueilli des alternants (le rythme école/entreprise, souvent mal expliqué "
+         "en entretien, vaut la peine d’être posé comme question directe).</p>"),
+
+        ("Comment être alerté sur les nouvelles offres de stage et d’alternance ?",
+         "<p>Sur la <a href=\"/\">page d’accueil</a>, le filtre « Tous contrats » permet de "
+         "restreindre l’affichage au stage ou à l’alternance, à combiner avec une ville ou "
+         "un métier&nbsp;; une alerte email peut ensuite être créée sur cette recherche "
+         "précise pour être prévenu à chaque nouvelle offre.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide stage & alternance",
+        h1="Stage et alternance tech en PACA en 2026&nbsp;: où et comment postuler&nbsp;?",
+        intro="Développement, data, design&nbsp;: combien de stages et d’alternances tech "
+              "sont réellement ouverts en PACA en ce moment, chez qui, et dans quelle "
+              "ville&nbsp;? Chiffres calculés à partir des offres diffusées sur "
+              "<a href=\"%s/\">sudtechjobs</a>." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/">Page d’accueil (filtre « Tous contrats »)</a>.</p>',
+        title="Stage et alternance tech en PACA en 2026 : où et comment postuler | sudtechjobs",
+        description="Combien de stages et d'alternances tech sont ouverts en PACA en ce "
+                    "moment, chez quelles entreprises et dans quelle ville, calculé à "
+                    "partir des offres réellement diffusées sur sudtechjobs.")
+
+
 # --------------------------------------------------------------------------- #
 #  company pages                                                              #
 # --------------------------------------------------------------------------- #
@@ -2249,7 +2364,8 @@ def main():
 
     # ---- guides (FAQ articles, site root + /guides/ hub) -------------------
     guides_meta = []
-    for build_guide in (render_salary_guide, render_remote_guide, render_hiring_guide):
+    for build_guide in (render_salary_guide, render_remote_guide, render_hiring_guide,
+                        render_intern_guide):
         guide_slug, guide_html, card_title, card_desc = build_guide(jobs, generated)
         guides_meta.append((guide_slug, card_title, card_desc))
         with open(os.path.join(SITE, guide_slug + ".html"), "w", encoding="utf-8") as fh:
