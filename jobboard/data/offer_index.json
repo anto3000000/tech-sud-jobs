@@ -129,6 +129,116 @@
 "last_seen": "2026-09-18",
 "title": "Ingénieur systèmes et réseaux H/F"
 },
+"airbus-helicopters-logiciel-r-d-2027-amelioration-continue-developpeme-f05b48": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "2027 - Amélioration continue: développement et déploiement numérique (F/H)"
+},
+"airbus-helicopters-logiciel-r-d-2027-developpement-destimateurs-de-cha-86fe14": {
+"category": "data",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "2027 - Développement d’estimateurs de charges mécaniques par Intelligence Artificielle (f/h)"
+},
+"airbus-helicopters-logiciel-r-d-2027-ingenieur-logiciel-embarque-syste-fbae8f": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "2027 - Ingénieur Logiciel Embarqué – Systèmes d'Armes (f/h)"
+},
+"airbus-helicopters-logiciel-r-d-2027-stage-en-amelioration-continue-et-9420ac": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "2027 - Stage en Amélioration Continue et Développement des Processus (f/h)"
+},
+"airbus-helicopters-logiciel-r-d-airbus-protect-architecte-cybersecurit-72fff8": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Airbus Protect - Architecte Cybersécurité d'entreprise Senior - (H/F)"
+},
+"airbus-helicopters-logiciel-r-d-architecte-systemes-sur-le-perimetre-h-856d4b": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte systèmes sur le périmètre Helionix (H/F)"
+},
+"airbus-helicopters-logiciel-r-d-digitalcampus-sap-product-manager-prod-068701": {
+"category": "product",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "product",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "#DigitalCampus SAP Product Manager Production (f/m)"
+},
+"airbus-helicopters-logiciel-r-d-et19a-responsable-developpement-system-e8babb": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "#ET19A Responsable Développement Systèmes Embarqués (F/H)"
+},
+"airbus-helicopters-logiciel-r-d-et20-ingenieur-securite-et-fiabilite-s-80d62e": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "#ET20 Ingénieur Sécurité et Fiabilité Senior (F/H)"
+},
+"airbus-helicopters-logiciel-r-d-et20r-ingenieur-developpement-cnd-aero-b7107c": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "#ET20R Ingénieur développement CND Aéronautique - Niveau 2 et 3 (f/h)"
+},
+"airbus-helicopters-logiciel-r-d-moa-part-145-compliance-monitoring-man-da6780": {
+"category": "tech-adjacent",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "tech-adjacent",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "MOA/PART 145 Compliance Monitoring Manager M/F"
+},
 "aircall-senior-data-engineer-real-time-analytics-397fa3": {
 "category": "data",
 "city": "Remote",
@@ -814,7 +924,7 @@
 "city": "Orange",
 "company": "B-HIVE",
 "expired_at": null,
-"facet_slug": "eng",
+"facet_slug": "eng-orange",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "Ingénieur Sécurité – Exploitation Nucléaire (H/F)"
@@ -1163,21 +1273,51 @@
 "category": "eng",
 "city": "Sophia Antipolis",
 "company": "Capgemini",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "eng-sophia-antipolis",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-18",
 "title": "Analyste SOC - Stage"
 },
-"capgemini-architecte-cloud-c0c333": {
+"capgemini-analyste-soc-stage-56e23a": {
+"category": "eng",
+"city": "Lyon",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Analyste SOC - Stage"
+},
+"capgemini-architecte-cloud-160ec1": {
 "category": "eng",
 "city": "Valbonne",
 "company": "Capgemini",
 "expired_at": null,
 "facet_slug": "eng-valbonne",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte Cloud"
+},
+"capgemini-architecte-cloud-c0c333": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Capgemini",
+"expired_at": "2026-09-18",
+"facet_slug": "eng-valbonne",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "Architecte Cloud"
+},
+"capgemini-architecte-data-ia-0f6db7": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte Data/IA"
 },
 "capgemini-architecte-logiciel-embarque-bas-niveau-37c1c5": {
 "category": "eng",
@@ -1199,6 +1339,26 @@
 "last_seen": "2026-09-18",
 "title": "Architecte Solution 3DEXPERIENCE"
 },
+"capgemini-architecte-solution-9c09e0": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte Solution"
+},
+"capgemini-architecte-solutions-ia-7f9e9a": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte Solutions IA"
+},
 "capgemini-architecte-solutions-logiciel-aeronautique-defense-43d313": {
 "category": "eng",
 "city": "Valbonne",
@@ -1208,6 +1368,26 @@
 "first_seen": "2026-09-11",
 "last_seen": "2026-09-18",
 "title": "Architecte Solutions logiciel Aéronautique/Défense"
+},
+"capgemini-architecte-technique-sap-b3bda2": {
+"category": "eng",
+"city": "SCHILTIGHEIM",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte Technique SAP"
+},
+"capgemini-associate-data-engineer-664010": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Associate Data Engineer"
 },
 "capgemini-business-analyst-386989": {
 "category": "data",
@@ -1219,13 +1399,43 @@
 "last_seen": "2026-09-18",
 "title": "Business Analyst"
 },
-"capgemini-business-analyst-stage-8032df": {
+"capgemini-business-analyst-aeronautique-confirme-4f54db": {
 "category": "data",
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
 "facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Business Analyst Aéronautique confirmé"
+},
+"capgemini-business-analyst-salesforce-2fdd00": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Business Analyst Salesforce"
+},
+"capgemini-business-analyst-stage-8032df": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": "2026-09-18",
+"facet_slug": "data-aix-en-provence",
 "first_seen": "2026-09-16",
+"last_seen": "2026-09-18",
+"title": "Business Analyst - Stage"
+},
+"capgemini-business-analyst-stage-fe97c9": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
 "last_seen": "2026-09-18",
 "title": "Business Analyst - Stage"
 },
@@ -1269,6 +1479,36 @@
 "last_seen": "2026-09-18",
 "title": "Cloud DevOps Engineer Senior Sophia-Antipolis"
 },
+"capgemini-consultant-consultante-data-gouvernance-5ccda0": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "CONSULTANT / CONSULTANTE DATA GOUVERNANCE"
+},
+"capgemini-consultante-consultant-cybersecurite-cloud-49f8ec": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Consultante / Consultant Cybersécurité Cloud"
+},
+"capgemini-consultante-consultant-cybersecurite-iam-c9afbf": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Consultante / Consultant Cybersécurité IAM"
+},
 "capgemini-consultante-consultant-fonctionnel-plm-stage-130a20": {
 "category": "tech-adjacent",
 "city": "Aix-en-Provence",
@@ -1279,6 +1519,26 @@
 "last_seen": "2026-09-18",
 "title": "Consultante / Consultant fonctionnel PLM - Stage"
 },
+"capgemini-consultante-consultant-fonctionnel-senior-sap-cd1e4b": {
+"category": "tech-adjacent",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "tech-adjacent-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Consultante/consultant fonctionnel senior SAP"
+},
+"capgemini-consultante-consultant-senior-cybersecurite-grc-76e04e": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Consultante / Consultant Senior Cybersécurité GRC"
+},
 "capgemini-data-architect-406641": {
 "category": "data",
 "city": "Aix-en-Provence",
@@ -1288,6 +1548,46 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "Data Architect"
+},
+"capgemini-data-business-analyst-d702ae": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data Business Analyst"
+},
+"capgemini-data-product-owner-business-data-analyst-17d1bc": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data Product Owner / Business Data Analyst"
+},
+"capgemini-developpeuse-developpeur-angular-7f849d": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeuse / Développeur ANGULAR"
+},
+"capgemini-developpeuse-developpeur-confirme-java-fullstack-08f001": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeuse / Développeur confirmé Java fullstack"
 },
 "capgemini-developpeuse-developpeur-cpp-d8a177": {
 "category": "eng",
@@ -1309,11 +1609,21 @@
 "last_seen": "2026-09-18",
 "title": "Développeuse/Développeur Java"
 },
-"capgemini-developpeuse-developpeur-java-stage-45cddc": {
+"capgemini-developpeuse-developpeur-java-stage-02724f": {
 "category": "eng",
 "city": "Valbonne",
 "company": "Capgemini",
 "expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeuse / Développeur Java - Stage"
+},
+"capgemini-developpeuse-developpeur-java-stage-45cddc": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Capgemini",
+"expired_at": "2026-09-18",
 "facet_slug": "eng-valbonne",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-18",
@@ -1349,6 +1659,26 @@
 "last_seen": "2026-09-18",
 "title": "Ingénieur / Ingénieure développement full stack confirmé - Aix en Provence"
 },
+"capgemini-ingenieure-ingenieur-developpement-full-stack-confirme-d1c7bc": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieure / Ingénieur développement Full Stack confirmé"
+},
+"capgemini-ingenieure-ingenieur-devops-e1db2e": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieure / Ingénieur DevOps"
+},
 "capgemini-ingenieure-ingenieur-etudes-probabilistes-de-surete-23ec6f": {
 "category": "eng",
 "city": "Montrouge",
@@ -1358,6 +1688,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-16",
 "title": "Ingénieure / Ingénieur Études Probabilistes de Sûreté"
+},
+"capgemini-ingenieure-ingenieur-grc-stage-7d2f3f": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieure / Ingénieur GRC - Stage"
 },
 "capgemini-ingenieure-ingenieur-qa-2d9eb9": {
 "category": "eng",
@@ -1373,7 +1713,7 @@
 "category": "eng",
 "city": "Toulon",
 "company": "Capgemini",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "eng-toulon",
 "first_seen": "2026-09-09",
 "last_seen": "2026-09-18",
@@ -1389,13 +1729,33 @@
 "last_seen": "2026-09-09",
 "title": "Ingénieure/Ingénieur Réseau"
 },
-"capgemini-ingenieure-ingenieur-systeme-linux-windows-28cfb5": {
+"capgemini-ingenieure-ingenieur-reseau-e6558f": {
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
 "facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieure / Ingénieur réseau"
+},
+"capgemini-ingenieure-ingenieur-systeme-linux-windows-28cfb5": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": "2026-09-18",
+"facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-09",
+"last_seen": "2026-09-18",
+"title": "Ingénieure / Ingénieur système Linux & Windows"
+},
+"capgemini-ingenieure-ingenieur-systeme-linux-windows-8a98ba": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
 "last_seen": "2026-09-18",
 "title": "Ingénieure / Ingénieur système Linux & Windows"
 },
@@ -1409,11 +1769,21 @@
 "last_seen": "2026-09-09",
 "title": "Ingénieure / Ingénieur système Linux & Windows"
 },
+"capgemini-ingenieure-ingenieur-systeme-windows-042f3f": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieure / Ingénieur système Windows"
+},
 "capgemini-ingenieure-ingenieur-systeme-windows-2317b0": {
 "category": "eng",
 "city": "Toulon",
 "company": "Capgemini",
-"expired_at": null,
+"expired_at": "2026-09-18",
 "facet_slug": "eng-toulon",
 "first_seen": "2026-09-09",
 "last_seen": "2026-09-18",
@@ -1429,6 +1799,46 @@
 "last_seen": "2026-09-09",
 "title": "Ingénieure / Ingénieur système Windows"
 },
+"capgemini-ingenieure-ingenieur-systemes-et-reseaux-baaa2c": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieure / Ingénieur Systèmes et réseaux"
+},
+"capgemini-lead-developpeuse-developpeur-java-full-stack-aa75a7": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Lead développeuse / développeur Java full stack"
+},
+"capgemini-leader-technique-back-end-java-python-b412bb": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Leader Technique Back-End - Java / Python"
+},
+"capgemini-leader-technique-fullstack-java-0d98d5": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Leader technique Fullstack Java"
+},
 "capgemini-leader-technique-fullstack-java-javascript-42093e": {
 "category": "eng",
 "city": "Aix-en-Provence",
@@ -1438,6 +1848,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "Leader technique Fullstack - Java / Javascript"
+},
+"capgemini-leader-technique-ia-generation-ia-java-python-738adc": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Leader Technique IA / Génération IA (Java / Python)"
 },
 "capgemini-network-security-engineer-senior-aix-en-provence-2bfc63": {
 "category": "eng",
@@ -1469,6 +1889,26 @@
 "last_seen": "2026-09-18",
 "title": "Sales Developer"
 },
+"capgemini-sap-data-migration-lead-6fb5d4": {
+"category": "data",
+"city": "Toulouse",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "SAP Data Migration Lead"
+},
+"capgemini-tech-lead-databricks-41ea8d": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Tech Lead Databricks"
+},
 "capgemini-tech-lead-ignition-0e66c0": {
 "category": "eng",
 "city": "Aix-en-Provence",
@@ -1478,6 +1918,26 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "Tech Lead Ignition"
+},
+"capgemini-tech-lead-sap-03d328": {
+"category": "eng",
+"city": "SCHILTIGHEIM",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Tech Lead SAP"
+},
+"capgemini-tech-lead-sap-btp-07c7b4": {
+"category": "eng",
+"city": "Meroux",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Tech Lead SAP BTP"
 },
 "cba-informatique-administrateur-systemes-et-reseaux-sysops-h-f-27bf3d": {
 "category": "eng",
@@ -1658,6 +2118,236 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "MECANICIEN MAINTENANCE SYSTEMES D'ARMES OPTOELECTRONIQUES"
+},
+"cma-cgm-analyste-soc-centre-de-defense-cyber-600a71": {
+"category": "eng",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "ANALYSTE SOC - CENTRE DE DÉFENSE CYBER"
+},
+"cma-cgm-assistant-achats-data-analyst-h-f-0b35a1": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Assistant Achats & Data Analyst (H/F)"
+},
+"cma-cgm-bi-line-ops-fd2be5": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "BI Line Ops"
+},
+"cma-cgm-controle-et-qualite-des-donnees-achats-ports-terminaux-4f51f0": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "controle et qualité des données  - Achats ports & terminaux"
+},
+"cma-cgm-data-analyst-vessel-energy-performance-a260d9": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data Analyst - Vessel Energy Performance"
+},
+"cma-cgm-data-quality-control-ports-terminals-procurement-6d3cec": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "data quality & control - ports & terminals procurement"
+},
+"cma-cgm-data-scientist-3b0658": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data scientist"
+},
+"cma-cgm-developpeur-euse-bi-qliksense-vessel-energy-performance-c85f67": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "DÉVELOPPEUR(EUSE) BI / QLIKSENSE - VESSEL ENERGY PERFORMANCE"
+},
+"cma-cgm-digital-project-officer-product-owner-ports-terminals-b2eda5": {
+"category": "product",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "product-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Digital Project Officer / Product Owner - Ports & Terminals"
+},
+"cma-cgm-digitalisation-des-process-marketing-sales-automatisation-data-69ac96": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Digitalisation des Process Marketing & Sales (Automatisation, Dataviz, IA)"
+},
+"cma-cgm-digitalization-of-marketing-sales-processes-automation-data-vi-2ec395": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Digitalization of Marketing & Sales Processes (Automation, Data Visualization, AI)"
+},
+"cma-cgm-directeur-rice-audit-international-cybersecurite-et-it-edd00d": {
+"category": "eng",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Directeur/rice Audit international - Cybersécurité et IT"
+},
+"cma-cgm-fiabilisation-des-donnees-service-rabais-hors-manifeste-ef7dd1": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "fiabilisation des données - Service Rabais Hors Manifeste"
+},
+"cma-cgm-functional-hris-product-owner-c3c1f5": {
+"category": "product",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "product-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Functional HRIS Product Owner"
+},
+"cma-cgm-global-product-owner-senior-supervisor-m-f-cma-cgm-head-office-6c2ac4": {
+"category": "product",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "product-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Global Product Owner Senior Supervisor (M/F) - CMA CGM Head Office"
+},
+"cma-cgm-global-product-owner-specialist-5ca9aa": {
+"category": "product",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "product-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Global Product Owner Specialist"
+},
+"cma-cgm-group-data-insight-and-innovation-senior-specialist-fb7889": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Group Data Insight and Innovation Senior Specialist"
+},
+"cma-cgm-group-data-protection-officer-d0fefb": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Group Data Protection Officer"
+},
+"cma-cgm-intern-data-reliability-off-manifest-rebates-department-d78e79": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Intern Data Reliability - Off-Manifest Rebates Department"
+},
+"cma-cgm-it-product-manager-shipping-documentation-b49390": {
+"category": "product",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "product-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "IT Product Manager - Shipping Documentation"
+},
+"cma-cgm-procurement-data-analyst-assistant-41464e": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Procurement & Data Analyst Assistant"
+},
+"cma-cgm-product-owner-hris-technical-c543d8": {
+"category": "product",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "product-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Product Owner HRIS - Technical"
+},
+"cma-cgm-senior-data-reporting-specialist-59b5a8": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior Data & Reporting Specialist"
 },
 "commandement-de-la-cyberdefense-comcyber-administrateur-cybersecurite-a3bf1b": {
 "category": "eng",
@@ -2559,6 +3249,106 @@
 "last_seen": "2026-09-18",
 "title": "Software Engineer (basé à Aix-en-Provence) (H/F)"
 },
+"groupe-lr-technologies-administrateur-systemes-devops-h-f-h-f-deb736": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Groupe LR Technologies",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Administrateur Systèmes & DevOps (H/F) H/F"
+},
+"groupe-lr-technologies-administrateur-systemes-reseaux-h-f-f753af": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Groupe LR Technologies",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Administrateur systèmes & réseaux H/F"
+},
+"groupe-lr-technologies-architecte-logiciel-cpp-h-f-acb0b5": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Groupe LR Technologies",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte Logiciel C++ H/F"
+},
+"groupe-lr-technologies-architecte-logiciel-h-f-d4d46a": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Groupe LR Technologies",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte logiciel H/F"
+},
+"groupe-lr-technologies-architecte-systemes-h-f-2f6455": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Groupe LR Technologies",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte systèmes H/F"
+},
+"groupe-lr-technologies-ingenieur-devops-ci-cd-h-f-fffe94": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Groupe LR Technologies",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur DevOps CI/CD H/F"
+},
+"groupe-lr-technologies-ingenieur-systemes-de-communication-h-f-591c82": {
+"category": "eng",
+"city": "Toulon",
+"company": "Groupe LR Technologies",
+"expired_at": null,
+"facet_slug": "eng-toulon",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur systèmes de communication H/F"
+},
+"groupe-lr-technologies-ingenieur-systemes-electroniques-embarques-h-f-384fc5": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Groupe LR Technologies",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur systèmes électroniques embarqués H/F"
+},
+"groupe-lr-technologies-product-owner-h-f-2243d8": {
+"category": "product",
+"city": "Aix-en-Provence",
+"company": "Groupe LR Technologies",
+"expired_at": null,
+"facet_slug": "product-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Product Owner H/F"
+},
+"groupe-lr-technologies-responsable-ivvq-systemes-embarques-h-f-40562e": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Groupe LR Technologies",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Responsable IVVQ – Systèmes embarqués (H/F)"
+},
 "groupe-orlade-pmo-it-85af00": {
 "category": "tech-adjacent",
 "city": "Toulon",
@@ -2844,7 +3634,7 @@
 "city": "Marseille",
 "company": "Hello Pomelo",
 "expired_at": null,
-"facet_slug": "product",
+"facet_slug": "product-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "Product Builder - Expérience Digitale (DXP)"
@@ -3194,7 +3984,7 @@
 "city": "Marseille",
 "company": "La Sécurité Sociale",
 "expired_at": null,
-"facet_slug": "product",
+"facet_slug": "product-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "PRODUCT OWNER / REFERENT·E FONCTIONNEL·LE / BUSINESS ANALYST"
@@ -4219,6 +5009,176 @@
 "last_seen": "2026-09-18",
 "title": "Product Designer H/F"
 },
+"nvidia-lab-sophia-agentic-ai-platform-senior-account-manager-uk-i-60a55a": {
+"category": "data",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Agentic AI Platform Senior Account Manager UK&I"
+},
+"nvidia-lab-sophia-data-center-infrastructure-specialist-b55035": {
+"category": "data",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data Center Infrastructure Specialist"
+},
+"nvidia-lab-sophia-developer-relations-manager-computer-aided-engineeri-576376": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Developer Relations Manager, Computer Aided Engineering"
+},
+"nvidia-lab-sophia-developer-relations-manager-physical-ai-healthcare-e-67e54b": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Developer Relations Manager, Physical AI Healthcare - EMEA"
+},
+"nvidia-lab-sophia-developer-relations-manager-quantum-computing-nation-9aea0d": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Developer Relations Manager, Quantum Computing — National Labs and Federal"
+},
+"nvidia-lab-sophia-developer-relations-manager-southern-europe-f79da2": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Developer Relations Manager - Southern Europe"
+},
+"nvidia-lab-sophia-senior-asic-methodology-engineer-lpu-division-63f7ff": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior ASIC Methodology Engineer - LPU Division"
+},
+"nvidia-lab-sophia-senior-deep-learning-software-infrastructure-enginee-e4cb10": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior Deep Learning Software Infrastructure Engineer"
+},
+"nvidia-lab-sophia-senior-developer-relations-ai-security-2b5306": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior Developer Relations, AI - Security"
+},
+"nvidia-lab-sophia-senior-developer-relations-manager-emea-ai-natives-u-84c6ee": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior Developer Relations Manager, EMEA AI Natives UK&I"
+},
+"nvidia-lab-sophia-senior-engineering-manager-infrastructure-security-e-6011ca": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior Engineering Manager, Infrastructure Security Engineering - DGX Cloud"
+},
+"nvidia-lab-sophia-senior-field-application-engineer-ai-compute-systems-8102a1": {
+"category": "data",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior Field Application Engineer - AI Compute Systems"
+},
+"nvidia-lab-sophia-senior-firmware-engineer-gpu-2929d5": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior Firmware Engineer - GPU"
+},
+"nvidia-lab-sophia-senior-hpc-support-engineer-ethernet-and-ai-infrastr-70a111": {
+"category": "data",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior HPC Support Engineer - Ethernet and AI Infrastructure"
+},
+"nvidia-lab-sophia-senior-security-engineer-infrastructure-security-eng-516f19": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior Security Engineer, Infrastructure Security Engineering - DGX Cloud"
+},
+"nvidia-lab-sophia-software-engineer-openshell-669f60": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Software Engineer, OpenShell"
+},
+"nvidia-lab-sophia-solutions-architect-devops-3e2ba0": {
+"category": "eng",
+"city": "Remote",
+"company": "Nvidia (Lab Sophia)",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Solutions Architect - DevOps"
+},
 "odhcom-freelancerepublik-charge-de-recrutement-it-talent-advocate-h-f-846d53": {
 "category": "tech-adjacent",
 "city": "Sophia Antipolis",
@@ -4258,6 +5218,86 @@
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-18",
 "title": "Product Owner"
+},
+"onepoint-architecte-cloud-f-h-e444af": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Onepoint",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte Cloud F/H"
+},
+"onepoint-architecte-data-aws-f-h-ca608e": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Onepoint",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte Data / AWS F/H"
+},
+"onepoint-architecte-solution-f-h-2fcb94": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Onepoint",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte Solution F/H"
+},
+"onepoint-consultant-cloud-f-h-8380f6": {
+"category": "tech-adjacent",
+"city": "Aix-en-Provence",
+"company": "Onepoint",
+"expired_at": null,
+"facet_slug": "tech-adjacent-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Consultant Cloud F/H"
+},
+"onepoint-consultant-en-data-management-f-h-ff43cb": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Onepoint",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Consultant en Data Management F/H"
+},
+"onepoint-developpeur-fullstack-java-angular-confirme-f-h-89df76": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Onepoint",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur Fullstack Java/Angular Confirmé - F/H"
+},
+"onepoint-product-owner-product-manager-data-h-f-de5aa8": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Onepoint",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Product Owner / Product Manager Data H/F"
+},
+"onepoint-tech-lead-java-angular-f-h-d443ea": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Onepoint",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Tech Lead Java/Angular - F/H"
 },
 "oodrive-ingenieure-qualite-process-it-devops-alternance-53e220": {
 "category": "eng",
@@ -4499,6 +5539,746 @@
 "last_seen": "2026-09-18",
 "title": "Head of Security Engineer - Paris (F/H)"
 },
+"scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": {
+"category": "data",
+"city": "Avignon",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "data-avignon",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Administrateur Bases de Données (DBA N2) H/F"
+},
+"scalian-architecte-logiciel-h-f-fc4957": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte logiciel H/F"
+},
+"scalian-architecte-technique-infrastructure-it-orange-h-f-8df2bd": {
+"category": "eng",
+"city": "Orange",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-orange",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte technique infrastructure IT - ORANGE (H/F)"
+},
+"scalian-architecte-technique-infrastructure-it-toulon-h-f-3a471b": {
+"category": "eng",
+"city": "Orange",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-orange",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Architecte technique infrastructure IT - TOULON (H/F)"
+},
+"scalian-business-analyst-it-proxy-po-aix-en-provence-h-f-5a10cd": {
+"category": "data",
+"city": "Aix-en-Provcence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Business Analyst IT / Proxy PO - AIX EN PROVENCE (H/F)"
+},
+"scalian-business-analyst-it-proxy-po-toulon-h-f-466c04": {
+"category": "data",
+"city": "Toulon",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "data-toulon",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Business Analyst IT / Proxy PO - TOULON (H/F)"
+},
+"scalian-business-analyst-salesforce-h-f-c476e5": {
+"category": "data",
+"city": "Marignane",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Business Analyst Salesforce (H/F)"
+},
+"scalian-charge-d-etudes-composants-electroniques-nucleaire-db8e46": {
+"category": "eng",
+"city": "Remote",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Chargé d'Etudes Composants Electroniques - Nucléaire"
+},
+"scalian-concepteur-de-cartes-electroniques-senior-f-h-6bb3c1": {
+"category": "eng",
+"city": "Remote",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Concepteur de cartes électroniques Senior - F/H"
+},
+"scalian-consultant-cybersecurite-h-f-4dcd40": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Consultant Cybersécurité H/F"
+},
+"scalian-coordinateur-equipements-electroniques-nucleaire-066c0f": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Coordinateur Equipements Electroniques Nucléaire"
+},
+"scalian-data-analyst-h-f-01c7e2": {
+"category": "data",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data analyst H/F"
+},
+"scalian-data-analyst-senior-power-bi-gcp-h-f-0dddfc": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data Analyst Senior Power BI / GCP (H/F)"
+},
+"scalian-data-engineer-h-f-3b9ac8": {
+"category": "data",
+"city": "Marseille",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data Engineer H/F"
+},
+"scalian-data-manager-nucleaire-7da64f": {
+"category": "data",
+"city": "Saint-Paul-lès-Durance",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data Manager Nucléaire"
+},
+"scalian-desarrollador-a-backend-java-microservicios-0c68c7": {
+"category": "eng",
+"city": "Remote",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Desarrollador/a Backend Java Microservicios"
+},
+"scalian-developpeur-angular-h-f-007380": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur angular H/F"
+},
+"scalian-developpeur-cpp-h-f-6a6b69": {
+"category": "eng",
+"city": "Ollioules",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-ollioules",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur C++ H/F"
+},
+"scalian-developpeur-cpp-rust-h-f-eb5e83": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur C++ / Rust H/F"
+},
+"scalian-developpeur-cpp-senior-h-f-ba09db": {
+"category": "eng",
+"city": "83190",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur C++ senior - H/F"
+},
+"scalian-developpeur-csharp-aix-en-provence-h-f-ccd5db": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur C# - AIX EN PROVENCE (H/F)"
+},
+"scalian-developpeur-csharp-avignon-h-f-7cc781": {
+"category": "eng",
+"city": "Avignon",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-avignon",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur C# - AVIGNON (H/F)"
+},
+"scalian-developpeur-csharp-martigues-h-f-bf06b3": {
+"category": "eng",
+"city": "Martigues",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur C# - MARTIGUES (H/F)"
+},
+"scalian-developpeur-csharp-vitrolles-h-f-bf69a4": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur C# - VITROLLES (H/F)"
+},
+"scalian-developpeur-embarque-f-h-6d60b3": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur embarqué - F/H"
+},
+"scalian-developpeur-java-aeronautique-h-f-7baaeb": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur java aéronautique H/F"
+},
+"scalian-developpeur-java-aix-en-provence-h-f-2824a4": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur JAVA - AIX EN PROVENCE (H/F)"
+},
+"scalian-developpeur-java-avignon-h-f-7787b3": {
+"category": "eng",
+"city": "AVIGNON",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-avignon",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur JAVA - AVIGNON (H/F)"
+},
+"scalian-developpeur-java-h-f-64acca": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur JAVA (H/F)"
+},
+"scalian-developpeur-java-marseille-h-f-7b9a04": {
+"category": "eng",
+"city": "Marseille",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur JAVA - MARSEILLE (H/F)"
+},
+"scalian-developpeur-logiciel-embarque-h-f-6e4441": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur logiciel embarqué  H/F"
+},
+"scalian-developpeur-php-symfony-nucleaire-1d1b35": {
+"category": "eng",
+"city": "Rians",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur PHP Symfony Nucléaire"
+},
+"scalian-developpeur-se-java-f-h-b35e28": {
+"category": "eng",
+"city": "Ollioules",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-ollioules",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur/se java - F/H"
+},
+"scalian-developpeur-se-python-f-h-3ed21e": {
+"category": "eng",
+"city": "Ollioules",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-ollioules",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur/se Python - F/H"
+},
+"scalian-developpeur-se-rust-f-h-306fe8": {
+"category": "eng",
+"city": "Ollioules",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-ollioules",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeur/se Rust - F/H"
+},
+"scalian-devops-f-h-741db7": {
+"category": "eng",
+"city": "Ollioules",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-ollioules",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "DevOps - F/H"
+},
+"scalian-docteur-developpeur-logiciel-d-applications-scientifiques-lang-1399c4": {
+"category": "eng",
+"city": "Saint-Paul-lès-Durance",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Docteur - Développeur logiciel d'applications scientifiques - Langage Fortran"
+},
+"scalian-embedded-system-architect-iot-connectivity-687141": {
+"category": "eng",
+"city": "Remote",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Embedded System Architect – IoT Connectivity"
+},
+"scalian-embedded-system-platform-architect-5c4c73": {
+"category": "eng",
+"city": "Remote",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Embedded System Platform Architect"
+},
+"scalian-engagement-manager-systeme-embarque-h-f-6dcf91": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Engagement manager - système embarqué H/F"
+},
+"scalian-ingenieur-developpement-logiciel-cpp-h-f-a5fc9d": {
+"category": "eng",
+"city": "Toulon",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-toulon",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur développement logiciel C++ H/F"
+},
+"scalian-ingenieur-devops-h-f-73ec9e": {
+"category": "eng",
+"city": "Ollioules",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-ollioules",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur DevOps - H/F"
+},
+"scalian-ingenieur-electronique-aeronautique-h-f-bdb9e4": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur électronique aéronautique H/F"
+},
+"scalian-ingenieur-electronique-de-puissance-nucleaire-71fb03": {
+"category": "eng",
+"city": "Remote",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur Electronique de Puissance Nucléaire"
+},
+"scalian-ingenieur-electronique-f-h-715b41": {
+"category": "eng",
+"city": "83190",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur électronique - F/H"
+},
+"scalian-ingenieur-fonctionnel-h-f-84391b": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur fonctionnel H/F"
+},
+"scalian-ingenieur-liaisons-de-donnees-tactiques-ldt-h-f-aa3fb3": {
+"category": "data",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur Liaisons de Données Tactiques (LDT) (H/F)"
+},
+"scalian-ingenieur-logiciel-embarque-c-cpp-h-f-9af59f": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur logiciel embarqué C/C++ H/F"
+},
+"scalian-ingenieur-streaming-video-temps-reel-cybersecurite-f-h-62a162": {
+"category": "eng",
+"city": "Ollioules",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-ollioules",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur Streaming Vidéo Temps Réel & Cybersécurité - F/H"
+},
+"scalian-ingenieur-systeme-aeronautique-h-f-e1298c": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur système aéronautique H/F"
+},
+"scalian-ingenieur-systeme-aeronautique-junior-h-f-4473a5": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur système aéronautique junior H/F"
+},
+"scalian-ingenieur-systeme-avionique-h-f-cd44c1": {
+"category": "eng",
+"city": "Istres",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur système avionique H/F"
+},
+"scalian-ingenieur-systeme-de-mission-aeronautique-h-f-0141a9": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur système de mission aéronautique H/F"
+},
+"scalian-ingenieur-systeme-ferroviaire-h-f-f76670": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur système ferroviaire H/F"
+},
+"scalian-ingenieur-systeme-h-f-04cf4c": {
+"category": "eng",
+"city": "Ollioules",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-ollioules",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur système H/F"
+},
+"scalian-ingenieur-systeme-mbse-h-f-42b2f9": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur système MBSE H/F"
+},
+"scalian-ingenieur-systeme-optronique-h-f-8caa17": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur système optronique H/F"
+},
+"scalian-ingenieur-systemes-industriels-22ffa4": {
+"category": "eng",
+"city": "Marseille",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur Systèmes Industriels"
+},
+"scalian-ingenieur-systemes-integration-f-h-e6bb32": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur systèmes intégration - F/H"
+},
+"scalian-ingenieur-test-et-validation-ferroviaire-h-f-6e0705": {
+"category": "eng",
+"city": "Marseille",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur test et validation ferroviaire H/F"
+},
+"scalian-ingenieur-test-logiciel-junior-nucleaire-05255c": {
+"category": "eng",
+"city": "Marseille",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur Test Logiciel Junior - Nucléaire"
+},
+"scalian-ingenieur-validation-et-verification-ingenieure-validation-et-cc5a44": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur validation et vérification/Ingénieure validation et vérification"
+},
+"scalian-ingenieur-validation-systemes-embarques-defense-f-h-fcc148": {
+"category": "eng",
+"city": "Cannes",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-cannes",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur Validation Systèmes Embarqués – Défense (F/H)"
+},
+"scalian-lead-tech-c-cpp-h-f-f8c66c": {
+"category": "eng",
+"city": "Marignane",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-marignane",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Lead tech C/C++ H/F"
+},
+"scalian-pmo-it-h-f-8635e7": {
+"category": "tech-adjacent",
+"city": "Nice",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "tech-adjacent",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "PMO IT (H/F)"
+},
+"scalian-product-owner-aix-en-provence-h-f-ba27ee": {
+"category": "product",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "product-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Product Owner - AIX EN PROVENCE (H/F)"
+},
+"scalian-product-owner-avignon-h-f-00642b": {
+"category": "product",
+"city": "Avignon",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "product",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Product Owner - AVIGNON (H/F)"
+},
+"scalian-product-owner-toulon-h-f-618128": {
+"category": "product",
+"city": "Toulon",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "product",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Product Owner - TOULON (H/F)"
+},
+"scalian-project-quality-assurance-manager-f-h-8a32a4": {
+"category": "eng",
+"city": "Gemenos",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Project Quality Assurance Manager F/H"
+},
+"scalian-security-system-requirements-engineer-31eb56": {
+"category": "eng",
+"city": "Remote",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Security System Requirements Engineer"
+},
+"scalian-system-architect-f46e28": {
+"category": "eng",
+"city": "Remote",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "System Architect"
+},
+"scalian-testeur-logiciel-aix-en-provence-h-f-8c54ea": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Testeur Logiciel - AIX EN PROVENCE (H/F)"
+},
+"scalian-testeur-logiciel-avignon-h-f-79a6b8": {
+"category": "eng",
+"city": "Avignon",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-avignon",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Testeur Logiciel - AVIGNON  (H/F)"
+},
+"scalian-testeur-logiciel-h-f-fa496b": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Scalian",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Testeur logiciel H/F"
+},
 "schneider-electric-end-to-end-technical-leader-system-ai-m-f-1fd970": {
 "category": "data",
 "city": "Carros",
@@ -4719,6 +6499,26 @@
 "last_seen": "2026-09-18",
 "title": "Data Engineer | Hybrid work"
 },
+"smile-chef-de-projet-it-product-owner-h-f-marseille-ace3a3": {
+"category": "product",
+"city": "Marseille",
+"company": "Smile",
+"expired_at": null,
+"facet_slug": "product-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Chef de Projet IT / Product Owner H/F – Marseille"
+},
+"smile-ingenieur-systeme-linux-n2-f-h-6d123f": {
+"category": "eng",
+"city": "Marseille",
+"company": "Smile",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur Système Linux N2 F/H"
+},
 "socomec-technico-commercial-itinerant-f-h-x-936f70": {
 "category": "tech-adjacent",
 "city": "Meyreuil",
@@ -4728,6 +6528,136 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-18",
 "title": "Technico-commercial itinérant F/H/X"
+},
+"sogeti-chef-de-projet-it-7ce75a": {
+"category": "tech-adjacent",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "tech-adjacent-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Chef de Projet IT"
+},
+"sogeti-data-engineer-dd3605": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data Engineer"
+},
+"sogeti-data-engineer-stage-38e90d": {
+"category": "data",
+"city": "Blagnac",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Data engineer - STAGE"
+},
+"sogeti-developpeur-full-stack-java-angular-confirme-453a36": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Developpeur Full Stack Java Angular Confirmé"
+},
+"sogeti-developpeuse-developpeur-fullstack-java-970a42": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeuse/Développeur Fullstack Java"
+},
+"sogeti-developpeuse-developpeur-fullstack-stage-b71fcb": {
+"category": "eng",
+"city": "Toulouse",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Développeuse / Développeur Fullstack - STAGE"
+},
+"sogeti-ingenieur-data-confirme-9c9c25": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieur Data Confirmé"
+},
+"sogeti-ingenieure-test-leader-ingenieur-test-leader-a7b389": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieure Test Leader / Ingénieur Test Leader"
+},
+"sogeti-ingenieure-test-logiciel-ingenieur-test-logiciel-1124b4": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Ingénieure Test Logiciel / Ingénieur Test Logiciel"
+},
+"sogeti-product-owner-0514a0": {
+"category": "product",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "product-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Product Owner"
+},
+"sogeti-responsable-technique-java-angular-47570e": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Responsable Technique Java/Angular"
+},
+"sogeti-sales-developer-3373e5": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Sales Developer"
+},
+"sogeti-senior-software-engineer-d01328": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-18",
+"last_seen": "2026-09-18",
+"title": "Senior Software Engineer"
 },
 "solutec-ingenieur-systeme-reseaux-4b8e92": {
 "category": "eng",
