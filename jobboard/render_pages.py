@@ -32,6 +32,7 @@ import re
 import statistics
 import sys
 import unicodedata
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from email.utils import format_datetime
 
@@ -1287,6 +1288,30 @@ def render_salary_guide(jobs, generated):
          "d’avancer dans un process pour découvrir un écart trop grand à la fin.</p>"),
     ]
 
+    return slug, _render_faq_guide(
+        slug=slug, breadcrumb="Guide salaires tech PACA",
+        h1="Quel salaire pour un poste tech en PACA en 2026&nbsp;? (dev, data, produit, design)",
+        intro="Développeur, data/IA, produit, design&nbsp;: combien ça paie à Marseille, Aix, "
+              "Nice, Sophia Antipolis ou Toulon&nbsp;? Ce guide répond aux questions les plus "
+              "fréquentes à partir des offres réellement diffusées sur "
+              "<a href=\"%s/\">sudtechjobs</a>, pas d’une étude de marché nationale hors-sol."
+              % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Vous voulez comparer directement des offres&nbsp;?'
+                   '<a href="/emploi/eng.html">Développement</a> · '
+                   '<a href="/emploi/data.html">Data / IA</a> · '
+                   '<a href="/emploi/product.html">Produit</a> · '
+                   '<a href="/emploi/design.html">Design</a>.</p>',
+        title="Salaire tech en PACA en 2026 : dev, data, produit, design | sudtechjobs",
+        description="Combien gagne un développeur, un data/IA, un product manager ou un "
+                    "designer en PACA en 2026 ? Chiffres calculés à partir des offres "
+                    "réellement diffusées sur sudtechjobs, par métier, expérience et ville.")
+
+
+def _render_faq_guide(*, slug, breadcrumb, h1, intro, faq, generated, links_html,
+                       title, description):
+    """Shared scaffold for a data-backed FAQ guide: Q&A body + FAQPage JSON-LD."""
+    canonical = "%s/%s.html" % (SITE_URL, slug)
     faq_html = "".join(
         '<h2 id="q%d">%s</h2>%s' % (i, esc(q), a) for i, (q, a) in enumerate(faq, 1))
 
@@ -1300,29 +1325,166 @@ def render_salary_guide(jobs, generated):
     }
 
     body = """
-<nav class="bc"><a href="{home}">Accueil</a> › Guide salaires tech PACA</nav>
-<h1>Quel salaire pour un poste tech en PACA en 2026&nbsp;? (dev, data, produit, design)</h1>
+<nav class="bc"><a href="{home}">Accueil</a> › {breadcrumb}</nav>
+<h1>{h1}</h1>
 <div class="legal">
 <p class="upd">Chiffres recalculés à chaque mise à jour du site — dernière génération&nbsp;: {gen}.</p>
-<p class="sub">Développeur, data/IA, produit, design&nbsp;: combien ça paie à Marseille, Aix,
-Nice, Sophia Antipolis ou Toulon&nbsp;? Ce guide répond aux questions les plus fréquentes à
-partir des offres réellement diffusées sur <a href="{home}">sudtechjobs</a>, pas d’une étude
-de marché nationale hors-sol.</p>
+<p class="sub">{intro}</p>
 {faq}
-<p class="sub">Vous voulez comparer directement des offres&nbsp;?
-<a href="/emploi/eng.html">Développement</a> ·
-<a href="/emploi/data.html">Data / IA</a> ·
-<a href="/emploi/product.html">Produit</a> ·
-<a href="/emploi/design.html">Design</a>.</p>
+{links}
 </div>
-""".format(home=SITE_URL + "/", gen=esc(generated), faq=faq_html)
+""".format(home=SITE_URL + "/", breadcrumb=esc(breadcrumb), h1=h1, gen=esc(generated),
+           intro=intro, faq=faq_html, links=links_html)
 
-    return slug, shell(
-        title="Salaire tech en PACA en 2026 : dev, data, produit, design | sudtechjobs",
-        description="Combien gagne un développeur, un data/IA, un product manager ou un "
-                    "designer en PACA en 2026 ? Chiffres calculés à partir des offres "
-                    "réellement diffusées sur sudtechjobs, par métier, expérience et ville.",
-        canonical=canonical, head_extra=jsonld(ld), body=body)
+    return shell(title=title, description=description, canonical=canonical,
+                 head_extra=jsonld(ld), body=body)
+
+
+def _remote_bucket(j):
+    r = j.get("remote") or j.get("remote_detail") or ""
+    if r in REMOTE_FULL:
+        return "remote"
+    if r in ("hybride", "sur site", "ponctuel"):
+        return r
+    return None  # policy not disclosed
+
+
+def compute_remote_stats(jobs):
+    """Recomputed on every build, like compute_salary_stats — never goes stale."""
+    def stat(rows):
+        n = len(rows)
+        known = [r for r in rows if r["bucket"]]
+        n_known = len(known)
+        if n_known == 0:
+            return {"n": n, "n_known": 0}
+        some_remote = sum(1 for r in known if r["bucket"] != "sur site")
+        return {"n": n, "n_known": n_known,
+                "pct_remote": round(100 * some_remote / n_known),
+                "pct_full": round(100 * sum(1 for r in known if r["bucket"] == "remote") / n_known)}
+
+    rows = [{"cat": j.get("category"), "bucket": _remote_bucket(j)} for j in jobs]
+
+    by_cat = {cat: stat([r for r in rows if r["cat"] == cat]) for cat in CATS}
+
+    top_remote = Counter()
+    top_hybride = Counter()
+    for j in jobs:
+        b = _remote_bucket(j)
+        if b == "remote":
+            top_remote[j.get("company")] += 1
+        elif b == "hybride":
+            top_hybride[j.get("company")] += 1
+
+    return {
+        "overall": stat(rows), "by_cat": by_cat,
+        "top_remote": [(c, n) for c, n in top_remote.most_common(6) if n >= 2],
+        "top_hybride": [(c, n) for c, n in top_hybride.most_common(6) if n >= 3],
+    }
+
+
+def _remote_pct_line(label, s):
+    if s.get("n_known", 0) < MIN_SAMPLE:
+        return "<li><b>%s</b> — trop peu d’offres précisant leur politique de télétravail " \
+               "pour un chiffre fiable.</li>" % esc(label)
+    return ("<li><b>%s</b> — <b>%d%%</b> proposent au moins du télétravail ponctuel "
+            "(dont %d%% en full remote), sur %d offres qui précisent leur politique.</li>"
+            % (esc(label), s["pct_remote"], s["pct_full"], s["n_known"]))
+
+
+def render_remote_guide(jobs, generated):
+    slug = "guide-teletravail-tech-paca"
+    st = compute_remote_stats(jobs)
+    ov = st["overall"]
+    pct_disclosed = round(100 * ov["n_known"] / ov["n"]) if ov["n"] else 0
+
+    cat_list = "".join(
+        _remote_pct_line(CATS[cat][0], st["by_cat"][cat])
+        for cat in ("eng", "data", "product", "design", "tech-adjacent")
+        if st["by_cat"][cat]["n"] > 0)
+
+    def company_list(rows, word):
+        if not rows:
+            return "pas assez d’offres pour dégager des entreprises récurrentes en ce moment"
+        return ", ".join("<b>%s</b> (%d offre%s %s)" % (esc(c), n, "s" if n > 1 else "", word)
+                          for c, n in rows)
+
+    faq = [
+        ("Quelle part des offres tech en PACA propose du télétravail ?",
+         "<p>Sur les offres tech, data, produit et design actuellement diffusées sur "
+         "sudtechjobs, %d%% précisent une politique de télétravail (le reste ne dit rien, "
+         "voir plus bas). Parmi celles qui le précisent, <b>%d%%</b> proposent au moins du "
+         "télétravail ponctuel — hybride, ponctuel ou full remote — et <b>%d%%</b> sont "
+         "en full remote.</p>" % (pct_disclosed, ov.get("pct_remote", 0), ov.get("pct_full", 0))),
+
+        ("Full remote, hybride, ponctuel : quelle est la différence, et qu’est-ce qui domine ?",
+         "<p><b>Full remote</b>&nbsp;: le poste se fait entièrement à distance, aucun jour "
+         "sur site imposé. <b>Hybride</b>&nbsp;: un rythme fixe de jours au bureau (souvent "
+         "2 à 4 jours/semaine dans les offres du Sud). <b>Ponctuel</b>&nbsp;: télétravail "
+         "possible occasionnellement, sans rythme fixe, à la discrétion du manager. En PACA, "
+         "c’est <b>l’hybride qui domine largement</b> les offres qui précisent une politique "
+         "— le full remote reste minoritaire, contrairement à ce qu’on voit parfois sur des "
+         "boards nationaux dominés par des postes 100% à distance.</p>"),
+
+        ("Le télétravail est-il plus fréquent pour un poste dev, data ou produit ?",
+         "<p>Oui, nettement. D’après les offres qui précisent leur politique&nbsp;:</p>"
+         "<ul class=\"faq-stats\">%s</ul>"
+         "<p>Les postes produit et data ont proportionnellement plus de télétravail que le "
+         "développement pur — une partie du développement en PACA passe par des ESN qui "
+         "placent leurs consultants chez le client, ce qui pousse vers l’hybride ou le sur "
+         "site plutôt que le full remote.</p>" % cat_list),
+
+        ("Quelles entreprises proposent du full remote en PACA ?",
+         "<p>Parmi les entreprises qui recrutent actuellement en full remote sur "
+         "sudtechjobs&nbsp;: %s. Ce ne sont que les entreprises les plus présentes dans le "
+         "flux du moment, pas une liste exhaustive ni figée — elle change avec les offres "
+         "publiées.</p>" % company_list(st["top_remote"], "en full remote")),
+
+        ("Quelles entreprises proposent le plus d’hybride, et à quel rythme ?",
+         "<p>Sur le même principe, les entreprises les plus présentes en hybride en ce "
+         "moment&nbsp;: %s. Le rythme exact (2, 3 ou 4 jours de télétravail) n’est presque "
+         "jamais le même d’une entreprise à l’autre — il se négocie souvent en entretien "
+         "plutôt qu’il n’est figé dans l’annonce, à demander explicitement si l’offre reste "
+         "vague.</p>" % company_list(st["top_hybride"], "en hybride")),
+
+        ("Pourquoi tant d’offres ne précisent pas leur politique de télétravail ?",
+         "<p>Environ %d%% du flux actuel ne mentionne rien. C’est plus transparent que pour "
+         "le salaire (où seule une offre sur quatre communique un montant), mais ça reste "
+         "un angle mort fréquent&nbsp;: beaucoup de PME et d’ESN du Sud gèrent le télétravail "
+         "au cas par cas plutôt que comme une politique affichée. Ne pas voir de mention ne "
+         "veut pas dire « zéro télétravail » — ça vaut le coup de demander en entretien.</p>"
+         % (100 - pct_disclosed)),
+
+        ("Un poste « télétravail » en PACA est-il vraiment basé dans le Sud ?",
+         "<p>Pas toujours. Une partie des offres en full remote proviennent d’entreprises "
+         "dont le siège est ailleurs (souvent Paris) et qui recrutent à distance sans "
+         "exiger de présence dans le Sud&nbsp;: le poste est ouvert aux candidats basés en "
+         "PACA, mais l’équipe et les rares journées sur site, s’il y en a, seront ailleurs. "
+         "Pour un poste réellement ancré dans l’écosystème local (rencontrer l’équipe, les "
+         "meetups, les bureaux du Sud), l’hybride avec une ville PACA précisée est un "
+         "signal plus fiable que « full remote » seul.</p>"),
+
+        ("Comment filtrer uniquement les offres télétravail sur sudtechjobs ?",
+         "<p>Le plus simple&nbsp;: la page <a href=\"/emploi/teletravail.html\">Emplois en "
+         "télétravail</a>, ou le filtre télétravail directement sur la <a href=\"/\">page "
+         "d’accueil</a>, à combiner avec un filtre métier ou ville pour restreindre encore "
+         "plus.</p>"),
+    ]
+
+    return slug, _render_faq_guide(
+        slug=slug, breadcrumb="Guide télétravail tech PACA",
+        h1="Télétravail dans la tech en PACA en 2026&nbsp;: quelles entreprises, quel rythme&nbsp;?",
+        intro="Full remote, hybride, ponctuel&nbsp;: quelle part des offres tech du Sud propose "
+              "vraiment du télétravail, et quelles entreprises recrutent en ce moment sans "
+              "exiger d’être sur site&nbsp;? Réponses à partir des offres réellement diffusées "
+              "sur <a href=\"%s/\">sudtechjobs</a>." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/emploi/teletravail.html">Télétravail</a> · '
+                   '<a href="/guide-salaires-tech-paca.html">Guide des salaires tech PACA</a>.</p>',
+        title="Télétravail tech en PACA en 2026 : quelles entreprises, quel rythme | sudtechjobs",
+        description="Full remote, hybride, ponctuel : quelle part des offres tech en PACA "
+                    "propose du télétravail, pour quels métiers, et quelles entreprises "
+                    "recrutent en ce moment sans exiger d'être sur site ?")
 
 
 # --------------------------------------------------------------------------- #
@@ -1923,9 +2085,12 @@ def main():
         fh.write(render_about())
 
     # ---- guides (FAQ articles, site root) --------------------------------
-    guide_slug, guide_html = render_salary_guide(jobs, generated)
-    with open(os.path.join(SITE, guide_slug + ".html"), "w", encoding="utf-8") as fh:
-        fh.write(guide_html)
+    guide_slugs = []
+    for build_guide in (render_salary_guide, render_remote_guide):
+        guide_slug, guide_html = build_guide(jobs, generated)
+        guide_slugs.append(guide_slug)
+        with open(os.path.join(SITE, guide_slug + ".html"), "w", encoding="utf-8") as fh:
+            fh.write(guide_html)
 
     # ---- sitemaps + robots -------------------------------------------------
     # A sitemap index pointing at two children: the browse pages, and a dedicated
@@ -1942,8 +2107,9 @@ def main():
              % SITE_URL]
     pages.append('<url><loc>%s/a-propos.html</loc><changefreq>monthly</changefreq>'
                  '<priority>0.5</priority></url>' % SITE_URL)
-    pages.append('<url><loc>%s/%s.html</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
-                 '<priority>0.7</priority></url>' % (SITE_URL, guide_slug, today))
+    for guide_slug in guide_slugs:
+        pages.append('<url><loc>%s/%s.html</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
+                     '<priority>0.7</priority></url>' % (SITE_URL, guide_slug, today))
     for slug in ("mentions-legales", "cgu", "confidentialite"):
         pages.append('<url><loc>%s/%s.html</loc><changefreq>yearly</changefreq>'
                      '<priority>0.2</priority></url>' % (SITE_URL, slug))
