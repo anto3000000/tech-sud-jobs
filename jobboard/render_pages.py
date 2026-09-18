@@ -1765,6 +1765,130 @@ def render_intern_guide(jobs, generated):
                     "partir des offres réellement diffusées sur sudtechjobs.")
 
 
+def compute_junior_stats(jobs):
+    """Recomputed on every build. Only experience_min_years == 0 counts as
+    'débutant accepté' — a None value means undisclosed, not junior-friendly."""
+    junior = [j for j in jobs if j.get("experience_min_years") == 0]
+
+    by_cat = Counter(j.get("category") for j in junior)
+    by_company = Counter(j.get("company") for j in junior)
+    by_zone = Counter()
+    for j in junior:
+        z = CITY_ZONE.get(j.get("city"))
+        if z:
+            by_zone[z] += 1
+    n_bac5 = sum(1 for j in junior if j.get("education_level") == "bac_5")
+    n_edu_known = sum(1 for j in junior if j.get("education_level"))
+
+    return {
+        "n_total": len(jobs), "n": len(junior),
+        "n_undisclosed": sum(1 for j in jobs if j.get("experience_min_years") is None),
+        "by_cat_top": [(cat, n) for cat, n in by_cat.most_common() if n > 0],
+        "top_companies": [(c, n) for c, n in by_company.most_common(6) if n >= 2],
+        "by_zone": [(z, by_zone.get(z, 0)) for z in SALARY_ZONES if by_zone.get(z, 0) > 0],
+        "n_bac5": n_bac5, "n_edu_known": n_edu_known,
+    }
+
+
+def render_junior_guide(jobs, generated):
+    slug = "guide-premier-emploi-junior-tech-paca"
+    st = compute_junior_stats(jobs)
+    pct = round(100 * st["n"] / st["n_total"]) if st["n_total"] else 0
+    pct_undisclosed = round(100 * st["n_undisclosed"] / st["n_total"]) if st["n_total"] else 0
+
+    cat_list = "".join(
+        "<li><b>%s</b> — %d offre%s</li>" % (esc(CATS.get(cat, (cat,))[0]), n, "s" if n > 1 else "")
+        for cat, n in st["by_cat_top"])
+
+    company_txt = (", ".join("<b>%s</b> (%d)" % (esc(c), n) for c, n in st["top_companies"])
+                   if st["top_companies"]
+                   else "pas assez d’offres pour dégager des entreprises récurrentes en ce moment")
+    zone_txt = (", ".join("<b>%s</b> (%d)" % (esc(z), n) for z, n in st["by_zone"])
+                if st["by_zone"]
+                else "pas assez d’offres pour comparer les bassins d’emploi en ce moment")
+    pct_bac5 = round(100 * st["n_bac5"] / st["n_edu_known"]) if st["n_edu_known"] else None
+
+    faq = [
+        ("Combien d’offres tech en PACA sont vraiment accessibles sans expérience ?",
+         "<p>%d offres sur les %d actuellement diffusées sur sudtechjobs affichent "
+         "explicitement « débutant accepté, 0 an d’expérience » (%d%% du flux). Ce n’est "
+         "qu’un plancher&nbsp;: %d%% des offres du site ne précisent aucune expérience "
+         "minimale — elles ne sont pas forcément fermées aux débutants, l’information "
+         "manque simplement.</p>" % (st["n"], st["n_total"], pct, pct_undisclosed)),
+
+        ("Sur quels métiers ces offres débutant sont-elles les plus fréquentes ?",
+         "<p>La répartition par métier parmi les offres « 0 an d’expérience »&nbsp;:</p>"
+         "<ul>%s</ul>"
+         "<p>Le développement concentre l’essentiel du volume débutant, comme pour le "
+         "reste du marché&nbsp;: voir aussi le <a href=\"/guide-stage-alternance-tech-"
+         "paca.html\">guide stage &amp; alternance</a> pour les profils encore en "
+         "formation.</p>" % cat_list),
+
+        ("Quelles entreprises recrutent le plus de profils débutants en ce moment ?",
+         "<p>%s. Comme pour le stage et l’alternance, ce sont surtout des ESN et grands "
+         "groupes qui structurent un volume régulier de recrutement junior, plutôt que des "
+         "petites structures qui recrutent au coup par coup.</p>" % company_txt),
+
+        ("Faut-il un bac+5 pour décrocher un premier poste tech, même sans "
+         "expérience exigée ?",
+         "<p>%s Beaucoup d’offres « débutant accepté » ne précisent pas de niveau "
+         "d’études du tout — l’absence de bac+5 affiché n’est pas un rejet, mais un "
+         "diplôme d’ingénieur reste, dans les faits, le profil le plus visible sur cette "
+         "partie du marché.</p>"
+         % ("Pas systématiquement, mais c’est fréquent&nbsp;: parmi les offres débutant "
+            "qui précisent un niveau d’études, %d%% demandent un bac+5." % pct_bac5
+            if pct_bac5 is not None else
+            "Les données actuelles ne permettent pas de trancher avec assez de recul.")),
+
+        ("Où se trouvent le plus d’offres débutant en PACA ?",
+         "<p>%s. Même logique que pour le reste du marché tech régional&nbsp;: le volume "
+         "suit la taille du bassin d’emploi plus qu’une politique « junior friendly » "
+         "propre à telle ou telle ville.</p>" % zone_txt),
+
+        ("Et si aucune offre « débutant » ne correspond, que faire ?",
+         "<p>Élargir la recherche à ce qui n’affiche <i>aucune</i> expérience minimale "
+         "(%d%% du flux) plutôt que de se limiter aux offres explicitement « débutant » — "
+         "beaucoup d’entreprises ne filtrent pas aussi strictement qu’annoncé, surtout "
+         "pour un profil motivé avec un projet ou un stage concret à montrer. Le "
+         "<a href=\"/guide-stage-alternance-tech-paca.html\">stage et l’alternance</a> "
+         "restent aussi le sas le plus direct vers un premier CDI, souvent chez la même "
+         "entreprise.</p>" % pct_undisclosed),
+
+        ("Le salaire d’un premier poste tech en PACA, ça donne quoi ?",
+         "<p>Voir le détail dans le <a href=\"/guide-salaires-tech-paca.html\">guide des "
+         "salaires tech PACA</a>, section junior&nbsp;: la médiane observée sur les postes "
+         "de développement junior (moins de 2 ans) tourne autour de 45&nbsp;k€ brut par "
+         "an, un chiffre étonnamment proche de celui des profils confirmés sur ce marché.</p>"),
+
+        ("Comment repérer une offre qui accepte les débutants sans le dire explicitement ?",
+         "<p>Ouvrir la description complète plutôt que de se fier au résumé&nbsp;: une "
+         "fourchette d’expérience large (« 0 à 3 ans »), une formulation du type "
+         "« autodidacte bienvenu » ou l’absence totale de mention d’ancienneté dans la "
+         "section profil sont de meilleurs signaux qu’un simple filtre. En cas de doute, "
+         "candidater reste la meilleure façon de vérifier — beaucoup d’annonces généralistes "
+         "sont recyclées d’un recrutement à l’autre sans être ajustées au profil réellement "
+         "reçu.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide premier emploi junior",
+        h1="Premier emploi tech en PACA en 2026&nbsp;: comment décrocher un poste "
+           "sans expérience&nbsp;?",
+        intro="Quelles offres tech du Sud sont vraiment ouvertes aux débutants, chez "
+              "quelles entreprises, et pour quels métiers&nbsp;? Chiffres calculés à "
+              "partir des offres diffusées sur <a href=\"%s/\">sudtechjobs</a>." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/guide-stage-alternance-tech-paca.html">Guide stage & '
+                   'alternance</a> · <a href="/guide-salaires-tech-paca.html">Guide des '
+                   'salaires</a>.</p>',
+        title="Premier emploi tech en PACA en 2026 : décrocher un poste sans "
+              "expérience | sudtechjobs",
+        description="Quelles offres tech en PACA sont vraiment accessibles aux "
+                    "débutants, chez quelles entreprises et pour quels métiers, calculé "
+                    "à partir des offres réellement diffusées sur sudtechjobs.")
+
+
 # --------------------------------------------------------------------------- #
 #  company pages                                                              #
 # --------------------------------------------------------------------------- #
@@ -2365,7 +2489,7 @@ def main():
     # ---- guides (FAQ articles, site root + /guides/ hub) -------------------
     guides_meta = []
     for build_guide in (render_salary_guide, render_remote_guide, render_hiring_guide,
-                        render_intern_guide):
+                        render_intern_guide, render_junior_guide):
         guide_slug, guide_html, card_title, card_desc = build_guide(jobs, generated)
         guides_meta.append((guide_slug, card_title, card_desc))
         with open(os.path.join(SITE, guide_slug + ".html"), "w", encoding="utf-8") as fh:
