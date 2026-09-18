@@ -1889,6 +1889,129 @@ def render_junior_guide(jobs, generated):
                     "à partir des offres réellement diffusées sur sudtechjobs.")
 
 
+SOPHIA_CITIES = ("Sophia Antipolis", "Nice", "Valbonne", "Cagnes-sur-Mer", "Biot")
+
+
+def compute_sophia_stats(jobs):
+    """Recomputed on every build, scoped to the Nice / Sophia Antipolis bassin."""
+    rows = [j for j in jobs if j.get("city") in SOPHIA_CITIES]
+
+    by_cat = Counter(j.get("category") for j in rows)
+    by_company = Counter(j.get("company") for j in rows)
+
+    sal = []
+    for j in rows:
+        p = _parse_salary_eur(j.get("salary"))
+        if p:
+            sal.append((p[0] + p[1]) / 2)
+
+    remote_n = sum(1 for j in rows if _remote_bucket(j) and _remote_bucket(j) != "sur site")
+    remote_known = sum(1 for j in rows if _remote_bucket(j))
+
+    return {
+        "n_total": len(jobs), "n": len(rows),
+        "by_cat_top": [(cat, n) for cat, n in by_cat.most_common() if n > 0],
+        "top_companies": [(c, n) for c, n in by_company.most_common(8) if n >= 2],
+        "sal_n": len(sal), "sal_median": statistics.median(sal) if sal else None,
+        "remote_n": remote_n, "remote_known": remote_known,
+    }
+
+
+def render_sophia_guide(jobs, generated):
+    slug = "guide-emploi-tech-sophia-antipolis-cote-dazur"
+    st = compute_sophia_stats(jobs)
+    pct = round(100 * st["n"] / st["n_total"]) if st["n_total"] else 0
+
+    cat_list = "".join(
+        "<li><b>%s</b> — %d offre%s</li>" % (esc(CATS.get(cat, (cat,))[0]), n, "s" if n > 1 else "")
+        for cat, n in st["by_cat_top"])
+    company_txt = (", ".join("<b>%s</b> (%d)" % (esc(c), n) for c, n in st["top_companies"])
+                   if st["top_companies"]
+                   else "pas assez d’offres pour dégager des entreprises récurrentes en ce moment")
+    pct_remote = (round(100 * st["remote_n"] / st["remote_known"])
+                  if st["remote_known"] >= MIN_SAMPLE else None)
+    sal_txt = (_fmt_keur(st["sal_median"]) if st["sal_n"] >= MIN_SAMPLE
+               else "pas assez d’offres avec salaire affiché pour un chiffre fiable")
+
+    faq = [
+        ("Combien d’offres tech à Sophia Antipolis et sur la Côte d’Azur en ce moment ?",
+         "<p>%d offres sur les %d actuellement diffusées sur sudtechjobs pour le bassin "
+         "Nice / Sophia Antipolis / Valbonne / Biot (%d%% du flux PACA) — le deuxième "
+         "bassin d’emploi tech de la région derrière l’axe Marseille / Aix-en-Provence.</p>"
+         % (st["n"], st["n_total"], pct)),
+
+        ("Quelles entreprises recrutent le plus sur ce bassin ?",
+         "<p>%s. Le mix est révélateur&nbsp;: de gros industriels de la défense et des "
+         "télécoms côtoient des ESN qui staffent leurs clients locaux — moins de "
+         "startups pures que ce que l’image « tech park » de Sophia Antipolis suggère.</p>"
+         % company_txt),
+
+        ("Quels métiers dominent à Sophia Antipolis ?",
+         "<p>La répartition par métier&nbsp;:</p><ul>%s</ul>"
+         "<p>Le développement écrase largement le reste, avec une bonne part "
+         "d’ingénierie systèmes/embarqué liée à l’activité télécom et défense du bassin.</p>"
+         % cat_list),
+
+        ("Le salaire est-il différent à Sophia Antipolis par rapport au reste de "
+         "la PACA ?",
+         "<p>La médiane observée sur ce bassin tourne autour de %s brut par an — voir le "
+         "détail complet, par métier et par expérience, dans le <a href=\"/guide-salaires-"
+         "tech-paca.html\">guide des salaires tech PACA</a>, qui ne montre pas d’écart "
+         "marqué entre les grands bassins d’emploi de la région.</p>" % sal_txt),
+
+        ("Le télétravail à Sophia Antipolis, c’est comment ?",
+         "<p>%s</p>" % (
+             "Sur les offres qui précisent leur politique, environ %d%% proposent au "
+             "moins du télétravail ponctuel — voir le <a href=\"/guide-teletravail-tech-"
+             "paca.html\">guide télétravail</a> pour la répartition détaillée par métier "
+             "et par entreprise." % pct_remote
+             if pct_remote is not None else
+             "Pas assez d’offres précisant leur politique de télétravail sur ce bassin "
+             "pour un chiffre fiable — voir le <a href=\"/guide-teletravail-tech-paca."
+             "html\">guide télétravail</a> à l’échelle de toute la région.")),
+
+        ("Qu’est-ce que French Tech Côte d’Azur, et à quoi ça sert pour chercher "
+         "un job ?",
+         "<p>French Tech Côte d’Azur est le réseau labellisé qui fédère les startups et "
+         "scale-ups de Sophia Antipolis et de la région niçoise&nbsp;: annuaire "
+         "d’entreprises, événements, mise en réseau. Beaucoup de ces startups ne publient "
+         "pas systématiquement sur Welcome to the Jungle ni sur les job boards "
+         "généralistes&nbsp;: consulter directement leur annuaire, ou aller à leurs "
+         "meetups, reste un bon complément à une recherche par job board.</p>"),
+
+        ("Sophia Antipolis, c’est vraiment un « pôle tech », ou surtout de "
+         "l’industrie et des ESN ?",
+         "<p>Les deux à la fois, et c’est important de le savoir avant de candidater&nbsp;: "
+         "à côté des startups French Tech, une bonne partie du volume d’offres vient de "
+         "grands comptes télécom/défense (ingénierie logicielle embarquée, systèmes, "
+         "cybersécurité) et d’ESN qui y placent des consultants. Le poste « développeur à "
+         "Sophia Antipolis » peut aussi bien être chez une startup de 15 personnes que "
+         "chez un sous-traitant d’un grand groupe&nbsp;: à clarifier dès l’offre ou en "
+         "entretien.</p>"),
+
+        ("Comment suivre les nouvelles offres sur ce bassin spécifiquement ?",
+         "<p>Les pages <a href=\"/emploi/sophia-antipolis.html\">Sophia Antipolis</a> et "
+         "<a href=\"/emploi/nice.html\">Nice</a> listent les offres du moment, avec une "
+         "alerte email possible sur cette recherche précise depuis la page d’accueil.</p>"),
+    ]
+
+    return (slug,) + _render_faq_guide(
+        slug=slug, breadcrumb="Guide Sophia Antipolis & Côte d’Azur",
+        h1="Trouver un job tech à Sophia Antipolis et sur la Côte d’Azur en 2026",
+        intro="Deuxième bassin d’emploi tech de la région derrière Marseille/Aix&nbsp;: "
+              "qui recrute à Sophia Antipolis et à Nice, pour quels métiers, et à quel "
+              "salaire&nbsp;? Chiffres calculés à partir des offres diffusées sur "
+              "<a href=\"%s/\">sudtechjobs</a>." % SITE_URL,
+        faq=faq, generated=generated,
+        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+                   '<a href="/emploi/sophia-antipolis.html">Sophia Antipolis</a> · '
+                   '<a href="/emploi/nice.html">Nice</a>.</p>',
+        title="Trouver un job tech à Sophia Antipolis et Nice en 2026 | sudtechjobs",
+        description="Qui recrute dans la tech à Sophia Antipolis et sur la Côte d'Azur, "
+                    "pour quels métiers et à quel salaire, calculé à partir des offres "
+                    "réellement diffusées sur sudtechjobs.")
+
+
 # --------------------------------------------------------------------------- #
 #  company pages                                                              #
 # --------------------------------------------------------------------------- #
@@ -2489,7 +2612,7 @@ def main():
     # ---- guides (FAQ articles, site root + /guides/ hub) -------------------
     guides_meta = []
     for build_guide in (render_salary_guide, render_remote_guide, render_hiring_guide,
-                        render_intern_guide, render_junior_guide):
+                        render_intern_guide, render_junior_guide, render_sophia_guide):
         guide_slug, guide_html, card_title, card_desc = build_guide(jobs, generated)
         guides_meta.append((guide_slug, card_title, card_desc))
         with open(os.path.join(SITE, guide_slug + ".html"), "w", encoding="utf-8") as fh:
