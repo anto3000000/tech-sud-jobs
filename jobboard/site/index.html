@@ -113,6 +113,11 @@
   .chip[aria-pressed=true]{background:var(--card);color:var(--ink);border-color:var(--brand);
     box-shadow:inset 0 -2px 0 var(--brand)}
   .chip[data-new][aria-pressed=true]{border-color:var(--accent);box-shadow:inset 0 -2px 0 var(--accent)}
+  .clearall{font:inherit;border:1px solid var(--line);background:transparent;color:var(--muted);
+    border-radius:9px;padding:7px 12px;font-size:13px;font-weight:500;cursor:pointer;white-space:nowrap}
+  .clearall:hover{border-color:var(--accent);color:var(--ink)}
+  .clearall[hidden]{display:none}
+  .empty .clearall{margin-top:14px;background:var(--card);color:var(--ink)}
   select{appearance:none;font:inherit;color:var(--ink);background:var(--card);
     border:1px solid var(--line);border-radius:9px;padding:7px 12px;cursor:pointer}
   select:focus{border-color:var(--brand);outline:none}
@@ -318,6 +323,7 @@
       </button>
     </form>
     <div class="row" id="cats">
+      <button type="button" class="clearall" data-clear hidden>✕ Effacer</button>
       <span class="chip" data-new="1" aria-pressed="false">✨ Nouvelles</span>
       <span class="chip" data-remote="1" aria-pressed="false">Télétravail</span>
       <details class="multi" id="mCat">
@@ -358,7 +364,7 @@
   <ul id="list"></ul>
   <nav class="pager" id="pager" aria-label="Pagination" hidden></nav>
   <div class="load" id="load">Chargement des offres…</div>
-  <div class="empty" id="empty" hidden>Aucune offre ne correspond à ces filtres.</div>
+  <div class="empty" id="empty" hidden>Aucune offre ne correspond à ces filtres.<br><button type="button" class="clearall" data-clear>Effacer les filtres</button></div>
 
   <footer id="foot"></footer>
   <nav aria-label="Parcourir les offres" style="margin-top:16px;text-align:center;font-size:12px;line-height:2;color:var(--muted)">
@@ -568,6 +574,7 @@ function apply(opts){
     ? `${rows.length} offre${rows.length>1?"s":""}` + (pages>1 ? `<span class="pg"> · page ${state.page}/${pages}</span>` : "")
     : "0 offre";
   $("#empty").hidden = rows.length>0;
+  for(const b of document.querySelectorAll("#cats [data-clear]")) b.hidden = !hasFilters();
   const frag = document.createDocumentFragment();
   for(const j of pageRows){
     const li = document.createElement("li"); li.className = j.slug ? "job linked" : "job";
@@ -631,6 +638,29 @@ function renderPager(pages){
   }
   html += `<button class="pg" data-goto="${p+1}"${p===pages?" disabled":""} aria-label="Page suivante">→</button>`;
   el.innerHTML = html;
+}
+
+function hasFilters(){
+  return !!(state.q.trim() || state.remote || state.onlyNew || state.cats.size || state.cities.size
+    || state.stacks.size || state.contracts.size || state.exps.size);
+}
+
+// remet la recherche à zéro : décoche via l'événement `change` pour que chaque
+// makeMulti retire la valeur de son Set et remette son libellé par défaut.
+function resetFilters(){
+  state.q = ""; state.remote = false; state.onlyNew = false;
+  $("#q").value = "";
+  for(const cb of document.querySelectorAll(".multi .opts input:checked")){
+    cb.checked = false;
+    cb.dispatchEvent(new Event("change", {bubbles:true}));
+  }
+  for(const d of document.querySelectorAll(".multi[open]")) d.open = false;
+  for(const f of document.querySelectorAll(".multi [data-filter]")){
+    f.value = "";
+    f.dispatchEvent(new Event("input"));
+  }
+  syncCats();
+  apply();
 }
 
 function syncCats(){
@@ -747,6 +777,10 @@ function initFilters(){
     if(!on) track("filter", {type: chip.dataset.remote ? "Télétravail" : "Nouveau", value: "on"});
   });
   syncCats();
+
+  document.addEventListener("click", e=>{
+    if(e.target.closest("[data-clear]")) resetFilters();
+  });
 
   document.addEventListener("click", e=>{
     for(const d of document.querySelectorAll(".multi[open]"))
