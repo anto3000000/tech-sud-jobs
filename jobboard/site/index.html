@@ -223,14 +223,23 @@
   #cookie-notice button:hover{border-color:var(--brand)}
   @media (max-width:520px){
     header h1{font-size:11px;line-height:1.5;margin:12px 0 4px;max-width:none}
+    .search + .row{margin-top:18px}
+    .count{white-space:nowrap}
+    .count .pg{display:none}
     .search .multi>summary{font-size:13px;padding:0 26px 0 12px}
     /* les filtres gardent leur taille et défilent horizontalement */
     .row#cats{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
       -webkit-overflow-scrolling:touch;margin:0 -20px;padding:0 20px 2px}
     .row#cats::-webkit-scrollbar{display:none}
     .row#cats>*{flex:none}
-    .multi .panel{position:fixed;left:16px;right:16px;top:calc(100% + 8px);
-      width:auto;max-width:none}
+    /* panneau = bottom sheet ancré au viewport. On coupe backdrop-filter ici :
+       il fait de .controls le repère des enfants fixed, et Safari iOS < 18 ne
+       l'applique pas sans préfixe -> panneau placé hors écran selon le navigateur */
+    .controls{backdrop-filter:none;-webkit-backdrop-filter:none}
+    .multi .panel,.search .multi .panel{position:fixed;left:12px;right:12px;bottom:12px;top:auto;
+      width:auto;max-width:none;z-index:30;box-shadow:0 0 0 100vmax rgba(22,48,63,.32),var(--shadow)}
+    .multi .opts{max-height:min(50vh,320px)}
+    .multi .panel input[type=search]{font-size:16px} /* évite le zoom auto d'iOS au focus */
   }
   @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 
@@ -555,8 +564,8 @@ function apply(opts){
   const start = (state.page - 1) * PER_PAGE;
   const pageRows = rows.slice(start, start + PER_PAGE);
 
-  $("#count").textContent = rows.length
-    ? `${rows.length} offre${rows.length>1?"s":""}` + (pages>1 ? ` · page ${state.page}/${pages}` : "")
+  $("#count").innerHTML = rows.length
+    ? `${rows.length} offre${rows.length>1?"s":""}` + (pages>1 ? `<span class="pg"> · page ${state.page}/${pages}</span>` : "")
     : "0 offre";
   $("#empty").hidden = rows.length>0;
   const frag = document.createDocumentFragment();
