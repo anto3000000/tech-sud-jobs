@@ -56,6 +56,9 @@ FONTS_DIR = ROOT / "brand" / "fonts"
 LOGO_PATH = ROOT / "brand" / "sudtechjobs-logo-transparent.png"
 
 SITE_URL = "https://sudtechjobs.com"
+# Umami reads these: the LinkedIn mobile app strips the referrer, so without UTM the
+# clicks land in "Direct".
+UTM = "utm_source=linkedin&utm_medium=social&utm_campaign=daily-card"
 MIN_OFFERS = 4       # taille minimale d'un créneau pour qu'il soit éligible
 MAX_ROWS = 5          # offres affichées sur la carte / dans la légende
 RECENT_DAYS = 14      # une offre déjà mise en avant n'est pas reproposée avant ça
@@ -318,9 +321,9 @@ def build_caption(offers, category, geo_label, geo_hashtags):
     lines = [f"🚀 Nouvelles offres {role} en {geo_label} 🚀", ""]
     for o in offers:
         lines.append(f"▶ {o['title']} — {o['company']}")
-        lines.append(f"🔗 {SITE_URL}/offre/{o['slug']}.html")
+        lines.append(f"🔗 {SITE_URL}/offre/{o['slug']}.html?{UTM}")
         lines.append("")
-    lines.append(f"Toutes les offres tech PACA, mises à jour chaque jour 👉 {SITE_URL}")
+    lines.append(f"Toutes les offres tech PACA, mises à jour chaque jour 👉 {SITE_URL}/?{UTM}")
     lines.append("")
     tags = ["#SudTechJobs", "#TechPACA"] + geo_hashtags + CAT_HASHTAGS[category] + ["#Hiring", "#Recrutement"]
     lines.append(" ".join(tags))
