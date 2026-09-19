@@ -232,9 +232,12 @@
     .count{white-space:nowrap}
     .count .pg{display:none}
     .search .multi>summary{font-size:13px;padding:0 26px 0 12px}
-    /* les filtres gardent leur taille et défilent horizontalement */
+    /* les filtres gardent leur taille et défilent horizontalement.
+       pas de -webkit-overflow-scrolling:touch : obsolète depuis iOS 13 (le
+       scroll momentum est natif) et connu pour "avaler" le tap qui suit un
+       swipe (le 1er tap stoppe juste l'inertie au lieu d'ouvrir le panneau) */
     .row#cats{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;
-      -webkit-overflow-scrolling:touch;margin:18px -20px 0;padding:0 20px 2px}
+      margin:18px -20px 0;padding:0 20px 2px}
     .row#cats::-webkit-scrollbar{display:none}
     .row#cats>*{flex:none}
     /* panneau = bottom sheet ancré au viewport. On coupe backdrop-filter ici :
