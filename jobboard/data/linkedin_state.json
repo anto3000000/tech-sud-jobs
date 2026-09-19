@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-09-18",
+  "last_generated_date": "2026-09-19",
   "bucket_last_used": {
     "eng-13": "2026-09-17",
     "eng-06": "2026-09-18",
@@ -10,7 +10,8 @@
     "data-06": "2026-09-18",
     "data-83": "2026-09-18",
     "data-paca": "2026-09-18",
-    "data-84": "2026-09-18"
+    "data-84": "2026-09-18",
+    "product-13": "2026-09-19"
   },
   "recent_slugs": {
     "atos-developpeur-logiciel-telecom-c-cpp-h-f-9b1cff": "2026-09-17",
@@ -60,7 +61,12 @@
     "simplon-formateur-rice-ia-data-python-mlops-b569b2": "2026-09-18",
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-09-18",
     "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-09-18",
-    "cgi-data-engineer-dbt-f-h-acd18f": "2026-09-18"
+    "cgi-data-engineer-dbt-f-h-acd18f": "2026-09-18",
+    "cma-cgm-digital-project-officer-product-owner-ports-terminals-b2eda5": "2026-09-19",
+    "cma-cgm-functional-hris-product-owner-c3c1f5": "2026-09-19",
+    "groupe-lr-technologies-product-owner-h-f-2243d8": "2026-09-19",
+    "scalian-product-owner-aix-en-provence-h-f-ba27ee": "2026-09-19",
+    "smile-chef-de-projet-it-product-owner-h-f-marseille-ace3a3": "2026-09-19"
   },
   "last_published_date": "2026-09-18"
 }
