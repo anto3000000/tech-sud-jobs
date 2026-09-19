@@ -59,6 +59,20 @@ FOREIGN_RX = re.compile(
 )
 
 
+# A remote role outside PACA is only useful if it can be done from France:
+# the location must say so (or say nothing beyond "remote"). "Spain - Remote",
+# "Montréal - Remote", "Anywhere in Belgium" are anchored elsewhere -> out.
+FR_OK_RX = re.compile(
+    r"(france|français|francais|\bfr\b|paris|lyon|bordeaux|toulouse|nantes|lille|"
+    r"rennes|strasbourg|montpellier|grenoble|europe|emea|à distance|a distance|"
+    r"t[eé]l[eé]travail)", re.I)
+BARE_REMOTE_RX = re.compile(r"^\W*(remote|anywhere|worldwide|global)?\W*$", re.I)
+
+
+def _remote_ok_from_france(loc):
+    return bool(FR_OK_RX.search(loc)) or bool(BARE_REMOTE_RX.match(loc))
+
+
 def _is_foreign(*fields):
     return bool(FOREIGN_RX.search(" ".join(str(f or "") for f in fields)))
 
@@ -232,6 +246,8 @@ def load_ats():
         # -> never feed it to the PACA postal-code regex.
         is_remote = bool(REMOTE_RX.search(loc)) or remote.lower() in ("remote", "fully", "true", "yes")
         if not (_is_paca(loc) or is_remote):
+            continue
+        if not _is_paca(loc) and not _remote_ok_from_france(loc):
             continue
         cat = classify(j.get("title"), j.get("department"))
         if cat is None:
