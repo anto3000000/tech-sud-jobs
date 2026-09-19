@@ -4,6 +4,14 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+# REBUILD_ONLY=1 -> skip every network fetch (WTTJ, France Travail, ATS), the
+# e-mail alerts and the LinkedIn card; just rebuild the feed + pages from the
+# data already committed in jobboard/data. ~1 min instead of ~18.
+REBUILD_ONLY="${REBUILD_ONLY:-0}"
+if [ "$REBUILD_ONLY" = "1" ]; then
+  echo "REBUILD_ONLY=1 — skipping fetch layers, alerts and LinkedIn"
+else
+
 echo "::group::WTTJ browse (layer 1)"
 python3 jobboard/sources/wttj.py
 echo "::endgroup::"
@@ -26,6 +34,8 @@ python3 jobboard/fetch_jobs.py -o jobboard/data/ats_jobs.json \
   || echo "ATS fetch failed — building with WTTJ only"
 echo "::endgroup::"
 
+fi  # end of fetch layers (REBUILD_ONLY)
+
 echo "::group::merge + build feed"
 python3 jobboard/build.py
 echo "::endgroup::"
@@ -38,6 +48,8 @@ echo "::group::render static SEO pages (layer 5)"
 python3 jobboard/render_pages.py
 echo "::endgroup::"
 
+if [ "$REBUILD_ONLY" != "1" ]; then
+
 echo "::group::email alerts (layer 6, best effort — needs EMAILOCTOPUS_*/RESEND_API_KEY)"
 python3 jobboard/alerts.py || echo "alerts failed — continuing"
 echo "::endgroup::"
@@ -45,6 +57,8 @@ echo "::endgroup::"
 echo "::group::LinkedIn daily card (layer 7, best effort)"
 python3 jobboard/linkedin_post.py --generate || echo "LinkedIn card generation failed — continuing"
 echo "::endgroup::"
+
+fi  # end of alerts + LinkedIn (REBUILD_ONLY)
 # Posting to LinkedIn (jobboard/linkedin_post.py --publish) needs the card's
 # image live on sudtechjobs.com first, so it runs as its own workflow step
 # after the Pages deploy — see .github/workflows/jobboard.yml.

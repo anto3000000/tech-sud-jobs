@@ -3,7 +3,12 @@ name: Job board — refresh & deploy
 on:
   schedule:
     - cron: "17 5 * * *"      # ~07:17 Europe/Paris (summer) / 06:17 (winter), daily
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      rebuild_only:
+        description: "Rebuild from committed data only (skip WTTJ/ATS/France Travail fetch, alerts, LinkedIn)"
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths:
@@ -27,6 +32,30 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # needed to diff the pushed range in "Pick mode"
+
+      - name: Pick mode (full refresh vs rebuild only)
+        id: mode
+        env:
+          EVENT: ${{ github.event_name }}
+          INPUT_REBUILD: ${{ inputs.rebuild_only }}
+          BEFORE: ${{ github.event.before }}
+        run: |
+          # Full refresh (network fetch) is the default: cron, manual runs, and any push
+          # touching fetchers / data / company lists. Rebuild-only is chosen when a push
+          # changes nothing but rendering code, the site, or brand assets.
+          mode=full
+          if [ "$EVENT" = "workflow_dispatch" ] && [ "$INPUT_REBUILD" = "true" ]; then
+            mode=rebuild
+          elif [ "$EVENT" = "push" ] && git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            other=$(git diff --name-only "$BEFORE" "$GITHUB_SHA" \
+              | grep -v -E '^jobboard/(build|build_companies|render_pages|classify)\.py$|^jobboard/(site|brand)/' \
+              || true)
+            [ -z "$other" ] && mode=rebuild
+          fi
+          echo "mode=$mode" | tee -a "$GITHUB_OUTPUT"
+          [ "$mode" = rebuild ] && echo "REBUILD_ONLY=1" >> "$GITHUB_ENV" || true
 
       - uses: actions/setup-python@v5
         with:
@@ -85,9 +114,11 @@ jobs:
         env:
           BUFFER_API_KEY: ${{ secrets.BUFFER_API_KEY }}
           BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
+        if: steps.mode.outputs.mode == 'full'
         run: python3 jobboard/linkedin_post.py --publish || echo "LinkedIn publish failed — continuing"
 
       - name: Persist LinkedIn publish state
+        if: steps.mode.outputs.mode == 'full'
         # --publish only updates last_published_date in-memory on this
         # runner; the earlier "Commit refreshed feed" step ran before it,
         # so without this it would never reach git — and a second push
