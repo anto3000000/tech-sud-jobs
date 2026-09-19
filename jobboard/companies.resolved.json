@@ -540,21 +540,6 @@
     "needs_review": false
   },
   {
-    "name": "Nvidia (Lab Sophia)",
-    "domain": "nvidia.com",
-    "declared_ats": "greenhouse",
-    "declared_slug": "nvidia",
-    "resolved_ats": "workday",
-    "resolved_slug": "nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
-    "careers_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
-    "careers_origin": "https://nvidia.wd5.myworkdayjobs.com",
-    "method": "api",
-    "resolved_via": "known",
-    "evidence": "verified 2026-09-06: Workday (nvidia.wd5.myworkdayjobs.com)",
-    "confidence": "verified",
-    "needs_review": false
-  },
-  {
     "name": "Iad France (Pôle Digital)",
     "domain": "iadfrance.fr",
     "declared_ats": "greenhouse",

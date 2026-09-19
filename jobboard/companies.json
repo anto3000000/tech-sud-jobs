@@ -442,21 +442,6 @@
     "slug": "centralemarseille"
   },
   {
-    "name": "Nvidia (Lab Sophia)",
-    "city": "Sophia Antipolis",
-    "dept": "06",
-    "category": "AI / GPU Hardware",
-    "domain": "nvidia.com",
-    "ats": "greenhouse",
-    "slug": "nvidia",
-    "known": {
-      "ats": "workday",
-      "slug": "nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
-      "careers_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
-      "note": "verified 2026-09-06 (ats), slug reshaped 2026-09-18: the 'workday' adapter (added today) needs slug='<host>/<site>', not a bare tenant name -> was resolving to workday but failing to fetch (0 jobs, 'slug must be <host>/<site>') until this fix. Public CXS API confirmed, 2000 postings group-wide."
-    }
-  },
-  {
     "name": "Iad France (Pôle Digital)",
     "city": "Marseille",
     "dept": "13",
