@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-19T08:49:20+00:00",
+  "generated_at": "2026-09-19T13:23:06+00:00",
   "region": "Provence-Alpes-Côte d'Azur",
   "count": 643,
   "companies": 126,
-  "new_count": 274,
+  "new_count": 267,
   "by_category": {
     "eng": 425,
     "tech-adjacent": 55,
@@ -9845,7 +9845,7 @@
       "start_date": null,
       "enriched_at": "2026-09-19T07:40:19+00:00",
       "first_seen": "2026-09-09T10:59:57+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "atos-business-analyst-experimente-f-h-c6c3cf"
     },
     {
@@ -9895,7 +9895,7 @@
       "start_date": null,
       "enriched_at": "2026-09-19T07:40:19+00:00",
       "first_seen": "2026-09-09T10:59:57+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "atos-consultant-cybersecurite-senior-f-h-0b0e8a"
     },
     {
@@ -9947,7 +9947,7 @@
       "start_date": null,
       "enriched_at": "2026-09-19T07:40:19+00:00",
       "first_seen": "2026-09-09T10:59:57+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "capgemini-cloud-devops-engineer-senior-sophia-antipolis-dc8015"
     },
     {
@@ -9989,7 +9989,7 @@
       "start_date": null,
       "enriched_at": "2026-09-19T07:40:19+00:00",
       "first_seen": "2026-09-09T10:59:57+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "capgemini-network-security-engineer-senior-aix-en-provence-2bfc63"
     },
     {
@@ -10032,7 +10032,7 @@
       "start_date": null,
       "enriched_at": "2026-09-19T07:40:19+00:00",
       "first_seen": "2026-09-09T10:59:57+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "descours-cabaud-technico-commercial-itinerant-tp-f-h-719d59"
     },
     {
@@ -10084,7 +10084,7 @@
       "start_date": null,
       "enriched_at": "2026-09-19T07:40:19+00:00",
       "first_seen": "2026-09-09T10:59:57+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "atos-ingenieur-production-applicative-devops-f-h-34be25"
     },
     {
@@ -10144,7 +10144,7 @@
       "start_date": null,
       "enriched_at": "2026-09-19T07:40:19+00:00",
       "first_seen": "2026-09-09T10:59:57+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "atos-ingenieur-devops-f-h-4ddb5a"
     },
     {
