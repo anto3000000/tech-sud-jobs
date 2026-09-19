@@ -1284,7 +1284,7 @@
 "city": "Lyon",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": "eng-lyon",
+"facet_slug": "eng",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-19",
 "title": "Analyste SOC - Stage"
@@ -1371,10 +1371,10 @@
 },
 "capgemini-architecte-technique-sap-b3bda2": {
 "category": "eng",
-"city": "Lyon",
+"city": "Lille",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": "eng-lyon",
+"facet_slug": "eng-lille",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-19",
 "title": "Architecte Technique SAP"
@@ -1694,7 +1694,7 @@
 "city": "Lyon",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": "eng-lyon",
+"facet_slug": "eng",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-19",
 "title": "Ingénieure / Ingénieur GRC - Stage"
@@ -1891,7 +1891,7 @@
 },
 "capgemini-sap-data-migration-lead-6fb5d4": {
 "category": "data",
-"city": "Lyon",
+"city": "Lille",
 "company": "Capgemini",
 "expired_at": null,
 "facet_slug": "data",
@@ -1921,20 +1921,20 @@
 },
 "capgemini-tech-lead-sap-03d328": {
 "category": "eng",
-"city": "Lyon",
+"city": "Lille",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": "eng-lyon",
+"facet_slug": "eng-lille",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-19",
 "title": "Tech Lead SAP"
 },
 "capgemini-tech-lead-sap-btp-07c7b4": {
 "category": "eng",
-"city": "Lyon",
+"city": "Lille",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": "eng-lyon",
+"facet_slug": "eng-lille",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-19",
 "title": "Tech Lead SAP BTP"
@@ -6601,7 +6601,7 @@
 },
 "sogeti-developpeuse-developpeur-fullstack-stage-b71fcb": {
 "category": "eng",
-"city": "Blagnac",
+"city": "Toulouse",
 "company": "Sogeti",
 "expired_at": null,
 "facet_slug": "eng",
