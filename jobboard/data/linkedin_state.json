@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-09-19",
+  "last_generated_date": "2026-09-20",
   "bucket_last_used": {
     "eng-13": "2026-09-17",
     "eng-06": "2026-09-18",
@@ -12,7 +12,8 @@
     "data-paca": "2026-09-18",
     "data-84": "2026-09-18",
     "product-13": "2026-09-19",
-    "tech-adjacent-13": "2026-09-19"
+    "tech-adjacent-13": "2026-09-19",
+    "tech-adjacent-06": "2026-09-20"
   },
   "recent_slugs": {
     "atos-developpeur-logiciel-telecom-c-cpp-h-f-9b1cff": "2026-09-17",
@@ -72,7 +73,12 @@
     "onepoint-consultant-cloud-f-h-8380f6": "2026-09-19",
     "sogeti-chef-de-projet-it-7ce75a": "2026-09-19",
     "bpce-solutions-informatiques-chef-de-projet-si-f-h-lead-et-opportunite-15ba63": "2026-09-19",
-    "eskimoz-content-strategist-seo-geo-h-f-ad8672": "2026-09-19"
+    "eskimoz-content-strategist-seo-geo-h-f-ad8672": "2026-09-19",
+    "nexton-chef-de-projet-technique-supervision-h-f-ac8c87": "2026-09-20",
+    "scalian-pmo-it-h-f-8635e7": "2026-09-20",
+    "dishop-account-growth-manager-foodtech-d76145": "2026-09-20",
+    "exalt-consultant-e-chef-de-projet-moa-comptabilite-h-f-37290d": "2026-09-20",
+    "odhcom-freelancerepublik-charge-de-recrutement-it-talent-advocate-h-f-846d53": "2026-09-20"
   },
   "last_published_date": "2026-09-19"
 }
