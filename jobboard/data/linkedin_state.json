@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-09-20",
+  "last_generated_date": "2026-09-21",
   "bucket_last_used": {
     "eng-13": "2026-09-17",
     "eng-06": "2026-09-18",
@@ -13,7 +13,8 @@
     "data-84": "2026-09-18",
     "product-13": "2026-09-19",
     "tech-adjacent-13": "2026-09-19",
-    "tech-adjacent-06": "2026-09-20"
+    "tech-adjacent-06": "2026-09-20",
+    "product-paca": "2026-09-21"
   },
   "recent_slugs": {
     "atos-developpeur-logiciel-telecom-c-cpp-h-f-9b1cff": "2026-09-17",
@@ -78,7 +79,12 @@
     "scalian-pmo-it-h-f-8635e7": "2026-09-20",
     "dishop-account-growth-manager-foodtech-d76145": "2026-09-20",
     "exalt-consultant-e-chef-de-projet-moa-comptabilite-h-f-37290d": "2026-09-20",
-    "odhcom-freelancerepublik-charge-de-recrutement-it-talent-advocate-h-f-846d53": "2026-09-20"
+    "odhcom-freelancerepublik-charge-de-recrutement-it-talent-advocate-h-f-846d53": "2026-09-20",
+    "cma-cgm-global-product-owner-specialist-eb1024": "2026-09-21",
+    "airbus-helicopters-logiciel-r-d-digitalcampus-sap-product-manager-prod-068701": "2026-09-21",
+    "cma-cgm-global-product-owner-senior-supervisor-m-f-cma-cgm-head-office-6c2ac4": "2026-09-21",
+    "scalian-product-owner-avignon-h-f-00642b": "2026-09-21",
+    "scalian-product-owner-toulon-h-f-618128": "2026-09-21"
   },
   "last_published_date": "2026-09-20"
 }
