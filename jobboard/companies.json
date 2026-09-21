@@ -1158,13 +1158,13 @@
     "dept": "13",
     "category": "Conseil",
     "domain": "deloitte.com",
-    "ats": "custom",
+    "ats": "deloittefr",
     "slug": null,
     "known": {
-      "ats": "custom",
+      "ats": "deloittefr",
       "slug": null,
-      "careers_url": "https://www.deloitte.com/fr/fr/careers.html",
-      "note": "verified 2026-09-21: bespoke careers portal, no keyless feed found"
+      "careers_url": "https://www.deloitte.com/fr/fr/careers/content/job/results.html",
+      "note": "verified 2026-09-21: AWS API Gateway offres_v2 behind the careers app, public x-api-key from the page JS; apply links are Workday (fina.wd103 DeloitteRecrute); adapter ats.DeloitteFR"
     }
   },
   {
@@ -1173,13 +1173,13 @@
     "dept": "13",
     "category": "Conseil",
     "domain": "wavestone.com",
-    "ats": "custom",
-    "slug": null,
+    "ats": "smartrecruiters",
+    "slug": "Wavestone1",
     "known": {
-      "ats": "custom",
-      "slug": null,
-      "careers_url": "https://www.wavestone.com/fr/carrieres/",
-      "note": "verified 2026-09-21: bespoke careers site, no keyless feed found"
+      "ats": "smartrecruiters",
+      "slug": "Wavestone1",
+      "careers_url": "https://careers.smartrecruiters.com/Wavestone1",
+      "note": "verified 2026-09-21: SmartRecruiters board Wavestone1 (~250 FR postings, country=fr) embedded in the WP careers site"
     }
   },
   {
@@ -1188,13 +1188,13 @@
     "dept": "13",
     "category": "Ingénierie / Conseil",
     "domain": "expleo.com",
-    "ats": "custom",
-    "slug": null,
+    "ats": "icims_portal",
+    "slug": "expleo-jobs-fr-fr.icims.com",
     "known": {
-      "ats": "custom",
-      "slug": null,
-      "careers_url": "https://expleo.com/global/en/careers/",
-      "note": "verified 2026-09-21: bespoke careers site, no keyless feed found"
+      "ats": "icims_portal",
+      "slug": "expleo-jobs-fr-fr.icims.com",
+      "careers_url": "https://expleo-jobs-fr-fr.icims.com/",
+      "note": "verified 2026-09-21: iCIMS FR portal, server-rendered search pages (23 pages); adapter ats.IcimsPortal"
     }
   },
   {
@@ -1203,13 +1203,13 @@
     "dept": "13",
     "category": "Ingénierie / Mobilité",
     "domain": "systra.com",
-    "ats": "icims",
+    "ats": "systrawp",
     "slug": null,
     "known": {
-      "ats": "icims",
+      "ats": "systrawp",
       "slug": null,
       "careers_url": "https://www.systra.com/rejoignez-nous/",
-      "note": "verified 2026-09-21: iCIMS (browser only)"
+      "note": "verified 2026-09-21: WP REST CPT systra_jobs filtered to France term 14604; no city field -> parsed from title/body; adapter ats.SystraWP"
     }
   },
   {
@@ -1218,13 +1218,13 @@
     "dept": "13",
     "category": "Énergie / Infra",
     "domain": "vinci-energies.com",
-    "ats": "custom",
+    "ats": "vincienergies",
     "slug": null,
     "known": {
-      "ats": "custom",
+      "ats": "vincienergies",
       "slug": null,
       "careers_url": "https://www.vinci-energies.com/job-offer/",
-      "note": "verified 2026-09-21: bespoke job-offer portal, no keyless feed found"
+      "note": "verified 2026-09-21: WP archive (REST locked), keyword field job_s matches address -> PACA town searches; apply links on jobs.vinci.com; adapter ats.VinciEnergies"
     }
   },
   {
@@ -1233,13 +1233,88 @@
     "dept": "13",
     "category": "Recherche",
     "domain": "inrae.fr",
-    "ats": "custom",
+    "ats": "inrae",
     "slug": null,
     "known": {
-      "ats": "custom",
+      "ats": "inrae",
       "slug": null,
       "careers_url": "https://jobs.inrae.fr/",
-      "note": "verified 2026-09-21: bespoke careers site jobs.inrae.fr"
+      "note": "verified 2026-09-21: Drupal + Algolia InstantSearch, search-only key public in page; filter search_api_language:fr + PACA region; adapter ats.InraeAlgolia"
+    }
+  },
+  {
+    "name": "Thales",
+    "city": "Cannes",
+    "dept": "06",
+    "category": "Aéro / Défense / Spatial",
+    "domain": "thalesgroup.com",
+    "ats": "workday",
+    "slug": "thales.wd3.myworkdayjobs.com/Careers",
+    "known": {
+      "ats": "workday",
+      "slug": "thales.wd3.myworkdayjobs.com/Careers",
+      "careers_url": "https://thales.wd3.myworkdayjobs.com/Careers",
+      "note": "verified 2026-09-21: Workday CXS, France facet (~1 490 FR postings, worldwide board hits the 2000 window); sites Cannes, Sophia, Aix, Toulon"
+    }
+  },
+  {
+    "name": "Alten",
+    "city": "Vitrolles",
+    "dept": "13",
+    "category": "Ingénierie / ESN",
+    "domain": "alten.fr",
+    "ats": "smartrecruiters",
+    "slug": "Alten",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Alten",
+      "careers_url": "https://careers.smartrecruiters.com/Alten",
+      "note": "verified 2026-09-21: SmartRecruiters board Alten (~650 FR postings, ~55 PACA: Vitrolles, Valbonne, Aix)"
+    }
+  },
+  {
+    "name": "Eurofins",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Biotech / Analyses",
+    "domain": "eurofins.fr",
+    "ats": "smartrecruiters",
+    "slug": "Eurofins",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Eurofins",
+      "careers_url": "https://careers.smartrecruiters.com/Eurofins",
+      "note": "verified 2026-09-21: SmartRecruiters board Eurofins (~590 FR postings, ~65 PACA)"
+    }
+  },
+  {
+    "name": "Artelia",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Ingénierie / Conseil",
+    "domain": "arteliagroup.com",
+    "ats": "smartrecruiters",
+    "slug": "Artelia",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Artelia",
+      "careers_url": "https://careers.smartrecruiters.com/Artelia",
+      "note": "verified 2026-09-21: SmartRecruiters board Artelia (~330 FR postings, ~25 PACA)"
+    }
+  },
+  {
+    "name": "Bosch",
+    "city": "Valbonne",
+    "dept": "06",
+    "category": "Industrie / IoT",
+    "domain": "bosch.fr",
+    "ats": "smartrecruiters",
+    "slug": "Boschgroup",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Boschgroup",
+      "careers_url": "https://careers.smartrecruiters.com/Boschgroup",
+      "note": "verified 2026-09-21: SmartRecruiters board Boschgroup (26 FR postings, 4 PACA)"
     }
   }
 ]

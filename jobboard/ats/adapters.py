@@ -398,7 +398,8 @@ class SmartRecruiters(Adapter):
 
     # multinational boards (thousands of postings, one detail GET each): ask the
     # API for France only instead of walking the whole world
-    FR_ONLY = frozenset(("soprasteria1", "assystem"))
+    FR_ONLY = frozenset(("soprasteria1", "assystem", "alten", "eurofins", "artelia",
+                         "wavestone1"))
     # on those boards only PACA postings get the extra per-posting body GET
     _PACA_RX = re.compile(r"aix|marseille|nice\b|sophia|antipolis|toulon|six-fours|biot|valbonne|"
                           r"provence|cannes|antibes|avignon|vitrolles|aubagne|gardanne|cadarache|"
@@ -563,6 +564,16 @@ class Workday(Adapter):
     )
     _PAGE = 20
     _CAP = 2000  # safety ceiling on total postings walked
+    # worldwide boards over Workday's 2000-result window: ask for France only
+    # (country facet id from the board's own facets), and only fetch the body
+    # of PACA postings.
+    FR_FACETS = {
+        "thales.wd3.myworkdayjobs.com/Careers":
+            {"locationCountry": ["54c5b6971ffb4bf0b116fe7651ec789a"]},
+    }
+    _PACA_RX = re.compile(r"aix|marseille|nice\b|sophia|antipolis|toulon|six-fours|biot|valbonne|"
+                          r"provence|cannes|antibes|avignon|vitrolles|aubagne|gardanne|cadarache|"
+                          r"durance|rousset|marignane|mougins|grasse|la\s+ciotat|g[ée]menos", re.I)
 
     def extract_slug(self, html, final_url):
         m = re.search(self.slug_regexes[0], (html or "") + "\n" + (final_url or ""), re.I)
@@ -582,9 +593,11 @@ class Workday(Adapter):
         host, site = slug.split("/", 1)
         tenant = host.split(".")[0]
         url = "https://%s/wday/cxs/%s/%s/jobs" % (host, tenant, site)
+        facets = self.FR_FACETS.get(slug, {})
+        detail_rx = self._PACA_RX if facets else _FR_LOC_RX
         jobs, seen, offset, first_total = [], set(), 0, None
         while True:
-            r = post_json(url, {"appliedFacets": {}, "limit": self._PAGE,
+            r = post_json(url, {"appliedFacets": facets, "limit": self._PAGE,
                                 "offset": offset, "searchText": ""}, retries=1)
             if not r.ok:
                 return FetchResult(self.key, slug, False, endpoint=url, note="HTTP %s" % r.status)
@@ -606,7 +619,7 @@ class Workday(Adapter):
                 seen.add(jurl)
                 new += 1
                 loc = p.get("locationsText") or ""
-                desc = self._detail(host, tenant, site, ext) if _FR_LOC_RX.search(loc) else None
+                desc = self._detail(host, tenant, site, ext) if detail_rx.search(loc) else None
                 jobs.append(Job(p.get("title"), jurl, location=loc,
                                 published_at=p.get("postedOn"), description=desc, raw=p))
             offset += self._PAGE
@@ -982,6 +995,236 @@ class TalentsoftRSS(Adapter):
 
 
 # --------------------------------------------------------------------------- #
+#  Deloitte France — careers portal (deloitte.com/fr/fr/careers/content/job/
+#  results.html) is a client-side app over an AWS API Gateway endpoint that
+#  takes the public x-api-key shipped in its own JS (same key every visitor
+#  uses). POST {size, from, fields[]} -> {total, results[]}. slug ignored.
+# --------------------------------------------------------------------------- #
+class DeloitteFR(Adapter):
+    key = "deloittefr"
+    has_api = True
+    signatures = ("f6nv82mofd.execute-api",)
+    _EP = "https://f6nv82mofd.execute-api.eu-west-1.amazonaws.com/prod/offres_v2"
+    _KEY = "JKT2pdDzG35s3MoPXwmy3TjLcCALbuj9SP6bTPt1"
+    _FIELDS = ["id", "jobname", "city_name", "country", "activity_title", "contract_type",
+               "link", "job_category_title", "last_posting_date", "description",
+               "additional_description", "remote_type"]
+
+    def fetch(self, slug, careers_origin=None):
+        out, start, total = [], 0, None
+        while total is None or start < total:
+            r = post_json(self._EP, {"size": 100, "from": start, "hideScore": True,
+                                     "fields": self._FIELDS},
+                          headers={"x-api-key": self._KEY}, retries=1)
+            if not r.ok:
+                return FetchResult(self.key, slug, bool(out), out, endpoint=self._EP,
+                                   note="HTTP %s" % r.status)
+            data = r.json()
+            total = int(data.get("total") or 0)
+            res = data.get("results") or []
+            for j in res:
+                link = (j.get("link") or "").replace("/apply", "")
+                city = re.sub(r"\s+\d{2}$", "", (j.get("city_name") or "").strip())
+                out.append(Job((j.get("jobname") or "").strip(), link,
+                               location=city.title() or None,
+                               department=j.get("job_category_title") or j.get("activity_title"),
+                               contract=j.get("contract_type"),
+                               remote=j.get("remote_type"),
+                               published_at=j.get("last_posting_date"),
+                               description=_body(j.get("description"), j.get("additional_description")),
+                               raw={}))
+            start += len(res)
+            if not res:
+                break
+        return FetchResult(self.key, slug, True, out, endpoint=self._EP,
+                           note="0 postings" if not out else None)
+
+
+# --------------------------------------------------------------------------- #
+#  SYSTRA — WordPress CPT `systra_jobs` on the public REST API, filtered to the
+#  France country term (14604). The CPT carries no city field: the location is
+#  read from the title ("… Marseille (13)") or the first lines of the body.
+# --------------------------------------------------------------------------- #
+class SystraWP(Adapter):
+    key = "systrawp"
+    has_api = True
+    _BASE = "https://www.systra.com/wp-json/wp/v2"
+    _FR = 14604
+    _CITY_RX = re.compile(
+        r"(marseille|aix[- ]en[- ]provence|nice|toulon|avignon|sophia[- ]antipolis|cannes|"
+        r"antibes|la ciotat|vitrolles|aubagne|paris|lyon|lille|bordeaux|toulouse|nantes|"
+        r"rennes|strasbourg|montpellier|grenoble|n[iî]mes)", re.I)
+
+    def _terms(self, tax):
+        r = get_json("%s/%s/?per_page=100&lang=fr" % (self._BASE, tax), retries=1)
+        return {t["id"]: t["name"] for t in r.json()} if r.ok else {}
+
+    def fetch(self, slug, careers_origin=None):
+        contracts, domains = self._terms("systra_job_contract"), self._terms("systra_job_domain")
+        out, page = [], 1
+        while True:
+            url = ("%s/systra_jobs/?per_page=100&page=%d&lang=fr&systra_job_country=%d"
+                   "&_fields=id,link,date,title,content,systra_job_contract,systra_job_domain"
+                   % (self._BASE, page, self._FR))
+            r = get_json(url, retries=1)
+            if not r.ok:
+                if page > 1 and r.status == 400:   # past the last page
+                    break
+                return FetchResult(self.key, slug, bool(out), out, endpoint=url, note="HTTP %s" % r.status)
+            rows = r.json()
+            for j in rows:
+                title = unescape(((j.get("title") or {}).get("rendered") or "")).strip()
+                body = _body((j.get("content") or {}).get("rendered"))
+                m = self._CITY_RX.search(title) or self._CITY_RX.search((body or "")[:1200])
+                cid = (j.get("systra_job_contract") or [None])[0]
+                did = (j.get("systra_job_domain") or [None])[0]
+                out.append(Job(title, j.get("link"), location=m.group(1).title() if m else "France",
+                               department=domains.get(did), contract=contracts.get(cid),
+                               published_at=(j.get("date") or None) and j["date"] + "Z",
+                               description=body, raw={}))
+            if len(rows) < 100:
+                break
+            page += 1
+        return FetchResult(self.key, slug, True, out, endpoint=self._BASE + "/systra_jobs",
+                           note="0 postings" if not out else None)
+
+
+# --------------------------------------------------------------------------- #
+#  INRAE — jobs.inrae.fr is Drupal + Algolia InstantSearch; the search-only
+#  key ships in the page. French-language nodes, PACA region facet. The teaser
+#  carries "<postcode> <city>". slug ignored.
+# --------------------------------------------------------------------------- #
+class InraeAlgolia(Adapter):
+    key = "inrae"
+    has_api = True
+    _APP, _KEY, _IDX = "DVUTVWXJFU", "1e2d2d60b4de29e857a2d1be26bb2fcd", "inrae_prod_created_date_desc"
+
+    def fetch(self, slug, careers_origin=None):
+        ep = "https://%s-dsn.algolia.net/1/indexes/%s/query" % (self._APP.lower(), self._IDX)
+        out, page = [], 0
+        while True:
+            params = ("query=&hitsPerPage=100&page=%d&filters=%s" % (
+                page, quote("search_api_language:fr AND field_region_value:\"Provence-Alpes-Côte d'Azur\"")))
+            r = post_json(ep, {"params": params},
+                          headers={"X-Algolia-Application-Id": self._APP, "X-Algolia-API-Key": self._KEY},
+                          retries=1)
+            if not r.ok:
+                return FetchResult(self.key, slug, bool(out), out, endpoint=ep, note="HTTP %s" % r.status)
+            data = r.json()
+            for h in data.get("hits", []):
+                teaser = _strip_html(h.get("rendered_item_teaser_jobs") or "")
+                m = re.search(r"\b\d{5}\s+([^\n]+)", teaser)
+                agreement = h.get("field_offer_agreement")
+                if agreement in ("CONCOURS", "MOBILITÉ", "CHAIRE"):
+                    continue   # civil-servant exams / internal transfers, not open applications
+                out.append(Job(h.get("title"), "https://jobs.inrae.fr" + (h.get("url") or ""),
+                               location=(m.group(1).strip() if m else None) or h.get("field_related_center_name"),
+                               department=h.get("field_related_departments_name"),
+                               contract={"Mission temporaire": "CDD", "Postdoc": "Post-doctorat",
+                                         "Thèse": "Thèse"}.get(agreement, agreement),
+                               published_at=_epoch_s(h.get("created")),
+                               description=teaser or None, raw={}))
+            page += 1
+            if page >= int(data.get("nbPages") or 0):
+                break
+        return FetchResult(self.key, slug, True, out, endpoint=ep, note="0 postings" if not out else None)
+
+
+# --------------------------------------------------------------------------- #
+#  iCIMS career portals (Expleo FR, …) — the classic server-rendered search
+#  (`/jobs/search?ss=1&in_iframe=1&pr=<page>`) is plain HTML with one card per
+#  job (title, "FR-13-Marseille" location, type, snippet). slug is the portal
+#  host, e.g. expleo-jobs-fr-fr.icims.com.
+# --------------------------------------------------------------------------- #
+class IcimsPortal(Adapter):
+    key = "icims_portal"
+    has_api = True
+    signatures = ("icims_jobscardlist", "icims_jobcarditem")
+
+    def fetch(self, slug, careers_origin=None):
+        host = (slug or "").replace("https://", "").strip("/")
+        base = "https://%s" % host
+        out, seen, page, pages = [], set(), 0, None
+        while pages is None or page < pages:
+            r = get_text("%s/jobs/search?ss=1&in_iframe=1&pr=%d" % (base, page), retries=1)
+            if not r.ok:
+                return FetchResult(self.key, slug, bool(out), out, endpoint=base, note="HTTP %s" % r.status)
+            if pages is None:
+                m = re.search(r"page\s+\d+\s+(?:de|of)\s+(\d+)", r.body, re.I)
+                pages = int(m.group(1)) if m else 1
+            for card in re.split(r'<li class="iCIMS_JobCardItem">', r.body)[1:]:
+                a = re.search(r'href="([^"]*/jobs/(\d+)/[^"]*)"[^>]*title="[^"]*"', card)
+                if not a or a.group(2) in seen:
+                    continue
+                seen.add(a.group(2))
+                title = _strip_html(re.search(r"<h3[^>]*>(.*?)</h3>", card, re.S).group(1)) if "<h3" in card else ""
+                desc = re.search(r'class="col-xs-12 description">(.*?)</div>', card, re.S)
+                loc = re.search(r"Job Locations.*?<dd[^>]*>(.*?)</dd>", card, re.S)
+                ctr = re.search(r"Type d.emploi</dt>\s*<dd[^>]*><span[^>]*>\s*([^<]+?)\s*</span>", card, re.S)
+                dep = re.search(r"M[ée]tiers</dt>\s*<dd[^>]*><span[^>]*>\s*([^<]+?)\s*</span>", card, re.S)
+                # multi-site postings: "FR-31-Toulouse | FR-13-Vitrolles" -> "Toulouse | Vitrolles"
+                parts = [re.sub(r"^[A-Z]{2}-(?:\w{1,3}-)?", "", unescape(x).strip())
+                         for blk in re.findall(r"<span[^>]*>\s*([^<]+?)\s*</span>", loc.group(1))
+                         for x in blk.split("|")] if loc else []
+                city = " | ".join(x for x in parts if x) or None
+                out.append(Job(title, a.group(1).replace("?in_iframe=1", ""), location=city,
+                               department=unescape(dep.group(1)) if dep else None,
+                               contract=unescape(ctr.group(1)) if ctr else None,
+                               description=_strip_html(desc.group(1)) if desc else None, raw={}))
+            page += 1
+        return FetchResult(self.key, slug, True, out, endpoint=base, note="0 postings" if not out else None)
+
+
+# --------------------------------------------------------------------------- #
+#  VINCI Energies — WordPress archive `/job-offer/` (REST is locked, ~1900
+#  worldwide postings over 190 pages). The keyword field `job_s` matches the
+#  address, so we search a list of PACA towns and de-dup. slug ignored.
+# --------------------------------------------------------------------------- #
+class VinciEnergies(Adapter):
+    key = "vincienergies"
+    has_api = True
+    _BASE = "https://www.vinci-energies.com/job-offer/"
+    _CONTRACTS = {"Contrat à durée indéterminée": "CDI", "Contrat à durée déterminée": "CDD",
+                  "Convention de stage": "Stage", "Contrat d'apprentissage": "Alternance",
+                  "Contrat de professionnalisation": "Alternance"}
+    _TOWNS = ("Marseille", "Aix-en-Provence", "Aubagne", "Vitrolles", "Marignane", "Gardanne",
+              "Toulon", "La Ciotat", "Nice", "Sophia Antipolis", "Cannes", "Antibes", "Avignon",
+              "Fos-sur-Mer", "Martigues", "Salon-de-Provence", "Pertuis", "Manosque",
+              "Provence-Alpes-Côte d'Azur")
+
+    def fetch(self, slug, careers_origin=None):
+        out, seen = [], set()
+        for town in self._TOWNS:
+            page = 1
+            while page <= 10:
+                url = ("%s%s?job_s=%s" % (self._BASE, "page/%d/" % page if page > 1 else "", quote(town)))
+                r = get_text(url, retries=1)
+                if not r.ok:
+                    break
+                res = r.body.split('class="search-results-list"', 1)
+                cards = re.split(r'<li class="item[^"]*">', res[1])[1:] if len(res) > 1 else []
+                for c in cards:
+                    a = re.search(r'href="([^"]+)"[^>]*class="row-fake-link"', c)
+                    t = re.search(r'<h2 class="title[^>]*>(.*?)</h2>', c, re.S)
+                    if not a or not t or a.group(1) in seen:
+                        continue
+                    seen.add(a.group(1))
+                    c2 = re.sub(r"<svg.*?</svg>", "", c, flags=re.S)
+                    loc = re.search(r'class="location">\s*(?:<span class="icon">\s*</span>)?\s*([^<]+)', c2)
+                    cat = re.search(r'section-label">([^<]+)', c2)
+                    ctr = re.search(r'additional-infos__status">\s*(?:<span class="icon">\s*</span>)?\s*([^<]+)', c2)
+                    out.append(Job(_strip_html(t.group(1)), a.group(1),
+                                   location=unescape(loc.group(1)).strip() if loc else town,
+                                   department=unescape(cat.group(1)).strip().title() if cat else None,
+                                   contract=self._CONTRACTS.get(unescape(ctr.group(1)).strip(), unescape(ctr.group(1)).strip()) if ctr else None,
+                                   raw={}))
+                if not cards or ("/page/%d/" % (page + 1)) not in r.body:
+                    break
+                page += 1
+        return FetchResult(self.key, slug, True, out, endpoint=self._BASE, note="0 postings" if not out else None)
+
+
+# --------------------------------------------------------------------------- #
 #  Amazon Jobs — public search.json (country=FRA). slug ignored.
 # --------------------------------------------------------------------------- #
 class AmazonJobs(Adapter):
@@ -1059,6 +1302,7 @@ ADAPTERS = [
     SmartRecruiters(), Personio(), Taleez(), Teamtailor(),
     Flatchr(), Talentsoft(), Workday(), Macs(), Jobs2Web(),
     WelcomeToTheJungle(), ICIMS(), Dassault3DS(), AmazonJobs(), TalentsoftRSS(),
+    DeloitteFR(), SystraWP(), InraeAlgolia(), IcimsPortal(), VinciEnergies(),
 ]
 BY_KEY = {a.key: a for a in ADAPTERS}
 BY_KEY["custom"] = Custom()

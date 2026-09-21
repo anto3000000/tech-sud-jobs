@@ -3063,17 +3063,37 @@
 "category": "eng",
 "city": "Sophia Antipolis",
 "company": "Deloitte",
-"expired_at": null,
+"expired_at": "2026-09-21",
 "facet_slug": "eng-sophia-antipolis",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-21",
 "title": "ou alternance consultant(e) électronique, micro-électronique, électrotechnique / Financement de l'innovation F/H"
 },
-"deloitte-ou-alternance-consultant-informatique-et-financement-de-l-inn-978a65": {
+"deloitte-ou-alternance-consultant-e-electronique-micro-electronique-el-940457": {
+"category": "eng",
+"city": "Valbonne",
+"company": "Deloitte",
+"expired_at": null,
+"facet_slug": "eng-valbonne",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "ou alternance consultant(e) électronique, micro-électronique, électrotechnique / Financement de l'innovation F/H"
+},
+"deloitte-ou-alternance-consultant-informatique-et-financement-de-l-inn-215b2f": {
 "category": "tech-adjacent",
 "city": "Marseille",
 "company": "Deloitte",
 "expired_at": null,
+"facet_slug": "tech-adjacent-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "ou alternance consultant informatique et financement de l'innovation F/H"
+},
+"deloitte-ou-alternance-consultant-informatique-et-financement-de-l-inn-978a65": {
+"category": "tech-adjacent",
+"city": "Marseille",
+"company": "Deloitte",
+"expired_at": "2026-09-21",
 "facet_slug": "tech-adjacent-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-21",
@@ -3083,9 +3103,19 @@
 "category": "tech-adjacent",
 "city": "Marseille",
 "company": "Deloitte",
-"expired_at": null,
+"expired_at": "2026-09-21",
 "facet_slug": "tech-adjacent-marseille",
 "first_seen": "2026-09-05",
+"last_seen": "2026-09-21",
+"title": "Technicien Support IT - F/H"
+},
+"deloitte-technicien-support-it-f-h-f7d8c6": {
+"category": "tech-adjacent",
+"city": "Marseille",
+"company": "Deloitte",
+"expired_at": null,
+"facet_slug": "tech-adjacent-marseille",
+"first_seen": "2026-09-21",
 "last_seen": "2026-09-21",
 "title": "Technicien Support IT - F/H"
 },
@@ -3608,6 +3638,36 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-21",
 "title": "Testeur QA fonct/auto @eXalt Aix-Marseille"
+},
+"expleo-ingenieur-ia-automatisation-de-process-h-f-d415a7": {
+"category": "data",
+"city": "Cannes",
+"company": "Expleo",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Ingénieur IA & Automatisation de process H/F​"
+},
+"expleo-ingenieur-systeme-design-avionique-et-connectivites-h-f-07e59b": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Expleo",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Ingénieur Système Design avionique et connectivités H/F"
+},
+"expleo-ingenieur-systemes-avioniques-h-f-611a29": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Expleo",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Ingénieur systèmes avioniques H/F"
 },
 "fastned-expansion-manager-france-developpeur-se-immobilier-sud-est-3b32c8": {
 "category": "eng",
@@ -4288,6 +4348,36 @@
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-21",
 "title": "Développeur Java Back-End"
+},
+"inrae-en-developpement-full-stack-et-gestion-de-donnees-pour-la-recher-2b4779": {
+"category": "data",
+"city": "AVIGNON -MONTFAVET",
+"company": "INRAE",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "en développement Full-Stack et gestion de données pour la recherche en pathologie végétale"
+},
+"inrae-ingenieur-e-en-calcul-et-analyses-des-donnees-dimpact-du-changem-70be58": {
+"category": "data",
+"city": "AVIGNON",
+"company": "INRAE",
+"expired_at": null,
+"facet_slug": "data-avignon",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Ingénieur-e en calcul et analyses des données d’impact du changement climatique"
+},
+"inrae-ingenieure-d-etude-en-vision-par-ordinateur-7ada38": {
+"category": "eng",
+"city": "Sophia Antipolis",
+"company": "INRAE",
+"expired_at": null,
+"facet_slug": "eng-sophia-antipolis",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Ingénieur·e d'étude en vision par ordinateur"
 },
 "instant-system-developpeur-mobile-android-kotlin-h-f-0c95bf": {
 "category": "eng",
@@ -8799,6 +8889,16 @@
 "last_seen": "2026-09-21",
 "title": "Ingénieur études de prix (BE - Travaux Publics) F/H"
 },
+"vinci-energies-consultant-cybersecurite-et-grc-f-h-f4b544": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "VINCI Energies",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Consultant Cybersécurité et GRC F/H"
+},
 "vinci-energies-en-france-axiansalternance-chef-de-projet-mobile-f-h-952d2e": {
 "category": "tech-adjacent",
 "city": "Vitrolles",
@@ -8848,6 +8948,36 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-21",
 "title": "Technicien de maintenance électrotechnique - Data Center - Aubagne F/H"
+},
+"vinci-energies-responsable-daffaires-cybersecurite-f-h-913c93": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "VINCI Energies",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Responsable d’affaires Cybersécurité F/H"
+},
+"vinci-energies-tech-lead-f-h-fbf3fe": {
+"category": "eng",
+"city": "Marseille",
+"company": "VINCI Energies",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Tech Lead F/H"
+},
+"vinci-energies-technicien-de-maintenance-electrotechnique-data-center-827158": {
+"category": "data",
+"city": "Rue de la maïre aubagne",
+"company": "VINCI Energies",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Technicien de maintenance électrotechnique – Data Center – Aubagne F/H"
 },
 "virtualexpo-administrateur-systemes-et-reseaux-h-f-023082": {
 "category": "eng",
@@ -8913,17 +9043,37 @@
 "category": "eng",
 "city": "Marseille",
 "company": "Wavestone",
-"expired_at": null,
+"expired_at": "2026-09-21",
 "facet_slug": "eng-marseille",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "de fin d'études - Consultant.e en management - Cybersécurité - Marseille"
 },
-"wavestone-de-fin-d-etudes-consultante-cybersecurite-marseille-a986ab": {
+"wavestone-de-fin-d-etudes-consultant-e-en-management-cybersecurite-mar-890298": {
 "category": "eng",
 "city": "Marseille",
 "company": "Wavestone",
 "expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "de fin d'études - Consultant.e en management - Cybersécurité - Marseille"
+},
+"wavestone-de-fin-d-etudes-consultante-cybersecurite-marseille-7cfc9f": {
+"category": "eng",
+"city": "Marseille",
+"company": "Wavestone",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "de fin d'études - Consultant·e Cybersécurité - Marseille"
+},
+"wavestone-de-fin-d-etudes-consultante-cybersecurite-marseille-a986ab": {
+"category": "eng",
+"city": "Marseille",
+"company": "Wavestone",
+"expired_at": "2026-09-21",
 "facet_slug": "eng-marseille",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
