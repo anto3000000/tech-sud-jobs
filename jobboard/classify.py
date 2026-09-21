@@ -39,7 +39,8 @@ _RULES = [
         r"intelligence artificielle", r"\bnlp\b", r"computer vision", r"\bllm\b", r"\bgenai\b",
         r"\bbi\b", r"business intelligence", r"analytics", r"\betl\b", r"dbt\b",
         r"\bbig ?data\b", r"data ?viz", r"statisticien", r"\bdatawarehouse\b",
-        r"business analyst", r"business analyste",
+        r"business analyst", r"business analyste", r"\bit business analys[ie]s",
+        r"operations research", r"recherche operationnelle",
     ]),
     ("product", [
         r"product manager", r"product owner", r"\bpo\b", r"\bpm\b(?![a-z])",
@@ -62,7 +63,8 @@ _RULES = [
         r"\bsre\b", r"\bdevops\b", r"platform engineer", r"cloud engineer",
         r"site reliability", r"infrastructure engineer", r"\bdevsecops\b",
         r"cyber ?securit", r"cybersecurit", r"security engineer", r"pentest",
-        r"\brssi\b", r"analyste (soc|cyber|securite)", r"ingenieur securite",
+        r"\brssi\b", r"analyste (soc|cyber|securite)", r"\bsoc analyst\b",
+        r"\bcyber\b", r"ingenieur securite",
         r"embedded", r"embarque", r"firmware", r"\bfpga\b", r"\bvlsi\b", r"\basic\b",
         r"electronique", r"\biot\b", r"robotique", r"\brobotics\b",
         r"tech ?lead", r"lead tech", r"lead (dev|developer|engineer|technique)",
@@ -92,6 +94,7 @@ _RULES = [
         r"cyber|digital|electroni)",
         r"sales engineer", r"solution(s)? engineer", r"presales", r"avant[- ]vente",
         r"customer success (engineer|manager)", r"implementation (specialist|consultant)",
+        r"consultant(e)?( en)? transformation (digitale|numerique)",
         r"consultant (si|erp|sap|salesforce|crm|bi|data|cloud|cyber|it|technique|"
         r"fonctionnel|digital|dynamics|informatique)",
         r"\bmoa\b", r"\bmoe\b", r"assistance maitrise",
@@ -141,6 +144,16 @@ _STACK_HINT = re.compile(
     r"snowflake|databricks|tensorflow|pytorch|scikit|pandas|power bi|tableau|"
     r"elasticsearch|grafana|prometheus|api rest|graphql|flutter|swift|"
     r"unreal|unity|solidity)\b", re.I)
+
+
+_AI_TITLE = re.compile(
+    r"\b(ai|ia)\b.*\b(analyst|analyste|engineer|ingenieur|architect|architecte|"
+    r"scientist|developer|entwickler|algorithm\w*|knowledge|connaissances|"
+    r"predictive|solutions?)\b|"
+    r"\b(analyst|analyste|engineer|ingenieur|architect|architecte|scientist|"
+    r"developer|chef(fe)? de projets?|consultant\w*)\b.*\b(ai|ia)\b")
+_AI_NEG = re.compile(r"pedagogi|sourcing|outbound|growth|formateur|formation|"
+                     r"gestion de projet|qualite|hse|sse\b|finance|juridique")
 
 
 def classify(title, profession=None, sector=None, stack=None):
@@ -215,6 +228,12 @@ def classify(title, profession=None, sector=None, stack=None):
 
     # vague title ("Consultant", "Ingénieur", "Expert F/H") but the WTTJ tools
     # list is unmistakably a dev/data stack -> trust it
+    # "IA" / "AI" next to a role word ("Analyste IA", "AI for Knowledge
+    # Management", "Chef de projets IA"). Title only: the profession string
+    # ("Data & AI") is a department label, and this runs last so it never
+    # steals a title that already has a better bucket.
+    if _AI_TITLE.search(t) and not _AI_NEG.search(t):
+        return "data"
     if stack_hits >= 2 and not _NEG.search(t):
         data_tools = re.search(r"\b(spark|airflow|dbt|snowflake|databricks|tensorflow|"
                                r"pytorch|scikit|pandas|power bi|tableau|kafka)\b", stack_txt)
@@ -259,6 +278,17 @@ if __name__ == "__main__":
         "Ingénieur développement logiciel",
         "Responsable développement produit",
         "Chargé de développement d'applications web",
+        # student roles previously dropped (title in English / cyber / AI)
+        "Internship SOC ANALYST - CYBER DEFENSE CENTER",
+        "Internship - Cyber Operational Dashboard",
+        "Internship - Group IT Business Analysis",
+        "Stage - IA pour la Gestion des Connaissances",
+        "Internship Operations Research Engineer",
+        "Consultante / Consultant en transformation digitale - Stage",
+        # …and things the new rules must NOT catch (expected None)
+        "Senior Manager Finance Business Analysis",
+        "Accompagnateur Pédagogique - IA",
+        "STAGE 2027 - Gestion de Projet IA & Innovation Qualité",
     ]
     for t in (sys.argv[1:] or tests):
         print("  %-45s -> %s" % (t, classify(t)))

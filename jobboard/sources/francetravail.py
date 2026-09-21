@@ -136,7 +136,7 @@ def get_token(client_id, client_secret, timeout=30):
 
 
 def search_page(token, departement, start, rome=None, grand_domaine=None,
-                publiee_depuis=None, timeout=30):
+                publiee_depuis=None, nature_contrat=None, timeout=30):
     """One /offres/search call. Returns (list_of_offres, total)."""
     params = {"departement": departement, "range": "%d-%d" % (start, start + PAGE - 1)}
     if rome:
@@ -145,6 +145,8 @@ def search_page(token, departement, start, rome=None, grand_domaine=None,
         params["grandDomaine"] = grand_domaine
     if publiee_depuis:
         params["publieeDepuis"] = str(publiee_depuis)
+    if nature_contrat:
+        params["natureContrat"] = nature_contrat
     url = SEARCH_URL + "?" + urllib.parse.urlencode(params)
     req = urllib.request.Request(url, headers={
         "Authorization": "Bearer " + token, "Accept": "application/json", "User-Agent": UA})
@@ -178,14 +180,15 @@ def _content_range_total(hdr):
 
 
 def sweep(token, depts, rome=None, grand_domaine=None, publiee_depuis=None,
-          sleep=0.25, verbose=True):
+          nature_contrat=None, sleep=0.25, verbose=True):
     seen, out = set(), []
     for dep in depts:
         start, total = 0, None
         while True:
             batch, tot = search_page(token, dep, start, rome=rome,
                                      grand_domaine=grand_domaine,
-                                     publiee_depuis=publiee_depuis)
+                                     publiee_depuis=publiee_depuis,
+                                     nature_contrat=nature_contrat)
             if total is None:
                 total = tot
             for o in batch:
@@ -284,6 +287,26 @@ def link_kind(url):
 REMOTE_RX = re.compile(r"t[ée]l[ée]travail|remote|100\s*%\s*distanciel|full\s*remote", re.I)
 
 
+# natureContrat: E2 = contrat d'apprentissage, FS = contrat de professionnalisation
+ALTERNANCE_NATURES = ("E2", "FS")
+_ALT_RX = re.compile(r"apprenti|professionnalisation", re.I)
+
+
+# The alternance sweep is not limited to grandDomaine=M18, so the title
+# classifier alone lets through "électronique" / "développement" false positives
+# (cigarette shop, social-urban development...). Require a tech ROME code:
+# M18xx = informatique, M1405 = data scientist, I1401/I1404 = maintenance & support IT.
+ALT_TECH_ROME = re.compile(r"^(M18\d\d|M1405|I1401|I1404)$")
+
+
+def is_alternance(offre):
+    if not _ALT_RX.search(offre.get("natureContratLibelle") or offre.get("natureContrat") or ""):
+        return False
+    # FT sometimes tags a plain permanent job as an apprenticeship ("... CDI Toulon")
+    title = offre.get("intitule") or ""
+    return not (re.search(r"\bCDI\b", title) and not re.search(r"alternan|apprenti", title, re.I))
+
+
 def normalize(offre, category):
     lt = offre.get("lieuTravail") or {}
     ent = offre.get("entreprise") or {}
@@ -303,7 +326,9 @@ def normalize(offre, category):
         "cities": [city] if city else [],
         "department": dep,
         "region": "Provence-Alpes-Côte d'Azur",
-        "contract": offre.get("typeContratLibelle") or offre.get("typeContrat"),
+        # FT files an apprenticeship under typeContrat=CDD: the nature is the truth
+        "contract": ("Alternance" if is_alternance(offre)
+                     else offre.get("typeContratLibelle") or offre.get("typeContrat")),
         "remote": "télétravail" if REMOTE_RX.search(title + " " + desc[:400]) else None,
         "category": category,
         "profession": offre.get("romeLibelle"),
@@ -330,7 +355,11 @@ def run(offres, tech_only=True, keep_adjacent=True, drop_agencies=True, drop_ano
     other_hosts = {}
     for o in offres:
         ent = (o.get("entreprise") or {}).get("nom") or ""
-        if drop_anon and (not ent.strip() or ANON_RX.match(ent)):
+        # Work-study offers are routinely posted with the employer masked and an
+        # aggregator apply link (Meteojob / Directemploi), and there is no direct
+        # ATS to prefer: keep them, unlike regular jobs.
+        alt = is_alternance(o)
+        if drop_anon and not alt and (not ent.strip() or ANON_RX.match(ent)):
             st["anon"] += 1
             continue
         if drop_agencies and (AGENCY_RX.search(ent) or ESN_RX.search(ent)):
@@ -341,12 +370,15 @@ def run(offres, tech_only=True, keep_adjacent=True, drop_agencies=True, drop_ano
             st["outside"] += 1
             continue
         cat = classify(o.get("intitule"), o.get("romeLibelle"))
+        if tech_only and alt and not ALT_TECH_ROME.match(o.get("romeCode") or ""):
+            st["nontech"] += 1
+            continue
         if tech_only and (cat is None or (cat == "tech-adjacent" and not keep_adjacent)):
             st["nontech"] += 1
             continue
         row = normalize(o, cat)
         kind = link_kind(row["url"])
-        if links != "any":
+        if links != "any" and not alt:
             if kind == "aggregator":
                 st["aggregator"] += 1
                 continue
@@ -365,6 +397,9 @@ def run(offres, tech_only=True, keep_adjacent=True, drop_agencies=True, drop_ano
         seen, capped = {}, []
         for j in kept:
             k = j.get("company_slug") or j.get("company")
+            if not j.get("company_slug"):
+                capped.append(j)   # masked employers are unrelated: no shared cap
+                continue
             seen[k] = seen.get(k, 0) + 1
             if seen[k] > max_per_company:
                 st["capped"] += 1
@@ -397,6 +432,8 @@ def main():
                          "any: keep every link")
     ap.add_argument("--max-per-company", type=int, default=5,
                     help="cap rows per employer (regie/ESN spam guard; 0 = no cap)")
+    ap.add_argument("--no-alternance", dest="alternance", action="store_false", default=True,
+                    help="skip the extra sweep for apprenticeship / professionnalisation offers")
     ap.add_argument("--raw-out", help="also dump the untouched API offers here")
     args = ap.parse_args()
 
@@ -412,6 +449,19 @@ def main():
     raw = sweep(token, PACA_DEPTS, rome=args.rome,
                 grand_domaine=None if args.rome else GRAND_DOMAINE,
                 publiee_depuis=args.publiee_depuis)
+
+    if args.alternance and not args.rome:
+        # the plain sweep is dominated by CDI; ask for work-study contracts explicitly
+        have = {o.get("id") for o in raw}
+        for nat in ALTERNANCE_NATURES:
+            # no grandDomaine: a "Data scientist" (M1405) or "Support technique
+            # informatique" (I1404) apprenticeship sits outside the M18 family
+            extra = sweep(token, PACA_DEPTS, publiee_depuis=args.publiee_depuis,
+                          nature_contrat=nat, verbose=False)
+            new = [o for o in extra if o.get("id") not in have]
+            have.update(o.get("id") for o in new)
+            raw.extend(new)
+            print("  natureContrat=%s : +%d offers" % (nat, len(new)), file=sys.stderr)
 
     jobs, st, kept_cat, other_hosts = run(
         raw, tech_only=not args.all, keep_adjacent=args.keep_adjacent,
