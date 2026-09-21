@@ -230,7 +230,7 @@
     header h1{font-size:11px;line-height:1.5;margin:12px 0 4px;max-width:none}
     .search + .row{margin-top:18px}
     .count{white-space:nowrap}
-    .count .pg{display:none}
+    .count .upd{display:none}
     .search .multi>summary{font-size:13px;padding:0 26px 0 12px}
     /* les filtres gardent leur taille et défilent horizontalement.
        pas de -webkit-overflow-scrolling:touch : obsolète depuis iOS 13 (le
@@ -328,6 +328,7 @@
     <div class="row" id="cats">
       <button type="button" class="clearall" data-clear hidden>✕ Effacer</button>
       <span class="chip" data-new="1" aria-pressed="false">✨ Nouvelles</span>
+      <span class="chip" data-student="1" aria-pressed="false">🎓 Stages &amp; alternance</span>
       <span class="chip" data-remote="1" aria-pressed="false">Télétravail</span>
       <details class="multi" id="mCat">
         <summary>Métier</summary>
@@ -435,9 +436,11 @@
 
 <script>
 const state = {q:"", sort:"date", cats:new Set(), cities:new Set(), stacks:new Set(),
-  contracts:new Set(), exps:new Set(), remote:false, onlyNew:false, page:1};
+  contracts:new Set(), exps:new Set(), remote:false, onlyNew:false, student:false, page:1};
+const STUDENT_CONTRACTS = new Set(["Stage","Alternance","VIE"]);
 const PER_PAGE = 20;
 let JOBS = [];
+let UPDATED = "";   // feed.generated_at, shown next to the offer count
 const $ = s => document.querySelector(s);
 
 // --- état de recherche <-> URL : rend chaque recherche partageable, bookmarkable,
@@ -454,6 +457,7 @@ function readStateFromURL(){
     p.getAll("exp").forEach(v=>v && state.exps.add(v));
     state.remote = p.get("remote") === "1";
     state.onlyNew = p.get("new") === "1";
+    state.student = p.get("student") === "1";
     if(p.get("sort") === "company") state.sort = "company";
     const pg = parseInt(p.get("page") || "1", 10);
     if(Number.isFinite(pg) && pg > 1) state.page = pg;
@@ -470,6 +474,7 @@ function writeStateToURL(){
     state.exps.forEach(v=>p.append("exp", v));
     if(state.remote) p.set("remote", "1");
     if(state.onlyNew) p.set("new", "1");
+    if(state.student) p.set("student", "1");
     if(state.sort && state.sort !== "date") p.set("sort", state.sort);
     if(state.page > 1) p.set("page", String(state.page));
     const qs = p.toString();
@@ -488,6 +493,7 @@ function describeSearch(){
   state.exps.forEach(x=>parts.push(x));
   if(state.remote) parts.push("Télétravail");
   if(state.onlyNew) parts.push("Nouvelles offres");
+  if(state.student) parts.push("Stages & alternance");
   return parts.length ? parts.join(" · ") : "Toutes les offres";
 }
 // scroll the results into view, but stop just under the sticky search bar
@@ -519,6 +525,15 @@ function trackSearch(){
   }, 1200);
 }
 
+// "· màj il y a 3 h" next to the count; the full timestamp is the tooltip.
+// Hidden under 520px (no room), see .count .upd in the mobile media query.
+function updLabel(){
+  const rel = relDate(UPDATED);
+  if(!rel) return "";
+  const full = new Date(UPDATED).toLocaleString("fr-FR", {dateStyle:"long", timeStyle:"short"});
+  return `<span class="upd" title="Données mises à jour le ${full}"> · màj ${rel}</span>`;
+}
+
 function relDate(iso){
   if(!iso) return "";
   const d = new Date(iso); if(isNaN(d)) return "";
@@ -545,6 +560,7 @@ function apply(opts){
   const q = norm(state.q).split(/\s+/).filter(Boolean);
   let rows = JOBS.filter(j=>{
     if(state.onlyNew && !j.is_new) return false;
+    if(state.student && !STUDENT_CONTRACTS.has(j.contract)) return false;
     if(state.cats.size && !state.cats.has(j.category)) return false;
     if(state.cities.size){
       const jc = [j.city, ...(j.cities||[])];
@@ -574,7 +590,7 @@ function apply(opts){
   const pageRows = rows.slice(start, start + PER_PAGE);
 
   $("#count").innerHTML = rows.length
-    ? `${rows.length} offre${rows.length>1?"s":""}` + (pages>1 ? `<span class="pg"> · page ${state.page}/${pages}</span>` : "")
+    ? `${rows.length} offre${rows.length>1?"s":""}` + updLabel()
     : "0 offre";
   $("#empty").hidden = rows.length>0;
   for(const b of document.querySelectorAll("#cats [data-clear]")) b.hidden = !hasFilters();
@@ -644,14 +660,14 @@ function renderPager(pages){
 }
 
 function hasFilters(){
-  return !!(state.q.trim() || state.remote || state.onlyNew || state.cats.size || state.cities.size
+  return !!(state.q.trim() || state.remote || state.onlyNew || state.student || state.cats.size || state.cities.size
     || state.stacks.size || state.contracts.size || state.exps.size);
 }
 
 // remet la recherche à zéro : décoche via l'événement `change` pour que chaque
 // makeMulti retire la valeur de son Set et remette son libellé par défaut.
 function resetFilters(){
-  state.q = ""; state.remote = false; state.onlyNew = false;
+  state.q = ""; state.remote = false; state.onlyNew = false; state.student = false;
   $("#q").value = "";
   for(const cb of document.querySelectorAll(".multi .opts input:checked")){
     cb.checked = false;
@@ -668,7 +684,8 @@ function resetFilters(){
 
 function syncCats(){
   for(const chip of $("#cats").querySelectorAll(".chip")){
-    const on = chip.dataset.remote ? state.remote : state.onlyNew;
+    const on = chip.dataset.remote ? state.remote
+             : chip.dataset.student ? state.student : state.onlyNew;
     chip.setAttribute("aria-pressed", String(on));
   }
 }
@@ -774,10 +791,11 @@ function initFilters(){
     const chip = e.target.closest(".chip"); if(!chip) return;
     const on = chip.getAttribute("aria-pressed")==="true";
     if(chip.dataset.remote) state.remote = !on;
+    else if(chip.dataset.student) state.student = !on;
     else if(chip.dataset.new) state.onlyNew = !on;
     syncCats();
     apply();
-    if(!on) track("filter", {type: chip.dataset.remote ? "Télétravail" : "Nouveau", value: "on"});
+    if(!on) track("filter", {type: chip.dataset.remote ? "Télétravail" : chip.dataset.student ? "Étudiants" : "Nouveau", value: "on"});
   });
   syncCats();
 
@@ -842,6 +860,7 @@ initAlerts();
 
 fetch("jobs.json",{cache:"no-store"}).then(r=>r.json()).then(feed=>{
   JOBS = feed.jobs||[];
+  UPDATED = feed.generated_at || "";
   $("#load").hidden = true;
   const d = new Date(feed.generated_at);
   $("#foot").innerHTML = `${feed.count} offres · ${feed.companies} entreprises · `+
