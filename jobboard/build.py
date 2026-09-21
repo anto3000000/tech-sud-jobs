@@ -34,6 +34,9 @@ SITE = os.path.join(HERE, "site")
 PACA_RX = re.compile(
     r"\b(aix|marseille|nice|sophia|antipolis|antibes|cannes|toulon|avignon|"
     r"rousset|carros|marignane|valbonne|gemenos|la ciotat|manosque|gap|"
+    r"saint.paul.lez.durance|cadarache|six.fours|vitrolles|pertuis|aubagne|gardanne|"
+    r"fos.sur.mer|istres|martigues|salon.de.provence|meyreuil|venelles|bouc.bel.air|"
+    r"biot|mougins|grasse|frejus|fr[eé]jus|hy[eè]res|la seyne|draguignan|le tholonet|"
     r"provence|paca|alpes-maritimes|bouches-du-rh|\bvar\b|vaucluse|hautes-alpes|"
     r"alpes-de-haute|cote d.azur|\b06\d{3}\b|\b13\d{3}\b|\b83\d{3}\b|\b84\d{3}\b|"
     r"\b(06|13|83|84|04|05)\b)",
@@ -66,6 +69,8 @@ FR_OK_RX = re.compile(
     r"(france|français|francais|\bfr\b|paris|lyon|bordeaux|toulouse|nantes|lille|"
     r"rennes|strasbourg|montpellier|grenoble|europe|emea|à distance|a distance|"
     r"t[eé]l[eé]travail)", re.I)
+# Companies known to be full-remote: their France-remote postings count as PACA-reachable.
+FULL_REMOTE_COMPANIES = {"alan", "pennylane", "aircall", "lemlist"}
 BARE_REMOTE_RX = re.compile(r"^\W*(remote|anywhere|worldwide|global)?\W*$", re.I)
 
 
@@ -245,15 +250,19 @@ def load_ats():
         # NB: department is a free-text category (Aircall ships "13009 - Onboarding")
         # -> never feed it to the PACA postal-code regex.
         is_remote = bool(REMOTE_RX.search(loc)) or remote.lower() in ("remote", "fully", "true", "yes")
-        if not (_is_paca(loc) or is_remote):
-            continue
-        if not _is_paca(loc) and not _remote_ok_from_france(loc):
-            continue
+        # PACA only: a "Remote" / "France" posting is not a PACA job (Rennes,
+        # Toulouse... are flagged remote by some ATS) -> the location must name PACA
+        if not _is_paca(loc):
+            if not (_slug(j.get("company")) in FULL_REMOTE_COMPANIES
+                    and is_remote and _remote_ok_from_france(loc)):
+                continue
         cat = classify(j.get("title"), j.get("department"))
         if cat is None:
             continue
         city = None
         m = re.split(r"[,/(]", loc)
+        # multi-site postings ("Blagnac, Aix-en-Provence, Toulouse"): show the PACA site
+        m = [x for x in m if _is_paca(x)] or m
         if m and m[0].strip():
             city = m[0].strip()
         out.append({

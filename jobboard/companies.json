@@ -1001,5 +1001,245 @@
       "careers_url": "https://itmates.fr",
       "note": "verified 2026-09-18: tiny boutique site, no job board — 'Rejoindre l'équipe' just links to a contact form. Nothing to fetch programmatically; the LinkedIn posting is likely the only way it surfaces."
     }
+  },
+  {
+    "name": "Dassault Systèmes",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Software / 3D",
+    "domain": "3ds.com",
+    "ats": "dassault",
+    "slug": null,
+    "known": {
+      "ats": "dassault",
+      "slug": null,
+      "careers_url": "https://www.3ds.com/careers/jobs",
+      "note": "verified 2026-09-21: bespoke careers site fed by public Exalead API 3ds.com/apisearch/card_search_api (card_content_type=career), France filter client-side; adapter ats.Dassault3DS"
+    }
+  },
+  {
+    "name": "Assystem",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Ingénierie / Nucléaire",
+    "domain": "assystem.com",
+    "ats": "smartrecruiters",
+    "slug": "Assystem",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Assystem",
+      "careers_url": "https://careers.smartrecruiters.com/Assystem",
+      "note": "verified 2026-09-21: SmartRecruiters board Assystem (~390 FR postings, country=fr)"
+    }
+  },
+  {
+    "name": "TechnicAtome",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Ingénierie / Nucléaire",
+    "domain": "technicatome.com",
+    "ats": "smartrecruiters",
+    "slug": "TechnicAtome",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "TechnicAtome",
+      "careers_url": "https://careers.smartrecruiters.com/TechnicAtome",
+      "note": "verified 2026-09-21: SmartRecruiters board TechnicAtome (70 postings)"
+    }
+  },
+  {
+    "name": "CEA",
+    "city": "Saint-Paul-lez-Durance",
+    "dept": "13",
+    "category": "Recherche / Énergie",
+    "domain": "cea.fr",
+    "ats": "talentsoft_rss",
+    "slug": "www.emploi.cea.fr",
+    "known": {
+      "ats": "talentsoft_rss",
+      "slug": "www.emploi.cea.fr",
+      "careers_url": "https://www.emploi.cea.fr/",
+      "note": "verified 2026-09-21: Cegid Talentsoft site with keyless RSS handler /handlers/offerRss.ashx (one feed per contract type, 20 items each); adapter ats.TalentsoftRSS"
+    }
+  },
+  {
+    "name": "Amazon",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "E-commerce / Cloud",
+    "domain": "amazon.jobs",
+    "ats": "amazonjobs",
+    "slug": null,
+    "known": {
+      "ats": "amazonjobs",
+      "slug": null,
+      "careers_url": "https://www.amazon.jobs/",
+      "note": "verified 2026-09-21: public https://www.amazon.jobs/en/search.json?country=FRA; adapter ats.AmazonJobs"
+    }
+  },
+  {
+    "name": "Pernod Ricard",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Grande conso",
+    "domain": "pernod-ricard.com",
+    "ats": "workday",
+    "slug": "pernodricard.wd3.myworkdayjobs.com/pernod-ricard",
+    "known": {
+      "ats": "workday",
+      "slug": "pernodricard.wd3.myworkdayjobs.com/pernod-ricard",
+      "careers_url": "https://pernodricard.wd3.myworkdayjobs.com/pernod-ricard",
+      "note": "verified 2026-09-21: Workday CXS API, ~290 postings worldwide"
+    }
+  },
+  {
+    "name": "Pennylane",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Fintech / SaaS",
+    "domain": "pennylane.com",
+    "ats": "ashby",
+    "slug": "pennylane",
+    "known": {
+      "ats": "ashby",
+      "slug": "pennylane",
+      "careers_url": "https://jobs.ashbyhq.com/pennylane",
+      "note": "verified 2026-09-21: Ashby public board (found via letmestart.fr Marseille listing)"
+    }
+  },
+  {
+    "name": "lemlist",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "SaaS / Sales tech",
+    "domain": "lemlist.com",
+    "ats": "ashby",
+    "slug": "lemlist",
+    "known": {
+      "ats": "ashby",
+      "slug": "lemlist",
+      "careers_url": "https://jobs.ashbyhq.com/lemlist",
+      "note": "verified 2026-09-21: Ashby public board (found via letmestart.fr Marseille listing)"
+    }
+  },
+  {
+    "name": "Beavr",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Fintech / Employee benefits",
+    "domain": "beavr.com",
+    "ats": "ashby",
+    "slug": "beavr",
+    "known": {
+      "ats": "ashby",
+      "slug": "beavr",
+      "careers_url": "https://jobs.ashbyhq.com/beavr",
+      "note": "verified 2026-09-21: Ashby public board (found via letmestart.fr Marseille listing)"
+    }
+  },
+  {
+    "name": "Aroma-Zone",
+    "city": "Cabrières-d'Avignon",
+    "dept": "84",
+    "category": "E-commerce / Cosmétique",
+    "domain": "aroma-zone.com",
+    "ats": "teamtailor",
+    "slug": null,
+    "known": {
+      "ats": "teamtailor",
+      "slug": null,
+      "careers_url": "https://careers.aroma-zone.com/",
+      "note": "verified 2026-09-21: Teamtailor career site"
+    }
+  },
+  {
+    "name": "Deloitte",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Conseil",
+    "domain": "deloitte.com",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.deloitte.com/fr/fr/careers.html",
+      "note": "verified 2026-09-21: bespoke careers portal, no keyless feed found"
+    }
+  },
+  {
+    "name": "Wavestone",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Conseil",
+    "domain": "wavestone.com",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.wavestone.com/fr/carrieres/",
+      "note": "verified 2026-09-21: bespoke careers site, no keyless feed found"
+    }
+  },
+  {
+    "name": "Expleo",
+    "city": "Vitrolles",
+    "dept": "13",
+    "category": "Ingénierie / Conseil",
+    "domain": "expleo.com",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://expleo.com/global/en/careers/",
+      "note": "verified 2026-09-21: bespoke careers site, no keyless feed found"
+    }
+  },
+  {
+    "name": "SYSTRA",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Ingénierie / Mobilité",
+    "domain": "systra.com",
+    "ats": "icims",
+    "slug": null,
+    "known": {
+      "ats": "icims",
+      "slug": null,
+      "careers_url": "https://www.systra.com/rejoignez-nous/",
+      "note": "verified 2026-09-21: iCIMS (browser only)"
+    }
+  },
+  {
+    "name": "VINCI Energies",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Énergie / Infra",
+    "domain": "vinci-energies.com",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.vinci-energies.com/job-offer/",
+      "note": "verified 2026-09-21: bespoke job-offer portal, no keyless feed found"
+    }
+  },
+  {
+    "name": "INRAE",
+    "city": "Le Tholonet",
+    "dept": "13",
+    "category": "Recherche",
+    "domain": "inrae.fr",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://jobs.inrae.fr/",
+      "note": "verified 2026-09-21: bespoke careers site jobs.inrae.fr"
+    }
   }
 ]

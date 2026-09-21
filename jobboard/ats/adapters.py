@@ -396,11 +396,20 @@ class SmartRecruiters(Adapter):
         secs = ((r.json().get("jobAd") or {}).get("sections") or {})
         return _body(*[(secs.get(k) or {}).get("text") for k in self._SECTIONS])
 
+    # multinational boards (thousands of postings, one detail GET each): ask the
+    # API for France only instead of walking the whole world
+    FR_ONLY = frozenset(("soprasteria1", "assystem"))
+    # on those boards only PACA postings get the extra per-posting body GET
+    _PACA_RX = re.compile(r"aix|marseille|nice\b|sophia|antipolis|toulon|six-fours|biot|valbonne|"
+                          r"provence|cannes|antibes|avignon|vitrolles|aubagne|gardanne|cadarache|"
+                          r"durance|rousset|sud", re.I)
+
     def fetch(self, slug, careers_origin=None):
         out, offset = [], 0
         endpoint = "https://api.smartrecruiters.com/v1/companies/%s/postings" % slug
+        country = "&country=fr" if slug.lower() in self.FR_ONLY else ""
         while True:
-            url = "%s?limit=100&offset=%d" % (endpoint, offset)
+            url = "%s?limit=100&offset=%d%s" % (endpoint, offset, country)
             r = get_json(url, retries=1)
             if not r.ok:
                 return FetchResult(self.key, slug, False, endpoint=endpoint,
@@ -417,7 +426,9 @@ class SmartRecruiters(Adapter):
                                contract=(j.get("typeOfEmployment") or {}).get("label"),
                                remote=loc.get("remote"),
                                published_at=j.get("releasedDate"),
-                               description=self._ad_body(slug, jid), raw=j))
+                               description=(self._ad_body(slug, jid)
+                                            if (not country or self._PACA_RX.search(loc_s)) else None),
+                               raw=j))
             total = data.get("totalFound", len(out))
             offset += 100
             if offset >= total or not data.get("content"):
@@ -872,6 +883,142 @@ class Custom(Adapter):
 
 
 # --------------------------------------------------------------------------- #
+#  Dassault Systèmes — bespoke careers site (3ds.com) backed by a public
+#  Exalead search API (`/apisearch/card_search_api`). No auth; 1 card = 1 job.
+#  slug is ignored (single tenant); France-only filter on the card categories.
+# --------------------------------------------------------------------------- #
+class Dassault3DS(Adapter):
+    key = "dassault"
+    has_api = True
+    signatures = ()
+    _EP = "https://www.3ds.com/apisearch/card_search_api"
+    _Q = "#all card_content_lang:en (card_content_type=\"career\")"
+
+    def fetch(self, slug, careers_origin=None):
+        out, start = [], 0
+        while True:
+            url = "%s?q=%s&s=desc(card_content_start_datetime)&b=%d&hf=100&output_format=json" % (
+                self._EP, quote(self._Q), start)
+            r = get_json(url, retries=1)
+            if not r.ok:
+                return FetchResult(self.key, slug, bool(out), out, endpoint=self._EP,
+                                   note="HTTP %s" % r.status)
+            data = r.json()
+            hits = data.get("hits") or []
+            for h in hits:
+                m = {}
+                for x in h.get("metas", []):
+                    m.setdefault(x["name"], x.get("value"))
+                cats = [x.get("value") for x in h.get("metas", []) if x["name"] == "meta_cat"]
+                if "Country/France" not in cats:
+                    continue
+                ctype = next((c.split("/", 1)[1] for c in cats if c.startswith("Type/")), None)
+                city = (m.get("content_info_2_value") or "").replace("France, ", "")
+                out.append(Job(
+                    (m.get("content_title") or "").strip(),
+                    m.get("content_cta_1_url_id") or m.get("content_cta_1_url"),
+                    location=city or None,
+                    department=m.get("content_type_display_text"),
+                    contract={"Internship": "Stage", "Work Study": "Alternance"}.get(ctype, ctype),
+                    published_at=(m.get("content_start_datetime") or "").replace("/", "-").replace(" ", "T") or None,
+                    description=_body(m.get("content_summary")), raw={}))
+            start += len(hits)
+            if not hits or start >= int(data.get("nhits") or 0):
+                break
+        return FetchResult(self.key, slug, True, out, endpoint=self._EP,
+                           note="0 postings" if not out else None)
+
+
+# --------------------------------------------------------------------------- #
+#  Cegid Talentsoft "offre-de-emploi" sites with the keyless RSS handler
+#  (`/handlers/offerRss.ashx?LCID=1036[&Rss_Contract=<id>]`, 20 latest items
+#  per feed). One feed per contract type is listed on
+#  `/offre-de-emploi/tous-les-flux-rss.aspx`; we walk them all and de-dup.
+#  slug is the site host (e.g. www.emploi.cea.fr).
+# --------------------------------------------------------------------------- #
+class TalentsoftRSS(Adapter):
+    key = "talentsoft_rss"
+    has_api = True
+    signatures = ("offerrss.ashx",)
+
+    def fetch(self, slug, careers_origin=None):
+        host = (slug or "").replace("https://", "").strip("/")
+        base = "https://%s" % host
+        page = get_text(base + "/offre-de-emploi/tous-les-flux-rss.aspx", retries=1)
+        feeds = ["/handlers/offerRss.ashx?LCID=1036"]
+        if page.ok:
+            for h in re.findall(r'href="(/handlers/offerRss\.ashx\?LCID=1036[^"]*)"', page.body):
+                h = unescape(h)
+                if h not in feeds:
+                    feeds.append(h)
+        seen, out = set(), []
+        for f in feeds:
+            r = get_text(base + f, retries=1)
+            if not r.ok:
+                continue
+            try:
+                root = ET.fromstring(r.body.encode("utf-8"))
+            except ET.ParseError:
+                continue
+            for it in root.iter("item"):
+                link = (it.findtext("link") or "").strip()
+                m = re.search(r"idOffre=(\d+)", link)
+                key = m.group(1) if m else link
+                if not link or key in seen:
+                    continue
+                seen.add(key)
+                desc = it.findtext("description") or ""
+                contract = _first([r"Contrat\s*:\s*</b>\s*([^<\n]+)"], desc)
+                domain = _first([r"Domaine\s*:\s*</b>\s*([^<\n]+)"], desc)
+                title = re.sub(r"^\d{4}-\d+\s*-\s*", "", (it.findtext("title") or "").strip())
+                city = _first([r"Ville\s*:\s*</b>\s*([^<\n]+)"], desc)
+                out.append(Job(title, link, location=(city or it.findtext("category") or "").strip() or None,
+                               department=(domain or "").strip() or None,
+                               contract=(contract or "").strip() or None,
+                               published_at=_rfc2822(it.findtext("pubDate")),
+                               description=_strip_html(desc), raw={}))
+        return FetchResult(self.key, slug, bool(out), out, endpoint=base + feeds[0],
+                           note="0 postings" if not out else None)
+
+
+# --------------------------------------------------------------------------- #
+#  Amazon Jobs — public search.json (country=FRA). slug ignored.
+# --------------------------------------------------------------------------- #
+class AmazonJobs(Adapter):
+    key = "amazonjobs"
+    has_api = True
+    signatures = ("amazon.jobs",)
+
+    def fetch(self, slug, careers_origin=None):
+        out, offset, ep = [], 0, "https://www.amazon.jobs/en/search.json"
+        while offset < 1000:
+            url = "%s?country=FRA&result_limit=100&offset=%d&sort=recent" % (ep, offset)
+            r = get_json(url, retries=1)
+            if not r.ok:
+                return FetchResult(self.key, slug, bool(out), out, endpoint=ep, note="HTTP %s" % r.status)
+            data = r.json()
+            jobs = data.get("jobs") or []
+            for j in jobs:
+                out.append(Job(j.get("title"), "https://www.amazon.jobs" + (j.get("job_path") or ""),
+                               location=j.get("normalized_location") or j.get("location"),
+                               department=j.get("job_category"),
+                               published_at=_amazon_date(j.get("posted_date")),
+                               description=_body(j.get("description"), j.get("basic_qualifications"),
+                                                 heads=["", "Qualifications"]), raw={}))
+            offset += len(jobs)
+            if not jobs or offset >= int(data.get("hits") or 0):
+                break
+        return FetchResult(self.key, slug, True, out, endpoint=ep, note="0 postings" if not out else None)
+
+
+def _amazon_date(v):
+    try:
+        return datetime.strptime(v, "%B %d, %Y").replace(tzinfo=timezone.utc).isoformat(timespec="seconds")
+    except (TypeError, ValueError):
+        return None
+
+
+# --------------------------------------------------------------------------- #
 def _rfc2822(v):
     """RFC-2822 date (RSS pubDate) -> ISO8601, pass-through otherwise."""
     if not v:
@@ -911,7 +1058,7 @@ ADAPTERS = [
     Greenhouse(), Lever(), Ashby(), Recruitee(), Workable(),
     SmartRecruiters(), Personio(), Taleez(), Teamtailor(),
     Flatchr(), Talentsoft(), Workday(), Macs(), Jobs2Web(),
-    WelcomeToTheJungle(), ICIMS(),
+    WelcomeToTheJungle(), ICIMS(), Dassault3DS(), AmazonJobs(), TalentsoftRSS(),
 ]
 BY_KEY = {a.key: a for a in ADAPTERS}
 BY_KEY["custom"] = Custom()
