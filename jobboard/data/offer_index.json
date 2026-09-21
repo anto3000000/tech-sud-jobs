@@ -1314,7 +1314,7 @@
 "city": "Lyon",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": "eng",
+"facet_slug": "eng-lyon",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "Analyste SOC - Stage"
@@ -1401,10 +1401,10 @@
 },
 "capgemini-architecte-technique-sap-b3bda2": {
 "category": "eng",
-"city": "Lille",
+"city": "Lyon",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": "eng-lille",
+"facet_slug": "eng-lyon",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "Architecte Technique SAP"
@@ -1468,6 +1468,16 @@
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "Business Analyst - Stage"
+},
+"capgemini-cheffe-chef-de-projets-senior-ia-agentique-6a6bc5": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Cheffe/Chef de projets senior IA Agentique"
 },
 "capgemini-cloud-devops-engineer-50fc56": {
 "category": "eng",
@@ -1539,6 +1549,16 @@
 "last_seen": "2026-09-21",
 "title": "Consultante / Consultant Cybersécurité IAM"
 },
+"capgemini-consultante-consultant-en-transformation-digitale-stage-cd045c": {
+"category": "tech-adjacent",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "tech-adjacent-aix-en-provence",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Consultante / Consultant en transformation digitale - Stage"
+},
 "capgemini-consultante-consultant-fonctionnel-plm-stage-130a20": {
 "category": "tech-adjacent",
 "city": "Aix-en-Provence",
@@ -1568,6 +1588,26 @@
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "Consultante / Consultant Senior Cybersécurité GRC"
+},
+"capgemini-consultante-consultant-transformation-digitale-et-ia-9d056a": {
+"category": "tech-adjacent",
+"city": "Aix-en-Provence",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "tech-adjacent-aix-en-provence",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Consultante / Consultant transformation digitale et IA"
+},
+"capgemini-consultante-consultant-transformation-digitale-senior-0e28b6": {
+"category": "tech-adjacent",
+"city": "Valbonne",
+"company": "Capgemini",
+"expired_at": null,
+"facet_slug": "tech-adjacent-valbonne",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Consultante/consultant transformation digitale senior"
 },
 "capgemini-data-architect-406641": {
 "category": "data",
@@ -1734,7 +1774,7 @@
 "city": "Lyon",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": "eng",
+"facet_slug": "eng-lyon",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "Ingénieure / Ingénieur GRC - Stage"
@@ -1931,7 +1971,7 @@
 },
 "capgemini-sap-data-migration-lead-6fb5d4": {
 "category": "data",
-"city": "Lille",
+"city": "Lyon",
 "company": "Capgemini",
 "expired_at": null,
 "facet_slug": "data",
@@ -1961,20 +2001,20 @@
 },
 "capgemini-tech-lead-sap-03d328": {
 "category": "eng",
-"city": "Lille",
+"city": "Lyon",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": "eng-lille",
+"facet_slug": "eng-lyon",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "Tech Lead SAP"
 },
 "capgemini-tech-lead-sap-btp-07c7b4": {
 "category": "eng",
-"city": "Lille",
+"city": "Meroux",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": "eng-lille",
+"facet_slug": "eng",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "Tech Lead SAP BTP"
@@ -2169,6 +2209,26 @@
 "last_seen": "2026-09-21",
 "title": "MECANICIEN MAINTENANCE SYSTEMES D'ARMES OPTOELECTRONIQUES"
 },
+"civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-o-c5dd04": {
+"category": "eng",
+"city": "Toulon",
+"company": "Civils de la Défense - Ministère des Armées et des Anciens combattants",
+"expired_at": null,
+"facet_slug": "eng-toulon",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "OFFICIER CONTRE INGERENCE CYBER ZONAL - TOULOUSE"
+},
+"cma-cgm-ai-for-knowledge-management-decision-support-60d847": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "AI for Knowledge Management & Decision Support"
+},
 "cma-cgm-analyste-soc-centre-de-defense-cyber-600a71": {
 "category": "eng",
 "city": "Marseille",
@@ -2199,6 +2259,16 @@
 "last_seen": "2026-09-21",
 "title": "BI Line Ops"
 },
+"cma-cgm-conception-de-la-plateforme-de-pilotage-cyber-du-groupe-cma-cg-306517": {
+"category": "eng",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Conception de la Plateforme de Pilotage Cyber du Groupe CMA CGM"
+},
 "cma-cgm-controle-et-qualite-des-donnees-achats-ports-terminaux-4f51f0": {
 "category": "data",
 "city": "Marseille",
@@ -2208,6 +2278,16 @@
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "controle et qualité des données  - Achats ports & terminaux"
+},
+"cma-cgm-cyber-operational-dashboard-b80103": {
+"category": "eng",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Cyber operational dashboard"
 },
 "cma-cgm-data-analyst-vessel-energy-performance-a260d9": {
 "category": "data",
@@ -2238,6 +2318,16 @@
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "Data scientist"
+},
+"cma-cgm-designing-cma-cgm-s-cyber-steering-platform-92c25e": {
+"category": "eng",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Designing CMA CGM's Cyber Steering Platform"
 },
 "cma-cgm-developpeur-euse-bi-qliksense-vessel-energy-performance-c85f67": {
 "category": "data",
@@ -2369,6 +2459,26 @@
 "last_seen": "2026-09-21",
 "title": "Group Data Protection Officer"
 },
+"cma-cgm-group-it-business-analysis-45784b": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Group IT Business Analysis"
+},
+"cma-cgm-ia-pour-la-gestion-des-connaissances-l-aide-a-la-decision-1a1194": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "IA pour la Gestion des Connaissances & l'Aide à la Décision"
+},
 "cma-cgm-intern-data-reliability-off-manifest-rebates-department-d78e79": {
 "category": "data",
 "city": "Marseille",
@@ -2388,6 +2498,16 @@
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "IT Product Manager - Shipping Documentation"
+},
+"cma-cgm-operations-research-engineer-f3f95e": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Operations Research Engineer"
 },
 "cma-cgm-procurement-data-analyst-assistant-41464e": {
 "category": "data",
@@ -2418,6 +2538,26 @@
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
 "title": "Senior Data & Reporting Specialist"
+},
+"cma-cgm-soc-analyst-cyber-defense-center-ca2638": {
+"category": "eng",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "SOC ANALYST - CYBER DEFENSE CENTER"
+},
+"cma-cgm-stage-group-it-business-analysis-ebc398": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "STAGE -Group IT Business Analysis"
 },
 "commandement-de-la-cyberdefense-comcyber-administrateur-cybersecurite-a3bf1b": {
 "category": "eng",
@@ -2989,12 +3129,32 @@
 "last_seen": "2026-09-21",
 "title": "Business Analyst (H/F) - @eXalt Azur"
 },
+"exalt-chef-de-projet-ia-exalt-provence-65f2b4": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "eXalt",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Chef de Projet IA @eXalt PROVENCE"
+},
+"exalt-chef-de-projet-si-workplace-e6b730": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "eXalt",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Chef de Projet SI Workplace"
+},
 "exalt-consultant-e-chef-de-projet-moa-comptabilite-h-f-37290d": {
 "category": "tech-adjacent",
 "city": "Valbonne",
 "company": "eXalt",
 "expired_at": null,
-"facet_slug": "tech-adjacent",
+"facet_slug": "tech-adjacent-valbonne",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-21",
 "title": "Consultant(e)Chef de projet  MOA - Comptabilité (H/F)"
@@ -3353,7 +3513,7 @@
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
-"expired_at": null,
+"expired_at": "2026-09-21",
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-21",
@@ -4199,6 +4359,16 @@
 "last_seen": "2026-09-21",
 "title": "Ingénieur Cybersécurité H/F – Marseille (13)"
 },
+"loccitane-data-sciences-r-d-h-f-5c0de7": {
+"category": "data",
+"city": "Manosque",
+"company": "L’Occitane",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "data sciences R&D H/F"
+},
 "logiadapt-customer-success-manager-projets-d-adaptation-du-logement-cd-d648e1": {
 "category": "tech-adjacent",
 "city": "Marseille",
@@ -4288,6 +4458,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-21",
 "title": "Staff Software Engineer - Backend"
+},
+"mc2i-consultant-en-transformation-numerique-industrie-toulon-h-f-f8ca75": {
+"category": "tech-adjacent",
+"city": "Toulon",
+"company": "mc2i",
+"expired_at": null,
+"facet_slug": "tech-adjacent",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Consultant en transformation numérique - Industrie Toulon H/F"
 },
 "media-start-growth-marketer-9a96d4": {
 "category": "eng",
@@ -4559,6 +4739,16 @@
 "last_seen": "2026-09-21",
 "title": "Forward Deployed Engineer, Cybersecurity & AI"
 },
+"mindflow-forward-deployed-engineer-it-ai-7a44e4": {
+"category": "data",
+"city": "La Ciotat",
+"company": "Mindflow",
+"expired_at": null,
+"facet_slug": "data-la-ciotat",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Forward Deployed Engineer, IT & AI"
+},
 "mindflow-pre-sales-solutions-engineer-cybersecurity-it-ai-786778": {
 "category": "eng",
 "city": "La Ciotat",
@@ -4638,6 +4828,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-21",
 "title": "Sales IT  F/H"
+},
+"n2jsoft-consultant-fonctionnel-confirme-h-f-cc0432": {
+"category": "tech-adjacent",
+"city": "Aix-en-Provence",
+"company": "N2jsoft",
+"expired_at": null,
+"facet_slug": "tech-adjacent-aix-en-provence",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Consultant fonctionnel confirmé (H/F)"
 },
 "naval-group-fr-administrateur-systeme-et-reseaux-h-f-bd3f5c": {
 "category": "eng",
@@ -4988,6 +5188,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-10",
 "title": "Ingénieur Systèmes de Télécommunication (H/F)"
+},
+"naval-group-fr-integrateur-solutions-cyber-h-f-45de28": {
+"category": "eng",
+"city": "Ollioules",
+"company": "Naval Group [FR]",
+"expired_at": null,
+"facet_slug": "eng-ollioules",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Intégrateur Solutions Cyber - H/F"
 },
 "naval-group-fr-responsable-developpement-logiciel-frameworks-h-f-60906c": {
 "category": "eng",
@@ -6444,7 +6654,7 @@
 "city": "Valbonne",
 "company": "Septeo",
 "expired_at": null,
-"facet_slug": "tech-adjacent",
+"facet_slug": "tech-adjacent-valbonne",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-21",
 "title": "Consultant fonctionnel CRS & PMS H/F"
@@ -6598,6 +6808,16 @@
 "first_seen": "2026-09-12",
 "last_seen": "2026-09-21",
 "title": "Formateur.rice IA & Data (Python, MLOps)"
+},
+"simplon-formateurrice-ia-gen-cyber-acculturation-8f8831": {
+"category": "eng",
+"city": "Marseille",
+"company": "SIMPLON",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Formateur•rice IA Gen & Cyber - acculturation"
 },
 "smart-tribune-team-lead-developpeur-front-end-marseille-h-f-x-68629b": {
 "category": "eng",
@@ -7708,6 +7928,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-21",
 "title": "Ingénieur DevOps H/F"
+},
+"the-adecco-group-ingenieur-etudes-electricite-h-f-44e394": {
+"category": "eng",
+"city": "Saint-Paul-Les-Durance",
+"company": "The Adecco Group",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-21",
+"last_seen": "2026-09-21",
+"title": "Ingénieur Etudes électricité H/F"
 },
 "the-adecco-group-ingenieur-systeme-h-f-d82551": {
 "category": "eng",
