@@ -1,0 +1,28 @@
+# sudtechjobs
+
+> Agrégateur d'offres d'emploi tech (dev, data, produit, design, stages et alternances) des entreprises de Provence-Alpes-Côte d'Azur, de Marseille à Sophia-Antipolis. 735 offres en ligne, mises à jour chaque jour. Chaque offre renvoie vers la page carrière de l'employeur.
+
+## Données
+
+- [jobs.json](https://sudtechjobs.com/jobs.json): toutes les offres actives, JSON
+- [feed.xml](https://sudtechjobs.com/feed.xml): RSS des 50 offres les plus récentes
+- [sitemap.xml](https://sudtechjobs.com/sitemap.xml): index de toutes les pages
+
+## Parcourir
+
+- [Offres par métier et ville](https://sudtechjobs.com/emploi/): pages filtrées (métier, techno, ville, télétravail)
+- [Entreprises qui recrutent](https://sudtechjobs.com/entreprise/): fiches des employeurs tech de la région
+
+## Guides
+
+- [Quel salaire pour un poste tech en PACA en 2026 ? (dev, data, produit, design)](https://sudtechjobs.com/guide-salaires-tech-paca.html): Combien gagne un développeur, un data/IA, un product manager ou un designer en PACA en 2026 ? Chiffres calculés à partir des offres réellement diffusées sur sudtechjobs, par métier, expérience et ville.
+- [Télétravail dans la tech en PACA en 2026 : quelles entreprises, quel rythme ?](https://sudtechjobs.com/guide-teletravail-tech-paca.html): Full remote, hybride, ponctuel : quelle part des offres tech en PACA propose du télétravail, pour quels métiers, et quelles entreprises recrutent en ce moment sans exiger d'être sur site ?
+- [Quelles entreprises tech recrutent le plus en PACA en 2026 ?](https://sudtechjobs.com/guide-entreprises-qui-recrutent-tech-paca.html): Thales, Naval Group, Alan, Sopra Steria, Capgemini : classement des entreprises qui recrutent le plus dans la tech en PACA en ce moment, par métier et par ville, calculé à partir des offres réelles.
+- [Stage et alternance tech en PACA en 2026 : où et comment postuler ?](https://sudtechjobs.com/guide-stage-alternance-tech-paca.html): Combien de stages et d'alternances tech sont ouverts en PACA en ce moment, chez quelles entreprises et dans quelle ville, calculé à partir des offres réellement diffusées sur sudtechjobs.
+- [Premier emploi tech en PACA en 2026 : comment décrocher un poste sans expérience ?](https://sudtechjobs.com/guide-premier-emploi-junior-tech-paca.html): Quelles offres tech en PACA sont vraiment accessibles aux débutants, chez quelles entreprises et pour quels métiers, calculé à partir des offres réellement diffusées sur sudtechjobs.
+- [Trouver un job tech à Sophia Antipolis et sur la Côte d’Azur en 2026](https://sudtechjobs.com/guide-emploi-tech-sophia-antipolis-cote-dazur.html): Qui recrute dans la tech à Sophia Antipolis et sur la Côte d'Azur, pour quels métiers et à quel salaire, calculé à partir des offres réellement diffusées sur sudtechjobs.
+- [Reconversion vers la tech en PACA en 2026 : par où commencer ?](https://sudtechjobs.com/guide-reconversion-tech-paca.html): Formations, métiers accessibles, entreprises qui recrutent des profils juniors : ce qu'il faut savoir pour une reconversion vers la tech dans le Sud de la France.
+
+## À propos
+
+- [À propos](https://sudtechjobs.com/a-propos.html): qui est derrière le site et d'où viennent les offres

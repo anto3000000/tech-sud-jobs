@@ -12,6 +12,7 @@ Reads jobboard/site/jobs.json (built by build.py) and writes, into jobboard/site
     feed-dept-<dept>.xml  same, scoped to one PACA département (partner imports, e.g. a
                           French Tech chapter re-feeding its own stale job page)
     robots.txt            points crawlers at the sitemap index
+    llms.txt              curated site map for LLM agents (llmstxt.org)
 
 A closed posting is de-listed the Google-for-Jobs way: dropped from the offers
 sitemap, JobPosting markup removed, `noindex` + a redirect to its métier facet,
@@ -2784,6 +2785,29 @@ def main():
         fh.write(index)
     with open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8") as fh:
         fh.write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SITE_URL)
+
+    # llms.txt — a short, curated map for LLM agents (llmstxt.org format).
+    guide_lines = "\n".join("- [%s](%s/%s.html): %s" % (t, SITE_URL, s, d)
+                            for s, t, d in guides_meta)
+    llms = (
+        "# sudtechjobs\n\n"
+        "> Agrégateur d'offres d'emploi tech (dev, data, produit, design, stages et "
+        "alternances) des entreprises de Provence-Alpes-Côte d'Azur, de Marseille à "
+        "Sophia-Antipolis. %d offres en ligne, mises à jour chaque jour. Chaque offre "
+        "renvoie vers la page carrière de l'employeur.\n\n"
+        "## Données\n\n"
+        "- [jobs.json](%s/jobs.json): toutes les offres actives, JSON\n"
+        "- [feed.xml](%s/feed.xml): RSS des 50 offres les plus récentes\n"
+        "- [sitemap.xml](%s/sitemap.xml): index de toutes les pages\n\n"
+        "## Parcourir\n\n"
+        "- [Offres par métier et ville](%s/emploi/): pages filtrées (métier, techno, ville, télétravail)\n"
+        "- [Entreprises qui recrutent](%s/entreprise/): fiches des employeurs tech de la région\n\n"
+        "## Guides\n\n%s\n\n"
+        "## À propos\n\n"
+        "- [À propos](%s/a-propos.html): qui est derrière le site et d'où viennent les offres\n"
+    ) % (len(jobs), SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, guide_lines, SITE_URL)
+    with open(os.path.join(SITE, "llms.txt"), "w", encoding="utf-8") as fh:
+        fh.write(llms)
 
     # ---- RSS feeds (site/feed.xml + site/feed-dept-<dept>.xml) --------------
     # A machine-readable stream of the newest postings. Less a reader feature
