@@ -169,6 +169,16 @@
 "last_seen": "2026-09-22",
 "title": "2027 - Amélioration continue: développement et déploiement numérique (F/H)"
 },
+"airbus-helicopters-2027-developpeur-fullstack-ingenieur-ai-outillage-f-3f6072": {
+"category": "data",
+"city": "Antibes Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "2027 - Développeur Fullstack & Ingénieur AI – Outillage FinOps pour les Clouds Souverains"
+},
 "airbus-helicopters-2027-ingenieur-logiciel-embarque-systemes-d-armes-f-c261aa": {
 "category": "eng",
 "city": "Marseille Area",
@@ -348,6 +358,16 @@
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-20",
 "title": "2027 - Développement d’estimateurs de charges mécaniques par Intelligence Artificielle (f/h)"
+},
+"airbus-helicopters-logiciel-r-d-2027-developpeur-fullstack-ingenieur-a-006867": {
+"category": "data",
+"city": "Antibes Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "2027 - Développeur Fullstack & Ingénieur AI – Outillage FinOps pour les Clouds Souverains"
 },
 "airbus-helicopters-logiciel-r-d-2027-ingenieur-logiciel-embarque-syste-fbae8f": {
 "category": "eng",
@@ -1259,6 +1279,16 @@
 "last_seen": "2026-09-22",
 "title": "Ingénieur(e) en Chef, Senior, DCEO, Data Center Engineering Operations"
 },
+"antea-group-eau-ingenieur-etudes-hydrogeologie-a-aubagne-h-f-ant-197-968036": {
+"category": "eng",
+"city": "Aubagne",
+"company": "Antea Group",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "EAU - Ingénieur études hydrogéologie à Aubagne (H/F) - ANT 197"
+},
 "antea-group-eau-ingenieur-etudes-hydrogeologie-a-aubagne-h-f-ant-197-aa867c": {
 "category": "eng",
 "city": "Aubagne",
@@ -1708,6 +1738,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
 "title": "Développeur Web FullStack Expérimenté F/H -CDI-ROUSSET"
+},
+"bleu-referent-e-securite-et-surete-data-center-1a16c2": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Bleu",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Référent(e) Sécurité et Sûreté Data Center"
 },
 "bluecoders-developpeur-c-rust-full-remote-4e3310": {
 "category": "eng",
@@ -3213,7 +3253,7 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-22",
@@ -3328,6 +3368,16 @@
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-22",
 "title": "STAGE -Group IT Business Analysis"
+},
+"cma-cgm-tech-lead-ai-eeda53": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Tech Lead AI"
 },
 "commandement-de-la-cyberdefense-comcyber-administrateur-cybersecurite-a3bf1b": {
 "category": "eng",
@@ -3603,7 +3653,7 @@
 "category": "eng",
 "city": "Valbonne",
 "company": "Dassault Systèmes",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "eng-valbonne",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-22",
@@ -3613,7 +3663,7 @@
 "category": "data",
 "city": "Valbonne",
 "company": "Dassault Systèmes",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "data-valbonne",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-22",
@@ -6883,7 +6933,7 @@
 "category": "tech-adjacent",
 "city": "Marseille 8E Arrondissement",
 "company": "Orange",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "tech-adjacent",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-22",
@@ -6899,11 +6949,21 @@
 "last_seen": "2026-09-22",
 "title": "Ingénieur Développeur Confirmé F/H"
 },
+"orange-ingenieur-developpeur-front-h-f-46b3f2": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Orange",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur Développeur Front H/F"
+},
 "orange-ingenieur-developpeur-front-h-f-b6a920": {
 "category": "eng",
 "city": "Biot",
 "company": "Orange",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "eng-biot",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-22",
@@ -10148,6 +10208,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
 "title": "Traffic Manager"
+},
+"viaxoft-developpeur-full-stack-java-confirme-h-f-b4afdd": {
+"category": "eng",
+"city": "Marseille",
+"company": "Viaxoft",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Développeur Full Stack Java confirmé (H/F)"
 },
 "vinci-construction-ingenieur-etudes-de-prix-be-travaux-publics-f-h-48e2c2": {
 "category": "eng",
