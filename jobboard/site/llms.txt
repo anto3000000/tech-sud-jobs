@@ -1,6 +1,6 @@
 # sudtechjobs
 
-> Agrégateur d'offres d'emploi tech (dev, data, produit, design, stages et alternances) des entreprises de Provence-Alpes-Côte d'Azur, de Marseille à Sophia-Antipolis. 810 offres en ligne, mises à jour chaque jour. Chaque offre renvoie vers la page carrière de l'employeur.
+> Agrégateur d'offres d'emploi tech (dev, data, produit, design, stages et alternances) des entreprises de Provence-Alpes-Côte d'Azur, de Marseille à Sophia-Antipolis. 809 offres en ligne, mises à jour chaque jour. Chaque offre renvoie vers la page carrière de l'employeur.
 
 ## Données
 
@@ -12,6 +12,7 @@
 
 - [Offres par métier et ville](https://sudtechjobs.com/emploi/): pages filtrées (métier, techno, ville, télétravail)
 - [Entreprises qui recrutent](https://sudtechjobs.com/entreprise/): fiches des employeurs tech de la région
+- [Chiffres clés](https://sudtechjobs.com/dashboard.html): instantané du marché (volumes, télétravail, salaires, top recruteurs)
 
 ## Guides
 

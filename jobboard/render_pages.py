@@ -362,6 +362,12 @@ dl.facts dd{margin:2px 0 0;font-size:14px;font-weight:500}
 .legal .upd{color:var(--muted);font-size:12.5px;margin:0 0 4px}
 .legal .note{background:var(--card-2);border:1px solid var(--line);border-radius:10px;
  padding:12px 14px;font-size:13px;color:var(--muted);margin:16px 0}
+/* dashboard */
+.kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:10px;margin:16px 0 8px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px 15px;box-shadow:var(--shadow)}
+.kpi b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:25px;
+ color:var(--brand-ink);line-height:1.15}
+.kpi span{display:block;font-size:11.5px;color:var(--muted);margin-top:3px}
 """
 
 
@@ -411,6 +417,7 @@ def shell(*, title, description, canonical, head_extra="", body):
   <a href="{home}">Toutes les offres</a> ·
   <a href="{hub}">Parcourir par ville &amp; techno</a> ·
   <a href="{companies}">Entreprises</a> ·
+  <a href="{dashboard}">Chiffres clés</a> ·
   job board tech du sud de la France
   <br><br>Une offre à ajouter, une remarque, ou juste envie de papoter du Sud&nbsp;?
   Écrivez-moi, ça fait toujours plaisir 🫰
@@ -449,6 +456,7 @@ def shell(*, title, description, canonical, head_extra="", body):
         css=CSS, head_extra=head_extra, body=body,
         home=SITE_URL + "/", hub=SITE_URL + "/emploi/",
         companies=SITE_URL + "/entreprise/", feed=SITE_URL + "/feed.xml",
+        dashboard=SITE_URL + "/dashboard.html",
     )
 
 
@@ -1630,6 +1638,132 @@ def render_hiring_guide(jobs, generated):
                     "par métier et par ville, calculé à partir des offres réelles.")
 
 
+def _parse_iso(s):
+    try:
+        dt = datetime.fromisoformat((s or "").replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+
+
+def compute_dashboard_stats(jobs):
+    """Recomputed on every build, like the guides — a live snapshot of the feed."""
+    now = datetime.now(timezone.utc)
+    new_7d = new_30d = 0
+    for j in jobs:
+        dt = _parse_iso(j.get("first_seen"))
+        if not dt:
+            continue
+        age = (now - dt).days
+        if age <= 7:
+            new_7d += 1
+        if age <= 30:
+            new_30d += 1
+
+    dept_counts = Counter()
+    remote_n = 0
+    for j in jobs:
+        city = j.get("city") or ""
+        if city == "Remote" or (j.get("remote") or "") in REMOTE_FULL:
+            remote_n += 1
+        code = CITY_DEPT.get(slugify(city))
+        if code:
+            dept_counts[code] += 1
+
+    cat_counts = Counter(j.get("category") for j in jobs if j.get("category") in CATS)
+
+    return {
+        "n_total": len(jobs), "new_7d": new_7d, "new_30d": new_30d,
+        "remote_n": remote_n,
+        "dept_counts": dept_counts, "cat_counts": cat_counts,
+        "hiring": compute_hiring_stats(jobs),
+        "remote": compute_remote_stats(jobs),
+        "salary": compute_salary_stats(jobs),
+    }
+
+
+def render_dashboard(jobs, generated):
+    slug = "dashboard"
+    canonical = "%s/%s.html" % (SITE_URL, slug)
+    st = compute_dashboard_stats(jobs)
+    slugs = st["hiring"]["slug_by_company"]
+    n_total = st["n_total"]
+
+    def kpi(value, label):
+        return '<div class="kpi"><b>%s</b><span>%s</span></div>' % (esc(value), esc(label))
+
+    kpis = [kpi(n_total, "offres ouvertes en ce moment"),
+            kpi(st["hiring"]["n_companies"], "entreprises qui recrutent"),
+            kpi(st["new_7d"], "offres apparues cette semaine")]
+    rem = st["remote"]["overall"]
+    if rem.get("n_known", 0) >= MIN_SAMPLE:
+        kpis.append(kpi("%d%%" % rem["pct_remote"], "au moins du télétravail"))
+    sal_eng = st["salary"]["by_cat"].get("eng", {"n": 0})
+    if sal_eng.get("n", 0) >= MIN_SAMPLE:
+        kpis.append(kpi(_fmt_keur(sal_eng["median"]), "salaire médian dev, brut/an"))
+    kpi_html = '<div class="kpi-grid">%s</div>' % "".join(kpis)
+
+    cat_items = "".join(
+        "<li><b>%s</b> — %d offre%s</li>" % (esc(CATS[cat][0]), n, "s" if n > 1 else "")
+        for cat, n in st["cat_counts"].most_common())
+    dept_items = "".join(
+        "<li><b>%s</b> — %d offre%s</li>" % (esc(PACA_DEPTS[code][1]), n, "s" if n > 1 else "")
+        for code, n in st["dept_counts"].most_common())
+    if st["remote_n"]:
+        dept_items += "<li><b>Télétravail</b> — %d offre%s</li>" % (
+            st["remote_n"], "s" if st["remote_n"] > 1 else "")
+
+    top10 = st["hiring"]["overall_top"]
+    top_html = ("<ol style=\"margin:6px 0 13px;padding-left:20px\">%s</ol>" % "".join(
+        "<li>%s — %d offre%s ouvertes</li>" % (_company_link(c, slugs), n, "s" if n > 1 else "")
+        for c, n in top10)) if top10 else "<p class=\"sub\">Pas assez de données pour un classement.</p>"
+
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "Offres d'emploi tech en PACA — sudtechjobs",
+        "description": "Instantané du marché de l'emploi tech (dev, data, produit, design) "
+                        "en Provence-Alpes-Côte d'Azur, recalculé à chaque mise à jour du site "
+                        "à partir des offres réellement en ligne.",
+        "url": canonical,
+        "creator": {"@type": "Organization", "name": "sudtechjobs", "url": SITE_URL + "/"},
+        "distribution": [
+            {"@type": "DataDownload", "encodingFormat": "application/json",
+             "contentUrl": SITE_URL + "/jobs.json"},
+            {"@type": "DataDownload", "encodingFormat": "application/rss+xml",
+             "contentUrl": SITE_URL + "/feed.xml"},
+        ],
+    }
+
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › Chiffres clés</nav>
+<h1>Le marché de l’emploi tech en PACA, en chiffres</h1>
+<div class="legal">
+<p class="upd">Recalculé à chaque mise à jour du site à partir des offres réellement en ligne — dernière génération&nbsp;: {gen}.</p>
+<p class="sub">Un instantané du recrutement tech (dev, data, produit, design) en Provence-Alpes-Côte d’Azur, calculé à partir des {n} offres actuellement diffusées sur <a href="{home}">sudtechjobs</a> — pas un baromètre déclaratif.</p>
+{kpis}
+<h2>Par métier</h2>
+<ul>{cats}</ul>
+<h2>Par territoire</h2>
+<ul>{depts}</ul>
+<h2>Qui recrute le plus en ce moment</h2>
+{top}
+<p class="note">Un volume d’offres publiées, pas un classement qualité employeur&nbsp;: une entreprise avec du turnover peut publier plus d’offres qu’une petite structure qui recrute rarement. Détail par entreprise sur <a href="{companies}">la liste des entreprises</a>.</p>
+<h2>Données ouvertes</h2>
+<p>Ces chiffres sont recalculés depuis le flux public&nbsp;: <a href="{home}jobs.json">jobs.json</a> (offres actives), <a href="{home}feed.xml">feed.xml</a> (RSS), <a href="{home}sitemap.xml">sitemap.xml</a>. Voir aussi <a href="{home}guides/">les guides</a> (salaires, télétravail, entreprises qui recrutent) pour l’analyse détaillée.</p>
+</div>
+""".format(home=SITE_URL + "/", gen=esc(generated), n=n_total, kpis=kpi_html,
+           cats=cat_items, depts=dept_items, top=top_html,
+           companies=SITE_URL + "/entreprise/")
+
+    return shell(
+        title="Chiffres clés du recrutement tech en PACA | sudtechjobs",
+        description="Offres ouvertes, entreprises qui recrutent, part de télétravail et "
+                    "salaire médian dev : le marché de l'emploi tech en Provence-Alpes-Côte "
+                    "d'Azur en chiffres, recalculé en direct depuis sudtechjobs.",
+        canonical=canonical, head_extra=jsonld(ld), body=body)
+
+
 def render_guides_hub(guides, generated):
     """guides: [(slug, title, description), ...] in display order."""
     cards = "".join(
@@ -2711,6 +2845,8 @@ def main():
                                   h1=h1, inner=inner))
     with open(os.path.join(SITE, "a-propos.html"), "w", encoding="utf-8") as fh:
         fh.write(render_about())
+    with open(os.path.join(SITE, "dashboard.html"), "w", encoding="utf-8") as fh:
+        fh.write(render_dashboard(jobs, generated))
 
     # ---- guides (FAQ articles, site root + /guides/ hub) -------------------
     guides_meta = []
@@ -2742,6 +2878,9 @@ def main():
              % SITE_URL]
     pages.append('<url><loc>%s/a-propos.html</loc><changefreq>monthly</changefreq>'
                  '<priority>0.5</priority></url>' % SITE_URL)
+    pages.append('<url><loc>%s/dashboard.html</loc><lastmod>%s</lastmod>'
+                 '<changefreq>daily</changefreq><priority>0.6</priority></url>'
+                 % (SITE_URL, today))
     pages.append('<url><loc>%s/guides/</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
                  '<priority>0.7</priority></url>' % (SITE_URL, today))
     for guide_slug in guide_slugs:
@@ -2801,11 +2940,12 @@ def main():
         "- [sitemap.xml](%s/sitemap.xml): index de toutes les pages\n\n"
         "## Parcourir\n\n"
         "- [Offres par métier et ville](%s/emploi/): pages filtrées (métier, techno, ville, télétravail)\n"
-        "- [Entreprises qui recrutent](%s/entreprise/): fiches des employeurs tech de la région\n\n"
+        "- [Entreprises qui recrutent](%s/entreprise/): fiches des employeurs tech de la région\n"
+        "- [Chiffres clés](%s/dashboard.html): instantané du marché (volumes, télétravail, salaires, top recruteurs)\n\n"
         "## Guides\n\n%s\n\n"
         "## À propos\n\n"
         "- [À propos](%s/a-propos.html): qui est derrière le site et d'où viennent les offres\n"
-    ) % (len(jobs), SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, guide_lines, SITE_URL)
+    ) % (len(jobs), SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, guide_lines, SITE_URL)
     with open(os.path.join(SITE, "llms.txt"), "w", encoding="utf-8") as fh:
         fh.write(llms)
 
