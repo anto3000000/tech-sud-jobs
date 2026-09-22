@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-09-21",
+  "last_generated_date": "2026-09-22",
   "bucket_last_used": {
     "eng-13": "2026-09-17",
     "eng-06": "2026-09-18",
@@ -15,7 +15,8 @@
     "tech-adjacent-13": "2026-09-19",
     "tech-adjacent-06": "2026-09-20",
     "product-paca": "2026-09-21",
-    "tech-adjacent-paca": "2026-09-21"
+    "tech-adjacent-paca": "2026-09-21",
+    "tech-adjacent-83": "2026-09-22"
   },
   "recent_slugs": {
     "atos-developpeur-logiciel-telecom-c-cpp-h-f-9b1cff": "2026-09-17",
@@ -89,8 +90,11 @@
     "alan-pre-sales-sales-engineer-5d91d4": "2026-09-21",
     "capgemini-consultante-consultant-en-transformation-digitale-stage-cd045c": "2026-09-21",
     "capgemini-consultante-consultant-transformation-digitale-et-ia-9d056a": "2026-09-21",
-    "mc2i-consultant-en-transformation-numerique-industrie-toulon-h-f-f8ca75": "2026-09-21",
-    "n2jsoft-consultant-fonctionnel-confirme-h-f-cc0432": "2026-09-21"
+    "mc2i-consultant-en-transformation-numerique-industrie-toulon-h-f-f8ca75": "2026-09-22",
+    "n2jsoft-consultant-fonctionnel-confirme-h-f-cc0432": "2026-09-21",
+    "cea-ingenieur-d-affaires-moe-realisation-d-installation-nucleaire-h-f-973ba6": "2026-09-22",
+    "groupe-orlade-pmo-it-85af00": "2026-09-22",
+    "la-poste-groupe-test-ne-pas-postuler-chef-de-projet-si-f-h-098d8f": "2026-09-22"
   },
   "last_published_date": "2026-09-21"
 }

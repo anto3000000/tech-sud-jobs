@@ -24,7 +24,7 @@
 "city": "Vitrolles",
 "company": "Accenture",
 "expired_at": null,
-"facet_slug": "tech-adjacent",
+"facet_slug": "tech-adjacent-vitrolles",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-22",
 "title": "Consultant Fonctionnel PLM/3DExperience F/H - Marseille"
@@ -959,12 +959,22 @@
 "last_seen": "2026-09-22",
 "title": "Business Analyst SAP (H/F)"
 },
+"alten-chef-de-projet-infrastructure-h-f-8d1a75": {
+"category": "tech-adjacent",
+"city": "Vitrolles",
+"company": "Alten",
+"expired_at": null,
+"facet_slug": "tech-adjacent-vitrolles",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Chef de projet infrastructure (H/F)"
+},
 "alten-chef-de-projet-it-transformation-digitale-h-f-98fb84": {
 "category": "tech-adjacent",
 "city": "Vitrolles",
 "company": "Alten",
 "expired_at": null,
-"facet_slug": "tech-adjacent",
+"facet_slug": "tech-adjacent-vitrolles",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-22",
 "title": "Chef de projet IT - transformation digitale H/F"
@@ -1253,7 +1263,7 @@
 "category": "eng",
 "city": "Aubagne",
 "company": "Antea Group",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "eng",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
@@ -1789,6 +1799,16 @@
 "last_seen": "2026-09-22",
 "title": "Chef de projet/Scrum Master (H/F)"
 },
+"bpce-solutions-informatiques-chef-de-projet-si-f-h-5760d8": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "BPCE Solutions informatiques",
+"expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Chef de Projet SI (F/H)"
+},
 "bpce-solutions-informatiques-chef-de-projet-si-f-h-lead-et-opportunite-15ba63": {
 "category": "tech-adjacent",
 "city": "Aix-en-Provence",
@@ -1813,7 +1833,7 @@
 "category": "tech-adjacent",
 "city": "Aix-en-Provence",
 "company": "BPCE Solutions informatiques",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "tech-adjacent-aix-en-provence",
 "first_seen": "2026-09-10",
 "last_seen": "2026-09-22",
@@ -1953,7 +1973,7 @@
 "category": "design",
 "city": "Aix-en-Provence",
 "company": "BPCE Solutions informatiques",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "design",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
@@ -2759,6 +2779,16 @@
 "last_seen": "2026-09-20",
 "title": "Ingénieur DevSecOps (H/F)"
 },
+"cba-informatique-qa-manager-h-f-f3b6a0": {
+"category": "eng",
+"city": "Avignon",
+"company": "Cba Informatique",
+"expired_at": null,
+"facet_slug": "eng-avignon",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "QA Manager (H/F)"
+},
 "cea-ingenieur-d-affaires-moe-realisation-d-installation-nucleaire-h-f-973ba6": {
 "category": "tech-adjacent",
 "city": "TOULON",
@@ -2823,7 +2853,7 @@
 "category": "eng",
 "city": "Sophia Antipolis",
 "company": "CGI",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "eng-sophia-antipolis",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
@@ -3163,17 +3193,17 @@
 "category": "product",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-20",
+"expired_at": null,
 "facet_slug": "product-marseille",
 "first_seen": "2026-09-18",
-"last_seen": "2026-09-19",
+"last_seen": "2026-09-22",
 "title": "Global Product Owner Specialist"
 },
 "cma-cgm-global-product-owner-specialist-eb1024": {
 "category": "product",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "product-marseille",
 "first_seen": "2026-09-20",
 "last_seen": "2026-09-22",
@@ -4553,7 +4583,7 @@
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-22",
@@ -4573,20 +4603,20 @@
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
-"expired_at": "2026-09-21",
+"expired_at": null,
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-18",
-"last_seen": "2026-09-21",
+"last_seen": "2026-09-22",
 "title": "Architecte logiciel H/F"
 },
 "groupe-lr-technologies-architecte-systemes-h-f-2f6455": {
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
-"expired_at": "2026-09-21",
+"expired_at": null,
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-18",
-"last_seen": "2026-09-20",
+"last_seen": "2026-09-22",
 "title": "Architecte systèmes H/F"
 },
 "groupe-lr-technologies-ingenieur-devops-ci-cd-h-f-fffe94": {
@@ -5393,7 +5423,7 @@
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Les Filles & Les Garçons de la Tech",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
@@ -6038,6 +6068,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
 "title": "Architecte logiciel Liaisons de Données Tactiques H/F"
+},
+"naval-group-fr-architecte-solution-h-f-fc0d21": {
+"category": "eng",
+"city": "Toulon",
+"company": "Naval Group [FR]",
+"expired_at": null,
+"facet_slug": "eng-toulon",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Architecte solution - H/F"
 },
 "naval-group-fr-architecte-systeme-cms-h-f-c59da5": {
 "category": "eng",
@@ -6839,6 +6879,26 @@
 "last_seen": "2026-09-22",
 "title": "Tech lead Java (H/F)"
 },
+"orange-ingenieur-avant-vente-interoperabilite-biomedicale-h-f-bef8c1": {
+"category": "tech-adjacent",
+"city": "Marseille 8E Arrondissement",
+"company": "Orange",
+"expired_at": null,
+"facet_slug": "tech-adjacent",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur Avant-Vente Interopérabilité Biomédicale H/F"
+},
+"orange-ingenieur-developpeur-confirme-f-h-50c74f": {
+"category": "eng",
+"city": "Marseille 8E Arrondissement",
+"company": "Orange",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur Développeur Confirmé F/H"
+},
 "orange-ingenieur-developpeur-front-h-f-b6a920": {
 "category": "eng",
 "city": "Biot",
@@ -6889,6 +6949,26 @@
 "last_seen": "2026-09-22",
 "title": "Ingénieur Sécurité H/F"
 },
+"orange-technicien-support-645ab8": {
+"category": "tech-adjacent",
+"city": "Aix-en-Provence",
+"company": "Orange",
+"expired_at": null,
+"facet_slug": "tech-adjacent-aix-en-provence",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Technicien support"
+},
+"orange-technicien-support-n1-2e7d80": {
+"category": "tech-adjacent",
+"city": "Marseille 8E Arrondissement",
+"company": "Orange",
+"expired_at": null,
+"facet_slug": "tech-adjacent",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Technicien support N1"
+},
 "panier-des-sens-chef-de-projet-it-erp-h-f-edd289": {
 "category": "data",
 "city": "Marseille",
@@ -6898,6 +6978,46 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
 "title": "Chef de projet IT - ERP (H/F)"
+},
+"pennylane-consultant-en-formation-embarquement-client-sur-pennylane-bo-30e0ab": {
+"category": "eng",
+"city": "Remote",
+"company": "Pennylane",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Consultant en Formation Embarquement client sur Pennylane - Bordeaux"
+},
+"pennylane-consultant-en-formation-embarquement-client-sur-pennylane-mo-a469ad": {
+"category": "eng",
+"city": "Remote",
+"company": "Pennylane",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Consultant en Formation Embarquement client sur Pennylane - Montpellier"
+},
+"pennylane-consultant-en-formation-embarquement-client-sur-pennylane-ni-06ad90": {
+"category": "eng",
+"city": "Remote",
+"company": "Pennylane",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Consultant en Formation Embarquement client sur Pennylane - Nice"
+},
+"pennylane-consultant-en-formation-embarquement-client-sur-pennylane-st-d434dc": {
+"category": "eng",
+"city": "Remote",
+"company": "Pennylane",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Consultant en Formation Embarquement client sur Pennylane - Strasbourg"
 },
 "pennylane-customer-success-manager-saas-1309f3": {
 "category": "tech-adjacent",
@@ -8079,11 +8199,21 @@
 "last_seen": "2026-09-17",
 "title": "End-to-End Technical Leader – System.AI (M/F)"
 },
-"schneider-electric-energy-analytics-consultant-carros-france-f-h-fa1d48": {
+"schneider-electric-energy-analytics-consultant-carros-france-f-h-509818": {
 "category": "data",
 "city": "Carros",
 "company": "Schneider Electric",
 "expired_at": null,
+"facet_slug": "data-carros",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Energy Analytics Consultant - Carros, France - F/H"
+},
+"schneider-electric-energy-analytics-consultant-carros-france-f-h-fa1d48": {
+"category": "data",
+"city": "Carros",
+"company": "Schneider Electric",
+"expired_at": "2026-09-22",
 "facet_slug": "data-carros",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
@@ -8273,7 +8403,7 @@
 "category": "data",
 "city": "Marseille",
 "company": "SIMPLON",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-12",
 "last_seen": "2026-09-22",
@@ -8539,6 +8669,16 @@
 "last_seen": "2026-09-22",
 "title": "Architecte transverse - Cybersécurité - Aix-en-Provence"
 },
+"sopra-steria-business-analyst-aeroline-aix-en-provence-d2b4ac": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Sopra Steria",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Business Analyst - Aéroline - Aix-en-Provence"
+},
 "sopra-steria-business-analyste-experimente-e-aeroline-aix-en-provence-f40588": {
 "category": "data",
 "city": "Aix-en-Provence",
@@ -8549,11 +8689,21 @@
 "last_seen": "2026-09-22",
 "title": "Business Analyste expérimenté/e - Aeroline - Aix-en-Provence"
 },
-"sopra-steria-chef-fe-de-projet-cybersecurite-aix-en-provence-cfd0c9": {
+"sopra-steria-chef-fe-de-projet-cybersecurite-aix-en-provence-ce150e": {
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
 "expired_at": null,
+"facet_slug": "eng-aix-en-provence",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Chef/fe de Projet - Cybersécurité - Aix-en-Provence"
+},
+"sopra-steria-chef-fe-de-projet-cybersecurite-aix-en-provence-cfd0c9": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Sopra Steria",
+"expired_at": "2026-09-22",
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
@@ -8689,6 +8839,16 @@
 "last_seen": "2026-09-22",
 "title": "Développeur/se .NET - BL Région - Aix-en-Provence"
 },
+"sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-e3b964": {
+"category": "eng",
+"city": "Six-Fours-Les-Plages",
+"company": "Sopra Steria",
+"expired_at": null,
+"facet_slug": "eng-six-fours-les-plages",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Développeur/se Fullstack Java/Angular - Aéroline - Toulon"
+},
 "sopra-steria-developpeur-se-java-biot-113879": {
 "category": "eng",
 "city": "Biot",
@@ -8768,6 +8928,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-15",
 "title": "Expert(e) OpenShift / GenAI  - Aix en Provence"
+},
+"sopra-steria-ingenieur-e-data-aeroline-aix-en-provence-982ee0": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Sopra Steria",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur(e) Data - Aéroline - Aix-en-Provence"
 },
 "sopra-steria-ingenieur-e-devops-aix-en-provence-710070": {
 "category": "eng",
@@ -9433,7 +9603,7 @@
 "category": "eng",
 "city": "Sophia Antipolis",
 "company": "Thales",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "eng-sophia-antipolis",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
@@ -9789,6 +9959,16 @@
 "last_seen": "2026-09-22",
 "title": "Chef de projet senior Software Embarqué H/F"
 },
+"the-adecco-group-data-engineer-f-h-f75fa6": {
+"category": "data",
+"city": "Toulon",
+"company": "The Adecco Group",
+"expired_at": null,
+"facet_slug": "data-toulon",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Data Engineer F/H"
+},
 "the-adecco-group-developpeur-cpp-temps-reel-h-f-bde577": {
 "category": "eng",
 "city": "Marignane",
@@ -9849,11 +10029,21 @@
 "last_seen": "2026-09-22",
 "title": "Ingénieur Etudes électricité H/F"
 },
-"the-adecco-group-ingenieur-systeme-h-f-d82551": {
+"the-adecco-group-ingenieur-systeme-h-f-0685ca": {
 "category": "eng",
 "city": "Toulon",
 "company": "The Adecco Group",
 "expired_at": null,
+"facet_slug": "eng-toulon",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur Système H/F"
+},
+"the-adecco-group-ingenieur-systeme-h-f-d82551": {
+"category": "eng",
+"city": "Toulon",
+"company": "The Adecco Group",
+"expired_at": "2026-09-22",
 "facet_slug": "eng-toulon",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-22",
