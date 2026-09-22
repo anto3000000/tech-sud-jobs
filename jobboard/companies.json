@@ -1376,5 +1376,20 @@
       "careers_url": "https://eiffage.wd3.myworkdayjobs.com/fr-FR/Eiffage_Careers",
       "note": "verified 2026-09-22: Workday CXS Eiffage_Careers, France facet"
     }
+  },
+  {
+    "name": "Orano",
+    "city": "Cadarache",
+    "dept": "13",
+    "category": "Nucléaire / Énergie",
+    "domain": "orano.group",
+    "ats": "avature",
+    "slug": "jobs.orano.group/fr_FR/jobs",
+    "known": {
+      "ats": "avature",
+      "slug": "jobs.orano.group/fr_FR/jobs",
+      "careers_url": "https://jobs.orano.group/fr_FR/jobs/SearchJobs/",
+      "note": "verified 2026-09-22: Avature legacy server-rendered theme (article--result cards), walked ~680 FR+world postings paginated by real page size (6/page, jobRecordsPerPage not honored), kept the 9 whose region names a PACA département (Bouches-du-Rhône, Vaucluse); adapter ats.Avature. TotalEnergies (same product) dropped: its cards only carry country, no region/city, so PACA can't be isolated without a browser."
+    }
   }
 ]
