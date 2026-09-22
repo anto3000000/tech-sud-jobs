@@ -1318,21 +1318,6 @@
     }
   },
   {
-    "name": "Airbus Helicopters",
-    "city": "Marignane",
-    "dept": "13",
-    "category": "Aéro / Défense",
-    "domain": "airbus.com",
-    "ats": "workday",
-    "slug": "ag.wd3.myworkdayjobs.com/Airbus",
-    "known": {
-      "ats": "workday",
-      "slug": "ag.wd3.myworkdayjobs.com/Airbus",
-      "careers_url": "https://ag.wd3.myworkdayjobs.com/Airbus",
-      "note": "verified 2026-09-22: Workday CXS Airbus, France facet (~620 FR postings, ~130 in the Marseille Area = Marignane)"
-    }
-  },
-  {
     "name": "Accenture",
     "city": "Sophia Antipolis",
     "dept": "06",

@@ -17550,21 +17550,6 @@
     "needs_review": false
   },
   {
-    "name": "Airbus Helicopters",
-    "domain": "airbus.com",
-    "declared_ats": "workday",
-    "declared_slug": "ag.wd3.myworkdayjobs.com/Airbus",
-    "resolved_ats": "workday",
-    "resolved_slug": "ag.wd3.myworkdayjobs.com/Airbus",
-    "careers_url": "https://ag.wd3.myworkdayjobs.com/Airbus",
-    "careers_origin": "https://ag.wd3.myworkdayjobs.com",
-    "method": "api",
-    "resolved_via": "known",
-    "evidence": "verified 2026-09-22: Workday CXS Airbus, France facet (~620 FR postings, ~130 in the Marseille Area = Marignane)",
-    "confidence": "verified",
-    "needs_review": false
-  },
-  {
     "name": "Accenture",
     "domain": "accenture.com",
     "declared_ats": "workday",
