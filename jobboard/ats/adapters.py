@@ -144,6 +144,11 @@ def _first(regexes, text):
     return None
 
 
+def _norm_ascii(s):
+    s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode()
+    return s.strip().lower()
+
+
 def _strip_html(s):
     """HTML job body -> plain text with blank-line paragraphs / "• " bullets,
     the shape render_pages.text_to_html expects (mirrors sources/wttj_enrich)."""
@@ -428,7 +433,7 @@ class SmartRecruiters(Adapter):
                                remote=loc.get("remote"),
                                published_at=j.get("releasedDate"),
                                description=(self._ad_body(slug, jid)
-                                            if (not country or self._PACA_RX.search(loc_s)) else None),
+                                            if self._PACA_RX.search(loc_s) else None),
                                raw=j))
             total = data.get("totalFound", len(out))
             offset += 100
@@ -886,6 +891,71 @@ class Talentsoft(Adapter):
         return FetchResult(self.key, slug, False, method="browser",
                            endpoint=("https://%s/" % host) if host else careers_origin,
                            note="Talentsoft per-tenant site, no keyless feed -> headless browser")
+
+
+# --------------------------------------------------------------------------- #
+#  Avature (server-rendered "legacy" theme only — Avature's newer "portalpacks"
+#  React shell doesn't render job cards into the raw HTML, so tenants that
+#  have migrated to it are out of reach for a stdlib-only fetch; keyless GET
+#  of SearchJobs/ is tried first and the adapter degrades to `browser` if the
+#  markup it expects isn't there). Walks every posting (small/mid boards,
+#  a few hundred to ~1000) and keeps only the ones whose department/region
+#  names a PACA département — the listing gives region, not city.
+#  slug is '<site-origin>/<site-path>', e.g. 'jobs.orano.group/fr_FR/jobs'.
+# --------------------------------------------------------------------------- #
+class Avature(Adapter):
+    key = "avature"
+    has_api = True
+    signatures = ("avature.net",)
+    slug_regexes = (r"([a-z0-9.-]+\.avature\.net/[a-zA-Z0-9_/-]*)",)
+    _PAGE = 50
+    _PACA_DEPTS = ("bouches-du-rhone", "alpes-maritimes", "var", "vaucluse",
+                  "hautes-alpes", "alpes-de-haute-provence",
+                  "provence-alpes-cote d'azur", "provence-alpes-cote-d-azur")
+
+    # tenants render the result card as either <article ...> (Orano) or
+    # <div ...> (TotalEnergies) with the same class -> split on the opening
+    # tag instead of matching a closing tag, which sidesteps the nesting
+    # mismatch a naive `.*?</article>` would hit on the <div> variant.
+    _CARD_RX = re.compile(r'<(?:article|div)\s+class="article article--result[^"]*"[^>]*>')
+
+    def fetch(self, slug, careers_origin=None):
+        if not slug:
+            return FetchResult(self.key, slug, False, note="no slug")
+        base = "https://%s/SearchJobs/" % slug.rstrip("/")
+        out, off = [], 0
+        while True:
+            r = get_text("%s?jobRecordsPerPage=%d&jobOffset=%d" % (base, self._PAGE, off),
+                        retries=1)
+            if not r.ok:
+                return FetchResult(self.key, slug, bool(out), out, endpoint=base,
+                                   note="HTTP %s" % r.status)
+            cards = self._CARD_RX.split(r.body)[1:]
+            if not cards:
+                if off == 0:
+                    # migrated to the JS-only "portalpacks" theme -> nothing to walk
+                    return FetchResult(self.key, slug, False, method="browser", endpoint=base,
+                                       note="no server-rendered job cards (JS-only theme?)")
+                break
+            for card in cards:
+                m = re.search(r'title[^>]*>\s*<a[^>]*href="([^"]+)"[^>]*>\s*(.*?)\s*</a>', card, re.S)
+                if not m:
+                    continue
+                loc = re.search(r'list-item-location">([^<]*)</span>', card)
+                ref = re.search(r'list-item-ref">([^<]*)</span>', card)
+                region = (loc.group(1).split(",")[0].strip() if loc else "")
+                if _norm_ascii(region) not in self._PACA_DEPTS:
+                    continue
+                out.append(Job(unescape(m.group(2)).strip(), m.group(1),
+                               location=unescape(loc.group(1)).strip() if loc else None,
+                               department=unescape(ref.group(1)).strip() if ref else None,
+                               raw={}))
+            # jobRecordsPerPage isn't honored by every tenant (some cap the
+            # real page size well below it, e.g. 6) -> keep paging by however
+            # many cards actually came back until a page is empty.
+            off += len(cards)
+        return FetchResult(self.key, slug, True, out, endpoint=base,
+                           note="0 postings" if not out else None)
 
 
 class Custom(Adapter):
@@ -1357,7 +1427,7 @@ ADAPTERS = [
     SmartRecruiters(), Personio(), Taleez(), Teamtailor(),
     Flatchr(), Talentsoft(), Workday(), Macs(), Jobs2Web(),
     WelcomeToTheJungle(), ICIMS(), Dassault3DS(), AmazonJobs(), TalentsoftRSS(),
-    DeloitteFR(), SystraWP(), InraeAlgolia(), IcimsPortal(), VinciEnergies(), PhenomWidgets(),
+    DeloitteFR(), SystraWP(), InraeAlgolia(), IcimsPortal(), VinciEnergies(), PhenomWidgets(), Avature(),
 ]
 BY_KEY = {a.key: a for a in ADAPTERS}
 BY_KEY["custom"] = Custom()
