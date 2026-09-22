@@ -478,22 +478,6 @@
     "source": "curated"
   },
   {
-    "name": "Nvidia (Lab Sophia)",
-    "city": "Sophia Antipolis",
-    "dept": "06",
-    "category": "AI / GPU Hardware",
-    "domain": "nvidia.com",
-    "ats": "greenhouse",
-    "slug": "nvidia",
-    "known": {
-      "ats": "workday",
-      "slug": "nvidia",
-      "careers_url": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
-      "note": "verified 2026-09-06: Workday (nvidia.wd5.myworkdayjobs.com)"
-    },
-    "source": "curated"
-  },
-  {
     "name": "Iad France (Pôle Digital)",
     "city": "Marseille",
     "dept": "13",
@@ -643,9 +627,9 @@
     "slug": "airbus",
     "known": {
       "ats": "workday",
-      "slug": null,
-      "careers_url": "https://ag.wd3.myworkdayjobs.com/",
-      "note": "tentative 2026-09-06: Airbus group uses Workday - unconfirmed this pass"
+      "slug": "ag.wd3.myworkdayjobs.com/Airbus",
+      "careers_url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus",
+      "note": "verified 2026-09-18 (was 'tentative, unconfirmed' since 2026-09-06): tenant 'ag', site 'Airbus' (not 'airbus'). Public CXS API confirmed, 135 postings matching 'Marseille' incl. '#CORE Technical Leader Windchill CorePDM' and several stages."
     },
     "source": "curated"
   },
@@ -1093,6 +1077,342 @@
       "slug": null,
       "careers_url": "https://itmates.fr",
       "note": "verified 2026-09-18: tiny boutique site, no job board — 'Rejoindre l'équipe' just links to a contact form. Nothing to fetch programmatically; the LinkedIn posting is likely the only way it surfaces."
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Dassault Systèmes",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Software / 3D",
+    "domain": "3ds.com",
+    "ats": "dassault",
+    "slug": null,
+    "known": {
+      "ats": "dassault",
+      "slug": null,
+      "careers_url": "https://www.3ds.com/careers/jobs",
+      "note": "verified 2026-09-21: bespoke careers site fed by public Exalead API 3ds.com/apisearch/card_search_api (card_content_type=career), France filter client-side; adapter ats.Dassault3DS"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Assystem",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Ingénierie / Nucléaire",
+    "domain": "assystem.com",
+    "ats": "smartrecruiters",
+    "slug": "Assystem",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Assystem",
+      "careers_url": "https://careers.smartrecruiters.com/Assystem",
+      "note": "verified 2026-09-21: SmartRecruiters board Assystem (~390 FR postings, country=fr)"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "TechnicAtome",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Ingénierie / Nucléaire",
+    "domain": "technicatome.com",
+    "ats": "smartrecruiters",
+    "slug": "TechnicAtome",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "TechnicAtome",
+      "careers_url": "https://careers.smartrecruiters.com/TechnicAtome",
+      "note": "verified 2026-09-21: SmartRecruiters board TechnicAtome (70 postings)"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "CEA",
+    "city": "Saint-Paul-lez-Durance",
+    "dept": "13",
+    "category": "Recherche / Énergie",
+    "domain": "cea.fr",
+    "ats": "talentsoft_rss",
+    "slug": "www.emploi.cea.fr",
+    "known": {
+      "ats": "talentsoft_rss",
+      "slug": "www.emploi.cea.fr",
+      "careers_url": "https://www.emploi.cea.fr/",
+      "note": "verified 2026-09-21: Cegid Talentsoft site with keyless RSS handler /handlers/offerRss.ashx (one feed per contract type, 20 items each); adapter ats.TalentsoftRSS"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Amazon",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "E-commerce / Cloud",
+    "domain": "amazon.jobs",
+    "ats": "amazonjobs",
+    "slug": null,
+    "known": {
+      "ats": "amazonjobs",
+      "slug": null,
+      "careers_url": "https://www.amazon.jobs/",
+      "note": "verified 2026-09-21: public https://www.amazon.jobs/en/search.json?country=FRA; adapter ats.AmazonJobs"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Pernod Ricard",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Grande conso",
+    "domain": "pernod-ricard.com",
+    "ats": "workday",
+    "slug": "pernodricard.wd3.myworkdayjobs.com/pernod-ricard",
+    "known": {
+      "ats": "workday",
+      "slug": "pernodricard.wd3.myworkdayjobs.com/pernod-ricard",
+      "careers_url": "https://pernodricard.wd3.myworkdayjobs.com/pernod-ricard",
+      "note": "verified 2026-09-21: Workday CXS API, ~290 postings worldwide"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Pennylane",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Fintech / SaaS",
+    "domain": "pennylane.com",
+    "ats": "ashby",
+    "slug": "pennylane",
+    "known": {
+      "ats": "ashby",
+      "slug": "pennylane",
+      "careers_url": "https://jobs.ashbyhq.com/pennylane",
+      "note": "verified 2026-09-21: Ashby public board (found via letmestart.fr Marseille listing)"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "lemlist",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "SaaS / Sales tech",
+    "domain": "lemlist.com",
+    "ats": "ashby",
+    "slug": "lemlist",
+    "known": {
+      "ats": "ashby",
+      "slug": "lemlist",
+      "careers_url": "https://jobs.ashbyhq.com/lemlist",
+      "note": "verified 2026-09-21: Ashby public board (found via letmestart.fr Marseille listing)"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Beavr",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Fintech / Employee benefits",
+    "domain": "beavr.com",
+    "ats": "ashby",
+    "slug": "beavr",
+    "known": {
+      "ats": "ashby",
+      "slug": "beavr",
+      "careers_url": "https://jobs.ashbyhq.com/beavr",
+      "note": "verified 2026-09-21: Ashby public board (found via letmestart.fr Marseille listing)"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Aroma-Zone",
+    "city": "Cabrières-d'Avignon",
+    "dept": "84",
+    "category": "E-commerce / Cosmétique",
+    "domain": "aroma-zone.com",
+    "ats": "teamtailor",
+    "slug": null,
+    "known": {
+      "ats": "teamtailor",
+      "slug": null,
+      "careers_url": "https://careers.aroma-zone.com/",
+      "note": "verified 2026-09-21: Teamtailor career site"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Deloitte",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Conseil",
+    "domain": "deloitte.com",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.deloitte.com/fr/fr/careers.html",
+      "note": "verified 2026-09-21: bespoke careers portal, no keyless feed found"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Wavestone",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Conseil",
+    "domain": "wavestone.com",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.wavestone.com/fr/carrieres/",
+      "note": "verified 2026-09-21: bespoke careers site, no keyless feed found"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Expleo",
+    "city": "Vitrolles",
+    "dept": "13",
+    "category": "Ingénierie / Conseil",
+    "domain": "expleo.com",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://expleo.com/global/en/careers/",
+      "note": "verified 2026-09-21: bespoke careers site, no keyless feed found"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "SYSTRA",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Ingénierie / Mobilité",
+    "domain": "systra.com",
+    "ats": "icims",
+    "slug": null,
+    "known": {
+      "ats": "icims",
+      "slug": null,
+      "careers_url": "https://www.systra.com/rejoignez-nous/",
+      "note": "verified 2026-09-21: iCIMS (browser only)"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "VINCI Energies",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Énergie / Infra",
+    "domain": "vinci-energies.com",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://www.vinci-energies.com/job-offer/",
+      "note": "verified 2026-09-21: bespoke job-offer portal, no keyless feed found"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "INRAE",
+    "city": "Le Tholonet",
+    "dept": "13",
+    "category": "Recherche",
+    "domain": "inrae.fr",
+    "ats": "custom",
+    "slug": null,
+    "known": {
+      "ats": "custom",
+      "slug": null,
+      "careers_url": "https://jobs.inrae.fr/",
+      "note": "verified 2026-09-21: bespoke careers site jobs.inrae.fr"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Thales",
+    "city": "Cannes",
+    "dept": "06",
+    "category": "Aéro / Défense / Spatial",
+    "domain": "thalesgroup.com",
+    "ats": "workday",
+    "slug": "thales.wd3.myworkdayjobs.com/Careers",
+    "known": {
+      "ats": "workday",
+      "slug": "thales.wd3.myworkdayjobs.com/Careers",
+      "careers_url": "https://thales.wd3.myworkdayjobs.com/Careers",
+      "note": "verified 2026-09-21: Workday CXS, France facet (~1 490 FR postings, worldwide board hits the 2000 window); sites Cannes, Sophia, Aix, Toulon"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Alten",
+    "city": "Vitrolles",
+    "dept": "13",
+    "category": "Ingénierie / ESN",
+    "domain": "alten.fr",
+    "ats": "smartrecruiters",
+    "slug": "Alten",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Alten",
+      "careers_url": "https://careers.smartrecruiters.com/Alten",
+      "note": "verified 2026-09-21: SmartRecruiters board Alten (~650 FR postings, ~55 PACA: Vitrolles, Valbonne, Aix)"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Eurofins",
+    "city": "Aix-en-Provence",
+    "dept": "13",
+    "category": "Biotech / Analyses",
+    "domain": "eurofins.fr",
+    "ats": "smartrecruiters",
+    "slug": "Eurofins",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Eurofins",
+      "careers_url": "https://careers.smartrecruiters.com/Eurofins",
+      "note": "verified 2026-09-21: SmartRecruiters board Eurofins (~590 FR postings, ~65 PACA)"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Artelia",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "Ingénierie / Conseil",
+    "domain": "arteliagroup.com",
+    "ats": "smartrecruiters",
+    "slug": "Artelia",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Artelia",
+      "careers_url": "https://careers.smartrecruiters.com/Artelia",
+      "note": "verified 2026-09-21: SmartRecruiters board Artelia (~330 FR postings, ~25 PACA)"
+    },
+    "source": "curated"
+  },
+  {
+    "name": "Bosch",
+    "city": "Valbonne",
+    "dept": "06",
+    "category": "Industrie / IoT",
+    "domain": "bosch.fr",
+    "ats": "smartrecruiters",
+    "slug": "Boschgroup",
+    "known": {
+      "ats": "smartrecruiters",
+      "slug": "Boschgroup",
+      "careers_url": "https://careers.smartrecruiters.com/Boschgroup",
+      "note": "verified 2026-09-21: SmartRecruiters board Boschgroup (26 FR postings, 4 PACA)"
     },
     "source": "curated"
   },
@@ -7458,22 +7778,6 @@
     ]
   },
   {
-    "name": "THALES DMS / UWS FRANCE",
-    "source": "telecom-valley",
-    "domain": "thalesgroup.com",
-    "ft_page": "https://www.telecom-valley.fr/project/thales-dms-uws-france/",
-    "tags": [
-      "B2B Enablers",
-      "BlueTech",
-      "Deeptech",
-      "DefTech",
-      "Edition de Logiciels",
-      "Grands groupes",
-      "IoT & Systèmes embarqués",
-      "Sophia Antipolis"
-    ]
-  },
-  {
     "name": "THD 06",
     "source": "telecom-valley",
     "domain": "la-fibre-06.fr",
@@ -7991,14 +8295,6 @@
     "city": "Marseille 1er Arrondissement",
     "zone": "bouches-du-rhone",
     "techno": "autres"
-  },
-  {
-    "name": "CEA",
-    "source": "aktantis",
-    "domain": "www-cadarache.cea.fr",
-    "city": "Saint-Paul lez Durance",
-    "zone": "bouches-du-rhone",
-    "techno": "autres, cyber-securite-numerique, ia-data-analytics, iot, microelectronique"
   },
   {
     "name": "Centiloc",
@@ -9407,5 +9703,2119 @@
       "Services aux entreprises"
     ],
     "city": "Plan-de-Cuques"
+  },
+  {
+    "name": "lecompromis.fr",
+    "source": "lespepitestech",
+    "domain": "lecompromis.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/lecompromisfr",
+    "tags": [
+      "saas"
+    ]
+  },
+  {
+    "name": "Mon Béguin.",
+    "source": "lespepitestech",
+    "domain": "monbeguin.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/mon-beguin"
+  },
+  {
+    "name": "33 Trucs",
+    "source": "lespepitestech",
+    "domain": "33trucs.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/33-trucs"
+  },
+  {
+    "name": "LA BAMBA",
+    "source": "lespepitestech",
+    "domain": "labamba-marseille.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/la-bamba"
+  },
+  {
+    "name": "Simimo",
+    "source": "lespepitestech",
+    "domain": "simimo.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/simimo"
+  },
+  {
+    "name": "PimpMyTrip",
+    "source": "lespepitestech",
+    "domain": "pimpmytrip.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/pimpmytrip"
+  },
+  {
+    "name": "AntelopeFi",
+    "source": "lespepitestech",
+    "domain": "antelopedao.io",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/antelopefi"
+  },
+  {
+    "name": "FOXOP",
+    "source": "lespepitestech",
+    "domain": "foxop.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/foxop"
+  },
+  {
+    "name": "HelloSafe France",
+    "source": "lespepitestech",
+    "domain": "hellosafe.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/hellosafe-france"
+  },
+  {
+    "name": "Tarpin beau",
+    "source": "lespepitestech",
+    "domain": "tarpinbeau.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/tarpin-beau-0"
+  },
+  {
+    "name": "Référencime",
+    "source": "lespepitestech",
+    "domain": "referencime.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/referencime"
+  },
+  {
+    "name": "Aikini",
+    "source": "lespepitestech",
+    "domain": "aikini.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/aikini"
+  },
+  {
+    "name": "IWEECH",
+    "source": "lespepitestech",
+    "domain": "iweech.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/iweech"
+  },
+  {
+    "name": "BAQAN Domiciliation Entreprise Marseille",
+    "source": "lespepitestech",
+    "domain": "domiciliation-entreprise-marseille.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/baqan-domiciliation-entreprise-marseille"
+  },
+  {
+    "name": "Kamp'n",
+    "source": "lespepitestech",
+    "domain": "kampn.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/kampn-0"
+  },
+  {
+    "name": "Collaboration Capital",
+    "source": "lespepitestech",
+    "domain": "collaborationcapital.org",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/collaboration-capital"
+  },
+  {
+    "name": "Doctobook",
+    "source": "lespepitestech",
+    "domain": "doctobook.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/doctobook"
+  },
+  {
+    "name": "enoé energie",
+    "source": "lespepitestech",
+    "domain": "enoe-energie.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/enoe-energie"
+  },
+  {
+    "name": "Nid de Famille",
+    "source": "lespepitestech",
+    "domain": "nid-de-famille.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/nid-de-famille"
+  },
+  {
+    "name": "QuickMS",
+    "source": "lespepitestech",
+    "domain": "quickms.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/quickms"
+  },
+  {
+    "name": "Indatable",
+    "source": "lespepitestech",
+    "domain": "indatable.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/indatable"
+  },
+  {
+    "name": "Easy-Consent",
+    "source": "lespepitestech",
+    "domain": "calimed-sante.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/easy-consent"
+  },
+  {
+    "name": "Feedis",
+    "source": "lespepitestech",
+    "domain": "feedis.io",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/feedis"
+  },
+  {
+    "name": "Ymo App",
+    "source": "lespepitestech",
+    "domain": "ymo.app",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/ymo-app"
+  },
+  {
+    "name": "Neovacom",
+    "source": "lespepitestech",
+    "domain": "freedz.io",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/neovacom"
+  },
+  {
+    "name": "Nostrum Care",
+    "source": "lespepitestech",
+    "domain": "nostrumcare.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/nostrum-care"
+  },
+  {
+    "name": "POURBOIR'",
+    "source": "lespepitestech",
+    "domain": "pourboir.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/pourboir"
+  },
+  {
+    "name": "Happy Funky Family",
+    "source": "lespepitestech",
+    "domain": "happyfunkyfamily.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/happy-funky-family"
+  },
+  {
+    "name": "Birds For Change",
+    "source": "lespepitestech",
+    "domain": "birdsforchange.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/birds-change"
+  },
+  {
+    "name": "Doinsport",
+    "source": "lespepitestech",
+    "domain": "doinsport.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/doinsport"
+  },
+  {
+    "name": "Teeneo",
+    "source": "lespepitestech",
+    "domain": "teeneo.me",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/teeneo"
+  },
+  {
+    "name": "Smartpush",
+    "source": "lespepitestech",
+    "domain": "smartpush.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/smartpush"
+  },
+  {
+    "name": "Hello My Cake",
+    "source": "lespepitestech",
+    "domain": "hellomycake.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/hello-my-cake"
+  },
+  {
+    "name": "alexandre m the frenchy and Co",
+    "source": "lespepitestech",
+    "domain": "alexandremthefrenchy.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/alexandre-m-frenchy-and-co"
+  },
+  {
+    "name": "Virtuafire",
+    "source": "lespepitestech",
+    "domain": "virtuafire.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/virtuafire"
+  },
+  {
+    "name": "MARKLIX",
+    "source": "lespepitestech",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/marklix-0"
+  },
+  {
+    "name": "Sponsokit",
+    "source": "lespepitestech",
+    "domain": "sponsokit.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/sponsokit"
+  },
+  {
+    "name": "Digital PACA",
+    "source": "lespepitestech",
+    "domain": "digital-paca.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/digital-paca"
+  },
+  {
+    "name": "Modules prestashop",
+    "source": "lespepitestech",
+    "domain": "webpoint.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/modules-prestashop"
+  },
+  {
+    "name": "My Food Story",
+    "source": "lespepitestech",
+    "domain": "myfoodstory.org",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/my-food-story-0"
+  },
+  {
+    "name": "Legalcity",
+    "source": "lespepitestech",
+    "domain": "legalcity.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/legalcity"
+  },
+  {
+    "name": "Letsignit",
+    "source": "lespepitestech",
+    "domain": "letsignit.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/letsignit-0"
+  },
+  {
+    "name": "Homki",
+    "source": "lespepitestech",
+    "domain": "homki-immobilier.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/homki"
+  },
+  {
+    "name": "Wall Of Traders",
+    "source": "lespepitestech",
+    "domain": "walloftraders.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/wall-traders"
+  },
+  {
+    "name": "Avis Vérifiés - NET REVIEWS",
+    "source": "lespepitestech",
+    "domain": "avis-verifies.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/avis-verifies-net-reviews"
+  },
+  {
+    "name": "SPORTALL",
+    "source": "lespepitestech",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/sportall"
+  },
+  {
+    "name": "DIAMIDEX",
+    "source": "lespepitestech",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/diamidex"
+  },
+  {
+    "name": "LePrixImmo",
+    "source": "lespepitestech",
+    "domain": "lepriximmo.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/lepriximmo"
+  },
+  {
+    "name": "HappyWiz",
+    "source": "lespepitestech",
+    "domain": "happywiz.co",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/happywiz"
+  },
+  {
+    "name": "Market Hours",
+    "source": "lespepitestech",
+    "domain": "markethours.net",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/market-hours"
+  },
+  {
+    "name": "I'Lab - Mister Compta",
+    "source": "lespepitestech",
+    "domain": "mistercompta.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/ilab-mister-compta"
+  },
+  {
+    "name": "BigBoat",
+    "source": "lespepitestech",
+    "domain": "bigboat.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/bigboat"
+  },
+  {
+    "name": "Atraki",
+    "source": "lespepitestech",
+    "domain": "atraki.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/atraki"
+  },
+  {
+    "name": "E2VR - E-Commerce To Virtual Reality",
+    "source": "lespepitestech",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/e2vr-e-commerce-virtual-reality"
+  },
+  {
+    "name": "Bruno",
+    "source": "lespepitestech",
+    "domain": "hibruno.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/bruno"
+  },
+  {
+    "name": "Oxyne",
+    "source": "lespepitestech",
+    "domain": "oxyne.net",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/oxyne"
+  },
+  {
+    "name": "Wisetax",
+    "source": "lespepitestech",
+    "domain": "wisetax.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/wisetax"
+  },
+  {
+    "name": "Studimmo",
+    "source": "lespepitestech",
+    "domain": "studimmo.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/studimmo"
+  },
+  {
+    "name": "Mamaz Social Food",
+    "source": "lespepitestech",
+    "domain": "mamazsocialfood.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/mamaz-social-food"
+  },
+  {
+    "name": "theWEB3",
+    "source": "lespepitestech",
+    "domain": "theweb3.org",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/theweb3"
+  },
+  {
+    "name": "MyWoodream",
+    "source": "lespepitestech",
+    "domain": "mywoodream.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/mywoodream"
+  },
+  {
+    "name": "Socios",
+    "source": "lespepitestech",
+    "domain": "socios.io",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/socios"
+  },
+  {
+    "name": "Kyklos Gaming",
+    "source": "lespepitestech",
+    "domain": "gokyklos.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/kyklos-gaming"
+  },
+  {
+    "name": "Saileazy",
+    "source": "lespepitestech",
+    "domain": "saileazy.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/saileazy"
+  },
+  {
+    "name": "DualSun",
+    "source": "lespepitestech",
+    "domain": "dualsun.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/dualsun"
+  },
+  {
+    "name": "GamerTech",
+    "source": "lespepitestech",
+    "domain": "gamertech.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/gamertech"
+  },
+  {
+    "name": "aglaïa&co",
+    "source": "lespepitestech",
+    "domain": "aglaiaco.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/aglaiaco"
+  },
+  {
+    "name": "Yapero - Livraison d'alcool",
+    "source": "lespepitestech",
+    "domain": "yapero.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/yapero-livraison-dalcool"
+  },
+  {
+    "name": "CPECF",
+    "source": "lespepitestech",
+    "domain": "cpecf.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/cpecf"
+  },
+  {
+    "name": "Easilys",
+    "source": "lespepitestech",
+    "domain": "easilys.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/easilys"
+  },
+  {
+    "name": "Albert Learning",
+    "source": "lespepitestech",
+    "domain": "albert-learning.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/albert-learning"
+  },
+  {
+    "name": "1000Applis",
+    "source": "lespepitestech",
+    "domain": "1000applis.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/1000applis"
+  },
+  {
+    "name": "JveuxDuSoleil",
+    "source": "lespepitestech",
+    "domain": "jveuxdusoleil.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/jveuxdusoleil"
+  },
+  {
+    "name": "eamtranslations",
+    "source": "lespepitestech",
+    "domain": "eamtranslations.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/eamtranslations"
+  },
+  {
+    "name": "HalioDX",
+    "source": "lespepitestech",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/haliodx"
+  },
+  {
+    "name": "Altadeva",
+    "source": "lespepitestech",
+    "domain": "altadeva.org",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/altadeva"
+  },
+  {
+    "name": "advanced intelligent mechatronics",
+    "source": "lespepitestech",
+    "domain": "ai-mechatronics.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/advanced-intelligent-mechatronics"
+  },
+  {
+    "name": "Walkoo",
+    "source": "lespepitestech",
+    "domain": "walkoocitymap.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/walkoo"
+  },
+  {
+    "name": "Hortime",
+    "source": "lespepitestech",
+    "domain": "hortime.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/hortime"
+  },
+  {
+    "name": "Tynkle",
+    "source": "lespepitestech",
+    "domain": "tynkle.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/tynkle"
+  },
+  {
+    "name": "Moneytime",
+    "source": "lespepitestech",
+    "domain": "appmoneytime.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/moneytime"
+  },
+  {
+    "name": "Equipement Randonnee",
+    "source": "lespepitestech",
+    "domain": "equipement-randonnee.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/equipement-randonnee"
+  },
+  {
+    "name": "Mon Bonus Malus",
+    "source": "lespepitestech",
+    "domain": "mon-bonus-malus.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/mon-bonus-malus"
+  },
+  {
+    "name": "Exalt3D",
+    "source": "lespepitestech",
+    "domain": "exalt3d.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/exalt3d"
+  },
+  {
+    "name": "Mon auto assure",
+    "source": "lespepitestech",
+    "domain": "mon-auto-assure.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/mon-auto-assure"
+  },
+  {
+    "name": "ViaXoft",
+    "source": "lespepitestech",
+    "domain": "viaxoft.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/viaxoft"
+  },
+  {
+    "name": "On Poste En Anglais",
+    "source": "lespepitestech",
+    "domain": "onposteenanglais.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/poste-en-anglais"
+  },
+  {
+    "name": "easyfacto",
+    "source": "lespepitestech",
+    "domain": "easyfacto.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/easyfacto"
+  },
+  {
+    "name": "Care My Car",
+    "source": "lespepitestech",
+    "domain": "caremycar.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/care-my-car"
+  },
+  {
+    "name": "Mood Messenger",
+    "source": "lespepitestech",
+    "domain": "moodmessenger.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/mood-messenger"
+  },
+  {
+    "name": "MC DIGITAL",
+    "source": "lespepitestech",
+    "domain": "lestricolores.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/mc-digital"
+  },
+  {
+    "name": "RueCentrale",
+    "source": "lespepitestech",
+    "domain": "ruecentrale.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/ruecentrale"
+  },
+  {
+    "name": "GettGaurd",
+    "source": "lespepitestech",
+    "domain": "gettguard.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/gettgaurd"
+  },
+  {
+    "name": "PAYRFECT",
+    "source": "lespepitestech",
+    "domain": "payrfect.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/payrfect"
+  },
+  {
+    "name": "Chaze",
+    "source": "lespepitestech",
+    "domain": "chaze.io",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/chaze"
+  },
+  {
+    "name": "CréaBoxDigitale",
+    "source": "lespepitestech",
+    "domain": "creaboxdigitale.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/creaboxdigitale"
+  },
+  {
+    "name": "CartelTech",
+    "source": "lespepitestech",
+    "domain": "carteltech.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/carteltech"
+  },
+  {
+    "name": "INSTACARE",
+    "source": "lespepitestech",
+    "domain": "instacare.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/instacare"
+  },
+  {
+    "name": "Natural Solutions",
+    "source": "lespepitestech",
+    "domain": "natural-solutions.eu",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/natural-solutions"
+  },
+  {
+    "name": "Koalition.co",
+    "source": "lespepitestech",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/koalitionco"
+  },
+  {
+    "name": "Click-Dive",
+    "source": "lespepitestech",
+    "domain": "click-dive.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/click-dive"
+  },
+  {
+    "name": "Cap Compta",
+    "source": "lespepitestech",
+    "domain": "capcompta.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/cap-compta"
+  },
+  {
+    "name": "A6Telecom",
+    "source": "lespepitestech",
+    "domain": "a6telecom.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/a6telecom"
+  },
+  {
+    "name": "recitsdumonde.fr",
+    "source": "lespepitestech",
+    "domain": "recitsdumonde.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/recitsdumondefr"
+  },
+  {
+    "name": "VISIOPM",
+    "source": "lespepitestech",
+    "domain": "visiopm.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/visiopm"
+  },
+  {
+    "name": "THE BABEL COMMUNITY",
+    "source": "lespepitestech",
+    "domain": "thebabelco.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/babel-community"
+  },
+  {
+    "name": "onTracks.co",
+    "source": "lespepitestech",
+    "domain": "ontracks.co",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/ontracksco"
+  },
+  {
+    "name": "IRONOVA",
+    "source": "lespepitestech",
+    "domain": "ironova.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/ironova"
+  },
+  {
+    "name": "BookmyHelo",
+    "source": "lespepitestech",
+    "domain": "bookmyhelo.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/bookmyhelo"
+  },
+  {
+    "name": "MaFiscalité.com",
+    "source": "lespepitestech",
+    "domain": "mafiscalite.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/mafiscalitecom"
+  },
+  {
+    "name": "Fin Track",
+    "source": "lespepitestech",
+    "domain": "fin-track.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/fin-track"
+  },
+  {
+    "name": "PIXXIM",
+    "source": "lespepitestech",
+    "domain": "pixxim.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/pixxim"
+  },
+  {
+    "name": "Fenotek",
+    "source": "lespepitestech",
+    "domain": "fenotek.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/fenotek"
+  },
+  {
+    "name": "iProtego",
+    "source": "lespepitestech",
+    "domain": "iprotego.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/iprotego"
+  },
+  {
+    "name": "Smart Cycle",
+    "source": "lespepitestech",
+    "domain": "smartcycle.org",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/smart-cycle"
+  },
+  {
+    "name": "KALYZÉE",
+    "source": "lespepitestech",
+    "domain": "kalyzee.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/kalyzee",
+    "tags": [
+      "LearningPlatform",
+      "transformationdigitale"
+    ]
+  },
+  {
+    "name": "Totem Mobi",
+    "source": "lespepitestech",
+    "domain": "totem-mobi.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/totem-mobi"
+  },
+  {
+    "name": "Light4Events",
+    "source": "lespepitestech",
+    "domain": "light4events.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/light4events"
+  },
+  {
+    "name": "ARDEMIS PARTNERS",
+    "source": "lespepitestech",
+    "domain": "ardemispartners.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/ardemis-partners"
+  },
+  {
+    "name": "Physio-Extrem",
+    "source": "lespepitestech",
+    "domain": "physio-extrem.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/physio-extrem"
+  },
+  {
+    "name": "Babun",
+    "source": "lespepitestech",
+    "domain": "babun.io",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/babun"
+  },
+  {
+    "name": "bb-d",
+    "source": "lespepitestech",
+    "domain": "bb-d.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/bb-d"
+  },
+  {
+    "name": "Allogarage",
+    "source": "lespepitestech",
+    "domain": "allogarage.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/allogarage"
+  },
+  {
+    "name": "LOOMUP",
+    "source": "lespepitestech",
+    "domain": "loomup.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/loomup"
+  },
+  {
+    "name": "SOCIAL MAKER",
+    "source": "lespepitestech",
+    "domain": "social-maker.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/social-maker"
+  },
+  {
+    "name": "Kazaram",
+    "source": "lespepitestech",
+    "domain": "kazaram.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/kazaram"
+  },
+  {
+    "name": "PHONOMATIK LAB",
+    "source": "lespepitestech",
+    "domain": "phonomatiklab.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/phonomatik-lab"
+  },
+  {
+    "name": "WIZWEDGE",
+    "source": "lespepitestech",
+    "domain": "wizwedge.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/wizwedge"
+  },
+  {
+    "name": "Pump Your Game",
+    "source": "lespepitestech",
+    "domain": "pumpyourgame.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/pump-your-game"
+  },
+  {
+    "name": "Zei - accélérateur d'écologie",
+    "source": "lespepitestech",
+    "domain": "zei-world.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/zei-accelerateur-decologie"
+  },
+  {
+    "name": "Applywith par Tekoway",
+    "source": "lespepitestech",
+    "domain": "applywith.io",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/applywith-par-tekoway"
+  },
+  {
+    "name": "Livre-moi(s)",
+    "source": "lespepitestech",
+    "domain": "livre-mois.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/livre-mois"
+  },
+  {
+    "name": "Evolix",
+    "source": "lespepitestech",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/evolix"
+  },
+  {
+    "name": "Opside.co",
+    "source": "lespepitestech",
+    "domain": "opside.co",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/opsideco"
+  },
+  {
+    "name": "XTIM Bionic Bird",
+    "source": "lespepitestech",
+    "domain": "mybionicbird.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/xtim-bionic-bird"
+  },
+  {
+    "name": "Fifty Talents",
+    "source": "lespepitestech",
+    "domain": "fiftytalents.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/fifty-talents"
+  },
+  {
+    "name": "Miwili",
+    "source": "lespepitestech",
+    "domain": "miwili.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/miwili"
+  },
+  {
+    "name": "Major°",
+    "source": "lespepitestech",
+    "domain": "majoration.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/majordeg"
+  },
+  {
+    "name": "Yuzu",
+    "source": "lespepitestech",
+    "domain": "yuzu.co",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/yuzu"
+  },
+  {
+    "name": "IO Software",
+    "source": "lespepitestech",
+    "domain": "io-software.fr",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/io-software"
+  },
+  {
+    "name": "Boaterfly",
+    "source": "lespepitestech",
+    "domain": "boaterfly.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/boaterfly"
+  },
+  {
+    "name": "Kaporal - Connecting Jean (pré-réservation)",
+    "source": "lespepitestech",
+    "domain": "kaporal.com",
+    "ft_page": "https://lespepitestech.com/startup-de-la-french-tech/kaporal-connecting-jean-pre-reservation"
+  },
+  {
+    "name": "SKARLETT",
+    "source": "jaimelesstartups",
+    "domain": "skarlett.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/skarlett-assurance-credit-immobilier-epargne/"
+  },
+  {
+    "name": "lokaliz",
+    "source": "jaimelesstartups",
+    "domain": "lokaliz.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/lokaliz-plateforme-vente-artisans-commercants-auto-entrepreneurs/"
+  },
+  {
+    "name": "Skiffo",
+    "source": "jaimelesstartups",
+    "domain": "skiffo.com",
+    "ft_page": "https://www.jaimelesstartups.fr/skiffo-stand-up-paddle-accessoires-garantie/"
+  },
+  {
+    "name": "Avis Flash",
+    "source": "jaimelesstartups",
+    "domain": "avis-flash.com",
+    "ft_page": "https://www.jaimelesstartups.fr/avis-flash-borne-avis-client-retail/"
+  },
+  {
+    "name": "tooltrim",
+    "source": "jaimelesstartups",
+    "domain": "tooltrim.io",
+    "ft_page": "https://www.jaimelesstartups.fr/tooltrim-outils-pour-freelance/"
+  },
+  {
+    "name": "Coachr Football",
+    "source": "jaimelesstartups",
+    "domain": "coachrfootball.com",
+    "ft_page": "https://www.jaimelesstartups.fr/coachr-football-application-entrainement-personnalise/"
+  },
+  {
+    "name": "Ops Clean",
+    "source": "jaimelesstartups",
+    "domain": "opsclean.com",
+    "ft_page": "https://www.jaimelesstartups.fr/lessive-ecologique-fabriquee-lyon/"
+  },
+  {
+    "name": "Book My Foodtruck",
+    "source": "jaimelesstartups",
+    "domain": "bookmyfoodtruck.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/book-my-foodtruck-privatiser-un-foodtruck/"
+  },
+  {
+    "name": "Korus Ticket",
+    "source": "jaimelesstartups",
+    "domain": "korusticket.com",
+    "ft_page": "https://www.jaimelesstartups.fr/korus-ticket-agrege-les-flux-billetterie-dans-une-api/"
+  },
+  {
+    "name": "Solvice",
+    "source": "jaimelesstartups",
+    "domain": "solvice.io",
+    "ft_page": "https://www.jaimelesstartups.fr/solvice-lintelligence-artificielle-au-service-des-outils-de-planification-et-organisation/"
+  },
+  {
+    "name": "Linxo Connect",
+    "source": "jaimelesstartups",
+    "domain": "linxoconnect.com",
+    "ft_page": "https://www.jaimelesstartups.fr/linxo-connect-solutions-open-banking/"
+  },
+  {
+    "name": "Sacrés Français",
+    "source": "jaimelesstartups",
+    "domain": "sacres-francais.com",
+    "ft_page": "https://www.jaimelesstartups.fr/sacres-francais-communication-specialisee-pour-les-marques-made-in-france/"
+  },
+  {
+    "name": "Calconomy",
+    "source": "jaimelesstartups",
+    "domain": "calconomy.com",
+    "ft_page": "https://www.jaimelesstartups.fr/calconomy-simulateur-de-votre-pouvoir-dachat/"
+  },
+  {
+    "name": "Atorika",
+    "source": "jaimelesstartups",
+    "domain": "atorika.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/atorika-atliers-pour-decouvrir-la-science/"
+  },
+  {
+    "name": "Wisecure",
+    "source": "jaimelesstartups",
+    "domain": "wisecure.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/wisecure-app-application-intervention-dagent-de-securite/"
+  },
+  {
+    "name": "TEE WAX",
+    "source": "jaimelesstartups",
+    "domain": "teewax.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/tee-wax-batonnet-epilation-nez-et-oreilles/"
+  },
+  {
+    "name": "Surfnow",
+    "source": "jaimelesstartups",
+    "domain": "surfnow.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/surfnow-plateforme-de-cours-de-surf/"
+  },
+  {
+    "name": "Vox Gaming",
+    "source": "jaimelesstartups",
+    "domain": "voxgaming.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/vox-gaming-plateforme-dediee-aux-jeux-video-doccasion/"
+  },
+  {
+    "name": "PULPE DE VIE",
+    "source": "jaimelesstartups",
+    "domain": "pulpedevie.com",
+    "ft_page": "https://www.jaimelesstartups.fr/pulpe-de-vie-produit-de-beaute-fait-avec-des-fruits-et-legumes-invendus/"
+  },
+  {
+    "name": "Speasly",
+    "source": "jaimelesstartups",
+    "domain": "speasly.com",
+    "ft_page": "https://www.jaimelesstartups.fr/speasly-messagerie-de-rencontre/"
+  },
+  {
+    "name": "Reussirsonoral",
+    "source": "jaimelesstartups",
+    "domain": "reussirsonoral.com",
+    "ft_page": "https://www.jaimelesstartups.fr/reussirsonoral-plateforme-de-coaching-pour-preparer-ses-examens-oraux/"
+  },
+  {
+    "name": "CloudFret",
+    "source": "jaimelesstartups",
+    "domain": "cloudfret.com",
+    "ft_page": "https://www.jaimelesstartups.fr/cloudfret-marketplace-pour-le-transport-de-marchandises/"
+  },
+  {
+    "name": "RECSI GROUP",
+    "source": "jaimelesstartups",
+    "domain": "recsi-group.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/recsi-group-agence-de-recrutement-specialisee-it/"
+  },
+  {
+    "name": "Freelance Stack",
+    "source": "jaimelesstartups",
+    "domain": "freelance-stack.io",
+    "ft_page": "https://www.jaimelesstartups.fr/freelance-stack-outils-destines-aux-freelances/"
+  },
+  {
+    "name": "Kabriol",
+    "source": "jaimelesstartups",
+    "domain": "kabriol.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/kabriol-appli-ludique-et-educative-pour-occuper-les-enfants-pendant-les-trajets-en-voiture/"
+  },
+  {
+    "name": "Smart Proposal",
+    "source": "jaimelesstartups",
+    "domain": "smartproposal.io",
+    "ft_page": "https://www.jaimelesstartups.fr/smart-proposal/"
+  },
+  {
+    "name": "MAKE ME HEALTHY",
+    "source": "jaimelesstartups",
+    "domain": "makemehealthy.fr",
+    "ft_page": "https://www.jaimelesstartups.fr/make-me-healthy-reequilibrage-alimentaire-avec-des-dieteticiens/"
+  },
+  {
+    "name": "Mantiks",
+    "source": "jaimelesstartups",
+    "domain": "mantiks.io",
+    "ft_page": "https://www.jaimelesstartups.fr/mantiks-generateur-de-liste-de-prospects/"
+  },
+  {
+    "name": "Kawa Coffee",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Alimentation & Restauration"
+    ]
+  },
+  {
+    "name": "SeFaireAider.com",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Emploi & Formation"
+    ]
+  },
+  {
+    "name": "Ideol",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Energies, industrie et robotique"
+    ]
+  },
+  {
+    "name": "Géocorail",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Energies, industrie et robotique"
+    ]
+  },
+  {
+    "name": "+Simple.fr",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Finance et assurance"
+    ]
+  },
+  {
+    "name": "Avis-Vérifiés",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Productivité et Logiciel"
+    ]
+  },
+  {
+    "name": "StarDust",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Productivité et Logiciel"
+    ]
+  },
+  {
+    "name": "Sociallymap",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Productivité et Logiciel"
+    ]
+  },
+  {
+    "name": "Data Observer",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Productivité et Logiciel"
+    ]
+  },
+  {
+    "name": "Voisins Vigilants et Solidaires",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Réseaux Sociaux et Rencontres"
+    ]
+  },
+  {
+    "name": "YUZU.co",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Réseaux Sociaux et Rencontres"
+    ]
+  },
+  {
+    "name": "CC Partners",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Retail et E-Commerce"
+    ]
+  },
+  {
+    "name": "Orangemarine",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Retail et E-Commerce"
+    ]
+  },
+  {
+    "name": "Bloomup",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Santé"
+    ]
+  },
+  {
+    "name": "GenePred",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Santé"
+    ]
+  },
+  {
+    "name": "Wooxo",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Services Juridiques et Sécurité"
+    ]
+  },
+  {
+    "name": "Trip Adékua",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Voyage, Hôtellerie et Mobilités"
+    ]
+  },
+  {
+    "name": "Rendezvouscheznous",
+    "source": "parisjetequitte",
+    "ft_page": "https://paris-jetequitte.com/startups-marseille/",
+    "tags": [
+      "Voyage, Hôtellerie et Mobilités"
+    ]
+  },
+  {
+    "name": "QR Copro",
+    "source": "marseille-innovation",
+    "domain": "qrcopro.com",
+    "ft_page": "https://www.marseille-innov.org/qr-copro/"
+  },
+  {
+    "name": "DailyBird",
+    "source": "marseille-innovation",
+    "domain": "dailybird.fr",
+    "ft_page": "https://www.marseille-innov.org/dailybird/"
+  },
+  {
+    "name": "Dart Solutions",
+    "source": "marseille-innovation",
+    "domain": "dartsolutions.tech",
+    "ft_page": "https://www.marseille-innov.org/dart-solutions/"
+  },
+  {
+    "name": "BookiBox",
+    "source": "marseille-innovation",
+    "domain": "bookibox.fr",
+    "ft_page": "https://www.marseille-innov.org/bookibox/"
+  },
+  {
+    "name": "Monsapo",
+    "source": "marseille-innovation",
+    "domain": "monsapo.com",
+    "ft_page": "https://www.marseille-innov.org/monsapo/"
+  },
+  {
+    "name": "Mar-E",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/mar-e/"
+  },
+  {
+    "name": "INOGENA",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/inogena/"
+  },
+  {
+    "name": "VitaCycles",
+    "source": "marseille-innovation",
+    "domain": "vitacycles.com",
+    "ft_page": "https://www.marseille-innov.org/vitacycles/"
+  },
+  {
+    "name": "SYNACare",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/synacare/"
+  },
+  {
+    "name": "Leads Provider",
+    "source": "marseille-innovation",
+    "domain": "leadsprovider.fr",
+    "ft_page": "https://www.marseille-innov.org/leads-provider/"
+  },
+  {
+    "name": "Fundscreener",
+    "source": "marseille-innovation",
+    "domain": "fundscreener.app",
+    "ft_page": "https://www.marseille-innov.org/fundscreener/"
+  },
+  {
+    "name": "Forward Thinking Intelligence",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/forward-thinking-intelligence/"
+  },
+  {
+    "name": "Agibat",
+    "source": "marseille-innovation",
+    "domain": "agibat.io",
+    "ft_page": "https://www.marseille-innov.org/agibat/"
+  },
+  {
+    "name": "Güstav",
+    "source": "marseille-innovation",
+    "domain": "gustav-edu.com",
+    "ft_page": "https://www.marseille-innov.org/gustav/"
+  },
+  {
+    "name": "SODAPI",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/sodapi/"
+  },
+  {
+    "name": "Padel Rumble",
+    "source": "marseille-innovation",
+    "domain": "padel-rumble.fr",
+    "ft_page": "https://www.marseille-innov.org/padel-rumble/"
+  },
+  {
+    "name": "NOVRISK.",
+    "source": "marseille-innovation",
+    "domain": "cdn.by.wonderpush.com",
+    "ft_page": "https://www.marseille-innov.org/novrisk/"
+  },
+  {
+    "name": "Firefly Fusion",
+    "source": "marseille-innovation",
+    "domain": "fireflyfusion.energy",
+    "ft_page": "https://www.marseille-innov.org/firefly-fusion/"
+  },
+  {
+    "name": "Yonnov’IA",
+    "source": "marseille-innovation",
+    "domain": "yonnovia.fr",
+    "ft_page": "https://www.marseille-innov.org/yonnovia/"
+  },
+  {
+    "name": "Inti Sud",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/inti-sud/"
+  },
+  {
+    "name": "Impact",
+    "source": "marseille-innovation",
+    "domain": "carteimpact.fr",
+    "ft_page": "https://www.marseille-innov.org/impact/"
+  },
+  {
+    "name": "Owneat",
+    "source": "marseille-innovation",
+    "domain": "owneat.fr",
+    "ft_page": "https://www.marseille-innov.org/owneat/"
+  },
+  {
+    "name": "Marty",
+    "source": "marseille-innovation",
+    "domain": "marty-app.com",
+    "ft_page": "https://www.marseille-innov.org/marty/"
+  },
+  {
+    "name": "Livtoo",
+    "source": "marseille-innovation",
+    "domain": "livtoo.fr",
+    "ft_page": "https://www.marseille-innov.org/livtoo/"
+  },
+  {
+    "name": "Arev Place",
+    "source": "marseille-innovation",
+    "domain": "arevplace.com",
+    "ft_page": "https://www.marseille-innov.org/arev-place/"
+  },
+  {
+    "name": "Provence Hydro Energie",
+    "source": "marseille-innovation",
+    "domain": "provencehydroenergie.com",
+    "ft_page": "https://www.marseille-innov.org/provence-hydro-energie/"
+  },
+  {
+    "name": "WEYB",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/weyb/"
+  },
+  {
+    "name": "3L-OPTRONICS",
+    "source": "marseille-innovation",
+    "domain": "googletagmanager.com",
+    "ft_page": "https://www.marseille-innov.org/3l-optronics/"
+  },
+  {
+    "name": "EPHIA",
+    "source": "marseille-innovation",
+    "domain": "radiologic.fr",
+    "ft_page": "https://www.marseille-innov.org/ephia/"
+  },
+  {
+    "name": "Value Adders",
+    "source": "marseille-innovation",
+    "domain": "valueadders.org",
+    "ft_page": "https://www.marseille-innov.org/value-adders/"
+  },
+  {
+    "name": "Versatik",
+    "source": "marseille-innovation",
+    "domain": "versatik.net",
+    "ft_page": "https://www.marseille-innov.org/versatik/"
+  },
+  {
+    "name": "hoopi",
+    "source": "marseille-innovation",
+    "domain": "hoopi.fr",
+    "ft_page": "https://www.marseille-innov.org/hoopi/"
+  },
+  {
+    "name": "Seniatna",
+    "source": "marseille-innovation",
+    "domain": "seniatna.fr",
+    "ft_page": "https://www.marseille-innov.org/seniatna/"
+  },
+  {
+    "name": "EverSea",
+    "source": "marseille-innovation",
+    "domain": "eversea.blue",
+    "ft_page": "https://www.marseille-innov.org/eversea/"
+  },
+  {
+    "name": "NTS TECHNICS",
+    "source": "marseille-innovation",
+    "domain": "ntstechnics.com",
+    "ft_page": "https://www.marseille-innov.org/nts-technics/"
+  },
+  {
+    "name": "AdopteUnFinancier",
+    "source": "marseille-innovation",
+    "domain": "adopteunfinancier.com",
+    "ft_page": "https://www.marseille-innov.org/adopteunfinancier/"
+  },
+  {
+    "name": "Gamercraft",
+    "source": "marseille-innovation",
+    "domain": "gamercraft.com",
+    "ft_page": "https://www.marseille-innov.org/gamercraft/"
+  },
+  {
+    "name": "People First Technologies",
+    "source": "marseille-innovation",
+    "domain": "peoplefirst-technologies.com",
+    "ft_page": "https://www.marseille-innov.org/people-first-technologies/"
+  },
+  {
+    "name": "Global Recrutement",
+    "source": "marseille-innovation",
+    "domain": "globalrecrutement.fr",
+    "ft_page": "https://www.marseille-innov.org/global-recrutement/"
+  },
+  {
+    "name": "Arts-Discovery",
+    "source": "marseille-innovation",
+    "domain": "arts-discovery.com",
+    "ft_page": "https://www.marseille-innov.org/arts-discovery/"
+  },
+  {
+    "name": "Saaba",
+    "source": "marseille-innovation",
+    "domain": "saaba.fr",
+    "ft_page": "https://www.marseille-innov.org/saaba/"
+  },
+  {
+    "name": "Good Times",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/good-times/"
+  },
+  {
+    "name": "Jack Of All Trades",
+    "source": "marseille-innovation",
+    "domain": "jack-of-all-trades.fr",
+    "ft_page": "https://www.marseille-innov.org/jack-of-all-trades/"
+  },
+  {
+    "name": "Monavoc",
+    "source": "marseille-innovation",
+    "domain": "monavoc.com",
+    "ft_page": "https://www.marseille-innov.org/monavoc/"
+  },
+  {
+    "name": "Dive and Collect",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/dive-and-collect/"
+  },
+  {
+    "name": "L’Oursin par Pierrot",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/loursin-par-pierrot/"
+  },
+  {
+    "name": "Smartpreuve",
+    "source": "marseille-innovation",
+    "domain": "smartpreuve.com",
+    "ft_page": "https://www.marseille-innov.org/smartpreuve/"
+  },
+  {
+    "name": "Katomi",
+    "source": "marseille-innovation",
+    "domain": "katomi.co",
+    "ft_page": "https://www.marseille-innov.org/katomi/"
+  },
+  {
+    "name": "Oncophysics",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/oncophysics/"
+  },
+  {
+    "name": "NICE EAT",
+    "source": "marseille-innovation",
+    "domain": "byniceeat.com",
+    "ft_page": "https://www.marseille-innov.org/nice-eat/"
+  },
+  {
+    "name": "LearnMeUp",
+    "source": "marseille-innovation",
+    "domain": "learnmeup.fr",
+    "ft_page": "https://www.marseille-innov.org/learnmeup/"
+  },
+  {
+    "name": "Exakoda",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/exakoda/"
+  },
+  {
+    "name": "La RTT Française",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/la-rtt-francaise/"
+  },
+  {
+    "name": "Inoveat",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/inoveat/"
+  },
+  {
+    "name": "DAISUN",
+    "source": "marseille-innovation",
+    "domain": "daisun.fr",
+    "ft_page": "https://www.marseille-innov.org/daisun/"
+  },
+  {
+    "name": "Les Cuisinautes",
+    "source": "marseille-innovation",
+    "domain": "lescuisinautes.fr",
+    "ft_page": "https://www.marseille-innov.org/les-cuisinautes/"
+  },
+  {
+    "name": "Hebimm",
+    "source": "marseille-innovation",
+    "domain": "cartel-of-textile.com",
+    "ft_page": "https://www.marseille-innov.org/hebimm/"
+  },
+  {
+    "name": "DTECTIO",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/dtectio/"
+  },
+  {
+    "name": "IATRAX",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/iatrax/"
+  },
+  {
+    "name": "EDUKARE",
+    "source": "marseille-innovation",
+    "domain": "edukare.fr",
+    "ft_page": "https://www.marseille-innov.org/edukare/"
+  },
+  {
+    "name": "Machou Pichou",
+    "source": "marseille-innovation",
+    "domain": "machoupichou.com",
+    "ft_page": "https://www.marseille-innov.org/machou-pichou/"
+  },
+  {
+    "name": "DIPIFIX",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/dipifix/"
+  },
+  {
+    "name": "Guest Travel Experience",
+    "source": "marseille-innovation",
+    "domain": "mydigitalhotel.com",
+    "ft_page": "https://www.marseille-innov.org/guest-travel-experience/"
+  },
+  {
+    "name": "Peoxel",
+    "source": "marseille-innovation",
+    "domain": "peoxel.com",
+    "ft_page": "https://www.marseille-innov.org/peoxel/"
+  },
+  {
+    "name": "So’nov",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/sonov/"
+  },
+  {
+    "name": "KLIPARK",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/klipark/"
+  },
+  {
+    "name": "NanoCAM",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/nanocam/"
+  },
+  {
+    "name": "Gladis",
+    "source": "marseille-innovation",
+    "domain": "gladis.io",
+    "ft_page": "https://www.marseille-innov.org/gladis/"
+  },
+  {
+    "name": "Syrengy",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/syrengy/"
+  },
+  {
+    "name": "Dispo Ménage",
+    "source": "marseille-innovation",
+    "domain": "dispomenage.fr",
+    "ft_page": "https://www.marseille-innov.org/dispo-menage/"
+  },
+  {
+    "name": "Arthrocart Biotech",
+    "source": "marseille-innovation",
+    "domain": "cellulesouches.org",
+    "ft_page": "https://www.marseille-innov.org/arthrocart-biotech/"
+  },
+  {
+    "name": "Nookids",
+    "source": "marseille-innovation",
+    "domain": "nookids.fr",
+    "ft_page": "https://www.marseille-innov.org/nookids/"
+  },
+  {
+    "name": "Deliv-UP",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/deliv-up/"
+  },
+  {
+    "name": "Ypsium",
+    "source": "marseille-innovation",
+    "domain": "ypsium.com",
+    "ft_page": "https://www.marseille-innov.org/ypsium/"
+  },
+  {
+    "name": "Sharemundo",
+    "source": "marseille-innovation",
+    "domain": "sharemundo.com",
+    "ft_page": "https://www.marseille-innov.org/sharemundo/"
+  },
+  {
+    "name": "Snob Dog Academy",
+    "source": "marseille-innovation",
+    "domain": "snobdogacademy.fr",
+    "ft_page": "https://www.marseille-innov.org/snob-dog-academy/"
+  },
+  {
+    "name": "Deeplime",
+    "source": "marseille-innovation",
+    "domain": "deeplime.io",
+    "ft_page": "https://www.marseille-innov.org/deeplime/"
+  },
+  {
+    "name": "Innovapps",
+    "source": "marseille-innovation",
+    "domain": "innovapps.fr",
+    "ft_page": "https://www.marseille-innov.org/innovapps/"
+  },
+  {
+    "name": "Fitizzy",
+    "source": "marseille-innovation",
+    "domain": "fitizzy.com",
+    "ft_page": "https://www.marseille-innov.org/fitizzy/"
+  },
+  {
+    "name": "Metals-Industry.com",
+    "source": "marseille-innovation",
+    "domain": "metals-industry.com",
+    "ft_page": "https://www.marseille-innov.org/metals-industry-com/"
+  },
+  {
+    "name": "Startbiz",
+    "source": "marseille-innovation",
+    "domain": "startbiz.fr",
+    "ft_page": "https://www.marseille-innov.org/startbiz/"
+  },
+  {
+    "name": "Nauvelis",
+    "source": "marseille-innovation",
+    "domain": "nauvelis.com",
+    "ft_page": "https://www.marseille-innov.org/nauvelis/"
+  },
+  {
+    "name": "Yucare",
+    "source": "marseille-innovation",
+    "domain": "yucare.fr",
+    "ft_page": "https://www.marseille-innov.org/yucare/"
+  },
+  {
+    "name": "Ecclesia Sound",
+    "source": "marseille-innovation",
+    "domain": "ecclesia-sound.com",
+    "ft_page": "https://www.marseille-innov.org/ecclesia-sound/"
+  },
+  {
+    "name": "Black Gust",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/black-gust/"
+  },
+  {
+    "name": "DocteurSecu",
+    "source": "marseille-innovation",
+    "domain": "direct.lc.chat",
+    "ft_page": "https://www.marseille-innov.org/docteursecu/"
+  },
+  {
+    "name": "dooiTwell",
+    "source": "marseille-innovation",
+    "domain": "dooitwell.com",
+    "ft_page": "https://www.marseille-innov.org/dooitwell/"
+  },
+  {
+    "name": "LAM",
+    "source": "marseille-innovation",
+    "domain": "lam-marseille.fr",
+    "ft_page": "https://www.marseille-innov.org/lam/"
+  },
+  {
+    "name": "LOGAXIO",
+    "source": "marseille-innovation",
+    "domain": "logaxio.com",
+    "ft_page": "https://www.marseille-innov.org/logaxio/"
+  },
+  {
+    "name": "Splouf",
+    "source": "marseille-innovation",
+    "domain": "splouf.fr",
+    "ft_page": "https://www.marseille-innov.org/splouf/"
+  },
+  {
+    "name": "Oolaga",
+    "source": "marseille-innovation",
+    "domain": "oolaga.fr",
+    "ft_page": "https://www.marseille-innov.org/oolaga/"
+  },
+  {
+    "name": "Aitivity",
+    "source": "marseille-innovation",
+    "domain": "aitivity.com",
+    "ft_page": "https://www.marseille-innov.org/aitivity/"
+  },
+  {
+    "name": "Shopinzon",
+    "source": "marseille-innovation",
+    "domain": "shopinzon.com",
+    "ft_page": "https://www.marseille-innov.org/shopinzon/"
+  },
+  {
+    "name": "Danim",
+    "source": "marseille-innovation",
+    "domain": "danim.com",
+    "ft_page": "https://www.marseille-innov.org/danim/"
+  },
+  {
+    "name": "Gabian",
+    "source": "marseille-innovation",
+    "domain": "gabian.fr",
+    "ft_page": "https://www.marseille-innov.org/gabian/"
+  },
+  {
+    "name": "ARTEAC-LAB",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/arteac-lab/"
+  },
+  {
+    "name": "Swell UP",
+    "source": "marseille-innovation",
+    "domain": "swellup.fr",
+    "ft_page": "https://www.marseille-innov.org/swell-up/"
+  },
+  {
+    "name": "Capte",
+    "source": "marseille-innovation",
+    "domain": "capte.io",
+    "ft_page": "https://www.marseille-innov.org/capte/"
+  },
+  {
+    "name": "MyTourLive.com",
+    "source": "marseille-innovation",
+    "domain": "mytourlive.com",
+    "ft_page": "https://www.marseille-innov.org/mytourlive-com/"
+  },
+  {
+    "name": "Sportskred",
+    "source": "marseille-innovation",
+    "domain": "sportskred.com",
+    "ft_page": "https://www.marseille-innov.org/sportskred/"
+  },
+  {
+    "name": "Octopush",
+    "source": "marseille-innovation",
+    "domain": "octopush.com",
+    "ft_page": "https://www.marseille-innov.org/octopush/"
+  },
+  {
+    "name": "Vesale",
+    "source": "marseille-innovation",
+    "domain": "vesale.fr",
+    "ft_page": "https://www.marseille-innov.org/vesale/"
+  },
+  {
+    "name": "Data Shopping",
+    "source": "marseille-innovation",
+    "domain": "shopizfun.com",
+    "ft_page": "https://www.marseille-innov.org/data-shopping/"
+  },
+  {
+    "name": "TogeZer",
+    "source": "marseille-innovation",
+    "domain": "togezer.travel",
+    "ft_page": "https://www.marseille-innov.org/togezer/"
+  },
+  {
+    "name": "Opsealog",
+    "source": "marseille-innovation",
+    "domain": "opsealog.com",
+    "ft_page": "https://www.marseille-innov.org/opsealog/"
+  },
+  {
+    "name": "Gwiido",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/gwiido/"
+  },
+  {
+    "name": "POOLOOP",
+    "source": "marseille-innovation",
+    "domain": "pooloop.com",
+    "ft_page": "https://www.marseille-innov.org/pooloop/"
+  },
+  {
+    "name": "Le BÔM by SweeApp",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/le-bom-by-sweeapp/"
+  },
+  {
+    "name": "Pacom1",
+    "source": "marseille-innovation",
+    "domain": "pacom1.com",
+    "ft_page": "https://www.marseille-innov.org/pacom1/"
+  },
+  {
+    "name": "AZURAD",
+    "source": "marseille-innovation",
+    "domain": "azurad.fr",
+    "ft_page": "https://www.marseille-innov.org/azurad/"
+  },
+  {
+    "name": "Fox Tripper",
+    "source": "marseille-innovation",
+    "domain": "foxtripper.aero",
+    "ft_page": "https://www.marseille-innov.org/fox-tripper/"
+  },
+  {
+    "name": "Fintel",
+    "source": "marseille-innovation",
+    "domain": "fintel.fr",
+    "ft_page": "https://www.marseille-innov.org/fintel/"
+  },
+  {
+    "name": "Prime Target",
+    "source": "marseille-innovation",
+    "domain": "primetarget.tech",
+    "ft_page": "https://www.marseille-innov.org/prime-target/"
+  },
+  {
+    "name": "Majeec",
+    "source": "marseille-innovation",
+    "domain": "majeec.com",
+    "ft_page": "https://www.marseille-innov.org/majeec/"
+  },
+  {
+    "name": "Auray Laser",
+    "source": "marseille-innovation",
+    "domain": "auraylaser.com",
+    "ft_page": "https://www.marseille-innov.org/auray-laser/"
+  },
+  {
+    "name": "Meetobiz",
+    "source": "marseille-innovation",
+    "domain": "meetobiz.fr",
+    "ft_page": "https://www.marseille-innov.org/meetobiz/"
+  },
+  {
+    "name": "MÏU",
+    "source": "marseille-innovation",
+    "domain": "miu-cup.com",
+    "ft_page": "https://www.marseille-innov.org/miu/"
+  },
+  {
+    "name": "ImmoKorner",
+    "source": "marseille-innovation",
+    "domain": "immokorner.fr",
+    "ft_page": "https://www.marseille-innov.org/immokorner/"
+  },
+  {
+    "name": "Smart Sailors",
+    "source": "marseille-innovation",
+    "domain": "smartsailors.net",
+    "ft_page": "https://www.marseille-innov.org/smart-sailors/"
+  },
+  {
+    "name": "Planktovie",
+    "source": "marseille-innovation",
+    "domain": "planktovie.biz",
+    "ft_page": "https://www.marseille-innov.org/planktovie/"
+  },
+  {
+    "name": "Maestro",
+    "source": "marseille-innovation",
+    "domain": "maestro-events.com",
+    "ft_page": "https://www.marseille-innov.org/maestro/"
+  },
+  {
+    "name": "SAAFI",
+    "source": "marseille-innovation",
+    "domain": "saafi.fr",
+    "ft_page": "https://www.marseille-innov.org/saafi/"
+  },
+  {
+    "name": "Le Présage",
+    "source": "marseille-innovation",
+    "domain": "lepresage.fr",
+    "ft_page": "https://www.marseille-innov.org/le-presage/"
+  },
+  {
+    "name": "Entre confrères",
+    "source": "marseille-innovation",
+    "domain": "entre-confreres.fr",
+    "ft_page": "https://www.marseille-innov.org/entre-confreres/"
+  },
+  {
+    "name": "FabrikMenu",
+    "source": "marseille-innovation",
+    "domain": "fabrikmenu.com",
+    "ft_page": "https://www.marseille-innov.org/fabrikmenu/"
+  },
+  {
+    "name": "Green Systems Automotives",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/green-systems-automotives/"
+  },
+  {
+    "name": "Tripperty",
+    "source": "marseille-innovation",
+    "domain": "box.tripperty.com",
+    "ft_page": "https://www.marseille-innov.org/tripperty/"
+  },
+  {
+    "name": "IDMed",
+    "source": "marseille-innovation",
+    "domain": "idmed.fr",
+    "ft_page": "https://www.marseille-innov.org/idmed/"
+  },
+  {
+    "name": "EMC3 Consulting",
+    "source": "marseille-innovation",
+    "domain": "emc3-consulting.com",
+    "ft_page": "https://www.marseille-innov.org/emc3-consulting/"
+  },
+  {
+    "name": "Essor Industrie",
+    "source": "marseille-innovation",
+    "domain": "essor-industrie.fr",
+    "ft_page": "https://www.marseille-innov.org/essor-industrie/"
+  },
+  {
+    "name": "Parisian Style",
+    "source": "marseille-innovation",
+    "domain": "parisianstyle.fr",
+    "ft_page": "https://www.marseille-innov.org/parisian-style/"
+  },
+  {
+    "name": "Jardening",
+    "source": "marseille-innovation",
+    "domain": "jardening.fr",
+    "ft_page": "https://www.marseille-innov.org/jardening/"
+  },
+  {
+    "name": "Say it",
+    "source": "marseille-innovation",
+    "domain": "waitmeup.com",
+    "ft_page": "https://www.marseille-innov.org/say-it/"
+  },
+  {
+    "name": "Oxyllium",
+    "source": "marseille-innovation",
+    "domain": "oxyllium.fr",
+    "ft_page": "https://www.marseille-innov.org/oxyllium/"
+  },
+  {
+    "name": "TU-YANG",
+    "source": "marseille-innovation",
+    "domain": "tu-yang.net",
+    "ft_page": "https://www.marseille-innov.org/tu-yang/"
+  },
+  {
+    "name": "Ettyks Environnement",
+    "source": "marseille-innovation",
+    "domain": "ettyks.com",
+    "ft_page": "https://www.marseille-innov.org/ettyks-environnement/"
+  },
+  {
+    "name": "NCC",
+    "source": "marseille-innovation",
+    "domain": "ncc-industrie.com",
+    "ft_page": "https://www.marseille-innov.org/ncc/"
+  },
+  {
+    "name": "WebForce3",
+    "source": "marseille-innovation",
+    "domain": "wf3.fr",
+    "ft_page": "https://www.marseille-innov.org/webforce3/"
+  },
+  {
+    "name": "SAFELOGY",
+    "source": "marseille-innovation",
+    "ft_page": "https://www.marseille-innov.org/safelogy/"
+  },
+  {
+    "name": "Wineven",
+    "source": "marseille-innovation",
+    "domain": "wineven.com",
+    "ft_page": "https://www.marseille-innov.org/wineven/"
+  },
+  {
+    "name": "Vigimilia",
+    "source": "marseille-innovation",
+    "domain": "vigimilia.com",
+    "ft_page": "https://www.marseille-innov.org/vigimilia/"
+  },
+  {
+    "name": "Lucenacense",
+    "source": "marseille-innovation",
+    "domain": "lucenacense.com",
+    "ft_page": "https://www.marseille-innov.org/lucenacense/"
+  },
+  {
+    "name": "3DRudder",
+    "source": "marseille-innovation",
+    "domain": "3drudder.com",
+    "ft_page": "https://www.marseille-innov.org/3drudder/"
+  },
+  {
+    "name": "Copywatch",
+    "source": "marseille-innovation",
+    "domain": "fonts.googleapis.com",
+    "ft_page": "https://www.marseille-innov.org/copywatch/"
+  },
+  {
+    "name": "XT Vision",
+    "source": "marseille-innovation",
+    "domain": "xt-vision.com",
+    "ft_page": "https://www.marseille-innov.org/xt-vision/"
+  },
+  {
+    "name": "PliciWeb Solutions",
+    "source": "marseille-innovation",
+    "domain": "pliciweb.com",
+    "ft_page": "https://www.marseille-innov.org/pliciweb-solutions/"
+  },
+  {
+    "name": "AKA Optics",
+    "source": "marseille-innovation",
+    "domain": "akaoptics.com",
+    "ft_page": "https://www.marseille-innov.org/aka-optics/"
+  },
+  {
+    "name": "Weather Measures",
+    "source": "marseille-innovation",
+    "domain": "weather-measures.fr",
+    "ft_page": "https://www.marseille-innov.org/weather-measures/"
+  },
+  {
+    "name": "0ecoimpact",
+    "source": "marseille-innovation",
+    "domain": "zero-ecoimpact.org",
+    "ft_page": "https://www.marseille-innov.org/0ecoimpact/"
+  },
+  {
+    "name": "Little Magazine",
+    "source": "marseille-innovation",
+    "domain": "lesitedelittle.com",
+    "ft_page": "https://www.marseille-innov.org/little-magazine/"
+  },
+  {
+    "name": "Provence Booster",
+    "source": "marseille-innovation",
+    "domain": "provencebooster.fr",
+    "ft_page": "https://www.marseille-innov.org/provence-booster/"
+  },
+  {
+    "name": "Pure Moment",
+    "source": "marseille-innovation",
+    "domain": "pure-moment.com",
+    "ft_page": "https://www.marseille-innov.org/pure-moment/"
+  },
+  {
+    "name": "Zephy Science",
+    "source": "marseille-innovation",
+    "domain": "zephy-science.com",
+    "ft_page": "https://www.marseille-innov.org/zephy-science/"
+  },
+  {
+    "name": "Animate",
+    "source": "marseille-innovation",
+    "domain": "animate.fr",
+    "ft_page": "https://www.marseille-innov.org/animate/"
+  },
+  {
+    "name": "E-Messina Communication",
+    "source": "marseille-innovation",
+    "domain": "e-messina.com",
+    "ft_page": "https://www.marseille-innov.org/e-messina-communication/"
+  },
+  {
+    "name": "Eazieer",
+    "source": "marseille-innovation",
+    "domain": "eazieer.com",
+    "ft_page": "https://www.marseille-innov.org/eazieer/"
+  },
+  {
+    "name": "Voisins Vigilants",
+    "source": "marseille-innovation",
+    "domain": "voisinsvigilants.org",
+    "ft_page": "https://www.marseille-innov.org/voisins-vigilants/"
+  },
+  {
+    "name": "Honikou Games",
+    "source": "marseille-innovation",
+    "domain": "honikougames.com",
+    "ft_page": "https://www.marseille-innov.org/honikou-games/"
+  },
+  {
+    "name": "ShopyMind",
+    "source": "marseille-innovation",
+    "domain": "shopimind.com",
+    "ft_page": "https://www.marseille-innov.org/shopymind/"
+  },
+  {
+    "name": "Univers Led",
+    "source": "marseille-innovation",
+    "domain": "univers-led.fr",
+    "ft_page": "https://www.marseille-innov.org/univers-led/"
+  },
+  {
+    "name": "Beretech",
+    "source": "marseille-innovation",
+    "domain": "beretech.fr",
+    "ft_page": "https://www.marseille-innov.org/beretech/"
+  },
+  {
+    "name": "Capsul Protect",
+    "source": "marseille-innovation",
+    "domain": "capsulprotect.com",
+    "ft_page": "https://www.marseille-innov.org/capsul-protect/"
+  },
+  {
+    "name": "Mondevis.com",
+    "source": "marseille-innovation",
+    "domain": "mondevis.com",
+    "ft_page": "https://www.marseille-innov.org/mondevis-com/"
   }
 ]

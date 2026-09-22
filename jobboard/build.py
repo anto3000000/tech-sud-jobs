@@ -260,7 +260,7 @@ def load_ats():
         if cat is None:
             continue
         city = None
-        m = re.split(r"[,/(]", loc)
+        m = re.split(r"[,/(|]", loc)
         # multi-site postings ("Blagnac, Aix-en-Provence, Toulouse"): show the PACA site
         m = [x for x in m if _is_paca(x)] or m
         if m and m[0].strip():

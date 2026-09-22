@@ -11,6 +11,10 @@ Inputs:
     jobboard/data/companies.telecom-valley.json   Telecom Valley cluster, Sophia (~125)
     jobboard/data/companies.aktantis.json         Aktantis / ex-Pôle SCS, PACA deeptech (~275)
     jobboard/data/companies.medinsoft.json        Medinsoft, Marseille/Aix (few — collection barely live)
+    jobboard/data/companies.lespepitestech.json   Les Pépites Tech, Marseille startups (~177)
+    jobboard/data/companies.jaimelesstartups.json J'aime les startups, Marseille (40, site's cap)
+    jobboard/data/companies.parisjetequitte.json Paris, je te quitte editorial list (~27, no domains)
+    jobboard/data/companies.marseille-innovation.json  Marseille Innovation incubator startups (~299)
 
 De-dupe key = normalized registrable domain, then normalized name. On a clash
 the earlier source wins (curated first, so its verified `known` block is kept);
@@ -33,6 +37,10 @@ DEFAULT_ANNUAIRES = [
     os.path.join(DATA, "companies.telecom-valley.json"),
     os.path.join(DATA, "companies.aktantis.json"),
     os.path.join(DATA, "companies.medinsoft.json"),
+    os.path.join(DATA, "companies.lespepitestech.json"),
+    os.path.join(DATA, "companies.jaimelesstartups.json"),
+    os.path.join(DATA, "companies.parisjetequitte.json"),
+    os.path.join(DATA, "companies.marseille-innovation.json"),
 ]
 # metadata worth carrying into the resolver input (everything else is dropped)
 CARRY = ("ft_page", "ft_slug", "tags", "note", "city", "zone", "techno")
@@ -56,7 +64,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--curated", default=os.path.join(HERE, "companies.json"))
     ap.add_argument("--annuaire", nargs="*", default=None,
-                    help="directory dumps to merge (default: the 5 known layer-2 files)")
+                    help="directory dumps to merge (default: the known layer-2 files)")
     ap.add_argument("-o", "--output", default=os.path.join(DATA, "companies.all.json"))
     args = ap.parse_args()
 
