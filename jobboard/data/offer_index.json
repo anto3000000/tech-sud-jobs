@@ -9,6 +9,26 @@
 "last_seen": "2026-09-19",
 "title": "Ingénieur technicien support H/F"
 },
+"accenture-architecte-solution-technique-plm-f-h-marseille-00355c": {
+"category": "eng",
+"city": "Vitrolles",
+"company": "Accenture",
+"expired_at": null,
+"facet_slug": "eng-vitrolles",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Architecte Solution / Technique PLM F/H - Marseille"
+},
+"accenture-consultant-fonctionnel-plm-3dexperience-f-h-marseille-d1bfc8": {
+"category": "tech-adjacent",
+"city": "Vitrolles",
+"company": "Accenture",
+"expired_at": null,
+"facet_slug": "tech-adjacent",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Consultant Fonctionnel PLM/3DExperience F/H - Marseille"
+},
 "accenture-france-product-owner-f-h-f296af": {
 "category": "product",
 "city": "Biot",
@@ -28,6 +48,16 @@
 "first_seen": "2026-09-11",
 "last_seen": "2026-09-18",
 "title": "QA Engineer - H/F"
+},
+"accenture-ingenieur-logiciel-junior-f-h-5a4cf0": {
+"category": "eng",
+"city": "Biot",
+"company": "Accenture",
+"expired_at": null,
+"facet_slug": "eng-biot",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur logiciel junior - F/H"
 },
 "achat-solutions-ingenieur-qa-automatisation-10fa79": {
 "category": "eng",
@@ -129,6 +159,176 @@
 "last_seen": "2026-09-22",
 "title": "Ingénieur systèmes et réseaux H/F"
 },
+"airbus-helicopters-2027-amelioration-continue-developpement-et-deploie-3a2074": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "2027 - Amélioration continue: développement et déploiement numérique (F/H)"
+},
+"airbus-helicopters-2027-ingenieur-logiciel-embarque-systemes-d-armes-f-c261aa": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "2027 - Ingénieur Logiciel Embarqué – Systèmes d'Armes (f/h)"
+},
+"airbus-helicopters-airbus-protect-architecte-cybersecurite-d-entrepris-cafaef": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Airbus Protect - Architecte Cybersécurité d'entreprise Senior - (H/F)"
+},
+"airbus-helicopters-architecte-systemes-f-h-806c1a": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Architecte systèmes (F/H)"
+},
+"airbus-helicopters-architecte-systemes-sur-le-perimetre-helionix-h-f-7f447b": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Architecte systèmes sur le périmètre Helionix (H/F)"
+},
+"airbus-helicopters-cifre-developpement-d-une-methode-probabiliste-pour-00ac93": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "CIFRE Développement d'une méthode probabiliste pour le comportement en fatigue de pièces de transmission de puissance d'hélicoptères"
+},
+"airbus-helicopters-core-developpeur-im-solutions-industrielles-f-h-7b0bf4": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#CoRe Développeur IM - Solutions Industrielles (F/H)"
+},
+"airbus-helicopters-digital-campus-solution-data-architect-d-f-m-298073": {
+"category": "data",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#DIGITAL CAMPUS - Solution & Data Architect (d/f/m)"
+},
+"airbus-helicopters-digitalcampus-ddms-it-operation-specialist-devops-f-9091a0": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#DIGITALCAMPUS #DDMS IT Operation Specialist DevOps (F/M)"
+},
+"airbus-helicopters-digitalcampus-developpeur-mes-apriso-solutions-indu-4d6b6e": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#DIGITALCAMPUS Développeur MES Apriso - Solutions Industrielles (F/H)"
+},
+"airbus-helicopters-digitalcampus-platform-engineer-infrastructure-auto-7290f6": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#DIGITALCAMPUS Platform Engineer (Infrastructure & Automation)"
+},
+"airbus-helicopters-digitalcampus-sap-product-manager-production-f-m-0ef933": {
+"category": "product",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "product-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#DigitalCampus SAP Product Manager Production (f/m)"
+},
+"airbus-helicopters-embedded-software-database-engineer-m-f-8f2c25": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Embedded Software: Database engineer (m/f)"
+},
+"airbus-helicopters-et19a-responsable-developpement-systemes-embarques-62fc9b": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#ET19A Responsable Développement Systèmes Embarqués (F/H)"
+},
+"airbus-helicopters-et20-ingenieur-securite-et-fiabilite-senior-f-h-51beb3": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#ET20 Ingénieur Sécurité et Fiabilité Senior (F/H)"
+},
+"airbus-helicopters-et20r-ingenieur-developpement-cnd-aeronautique-nive-d6f77b": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#ET20R Ingénieur développement CND Aéronautique - Niveau 2 et 3 (f/h)"
+},
+"airbus-helicopters-lead-data-architect-m-f-f1976f": {
+"category": "data",
+"city": "Marignane",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "data-marignane",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Lead Data Architect (M/F)"
+},
 "airbus-helicopters-logiciel-r-d-2027-amelioration-continue-developpeme-f05b48": {
 "category": "eng",
 "city": "Marseille Area",
@@ -179,6 +379,16 @@
 "last_seen": "2026-09-22",
 "title": "Airbus Protect - Architecte Cybersécurité d'entreprise Senior - (H/F)"
 },
+"airbus-helicopters-logiciel-r-d-architecte-systemes-f-h-e92b55": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Architecte systèmes (F/H)"
+},
 "airbus-helicopters-logiciel-r-d-architecte-systemes-sur-le-perimetre-h-856d4b": {
 "category": "eng",
 "city": "Marseille Area",
@@ -188,6 +398,16 @@
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-22",
 "title": "Architecte systèmes sur le périmètre Helionix (H/F)"
+},
+"airbus-helicopters-logiciel-r-d-cifre-developpement-d-une-methode-prob-1d3bb3": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "CIFRE Développement d'une méthode probabiliste pour le comportement en fatigue de pièces de transmission de puissance d'hélicoptères"
 },
 "airbus-helicopters-logiciel-r-d-core-developpeur-im-solutions-industri-fcb454": {
 "category": "eng",
@@ -199,6 +419,26 @@
 "last_seen": "2026-09-22",
 "title": "#CoRe Développeur IM - Solutions Industrielles (F/H)"
 },
+"airbus-helicopters-logiciel-r-d-digital-campus-solution-data-architect-1a185e": {
+"category": "data",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "data",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#DIGITAL CAMPUS - Solution & Data Architect (d/f/m)"
+},
+"airbus-helicopters-logiciel-r-d-digitalcampus-ddms-it-operation-specia-031650": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#DIGITALCAMPUS #DDMS IT Operation Specialist DevOps (F/M)"
+},
 "airbus-helicopters-logiciel-r-d-digitalcampus-developpeur-mes-apriso-s-bf22a2": {
 "category": "eng",
 "city": "Marseille Area",
@@ -209,15 +449,35 @@
 "last_seen": "2026-09-22",
 "title": "#DIGITALCAMPUS Développeur MES Apriso - Solutions Industrielles (F/H)"
 },
+"airbus-helicopters-logiciel-r-d-digitalcampus-platform-engineer-infras-bc27d3": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "#DIGITALCAMPUS Platform Engineer (Infrastructure & Automation)"
+},
 "airbus-helicopters-logiciel-r-d-digitalcampus-sap-product-manager-prod-068701": {
 "category": "product",
 "city": "Marseille Area",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "expired_at": null,
-"facet_slug": "product",
+"facet_slug": "product-marseille-area",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-22",
 "title": "#DigitalCampus SAP Product Manager Production (f/m)"
+},
+"airbus-helicopters-logiciel-r-d-embedded-software-database-engineer-m-929288": {
+"category": "eng",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Embedded Software: Database engineer (m/f)"
 },
 "airbus-helicopters-logiciel-r-d-et19a-responsable-developpement-system-e8babb": {
 "category": "eng",
@@ -249,6 +509,16 @@
 "last_seen": "2026-09-22",
 "title": "#ET20R Ingénieur développement CND Aéronautique - Niveau 2 et 3 (f/h)"
 },
+"airbus-helicopters-logiciel-r-d-lead-data-architect-m-f-84c4aa": {
+"category": "data",
+"city": "Marignane",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "data-marignane",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Lead Data Architect (M/F)"
+},
 "airbus-helicopters-logiciel-r-d-moa-part-145-compliance-monitoring-man-da6780": {
 "category": "tech-adjacent",
 "city": "Marseille Area",
@@ -258,6 +528,36 @@
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-22",
 "title": "MOA/PART 145 Compliance Monitoring Manager M/F"
+},
+"airbus-helicopters-logiciel-r-d-sap-product-manager-production-m-f-bd0411": {
+"category": "product",
+"city": "Marseille Area",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "product-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "SAP Product Manager Production (M/F)"
+},
+"airbus-helicopters-moa-part-145-compliance-monitoring-manager-m-f-c5aa0d": {
+"category": "tech-adjacent",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "tech-adjacent",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "MOA/PART 145 Compliance Monitoring Manager M/F"
+},
+"airbus-helicopters-sap-product-manager-production-m-f-cd081c": {
+"category": "product",
+"city": "Marseille Area",
+"company": "Airbus Helicopters",
+"expired_at": null,
+"facet_slug": "product-marseille-area",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "SAP Product Manager Production (M/F)"
 },
 "aircall-senior-data-engineer-real-time-analytics-397fa3": {
 "category": "data",
@@ -923,7 +1223,7 @@
 "category": "eng",
 "city": "Vitrolles",
 "company": "Alten",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "eng-vitrolles",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-22",
@@ -2484,7 +2784,7 @@
 "city": "Marignane",
 "company": "CGI",
 "expired_at": null,
-"facet_slug": "data",
+"facet_slug": "data-marignane",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
 "title": "Business Analyst F/H"
@@ -2783,17 +3083,17 @@
 "category": "product",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-21",
+"expired_at": null,
 "facet_slug": "product-marseille",
 "first_seen": "2026-09-20",
-"last_seen": "2026-09-20",
+"last_seen": "2026-09-22",
 "title": "Digital Project Officer / Product Owner - Ports & Terminals"
 },
 "cma-cgm-digital-project-officer-product-owner-ports-terminals-b2eda5": {
 "category": "product",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": null,
+"expired_at": "2026-09-22",
 "facet_slug": "product-marseille",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-22",
@@ -6538,6 +6838,56 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-22",
 "title": "Tech lead Java (H/F)"
+},
+"orange-ingenieur-developpeur-front-h-f-b6a920": {
+"category": "eng",
+"city": "Biot",
+"company": "Orange",
+"expired_at": null,
+"facet_slug": "eng-biot",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur Développeur Front H/F"
+},
+"orange-ingenieur-developpeur-full-stack-h-f-69713b": {
+"category": "eng",
+"city": "Biot",
+"company": "Orange",
+"expired_at": null,
+"facet_slug": "eng-biot",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur Développeur Full Stack H/F"
+},
+"orange-ingenieur-qa-testeur-3d5456": {
+"category": "eng",
+"city": "Biot",
+"company": "Orange",
+"expired_at": null,
+"facet_slug": "eng-biot",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur QA testeur"
+},
+"orange-ingenieur-qualite-et-affaires-reglementaires-f-h-e7272a": {
+"category": "eng",
+"city": "Marseille 8E Arrondissement",
+"company": "Orange",
+"expired_at": null,
+"facet_slug": "eng",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur Qualité et Affaires Règlementaires F/H"
+},
+"orange-ingenieur-securite-h-f-6fee96": {
+"category": "eng",
+"city": "Marseille",
+"company": "Orange",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-09-22",
+"last_seen": "2026-09-22",
+"title": "Ingénieur Sécurité H/F"
 },
 "panier-des-sens-chef-de-projet-it-erp-h-f-edd289": {
 "category": "data",
