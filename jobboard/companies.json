@@ -1316,5 +1316,65 @@
       "careers_url": "https://careers.smartrecruiters.com/Boschgroup",
       "note": "verified 2026-09-21: SmartRecruiters board Boschgroup (26 FR postings, 4 PACA)"
     }
+  },
+  {
+    "name": "Airbus Helicopters",
+    "city": "Marignane",
+    "dept": "13",
+    "category": "Aéro / Défense",
+    "domain": "airbus.com",
+    "ats": "workday",
+    "slug": "ag.wd3.myworkdayjobs.com/Airbus",
+    "known": {
+      "ats": "workday",
+      "slug": "ag.wd3.myworkdayjobs.com/Airbus",
+      "careers_url": "https://ag.wd3.myworkdayjobs.com/Airbus",
+      "note": "verified 2026-09-22: Workday CXS Airbus, France facet (~620 FR postings, ~130 in the Marseille Area = Marignane)"
+    }
+  },
+  {
+    "name": "Accenture",
+    "city": "Sophia Antipolis",
+    "dept": "06",
+    "category": "ESN / Conseil",
+    "domain": "accenture.com",
+    "ats": "workday",
+    "slug": "accenture.wd103.myworkdayjobs.com/AccentureCareers",
+    "known": {
+      "ats": "workday",
+      "slug": "accenture.wd103.myworkdayjobs.com/AccentureCareers",
+      "careers_url": "https://accenture.wd103.myworkdayjobs.com/AccentureCareers",
+      "note": "verified 2026-09-22: Workday CXS AccentureCareers, France facet (~185 FR postings; city only in bulletFields)"
+    }
+  },
+  {
+    "name": "Orange",
+    "city": "Biot",
+    "dept": "06",
+    "category": "Télécoms",
+    "domain": "orange.com",
+    "ats": "phenom",
+    "slug": "orange.jobs",
+    "known": {
+      "ats": "phenom",
+      "slug": "orange.jobs",
+      "careers_url": "https://orange.jobs/fr/fr",
+      "note": "verified 2026-09-22: Phenom People keyless POST /widgets (ddoKey=refineSearch), France ~305 postings, ~15 PACA (Biot, Fuveau, Marseille); adapter ats.PhenomWidgets"
+    }
+  },
+  {
+    "name": "Eiffage",
+    "city": "Marseille",
+    "dept": "13",
+    "category": "BTP / Énergie",
+    "domain": "eiffage.com",
+    "ats": "workday",
+    "slug": "eiffage.wd3.myworkdayjobs.com/Eiffage_Careers",
+    "known": {
+      "ats": "workday",
+      "slug": "eiffage.wd3.myworkdayjobs.com/Eiffage_Careers",
+      "careers_url": "https://eiffage.wd3.myworkdayjobs.com/fr-FR/Eiffage_Careers",
+      "note": "verified 2026-09-22: Workday CXS Eiffage_Careers, France facet"
+    }
   }
 ]

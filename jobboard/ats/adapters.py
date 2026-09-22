@@ -570,6 +570,12 @@ class Workday(Adapter):
     FR_FACETS = {
         "thales.wd3.myworkdayjobs.com/Careers":
             {"locationCountry": ["54c5b6971ffb4bf0b116fe7651ec789a"]},
+        "ag.wd3.myworkdayjobs.com/Airbus":
+            {"locationCountry": ["54c5b6971ffb4bf0b116fe7651ec789a"]},
+        "eiffage.wd3.myworkdayjobs.com/Eiffage_Careers":
+            {"locationCountry": ["54c5b6971ffb4bf0b116fe7651ec789a"]},
+        "accenture.wd103.myworkdayjobs.com/AccentureCareers":
+            {"locationCountry": ["54c5b6971ffb4bf0b116fe7651ec789a"]},
     }
     _PACA_RX = re.compile(r"aix|marseille|nice\b|sophia|antipolis|toulon|six-fours|biot|valbonne|"
                           r"provence|cannes|antibes|avignon|vitrolles|aubagne|gardanne|cadarache|"
@@ -618,7 +624,8 @@ class Workday(Adapter):
                     continue
                 seen.add(jurl)
                 new += 1
-                loc = p.get("locationsText") or ""
+                # some tenants (Accenture) omit locationsText: city is in bulletFields
+                loc = p.get("locationsText") or ", ".join((p.get("bulletFields") or [])[1:])
                 desc = self._detail(host, tenant, site, ext) if detail_rx.search(loc) else None
                 jobs.append(Job(p.get("title"), jurl, location=loc,
                                 published_at=p.get("postedOn"), description=desc, raw=p))
@@ -1297,12 +1304,60 @@ def _iso_ms(v):
 
 
 # order matters for detection: most specific / least ambiguous first
+# --------------------------------------------------------------------------- #
+#  Phenom People career sites (orange.jobs). Keyless POST /widgets
+#  (ddoKey=refineSearch) returns every posting with structured city/country;
+#  we ask for France only. slug is the site host (orange.jobs).
+# --------------------------------------------------------------------------- #
+class PhenomWidgets(Adapter):
+    key = "phenom"
+    has_api = True
+    signatures = ("phenompeople.com", "phenom-footer")
+
+    def _query(self, slug, off, size):
+        return {"lang": "fr_fr", "deviceType": "desktop", "country": "fr",
+                "pageName": "search-results", "ddoKey": "refineSearch", "sortBy": "",
+                "subsearch": "", "from": off, "jobs": True, "counts": True,
+                "all_fields": ["category", "country", "state", "city", "type"],
+                "pageType": "landingPage", "size": size, "clearAll": False,
+                "jdsource": "facets", "isSliderEnable": False, "pageId": "page11",
+                "siteType": "external", "location": "", "keywords": "", "global": True,
+                "selected_fields": {"country": ["FRANCE"]},
+                "sort": {"order": "desc", "field": "postedDate"}, "locationData": {}}
+
+    def fetch(self, slug, careers_origin=None):
+        url = "https://%s/widgets" % slug
+        out, off = [], 0
+        while True:
+            r = post_json(url, self._query(slug, off, 100), retries=1)
+            if not r.ok:
+                return FetchResult(self.key, slug, bool(out), out, endpoint=url,
+                                   note="HTTP %s" % r.status)
+            data = (r.json().get("refineSearch") or {})
+            jobs = (data.get("data") or {}).get("jobs") or []
+            for j in jobs:
+                seq = j.get("jobSeqNo")
+                city = (j.get("city") or "")
+                city = "" if "SPÉCIFIÉ" in city.upper() else city.title()
+                out.append(Job(
+                    j.get("title"), "https://%s/fr/fr/job/%s" % (slug, seq) if seq else None,
+                    location=("%s, France" % city) if city else None,
+                    department=j.get("category"), contract=j.get("contractType"),
+                    published_at=j.get("postedDate"),
+                    description=_body(j.get("descriptionTeaser")), raw={}))
+            off += len(jobs)
+            if not jobs or off >= int(data.get("totalHits") or 0):
+                break
+        return FetchResult(self.key, slug, True, out, endpoint=url,
+                           note="0 postings" if not out else None)
+
+
 ADAPTERS = [
     Greenhouse(), Lever(), Ashby(), Recruitee(), Workable(),
     SmartRecruiters(), Personio(), Taleez(), Teamtailor(),
     Flatchr(), Talentsoft(), Workday(), Macs(), Jobs2Web(),
     WelcomeToTheJungle(), ICIMS(), Dassault3DS(), AmazonJobs(), TalentsoftRSS(),
-    DeloitteFR(), SystraWP(), InraeAlgolia(), IcimsPortal(), VinciEnergies(),
+    DeloitteFR(), SystraWP(), InraeAlgolia(), IcimsPortal(), VinciEnergies(), PhenomWidgets(),
 ]
 BY_KEY = {a.key: a for a in ADAPTERS}
 BY_KEY["custom"] = Custom()
