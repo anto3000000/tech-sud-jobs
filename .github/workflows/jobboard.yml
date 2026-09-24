@@ -91,6 +91,7 @@ jobs:
                   jobboard/data/francetravail_paca.json \
                   jobboard/data/alerts_state.json \
                   jobboard/data/linkedin_state.json \
+                  jobboard/data/history.jsonl \
                   jobboard/site/jobs.json
           if git diff --cached --quiet; then
             echo "feed unchanged"

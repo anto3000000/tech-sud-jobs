@@ -40,6 +40,10 @@ echo "::group::merge + build feed"
 python3 jobboard/build.py
 echo "::endgroup::"
 
+echo "::group::record daily history"
+python3 jobboard/history.py record
+echo "::endgroup::"
+
 echo "::group::company profiles (layer 4)"
 python3 jobboard/build_companies.py
 echo "::endgroup::"
