@@ -218,6 +218,7 @@ def directory_extras(name, domain, dirs):
     if not rows:
         rows = by_name.get(_slug(name), [])
     ecosystems, tags, ats, city, dept = [], [], None, None, None
+    dir_domain, category = None, None
     for c in rows:
         lab = ECOSYSTEM.get(c.get("source"))
         if lab and lab not in ecosystems:
@@ -228,6 +229,10 @@ def directory_extras(name, domain, dirs):
         ats = ats or (c.get("known") or {}).get("ats") or c.get("ats")
         city = city or c.get("city")
         dept = dept or c.get("dept")
+        dir_domain = dir_domain or c.get("domain")
+        # hand-curated one-liner (e.g. "Healthtech / Scaleup") — only the
+        # `curated` source carries it; annuaire imports don't set it
+        category = category or (c.get("category") if c.get("source") == "curated" else None)
     r = resolved.get(_slug(name)) or (resolved.get(domain.lower().lstrip("www."))
                                       if domain else None)
     careers_url = None
@@ -241,6 +246,8 @@ def directory_extras(name, domain, dirs):
         "careers_url": careers_url,
         "dir_city": city,
         "dept": dept,
+        "domain": dir_domain,
+        "category": category,
     }
 
 
@@ -343,6 +350,7 @@ def main():
                 profile = load_wttj_org_for(j)
                 if profile:
                     break
+        has_wttj_profile = bool(profile)
 
         logo = (profile or {}).get("logo") or next(
             (j.get("logo") for j in cjobs if j.get("logo")), None)
@@ -350,13 +358,32 @@ def main():
         if profile and profile.get("socials", {}).get("website"):
             m = re.search(r"https?://([^/]+)", profile["socials"]["website"])
             if m:
-                domain = m.group(1).lstrip("www.")
+                domain = re.sub(r"^www\.", "", m.group(1).lower())
         extras = directory_extras(name, domain, dirs)
+        # WTTJ-less companies (the majority — anything sourced straight from an
+        # ATS) have no `profile`, hence no domain/logo/description above: fall
+        # back to the hand-curated directory (jobboard/companies.json) for the
+        # domain, then derive a logo from it so a company page is never blank.
+        domain = domain or extras.get("domain")
+        if not logo and domain:
+            logo = "https://logo.clearbit.com/%s?size=160" % domain
 
         agg = aggregate(cjobs, now)
         city = (agg["by_city"] and next(iter(agg["by_city"]))) or extras.get("dir_city") \
             or (profile or {}).get("hq_city")
         sources = sorted({j.get("source") for j in cjobs if j.get("source")})
+
+        if not (profile or {}).get("description"):
+            # no WTTJ bio on file — a short, factual one-liner from data we do
+            # have, so every company page still carries a summary
+            bits = ["%d poste%s ouvert%s" % (
+                len(cjobs), "s" if len(cjobs) > 1 else "", "s" if len(cjobs) > 1 else "")]
+            if city:
+                bits.append("à %s" % city if city != "Remote" else "en télétravail")
+            cat_suffix = " (%s)" % extras["category"] if extras.get("category") else ""
+            auto_desc = "%s%s recrute dans la tech en PACA : %s." % (
+                name, cat_suffix, ", ".join(bits))
+            profile = dict(profile or {}, description=auto_desc)
 
         rec = {
             "slug": slug,
@@ -366,6 +393,7 @@ def main():
             "domain": domain,
             "sources": sources,
             "profile": profile,
+            "category": extras.get("category"),
             "ecosystems": extras["ecosystems"],
             "tags": extras["tags"],
             "ats": extras["ats"],
@@ -376,7 +404,7 @@ def main():
         }
         rec.update(agg)
         out.append(rec)
-        with_profile += bool(profile)
+        with_profile += has_wttj_profile
         with_eco += bool(extras["ecosystems"])
 
     # slug collisions (rare) -> suffix with a short hash of the key

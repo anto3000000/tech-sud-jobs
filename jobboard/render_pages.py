@@ -169,6 +169,21 @@ def slugify(s):
     return re.sub(r"-{2,}", "-", s)
 
 
+def _logo_html(src, name, css_class):
+    """<img> with a `css_class` + `css_class ph` (letter placeholder) fallback.
+    Some logos (e.g. the Clearbit-by-domain fallback for ATS-only companies,
+    see build_companies.py) can 404 for a given domain — swap to the letter
+    tile on error instead of leaving a broken image icon."""
+    letter = (name or "?")[:1]
+    if not src:
+        return '<div class="%s ph">%s</div>' % (css_class, esc(letter))
+    onerror = ("this.replaceWith(Object.assign(document.createElement('div'),"
+               "{className:%s,textContent:%s}))") % (
+        json.dumps("%s ph" % css_class), json.dumps(letter))
+    return '<img class="%s" src="%s" alt="%s" loading="lazy" onerror="%s">' % (
+        css_class, esc(src), esc(name), esc(onerror))
+
+
 def text_to_html(txt):
     txt = (txt or "").replace("\r\n", "\n")
     out = []
@@ -236,6 +251,8 @@ CSS = """
   --accent:#F2A63B; --accent-ink:#93600F; --on-accent:#3A2708;
   --brand:#7CBDE8; --brand-ink:#2C6C9E;
   --wash:#FBEBD6; --pine:#2C9A6B;
+  --tag-eng:#2C6C9E; --tag-data:#7B4BD8; --tag-product:#2C9A6B; --tag-design:#D6455D; --tag-adj:#8A6D1F;
+  --remote:#0E8FA8;
   --shadow:0 1px 2px rgba(22,48,63,.05), 0 12px 28px -16px rgba(22,48,63,.18);
   --iris:
     radial-gradient(105% 70% at 96% -8%,  color-mix(in srgb,var(--accent) 22%,transparent) 0%, transparent 55%),
@@ -292,11 +309,68 @@ h2{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;margin:26px 0 8px
 ul.jobs{list-style:none;margin:0;padding:0}
 ul.jobs li{background:var(--card);border:1px solid var(--line);border-radius:12px;
  margin:0 0 11px;box-shadow:var(--shadow);overflow:hidden}
-ul.jobs li a{display:block;padding:13px 15px;font-family:"Bricolage Grotesque",sans-serif;
+/* direct-child combinator: this is the plain "whole card is one <a>" pattern
+   (companies hub, offer page's "similaires" list) — must NOT leak into the
+   richer .job card below, whose <a> tags sit several levels deep */
+ul.jobs li > a{display:block;padding:13px 15px;font-family:"Bricolage Grotesque",sans-serif;
  font-weight:600;color:var(--ink);font-size:15px}
-ul.jobs li a:hover{text-decoration:none;background:var(--card-2)}
+ul.jobs li > a:hover{text-decoration:none;background:var(--card-2)}
 ul.jobs .co{display:block;color:var(--muted);font-size:13px;font-weight:400;margin:3px 0 0;
  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* rich job card (job_li / _company_job_li) — same anatomy as the homepage's
+   .job card, so a facet/company page doesn't look like a stripped-down site */
+ul.jobs li.job{overflow:visible;padding:16px 18px;position:relative;
+ transition:border-color .12s ease,transform .12s ease}
+ul.jobs li.job:hover{border-color:var(--brand);transform:translateY(-1px)}
+ul.jobs li.job .head{display:flex;gap:13px;align-items:flex-start}
+ul.jobs li.job .head .info{min-width:0;flex:1}
+ul.jobs li.job .logo{width:44px;height:44px;border-radius:11px;object-fit:contain;background:var(--card);
+ border:1px solid var(--line);flex:none}
+ul.jobs li.job .logo.ph{display:flex;align-items:center;justify-content:center;
+ font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:17px;color:var(--brand-ink);
+ background:color-mix(in srgb,var(--brand) 22%,transparent);
+ border-color:color-mix(in srgb,var(--brand) 34%,transparent)}
+ul.jobs li.job .t{font-family:"Bricolage Grotesque",sans-serif;font-size:16px;font-weight:600;
+ letter-spacing:-.01em;line-height:1.3}
+ul.jobs li.job .t a{color:var(--ink)}
+ul.jobs li.job .t a::after{content:"";position:absolute;inset:0}
+ul.jobs li.job .co{display:block;color:var(--muted);font-size:13px;margin:3px 0 0;
+ white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ul.jobs li.job .co b{color:var(--ink);font-weight:600}
+ul.jobs li.job .co b a{position:relative;z-index:1;color:var(--brand-ink);text-decoration:underline;
+ text-decoration-color:color-mix(in srgb,var(--brand-ink) 35%,transparent);text-underline-offset:2px}
+ul.jobs li.job .co b a:hover{text-decoration-color:currentColor}
+ul.jobs li.job.co-job .t{margin-top:0}
+ul.jobs li.job .meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px;font-size:12px;
+ color:var(--muted);align-items:center}
+ul.jobs li.job .meta span{background:var(--card-2);border:1px solid var(--line);border-radius:6px;
+ padding:3px 8px;white-space:nowrap}
+ul.jobs li.job .meta .sal{color:var(--pine);border-color:color-mix(in srgb,var(--pine) 35%,transparent);
+ background:color-mix(in srgb,var(--pine) 12%,transparent);font-weight:500}
+ul.jobs li.job .meta .new{color:var(--accent-ink);border-color:color-mix(in srgb,var(--accent) 42%,transparent);
+ background:color-mix(in srgb,var(--accent) 16%,transparent);font-weight:600;font-family:"IBM Plex Mono",monospace}
+ul.jobs li.job .meta .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;
+ text-transform:uppercase;letter-spacing:.04em;padding:3px 8px;border-radius:6px;color:#fff;border:0}
+ul.jobs li.job .meta .tag.eng{background:var(--tag-eng)}
+ul.jobs li.job .meta .tag.data{background:var(--tag-data)}
+ul.jobs li.job .meta .tag.product{background:var(--tag-product)}
+ul.jobs li.job .meta .tag.design{background:var(--tag-design)}
+ul.jobs li.job .meta .tag.tech-adjacent{background:var(--tag-adj)}
+ul.jobs li.job .meta .remote{color:#fff;background:var(--remote);border-color:var(--remote);
+ font-weight:600;font-family:"IBM Plex Mono",monospace;letter-spacing:.01em;text-transform:lowercase}
+/* city facet hero — a designed banner (no stock photo pipeline yet): a tinted
+   gradient + abstract skyline, hue-rotated per city so each town reads distinct */
+.city-hero{position:relative;overflow:hidden;border-radius:16px;margin:14px 0 18px;
+ padding:28px 22px 22px;min-height:104px;display:flex;align-items:flex-end;
+ background:linear-gradient(175deg,color-mix(in srgb,var(--brand) 32%,var(--bg)) 0%,var(--bg) 100%);
+ border:1px solid var(--line)}
+.city-hero .skyline{position:absolute;inset:0;width:100%;height:100%;
+ filter:hue-rotate(var(--hue,0deg));opacity:.55}
+.city-hero .skyline rect,.city-hero .skyline circle{fill:var(--brand-ink)}
+.city-hero-text{position:relative;z-index:1}
+.city-hero .eyebrow{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;
+ letter-spacing:.08em;text-transform:uppercase;color:var(--brand-ink);margin:0 0 4px;font-weight:600}
+.city-hero h1{margin:0}
 footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
 footer .social{display:flex;gap:10px;margin:14px 0 0}
 footer .social a{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
@@ -306,6 +380,10 @@ footer .social svg{width:15px;height:15px;fill:currentColor}
 /* company page */
 .cover{height:150px;border-radius:14px;background:var(--card-2) center/cover no-repeat;
  border:1px solid var(--line);margin:8px 0 12px}
+.cover.cover-fallback{background:
+   radial-gradient(120% 140% at 8% -20%, color-mix(in srgb,var(--accent) 38%,transparent) 0%, transparent 55%),
+   linear-gradient(135deg,var(--brand),var(--accent));
+ filter:hue-rotate(var(--hue,0deg))}
 .cohead{display:flex;gap:15px;align-items:flex-end;padding:0 4px}
 .cohead .lg{width:74px;height:74px;border-radius:16px;background:#fff;border:1px solid var(--line);
  object-fit:contain;padding:7px;box-shadow:var(--shadow);flex:none}
@@ -739,23 +817,85 @@ def render_tombstone(slug, e):
 # --------------------------------------------------------------------------- #
 #  facet (list) pages                                                         #
 # --------------------------------------------------------------------------- #
-def job_li(j):
-    tags = []
-    if j.get("category"):
-        tags.append(CATS.get(j["category"], (j["category"],))[0])
+def _job_meta_html(j):
+    """meta pills shared by job_li and the company page's own job list:
+    métier tag, "new" badge, remote, contract, experience, salary."""
+    cat = j.get("category") or ""
+    cat_label = CATS.get(cat, (cat,))[0] if cat else ""
+    rem = j.get("remote_detail") or (
+        j.get("remote") if j.get("remote") and "sur site" not in (j.get("remote") or "").lower() else "")
+    if rem == "remote":
+        rem = "full remote"
+    if rem and "ponctuel" in rem.lower():
+        rem = ""
+    exp = j.get("experience") or ""
+    exp_txt = ("%s d'expérience" % exp) if "ans" in exp else exp
+    meta = []
+    if cat_label:
+        meta.append('<span class="tag %s">%s</span>' % (esc(cat), esc(cat_label)))
+    if j.get("is_new"):
+        meta.append('<span class="new">✨ nouveau</span>')
+    if rem:
+        meta.append('<span class="remote">%s</span>' % esc(rem))
     if j.get("contract"):
-        tags.append(j["contract"])
-    if j.get("city"):
-        tags.append(j["city"])
-    return ('<li><a href="../offre/{slug}.html">{title}</a>'
-            '<div class="co">{co}</div>'
-            '<div class="k">{tags}</div></li>').format(
-        slug=j["_slug"], title=esc(j.get("title")),
-        co=esc(j.get("company")),
-        tags="".join("<span>%s</span>" % esc(t) for t in tags))
+        meta.append("<span>%s</span>" % esc(j["contract"]))
+    if exp_txt:
+        meta.append("<span>%s</span>" % esc(exp_txt))
+    if j.get("salary"):
+        meta.append('<span class="sal">%s</span>' % esc(j["salary"]))
+    return "".join(meta)
 
 
-def render_facet(*, slug, h1, intro, jobs, siblings, generated):
+def _job_stack_html(j):
+    stack = (j.get("stack") or [])[:10]
+    if not stack:
+        return ""
+    return '<div class="stack">%s</div>' % "".join("<b>%s</b>" % esc(s) for s in stack)
+
+
+def job_li(j):
+    """rich job card for facet pages — same anatomy as the homepage's card:
+    logo, title, company + city, stack chips, meta pills."""
+    logo_html = _logo_html(j.get("logo"), j.get("company"), "logo")
+    co_slug = j.get("_company_slug") or slugify(j.get("company"))
+    city = j.get("city")
+    city_html = (" · %s" % esc(city)) if city and city != "Remote" else ""
+    return (
+        '<li class="job"><div class="head">{logo}'
+        '<div class="info"><div class="t"><a href="../offre/{slug}.html">{title}</a></div>'
+        '<div class="co"><b><a href="../entreprise/{coslug}.html">{co}</a></b>{city}</div>'
+        '</div></div>{stack}<div class="meta">{meta}</div></li>'
+    ).format(
+        logo=logo_html, slug=j["_slug"], title=esc(j.get("title")),
+        coslug=esc(co_slug), co=esc(j.get("company")), city=city_html,
+        stack=_job_stack_html(j), meta=_job_meta_html(j),
+    )
+
+
+# hash-based hue so repeat visits/pages give the same city the same tint
+def _hue_seed(s):
+    return int(hashlib.sha1((s or "").encode()).hexdigest(), 16) % 360
+
+
+def _city_hero(city):
+    buildings = [22, 40, 30, 54, 26, 46, 34, 20, 42, 28]
+    x = 6
+    bars = []
+    for i, h in enumerate(buildings):
+        w = 26
+        bars.append('<rect x="%d" y="%d" width="%d" height="%d" rx="2"></rect>'
+                     % (x, 90 - h, w, h))
+        x += w + 8
+    return """<div class="city-hero" style="--hue:{hue}deg">
+  <svg class="skyline" viewBox="0 0 {vw} 90" preserveAspectRatio="none" aria-hidden="true">{bars}</svg>
+  <div class="city-hero-text">
+    <span class="eyebrow">PACA · Sud de la France</span>
+    <h1>Emplois tech à {city}</h1>
+  </div>
+</div>""".format(hue=_hue_seed(city), vw=x, bars="".join(bars), city=esc(city))
+
+
+def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=None):
     canonical = "%s/emploi/%s.html" % (SITE_URL, slug)
     facet_html = ""
     if siblings:
@@ -771,13 +911,14 @@ def render_facet(*, slug, h1, intro, jobs, siblings, generated):
             for i, j in enumerate(jobs)
         ],
     }
+    header = (_city_hero(city) if (kind == "ville" and city) else "<h1>%s</h1>" % esc(h1))
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Emplois</a> › {h1}</nav>
-<h1>{h1}</h1>
+{header}
 <p class="sub">{intro}</p>
 {facets}
 <ul class="jobs">{lis}</ul>
-""".format(home=SITE_URL + "/", hub=SITE_URL + "/emploi/", h1=esc(h1),
+""".format(home=SITE_URL + "/", hub=SITE_URL + "/emploi/", h1=esc(h1), header=header,
            intro=esc(intro), facets=facet_html, lis=lis)
     return shell(title="%s | sudtechjobs" % h1, description=intro,
                  canonical=canonical, head_extra=jsonld(ld), body=body)
@@ -2254,17 +2395,20 @@ def _fmt_headcount(n):
     return "%d salarié·es" % n
 
 
+def _company_job_li(j):
+    """same card as job_li but without the logo/company line — the page
+    header already carries those for every job in the list."""
+    city = j.get("city")
+    city_txt = "Télétravail" if city == "Remote" else (city or "")
+    co_html = ('<div class="co">%s</div>' % esc(city_txt)) if city_txt else ""
+    return ('<li class="job co-job"><div class="t"><a href="../offre/{slug}.html">{title}</a></div>'
+            '{co}{stack}<div class="meta">{meta}</div></li>').format(
+        slug=j["_slug"], title=esc(j.get("title")), co=co_html,
+        stack=_job_stack_html(j), meta=_job_meta_html(j))
+
+
 def _company_list(jobs):
-    return '<ul class="jobs">%s</ul>' % "".join(
-        '<li><a href="../offre/{s}.html"><span class="t">{t}</span>'
-        '<span class="co">{meta}</span></a></li>'.format(
-            s=j["_slug"], t=esc(j.get("title")),
-            meta=esc(" · ".join(x for x in [
-                CAT_LABEL.get(j.get("category"), j.get("category")),
-                j.get("contract"),
-                "télétravail" if (j.get("city") == "Remote") else j.get("city"),
-            ] if x)))
-        for j in jobs)
+    return '<ul class="jobs">%s</ul>' % "".join(_company_job_li(j) for j in jobs)
 
 
 def render_company(rec, jobs, generated, live_facets):
@@ -2276,18 +2420,22 @@ def render_company(rec, jobs, generated, live_facets):
     n = rec.get("open_roles", len(jobs))
 
     # ---- header: cover banner + big logo straddling it, then badges --------
-    cover = ('<div class="cover" style="background-image:url(%s)"></div>' % esc(p["cover_image"])) \
-        if p.get("cover_image") else ""
-    if rec.get("logo"):
-        logo_html = '<img class="lg" src="%s" alt="%s" loading="lazy">' % (esc(rec["logo"]), esc(name))
+    # real WTTJ cover photo when we have one; otherwise a tinted gradient banner
+    # (deterministic per company, via a hue rotate) so no page ever looks bare
+    if p.get("cover_image"):
+        cover = '<div class="cover" style="background-image:url(%s)"></div>' % esc(p["cover_image"])
     else:
-        logo_html = '<div class="lg ph">%s</div>' % esc((name or "?")[:1])
+        hue = int(hashlib.sha1(name.encode()).hexdigest(), 16) % 360
+        cover = '<div class="cover cover-fallback" style="--hue:%ddeg"></div>' % hue
+    logo_html = _logo_html(rec.get("logo"), name, "lg")
 
     badges = []
     for eco in rec.get("ecosystems") or []:
         badges.append('<span class="eco">%s</span>' % esc(eco))
     for s in (p.get("sectors") or [])[:3]:
         badges.append("<span>%s</span>" % esc(s))
+    if not p.get("sectors") and rec.get("category"):
+        badges.append("<span>%s</span>" % esc(rec["category"]))
     for t in (rec.get("tags") or [])[:4]:
         if not p.get("sectors"):
             badges.append("<span>%s</span>" % esc(t))
@@ -2775,10 +2923,11 @@ def main():
     for slug, f in live_facets.items():
         fn = slug + ".html"
         facet_files.add(fn)
+        city = f["h1"][len("Emplois tech à "):] if f["kind"] == "ville" else None
         with open(os.path.join(emploi_dir, fn), "w", encoding="utf-8") as fh:
             fh.write(render_facet(slug=slug, h1=f["h1"], intro=f["intro"],
                                   jobs=f["jobs"], siblings=siblings_for(slug, f),
-                                  generated=generated))
+                                  generated=generated, kind=f["kind"], city=city))
 
     # ---- hub -------------------------------------------------------------
     def grp(kinds, strip):
