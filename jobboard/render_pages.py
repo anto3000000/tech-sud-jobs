@@ -242,16 +242,6 @@ CSS = """
     radial-gradient(105% 80% at -8% -4%,  color-mix(in srgb,var(--brand) 46%,transparent) 0%, transparent 52%),
     radial-gradient(120% 55% at 50% 118%, color-mix(in srgb,var(--brand) 16%,transparent) 0%, transparent 60%);
 }
-@media (prefers-color-scheme:dark){
-  :root{
-    --bg:#0E1C27; --card:#162733; --card-2:#1C303D;
-    --ink:#E4EDF3; --muted:#8DA2B2; --line:#263B49;
-    --accent:#E7A24A; --accent-ink:#F1C089; --on-accent:#2A1B06;
-    --brand:#7CBDE8; --brand-ink:#8CC6ED;
-    --wash:#2A2013; --pine:#48B487;
-    --shadow:0 1px 2px rgba(0,0,0,.3), 0 14px 32px -18px rgba(0,0,0,.6);
-  }
-}
 *{box-sizing:border-box}
 html{background:var(--bg)}
 body{margin:0;color:var(--ink);min-height:100vh;
@@ -305,7 +295,8 @@ ul.jobs li{background:var(--card);border:1px solid var(--line);border-radius:12p
 ul.jobs li a{display:block;padding:13px 15px;font-family:"Bricolage Grotesque",sans-serif;
  font-weight:600;color:var(--ink);font-size:15px}
 ul.jobs li a:hover{text-decoration:none;background:var(--card-2)}
-ul.jobs .co{display:block;color:var(--muted);font-size:13px;font-weight:400;margin:3px 0 0}
+ul.jobs .co{display:block;color:var(--muted);font-size:13px;font-weight:400;margin:3px 0 0;
+ white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
 footer .social{display:flex;gap:10px;margin:14px 0 0}
 footer .social a{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
