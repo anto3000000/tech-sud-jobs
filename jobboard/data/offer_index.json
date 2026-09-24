@@ -871,10 +871,10 @@
 },
 "alan-product-manager-sales-ai-6a6a59": {
 "category": "product",
-"city": "France; Marseille",
+"city": "Marseille",
 "company": "Alan",
 "expired_at": null,
-"facet_slug": "product",
+"facet_slug": "product-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-24",
 "title": "Product Manager - Sales AI"
@@ -921,10 +921,10 @@
 },
 "alan-senior-ops-product-builder-3a5418": {
 "category": "product",
-"city": "France; Marseille",
+"city": "Marseille",
 "company": "Alan",
 "expired_at": null,
-"facet_slug": "product",
+"facet_slug": "product-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-24",
 "title": "Senior Ops & Product Builder"
