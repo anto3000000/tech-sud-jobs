@@ -11059,6 +11059,16 @@
 "last_seen": "2026-09-25",
 "title": "Senior Staff Engineer – Architecture & Ownership F/H"
 },
+"wavestone-de-fin-d-etudes-consultant-e-cloud-infrastructures-reseaux-w-1acde0": {
+"category": "tech-adjacent",
+"city": "Marseille",
+"company": "Wavestone",
+"expired_at": null,
+"facet_slug": "tech-adjacent-marseille",
+"first_seen": "2026-09-25",
+"last_seen": "2026-09-25",
+"title": "de fin d'études - Consultant.e Cloud, Infrastructures, Réseaux & Workplace - Marseille"
+},
 "wavestone-de-fin-d-etudes-consultant-e-en-management-cybersecurite-mar-4c9e79": {
 "category": "eng",
 "city": "Marseille",
@@ -11070,11 +11080,11 @@
 "title": "de fin d'études - Consultant.e en management - Cybersécurité - Marseille"
 },
 "wavestone-de-fin-d-etudes-consultant-e-en-management-cybersecurite-mar-79dce6": {
-"category": "cybersecurite",
+"category": "tech-adjacent",
 "city": "Marseille",
 "company": "Wavestone",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "tech-adjacent-marseille",
 "first_seen": "2026-09-25",
 "last_seen": "2026-09-25",
 "title": "de fin d'études - Consultant.e en management - Cybersécurité - Marseille"
@@ -11120,11 +11130,11 @@
 "title": "de fin d'études - Consultant·e Cybersécurité - Marseille"
 },
 "weeneo-consulting-charge-e-de-recrutement-it-f-h-36c463": {
-"category": "eng",
+"category": "tech-adjacent",
 "city": "Marseille",
 "company": "Weeneo Consulting",
-"expired_at": "2026-09-25",
-"facet_slug": "eng-marseille",
+"expired_at": null,
+"facet_slug": "tech-adjacent-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Chargé.e de recrutement IT F/H"
