@@ -182,8 +182,22 @@ _AI_NEG = re.compile(r"pedagogi|sourcing|outbound|growth|formateur|formation|"
                      r"gestion de projet|qualite|hse|sse\b|finance|juridique")
 
 
+_GENDER_SUFFIX = re.compile(r"\b(\w+?)[.](e|se|rice|euse|trice|ere|eure|fe)\b")
+_GENDER_SUFFIX_PARENS = re.compile(r"\((e|se|rice|euse|trice|ere|eure|fe)\)")
+
+
 def classify(title, profession=None, sector=None, stack=None):
     t = _norm(title)
+    # French inclusive writing ("Consultant.e", "Développeur.se",
+    # "Coordinateur(rice)") glues a gender suffix onto the word with "."/"()"
+    # rather than a space — every `word\w*\s+...` pattern below stops dead at
+    # that punctuation and silently misses the title (e.g. "Consultant.e en
+    # management" never matched the "consultant...en management" carve-out).
+    # Collapse it to the masculine base form once, up front, instead of
+    # patching every downstream regex individually. "·" needs no handling —
+    # _norm's ascii-only encode already drops it (merging into one word).
+    t = _GENDER_SUFFIX_PARENS.sub("", t)
+    t = _GENDER_SUFFIX.sub(r"\1", t)
     prof = _norm(profession)
     stack_txt = _norm(stack if not isinstance(stack, str) else [stack])
     stack_hits = len(set(_STACK_HINT.findall(stack_txt))) if stack_txt else 0
@@ -274,9 +288,12 @@ def classify(title, profession=None, sector=None, stack=None):
     # management/strategy consulting ON a tech topic (Wavestone-style —
     # "Consultant.e en management - Cybersécurité") is advisory, not hands-on
     # engineering — route it to tech-adjacent before the bare "cybersecurite"
-    # / "data" / … keywords elsewhere grab it as eng/cybersecurite/data
-    if re.search(r"consultant\w*\s+en\s+management|conseil\w*\s+en\s+management|"
-                 r"consultant\w*\s+en\s+strategie|management\s+consult", t):
+    # / "data" / … keywords elsewhere grab it as eng/cybersecurite/data.
+    # NB: [\w.()]* (not \w*) after "consultant"/"conseil" — inclusive-writing
+    # gender suffixes ("Consultant.e", "Consultant(e)") aren't \w, so a bare
+    # \w* stops dead at the punctuation and silently misses the title.
+    if re.search(r"consultant[\w.()]*\s+en\s+management|conseil[\w.()]*\s+en\s+management|"
+                 r"consultant[\w.()]*\s+en\s+strategie|management\s+consult", t):
         return "tech-adjacent" if re.search(
             r"cyber|securit|\bdata\b|digital|\bia\b|\bai\b|informatique|"
             r"numerique|technolog", t) else None
