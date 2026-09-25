@@ -1,0 +1,920 @@
+{
+  "Alan": {
+    "description": "Alan est une assurance santé 100 % digitale fondée en 2016 par Jean-Charles Samuelian-Werve et Charles Gorintin — le premier nouvel assureur santé agréé en France depuis 1986. Alan propose une complémentaire santé aux entreprises et indépendants (téléconsultation, prévention, accompagnement au quotidien) et opère aussi en Espagne, en Belgique et au Québec. Plus de 800 salarié·es accompagnent aujourd'hui plus d'un million de membres au sein de 37 000 entreprises clientes.",
+    "sectors": [
+      "Assurance santé",
+      "Insurtech"
+    ],
+    "headcount": 800,
+    "founded": 2016,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "funding": {
+      "stage": "Série F",
+      "amount": "173 M€",
+      "year": 2024,
+      "valuation": "5 Md€ (fin 2025)"
+    },
+    "socials": {
+      "website": "https://alan.com",
+      "linkedin": "https://www.linkedin.com/company/avec-alan"
+    },
+    "cover_image": "/brand/companies/alan-cover.jpg",
+    "logo": "/brand/companies/alan-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Alan_(entreprise), linkedin.com/company/avec-alan, maddyness.com Série F article) — Alan has zero PACA postings sourced via Welcome to the Jungle, so the automated profile pipeline never reaches it."
+  },
+  "Scalian": {
+    "description": "Scalian est une ESN (entreprise de services du numérique) française fondée en 1989 sous le nom Eurogiciel, spécialisée dans les logiciels critiques, l'ingénierie des systèmes et la performance opérationnelle, avec une pratique croissante en intelligence artificielle. Le siège social est basé à Toulouse, avec un bureau de direction à Neuilly-sur-Seine ; le groupe emploie environ 5 000 personnes dans une douzaine de pays (France, Royaume-Uni, Allemagne, Espagne, Canada, États-Unis...). Scalian est détenu par le fonds d'investissement Ardian depuis 2021.",
+    "sectors": [
+      "ESN / conseil en ingénierie",
+      "Aéronautique & défense",
+      "Intelligence artificielle"
+    ],
+    "headcount": 5000,
+    "founded": 1989,
+    "hq_city": "Toulouse",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.scalian.com",
+      "linkedin": "https://www.linkedin.com/company/scaliangroup"
+    },
+    "cover_image": "/brand/companies/scalian-cover.jpg",
+    "logo": "/brand/companies/scalian-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Scalian, linkedin.com/company/scaliangroup, annuaire-entreprises.data.gouv.fr, commons.wikimedia.org/wiki/File:Logo_Scalian.svg) — no VC funding round found (Ardian-owned ESN, not applicable, no \"funding\" field added)."
+  },
+  "Alten": {
+    "description": "ALTEN est une multinationale française d'ingénierie et de conseil en technologies (ESN), fondée en 1988 par Simon Azoulay, Laurent Schwarz et Thierry Woog. Basé à Boulogne-Billancourt, le groupe fournit des ingénieurs et des équipes projet à ses clients dans l'aéronautique, l'automobile, l'énergie, les télécoms et les sciences de la vie, dans plus de 30 pays. Fin 2025, ALTEN comptait environ 57 400 collaborateurs pour un chiffre d'affaires de 4,1 Md€, et est cotée en bourse sur Euronext Paris.",
+    "sectors": [
+      "ESN / conseil en ingénierie",
+      "Aéronautique & automobile",
+      "IT"
+    ],
+    "headcount": 57400,
+    "founded": 1988,
+    "hq_city": "Boulogne-Billancourt",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.alten.com",
+      "linkedin": "https://www.linkedin.com/company/alten"
+    },
+    "cover_image": "/brand/companies/alten-cover.jpg",
+    "logo": "/brand/companies/alten-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Alten, linkedin.com/company/alten, commons.wikimedia.org/wiki/File:ALTEN-Logo.svg) — ALTEN is publicly listed (Euronext Paris), not a VC-funded startup, so no \"funding\" field added."
+  },
+  "CMA CGM": {
+    "description": "CMA CGM est un armateur et groupe de transport maritime français fondé à Marseille en 1978 par Jacques R. Saadé, devenu CMA CGM après l'acquisition de la Compagnie Générale Maritime (CGM) en 1996. Troisième armateur mondial de transport maritime par conteneurs, le groupe est basé à Marseille et opère environ 600 navires desservant plus de 420 ports ; il s'est diversifié dans la logistique (rachat de Bolloré Logistics/Ceva en 2024) et les médias (BFM TV, RMC, La Provence). Le groupe emploie environ 160 000 personnes dans le monde et a réalisé 55,5 Md$ de chiffre d'affaires en 2024.",
+    "sectors": [
+      "Transport maritime & logistique",
+      "Shipping",
+      "Médias"
+    ],
+    "headcount": 160000,
+    "founded": 1978,
+    "hq_city": "Marseille",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.cma-cgm.com",
+      "linkedin": "https://www.linkedin.com/company/cma-cgm"
+    },
+    "cover_image": "/brand/companies/cma-cgm-cover.jpg",
+    "logo": "/brand/companies/cma-cgm-logo.svg",
+    "_source": "Manual research 2026-09-25 (en.wikipedia.org/wiki/CMA_CGM, cmacgm-group.com/en/group-and-vision/our-history, linkedin.com/company/cma-cgm, commons.wikimedia.org/wiki/File:CMA_CGM_logo.svg) — privately held family group (Saadé family), not VC-funded, so no \"funding\" field added."
+  },
+  "Pennylane": {
+    "description": "Pennylane est une fintech française fondée fin 2019, qui propose une plateforme SaaS de gestion financière et comptable pour les PME et leurs experts-comptables (facturation, trésorerie, connexions bancaires en temps réel). Basée à Paris, la société est devenue licorne en 2024 et a dépassé les 100 M€ de revenus annuels récurrents (ARR) fin 2025. En janvier 2026, Pennylane a levé 175 M€ auprès de TCV et Blackstone Growth, portant sa valorisation à 3,5 Md€.",
+    "sectors": [
+      "Fintech",
+      "Comptatech",
+      "SaaS"
+    ],
+    "founded": 2019,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "funding": {
+      "stage": "7ᵉ tour de table",
+      "amount": "175 M€",
+      "year": 2026,
+      "valuation": "3,5 Md€ (janvier 2026)"
+    },
+    "socials": {
+      "website": "https://www.pennylane.com",
+      "linkedin": "https://www.linkedin.com/company/pennylaneaccounting"
+    },
+    "cover_image": "/brand/companies/pennylane-cover.jpg",
+    "logo": "/brand/companies/pennylane-logo.png",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Pennylane, maddyness.com and cfnews.net Jan-2026 175M€ round articles, linkedin.com/company/pennylaneaccounting, upload.wikimedia.org Logo_Pennylane.png) — headcount omitted: government registry (annuaire-entreprises.data.gouv.fr) shows 250-499 salariés for 2023 while Wikipedia cites >500 for Oct 2024, so no verified single figure."
+  },
+  "Dassault Systèmes": {
+    "description": "Dassault Systèmes est un éditeur de logiciels français fondé en 1981, initialement pour informatiser la conception aéronautique chez Dassault Aviation, aujourd'hui spécialisé dans la conception 3D, la maquette numérique et la gestion du cycle de vie produit (PLM) via sa plateforme 3DEXPERIENCE. Basé à Vélizy-Villacoublay, le groupe sert environ 370 000 clients dans l'aérospatiale, l'automobile, les biens de consommation et les sciences de la vie. En 2025, Dassault Systèmes comptait environ 25 000 salariés pour un chiffre d'affaires de 6,2 Md€, et est coté sur Euronext Paris.",
+    "sectors": [
+      "Édition de logiciels",
+      "PLM / CAO 3D",
+      "Industrie"
+    ],
+    "headcount": 25000,
+    "founded": 1981,
+    "hq_city": "Vélizy-Villacoublay",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.3ds.com",
+      "linkedin": "https://www.linkedin.com/company/dassaultsystemes"
+    },
+    "cover_image": "/brand/companies/dassault-systemes-cover.jpg",
+    "logo": "/brand/companies/dassault-systemes-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Dassault_Systèmes, linkedin.com/company/dassaultsystemes, commons.wikimedia.org/wiki/File:Dassault_systemes_logo.svg) — publicly listed (Euronext Paris, Dassault Group), not VC-funded, so no \"funding\" field added."
+  },
+  "Airbus Helicopters (Logiciel / R&D)": {
+    "description": "Airbus Helicopters, anciennement Eurocopter, est l'un des trois grands pôles du groupe européen Airbus, spécialisé dans la conception, la fabrication et la maintenance d'hélicoptères civils et militaires. Le siège mondial est basé à Marignane, dans les Bouches-du-Rhône (PACA), avec des hélicoptères en service dans plus de 150 pays. Le groupe comptait près de 23 000 salariés en 2020. Le suffixe \"(Logiciel / R&D)\" identifie simplement le département recruteur dans notre flux d'offres — l'entreprise réelle est Airbus Helicopters.",
+    "sectors": [
+      "Aéronautique & défense",
+      "Fabrication d'hélicoptères",
+      "R&D"
+    ],
+    "headcount": 22889,
+    "founded": 1992,
+    "hq_city": "Marignane",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.airbus.com/en/products-services/helicopters",
+      "linkedin": "https://www.linkedin.com/company/airbus-helicopters"
+    },
+    "cover_image": "/brand/companies/airbus-helicopters-logiciel-r-d-cover.jpg",
+    "logo": "/brand/companies/airbus-helicopters-logiciel-r-d-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Airbus_Helicopters, linkedin.com/company/airbus-helicopters, commons.wikimedia.org/wiki/File:Airbus_Helicopters_logo_2014.svg — used the Airbus Helicopters-specific 2014 logo rather than the parent Airbus Group logo) — subsidiary of publicly listed Airbus SE, not VC-funded, so no \"funding\" field added."
+  },
+  "Sogeti": {
+    "description": "Sogeti est une ESN (entreprise de services du numérique) française fondée en 1967, filiale à 100 % de Capgemini depuis sa fusion avec Capgemini Technology Services France en 2019. Basée à Issy-les-Moulineaux, elle propose des services de proximité en infogérance applicative et infrastructure, ingénierie high-tech et tests logiciels. Le groupe Sogeti compte environ 20 000 salariés dans le monde, dont environ 3 200 en France.",
+    "sectors": [
+      "ESN / conseil en ingénierie",
+      "IT",
+      "Tests logiciels"
+    ],
+    "headcount": 20000,
+    "founded": 1967,
+    "hq_city": "Issy-les-Moulineaux",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.sogeti.com",
+      "linkedin": "https://www.linkedin.com/company/sogeti"
+    },
+    "cover_image": "/brand/companies/sogeti-cover.jpg",
+    "logo": "/brand/companies/sogeti-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Sogeti, linkedin.com/company/sogeti, commons.wikimedia.org/wiki/File:Sogeti-logo-2018.svg) — 100% subsidiary of publicly listed Capgemini, not VC-funded, so no \"funding\" field added."
+  },
+  "Assystem": {
+    "description": "Assystem est un groupe français d'ingénierie fondé en 1966, spécialisé dans le pilotage de projets d'infrastructures critiques et complexes, en particulier dans le nucléaire (EDF, Framatome, ITER, Naval Group). Basé à Courbevoie (La Défense), le groupe intervient dans une douzaine de pays et revendique un rang de leader mondial de l'ingénierie nucléaire indépendante. Assystem emploie environ 7 000 personnes et a réalisé environ 483 M€ de chiffre d'affaires en 2021 ; le groupe est coté sur Euronext Paris.",
+    "sectors": [
+      "Ingénierie / conseil",
+      "Nucléaire",
+      "Énergie"
+    ],
+    "headcount": 7000,
+    "founded": 1966,
+    "hq_city": "Courbevoie",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.assystem.com",
+      "linkedin": "https://www.linkedin.com/company/assystem"
+    },
+    "cover_image": "/brand/companies/assystem-cover.jpg",
+    "logo": "/brand/companies/assystem-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Assystem, linkedin.com/company/assystem, commons.wikimedia.org/wiki/File:Logo_Assystem_2.svg) — publicly listed (Euronext Paris), not VC-funded, so no \"funding\" field added."
+  },
+  "TechnicAtome": {
+    "description": "TechnicAtome est une entreprise française spécialisée depuis 1972 dans la conception, la réalisation, la mise en service et le maintien en conditions opérationnelles des réacteurs nucléaires compacts, notamment pour la propulsion navale (sous-marins et porte-avions nucléaires de la Marine nationale), la recherche et la médecine nucléaire. Basée à Villiers-le-Bâcle (Essonne) sur le plateau de Saclay, sous contrôle direct de l'État depuis sa sortie du groupe Areva en 2017, elle emploie environ 2 000 salariés répartis sur 8 sites en France.",
+    "sectors": [
+      "Nucléaire",
+      "Défense navale",
+      "Ingénierie"
+    ],
+    "headcount": 2000,
+    "founded": 1972,
+    "hq_city": "Villiers-le-Bâcle",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.technicatome.com",
+      "linkedin": "https://www.linkedin.com/company/technicatome"
+    },
+    "cover_image": "/brand/companies/technicatome-cover.jpg",
+    "logo": "/brand/companies/technicatome-logo.jpg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/TechnicAtome infobox + logo file, linkedin.com/company/technicatome for cover/headcount). State-controlled, no VC funding — funding field intentionally omitted."
+  },
+  "Onepoint": {
+    "description": "Onepoint est un groupe de conseil en transformation numérique et stratégie fondé en 2002 par David Layani, basé à Paris. Il accompagne les grandes entreprises et le secteur public sur la stratégie digitale, l'UX/UI, la data et l'IA, avec environ 4 500 collaborateurs répartis dans une vingtaine de villes dans le monde (France, Belgique, Canada, Australie...) et un chiffre d'affaires dépassant 500 millions d'euros en 2023.",
+    "sectors": [
+      "Conseil en transformation numérique",
+      "IT"
+    ],
+    "headcount": 4500,
+    "founded": 2002,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.groupeonepoint.com",
+      "linkedin": "https://www.linkedin.com/company/onepoint"
+    },
+    "cover_image": "/brand/companies/onepoint-cover.jpg",
+    "logo": "/brand/companies/onepoint-logo.png",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Onepoint infobox + logo, linkedin.com/company/onepoint for cover/headcount, siecledigital.fr/channelnews.fr re: financing). Its 2023 raises (500 M€ bonds, 160 M€ from Metric Capital Partners) are corporate/PE-style financing for an established consulting group, not a startup funding round — funding field intentionally omitted per instructions."
+  },
+  "lemlist": {
+    "description": "lemlist est une plateforme française de prospection commerciale et d'outreach multicanal (email à froid, LinkedIn, appels, WhatsApp) fondée en 2018 à Paris par Guillaume Moubeche. Bootstrappée sans lever de fonds externes, l'entreprise a atteint plusieurs dizaines de millions de dollars de revenu récurrent annuel et compte environ 110 à 275 salarié·es selon les sources (LinkedIn/presse). Un rachat de titres secondaire en 2021 (cession de 20 % du capital) a valorisé la société à 150 millions de dollars.",
+    "sectors": [
+      "SaaS",
+      "Sales engagement / prospection commerciale"
+    ],
+    "headcount": 110,
+    "founded": 2018,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.lemlist.com",
+      "linkedin": "https://www.linkedin.com/company/lemlist"
+    },
+    "cover_image": "/brand/companies/lemlist-cover.jpg",
+    "logo": "/brand/companies/lemlist-logo.avif",
+    "funding": {
+      "stage": "Bootstrap",
+      "valuation": "150 M$ (2021, cession secondaire de 20 % du capital)",
+      "year": 2021
+    },
+    "_source": "Manual research 2026-09-25 (lemlist.com site header logo, linkedin.com/company/lemlist for cover/headcount/HQ, maddyness.com + remio.ai + jai-un-pote-dans-la.com re: bootstrap history and refused $30M round / 2021 $150M secondary valuation). Headcount conflicting between LinkedIn (275) and older press (110) — used the conservative figure and flagged the range."
+  },
+  "Groupe LR Technologies": {
+    "description": "Groupe LR Technologies (LR Technologies) est une société française d'ingénierie et de conseil en technologies fondée en 2014, basée à Versailles, spécialisée en IA, cybersécurité, logiciels critiques et procédés industriels, avec 8 agences en France. Elle a rejoint le groupe Smart4 Engineering en 2022 et compte environ 600 collaborateurs (« Libelliens »), distinguée à plusieurs reprises Great Place To Work et labellisée B Corp.",
+    "sectors": [
+      "Ingénierie",
+      "Conseil IT",
+      "ESN"
+    ],
+    "headcount": 600,
+    "founded": 2014,
+    "hq_city": "Versailles",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://groupelrtechnologies.teamtailor.com",
+      "linkedin": "https://fr.linkedin.com/company/lr-technologies---groupe"
+    },
+    "cover_image": "/brand/companies/groupe-lr-technologies-cover.jpg",
+    "logo": "/brand/companies/groupe-lr-technologies-logo.png",
+    "_source": "Manual research 2026-09-25 (confirmed real via pappers.fr SIREN 850459496/908409972, societe.com, its Teamtailor careers site + LinkedIn). Part of Smart4 Engineering group since 2022, not VC-funded — funding field intentionally omitted."
+  },
+  "Kincy": {
+    "description": "Kincy est une société française de prestation de services informatiques qui accompagne start-up, PME et ETI dans leur transformation numérique (infogérance, cloud, cybersécurité, pilotage de la fonction IT). Issue de la fusion de Vokto (Paris) et Kalyst (Marseille), elle est basée à Paris avec des bureaux à Marseille et Papeete, et compte environ 65 collaborateurs.",
+    "sectors": [
+      "Services IT",
+      "Infogérance / conseil"
+    ],
+    "headcount": 65,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://kincy.fr",
+      "linkedin": "https://fr.linkedin.com/company/kincy"
+    },
+    "cover_image": "/brand/companies/kincy-cover.jpg",
+    "logo": "/brand/companies/kincy-logo.png",
+    "_source": "Manual research 2026-09-25 (confirmed real: SIREN 419952783, kincy.fr, LinkedIn, Pages Jaunes). Founding year conflicting across sources — omitted rather than guess. No funding history found."
+  },
+  "Orange": {
+    "description": "Orange est un opérateur de télécommunications français, l'un des principaux groupes télécoms européens, présent dans 26 pays et servant plus de 290 millions de clients dans le monde. Né de la marque lancée par France Télécom en 1994 (groupe renommé Orange SA en 2013), le siège social est à Issy-les-Moulineaux ; le groupe emploie environ 127 000 salariés dans le monde dont 71 000 en France, pour un chiffre d'affaires de 40,3 milliards d'euros en 2024.",
+    "sectors": [
+      "Télécommunications"
+    ],
+    "headcount": 127000,
+    "founded": 1988,
+    "hq_city": "Issy-les-Moulineaux",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.orange.com",
+      "linkedin": "https://www.linkedin.com/company/orange"
+    },
+    "cover_image": "/brand/companies/orange-cover.jpg",
+    "logo": "/brand/companies/orange-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Orange_(entreprise), commons.wikimedia.org/wiki/File:Orange_logo.svg, linkedin.com/company/orange). Public CAC40 telecom, not VC-funded — funding field intentionally omitted."
+  },
+  "Eurofins": {
+    "description": "Eurofins Scientific est un groupe international de laboratoires d'analyses et de tests, fondé en 1987 à Nantes par Gilles Martin, aujourd'hui basé à Luxembourg. Coté sur Euronext Paris (composante du CAC 40), le groupe exploite plus de 900 laboratoires dans 62 pays pour les secteurs pharmaceutique, agroalimentaire, environnemental et des biens de consommation, et emploie environ 63 000 personnes pour un chiffre d'affaires de 6,95 milliards d'euros (2024).",
+    "sectors": [
+      "Laboratoires d'analyses",
+      "Biotechnologie",
+      "Testing scientifique"
+    ],
+    "headcount": 63000,
+    "founded": 1987,
+    "hq_city": "Luxembourg",
+    "hq_country": "LU",
+    "socials": {
+      "website": "https://www.eurofins.com",
+      "linkedin": "https://www.linkedin.com/company/eurofins"
+    },
+    "cover_image": "/brand/companies/eurofins-cover.jpg",
+    "logo": "/brand/companies/eurofins-logo.svg",
+    "_source": "Manual research 2026-09-25 (en.wikipedia.org/wiki/Eurofins_Scientific, commons.wikimedia.org/wiki/File:Eurofins_Scientific_Logo.svg, linkedin.com/company/eurofins). Public company (IPO 1997), not VC-funded — funding field intentionally omitted."
+  },
+  "Signe+": {
+    "description": "Signe + est une société toulousaine fondée en 2005, spécialisée dans l'intermédiation sur le marché IT, SAP, Data/BI et cybersécurité : recrutement, mise à disposition de consultants, sous-traitance et portage salarial/commercial, en France comme à l'étranger. Elle s'appuie sur un réseau de plus de 150 000 profils et compte entre 20 et 50 collaborateurs.",
+    "sectors": [
+      "Recrutement IT",
+      "Conseil / intermédiation SAP"
+    ],
+    "headcount": 47,
+    "founded": 2005,
+    "hq_city": "Toulouse",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.signe-it.com",
+      "linkedin": "https://fr.linkedin.com/company/signe-ressources-et-missions-sap"
+    },
+    "cover_image": "/brand/companies/signe-cover.jpg",
+    "logo": "/brand/companies/signe-logo.png",
+    "_source": "Manual research 2026-09-25 (LinkedIn page \"Signe + / ressources et missions SAP\", free-work.com and hellowork.com company profiles, signe-it.com). Same real company as \"SIGNE +\" (two spellings in source data). No funding history — funding field omitted."
+  },
+  "SIGNE +": {
+    "description": "Signe + est une société toulousaine fondée en 2005, spécialisée dans l'intermédiation sur le marché IT, SAP, Data/BI et cybersécurité : recrutement, mise à disposition de consultants, sous-traitance et portage salarial/commercial, en France comme à l'étranger. Elle s'appuie sur un réseau de plus de 150 000 profils et compte entre 20 et 50 collaborateurs.",
+    "sectors": [
+      "Recrutement IT",
+      "Conseil / intermédiation SAP"
+    ],
+    "headcount": 47,
+    "founded": 2005,
+    "hq_city": "Toulouse",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.signe-it.com",
+      "linkedin": "https://fr.linkedin.com/company/signe-ressources-et-missions-sap"
+    },
+    "cover_image": "/brand/companies/signe-cover.jpg",
+    "logo": "/brand/companies/signe-logo.png",
+    "_source": "Manual research 2026-09-25 — same real company as \"Signe+\", researched once. No funding history — funding field omitted."
+  },
+  "VINCI Energies": {
+    "description": "VINCI Energies est une filiale du groupe VINCI, conglomérat français de BTP et concessions coté sur Euronext Paris. Héritière de GTIE (fondée en 1970), la marque VINCI Energies existe depuis 2003 et regroupe les activités d'infrastructures énergétiques et numériques du groupe : réseaux électriques et télécoms, génie climatique, automatismes industriels, transformation digitale. Elle emploie plus de 109 000 collaborateurs au sein de 2 200 entités dans 60 pays, pour un chiffre d'affaires de 21,6 Md€ en 2025. Siège à Nanterre.",
+    "sectors": [
+      "Énergie",
+      "Infrastructures numériques",
+      "Ingénierie"
+    ],
+    "headcount": 109003,
+    "founded": 2003,
+    "hq_city": "Nanterre",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.vinci-energies.com",
+      "linkedin": "https://www.linkedin.com/company/vinci-energies"
+    },
+    "cover_image": "/brand/companies/vinci-energies-cover.jpg",
+    "logo": "/brand/companies/vinci-energies-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Vinci_Énergies, vinci-energies.com, LinkedIn). Filiale of listed VINCI group — funding field omitted."
+  },
+  "Digital Virgo": {
+    "description": "Digital Virgo est une entreprise française de paiement et de monétisation mobile fondée en 2008, dont le siège est à Aix-en-Provence (PACA). Elle connecte opérateurs télécoms, créateurs de contenu, médias et marques autour de solutions de paiement mobile via facturation opérateur, de marketing digital et de distribution de contenu, dans plus de 50 pays. L'entreprise emploie environ 800 collaborateurs pour un chiffre d'affaires annuel supérieur à 400 M$.",
+    "sectors": [
+      "AdTech",
+      "Paiement mobile",
+      "Marketing digital"
+    ],
+    "headcount": 800,
+    "founded": 2008,
+    "hq_city": "Aix-en-Provence",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.digitalvirgo.com",
+      "linkedin": "https://www.linkedin.com/company/digitalvirgo"
+    },
+    "cover_image": "/brand/companies/digital-virgo-cover.jpg",
+    "logo": "/brand/companies/digital-virgo-logo.png",
+    "_source": "Manual research 2026-09-25 (digitalvirgo.com, annuaire-entreprises.data.gouv.fr, LinkedIn). No confirmed VC funding or PE ownership — funding field omitted."
+  },
+  "RH Développement": {
+    "_source": "Searched 'RH Développement entreprise France/PACA' and city-qualified variants on 2026-09-25 — only unrelated HR consultancies with similar generic names surfaced. Could not confirm a single coherent real company matching this exact name; reported unresolved rather than guessing."
+  },
+  "Expleo": {
+    "description": "Expleo est un groupe mondial d'ingénierie, de conseil et de tests/qualité, né en 2015 de la fusion entre Assystem Technologies et une participation de SPX Corporation, puis racheté par le fonds d'investissement Ardian. Basé à Montigny-le-Bretonneux, le groupe intervient dans l'aéronautique, l'automobile, la défense, l'industrie, les transports et les services financiers, sur l'ingénierie produit, la transformation digitale, la cybersécurité et la data/IA, dans une trentaine de pays. Il compte plus de 14 000 collaborateurs pour plus de 1,4 Md€ de chiffre d'affaires.",
+    "sectors": [
+      "Ingénierie",
+      "Conseil",
+      "Qualité / Testing"
+    ],
+    "headcount": 14127,
+    "founded": 2015,
+    "hq_city": "Montigny-le-Bretonneux",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://expleo.com",
+      "linkedin": "https://www.linkedin.com/company/expleo-group"
+    },
+    "cover_image": "/brand/companies/expleo-cover.jpg",
+    "logo": "/brand/companies/expleo-logo.svg",
+    "_source": "Manual research 2026-09-25 (expleo.com, Wikidata Q63148694, usinenouvelle.com, LinkedIn). PE-backed (Ardian) conglomerate, not a startup-round situation — funding field omitted."
+  },
+  "INRAE": {
+    "description": "INRAE (Institut national de recherche pour l'agriculture, l'alimentation et l'environnement) est un établissement public de recherche français créé en 2020 par la fusion de l'INRA et de l'IRSTEA. Premier institut de recherche agronomique d'Europe, il conduit des recherches sur l'agriculture, l'alimentation, la forêt, l'eau, la biodiversité et la bioéconomie au sein de 18 centres régionaux en France, avec environ 12 000 agents. Siège administratif à Paris.",
+    "sectors": [
+      "Recherche publique",
+      "Agriculture / Alimentation",
+      "Environnement"
+    ],
+    "headcount": 12000,
+    "founded": 2020,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.inrae.fr",
+      "linkedin": "https://www.linkedin.com/company/test-science/"
+    },
+    "cover_image": "/brand/companies/inrae-cover.jpg",
+    "logo": "/brand/companies/inrae-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org INRAE, inrae.fr, LinkedIn). Public research institute — funding field not applicable."
+  },
+  "Monext": {
+    "description": "Monext est une entreprise française de paiement électronique fondée en 2008 et basée à Aix-en-Provence, qui connecte commerçants, consommateurs et institutions financières autour de solutions de paiement omnicanal, de prévention de la fraude et de traitement des transactions, au service de plus de 150 institutions financières et 8 000 commerçants en France et en Europe.",
+    "sectors": [
+      "Paiement",
+      "Fintech"
+    ],
+    "headcount": 451,
+    "founded": 2008,
+    "hq_city": "Aix-en-Provence",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.monext.com",
+      "linkedin": "https://www.linkedin.com/company/monext"
+    },
+    "cover_image": "/brand/companies/monext-cover.jpg",
+    "logo": "/brand/companies/monext-logo.svg",
+    "_source": "Manual research 2026-09-25 (monext.com, pappers.fr for shareholder data — ownership tie to Crédit Mutuel Arkéa entities suggested but not a startup funding round, so funding field omitted; LinkedIn for cover)."
+  },
+  "DGA Tech France Travail": {
+    "description": "DGA Tech est la direction générale adjointe numérique de France Travail (ex-Pôle emploi), l'opérateur public français de l'emploi. Créée en 2008, elle conçoit, développe et exploite les systèmes d'information qui soutiennent l'indemnisation des demandeurs d'emploi et l'accompagnement vers l'emploi, depuis 13 sites et 2 datacenters en France, avec environ 1 600 agents. France Travail compte au total près de 55 000 collaborateurs, siège à Paris.",
+    "sectors": [
+      "Secteur public",
+      "IT / Systèmes d'information",
+      "Emploi public"
+    ],
+    "headcount": 1600,
+    "founded": 2008,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.francetravail.fr",
+      "linkedin": "https://www.linkedin.com/company/francetravail/"
+    },
+    "cover_image": "/brand/companies/dga-tech-france-travail-cover.jpg",
+    "logo": "/brand/companies/dga-tech-france-travail-logo.svg",
+    "_source": "Investigated 2026-09-25 as a possible garbled label — RESOLVED as one coherent real entity: DGA Tech is France Travail's own internal digital/IT division (dedicated recruitment microsite, official Bulletin officiel references), unrelated to Délégation Générale de l'Armement. Public institution — funding field omitted."
+  },
+  "Smile": {
+    "description": "Smile est un groupe français de services numériques (ESN) fondé en 1991, spécialisé dans l'intégration de solutions open source (Drupal, Symfony, PHP, CMS, cloud). Actionnaire majoritaire de SensioLabs (éditeur de Symfony) depuis 2019 et propriétaire de l'agence Adyax depuis 2018, Smile est présent dans 7 pays et compte plus de 2 100 collaborateurs. Siège à Asnières-sur-Seine.",
+    "sectors": [
+      "ESN",
+      "Open Source",
+      "Développement web"
+    ],
+    "headcount": 2141,
+    "founded": 1991,
+    "hq_city": "Asnières-sur-Seine",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://smile.eu",
+      "linkedin": "https://fr.linkedin.com/company/smile"
+    },
+    "cover_image": "/brand/companies/smile-cover.jpg",
+    "logo": "/brand/companies/smile-logo.png",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Smile_(entreprise), smile.eu, LinkedIn). Disambiguated from unrelated 'Smile' brands. No VC-style funding round — omitted."
+  },
+  "CEA": {
+    "description": "Le CEA (Commissariat à l'énergie atomique et aux énergies alternatives) est un organisme public français de recherche fondé en 1945, actif dans le nucléaire civil et de défense, les énergies bas-carbone, les technologies de l'information et la santé. Il compte environ 22 100 salariés (2024) répartis sur dix centres en France, dont le centre de Cadarache (Saint-Paul-lès-Durance, Bouches-du-Rhône) — le plus grand centre de R&D nucléaire d'Europe — qui fait du CEA l'un des principaux employeurs scientifiques de la région PACA.",
+    "sectors": [
+      "Recherche publique",
+      "Énergie / Nucléaire",
+      "Deeptech"
+    ],
+    "headcount": 22105,
+    "founded": 1945,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.cea.fr",
+      "linkedin": "https://www.linkedin.com/company/cea"
+    },
+    "cover_image": "/brand/companies/cea-cover.jpg",
+    "logo": "/brand/companies/cea-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org CEA + Centre CEA de Cadarache, linkedin.com/company/cea, Wikimedia LOGO_CEA_ORIGINAL_2022.svg) — public research institution; funding field omitted (not applicable)."
+  },
+  "Amazon": {
+    "description": "Amazon.com, Inc. est un groupe technologique américain fondé en 1994 par Jeff Bezos, d'abord librairie en ligne, devenu le premier acteur mondial du e-commerce, du cloud (Amazon Web Services), de la publicité en ligne et du streaming. Coté au Nasdaq, le groupe emploie environ 1,58 million de salariés dans le monde (2025) et recrute aussi en France, notamment en logistique et en développement logiciel.",
+    "sectors": [
+      "E-commerce",
+      "Cloud / Infrastructure",
+      "Tech géant"
+    ],
+    "headcount": 1576000,
+    "founded": 1994,
+    "hq_city": "Seattle",
+    "hq_country": "US",
+    "socials": {
+      "website": "https://www.amazon.com",
+      "linkedin": "https://www.linkedin.com/company/amazon"
+    },
+    "cover_image": "/brand/companies/amazon-cover.jpg",
+    "logo": "/brand/companies/amazon-logo.svg",
+    "_source": "Manual research 2026-09-25 (en.wikipedia.org/wiki/Amazon_(company), linkedin.com/company/amazon, Wikimedia Amazon_2024.svg) — global public company; funding field omitted (not applicable)."
+  },
+  "Accenture": {
+    "description": "Accenture est un cabinet mondial de conseil et de services technologiques, né en 1989 de la scission avec Arthur Andersen, aujourd'hui domicilié à Dublin (Irlande) et coté au NYSE. Le groupe compte environ 779 000 salariés dans 120 pays (2025) et intervient en stratégie, technologie, cloud et cybersécurité, avec une présence significative en France, y compris en région PACA.",
+    "sectors": [
+      "Conseil / ESN",
+      "Technologies",
+      "Cloud & Cybersécurité"
+    ],
+    "headcount": 779000,
+    "founded": 1989,
+    "hq_city": "Dublin",
+    "hq_country": "IE",
+    "socials": {
+      "website": "https://www.accenture.com",
+      "linkedin": "https://www.linkedin.com/company/accenture"
+    },
+    "cover_image": "/brand/companies/accenture-cover.jpg",
+    "logo": "/brand/companies/accenture-logo.svg",
+    "_source": "Manual research 2026-09-25 (en.wikipedia.org/wiki/Accenture, linkedin.com/company/accenture, Wikimedia Accenture_logo.svg) — global public company (NYSE); funding field omitted (not applicable)."
+  },
+  "Instant System": {
+    "description": "Instant System est une start-up française de mobility-as-a-service (MaaS) fondée en 2013 à Biot/Sophia Antipolis (Alpes-Maritimes) par Yann Hervouet, Bastien Develey et Xavier Lecomte. Sa plateforme numérique permet aux autorités organisatrices de transport et opérateurs de combiner tous les modes de déplacement (bus, vélo, autopartage, covoiturage, stationnement) dans une expérience de mobilité unifiée ; elle équipe notamment l'application Île-de-France Mobilités (Vianavigo) et travaille avec plus de 70 réseaux de transport en France et à l'étranger.",
+    "sectors": [
+      "Mobility-as-a-Service",
+      "Transport / MaaS",
+      "Startup deeptech"
+    ],
+    "founded": 2013,
+    "hq_city": "Biot",
+    "hq_country": "FR",
+    "funding": {
+      "stage": "Série A",
+      "amount": "8 M€",
+      "year": 2021
+    },
+    "socials": {
+      "website": "https://www.instant-system.com",
+      "linkedin": "https://www.linkedin.com/company/instant-system-maas-provider"
+    },
+    "cover_image": "/brand/companies/instant-system-cover.jpg",
+    "logo": "/brand/companies/instant-system-logo.png",
+    "_source": "Manual research 2026-09-25 (societe.com, webtimemedias.com Série A 2021 article, cbinsights.com, LinkedIn, instant-system.com) — genuine VC-backed MaaS startup based in Biot (PACA)."
+  },
+  "SOLUTEC": {
+    "description": "SOLUTEC est une ESN (entreprise de services du numérique) française créée en 1991, spécialisée en conseil, ingénierie informatique et intégration de systèmes, avec environ 1 400 collaborateurs et des agences à Lyon (siège), Paris, Nantes, Bordeaux et Toulouse. En juillet 2025, SOLUTEC a rejoint le groupe Aubay (ESN cotée, environ 7 400 salariés), qui en détient désormais la quasi-totalité du capital.",
+    "sectors": [
+      "ESN / Conseil IT",
+      "Ingénierie informatique",
+      "Intégration de systèmes"
+    ],
+    "headcount": 1400,
+    "founded": 1991,
+    "hq_city": "Lyon",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.solutec.fr",
+      "linkedin": "https://fr.linkedin.com/company/solutec"
+    },
+    "cover_image": "/brand/companies/solutec-cover.jpg",
+    "logo": "/brand/companies/solutec-logo.png",
+    "_source": "Manual research 2026-09-25 (annuaire-entreprises.data.gouv.fr SIREN 381345941, actusnews.com Aubay/Solutec acquisition 07/2025, LinkedIn, solutec.fr) — verified the French Lyon-based ESN; acquired by Aubay group 2025, funding field omitted."
+  },
+  "DRH SIRH": {
+    "description": "« DRH SIRH » n'est pas un nom d'entreprise distinct : c'est un intitulé de service (Direction des Ressources Humaines / Système d'Information RH) récupéré tel quel par le scraper France Travail. L'offre associée (« Référent Paie & SIRH H/F », Aix-en-Provence) correspond en réalité à une annonce du Groupe Ortec — groupe industriel multiservices français fondé en 1992, dont le siège se trouve à Aix-en-Provence (technopôle de l'Arbois), à quelques kilomètres de Bouc-Bel-Air (Bouches-du-Rhône). Ortec emploie environ 15 000 personnes dans 25 pays.",
+    "sectors": [
+      "Ingénierie industrielle",
+      "Énergie",
+      "Services à l'industrie"
+    ],
+    "headcount": 15000,
+    "founded": 1992,
+    "hq_city": "Aix-en-Provence",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://ortec-group.com",
+      "linkedin": "https://fr.linkedin.com/company/ortec-group"
+    },
+    "cover_image": "/brand/companies/drh-sirh-cover.jpg",
+    "logo": "/brand/companies/drh-sirh-logo.png",
+    "_source": "RESOLVED AS DATA ARTIFACT, 2026-09-25 — matched via our own job record (francetravail:6123323, 'Référent Paie & SIRH', Aix-en-Provence, ATS app.beetween.com) cross-checked against LinkedIn/freehire postings attributed to Ortec Group at the same HQ with the same job title. 'DRH SIRH' = Ortec Group's internal HR/HRIS department, not a separate company. Circumstantial match, not a first-party confirmation — recommend fixing the upstream company-name mapping to 'Groupe Ortec'. Funding omitted (established group)."
+  },
+  "SONOVISION Groupe Ortec": {
+    "description": "Sonovision est une entreprise française d'ingénierie documentaire et de formation technique fondée en 1948, spécialisée dans la documentation technique, la logistique de soutien et la formation pour l'aéronautique, la défense, le transport et l'énergie ; elle revendique plus de 1 300 salariés répartis sur une vingtaine de sites en France et à l'international. Sonovision a rejoint le Groupe Ortec — groupe industriel multiservices dont le siège est à Aix-en-Provence, près de Bouc-Bel-Air (Bouches-du-Rhône) — tout en conservant sa marque et son autonomie opérationnelle.",
+    "sectors": [
+      "Ingénierie documentaire",
+      "Formation technique",
+      "Aéronautique & Défense"
+    ],
+    "headcount": 1300,
+    "founded": 1948,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.sonovisiongroup.com",
+      "linkedin": "https://fr.linkedin.com/company/sonovision-hq"
+    },
+    "cover_image": "/brand/companies/sonovision-groupe-ortec-cover.jpg",
+    "logo": "/brand/companies/sonovision-groupe-ortec-logo.png",
+    "_source": "Manual research 2026-09-25 (ortec-group.com newsroom, sonovisiongroup.com/about, LinkedIn, Wikipedia Bouc-Bel-Air for Ortec HQ region) — Sonovision (est. 1948), subsidiary of Groupe Ortec (HQ Aix-en-Provence). Funding omitted (established subsidiary)."
+  },
+  "DSI INFRASTRUCTURE": {
+    "description": "« DSI INFRASTRUCTURE » n'est pas un nom d'entreprise distinct : c'est un intitulé de service (Direction des Systèmes d'Information) récupéré tel quel par le scraper France Travail. L'offre associée (« Chef de Projet Informatique Operations H/F », Aix-en-Provence) correspond à une annonce de la DSI du Groupe Ortec — groupe industriel multiservices français fondé en 1992, dont le siège se trouve à Aix-en-Provence (technopôle de l'Arbois), à quelques kilomètres de Bouc-Bel-Air. Ortec emploie environ 15 000 personnes dans 25 pays.",
+    "sectors": [
+      "Ingénierie industrielle",
+      "Énergie",
+      "Services à l'industrie"
+    ],
+    "headcount": 15000,
+    "founded": 1992,
+    "hq_city": "Aix-en-Provence",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://ortec-group.com",
+      "linkedin": "https://fr.linkedin.com/company/ortec-group"
+    },
+    "cover_image": "/brand/companies/dsi-infrastructure-cover.jpg",
+    "logo": "/brand/companies/dsi-infrastructure-logo.png",
+    "_source": "RESOLVED AS DATA ARTIFACT, 2026-09-25 — matched via our own job record (francetravail:6539324, 'Chef de Projet Informatique Operations', Aix-en-Provence, ATS app.beetween.com) cross-checked against Ortec's own careers page (ortec-group.com/carrieres/ortec1500/digital-dsi/) describing its DSI team at the same HQ. 'DSI INFRASTRUCTURE' = Ortec Group's internal IT/infrastructure department, not a separate company. Circumstantial match — recommend fixing the upstream company-name mapping to 'Groupe Ortec'. Funding omitted (established group)."
+  },
+  "Median Technologies": {
+    "description": "Median Technologies est une medtech française fondée en 2002 par Fredrik Brag, basée à Valbonne (Sophia Antipolis, Alpes-Maritimes). L'entreprise développe des solutions d'imagerie médicale basées sur l'intelligence artificielle pour l'oncologie : une activité iCRO d'analyse d'imagerie pour les essais cliniques en cancérologie (plus de 220 études, 70+ essais de phase 3), et eyonis®, une plateforme de diagnostic précoce du cancer. Cotée sur Euronext Growth Paris depuis 2011, elle comptait 208 collaborateurs en 2025 pour un chiffre d'affaires de 23,4 M€.",
+    "sectors": [
+      "Medtech",
+      "Intelligence artificielle",
+      "Imagerie médicale"
+    ],
+    "headcount": 208,
+    "founded": 2002,
+    "hq_city": "Valbonne",
+    "hq_country": "FR",
+    "funding": {
+      "stage": "Coté en bourse (Euronext Growth Paris)",
+      "year": 2011
+    },
+    "socials": {
+      "website": "https://mediantechnologies.com",
+      "linkedin": "https://www.linkedin.com/company/median-technologies"
+    },
+    "cover_image": "/brand/companies/median-technologies-cover.jpg",
+    "logo": "/brand/companies/median-technologies-logo.svg",
+    "_source": "Manual research 2026-09-25 (mediantechnologies.com, live.euronext.com IPO/ALMDT listing, lejournaldesentreprises.com, LinkedIn) — Sophia Antipolis medtech, Euronext Growth listed since 2011."
+  },
+  "Edl": {
+    "description": "EDL (Édition et Développement Logiciels) est un éditeur français de logiciels pour l'imagerie médicale, fondé en 1994 et basé à Berre-l'Étang (Bouches-du-Rhône, PACA). Sa suite Xplore (RIS, PACS, médecine nucléaire, radiopharmacie, téléradiologie) équipe plus de 600 clients et 2 400 services d'imagerie en France, Suisse, Allemagne et Benelux. Racheté majoritairement par le fonds Abénex en 2021, EDL est passé sous le contrôle du holding familial Dentressangle Capital en septembre 2024.",
+    "sectors": [
+      "Santé numérique",
+      "Édition de logiciels",
+      "Imagerie médicale"
+    ],
+    "founded": 1994,
+    "hq_city": "Berre-l'Étang",
+    "hq_country": "FR",
+    "funding": {
+      "stage": "LBO (Dentressangle Capital, majoritaire)",
+      "year": 2024
+    },
+    "socials": {
+      "website": "https://www.edl.fr",
+      "linkedin": "https://fr.linkedin.com/company/xplore-edl"
+    },
+    "cover_image": "/brand/companies/edl-cover.jpg",
+    "logo": "/brand/companies/edl-logo.png",
+    "_source": "Manual research 2026-09-25 (edl.fr, abenex.com 2021 deal press release, cfnews.net, ticsante.com) — resolved despite the generic name; HQ in Berre-l'Étang, PACA."
+  },
+  "SOM Sud": {
+    "description": "SOM Sud est une agence d'ingénierie industrielle du groupe Ortec, basée à Martigues (Bouches-du-Rhône). Depuis plus de 40 ans, SOM accompagne les industriels du bassin méditerranéen (nucléaire, énergie, santé, transport) sur des missions de conception, de gestion de projet, d'arrêts d'unités et de performance industrielle. SOM Sud est un établissement du groupe Ortec sans identité de marque propre.",
+    "sectors": [
+      "Ingénierie industrielle",
+      "Bureau d'études"
+    ],
+    "hq_city": "Martigues",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://ortec-group.com/en/location/som-sud/"
+    },
+    "cover_image": "/brand/companies/som-sud-cover.jpg",
+    "logo": "/brand/companies/som-sud-logo.png",
+    "_source": "Manual research 2026-09-25 (ortec-group.com/en/location/som-sud, Pages Jaunes at 4 rue Alessandro Volta 13500 Martigues) — Ortec Group's Martigues engineering agency; logo/cover use Ortec's own branding since SOM Sud has no separate visual identity."
+  },
+  "Mailinblack": {
+    "description": "Mailinblack est une entreprise française de cybersécurité fondée en 2003, basée à Marseille. Sa plateforme Cockpit protège plus de 22 000 clients et 4 millions d'utilisateurs contre le phishing et les ransomwares, avec plus de 130 collaborateurs. L'entreprise a levé 14 M€ en 2019, puis 50 M€ en 2022 auprès des fonds Apax Partners et NewAlpha Verto, devenus actionnaires majoritaires à hauteur d'environ 60 % du capital.",
+    "sectors": [
+      "Cybersécurité",
+      "SaaS"
+    ],
+    "headcount": 130,
+    "founded": 2003,
+    "hq_city": "Marseille",
+    "hq_country": "FR",
+    "funding": {
+      "stage": "Capital-investissement (Apax Partners & NewAlpha Verto, majoritaires)",
+      "amount": "50 M€",
+      "year": 2022
+    },
+    "socials": {
+      "website": "https://www.mailinblack.com",
+      "linkedin": "https://www.linkedin.com/company/mailinblack"
+    },
+    "cover_image": "/brand/companies/mailinblack-cover.jpg",
+    "logo": "/brand/companies/mailinblack-logo.png",
+    "_source": "Manual research 2026-09-25 (mailinblack.com, marseille-innov.org, usine-digitale.fr + gomet.net funding articles 2019/2022) — confirmed VC/PE-backed, Marseille HQ."
+  },
+  "FLYING EYE": {
+    "description": "Flying Eye est une entreprise française spécialisée dans les drones professionnels, fondée en 2009 à Sophia Antipolis (Valbonne, Alpes-Maritimes) par les frères Alexandre et Grégoire Thomas. Plus important revendeur DJI Enterprise en France et distributeur exclusif du VTOL Autel Robotics Dragonfish, elle propose aussi un centre de formation au pilotage de drones et des solutions anti-drones.",
+    "sectors": [
+      "Drones",
+      "Matériel professionnel",
+      "Formation"
+    ],
+    "founded": 2009,
+    "hq_city": "Valbonne",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.flyingeye.fr",
+      "linkedin": "https://fr.linkedin.com/company/flyingeye"
+    },
+    "cover_image": "/brand/companies/flying-eye-cover.jpg",
+    "logo": "/brand/companies/flying-eye-logo.svg",
+    "_source": "Manual research 2026-09-25 (flyingeye.fr, lejournaldesentreprises.com, sophianet.com) — confirmed Sophia Antipolis drone company, disambiguated from unrelated 'Flying Eye' brands. No confirmed closed funding round — omitted."
+  },
+  "Aroma-Zone": {
+    "description": "Aroma-Zone est une entreprise française de cosmétique naturelle et DIY fondée en 1999 par Pierre Vausselin et ses filles, vendant des ingrédients bruts (huiles essentielles, huiles végétales, hydrolats) et des produits finis via plus de 36 boutiques et son site e-commerce, avec 100 à 200 salariés pour un chiffre d'affaires d'environ 300 M€ (2025). Le fonds Eurazeo est entré majoritairement au capital en 2021 aux côtés de la famille Vausselin.",
+    "sectors": [
+      "Cosmétique naturelle",
+      "E-commerce",
+      "DIY"
+    ],
+    "founded": 1999,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "funding": {
+      "stage": "Capital-investissement (Eurazeo, majoritaire)",
+      "amount": "414 M€",
+      "year": 2021,
+      "valuation": "≈ 2 Md€ (négociations Partners Group, août 2026)"
+    },
+    "socials": {
+      "website": "https://www.aroma-zone.com",
+      "linkedin": "https://www.linkedin.com/company/aroma-zone"
+    },
+    "cover_image": "/brand/companies/aroma-zone-cover.jpg",
+    "logo": "/brand/companies/aroma-zone-logo.png",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Aroma-Zone, wwd.com, zonebourse.com, lsa-conso.fr on the 2021 Eurazeo deal, boursorama.com on Aug-2026 Partners Group negotiation) — confirmed PE-backed."
+  },
+  "La Plateforme": {
+    "description": "La Plateforme_ est une école du numérique fondée en 2019 à Marseille par l'investisseur Cyril Zimmermann. Établissement d'enseignement supérieur technique privé, elle réunit une Coding School gratuite et inclusive (2 ans, sans condition de diplôme, affiliée au réseau Simplon) et des formations payantes (bachelor, mastère IA/data accrédité Centrale Marseille). Un nouveau campus de 25 000 m² doit ouvrir à la Joliette (Marseille) fin 2026.",
+    "sectors": [
+      "EdTech",
+      "Formation professionnelle"
+    ],
+    "founded": 2019,
+    "hq_city": "Marseille",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://laplateforme.io",
+      "linkedin": "https://fr.linkedin.com/school/laplateformeio/"
+    },
+    "cover_image": "/brand/companies/la-plateforme-cover.jpg",
+    "logo": "/brand/companies/la-plateforme-logo.png",
+    "_source": "Manual research 2026-09-25 (laplateforme.io, maddyness.com 2019 launch article, madeinmarseille.net) — private établissement mêlant frais de scolarité et mécénat, funding field omitted (equity funding doesn't apply)."
+  },
+  "INFORCA": {
+    "description": "Inforca est une ESN monégasque fondée en 2005, partenaire officiel d'Extended Monaco pour les entreprises. Le groupe accompagne la transformation digitale de sociétés monégasques et françaises via des prestations d'infrastructure, systèmes et réseaux, ainsi que deux agences dédiées au développement web (audit, création de site, SEO). Inforca dispose d'une exclusivité sur le Sud-Est de la France et Monaco, avec des bureaux à Nice, Marseille et en Île-de-France.",
+    "sectors": [
+      "ESN / conseil IT",
+      "Transformation digitale",
+      "Développement web"
+    ],
+    "founded": 2005,
+    "hq_city": "Monaco",
+    "hq_country": "MC",
+    "socials": {
+      "website": "https://inforca.mc",
+      "linkedin": "https://www.linkedin.com/company/inforca-groupe"
+    },
+    "cover_image": "/brand/companies/inforca-cover.jpg",
+    "logo": "/brand/companies/inforca-logo.svg",
+    "_source": "Manual research 2026-09-25 (inforca.mc/qui-sommes-nous, meb.mc/en/inforca, linkedin.com/company/inforca-groupe, annuaire-entreprises.data.gouv.fr) — Monaco-based ESN with a South-East France + Monaco exclusivity (Nice, Marseille, Île-de-France offices), which fits a PACA job posting. Distinct from an unrelated 2022 Paris micro-entity also named INFORCA (business consulting) and a defunct 'Inforca France' wholesale entity (inactive since 2012) — no funding disclosed, omitted as this is a bootstrapped/established services company."
+  },
+  "VIVERIS": {
+    "description": "Viveris (Viveris Technologies) est un groupe français indépendant de conseil et d'ingénierie informatique fondé en 1986, dont le siège est à Massy (Essonne). Ses ingénieurs interviennent sur quatre métiers — systèmes d'information, informatique industrielle, systèmes embarqués, systèmes et réseaux — pour des clients des secteurs ferroviaire, énergie, défense, télécoms et aéronautique. Le groupe compte une douzaine d'agences en France et en Belgique, dont une présence en région PACA, pour environ 900 collaborateurs.",
+    "sectors": [
+      "ESN / conseil IT",
+      "Ingénierie",
+      "Systèmes embarqués"
+    ],
+    "founded": 1986,
+    "headcount": 900,
+    "hq_city": "Massy",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.viveris.fr",
+      "linkedin": "https://www.linkedin.com/company/viveris"
+    },
+    "cover_image": "/brand/companies/viveris-cover.jpg",
+    "logo": "/brand/companies/viveris-logo.svg",
+    "_source": "Manual research 2026-09-25 (viveris.fr, digital113.fr partner page, ccibusiness.fr, annuaire-entreprises.data.gouv.fr SIREN 501600761 Massy, linkedin.com/company/viveris) — headcount (~900) rounds two sourced figures (890 and 910 employees) found across partner-directory snapshots; no funding disclosed, omitted as this is an established consulting/engineering group, not VC-backed."
+  },
+  "Heliaq": {
+    "description": "Heliaq est une ESN française spécialisée dans le Digital Workplace, les infrastructures, le cloud et la cybersécurité (intégration, déploiement, services managés et hébergés). Elle est née de la prise d'indépendance de l'activité Koesio Corporate IT, dirigée par Philippe Goubert et Éric Julien, avec son siège transféré au Haillan, près de Bordeaux. Certifiée Great Place to Work, elle compte 29 agences en France et entre 500 et 1 000 collaborateurs, recrutant notamment dans l'ingénierie IT, le support client et la vente.",
+    "sectors": [
+      "ESN / conseil IT",
+      "Cloud",
+      "Cybersécurité"
+    ],
+    "hq_city": "Le Haillan",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://heliaq.fr",
+      "linkedin": "https://www.linkedin.com/company/heliaq-france"
+    },
+    "cover_image": "/brand/companies/heliaq-cover.jpg",
+    "logo": "/brand/companies/heliaq-logo.png",
+    "_source": "Manual research 2026-09-25 (heliaq.fr, echos-judiciaires.com article on the Koesio Corporate IT -> Heliaq rebrand, annuaire-entreprises.data.gouv.fr SIREN 757501028 Le Haillan, linkedin.com/company/heliaq-france) — headcount reported only as a 501-1000 range (Indeed/LinkedIn bucket), so left out of the numeric field; founding year omitted since the SIREN's 1957 registration date reflects a legal predecessor shell, not a verified founding date for the Heliaq brand itself; no funding disclosed (established ESN, not VC-backed)."
+  },
+  "Achat Solutions": {
+    "description": "Ach@t Solutions est un éditeur de logiciels basé à Grabels, près de Montpellier, spécialisé dans la commande publique et la gestion des achats (marchés publics, dématérialisation, plateformes achats public-privé) ainsi que dans des solutions de gestion du transport. Le groupe réunit plusieurs marques (Agysoft/Marco, SIS Marchés, AW Solutions, Pharmatic, Perinfo, AP2A) et accompagne plusieurs milliers de clients publics et privés. En 2019, l'entreprise comptait 160 salariés pour 21,2 M€ de chiffre d'affaires, avec les fonds Irdi Soridec et Capital Croissance à son capital aux côtés du dirigeant Christophe Gardent.",
+    "sectors": [
+      "Éditeur de logiciels",
+      "Achats / marchés publics",
+      "Govtech"
+    ],
+    "headcount": 160,
+    "hq_city": "Grabels",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.achatsolutions.com",
+      "linkedin": "https://www.linkedin.com/company/achat-solutions"
+    },
+    "cover_image": "/brand/companies/achat-solutions-cover.jpg",
+    "logo": "/brand/companies/achat-solutions-logo.png",
+    "_source": "Manual research 2026-09-25 (lalettrem.fr Mar 2020 article on the Gardent/Irdi Soridec/Capital Croissance capital restructuring, occitanie-tribune.com on group brands, achatsolutions.com, societe.com SIREN 508217114/508576436 Grabels, linkedin.com/company/achat-solutions) — headcount (160) and revenue (21.2M€) are 2019 figures, the most recent independently sourced numbers found; exact founding year not confirmed to a single source, so omitted; funding omitted because the capital movements found are private-equity/growth-capital ownership stakes (percentages, not a disclosed round amount), which doesn't fit the VC-round schema."
+  },
+  "DSI SOLUTIONS": {
+    "_source": "Searched 'DSI Solutions', 'DSI Group', 'DSI France' plus SIREN registries (annuaire-entreprises.data.gouv.fr, societe.com, pappers.fr, verif.com) and LinkedIn on 2026-09-25 — could not confirm this is one real, distinct, currently-trading company. Multiple unrelated entities share fragments of the name: DSI GROUP (Massy, SIREN 793408279, IT consulting, appears active), DSI FRANCE (Gonesse/Tremblay-en-France, telephony/IT reseller), and a SARL literally named 'DSI SOLUTIONS' (Angers, SIREN 503293052, IT systems consulting, run by Jérôme Bouton) that made a partial asset contribution ('apport partiel d'actif') of its business to a company called Capt'Insight in 2018 — casting doubt on whether it still trades independently, and Angers (Pays de la Loire) is not near the PACA job board's usual footprint. The only LinkedIn page literally titled 'DSI Solutions' found is an unrelated US logistics company (Los Angeles/Florida). 'DSI' commonly denotes an internal Direction des Systèmes d'Information rather than a company brand, so this may also be a mislabeled internal department rather than a distinct employer. No logo/cover downloaded — recommend checking the original job posting/ATS record directly to identify the real employer before publishing a profile."
+  },
+  "Akanea": {
+    "description": "Akanea est un éditeur français de logiciels métier pour le transport, la logistique, la douane et l'agroalimentaire (WMS, TMS, gestion de nomenclature douanière), filiale du groupe agri-tech Isagri. La société revendique plus de 30 ans d'expertise, 1 500 clients et 20 000 utilisateurs, avec plus de 240 collaborateurs répartis sur quatre sites en France (Lyon/Limonest, Toulouse, Marseille, Larmor-Plage) et deux filiales à l'international (Pologne, Maroc).",
+    "sectors": [
+      "Éditeur de logiciels",
+      "Supply chain / Logistique",
+      "Agroalimentaire"
+    ],
+    "headcount": 240,
+    "hq_city": "Limonest",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://akanea.com/en/",
+      "linkedin": "https://www.linkedin.com/company/akanea-dev"
+    },
+    "cover_image": "/brand/companies/akanea-cover.jpg",
+    "logo": "/brand/companies/akanea-logo.png",
+    "_source": "Manual research 2026-09-25 (akanea.com/en/about-akanea, pappers.fr/societe.com for Akanea Développement / Akanea Développement Groupe SIRENs, techlid.fr, linkedin.com/company/akanea-dev) — correction to the initial brief: this Akanea is a transport/logistics/customs/agrifood software editor (Isagri subsidiary), NOT a legal or healthcare practice-management vendor; no distinct 'Akanea Informatique' matching that description was found, so the description reflects the verified logistics/agrifood business instead. The holding company's registered siège social moved from Limonest to Tillé (Oise) in 2018 for legal/administrative reasons, but Akanea's own site still presents Limonest (Lyon area) as a main site alongside Toulouse, Marseille and Larmor-Plage; founding year not pinned to a single verified date ('30+ years'), so omitted. No funding disclosed/applicable — it is a subsidiary of the Isagri group, not independently VC-funded."
+  },
+  "Bosch": {
+    "description": "Bosch (Robert Bosch GmbH) est un groupe industriel et technologique allemand fondé à Stuttgart en 1886 par Robert Bosch, actif dans la mobilité, les technologies industrielles, les biens de consommation et l'énergie/bâtiment. Présent en France depuis 1899, Robert Bosch France (siège à Saint-Ouen-sur-Seine) emploie environ 5 500 salariés pour un chiffre d'affaires supérieur à 2,8 Md€ en 2024. Détenu à 94 % par la fondation Robert Bosch Stiftung, le groupe compte environ 413 000 collaborateurs dans le monde.",
+    "sectors": [
+      "Industrie",
+      "Automobile / Mobilité",
+      "Technologies industrielles / IoT"
+    ],
+    "founded": 1886,
+    "headcount": 5500,
+    "hq_city": "Saint-Ouen-sur-Seine",
+    "hq_country": "FR",
+    "socials": {
+      "website": "https://www.bosch.fr",
+      "linkedin": "https://www.linkedin.com/company/bosch"
+    },
+    "cover_image": "/brand/companies/bosch-cover.jpg",
+    "logo": "/brand/companies/bosch-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Bosch_(entreprise), bosch.fr/notre-entreprise/notre-histoire, annuaire-entreprises.data.gouv.fr SIREN 572067684 Robert Bosch France Saint-Ouen-sur-Seine, linkedin.com/company/bosch, commons.wikimedia.org for logo + HQ photo) — headcount (5,500) and revenue are the France-entity 2024 figures, distinct from the ~413,000 worldwide headcount mentioned for context. Funding omitted per brief: Bosch is a 138-year-old private conglomerate majority-owned by the Robert Bosch Stiftung foundation, not VC-backed and not applicable."
+  },
+  "Aircall": {
+    "description": "Aircall est un éditeur français de logiciels de téléphonie d'entreprise dans le cloud, fondé à Paris en 2014 par Olivier Pailhes, Jonathan Anguelov, Pierre-Baptiste Béchu et Xavier Durand. La solution cible surtout les PME et entreprises de taille intermédiaire et s'intègre aux CRM et outils métier. Devenue licorne en 2021 après une série D de 120 M$ menée par Goldman Sachs Asset Management, la société a levé plus de 225 M$ au total et opère depuis Paris, New York, Madrid et Sydney.",
+    "sectors": [
+      "SaaS",
+      "Téléphonie cloud / CCaaS",
+      "Scale-up"
+    ],
+    "founded": 2014,
+    "hq_city": "Paris",
+    "hq_country": "FR",
+    "funding": {
+      "stage": "Série D",
+      "amount": "120 M$",
+      "year": 2021,
+      "valuation": "plus d'1 Md$ (licorne)"
+    },
+    "socials": {
+      "website": "https://aircall.io",
+      "linkedin": "https://www.linkedin.com/company/aircall"
+    },
+    "cover_image": "/brand/companies/aircall-cover.jpg",
+    "logo": "/brand/companies/aircall-logo.svg",
+    "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Aircall, aircall.io/blog/news/series-d-funding, aircall.io/about-us, aircall.io/brand for the official logo asset, linkedin.com/company/aircall) — funding history: Series B $29M (2018), Series C $65M (2020), Series D $120M (June 2021, Goldman Sachs Asset Management-led) crossing the $1B valuation mark; total raised exceeds $225M across 6 rounds. Headcount omitted — no single verified current figure found."
+  }
+}

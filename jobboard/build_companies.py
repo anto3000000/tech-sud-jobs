@@ -34,10 +34,21 @@ FEED = os.path.join(SITE, "jobs.json")
 WTTJ_CACHE = os.path.join(DATA, "cache", "wttj")
 OUT = os.path.join(SITE, "companies.json")
 
+# hand-researched profiles (real bio, logo, cover photo — see jobboard/site/brand/
+# companies/) for companies the automated pipeline can never reach: they have zero
+# PACA postings on Welcome to the Jungle, so build_companies has no `organization`
+# payload to distill. Keyed by the exact company name as it appears in the feed.
+MANUAL_PROFILES = os.path.join(DATA, "companies_manual.json")
+
 # stack tokens that aren't a real signal of what a company builds
 STACK_DENY = {"claude", "excel", "notion", "slack", "google-ads", "google-analytics",
               "confluence", "jira", "office", "microsoft-office", "powerpoint", "word",
               "sonar", "windows", "gmail", "outlook", "teams"}
+
+# category key -> French label, for the auto-generated bio (kept local rather
+# than importing render_pages.CAT_LABEL — the two build layers stay independent)
+CAT_LABEL_FR = {"eng": "développement", "data": "data / IA", "product": "product",
+                "design": "design", "tech-adjacent": "IT"}
 
 # data/companies.*.json `source` -> human ecosystem label (curated is not one)
 ECOSYSTEM = {
@@ -329,6 +340,10 @@ def main():
         sys.exit("feed has no jobs")
     now = datetime.now(timezone.utc)
     dirs = load_directories()
+    try:
+        manual_profiles = json.load(open(MANUAL_PROFILES, encoding="utf-8"))
+    except (OSError, ValueError):
+        manual_profiles = {}
 
     groups = {}
     for j in jobs:
@@ -351,6 +366,10 @@ def main():
                 if profile:
                     break
         has_wttj_profile = bool(profile)
+        if not profile and name in manual_profiles:
+            # hand-researched (see MANUAL_PROFILES) — same shape as a distilled
+            # WTTJ org, so render_pages treats it exactly like a real profile
+            profile = {k: v for k, v in manual_profiles[name].items() if not k.startswith("_")}
 
         logo = (profile or {}).get("logo") or next(
             (j.get("logo") for j in cjobs if j.get("logo")), None)
@@ -374,16 +393,26 @@ def main():
         sources = sorted({j.get("source") for j in cjobs if j.get("source")})
 
         if not (profile or {}).get("description"):
-            # no WTTJ bio on file — a short, factual one-liner from data we do
-            # have, so every company page still carries a summary
+            # no WTTJ bio on file — a factual couple of sentences from data we
+            # do have, so every company page still carries a real summary
             bits = ["%d poste%s ouvert%s" % (
                 len(cjobs), "s" if len(cjobs) > 1 else "", "s" if len(cjobs) > 1 else "")]
             if city:
                 bits.append("à %s" % city if city != "Remote" else "en télétravail")
             cat_suffix = " (%s)" % extras["category"] if extras.get("category") else ""
-            auto_desc = "%s%s recrute dans la tech en PACA : %s." % (
+            sentence1 = "%s%s recrute dans la tech en PACA : %s." % (
                 name, cat_suffix, ", ".join(bits))
-            profile = dict(profile or {}, description=auto_desc)
+
+            parts2 = []
+            if agg.get("by_category"):
+                top_cat = next(iter(agg["by_category"]))
+                parts2.append("principalement en %s" % CAT_LABEL_FR.get(top_cat, top_cat))
+            if agg.get("by_contract"):
+                top_contract, top_cnt = next(iter(agg["by_contract"].items()))
+                parts2.append("%d %% de %s" % (round(100 * top_cnt / len(cjobs)), top_contract))
+            sentence2 = (" Les offres sont " + ", avec ".join(parts2) + ".") if parts2 else ""
+
+            profile = dict(profile or {}, description=sentence1 + sentence2)
 
         rec = {
             "slug": slug,

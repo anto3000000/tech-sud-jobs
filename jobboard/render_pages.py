@@ -53,6 +53,10 @@ TOMBSTONE_DAYS = 120   # keep the tombstone this long after an offer vanishes, t
 # skipped with a warning if it's missing.
 COMPANIES = os.path.join(SITE, "companies.json")
 
+# city -> real Wikimedia photo for the /emploi/<ville>.html hero (city_images.py,
+# optional — cities fall back to the designed gradient/skyline banner without it)
+CITY_IMAGES = os.path.join(DATA, "city_images.json")
+
 SITE_URL = os.environ.get(
     "SITE_URL", "https://sudtechjobs.com"
 ).rstrip("/")
@@ -306,6 +310,10 @@ h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:23px;l
 .about{margin:6px 0 0}.about .sub{font-size:12.5px;margin:0 0 8px}
 .about a{color:var(--brand-ink)}
 h2{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;margin:26px 0 8px}
+.city-stats{margin-top:8px}
+.city-stats .stats-title{font-size:17px;margin-top:2px}
+.city-stats h3{font-family:"Bricolage Grotesque",sans-serif;font-size:13.5px;margin:18px 0 6px;color:var(--muted)}
+.city-stats h3:first-of-type{margin-top:14px}
 ul.jobs{list-style:none;margin:0;padding:0}
 ul.jobs li{background:var(--card);border:1px solid var(--line);border-radius:12px;
  margin:0 0 11px;box-shadow:var(--shadow);overflow:hidden}
@@ -358,8 +366,8 @@ ul.jobs li.job .meta .tag.design{background:var(--tag-design)}
 ul.jobs li.job .meta .tag.tech-adjacent{background:var(--tag-adj)}
 ul.jobs li.job .meta .remote{color:#fff;background:var(--remote);border-color:var(--remote);
  font-weight:600;font-family:"IBM Plex Mono",monospace;letter-spacing:.01em;text-transform:lowercase}
-/* city facet hero — a designed banner (no stock photo pipeline yet): a tinted
-   gradient + abstract skyline, hue-rotated per city so each town reads distinct */
+/* city facet hero — a real Wikimedia Commons photo of the city (city_images.py)
+   when we have one; a designed gradient + abstract skyline otherwise */
 .city-hero{position:relative;overflow:hidden;border-radius:16px;margin:14px 0 18px;
  padding:28px 22px 22px;min-height:104px;display:flex;align-items:flex-end;
  background:linear-gradient(175deg,color-mix(in srgb,var(--brand) 32%,var(--bg)) 0%,var(--bg) 100%);
@@ -371,6 +379,14 @@ ul.jobs li.job .meta .remote{color:#fff;background:var(--remote);border-color:va
 .city-hero .eyebrow{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;
  letter-spacing:.08em;text-transform:uppercase;color:var(--brand-ink);margin:0 0 4px;font-weight:600}
 .city-hero h1{margin:0}
+.city-hero.has-photo{min-height:220px;padding:22px;background-size:cover;background-position:center;border:0}
+.city-hero-scrim{position:absolute;inset:0;
+ background:linear-gradient(180deg,rgba(16,28,38,.12) 0%,rgba(16,28,38,.78) 100%)}
+.city-hero.has-photo .eyebrow{color:#fff;opacity:.85}
+.city-hero.has-photo h1{color:#fff}
+.city-hero-credit{position:absolute;z-index:1;right:12px;bottom:8px;font-size:10.5px;
+ color:rgba(255,255,255,.8)}
+.city-hero-credit:hover{color:#fff}
 footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
 footer .social{display:flex;gap:10px;margin:14px 0 0}
 footer .social a{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;
@@ -381,9 +397,8 @@ footer .social svg{width:15px;height:15px;fill:currentColor}
 .cover{height:150px;border-radius:14px;background:var(--card-2) center/cover no-repeat;
  border:1px solid var(--line);margin:8px 0 12px}
 .cover.cover-fallback{background:
-   radial-gradient(120% 140% at 8% -20%, color-mix(in srgb,var(--accent) 38%,transparent) 0%, transparent 55%),
-   linear-gradient(135deg,var(--brand),var(--accent));
- filter:hue-rotate(var(--hue,0deg))}
+   repeating-linear-gradient(135deg, color-mix(in srgb,var(--brand-ink) 7%,transparent) 0 2px, transparent 2px 16px),
+   linear-gradient(175deg, var(--card-2) 0%, var(--bg) 100%)}
 .cohead{display:flex;gap:15px;align-items:flex-end;padding:0 4px}
 .cohead .lg{width:74px;height:74px;border-radius:16px;background:#fff;border:1px solid var(--line);
  object-fit:contain;padding:7px;box-shadow:var(--shadow);flex:none}
@@ -408,6 +423,15 @@ dl.facts dd{margin:2px 0 0;font-size:14px;font-weight:500}
 .mini{display:flex;flex-wrap:wrap;gap:7px;margin:6px 0 0}
 .mini a,.mini span{font-size:12.5px;background:var(--card-2);border:1px solid var(--line);border-radius:8px;
  padding:4px 9px;color:var(--brand-ink)}
+.mini .chip-filter{font:inherit;font-size:12.5px;color:var(--brand-ink);background:var(--card-2);
+ border:1px solid var(--line);border-radius:8px;padding:4px 9px;cursor:pointer}
+.mini .chip-filter:hover{border-color:var(--brand)}
+.mini .chip-filter[aria-pressed=true]{background:var(--brand-ink);color:#fff;border-color:var(--brand-ink)}
+.filter-status{display:flex;align-items:center;gap:6px}
+.filter-status button{font:inherit;font-size:12.5px;color:var(--muted);background:none;
+ border:1px solid var(--line);border-radius:8px;padding:3px 9px;cursor:pointer}
+.filter-status button:hover{border-color:var(--accent);color:var(--ink)}
+li.job[hidden]{display:none}
 /* audience-notice bar (Umami is cookieless — informational, not a consent gate) */
 #cookie-notice[hidden]{display:none}
 #cookie-notice{position:fixed;left:12px;right:12px;bottom:12px;max-width:560px;margin:0 auto;
@@ -877,7 +901,19 @@ def _hue_seed(s):
     return int(hashlib.sha1((s or "").encode()).hexdigest(), 16) % 360
 
 
-def _city_hero(city):
+def _city_hero(city, image=None):
+    if image and image.get("url"):
+        credit = ('<a class="city-hero-credit" href="%s" target="_blank" rel="nofollow noopener">'
+                  "Photo : Wikimedia Commons</a>") % esc(image["commons_url"]) if image.get("commons_url") else ""
+        return """<div class="city-hero has-photo" style="background-image:url({url})">
+  <div class="city-hero-scrim"></div>
+  <div class="city-hero-text">
+    <span class="eyebrow">PACA · Sud de la France</span>
+    <h1>Emplois tech à {city}</h1>
+  </div>
+  {credit}
+</div>""".format(url=esc(image["url"]), city=esc(city), credit=credit)
+
     buildings = [22, 40, 30, 54, 26, 46, 34, 20, 42, 28]
     x = 6
     bars = []
@@ -895,7 +931,80 @@ def _city_hero(city):
 </div>""".format(hue=_hue_seed(city), vw=x, bars="".join(bars), city=esc(city))
 
 
-def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=None):
+def _city_stats_block(city, jobs, live_facets):
+    """Bottom-of-page SEO content for a /emploi/<ville>.html page: the same
+    kind of aggregate data a company page already carries (breakdowns +
+    salary + remote share), all linking back into the site — number of
+    offers, métiers, stacks, companies, salaries, télétravail."""
+    n = len(jobs)
+    if not n:
+        return ""
+    cslug = slugify(city)
+    cat_counts = Counter(j.get("category") for j in jobs if j.get("category"))
+    contract_counts = Counter(j.get("contract") for j in jobs if j.get("contract"))
+    exp_counts = Counter(j.get("experience") for j in jobs if j.get("experience"))
+    stack_counts = Counter()
+    for j in jobs:
+        for s in (j.get("stack") or []):
+            if slugify(s) not in STACK_DENY:
+                stack_counts[s] += 1
+    company_counts = Counter(j.get("company") for j in jobs if j.get("company"))
+    company_slug = {j["company"]: j["_company_slug"] for j in jobs
+                    if j.get("company") and j.get("_company_slug")}
+    remote_n = sum(1 for j in jobs if j.get("city") == "Remote"
+                   or (j.get("remote_detail") or "") in ("full remote", "hybride"))
+    new_n = sum(1 for j in jobs if j.get("is_new"))
+    salaries = list(dict.fromkeys(j["salary"] for j in jobs if j.get("salary")))[:6]
+
+    sections = ['<h2 class="stats-title">%s en chiffres</h2>\n<p class="sub">%d offre%s tech '
+                "actuellement recensée%s à %s%s." % (
+                    esc(city), n, "s" if n > 1 else "", "s" if n > 1 else "", esc(city),
+                    (", dont %d publiée%s cette semaine" % (new_n, "s" if new_n > 1 else "")) if new_n else "")]
+
+    if cat_counts:
+        cat_by_label = {CAT_LABEL.get(k, k): k for k in cat_counts}
+        href = lambda lbl: "%s-%s" % (slugify(cat_by_label.get(lbl, lbl)), cslug)
+        pairs = [(CAT_LABEL.get(k, k), v) for k, v in cat_counts.most_common()]
+        sections.append("<h3>Par métier</h3>\n" + _mini_links(pairs, live_facets, href))
+
+    if contract_counts:
+        sections.append('<h3>Par contrat</h3>\n<div class="mini">%s</div>' % "".join(
+            "<span>%s · %d</span>" % (esc(k), v) for k, v in contract_counts.most_common()))
+
+    if stack_counts:
+        href = lambda lbl: "stack-%s-%s" % (slugify(lbl), cslug)
+        sections.append("<h3>Par techno</h3>\n"
+                        + _mini_links(stack_counts.most_common(14), live_facets, href))
+
+    if company_counts:
+        chips = []
+        for comp, cnt in company_counts.most_common(12):
+            txt = "%s · %d" % (esc(comp), cnt)
+            slug = company_slug.get(comp)
+            chips.append('<a href="../entreprise/%s.html">%s</a>' % (slug, txt) if slug
+                        else "<span>%s</span>" % txt)
+        sections.append('<h3>Entreprises qui recrutent</h3>\n<div class="mini">%s</div>' % "".join(chips))
+
+    if salaries:
+        sections.append('<h3>Salaires affichés</h3>\n<div class="k">%s</div>' % "".join(
+            '<span class="sal">%s</span>' % esc(s) for s in salaries))
+
+    if exp_counts:
+        order = ["Débutant", "< 1 an", "1–2 ans", "2–5 ans", "5–7 ans", "7–10 ans", "> 10 ans"]
+        pairs = sorted(exp_counts.items(), key=lambda kv: order.index(kv[0]) if kv[0] in order else 99)
+        sections.append('<h3>Par expérience</h3>\n<div class="mini">%s</div>' % "".join(
+            "<span>%s · %d</span>" % (esc(k), v) for k, v in pairs))
+
+    if remote_n:
+        pct = round(100 * remote_n / n)
+        sections.append('<p class="sub">%d poste%s sur %d (%d %%) ouvert%s au télétravail ou en hybride.</p>' % (
+            remote_n, "s" if remote_n > 1 else "", n, pct, "s" if remote_n > 1 else ""))
+
+    return '<div class="card city-stats">%s</div>' % "\n".join(sections)
+
+
+def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=None,
+                  city_image=None, live_facets=None):
     canonical = "%s/emploi/%s.html" % (SITE_URL, slug)
     facet_html = ""
     if siblings:
@@ -911,15 +1020,18 @@ def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=
             for i, j in enumerate(jobs)
         ],
     }
-    header = (_city_hero(city) if (kind == "ville" and city) else "<h1>%s</h1>" % esc(h1))
+    is_city = kind == "ville" and city
+    header = (_city_hero(city, city_image) if is_city else "<h1>%s</h1>" % esc(h1))
+    stats = _city_stats_block(city, jobs, live_facets or {}) if is_city else ""
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Emplois</a> › {h1}</nav>
 {header}
 <p class="sub">{intro}</p>
+{stats}
 {facets}
 <ul class="jobs">{lis}</ul>
 """.format(home=SITE_URL + "/", hub=SITE_URL + "/emploi/", h1=esc(h1), header=header,
-           intro=esc(intro), facets=facet_html, lis=lis)
+           intro=esc(intro), facets=facet_html, lis=lis, stats=stats)
     return shell(title="%s | sudtechjobs" % h1, description=intro,
                  canonical=canonical, head_extra=jsonld(ld), body=body)
 
@@ -1151,6 +1263,40 @@ def render_legal(*, slug, title, description, h1, inner):
 </div>
 """.format(home=SITE_URL + "/", h1=esc(h1), upd=esc(LEGAL_UPDATED), inner=inner)
     return shell(title=title, description=description, canonical=canonical, body=body)
+
+
+# --------------------------------------------------------------------------- #
+#  404                                                                         #
+# --------------------------------------------------------------------------- #
+def render_404():
+    canonical = "%s/404.html" % SITE_URL
+    body = """
+<h1>404 — ce poste a été pourvu avant même d'exister</h1>
+<p class="sub">La page que vous cherchez n'est plus en ligne, ou n'a jamais
+été postée. Au moins ici, pas besoin d'attendre trois semaines pour avoir
+une réponse.</p>
+<div class="card">
+<div class="k">
+<span>Statut : offre clôturée sans email de refus</span>
+<span>Délai de réponse : illimité</span>
+<span>Feedback du recruteur : aucun</span>
+</div>
+</div>
+<div class="facets">
+<a href="{home}">Toutes les offres</a>
+<a href="{hub}">Parcourir par ville &amp; techno</a>
+<a href="{companies}">Entreprises</a>
+<a href="{guides}">Guides</a>
+</div>
+""".format(home=SITE_URL + "/", hub=SITE_URL + "/emploi/",
+           companies=SITE_URL + "/entreprise/", guides=SITE_URL + "/guides/")
+    return shell(
+        title="Page introuvable (404) | sudtechjobs",
+        description="Cette page n'existe pas ou plus. Retrouvez toutes les "
+                    "offres tech du sud de la France sur sudtechjobs.",
+        canonical=canonical,
+        head_extra='<meta name="robots" content="noindex,follow">',
+        body=body)
 
 
 # --------------------------------------------------------------------------- #
@@ -2387,6 +2533,20 @@ def render_reconversion_guide(jobs, generated):
 CAT_LABEL = {k: v[0] for k, v in CATS.items()}
 
 
+def _mini_links(pairs, live_facets, href=None):
+    """"<label> · <n>" pills — a real link to the facet page when it exists
+    and has enough jobs to be live, a plain span otherwise. Shared by the
+    company page's "Par métier/contrat/ville" breakdowns and the city facet
+    page's bottom SEO block."""
+    out = []
+    for lbl, cnt in pairs:
+        txt = "%s · %d" % (esc(lbl), cnt)
+        h = href(lbl) if href else None
+        out.append('<a href="../emploi/%s.html">%s</a>' % (h, txt) if h and h in live_facets
+                   else "<span>%s</span>" % txt)
+    return '<div class="mini">%s</div>' % "".join(out)
+
+
 def _fmt_headcount(n):
     if not n:
         return None
@@ -2397,18 +2557,22 @@ def _fmt_headcount(n):
 
 def _company_job_li(j):
     """same card as job_li but without the logo/company line — the page
-    header already carries those for every job in the list."""
+    header already carries those for every job in the list. `data-cat` /
+    `data-contract` let the page's own script filter this list in place when
+    the "Par métier" / "Par contrat" chips above are clicked."""
     city = j.get("city")
     city_txt = "Télétravail" if city == "Remote" else (city or "")
     co_html = ('<div class="co">%s</div>' % esc(city_txt)) if city_txt else ""
-    return ('<li class="job co-job"><div class="t"><a href="../offre/{slug}.html">{title}</a></div>'
+    return ('<li class="job co-job" data-cat="{cat}" data-contract="{contract}">'
+            '<div class="t"><a href="../offre/{slug}.html">{title}</a></div>'
             '{co}{stack}<div class="meta">{meta}</div></li>').format(
+        cat=esc(j.get("category")), contract=esc(j.get("contract")),
         slug=j["_slug"], title=esc(j.get("title")), co=co_html,
         stack=_job_stack_html(j), meta=_job_meta_html(j))
 
 
 def _company_list(jobs):
-    return '<ul class="jobs">%s</ul>' % "".join(_company_job_li(j) for j in jobs)
+    return '<ul class="jobs" id="companyJobs">%s</ul>' % "".join(_company_job_li(j) for j in jobs)
 
 
 def render_company(rec, jobs, generated, live_facets):
@@ -2420,13 +2584,13 @@ def render_company(rec, jobs, generated, live_facets):
     n = rec.get("open_roles", len(jobs))
 
     # ---- header: cover banner + big logo straddling it, then badges --------
-    # real WTTJ cover photo when we have one; otherwise a tinted gradient banner
-    # (deterministic per company, via a hue rotate) so no page ever looks bare
+    # real WTTJ cover photo when we have one; otherwise a restrained, neutral
+    # textured banner (no photo pipeline for arbitrary companies — a loud
+    # random-hued gradient here read as "n'importe quoi" rather than branded)
     if p.get("cover_image"):
         cover = '<div class="cover" style="background-image:url(%s)"></div>' % esc(p["cover_image"])
     else:
-        hue = int(hashlib.sha1(name.encode()).hexdigest(), 16) % 360
-        cover = '<div class="cover cover-fallback" style="--hue:%ddeg"></div>' % hue
+        cover = '<div class="cover cover-fallback"></div>'
     logo_html = _logo_html(rec.get("logo"), name, "lg")
 
     badges = []
@@ -2452,10 +2616,20 @@ def render_company(rec, jobs, generated, live_facets):
     fact("Type", esc(rec.get("type")) if rec.get("type") else None)
     fact("Effectif", esc(_fmt_headcount(p.get("headcount"))) if p.get("headcount") else None)
     fact("Création", esc(p.get("founded")) if p.get("founded") else None)
+    fund = p.get("funding") or {}
+    if fund.get("stage"):
+        bits = [fund["stage"]]
+        if fund.get("amount"):
+            bits.append(fund["amount"] + (" (%s)" % fund["year"] if fund.get("year") else ""))
+        elif fund.get("year"):
+            bits.append(str(fund["year"]))
+        fact("Financement", esc(" · ".join(bits)))
+    if fund.get("valuation"):
+        fact("Valorisation", esc(fund["valuation"]))
     hq = p.get("hq_city")
     if hq and hq.lower() != (city or "").lower():
         fact("Siège", esc(hq))
-    fact("Sur le board", esc(city) if city else None)
+    fact("Recrute à", esc(city) if city else None)
     if p.get("parity_women") is not None:
         fact("Parité F/H", "%s%% / %s%%" % (esc(p.get("parity_women")), esc(p.get("parity_men"))))
     if p.get("equality_index") is not None:
@@ -2524,33 +2698,34 @@ def render_company(rec, jobs, generated, live_facets):
         stack_html = ('<h2>Stack technique</h2>\n<div class="stack">%s</div>'
                       % "".join(chips))
 
-    # ---- breakdowns (métier / contrat / ville) --------------------------
-    def mini(pairs, href=None):
-        out = []
-        for lbl, cnt in pairs:
-            txt = "%s · %d" % (esc(lbl), cnt)
-            h = href(lbl) if href else None
-            out.append('<a href="../emploi/%s.html">%s</a>' % (h, txt) if h and h in live_facets
-                       else "<span>%s</span>" % txt)
-        return '<div class="mini">%s</div>' % "".join(out)
-
+    # ---- breakdowns (métier / contrat / ville) ---------------------------
+    # métier & contrat filter the "Offres ouvertes" list below in place (see
+    # the script at the end of this page) rather than linking out to the
+    # global facet page — clicking them is expected to filter *this* page.
+    # "Où ils recrutent" still links out: there's no per-city list to filter to.
+    has_filters = bool(rec.get("by_category")) or bool(rec.get("by_contract"))
     bre = []
     if rec.get("by_category"):
-        brec = [(CAT_LABEL.get(k, k), v) for k, v in rec["by_category"].items()]
-        brec_href = None
-        # a métier facet is <cat-slug>; métier×ville is <cat>-<city>
-        cat_by_label = {CAT_LABEL.get(k, k): k for k in rec["by_category"]}
-        brec_href = lambda lbl: slugify(cat_by_label.get(lbl, lbl))
-        bre.append("<h2>Par métier</h2>\n" + mini(brec, brec_href))
+        chips = "".join(
+            '<button type="button" class="chip-filter" data-cat="%s" aria-pressed="false">%s · %d</button>'
+            % (esc(k), esc(CAT_LABEL.get(k, k)), v)
+            for k, v in rec["by_category"].items())
+        bre.append('<h2>Par métier</h2>\n<div class="mini">%s</div>' % chips)
     if rec.get("by_contract"):
-        bre.append("<h2>Par contrat</h2>\n" + mini(list(rec["by_contract"].items())))
+        chips = "".join(
+            '<button type="button" class="chip-filter" data-contract="%s" aria-pressed="false">%s · %d</button>'
+            % (esc(k), esc(k), v)
+            for k, v in rec["by_contract"].items())
+        bre.append('<h2>Par contrat</h2>\n<div class="mini">%s</div>' % chips)
     if rec.get("by_city"):
         bre.append("<h2>Où ils recrutent</h2>\n"
-                   + mini(list(rec["by_city"].items()), lambda c: slugify(c)))
+                   + _mini_links(list(rec["by_city"].items()), live_facets, lambda c: slugify(c)))
     if rec.get("remote_roles"):
         bre.append('<p class="sub">%d poste%s ouvert%s au télétravail.</p>' % (
             rec["remote_roles"], "s" if rec["remote_roles"] > 1 else "",
             "s" if rec["remote_roles"] > 1 else ""))
+    if has_filters:
+        bre.append('<p class="sub filter-status" id="filterStatus" hidden></p>')
     breakdown_html = "\n".join(bre)
 
     sal_html = ""
@@ -2566,6 +2741,51 @@ def render_company(rec, jobs, generated, live_facets):
     jobs_sorted = sorted(jobs, key=lambda j: (j.get("first_seen") or "", j.get("published_at") or ""),
                          reverse=True)
     jobs_html = "<h2>Offres ouvertes (%d)</h2>\n%s" % (len(jobs_sorted), _company_list(jobs_sorted))
+
+    # in-place filtering for the "Par métier" / "Par contrat" chips above —
+    # no page reload, no navigation away from the company (see has_filters)
+    filter_js = "" if not has_filters else """<script>
+(function(){
+  var list = document.getElementById('companyJobs');
+  var status = document.getElementById('filterStatus');
+  if(!list) return;
+  var active = {cat: null, contract: null};
+  var items = Array.prototype.slice.call(list.querySelectorAll('li.job'));
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip-filter'));
+  function apply(){
+    var shown = 0;
+    items.forEach(function(li){
+      var ok = (!active.cat || li.dataset.cat === active.cat)
+             && (!active.contract || li.dataset.contract === active.contract);
+      li.hidden = !ok;
+      if(ok) shown++;
+    });
+    chips.forEach(function(c){
+      var on = (c.dataset.cat && c.dataset.cat === active.cat)
+            || (c.dataset.contract && c.dataset.contract === active.contract);
+      c.setAttribute('aria-pressed', String(!!on));
+    });
+    if(!status) return;
+    if(active.cat || active.contract){
+      status.hidden = false;
+      status.innerHTML = (shown ? shown + (shown > 1 ? ' offres correspondent' : ' offre correspond')
+        : 'Aucune offre ne correspond') + ' · <button type="button" id="filterClearBtn">✕ afficher toutes les offres</button>';
+      document.getElementById('filterClearBtn').addEventListener('click', function(){
+        active.cat = null; active.contract = null; apply();
+      });
+    } else {
+      status.hidden = true; status.innerHTML = '';
+    }
+  }
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      if(c.dataset.cat) active.cat = (active.cat === c.dataset.cat) ? null : c.dataset.cat;
+      if(c.dataset.contract) active.contract = (active.contract === c.dataset.contract) ? null : c.dataset.contract;
+      apply();
+    });
+  });
+})();
+</script>"""
 
     # ---- JSON-LD -------------------------------------------------------------
     org_ld = {"@context": "https://schema.org", "@type": "Organization", "name": name,
@@ -2621,6 +2841,7 @@ def render_company(rec, jobs, generated, live_facets):
 {benefits}
 {sal}
 {jobs}
+{filter_js}
 <p class="sub" style="margin-top:22px">Données agrégées depuis les offres publiées, mises à jour le {gen}.
 Une info à corriger ? <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a></p>
 """.format(
@@ -2629,7 +2850,8 @@ Une info à corriger ? <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.
         n=n, s="s" if n > 1 else "", where=where,
         badges=badges_html, facts=facts_html, social=social_html, desc=desc_html,
         spark=spark, stack=stack_html, breakdown=breakdown_html,
-        benefits=benefits_html, sal=sal_html, jobs=jobs_html, gen=esc(generated),
+        benefits=benefits_html, sal=sal_html, jobs=jobs_html, filter_js=filter_js,
+        gen=esc(generated),
     )
     meta = "%s recrute : %d offre%s tech (dev, data, produit, design)%s sur sudtechjobs." % (
         name, n, "s" if n > 1 else "", where)
@@ -2712,6 +2934,15 @@ def main():
         if c:
             j["_company_slug"] = c["slug"]
             j["_company"] = c
+
+    # real photo per city for the /emploi/<ville>.html hero (city_images.py).
+    # Optional: cities just get the designed gradient/skyline banner without it.
+    city_images = {}
+    try:
+        city_images = json.load(open(CITY_IMAGES, encoding="utf-8"))
+    except (OSError, ValueError):
+        print("render_pages: no %s — city hero banners use the designed "
+              "fallback (run jobboard/city_images.py)" % CITY_IMAGES, file=sys.stderr)
 
     offre_dir = os.path.join(SITE, "offre")
     emploi_dir = os.path.join(SITE, "emploi")
@@ -2927,7 +3158,9 @@ def main():
         with open(os.path.join(emploi_dir, fn), "w", encoding="utf-8") as fh:
             fh.write(render_facet(slug=slug, h1=f["h1"], intro=f["intro"],
                                   jobs=f["jobs"], siblings=siblings_for(slug, f),
-                                  generated=generated, kind=f["kind"], city=city))
+                                  generated=generated, kind=f["kind"], city=city,
+                                  city_image=city_images.get(city) if city else None,
+                                  live_facets=live_facets))
 
     # ---- hub -------------------------------------------------------------
     def grp(kinds, strip):
@@ -2987,6 +3220,8 @@ def main():
         fh.write(render_about())
     with open(os.path.join(SITE, "dashboard.html"), "w", encoding="utf-8") as fh:
         fh.write(render_dashboard(jobs, generated))
+    with open(os.path.join(SITE, "404.html"), "w", encoding="utf-8") as fh:
+        fh.write(render_404())
 
     # ---- guides (FAQ articles, site root + /guides/ hub) -------------------
     guides_meta = []

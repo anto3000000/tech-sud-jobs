@@ -48,6 +48,14 @@ echo "::group::company profiles (layer 4)"
 python3 jobboard/build_companies.py
 echo "::endgroup::"
 
+echo "::group::city photos (layer 4.6, best effort — needs network)"
+if [ "$REBUILD_ONLY" != "1" ]; then
+  python3 jobboard/city_images.py || echo "city image fetch failed — keeping the existing cache"
+else
+  echo "REBUILD_ONLY=1 — skipping network fetch, using the committed jobboard/data/city_images.json"
+fi
+echo "::endgroup::"
+
 echo "::group::render static SEO pages (layer 5)"
 python3 jobboard/render_pages.py
 echo "::endgroup::"
