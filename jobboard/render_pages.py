@@ -107,6 +107,10 @@ STACK_DENY = {"claude", "excel", "notion", "slack", "google-ads", "google-analyt
 
 CATS = {
     "eng":           ("Développeur", "Développeur · Infra"),
+    "devops":        ("DevOps / SRE", "DevOps"),
+    "cybersecurite": ("Cybersécurité", "Cyber"),
+    "architecte":    ("Architecte", "Architecte"),
+    "qa":            ("QA / Test", "QA"),
     "data":          ("Data / IA", "Data · IA"),
     "product":       ("Product Manager", "Product"),
     "design":        ("Design", "Design · UX"),
@@ -263,6 +267,7 @@ CSS = """
   --brand:#7CBDE8; --brand-ink:#2C6C9E;
   --wash:#FBEBD6; --pine:#2C9A6B;
   --tag-eng:#2C6C9E; --tag-data:#7B4BD8; --tag-product:#2C9A6B; --tag-design:#D6455D; --tag-adj:#8A6D1F;
+  --tag-devops:#1C8C8C; --tag-cyber:#B23A3A; --tag-architecte:#4C5B8C; --tag-qa:#C07A1E;
   --remote:#0E8FA8;
   --shadow:0 1px 2px rgba(22,48,63,.05), 0 12px 28px -16px rgba(22,48,63,.18);
   --iris:
@@ -382,6 +387,10 @@ ul.jobs li.job .meta .tag.data{background:var(--tag-data)}
 ul.jobs li.job .meta .tag.product{background:var(--tag-product)}
 ul.jobs li.job .meta .tag.design{background:var(--tag-design)}
 ul.jobs li.job .meta .tag.tech-adjacent{background:var(--tag-adj)}
+ul.jobs li.job .meta .tag.devops{background:var(--tag-devops)}
+ul.jobs li.job .meta .tag.cybersecurite{background:var(--tag-cyber)}
+ul.jobs li.job .meta .tag.architecte{background:var(--tag-architecte)}
+ul.jobs li.job .meta .tag.qa{background:var(--tag-qa)}
 ul.jobs li.job .meta .remote{color:#fff;background:var(--remote);border-color:var(--remote);
  font-weight:600;font-family:"IBM Plex Mono",monospace;letter-spacing:.01em;text-transform:lowercase}
 /* city facet hero — a real Wikimedia Commons photo of the city (city_images.py)
@@ -1113,7 +1122,7 @@ def _city_stats_block(city, jobs, live_facets, generated, history):
                              _fmt_keur(statistics.median(mids)),
                              _fmt_keur(mids[0]), _fmt_keur(mids[-1])))
             cat_lines = []
-            for cat in ("eng", "data", "product", "design", "tech-adjacent"):
+            for cat in ("eng", "devops", "cybersecurite", "architecte", "qa", "data", "product", "design", "tech-adjacent"):
                 cat_mids = sorted(r["mid"] for r in sal_rows if r["cat"] == cat)
                 if len(cat_mids) >= MIN_SAMPLE:
                     cat_lines.append("<span>%s · %s – %s</span>" % (
@@ -1624,7 +1633,7 @@ def render_salary_guide(jobs, generated):
 
     cat_list = "".join(
         _stat_line(CATS[cat][0], st["by_cat"][cat])
-        for cat in ("eng", "data", "product", "design", "tech-adjacent")
+        for cat in ("eng", "devops", "cybersecurite", "architecte", "qa", "data", "product", "design", "tech-adjacent")
         if st["by_cat"][cat]["n"] > 0)
     exp_list = "".join(
         _stat_line(label, st["by_exp"][key]) for key, label in (
@@ -1826,7 +1835,7 @@ def render_remote_guide(jobs, generated):
 
     cat_list = "".join(
         _remote_pct_line(CATS[cat][0], st["by_cat"][cat])
-        for cat in ("eng", "data", "product", "design", "tech-adjacent")
+        for cat in ("eng", "devops", "cybersecurite", "architecte", "qa", "data", "product", "design", "tech-adjacent")
         if st["by_cat"][cat]["n"] > 0)
 
     def company_list(rows, word):
@@ -1970,7 +1979,7 @@ def render_hiring_guide(jobs, generated):
 
     cat_list = "".join(
         "<li><b>%s</b> — %s</li>" % (esc(CATS[cat][0]), name_list(st["by_cat_top"][cat]))
-        for cat in ("eng", "data", "product", "design", "tech-adjacent")
+        for cat in ("eng", "devops", "cybersecurite", "architecte", "qa", "data", "product", "design", "tech-adjacent")
         if st["by_cat_top"][cat])
 
     zone_list = "".join(
