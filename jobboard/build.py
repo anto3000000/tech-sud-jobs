@@ -94,6 +94,51 @@ def _norm_title(s):
     return re.sub(r"\s+", " ", s).strip()
 
 
+JOB_ID_MAP_PATH = os.path.join(DATA, "job_id_map.json")
+
+
+def _load_job_id_map():
+    try:
+        return json.load(open(JOB_ID_MAP_PATH, encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+
+
+def _save_job_id_map(m):
+    os.makedirs(DATA, exist_ok=True)
+    with open(JOB_ID_MAP_PATH, "w", encoding="utf-8") as f:
+        json.dump(m, f, ensure_ascii=False, indent=0, sort_keys=True)
+
+
+def _ats_job_id(id_map, source_ats, company, title, url):
+    """Stable id for an ATS-sourced job -> the offer's URL slug is a hash of
+    this, so it MUST stay constant for "the same job" across builds, or every
+    previously published link (newsletter, Google index, sitemap) 404s
+    instead of hitting the tombstone redirect.
+
+    Keyed on (company, normalized title) — the same pair dedupe() matches on
+    — and cached in id_map (persisted across builds): a repost that gets a
+    fresh URL at the ATS, or a dedupe winner flipping between two records for
+    the same role, must not change the id. `id_map` is mutated in place with
+    any newly minted id."""
+    company_slug = _slug(company)
+    norm_title = _norm_title(title)
+    if company_slug and norm_title:
+        key = company_slug + "|" + norm_title
+        cached = id_map.get(key)
+        if cached:
+            return cached
+        h = hashlib.sha1(key.encode()).hexdigest()[:10]
+        new_id = "ats:%s:%s" % (source_ats, h)
+        id_map[key] = new_id
+        return new_id
+    # no stable key to hash on -> fall back to the old url+title hash so
+    # these rows don't all collide onto the same id (not cached: nothing
+    # stable to key the cache on)
+    h = hashlib.sha1(((url or "") + (title or "")).encode()).hexdigest()[:10]
+    return "ats:%s:%s" % (source_ats, h)
+
+
 def _page_slugify(s):
     """dash-slug for URLs — MUST stay in sync with render_pages.slugify."""
     s = str(s or "").lower()
@@ -239,6 +284,7 @@ def load_ats():
     if not os.path.exists(p):
         return []
     raw = json.load(open(p, encoding="utf-8"))
+    id_map = _load_job_id_map()
     out = []
     for j in raw:
         loc = j.get("location") or ""
@@ -268,9 +314,8 @@ def load_ats():
         if m and m[0].strip():
             city = m[0].strip()
         out.append({
-            "id": "ats:%s:%s:%s" % (
-                j.get("source_ats"), _slug(j.get("company")),
-                hashlib.sha1(((j.get("url") or "") + (j.get("title") or "")).encode()).hexdigest()[:10]),
+            "id": _ats_job_id(id_map, j.get("source_ats"), j.get("company"),
+                              j.get("title"), j.get("url")),
             "title": (j.get("title") or "").strip(),
             "company": j.get("company"),
             "company_slug": _slug(j.get("company")),
@@ -291,6 +336,7 @@ def load_ats():
             "description": j.get("description") or None,
             "description_excerpt": _excerpt(j.get("description")),
         })
+    _save_job_id_map(id_map)
     return out
 
 
