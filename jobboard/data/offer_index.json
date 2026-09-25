@@ -14,7 +14,7 @@
 "city": "Vitrolles",
 "company": "Accenture",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "Architecte Solution / Technique PLM F/H - Marseille"
@@ -74,7 +74,7 @@
 "city": "Six-Fours-les-Plages",
 "company": "Achat Solutions",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-25",
 "title": "INGÉNIEUR QA AUTOMATISATION"
@@ -144,7 +144,7 @@
 "city": "Aix-en-Provence",
 "company": "agap2",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "testeur QA"
@@ -464,7 +464,7 @@
 "city": "Marseille Area",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "Architecte systèmes (F/H)"
@@ -474,7 +474,7 @@
 "city": "Marseille Area",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte systèmes sur le périmètre Helionix (H/F)"
@@ -514,7 +514,7 @@
 "city": "Marseille Area",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "#DIGITALCAMPUS #DDMS IT Operation Specialist DevOps (F/M)"
@@ -534,7 +534,7 @@
 "city": "Marseille Area",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "#DIGITALCAMPUS Platform Engineer (Infrastructure & Automation)"
@@ -574,7 +574,7 @@
 "city": "Marseille Area",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "#ET20 Ingénieur Sécurité et Fiabilité Senior (F/H)"
@@ -674,7 +674,7 @@
 "city": "Remote",
 "company": "Alan",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "CTO Founder Associate - internship"
@@ -864,7 +864,7 @@
 "city": "Remote",
 "company": "Alan",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-10",
 "last_seen": "2026-09-25",
 "title": "Platform Engineer (x/f/m) - Tech Foundations"
@@ -944,7 +944,7 @@
 "city": "Remote",
 "company": "Alan",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Security Engineer - GRC"
@@ -1094,7 +1094,7 @@
 "city": "Valbonne",
 "company": "Alten",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-valbonne",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "DevOps"
@@ -1104,7 +1104,7 @@
 "city": "Valbonne",
 "company": "Alten",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-valbonne",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "DevOps Engineer (experienced, permanent contract)"
@@ -1174,7 +1174,7 @@
 "city": "Vitrolles",
 "company": "Alten",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Ingénieur QA automatisation (H/F)"
@@ -1254,7 +1254,7 @@
 "city": "Aix-en-Provence",
 "company": "Alten",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-aix-en-provence",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Nucléaire - Ingénieur Tests & Validation Logiciel Embarqué C H/F"
@@ -1274,7 +1274,7 @@
 "city": "Valbonne",
 "company": "Alten",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-valbonne",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "QA - Automation test"
@@ -1304,7 +1304,7 @@
 "city": "Valbonne",
 "company": "Alten",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-valbonne",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Senior QA - Automation Test"
@@ -1314,7 +1314,7 @@
 "city": "Valbonne",
 "company": "Alten",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-valbonne",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Site Reliability Engineer (expérimenté, CDI)"
@@ -1504,7 +1504,7 @@
 "city": "Aix-en-Provence",
 "company": "Atos",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-aix-en-provence",
 "first_seen": "2026-09-16",
 "last_seen": "2026-09-25",
 "title": "Administrateur systèmes infra virtualisées H/F"
@@ -1514,7 +1514,7 @@
 "city": "Aix-en-Provence",
 "company": "Atos",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-09",
 "last_seen": "2026-09-25",
 "title": "Analyste SOC (F/H)"
@@ -1534,7 +1534,7 @@
 "city": "Aix-en-Provence",
 "company": "Atos",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-16",
 "last_seen": "2026-09-25",
 "title": "Architecte logiciel H/F"
@@ -1544,7 +1544,7 @@
 "city": "Aix-en-Provence",
 "company": "Atos",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-17",
 "last_seen": "2026-09-25",
 "title": "ARCHITECTE LOGICIEL - Systèmes tactiques de défense (H/F)"
@@ -1564,7 +1564,7 @@
 "city": "Aix-en-Provence",
 "company": "Atos",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-17",
 "last_seen": "2026-09-25",
 "title": "Architecte système F/H"
@@ -1604,7 +1604,7 @@
 "city": "Aix-en-Provence",
 "company": "Atos",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-09",
 "last_seen": "2026-09-25",
 "title": "Consultant CyberSécurité Sénior (F/H)"
@@ -1664,7 +1664,7 @@
 "city": "Valbonne",
 "company": "Atos",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-valbonne",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevOps Expérimenté (F/H)"
@@ -1684,7 +1684,7 @@
 "city": "Valbonne",
 "company": "Atos",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-valbonne",
 "first_seen": "2026-09-09",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevOps (F/H)"
@@ -1704,7 +1704,7 @@
 "city": "Ais En Provence",
 "company": "Atos",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-16",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Expert en Cybersécurité des Systèmes H/F"
@@ -1724,7 +1724,7 @@
 "city": "Aix-en-Provence",
 "company": "Atos",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-aix-en-provence",
 "first_seen": "2026-09-09",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Production Applicative / DevOps (F/H)"
@@ -1804,7 +1804,7 @@
 "city": "Orange",
 "company": "B-HIVE",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Sécurité – Exploitation Nucléaire (H/F)"
@@ -1824,7 +1824,7 @@
 "city": "Marseille",
 "company": "BDO France",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Administrateur systèmes et réseaux expérimenté - F/H"
@@ -1894,7 +1894,7 @@
 "city": "Valbonne",
 "company": "Bosch",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-valbonne",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "H/F/N: Architecte Système, IP manager"
@@ -2164,7 +2164,7 @@
 "city": "Toulon",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-toulon",
 "first_seen": "2026-09-15",
 "last_seen": "2026-09-25",
 "title": "Administratrice / Administrateur Systèmes & Réseaux"
@@ -2194,7 +2194,7 @@
 "city": "Valbonne",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Analyste SOC - Stage"
@@ -2204,7 +2204,7 @@
 "city": "Valbonne",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-valbonne",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte Cloud"
@@ -2234,7 +2234,7 @@
 "city": "Valbonne",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-valbonne",
 "first_seen": "2026-09-11",
 "last_seen": "2026-09-25",
 "title": "Architecte logiciel embarqué bas niveau"
@@ -2244,7 +2244,7 @@
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Architecte Solution 3DEXPERIENCE"
@@ -2254,7 +2254,7 @@
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte Solution"
@@ -2264,7 +2264,7 @@
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte Solutions IA"
@@ -2274,7 +2274,7 @@
 "city": "Valbonne",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-valbonne",
 "first_seen": "2026-09-11",
 "last_seen": "2026-09-25",
 "title": "Architecte Solutions logiciel Aéronautique/Défense"
@@ -2284,7 +2284,7 @@
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte Technique SAP"
@@ -2394,7 +2394,7 @@
 "city": "Nice",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-09",
 "last_seen": "2026-09-25",
 "title": "Cloud DevOps Engineer Senior Sophia-Antipolis"
@@ -2414,7 +2414,7 @@
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Consultante / Consultant Cybersécurité Cloud"
@@ -2424,7 +2424,7 @@
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Consultante / Consultant Cybersécurité IAM"
@@ -2464,7 +2464,7 @@
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Consultante / Consultant Senior Cybersécurité GRC"
@@ -2634,7 +2634,7 @@
 "city": "Valbonne",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-valbonne",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Ingénieure / Ingénieur DevOps"
@@ -2664,7 +2664,7 @@
 "city": "Toulon",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-16",
 "last_seen": "2026-09-25",
 "title": "Ingénieure / Ingénieur QA"
@@ -2824,7 +2824,7 @@
 "city": "Aix-en-Provence",
 "company": "Capgemini",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-09",
 "last_seen": "2026-09-25",
 "title": "Network & Security Engineer Senior Aix-en-Provence"
@@ -2904,7 +2904,7 @@
 "city": "Avignon",
 "company": "Cba Informatique",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-25",
 "title": "Administrateur Systèmes et réseaux - SysOps (H/F)"
@@ -2924,7 +2924,7 @@
 "city": "Avignon",
 "company": "Cba Informatique",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "QA Manager (H/F)"
@@ -2944,7 +2944,7 @@
 "city": "Saint-Paul-Lez-Durance",
 "company": "CEA",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Sécurité Projets - CDD 18 mois - Cadarache F/H"
@@ -3124,7 +3124,7 @@
 "city": "Toulon",
 "company": "Civils de la Défense - Ministère des Armées et des Anciens combattants",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-toulon",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "OFFICIER CONTRE INGERENCE CYBER ZONAL - TOULOUSE"
@@ -3214,7 +3214,7 @@
 "city": "Marseille",
 "company": "CMA CGM",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-25",
 "last_seen": "2026-09-25",
 "title": "Conception de la Plateforme de Pilotage Cyber du Groupe CMA CGM"
@@ -3244,7 +3244,7 @@
 "city": "Marseille",
 "company": "CMA CGM",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-25",
 "last_seen": "2026-09-25",
 "title": "Cyber Operational Dashboard"
@@ -3334,7 +3334,7 @@
 "city": "Marseille",
 "company": "CMA CGM",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-25",
 "last_seen": "2026-09-25",
 "title": "Designing CMA CGM's Cyber Steering Platform"
@@ -3404,7 +3404,7 @@
 "city": "Marseille",
 "company": "CMA CGM",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Directeur/rice Audit international - Cybersécurité et IT"
@@ -3664,7 +3664,7 @@
 "city": "Toulon",
 "company": "Commandement de la Cyberdéfense (COMCYBER)",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-toulon",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Administrateur cybersécurité [Militaire]"
@@ -3674,7 +3674,7 @@
 "city": "Toulon",
 "company": "Commandement de la Cyberdéfense (COMCYBER)",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-toulon",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Réalisation de contrôle cybersécurité des systèmes d’information [Stage]"
@@ -4424,7 +4424,7 @@
 "city": "Aix-en-Provence",
 "company": "Docaposte",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur SRE - ALTERNANCE F/H"
@@ -4434,7 +4434,7 @@
 "city": "Sophia Antipolis",
 "company": "Docaposte",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-sophia-antipolis",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Site Reliability Engineer - SRE F/H"
@@ -4884,7 +4884,7 @@
 "city": "Valbonne",
 "company": "eXalt",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-valbonne",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "QA Auto/Fonctionnel (H/F) - @eXalt Azur"
@@ -4904,7 +4904,7 @@
 "city": "Aix-en-Provence",
 "company": "eXalt",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Testeur QA fonct/auto @eXalt Aix-Marseille"
@@ -5004,7 +5004,7 @@
 "city": "Biot",
 "company": "FLYING EYE",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-25",
 "title": "Administrateur Infrastructure & Sécurité"
@@ -5064,7 +5064,7 @@
 "city": "Marseille",
 "company": "Free Pro",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Cybersécurité"
@@ -5084,7 +5084,7 @@
 "city": "Marseille",
 "company": "Free Pro",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Référent Technique SRE (Site Reliability Engineer)/ Cloud Linux"
@@ -5184,7 +5184,7 @@
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Administrateur Systèmes & DevOps (H/F) H/F"
@@ -5204,7 +5204,7 @@
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte Logiciel C++ H/F"
@@ -5234,7 +5234,7 @@
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevOps CI/CD H/F"
@@ -5304,7 +5304,7 @@
 "city": "Vitrolles",
 "company": "Groupe SII",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Administrateur Linux – Support Technique MCO (F/H)"
@@ -5314,7 +5314,7 @@
 "city": "Sophia Antipolis",
 "company": "Groupe SII",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-sophia-antipolis",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Administrateur Système Linux expérimenté (F/H)"
@@ -5324,7 +5324,7 @@
 "city": "Sophia Antipolis",
 "company": "Groupe SII",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-sophia-antipolis",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Architecte Logiciel (F/H)"
@@ -5474,7 +5474,7 @@
 "city": "Sophia Antipolis",
 "company": "Groupe SII",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Expert Cybersécurité (F/H)"
@@ -5484,7 +5484,7 @@
 "city": "Sophia Antipolis",
 "company": "Groupe SII",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-sophia-antipolis",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevOps (F/H)"
@@ -5864,7 +5864,7 @@
 "city": "Marseille",
 "company": "Kincy",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-marseille",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-25",
 "title": "Administrateur Systèmes et Réseaux expérimenté (H/F)"
@@ -5874,7 +5874,7 @@
 "city": "Marseille",
 "company": "Kincy",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-marseille",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-25",
 "title": "Administrateur Systèmes & réseaux Helpdesk expérimenté - Profil expatrié"
@@ -5934,7 +5934,7 @@
 "city": "Marseille",
 "company": "La Plateforme",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-25",
 "title": "Accompagnateur pédagogique - Cybersécurité"
@@ -5954,7 +5954,7 @@
 "city": "Valbonne",
 "company": "La Sécurité Sociale",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-valbonne",
 "first_seen": "2026-09-16",
 "last_seen": "2026-09-25",
 "title": "Développeur DevOps - F/H"
@@ -6074,7 +6074,7 @@
 "city": "Toulon",
 "company": "Link Consulting",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-toulon",
 "first_seen": "2026-09-10",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Linux / Kubernetes / DevOps Sécurisé (H/F) CDI Toulon (83)"
@@ -6184,7 +6184,7 @@
 "city": "Marseille",
 "company": "LIVECAMPUS",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Cybersécurité H/F – Marseille (13)"
@@ -6234,7 +6234,7 @@
 "city": "Marseille",
 "company": "Mailinblack",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-marseille",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "SRE (h/f)"
@@ -6244,7 +6244,7 @@
 "city": "Valbonne",
 "company": "Matawan",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-valbonne",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "QA Tester"
@@ -6474,7 +6474,7 @@
 "city": "Aix-en-Provence",
 "company": "Meritis",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Cybersécurité (H/F)"
@@ -6484,7 +6484,7 @@
 "city": "Valbonne",
 "company": "Meritis",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-valbonne",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Dev/DevOps (H/F)"
@@ -6494,7 +6494,7 @@
 "city": "Aix-en-Provence",
 "company": "Meritis",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevOps (H/F)"
@@ -6504,7 +6504,7 @@
 "city": "Valbonne",
 "company": "Meritis",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-valbonne",
 "first_seen": "2026-09-16",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Devops  / OPS (H/F)"
@@ -6524,7 +6524,7 @@
 "city": "Valbonne",
 "company": "Meritis",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-valbonne",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-25",
 "title": "Ingénieur SRE/Observabilité (H/F)"
@@ -6554,7 +6554,7 @@
 "city": "Aix-en-Provence",
 "company": "Meritis",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Testeur / QA Automaticien (H/F)"
@@ -6564,7 +6564,7 @@
 "city": "La Ciotat",
 "company": "Mindflow",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Forward Deployed Engineer, Cybersecurity & AI"
@@ -6584,7 +6584,7 @@
 "city": "La Ciotat",
 "company": "Mindflow",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Pre-Sales Solutions Engineer – Cybersecurity, IT & AI"
@@ -6594,7 +6594,7 @@
 "city": "Nice",
 "company": "Ministère de l'Intérieur",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "ALSN - RSSI - DIPN 06 F/H"
@@ -6674,7 +6674,7 @@
 "city": "Toulon",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-toulon",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Administrateur système et réseaux H/F"
@@ -6684,7 +6684,7 @@
 "city": "Saint-Tropez",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Architecte Logiciel Drones C++ (H/F)"
@@ -6694,7 +6694,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-ollioules",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Architecte Logiciel H/F"
@@ -6714,7 +6714,7 @@
 "city": "Toulon",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "Architecte solution - H/F"
@@ -6724,7 +6724,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-ollioules",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Architecte système CMS H/F"
@@ -6734,7 +6734,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-ollioules",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Architecte Système d'Information INDS( H/F)"
@@ -6744,7 +6744,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-ollioules",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Architecte Système - H/F"
@@ -6794,7 +6794,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-ollioules",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "DEVOPS CI & Assemblage – Intégrateur Logiciel H/F"
@@ -6804,7 +6804,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-ollioules",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "DevSecOps Engineer – Customer Success - H/F"
@@ -6814,7 +6814,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-ollioules",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "DevSecOps Engineer - H/F"
@@ -6824,7 +6824,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-ollioules",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "DevSecOps Iaas Paas - H/F"
@@ -6834,7 +6834,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-ollioules",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevOps - H/F"
@@ -6844,7 +6844,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-ollioules",
 "first_seen": "2026-09-12",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevSecOps - H/F"
@@ -7034,7 +7034,7 @@
 "city": "Ollioules",
 "company": "Naval Group [FR]",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Intégrateur Solutions Cyber - H/F"
@@ -7154,7 +7154,7 @@
 "city": "Mougins",
 "company": "NEXTON",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-15",
 "last_seen": "2026-09-25",
 "title": "Expert ELK / DevOps H/F"
@@ -7384,7 +7384,7 @@
 "city": "Aix-en-Provence",
 "company": "Onepoint",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte Cloud F/H"
@@ -7404,7 +7404,7 @@
 "city": "Aix-en-Provence",
 "company": "Onepoint",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte Solution F/H"
@@ -7574,7 +7574,7 @@
 "city": "Biot",
 "company": "Orange",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "Ingénieur QA testeur"
@@ -7594,7 +7594,7 @@
 "city": "Marseille",
 "company": "Orange",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Sécurité H/F"
@@ -7904,7 +7904,7 @@
 "city": "Marseille",
 "company": "PONANT EXPLORATIONS GROUP",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-marseille",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Administrateur Système et Réseau H/F"
@@ -8074,7 +8074,7 @@
 "city": "Aix-en-Provence",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte logiciel H/F"
@@ -8084,7 +8084,7 @@
 "city": "Provence-Alpes-Côte d'Azur",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte technique infrastructure IT - ORANGE (H/F)"
@@ -8094,7 +8094,7 @@
 "city": "Provence-Alpes-Côte d'Azur",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Architecte technique infrastructure IT - TOULON (H/F)"
@@ -8174,7 +8174,7 @@
 "city": "Aix-en-Provence",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Consultant Cybersécurité H/F"
@@ -8454,7 +8454,7 @@
 "city": "Provence-Alpes-Côte d'Azur",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "DevOps - F/H"
@@ -8524,7 +8524,7 @@
 "city": "Provence-Alpes-Côte d'Azur",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevOps - H/F"
@@ -8594,7 +8594,7 @@
 "city": "Provence-Alpes-Côte d'Azur",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Streaming Vidéo Temps Réel & Cybersécurité - F/H"
@@ -8704,7 +8704,7 @@
 "city": "Marseille",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Ingénieur test et validation ferroviaire H/F"
@@ -8714,7 +8714,7 @@
 "city": "Marseille",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Test Logiciel Junior - Nucléaire"
@@ -8724,7 +8724,7 @@
 "city": "Aix-en-Provence",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Ingénieur validation et vérification/Ingénieure validation et vérification"
@@ -8734,7 +8734,7 @@
 "city": "Cannes",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Validation Systèmes Embarqués – Défense (F/H)"
@@ -8754,7 +8754,7 @@
 "city": "Vitrolles",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "PMO  Cybersecurity Compliance F/H"
@@ -8824,7 +8824,7 @@
 "city": "Gemenos",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Project Quality Assurance Manager F/H"
@@ -8854,7 +8854,7 @@
 "city": "Aix-en-Provence",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Testeur Logiciel - AIX EN PROVENCE (H/F)"
@@ -8864,7 +8864,7 @@
 "city": "Avignon",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Testeur Logiciel - AVIGNON  (H/F)"
@@ -8874,7 +8874,7 @@
 "city": "Vitrolles",
 "company": "Scalian",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Testeur logiciel H/F"
@@ -8924,7 +8924,7 @@
 "city": "Carros",
 "company": "Schneider Electric",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-20",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Test Logiciel F/H"
@@ -8974,7 +8974,7 @@
 "city": "Valbonne",
 "company": "Septeo",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-25",
 "title": "Senior Offensive Security Engineer H/F"
@@ -9034,7 +9034,7 @@
 "city": "Aix-en-Provence",
 "company": "Signe+",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-aix-en-provence",
 "first_seen": "2026-09-08",
 "last_seen": "2026-09-25",
 "title": "Architecte solutions IA"
@@ -9104,7 +9104,7 @@
 "city": "Marseille",
 "company": "SIMPLON",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Formateur•rice IA Gen & Cyber - acculturation"
@@ -9254,7 +9254,7 @@
 "city": "Aix-en-Provence",
 "company": "Sogeti",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Ingénieure Test Leader / Ingénieur Test Leader"
@@ -9264,7 +9264,7 @@
 "city": "Aix-en-Provence",
 "company": "Sogeti",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa-aix-en-provence",
 "first_seen": "2026-09-18",
 "last_seen": "2026-09-25",
 "title": "Ingénieure Test Logiciel / Ingénieur Test Logiciel"
@@ -9344,7 +9344,7 @@
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Analyste Gestion des Vulnérabilités - Cybersécurité - Aix en Provence"
@@ -9354,7 +9354,7 @@
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Architecte Sécurité du Cloud - Cybersécurité - Aix-en-Provence"
@@ -9364,7 +9364,7 @@
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Architecte transverse - Cybersécurité - Aix-en-Provence"
@@ -9394,7 +9394,7 @@
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "Chef/fe de Projet - Cybersécurité - Aix-en-Provence"
@@ -9424,7 +9424,7 @@
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Consultant(e) Sécurité des SI - GRC - Cybersécurité - Aix-En-Provence"
@@ -9584,7 +9584,7 @@
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-aix-en-provence",
 "first_seen": "2026-09-16",
 "last_seen": "2026-09-25",
 "title": "DevOps Engineer - Aix-en-Provence"
@@ -9594,7 +9594,7 @@
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Expert(e) Cybersécurité Industrielle - Cybersécurité - Aix en provence"
@@ -9604,7 +9604,7 @@
 "city": "Six-Fours-Les-Plages",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Expert(e) Cybersécurité Industrielle - Cybersécurité - Toulon"
@@ -9654,7 +9654,7 @@
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-aix-en-provence",
 "first_seen": "2026-09-16",
 "last_seen": "2026-09-25",
 "title": "Ingénieur(e) DevOps - Aix-en-Provence"
@@ -9664,7 +9664,7 @@
 "city": "Biot",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-10",
 "last_seen": "2026-09-25",
 "title": "Ingénieur(e) DevOps - Digital Platform Services - Biot"
@@ -9694,7 +9694,7 @@
 "city": "Six-Fours-Les-Plages",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-16",
 "last_seen": "2026-09-25",
 "title": "Ingénieur(e) DevOps - Toulon"
@@ -9714,7 +9714,7 @@
 "city": "Aix-en-Provence",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur(e) EPP / EDR - Cybersécurité - Aix en Provence"
@@ -9914,7 +9914,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-sophia-antipolis",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Architecte logiciel - domaine Sonar F/H"
@@ -9924,7 +9924,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte-sophia-antipolis",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Architecte solutions logicielles pour plateformes Hardware  H/F"
@@ -9994,7 +9994,7 @@
 "city": "La Ciotat",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-la-ciotat",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "DevSecOps Engineer confirmé (H/F)"
@@ -10014,7 +10014,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-sophia-antipolis",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Cloud Certifié (H/F)"
@@ -10034,7 +10034,7 @@
 "city": "LA CIOTAT - LA VIGIE",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Datadog / cloud / Kubernetes (H/F)"
@@ -10064,7 +10064,7 @@
 "city": "Valbonne Crete",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Développement Confirmé Java DevOps - Systèmes Critiques (F/H)"
@@ -10144,7 +10144,7 @@
 "city": "Valbonne Crete",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Développement Java DevOps - Systèmes Critiques (F/H)"
@@ -10274,7 +10274,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-sophia-antipolis",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Ingénieur logiciel DevOps F/H"
@@ -10294,7 +10294,7 @@
 "city": "La Ciotat",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-la-ciotat",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Ingénieur SRE (F/H)"
@@ -10324,7 +10324,7 @@
 "city": "Valbonne Crete",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Validation Vérification logiciel - Systèmes Critiques (FH)"
@@ -10424,7 +10424,7 @@
 "city": "La Ciotat",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-la-ciotat",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Responsable Engineering – Site Reliability Engineering (SRE) H/F"
@@ -10544,7 +10544,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-sophia-antipolis",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Site Reliability Engineer (W/M)"
@@ -10634,7 +10634,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Testeur Automaticien / Développeur Python (F/H)"
@@ -10644,7 +10644,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "qa",
 "first_seen": "2026-09-25",
 "last_seen": "2026-09-25",
 "title": "Testeur Fonctionnel / Automaticien (F/H)"
@@ -10674,7 +10674,7 @@
 "city": "Toulon",
 "company": "The Adecco Group",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "architecte",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Architecte logiciel C++ H/F"
@@ -10744,7 +10744,7 @@
 "city": "Toulon",
 "company": "The Adecco Group",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-toulon",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevOps H/F"
@@ -10834,7 +10834,7 @@
 "city": "Marseille",
 "company": "Tiime",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-11",
 "last_seen": "2026-09-25",
 "title": "Head of Security Engineer - Paris (F/H)"
@@ -10894,7 +10894,7 @@
 "city": "Marseille",
 "company": "Viaxoft",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-marseille",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevOps confirmé (H/F)"
@@ -10914,7 +10914,7 @@
 "city": "Aix-en-Provence",
 "company": "VINCI Energies",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Consultant Cybersécurité et GRC F/H"
@@ -10934,7 +10934,7 @@
 "city": "Aix-en-Provence",
 "company": "VINCI Energies en France",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Consultant Cybersécurité et GRC F/H"
@@ -10944,7 +10944,7 @@
 "city": "Aix-en-Provence",
 "company": "VINCI Energies en France",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Responsable d'affaires Cybersécurité F/H"
@@ -10974,7 +10974,7 @@
 "city": "Aix-en-Provence",
 "company": "VINCI Energies",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-21",
 "last_seen": "2026-09-25",
 "title": "Responsable d’affaires Cybersécurité F/H"
@@ -11004,7 +11004,7 @@
 "city": "Marseille",
 "company": "VirtualExpo",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-marseille",
 "first_seen": "2026-09-15",
 "last_seen": "2026-09-25",
 "title": "Administrateur systèmes et réseaux H/F"
@@ -11104,7 +11104,7 @@
 "city": "Marseille",
 "company": "Wavestone",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-25",
 "last_seen": "2026-09-25",
 "title": "de fin d'études - Consultant·e Cybersécurité - Marseille"
@@ -11144,7 +11144,7 @@
 "city": "Aix-en-Provence",
 "company": "Wyll",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur Cloud (Confirmé à Expert) - Multi-Cloud (AWS, GCP, Azure, Scaleway) - Aix-en-Provence"
@@ -11154,7 +11154,7 @@
 "city": "Aix-en-Provence",
 "company": "Wyll",
 "expired_at": null,
-"facet_slug": null,
+"facet_slug": "devops-aix-en-provence",
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-25",
 "title": "Ingénieur DevOps (Confirmé à Expert) - Aix-en-Provence"
