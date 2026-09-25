@@ -89,6 +89,7 @@ jobs:
                   jobboard/data/offer_index.json jobboard/data/job_id_map.json \
                   jobboard/data/wttj_paca.json jobboard/data/ats_jobs.json \
                   jobboard/data/francetravail_paca.json \
+                  jobboard/data/city_images.json \
                   jobboard/data/alerts_state.json \
                   jobboard/data/linkedin_state.json \
                   jobboard/data/history.jsonl \
