@@ -998,14 +998,19 @@ def _city_evolution(city, n_now, history):
 
 
 def _city_stats_block(city, jobs, live_facets, generated, history):
-    """Bottom-of-page SEO content for a /emploi/<ville>.html page: the same
-    kind of aggregate data a company page already carries (breakdowns +
-    salary + remote share), all linking back into the site — number of
-    offers, métiers, stacks, companies, salaries, télétravail, and how the
-    market has moved recently."""
+    """Market snapshot for a /emploi/<ville>.html page: the same kind of
+    aggregate data a company page already carries (breakdowns + salary +
+    remote share), all linking back into the site — number of offers,
+    métiers, stacks, companies, salaries, télétravail, and how the market
+    has moved recently.
+
+    Returns (headline_html, detail_html): headline is the compact KPI strip
+    shown right above the job list, detail is the full breakdown shown after
+    it — a first version put everything above the jobs and buried them under
+    a long stats card, forcing a lot of scrolling to reach the actual offers."""
     n = len(jobs)
     if not n:
-        return ""
+        return "", ""
     cslug = slugify(city)
     cat_counts = Counter(j.get("category") for j in jobs if j.get("category"))
     contract_counts = Counter(j.get("contract") for j in jobs if j.get("contract"))
@@ -1033,9 +1038,9 @@ def _city_stats_block(city, jobs, live_facets, generated, history):
     except ValueError:
         month_label = ""
 
-    sections = ['<h2 class="stats-title">%s en chiffres</h2>' % esc(city)]
+    headline = ['<h2 class="stats-title">%s en chiffres</h2>' % esc(city)]
     if month_label:
-        sections.append('<p class="sub">Marché tech — %s</p>' % esc(month_label))
+        headline.append('<p class="sub">Marché tech · %s</p>' % esc(month_label))
 
     def kpi(value, label):
         return '<div class="kpi"><b>%s</b><span>%s</span></div>' % (esc(str(value)), esc(label))
@@ -1045,17 +1050,19 @@ def _city_stats_block(city, jobs, live_facets, generated, history):
         nc = len(company_counts)
         kpis.append(kpi(nc, "entreprise%s" % ("s" if nc > 1 else "")))
     if new_n:
-        kpis.append(kpi(new_n, "nouvelle%s cette semaine" % ("s" if new_n > 1 else "")))
+        kpis.append(kpi(new_n, "nouvelle%s offre%s cette semaine" % (
+            ("s", "s") if new_n > 1 else ("", ""))))
     if remote_n:
         kpis.append(kpi("%d %%" % round(100 * remote_n / n), "hybride ou remote"))
     sal_all = [_parse_salary_eur(j.get("salary")) for j in jobs]
     sal_all = [(lo + hi) / 2 for p in sal_all if p for lo, hi in [p]]
     if len(sal_all) >= MIN_SAMPLE:
         kpis.append(kpi(_fmt_keur(statistics.median(sal_all)), "salaire médian brut/an"))
-    sections.append('<div class="kpi-grid">%s</div>' % "".join(kpis))
+    headline.append('<div class="kpi-grid">%s</div>' % "".join(kpis))
 
-    sections.extend(_city_evolution(city, n, history))
+    headline.extend(_city_evolution(city, n, history))
 
+    sections = []
     if cat_counts:
         top = cat_counts.most_common()
         maxn = top[0][1]
@@ -1121,7 +1128,10 @@ def _city_stats_block(city, jobs, live_facets, generated, history):
         sections.append('<h3>Par expérience</h3>\n<div class="mini">%s</div>' % "".join(
             "<span>%s · %d</span>" % (esc(k), v) for k, v in pairs))
 
-    return '<div class="card city-stats">%s</div>' % "\n".join(sections)
+    headline_html = '<div class="card city-stats">%s</div>' % "\n".join(headline)
+    detail_html = ('<div class="card city-stats city-stats-detail">%s</div>' % "\n".join(sections)
+                   if sections else "")
+    return headline_html, detail_html
 
 
 def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=None,
@@ -1143,17 +1153,20 @@ def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=
     }
     is_city = kind == "ville" and city
     header = (_city_hero(city, city_image) if is_city else "<h1>%s</h1>" % esc(h1))
-    stats = (_city_stats_block(city, jobs, live_facets or {}, generated, history or [])
-             if is_city else "")
+    stats_headline, stats_detail = (
+        _city_stats_block(city, jobs, live_facets or {}, generated, history or [])
+        if is_city else ("", ""))
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Emplois</a> › {h1}</nav>
 {header}
 <p class="sub">{intro}</p>
-{stats}
+{stats_headline}
 {facets}
 <ul class="jobs">{lis}</ul>
+{stats_detail}
 """.format(home=SITE_URL + "/", hub=SITE_URL + "/emploi/", h1=esc(h1), header=header,
-           intro=esc(intro), facets=facet_html, lis=lis, stats=stats)
+           intro=esc(intro), facets=facet_html, lis=lis,
+           stats_headline=stats_headline, stats_detail=stats_detail)
     return shell(title="%s | sudtechjobs" % h1, description=intro,
                  canonical=canonical, head_extra=jsonld(ld), body=body)
 
@@ -3057,6 +3070,13 @@ def main():
         if c:
             j["_company_slug"] = c["slug"]
             j["_company"] = c
+            # WTTJ jobs already carry their own `logo`; ATS-sourced ones
+            # (SmartRecruiters, Workday, ...) never do, so without this
+            # fallback job_li() and the JobPosting JSON-LD silently show a
+            # letter tile / omit the logo for roughly half the feed even
+            # though build_companies.py already resolved one (Clearbit
+            # domain guess or a manual profile) onto the company record.
+            j.setdefault("logo", c.get("logo"))
 
     # real photo per city for the /emploi/<ville>.html hero (city_images.py).
     # Optional: cities just get the designed gradient/skyline banner without it.
