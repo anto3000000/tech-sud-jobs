@@ -85,15 +85,10 @@ jobs:
         run: |
           git config user.name  "jobboard-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add jobboard/data/jobs.json jobboard/data/seen.json \
-                  jobboard/data/offer_index.json jobboard/data/job_id_map.json \
-                  jobboard/data/wttj_paca.json jobboard/data/ats_jobs.json \
-                  jobboard/data/francetravail_paca.json \
-                  jobboard/data/city_images.json \
-                  jobboard/data/alerts_state.json \
-                  jobboard/data/linkedin_state.json \
-                  jobboard/data/history.jsonl \
-                  jobboard/site/jobs.json
+          # -u (not -A): stage every CHANGE to an already-tracked file under
+          # jobboard/data/ (whichever of the pipeline's outputs actually moved)
+          # without picking up new untracked/gitignored build artefacts.
+          git add -u jobboard/data jobboard/site/jobs.json
           if git diff --cached --quiet; then
             echo "feed unchanged"
           else
