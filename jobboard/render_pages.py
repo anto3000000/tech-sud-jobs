@@ -1271,6 +1271,7 @@ def render_legal(*, slug, title, description, h1, inner):
 def render_404():
     canonical = "%s/404.html" % SITE_URL
     body = """
+<div style="font-size:58px;line-height:1;margin:10px 0 2px" aria-hidden="true">👻</div>
 <h1>404 — ce poste a été pourvu avant même d'exister</h1>
 <p class="sub">La page que vous cherchez n'est plus en ligne, ou n'a jamais
 été postée. Au moins ici, pas besoin d'attendre trois semaines pour avoir
