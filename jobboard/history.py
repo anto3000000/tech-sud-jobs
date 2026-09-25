@@ -77,12 +77,14 @@ def _run(cmd):
 def _snapshot_from_jobs(doc):
     jobs = doc.get("jobs", [])
     by_hub = collections.Counter(_bucket_hub(j.get("city")) for j in jobs)
+    by_city = collections.Counter(j.get("city") for j in jobs if j.get("city"))
     return {
         "count": doc.get("count", len(jobs)),
         "new_count": doc.get("new_count"),
         "by_category": doc.get("by_category", {}),
         "by_source": doc.get("by_source", {}),
         "by_hub": dict(by_hub),
+        "by_city": dict(by_city),
     }
 
 

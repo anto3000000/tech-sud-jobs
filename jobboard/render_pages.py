@@ -57,6 +57,13 @@ COMPANIES = os.path.join(SITE, "companies.json")
 # optional — cities fall back to the designed gradient/skyline banner without it)
 CITY_IMAGES = os.path.join(DATA, "city_images.json")
 
+# daily {date, count, by_city, ...} snapshots (history.py) — used for the
+# "évolution" line on city pages. Optional: pages just skip that line without it.
+HISTORY_PATH = os.path.join(DATA, "history.jsonl")
+
+MOIS_FR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
+           "août", "septembre", "octobre", "novembre", "décembre"]
+
 SITE_URL = os.environ.get(
     "SITE_URL", "https://sudtechjobs.com"
 ).rstrip("/")
@@ -314,6 +321,17 @@ h2{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;margin:26px 0 8px
 .city-stats .stats-title{font-size:17px;margin-top:2px}
 .city-stats h3{font-family:"Bricolage Grotesque",sans-serif;font-size:13.5px;margin:18px 0 6px;color:var(--muted)}
 .city-stats h3:first-of-type{margin-top:14px}
+.bars{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.bars li{position:relative;display:flex;align-items:center;justify-content:space-between;
+ gap:10px;font-size:12.5px;padding:6px 9px;border-radius:8px;background:var(--card-2);
+ border:1px solid var(--line);overflow:hidden}
+.bars li>b{position:relative;font-weight:500}
+.bars li>span{position:relative;color:var(--muted);font:500 11.5px "IBM Plex Mono",ui-monospace,monospace}
+.bars li i{position:absolute;inset:0;width:var(--pct);background:color-mix(in srgb,var(--brand) 22%,transparent);
+ border-radius:8px;font-style:normal}
+.evo{font-size:12.5px;color:var(--muted);margin:8px 0 0}
+.evo b{color:var(--pine)}
+.evo b.down{color:var(--tag-design)}
 ul.jobs{list-style:none;margin:0;padding:0}
 ul.jobs li{background:var(--card);border:1px solid var(--line);border-radius:12px;
  margin:0 0 11px;box-shadow:var(--shadow);overflow:hidden}
@@ -931,11 +949,60 @@ def _city_hero(city, image=None):
 </div>""".format(hue=_hue_seed(city), vw=x, bars="".join(bars), city=esc(city))
 
 
-def _city_stats_block(city, jobs, live_facets):
+def _load_history():
+    if not os.path.exists(HISTORY_PATH):
+        return []
+    rows = []
+    with open(HISTORY_PATH, encoding="utf-8") as fh:
+        for line in fh:
+            line = line.strip()
+            if line:
+                rows.append(json.loads(line))
+    rows.sort(key=lambda r: r["date"])
+    return rows
+
+
+def _city_evolution(city, n_now, history):
+    """'+12 offres (+18 %) sur 30 jours' style lines, from the daily by_city
+    snapshots in history.jsonl. Tries 90j then 30j and only renders a window
+    that actually has a same-or-earlier snapshot to compare against — the
+    tracker only started recently, so on a young city page (or early on,
+    site-wide) neither window may be available yet; it fills in on its own
+    as history.jsonl accumulates, no code change needed."""
+    if not history:
+        return []
+    today = datetime.strptime(history[-1]["date"], "%Y-%m-%d").date()
+    lines = []
+    for days in (90, 30):
+        target = (today - timedelta(days=days)).isoformat()
+        past_rows = [r for r in history if r["date"] <= target]
+        if not past_rows:
+            continue
+        past = past_rows[-1]
+        past_n = past.get("by_city", {}).get(city)
+        if past_n is None:
+            continue
+        actual_days = (today - datetime.strptime(past["date"], "%Y-%m-%d").date()).days
+        delta = n_now - past_n
+        if past_n:
+            pct = " (%s%d %%)" % ("+" if delta >= 0 else "", round(100 * delta / past_n))
+        else:
+            pct = ""
+        cls = "" if delta >= 0 else ' class="down"'
+        lines.append('<p class="evo">Évolution sur %d jours : <b%s>%s%d offre%s</b>%s '
+                     "(%d → %d)</p>" % (
+                         actual_days, cls, "+" if delta >= 0 else "", delta,
+                         "s" if abs(delta) > 1 else "", pct, past_n, n_now))
+        break  # one window is enough — the longest one actually available
+    return lines
+
+
+def _city_stats_block(city, jobs, live_facets, generated, history):
     """Bottom-of-page SEO content for a /emploi/<ville>.html page: the same
     kind of aggregate data a company page already carries (breakdowns +
     salary + remote share), all linking back into the site — number of
-    offers, métiers, stacks, companies, salaries, télétravail."""
+    offers, métiers, stacks, companies, salaries, télétravail, and how the
+    market has moved recently."""
     n = len(jobs)
     if not n:
         return ""
@@ -953,27 +1020,60 @@ def _city_stats_block(city, jobs, live_facets):
                     if j.get("company") and j.get("_company_slug")}
     remote_n = sum(1 for j in jobs if j.get("city") == "Remote"
                    or (j.get("remote_detail") or "") in ("full remote", "hybride"))
-    new_n = sum(1 for j in jobs if j.get("is_new"))
-    salaries = list(dict.fromkeys(j["salary"] for j in jobs if j.get("salary")))[:6]
+    # a real 7-day count, not job.is_new (that flag's window is 10 days —
+    # fine for the "New" badge on a job card, but "cette semaine" below
+    # should mean an actual week, like the dashboard's new_7d already does.
+    now = datetime.now(timezone.utc)
+    new_n = sum(1 for j in jobs
+               if (dt := _parse_iso(j.get("first_seen"))) and (now - dt).days <= 7)
 
-    sections = ['<h2 class="stats-title">%s en chiffres</h2>\n<p class="sub">%d offre%s tech '
-                "actuellement recensée%s à %s%s." % (
-                    esc(city), n, "s" if n > 1 else "", "s" if n > 1 else "", esc(city),
-                    (", dont %d publiée%s cette semaine" % (new_n, "s" if new_n > 1 else "")) if new_n else "")]
+    try:
+        gen_date = datetime.strptime(generated, "%Y-%m-%d")
+        month_label = "%s %d" % (MOIS_FR[gen_date.month - 1], gen_date.year)
+    except ValueError:
+        month_label = ""
+
+    sections = ['<h2 class="stats-title">%s en chiffres</h2>' % esc(city)]
+    if month_label:
+        sections.append('<p class="sub">Marché tech — %s</p>' % esc(month_label))
+
+    def kpi(value, label):
+        return '<div class="kpi"><b>%s</b><span>%s</span></div>' % (esc(str(value)), esc(label))
+
+    kpis = [kpi(n, "offre%s active%s" % (("s", "s") if n > 1 else ("", "")))]
+    if company_counts:
+        nc = len(company_counts)
+        kpis.append(kpi(nc, "entreprise%s" % ("s" if nc > 1 else "")))
+    if new_n:
+        kpis.append(kpi(new_n, "nouvelle%s cette semaine" % ("s" if new_n > 1 else "")))
+    if remote_n:
+        kpis.append(kpi("%d %%" % round(100 * remote_n / n), "hybride ou remote"))
+    sal_all = [_parse_salary_eur(j.get("salary")) for j in jobs]
+    sal_all = [(lo + hi) / 2 for p in sal_all if p for lo, hi in [p]]
+    if len(sal_all) >= MIN_SAMPLE:
+        kpis.append(kpi(_fmt_keur(statistics.median(sal_all)), "salaire médian brut/an"))
+    sections.append('<div class="kpi-grid">%s</div>' % "".join(kpis))
+
+    sections.extend(_city_evolution(city, n, history))
 
     if cat_counts:
-        cat_by_label = {CAT_LABEL.get(k, k): k for k in cat_counts}
-        href = lambda lbl: "%s-%s" % (slugify(cat_by_label.get(lbl, lbl)), cslug)
-        pairs = [(CAT_LABEL.get(k, k), v) for k, v in cat_counts.most_common()]
-        sections.append("<h3>Par métier</h3>\n" + _mini_links(pairs, live_facets, href))
+        top = cat_counts.most_common()
+        maxn = top[0][1]
+        bars = "".join(
+            '<li style="--pct:%d%%"><i></i><b>%s</b><span>%d</span></li>'
+            % (round(100 * v / maxn), esc(CAT_LABEL.get(k, k)), v) for k, v in top)
+        sections.append('<h3>Les métiers qui recrutent</h3>\n<ul class="bars">%s</ul>' % bars)
 
     if contract_counts:
-        sections.append('<h3>Par contrat</h3>\n<div class="mini">%s</div>' % "".join(
-            "<span>%s · %d</span>" % (esc(k), v) for k, v in contract_counts.most_common()))
+        chips = []
+        for k, v in contract_counts.most_common():
+            pct = round(100 * v / n)
+            chips.append("<span>%s · %d %% (%d)</span>" % (esc(k), pct, v))
+        sections.append('<h3>Par contrat</h3>\n<div class="mini">%s</div>' % "".join(chips))
 
     if stack_counts:
         href = lambda lbl: "stack-%s-%s" % (slugify(lbl), cslug)
-        sections.append("<h3>Par techno</h3>\n"
+        sections.append("<h3>Top technologies</h3>\n"
                         + _mini_links(stack_counts.most_common(14), live_facets, href))
 
     if company_counts:
@@ -983,11 +1083,37 @@ def _city_stats_block(city, jobs, live_facets):
             slug = company_slug.get(comp)
             chips.append('<a href="../entreprise/%s.html">%s</a>' % (slug, txt) if slug
                         else "<span>%s</span>" % txt)
-        sections.append('<h3>Entreprises qui recrutent</h3>\n<div class="mini">%s</div>' % "".join(chips))
+        sections.append('<h3>Top recruteurs</h3>\n<div class="mini">%s</div>' % "".join(chips))
 
-    if salaries:
-        sections.append('<h3>Salaires affichés</h3>\n<div class="k">%s</div>' % "".join(
-            '<span class="sal">%s</span>' % esc(s) for s in salaries))
+    # salary: computed médiane/fourchette + per-category k€ ranges, not the
+    # raw scraped strings (some ATS list an hourly rate or a single figure,
+    # which reads as noise next to real annual ranges) — same MIN_SAMPLE
+    # guard as the site-wide salary guide, so a handful of offers doesn't
+    # produce a "median" that means nothing.
+    sal_rows = []
+    for j in jobs:
+        p = _parse_salary_eur(j.get("salary"))
+        if p:
+            lo, hi = p
+            sal_rows.append({"mid": (lo + hi) / 2, "cat": j.get("category")})
+    if sal_rows:
+        mids = sorted(r["mid"] for r in sal_rows)
+        block = ["<h3>Salaire affiché</h3>\n<p class=\"sub\">%d offre%s avec salaire indiqué</p>"
+                % (len(sal_rows), "s" if len(sal_rows) > 1 else "")]
+        if len(mids) >= MIN_SAMPLE:
+            block.append('<div class="k"><span class="sal">Médiane : %s</span>'
+                         '<span class="sal">Fourchette : %s – %s</span></div>' % (
+                             _fmt_keur(statistics.median(mids)),
+                             _fmt_keur(mids[0]), _fmt_keur(mids[-1])))
+            cat_lines = []
+            for cat in ("eng", "data", "product", "design", "tech-adjacent"):
+                cat_mids = sorted(r["mid"] for r in sal_rows if r["cat"] == cat)
+                if len(cat_mids) >= MIN_SAMPLE:
+                    cat_lines.append("<span>%s · %s – %s</span>" % (
+                        esc(CAT_LABEL.get(cat, cat)), _fmt_keur(cat_mids[0]), _fmt_keur(cat_mids[-1])))
+            if cat_lines:
+                block.append('<div class="mini">%s</div>' % "".join(cat_lines))
+        sections.append("\n".join(block))
 
     if exp_counts:
         order = ["Débutant", "< 1 an", "1–2 ans", "2–5 ans", "5–7 ans", "7–10 ans", "> 10 ans"]
@@ -995,16 +1121,11 @@ def _city_stats_block(city, jobs, live_facets):
         sections.append('<h3>Par expérience</h3>\n<div class="mini">%s</div>' % "".join(
             "<span>%s · %d</span>" % (esc(k), v) for k, v in pairs))
 
-    if remote_n:
-        pct = round(100 * remote_n / n)
-        sections.append('<p class="sub">%d poste%s sur %d (%d %%) ouvert%s au télétravail ou en hybride.</p>' % (
-            remote_n, "s" if remote_n > 1 else "", n, pct, "s" if remote_n > 1 else ""))
-
     return '<div class="card city-stats">%s</div>' % "\n".join(sections)
 
 
 def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=None,
-                  city_image=None, live_facets=None):
+                  city_image=None, live_facets=None, history=None):
     canonical = "%s/emploi/%s.html" % (SITE_URL, slug)
     facet_html = ""
     if siblings:
@@ -1022,7 +1143,8 @@ def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=
     }
     is_city = kind == "ville" and city
     header = (_city_hero(city, city_image) if is_city else "<h1>%s</h1>" % esc(h1))
-    stats = _city_stats_block(city, jobs, live_facets or {}) if is_city else ""
+    stats = (_city_stats_block(city, jobs, live_facets or {}, generated, history or [])
+             if is_city else "")
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Emplois</a> › {h1}</nav>
 {header}
@@ -2945,6 +3067,10 @@ def main():
         print("render_pages: no %s — city hero banners use the designed "
               "fallback (run jobboard/city_images.py)" % CITY_IMAGES, file=sys.stderr)
 
+    # daily snapshots (history.py) for the city pages' "évolution" line.
+    # Optional: pages just skip that line without it.
+    history = _load_history()
+
     offre_dir = os.path.join(SITE, "offre")
     emploi_dir = os.path.join(SITE, "emploi")
     entreprise_dir = os.path.join(SITE, "entreprise")
@@ -3161,7 +3287,7 @@ def main():
                                   jobs=f["jobs"], siblings=siblings_for(slug, f),
                                   generated=generated, kind=f["kind"], city=city,
                                   city_image=city_images.get(city) if city else None,
-                                  live_facets=live_facets))
+                                  live_facets=live_facets, history=history))
 
     # ---- hub -------------------------------------------------------------
     def grp(kinds, strip):
