@@ -29,6 +29,7 @@
     --wash:#FBEBD6; --pine:#2C9A6B;
     --chip:#F4F8FB; --chip-on:#16303F;
     --tag-eng:#2C6C9E; --tag-data:#7B4BD8; --tag-product:#2C9A6B; --tag-design:#D6455D; --tag-adj:#8A6D1F;
+    --tag-devops:#1C8C8C; --tag-cyber:#B23A3A; --tag-architecte:#4C5B8C; --tag-qa:#C07A1E;
     --remote:#0E8FA8;
     --shadow:0 1px 2px rgba(22,48,63,.05), 0 12px 28px -16px rgba(22,48,63,.18);
     --iris:
@@ -180,6 +181,8 @@
   .tag.eng{background:var(--tag-eng)} .tag.data{background:var(--tag-data)}
   .tag.product{background:var(--tag-product)} .tag.design{background:var(--tag-design)}
   .tag.tech-adjacent{background:var(--tag-adj)}
+  .tag.devops{background:var(--tag-devops)} .tag.cybersecurite{background:var(--tag-cyber)}
+  .tag.architecte{background:var(--tag-architecte)} .tag.qa{background:var(--tag-qa)}
   .meta .remote{color:#fff;background:var(--remote);border-color:var(--remote);
     font-weight:600;font-family:"IBM Plex Mono",monospace;letter-spacing:.01em;text-transform:lowercase}
   .empty{text-align:center;color:var(--muted);padding:60px 0}
@@ -500,7 +503,7 @@ const companySlug = s => (s||"").toString().toLowerCase()
   .replace(/c\+\+/g,"cpp").replace(/c#/g,"csharp").replace(/\.net/g,"dotnet")
   .replace(/node\.js/g,"nodejs").replace(/next\.js/g,"nextjs")
   .normalize("NFKD").replace(/[̀-ͯ]/g,"").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").replace(/-{2,}/g,"-");
-const catLabel = c => ({eng:"Dev",data:"Data",product:"Product",design:"Design","tech-adjacent":"IT"}[c]||c||"–");
+const catLabel = c => ({eng:"Dev",devops:"DevOps",cybersecurite:"Cyber",architecte:"Architecte",qa:"QA",data:"Data",product:"Product",design:"Design","tech-adjacent":"IT"}[c]||c||"–");
 
 // --- analytics (Umami) : événements custom, sans donnée perso ---
 const track = (name, data) => { try { window.umami && window.umami.track(name, data); } catch(_){} };
@@ -714,12 +717,13 @@ function makeMulti(sel, entries, selected, allLabel){
 function initFilters(){
   buildCityFilter();
 
-  const CAT_LABELS = {eng:"Dev / Infra", data:"Data / IA", product:"Product",
+  const CAT_LABELS = {eng:"Dev / Infra", devops:"DevOps / SRE", cybersecurite:"Cybersécurité",
+    architecte:"Architecte", qa:"QA / Test", data:"Data / IA", product:"Product",
     design:"Design", "tech-adjacent":"IT & autres"};
   const catCnt = {};
   for(const j of JOBS) if(j.category) catCnt[j.category] = (catCnt[j.category]||0)+1;
   makeMulti("#mCat",
-    ["eng","data","product","design","tech-adjacent"]
+    ["eng","devops","cybersecurite","architecte","qa","data","product","design","tech-adjacent"]
       .filter(k=>catCnt[k]).map(k=>[k, catCnt[k], CAT_LABELS[k]]),
     state.cats, "Métier");
 
