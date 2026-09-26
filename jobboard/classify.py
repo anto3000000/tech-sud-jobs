@@ -111,7 +111,11 @@ _RULES = [
         r"technicien (informatique|support|systeme reseau|systeme|helpdesk|it\b|"
         r"de proximite|infrastructure|micro)",
         r"help ?desk", r"hotline",
-        r"technico[- ]commercial (logiciel|it|saas|informatique|software|"
+        # \bit\b (not bare "it"): without the boundary this alternative
+        # matches as a prefix of any word starting with "it" — "Technico
+        # Commercial Itinérant" (an industrial/PPE sales rep, Descours &
+        # Cabaud / Socomec) was reading as "commercial IT" this way.
+        r"technico[- ]commercial (logiciel|\bit\b|saas|informatique|software|"
         r"cyber|digital|electroni)",
         r"sales engineer", r"solution(s)? engineer", r"presales", r"avant[- ]vente",
         r"customer success (engineer|manager)", r"implementation (specialist|consultant)",
@@ -233,7 +237,8 @@ def classify(title, profession=None, sector=None, stack=None):
     # engineering, even though "developer" / "developp" matches the eng net
     if re.search(r"\bbusiness\s+develop\w*|\bbiz\s*dev\b|\bbusiness\s+dev\b|"
                  r"\bbdr\b|\bbusiness development (manager|representative|rep)\b|"
-                 r"developpeu(r|se) commercial", t):
+                 r"developpeu(r|se) commercial|\bsales develop\w*|"
+                 r"developpeu(r|se)[.\w]* immobil", t):
         return None
 
     # "electronique" (eng net) is a hardware-engineering keyword, not a role —
@@ -242,7 +247,42 @@ def classify(title, profession=None, sector=None, stack=None):
     # has its own "still allow if an eng/data pattern matches" fallback that
     # would otherwise let these back in through that same bare keyword.
     if re.search(r"supply chain|coordinateur (obsolescence|approvisionnement|"
-                 r"logistique)|responsable support (produit|client)", t):
+                 r"logistique|equipements? electroniques?)|"
+                 r"responsable support (produit|client)|responsable achats|"
+                 r"mecanicien|conducteur de travaux|surete electronique|"
+                 r"technicien de maintenance electrotechnique|controleur de gestion|"
+                 r"horaires.{0,3}absences|gestion de donnees logistiques", t):
+        return None
+
+    # "sécurité" is safety in French as often as it is (cyber)security —
+    # "Ingénieur Sécurité" in a nuclear/pyrotechnic/aeronautical context means
+    # industrial/flight safety, not information security, but the
+    # cybersecurite bucket's bare "ingenieur securite" pattern can't tell the
+    # difference. Gate on an explicit IT/cyber qualifier before excluding.
+    if re.search(r"securite (pyrotechnique|installation|projets?\b)|"
+                 r"securite.{0,20}(nucleaire|exploitation nucleaire)|"
+                 r"securite et fiabilite", t) \
+            and not re.search(r"informatique|cyber|\bsi\b|reseau|"
+                              r"systeme(s)? d.information", t):
+        return None
+
+    # MOA/MOE (maîtrise d'ouvrage/d'œuvre) are generic French project-
+    # management roles used in construction, nuclear and every other
+    # industry — not IT-specific — so the bare \bmoa\b/\bmoe\b in the
+    # tech-adjacent net needs to stand down for an obviously non-IT project.
+    if re.search(r"\bmo[ae]\b.{0,30}(nucleaire|installation nucleaire|batiment|"
+                 r"construction|travaux|genie civil)|"
+                 r"(nucleaire|batiment|construction|travaux|genie civil)"
+                 r".{0,30}\bmo[ae]\b", t):
+        return None
+
+    # "Financement de l'innovation" (R&D tax-credit / CIR consulting) on a
+    # hardware/electronics domain is a finance/consulting job about that
+    # sector, not engineering — unlike the same phrase paired with
+    # "informatique"/"digital", which is already handled as tech-adjacent
+    # via the explicit "consultant technique/informatique" patterns below.
+    if re.search(r"(electroni|electrotechni).*financement de l.innovation|"
+                 r"financement de l.innovation.*(electroni|electrotechni)", t):
         return None
 
     # marketing/ad-tech "analytics & tracking" (GA/GTM/Ads implementation for
@@ -268,6 +308,18 @@ def classify(title, profession=None, sector=None, stack=None):
                            r"back ?end|front ?end|full ?stack|\bapi\b|plateforme|"
                            r"\bdata\b|informatique|numerique|\br ?& ?d\b|\brd\b|"
                            r"embarque|firmware|\bsi\b")
+
+    # bare "développement" (the generic French noun, not "développement
+    # logiciel") false-positives on physical/mechanical engineering and
+    # industrial-process titles that happen to use the word for something
+    # other than software — test-bench methodology, flight-test support,
+    # continuous-improvement of a manufacturing process, or a materials-
+    # fatigue research grant. None of these name a tech object.
+    if re.search(r"banc(s)? d.essais|essais de support|amelioration continue|"
+                 r"developpement des process|comportement en fatigue|"
+                 r"transmission de puissance", t) and not _dev_tech.search(t):
+        return None
+
     if re.search(r"developp?ement\s+(commercial|rh\b|des ventes|de la clientele|"
                  r"foncier|immobilier|de portefeuille|des affaires|international|"
                  r"partenariat|strateg|durable|economique|territor|local|rural|"
