@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-09-22",
+  "last_generated_date": "2026-09-26",
   "bucket_last_used": {
     "eng-13": "2026-09-22",
     "eng-06": "2026-09-22",
@@ -16,7 +16,8 @@
     "tech-adjacent-06": "2026-09-20",
     "product-paca": "2026-09-21",
     "tech-adjacent-paca": "2026-09-21",
-    "tech-adjacent-83": "2026-09-22"
+    "tech-adjacent-83": "2026-09-22",
+    "product-06": "2026-09-26"
   },
   "recent_slugs": {
     "atos-developpeur-logiciel-telecom-c-cpp-h-f-9b1cff": "2026-09-17",
@@ -104,7 +105,11 @@
     "alten-ingenieur-logiciel-db243b": "2026-09-22",
     "alten-qa-automation-test-ddf067": "2026-09-22",
     "atos-ingenieur-devops-experimente-f-h-c1a5c6": "2026-09-22",
-    "exalt-developpeur-front-end-angular-7c3d11": "2026-09-22"
+    "exalt-developpeur-front-end-angular-7c3d11": "2026-09-22",
+    "instant-system-product-manager-billettique-h-f-bd0ae1": "2026-09-26",
+    "the-adecco-group-product-owner-28cb33": "2026-09-26",
+    "exalt-product-designer-h-f-exalt-azur-64063f": "2026-09-26",
+    "exalt-product-owner-h-f-exalt-azur-d80a46": "2026-09-26"
   },
   "last_published_date": "2026-09-22"
 }

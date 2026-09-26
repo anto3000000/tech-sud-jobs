@@ -115,14 +115,6 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Fr%C3%A9jus-Plage_-_panoramio.jpg/1280px-Fr%C3%A9jus-Plage_-_panoramio.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
-  "Gap": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Gap_vue_d%27en_haut_%28cropped%29.jpg",
-    "file": "Gap_vue_d'en_haut_(cropped).jpg",
-    "height": 776,
-    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Gap_vue_d%27en_haut_%28cropped%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "width": 1140
-  },
   "Gemenos": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:G%C3%A9menos-vue-53.JPG",
@@ -138,14 +130,6 @@
     "height": 830,
     "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/G%C3%A9menos-vue-53.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "width": 1190
-  },
-  "Istres": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Istres_-_Centre_ancien.jpg",
-    "file": "Istres_-_Centre_ancien.jpg",
-    "height": 800,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Istres_-_Centre_ancien.jpg/1280px-Istres_-_Centre_ancien.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "width": 1200
   },
   "LA CIOTAT - LA VIGIE": {
     "checked_at": 1790322269.2825532
@@ -198,13 +182,8 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Notre_Dame_de_la_Garde.jpg/1280px-Notre_Dame_de_la_Garde.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
-  "Marseille 2e Arrondissement": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Grands-Carmes-Marseille.jpg",
-    "file": "Grands-Carmes-Marseille.jpg",
-    "height": 800,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Grands-Carmes-Marseille.jpg/1280px-Grands-Carmes-Marseille.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1200
+  "Marseille 15E Arrondissement": {
+    "checked_at": 1790418197.4035795
   },
   "Marseille 8E Arrondissement": {
     "checked_at": 1790322269.2825532
@@ -266,14 +245,6 @@
     "file": "La Penne-sur-Huveaune.JPG",
     "height": 900,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/La_Penne-sur-Huveaune.JPG/1280px-La_Penne-sur-Huveaune.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1200
-  },
-  "Port-De-Bouc": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Sunset_Port-de-Bouc,_France.jpg",
-    "file": "Sunset Port-de-Bouc, France.jpg",
-    "height": 741,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Sunset_Port-de-Bouc%2C_France.jpg/1280px-Sunset_Port-de-Bouc%2C_France.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
   "Provence-Alpes-Cote d'Azur": {
@@ -343,19 +314,11 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1790322772.911948,
+    "checked_at": 1790418197.4035795,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Sophia_Antipolis.jpg/1280px-Sophia_Antipolis.jpg",
-    "width": 1200
-  },
-  "Sorgues": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Carrefour_giratoire_%C3%A0_Sorgues_(Vaucluse).JPG",
-    "file": "Carrefour giratoire à Sorgues (Vaucluse).JPG",
-    "height": 800,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Carrefour_giratoire_%C3%A0_Sorgues_%28Vaucluse%29.JPG/1280px-Carrefour_giratoire_%C3%A0_Sorgues_%28Vaucluse%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
   "TOULON": {
@@ -384,14 +347,6 @@
   },
   "Valbonne Crete": {
     "checked_at": 1790322269.2825532
-  },
-  "Valette-du-Var": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:La_Valette_du_Var_-_07.jpg",
-    "file": "La Valette du Var - 07.jpg",
-    "height": 324,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/La_Valette_du_Var_-_07.jpg/1280px-La_Valette_du_Var_-_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1200
   },
   "Vitrolles": {
     "checked_at": 1790322269.2825532,
