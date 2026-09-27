@@ -35,14 +35,6 @@
   "Antibes Area": {
     "checked_at": 1790322269.2825532
   },
-  "Aubagne": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Montage_Aubagne.jpg",
-    "file": "Montage_Aubagne.jpg",
-    "height": 1681,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Montage_Aubagne.jpg/1280px-Montage_Aubagne.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "width": 1200
-  },
   "Avignon": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_2_JP_Campomar.jpg",
@@ -107,14 +99,6 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Couvent_et_Chapelle_des_Minimes_-_Draguignan_%282%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "width": 960
   },
-  "Fréjus": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Fr%C3%A9jus-Plage_-_panoramio.jpg",
-    "file": "Fréjus-Plage_-_panoramio.jpg",
-    "height": 900,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Fr%C3%A9jus-Plage_-_panoramio.jpg/1280px-Fr%C3%A9jus-Plage_-_panoramio.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "width": 1200
-  },
   "Gemenos": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:G%C3%A9menos-vue-53.JPG",
@@ -148,14 +132,6 @@
     "file": "La Garde (Var) by night.jpg",
     "height": 775,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/La_Garde_%28Var%29_by_night.jpg/1280px-La_Garde_%28Var%29_by_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1200
-  },
-  "La Trinité": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Gare_de_La_Trinit%C3%A9-Victor.jpg",
-    "file": "Gare de La Trinité-Victor.jpg",
-    "height": 900,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Gare_de_La_Trinit%C3%A9-Victor.jpg/1280px-Gare_de_La_Trinit%C3%A9-Victor.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
   "Manosque": {
@@ -199,14 +175,6 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Martigues_-_Miroir_aux_Oiseaux.jpg/1280px-Martigues_-_Miroir_aux_Oiseaux.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
-  "Meyreuil": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:La_place_de_l%27%C3%A9glise_de_Meyreuil.jpg",
-    "file": "La_place_de_l'église_de_Meyreuil.jpg",
-    "height": 900,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/La_place_de_l%27%C3%A9glise_de_Meyreuil.jpg/1280px-La_place_de_l%27%C3%A9glise_de_Meyreuil.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "width": 1200
-  },
   "Mougins": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Mougins_01_%28cropped%29.jpg",
@@ -229,14 +197,6 @@
     "file": "Façade_principale_de_l'église_Saint-Laurent.JPG",
     "height": 1600,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Fa%C3%A7ade_principale_de_l%27%C3%A9glise_Saint-Laurent.JPG/1280px-Fa%C3%A7ade_principale_de_l%27%C3%A9glise_Saint-Laurent.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "width": 1200
-  },
-  "Orange": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:ORANGE-centreville_aerienne.jpg",
-    "file": "ORANGE-centreville aerienne.jpg",
-    "height": 698,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/ORANGE-centreville_aerienne.jpg/1280px-ORANGE-centreville_aerienne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
   "Penne-sur-Huveaune": {
@@ -264,9 +224,6 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Rousset-FR-13-moulin-3.jpg/1280px-Rousset-FR-13-moulin-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
-  "Rue de la maïre aubagne": {
-    "checked_at": 1790322269.2825532
-  },
   "Saint Paul Lez Durance": {
     "checked_at": 1790322269.2825532
   },
@@ -277,9 +234,6 @@
     "height": 900,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/St_Paul_L%C3%A8s_Durance_-_Fontaine_1.JPG/1280px-St_Paul_L%C3%A8s_Durance_-_Fontaine_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
-  },
-  "Saint-Paul-Lez-Durance": {
-    "checked_at": 1790322269.2825532
   },
   "Saint-Paul-lez-Durance": {
     "checked_at": 1790322269.2825532,
@@ -314,19 +268,11 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1790418197.4035795,
+    "checked_at": 1790506686.9644513,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Sophia_Antipolis.jpg/1280px-Sophia_Antipolis.jpg",
-    "width": 1200
-  },
-  "TOULON": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Arsenal_de_Toulon_en_1670_avec_vaisseau_en_construction.jpg",
-    "file": "Arsenal de Toulon en 1670 avec vaisseau en construction.jpg",
-    "height": 797,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Arsenal_de_Toulon_en_1670_avec_vaisseau_en_construction.jpg/1280px-Arsenal_de_Toulon_en_1670_avec_vaisseau_en_construction.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
   "Toulon": {

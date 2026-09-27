@@ -1,9 +1,9 @@
 {
-  "last_generated_date": "2026-09-26",
+  "last_generated_date": "2026-09-27",
   "bucket_last_used": {
     "eng-13": "2026-09-22",
     "eng-06": "2026-09-22",
-    "eng-83": "2026-09-18",
+    "eng-83": "2026-09-27",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-09-18",
     "data-13": "2026-09-18",
@@ -109,7 +109,12 @@
     "instant-system-product-manager-billettique-h-f-bd0ae1": "2026-09-26",
     "the-adecco-group-product-owner-28cb33": "2026-09-26",
     "exalt-product-designer-h-f-exalt-azur-64063f": "2026-09-26",
-    "exalt-product-owner-h-f-exalt-azur-d80a46": "2026-09-26"
+    "exalt-product-owner-h-f-exalt-azur-d80a46": "2026-09-26",
+    "cgi-ingenieur-e-java-senior-f-h-e81e21": "2026-09-27",
+    "naval-group-fr-charge-e-d-etudes-systemes-embarques-systemes-de-combat-dcbb29": "2026-09-27",
+    "naval-group-fr-concepteur-developpeur-logiciel-java-h-f-c1ba20": "2026-09-27",
+    "sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-e3b964": "2026-09-27",
+    "thales-ingenieur-e-developpement-fullstack-angular-h-f-0b859f": "2026-09-27"
   },
   "last_published_date": "2026-09-26"
 }
