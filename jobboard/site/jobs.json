@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-27T10:58:06+00:00",
+  "generated_at": "2026-09-28T08:32:47+00:00",
   "region": "Provence-Alpes-Côte d'Azur",
-  "count": 736,
-  "companies": 123,
-  "new_count": 401,
+  "count": 735,
+  "companies": 122,
+  "new_count": 399,
   "by_category": {
     "data": 174,
     "devops": 63,
     "product": 45,
     "eng": 250,
-    "tech-adjacent": 93,
+    "tech-adjacent": 92,
     "cybersecurite": 44,
     "qa": 31,
     "design": 5,
@@ -17,7 +17,7 @@
   },
   "by_source": {
     "phenom": 14,
-    "wttj": 353,
+    "wttj": 352,
     "jobs2web": 29,
     "workday": 65,
     "smartrecruiters": 107,
@@ -59,7 +59,7 @@
       "careers_url": "https://orange.jobs/fr/fr",
       "description": "Nous recherchons un Analyste d'affaires passionné pour rejoindre notre équipe dynamique chez Orange Business. Vous jouerez un rôle clé dans la transformation digitale de nos clients, en les accompagnant dans le déploiement de solutions innovantes en data et IA. Rejoignez-nous pour faire la différence !",
       "description_excerpt": "Nous recherchons un Analyste d'affaires passionné pour rejoindre notre équipe dynamique chez Orange Business. Vous jouerez un rôle clé dans la transformation digitale de nos clients, en les accompagnant dans le déploiement de solutions innovantes en data et IA. Rejoignez-nous pour faire la différence !",
-      "first_seen": "2026-09-27T10:58:06+00:00",
+      "first_seen": "2026-09-28T08:32:47+00:00",
       "is_new": true,
       "slug": "orange-business-analyst-3d807c"
     },
@@ -86,7 +86,7 @@
       "careers_url": "https://orange.jobs/fr/fr",
       "description": "Nous recherchons un Consultant DevOps / Platform Engineer pour rejoindre notre équipe dynamique. Vous serez responsable de l'industrialisation et de l'automatisation des déploiements en environnement cloud, tout en garantissant la sécurité et la fiabilité des infrastructures. Rejoignez-nous pour contribuer à des projets innovants dans un environnement international.",
       "description_excerpt": "Nous recherchons un Consultant DevOps / Platform Engineer pour rejoindre notre équipe dynamique. Vous serez responsable de l'industrialisation et de l'automatisation des déploiements en environnement cloud, tout en garantissant la sécurité et la fiabilité des infrastructures. Rejoignez-nous pour contribuer à des projets innovants dans un…",
-      "first_seen": "2026-09-27T10:58:06+00:00",
+      "first_seen": "2026-09-28T08:32:47+00:00",
       "is_new": true,
       "slug": "orange-consultant-devops-platform-engineer-59974f"
     },
@@ -147,7 +147,7 @@
       "benefits_count": 14,
       "start_date": null,
       "enriched_at": "2026-09-27T10:34:58+00:00",
-      "first_seen": "2026-09-27T10:58:06+00:00",
+      "first_seen": "2026-09-28T08:32:47+00:00",
       "is_new": true,
       "slug": "septeo-backend-engineer-kotlin-data-d2a268"
     },
@@ -174,7 +174,7 @@
       "careers_url": "https://jobs.cmacgm-group.com",
       "description": "Dirigé par Rodolphe Saadé, le Groupe CMA CGM, un leader mondial du transport maritime et de la logistique, dessert plus de 420 ports dans le monde sur 5 continents. Avec sa filiale CEVA Logistics, et sa division de fret aérien CMA CGM AIR CARGO, le Groupe CMA CGM innove constamment pour proposer à ses clients une offre complète et toujours plus performante grâce à de nouvelles solutions maritimes, terrestres, aériennes et logistiques.\n\nEngagé dans la transition énergétique du transport maritime et pionnier dans l’utilisation de carburants alternatifs, le Groupe CMA CGM s’est fixé un objectif de Net Zéro Carbone d’ici 2050.\n\nÀ travers la Fondation CMA CGM, le Groupe agit également face à des crises humanitaires nécessitant une réponse d’urgence en mobilisant l’expertise maritime et logistique du Groupe pour acheminer partout dans le monde du matériel humanitaire.\n\nPrésent dans 160 pays via son réseau de plus de 400 bureaux et 750 entrepôts, le Groupe emploie 155 000 personnes dans le monde, dont 4 000 à Marseille où est situé son siège social.\n\nVOTRE RÔLE\n\nIntégré(e) au département Digital d'un groupe de transport, vous participerez à la conception, à l'amélioration et à l'intégration d'algorithmes d'optimisation qui contribuent à améliorer la performance et l'empreinte carbone du groupe.\n\nQU'ALLEZ-VOUS FAIRE ?\n\nAu sein du département data science, vous serez amené(e) à :\n\n• Travailler avec des équipes opérationnelles pour comprendre leur métier.\n\n• Faire de la veille technologique pour trouver la meilleure solution à la problématique donnée.\n\n• Concevoir / faire évoluer un modèle de recherche opérationnelle.\n\n• Identifier les données nécessaires à ces évolutions et implémenter les flux.\n\n• Améliorer les performances des algorithmes.\n\n• Analyser les résultats et produire des rapports les expliquant.\n\n• Décrire la démarche et la présenter aux équipes opérationnelles.\n\n• Intégrer le modèle dans un outil et dans le process.\n\nCe stage vous permettra de développer vos compétences en RO, ainsi que dans l'ensemble des domaines connexes (métier, IT), dans un cas d'utilisation réel dans le domaine logistique.\n\nQUI RECHERCHONS-NOUS ?\n\nUne formation académique spécialisée ainsi qu'une expérience concrète en Recherche Opérationnelle sont obligatoires pour ce poste.\n\n• Formation: Étudiant(e) en Master 2 spécialité Recherche Opérationnelle.\n\n• Compétences techniques: Forte connaissance de la modélisation / programmation par contrainte ; graphes acycliques dirigés ; solveurs commerciaux (idéalement Cplex) ; C++ / Python ; outils de développement collaboratifs (git) ; amélioration des performances d'algorithmes.\n\n• Atouts supplémentaires: Cloud AWS ; SQL.\n\n• Langues: Très bon niveau d'anglais (oral / écrit) demandé.\n\n• Savoir-être: Votre curiosité, votre rigueur ainsi que votre sens de l'analyse vous permettront de réussir dans ce poste.\n\nENVIRONNEMENT DU POSTE\n\n• Lieu de travail: Head Office – Marseille\n\n• Date de début du stage souhaitée: Q1 2027\n\nLancez-vous dans l’aventure CMA CGM !",
       "description_excerpt": "Dirigé par Rodolphe Saadé, le Groupe CMA CGM, un leader mondial du transport maritime et de la logistique, dessert plus de 420 ports dans le monde sur 5 continents. Avec sa filiale CEVA Logistics, et sa division de fret aérien CMA CGM AIR CARGO, le Groupe CMA CGM innove constamment pour proposer à ses clients une offre complète et…",
-      "first_seen": "2026-09-27T10:58:06+00:00",
+      "first_seen": "2026-09-28T08:32:47+00:00",
       "is_new": true,
       "slug": "cma-cgm-operations-research-engineer-1ae9a7"
     },
@@ -12826,7 +12826,7 @@
       "start_date": null,
       "enriched_at": "2026-09-27T10:34:58+00:00",
       "first_seen": "2026-09-18T05:31:06+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "bpce-solutions-informatiques-techlead-api-java-espace-client-particuli-ebdb3d"
     },
     {
@@ -12881,7 +12881,7 @@
       "start_date": "2026-11-01T23:00:00Z",
       "enriched_at": "2026-09-27T10:34:58+00:00",
       "first_seen": "2026-09-18T05:31:06+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "the-adecco-group-chef-de-projet-senior-software-embarque-h-f-bca15d"
     },
     {
@@ -21828,47 +21828,6 @@
       "first_seen": "2026-09-05T17:55:59+00:00",
       "is_new": false,
       "slug": "sopra-steria-analyste-gestion-des-vulnerabilites-cybersecurite-aix-en-0d356a"
-    },
-    {
-      "id": "wttj:4256478",
-      "title": "[TEST - NE PAS POSTULER] CHEF DE PROJET SI F/H",
-      "company": "La Poste Groupe",
-      "company_slug": "la-poste-groupe-maquette",
-      "city": "Draguignan",
-      "cities": [
-        "Draguignan"
-      ],
-      "department": "Var",
-      "region": "Provence-Alpes-Cote d'Azur",
-      "contract": "CDI",
-      "remote": "",
-      "category": "tech-adjacent",
-      "profession": null,
-      "salary": null,
-      "experience_min_years": null,
-      "published_at": "2026-09-03T00:00:00.000+02:00",
-      "url": "https://www.welcometothejungle.com/fr/companies/la-poste-groupe-maquette/jobs/test-ne-pas-postuler-chef-de-projet-si-f-h_draguignan?o=LPG_OX9ZQyP",
-      "source": "wttj",
-      "stack": [],
-      "soft_skills": [
-        "Communication"
-      ],
-      "description": "On vous propose de rejoindre La Banque Postale où vos actions contribueront à vous épanouir et à rendre notre croissance à la fois saine et durable.\nUne banque qui croit vraiment que la finance a un sens, qu’elle joue un vrai rôle sociétal.\nD’ailleurs, on accompagne plus d’un million de clients financièrement fragiles et on est la 1ère banque mondiale en matière de RSE grâce nos actions en faveur d’une finance durable.\nNotre jeunesse nous rend aussi conquérants. A raison ! Notre Groupe Banque/Assurance accompagne plus de 20 millions de clients, ce qui fait de nous le 3ème groupe du secteur en France. \nEnvironnement de travail :  La Direction des Opérations, et plus précisément le Département Relation clients composé d'une centaine de collaborateurs, recherche ses futurs conseillers clients F/H en CDI sur notre site de Saint-Denis !\nMaintenant qu’on se connait, on vous en dit plus sur le poste ?\nVous réceptionnez les appels téléphoniques et traitez les demandes des clients en lien avec :\nDes interrogations ou demandes de renseignements sur notre gamme de crédit à la consommation (prêts personnels, crédit renouvelable ou rachats de crédits).\nDes demandes de mise en place d'actes de gestion sur le crédit en cours (report d'échéances, changement de date de prélèvement, changement d'adresse, etc.) ;\nDes besoins de financement en lien avec un projet personnel (auto, travaux, etc.): vous approfondissez alors son projet, sa situation personnelle, professionnelle et financière et lui proposez le produit le plus adapté au regard de ses besoins, de sa capacité d'emprunt et lui faites une proposition\nVotre formation, vos expériences ?\nDans l'idéal, vous êtes titulaire d’un diplôme de niveau BAC+5, vous disposez d’une expérience professionnelle de 3 à 5 ans dans un environnement similaire. Vous maîtrisez les compétences clés suivantes : \nCapacité à travailler et à se coordonner avec les autres au sein de l'entreprise pour réaliser les objectifs fixés.\nFaire preuve de rigueur et de précision : Capacité à réaliser des tâches en suivant avec exactitude les règles, les procédures, les instructions qui ont été fournies, sans réaliser d'erreur et à transmettre clairement des informations. Se montrer ponctuel et respectueux des règles de savoir-vivre usuelles.\nFaire preuve d'autonomie : Capacité à prendre en charge son activité sans devoir être encadré de façon continue (le cas échéant, à solliciter les autres acteurs de l'entreprise).\n\nAnalyser les besoins des clients pour proposer des services adaptés,Assurer le suivi de la satisfaction clients,Communiquer à l'oral en milieu professionnel,Développer et fidéliser la relation client,Identifier, traiter une demande client\n\nQuels seront votre salaire et avantages ? ​​\n​Vous disposerez d’un package complet composé d’une partie fixe sur 12 mois, d’une part variable liée à vos résultats et d’un intéressement. Vous bénéficierez également d’une mutuelle avantageuse, du CSE de La Banque Postale, de jours de télétravail et vous aurez accès à des formations et à de multiples possibilités d’évolution.​\nEnvie de postuler ? Déposez votre candidature dans votre espace.​\nPour voir si on est fait pour s’entendre, on vous proposera un entretien opérationnel et un entretien RH pour exprimer vos motivations puis vous réaliserez un test de personnalité afin de déterminer vos soft skills. Et si on décide de travailler ensemble, vous suivrez un processus d’intégration digitalisé et personnalisé. \nBanque citoyenne, La Banque Postale s’engage en faveur de la diversité et de l’égalité des chances pour donner accès à tous ses métiers sans discrimination de genre, d’origine sociale ou culturelle, d’orientation sexuelle ou de handicap.",
-      "description_excerpt": "On vous propose de rejoindre La Banque Postale où vos actions contribueront à vous épanouir et à rendre notre croissance à la fois saine et durable.\nUne banque qui croit vraiment que la finance a un sens, qu’elle joue un vrai rôle sociétal.\nD’ailleurs, on accompagne plus d’un million de clients financièrement fragiles et on est la…",
-      "profile_excerpt": null,
-      "experience": null,
-      "education_level": null,
-      "remote_detail": null,
-      "apply_url": "https://recrutement.legroupelaposte.fr/job/DRAGUIGNAN-TEST-NE-PAS-POSTULER-CHEF-DE-PROJET-SI-FH-83-83300/1366996555/?feedId=445155&utm_source=Welcome2Jungle?utm_source=Welcome2Jungle",
-      "ats": "external",
-      "logo": "https://cdn-images.welcometothejungle.com/dZWfjPl7nwZYCplwOhw2_7CX5uu1_90ApS721fcQUyE/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8zODY1LzE3MDc3NC9kMWNiOWE1YS00MjBiLTQ3MGEtOTU0NS1hNTY1ODgzMTc5NDEucG5n",
-      "benefits_preview": [],
-      "benefits_count": null,
-      "start_date": null,
-      "enriched_at": "2026-09-27T10:34:58+00:00",
-      "first_seen": "2026-09-05T17:55:59+00:00",
-      "is_new": false,
-      "slug": "la-poste-groupe-test-ne-pas-postuler-chef-de-projet-si-f-h-098d8f"
     },
     {
       "id": "wttj:4049828",

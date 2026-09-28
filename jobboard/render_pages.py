@@ -184,6 +184,18 @@ def slugify(s):
     return re.sub(r"-{2,}", "-", s)
 
 
+def _company_key(s):
+    """compact, punctuation-free key for matching a company name across job
+    records — MUST match build_companies.py's _slug(). A given company can
+    show up under slightly different spellings across sources/ATS postings
+    (e.g. "SIGNE +" vs "Signe+"); build_companies.py already groups those
+    into one record with this same key, so re-matching jobs to that record
+    on the exact display-name string would silently drop the odd-spelling
+    ones. Do not confuse with slugify() above, the dash-separated URL slug."""
+    s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "", s.lower())
+
+
 def _logo_html(src, name, css_class):
     """<img> with a `css_class` + `css_class ph` (letter placeholder) fallback.
     Some logos (e.g. the Clearbit-by-domain fallback for ATS-only companies,
@@ -199,13 +211,113 @@ def _logo_html(src, name, css_class):
         css_class, esc(src), esc(name), esc(onerror))
 
 
+def _company_about_html(crec, fallback_name=""):
+    """"À propos de {company}" block: short blurb + key facts + a link to the
+    full company page. build_companies.py guarantees every company record
+    carries a `profile.description` — a real WTTJ bio when there is one,
+    otherwise a couple of factual sentences derived from the feed itself — so
+    this only comes back empty when `crec` has no matching company record at
+    all (shared by the offer page and the tombstone: a closed posting
+    shouldn't leave a visitor with zero context on who was hiring)."""
+    crec = crec or {}
+    cprof = crec.get("profile") or {}
+    about_txt = re.sub(r"\s+", " ", (cprof.get("description") or "")).strip()
+    if not about_txt:
+        return ""
+    if len(about_txt) > 340:
+        about_txt = about_txt[:340].rsplit(" ", 1)[0].rstrip(".,;:") + " […]"
+    cfacts = " · ".join(x for x in [
+        (cprof.get("sectors") or [None])[0],
+        _fmt_headcount(cprof.get("headcount")) if cprof.get("headcount") else None,
+        ("créée en %s" % cprof["founded"]) if cprof.get("founded") else None,
+        ("siège à %s" % cprof["hq_city"]) if cprof.get("hq_city") else None,
+    ] if x)
+    more = ('<a href="../entreprise/%s.html">→ Fiche complète de %s : '
+            "toutes ses offres, sa stack, ses chiffres</a>"
+            % (crec["slug"], esc(crec["name"]))) if crec.get("slug") else ""
+    return (
+        '<h2>À propos de %s</h2>\n<div class="desc about"><p>%s</p>%s%s</div>' % (
+            esc(crec.get("name") or fallback_name),
+            esc(about_txt),
+            ('<p class="sub">%s</p>' % esc(cfacts)) if cfacts else "",
+            ("<p>%s</p>" % more) if more else ""))
+
+
+ONE_SENTENCE_RX = re.compile(r"(.{20,140}?[.!?])(?:\s|$)")
+
+
+def _company_teaser_html(crec):
+    """One-line company hook shown in the offer card itself, right next to the
+    apply button — the full `_company_about_html()` blurb only appears after
+    the (often long) job description, too late to help someone decide whether
+    to even start reading. First sentence only, so it stays a teaser rather
+    than duplicating the fuller block below."""
+    crec = crec or {}
+    cprof = crec.get("profile") or {}
+    txt = re.sub(r"\s+", " ", (cprof.get("description") or "")).strip()
+    if not txt or not crec.get("slug"):
+        return ""
+    m = ONE_SENTENCE_RX.match(txt)
+    short = m.group(1) if m else (txt[:140].rsplit(" ", 1)[0].rstrip(".,;:") + "…")
+    return ('<p class="co-teaser">%s <a href="../entreprise/%s.html">%s →</a></p>'
+            % (esc(short), crec["slug"], esc("En savoir plus sur " + crec.get("name", ""))))
+
+
+# job descriptions routinely come in as plain text with bullet points that
+# were never given their own blank line — either one marker per source line
+# ("- Do X\n- Do Y") or, worse, several markers run together inline on one
+# line ("• Do X • Do Y"). Either way a bare text_to_html() used to dump the
+# whole thing into one wall-of-text <p>; detect both shapes and emit a real
+# <ul> so "responsabilités" / "avantages" blocks read as a list.
+LINE_BULLET_RX = re.compile(r"^[-•▪●‣◦*]\s+")
+INLINE_BULLET_RX = re.compile(r"(?:^|\s)[•▪●‣◦]\s+")
+
+
 def text_to_html(txt):
     txt = (txt or "").replace("\r\n", "\n")
     out = []
-    for para in re.split(r"\n\s*\n", txt.strip()):
-        para = re.sub(r"\s*\n\s*", " ", para.strip())
-        if para:
-            out.append("<p>" + esc(para) + "</p>")
+    buf_p, buf_ul = [], []
+
+    def flush_p():
+        if buf_p:
+            para = re.sub(r"\s+", " ", " ".join(buf_p)).strip()
+            if para:
+                out.append("<p>" + esc(para) + "</p>")
+            buf_p.clear()
+
+    def flush_ul():
+        if buf_ul:
+            out.append("<ul>" + "".join("<li>%s</li>" % esc(it) for it in buf_ul) + "</ul>")
+            buf_ul.clear()
+
+    # a blank line only breaks a running *paragraph* — a bullet run keeps
+    # going across one (sources routinely put a blank line between items).
+    for raw in txt.strip("\n").split("\n"):
+        line = raw.strip()
+        if not line:
+            flush_p()
+            continue
+        if LINE_BULLET_RX.match(line):
+            flush_p()
+            buf_ul.append(LINE_BULLET_RX.sub("", line))
+            continue
+        parts = [p.strip() for p in INLINE_BULLET_RX.split(line)]
+        if len(parts) >= 2:
+            # "Intro • item one • item two" on one physical line — the intro
+            # (if any) closes any unrelated list run already buffered, and
+            # the items feed straight into buf_ul so a following bullet-led
+            # line (see above) merges into the same <ul>.
+            intro, items = parts[0], [p for p in parts[1:] if p]
+            if intro:
+                flush_ul()
+                buf_p.append(intro)
+            flush_p()
+            buf_ul.extend(items)
+            continue
+        flush_ul()
+        buf_p.append(line)
+    flush_p()
+    flush_ul()
     return "\n".join(out)
 
 
@@ -302,6 +414,16 @@ h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:23px;l
 .sub a{color:var(--brand-ink);text-decoration:underline;text-underline-offset:2px;
  text-decoration-color:color-mix(in srgb,var(--brand-ink) 38%,transparent)}
 .sub a:hover{text-decoration-color:currentColor}
+.offer-head{display:flex;gap:14px;align-items:center;margin:12px 0 0}
+.offer-head .logo{width:52px;height:52px;border-radius:13px;object-fit:contain;background:var(--card);
+ border:1px solid var(--line);flex:none;box-shadow:var(--shadow)}
+.offer-head .logo.ph{display:flex;align-items:center;justify-content:center;
+ font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:20px;color:var(--brand-ink);
+ background:color-mix(in srgb,var(--brand) 22%,transparent);
+ border-color:color-mix(in srgb,var(--brand) 34%,transparent)}
+.offer-head .txt{min-width:0}
+.offer-head h1{margin:0 0 4px}
+.offer-head .sub{margin:0}
 .facets{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 22px}
 .facets a{font-size:12.5px;background:var(--card);border:1px solid var(--line);border-radius:8px;
  padding:5px 10px;color:var(--brand-ink);box-shadow:var(--shadow)}
@@ -317,8 +439,31 @@ h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:23px;l
 .apply{display:inline-block;margin:16px 0 4px;font-family:"IBM Plex Mono",monospace;font-weight:600;
  font-size:13px;background:var(--accent);color:var(--on-accent);border-radius:10px;padding:11px 18px;
  box-shadow:0 8px 22px -8px color-mix(in srgb,var(--accent) 75%,transparent)}
+/* offer top card: badges + button side by side instead of stacked — a sparse
+   posting (no stack, no salary) otherwise leaves a big empty-looking gap */
+.offer-meta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px}
+.offer-meta .k{margin:0;flex:1 1 auto}
+.offer-meta .stack{margin:0;flex-basis:100%}
+.offer-meta .co-teaser{margin:0;flex-basis:100%;font-size:12.5px;line-height:1.5;color:var(--muted)}
+.offer-meta .co-teaser a{color:var(--brand-ink);white-space:nowrap;text-decoration:underline;
+ text-underline-offset:2px;text-decoration-color:color-mix(in srgb,var(--brand-ink) 38%,transparent)}
+.offer-meta .co-teaser a:hover{text-decoration-color:currentColor}
+.offer-meta .apply{margin:0;flex:none}
 .apply:hover{text-decoration:none;filter:brightness(1.05)}
+/* mobile-only floating apply bar (offer pages): the in-card "Postuler" scrolls
+   out of view fast on a long description, so keep the CTA reachable */
+.apply-bar{display:none}
+@media (max-width:640px){
+  body.has-apply-bar .apply-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;
+   gap:10px;align-items:center;padding:10px 16px;background:var(--card);
+   border-top:1px solid var(--line);box-shadow:0 -8px 24px -14px rgba(22,48,63,.3)}
+  body.has-apply-bar .apply-bar .t{flex:1;min-width:0;font-size:12.5px;color:var(--muted);
+   white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  body.has-apply-bar .apply-bar .apply{margin:0;flex:none}
+  body.has-apply-bar #cookie-notice{bottom:66px}
+}
 .desc{margin:18px 0 0}.desc p{margin:0 0 11px}
+.desc ul{margin:0 0 13px;padding-left:20px}.desc li{margin:0 0 6px;padding-left:2px}
 .about{margin:6px 0 0}.about .sub{font-size:12.5px;margin:0 0 8px}
 .about a{color:var(--brand-ink)}
 h2{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;margin:26px 0 8px}
@@ -491,7 +636,7 @@ li.job[hidden]{display:none}
 """
 
 
-def shell(*, title, description, canonical, head_extra="", body):
+def shell(*, title, description, canonical, head_extra="", body, body_class=""):
     return """<!doctype html>
 <html lang="fr">
 <head>
@@ -516,7 +661,7 @@ def shell(*, title, description, canonical, head_extra="", body):
 <style>{css}</style>
 {head_extra}
 </head>
-<body>
+<body class="{body_class}">
 <div class="wrap">
 <header>
   <a class="brandline" href="{home}">
@@ -573,7 +718,7 @@ def shell(*, title, description, canonical, head_extra="", body):
 </body>
 </html>""".format(
         title=esc(title), desc=esc(description), canon=esc(canonical),
-        css=CSS, head_extra=head_extra, body=body,
+        css=CSS, head_extra=head_extra, body=body, body_class=esc(body_class),
         home=SITE_URL + "/", hub=SITE_URL + "/emploi/",
         companies=SITE_URL + "/entreprise/", feed=SITE_URL + "/feed.xml",
         dashboard=SITE_URL + "/dashboard.html",
@@ -606,6 +751,14 @@ def render_offer(j, similar, same_company=None):
             esc(apply_href),
             " sur " + esc(dest_label) if dest_label else "")
     ) if apply_href else ""
+    # mobile floating bar: the in-card apply button scrolls out of view fast
+    # on a long description, so mirror it in a bar pinned to the viewport.
+    apply_bar_html = ""
+    if apply_href:
+        apply_bar_html = (
+            '<div class="apply-bar"><span class="t">%s — %s</span>'
+            '<a class="apply" href="%s" target="_blank" rel="nofollow noopener">Postuler</a></div>'
+            % (esc(j.get("title")), esc(j.get("company")), esc(apply_href)))
 
     posted_h = ""
     try:
@@ -639,36 +792,17 @@ def render_offer(j, similar, same_company=None):
             if apply_btn else ""))
     profile_html = ""
     if j.get("profile_excerpt"):
-        profile_html = "<h2>Profil recherché</h2>\n" + text_to_html(j["profile_excerpt"])
+        profile_html = ('<h2>Profil recherché</h2>\n<div class="desc">%s</div>'
+                         % text_to_html(j["profile_excerpt"]))
     benefits_html = ""
     if j.get("benefits_preview"):
-        benefits_html = "<h2>Avantages</h2>\n<ul>%s</ul>" % "".join(
+        benefits_html = '<h2>Avantages</h2>\n<div class="desc"><ul>%s</ul></div>' % "".join(
             "<li>%s</li>" % esc(b) for b in j["benefits_preview"])
 
     # ---- "À propos de {company}" — a short company blurb + key facts, reusing
     # the WTTJ profile we already carry for the company page (≈75% of companies).
-    about_html = ""
-    crec = j.get("_company") or {}
-    cprof = crec.get("profile") or {}
-    about_txt = re.sub(r"\s+", " ", (cprof.get("description") or "")).strip()
-    if about_txt:
-        if len(about_txt) > 340:
-            about_txt = about_txt[:340].rsplit(" ", 1)[0].rstrip(".,;:") + " […]"
-        cfacts = " · ".join(x for x in [
-            (cprof.get("sectors") or [None])[0],
-            _fmt_headcount(cprof.get("headcount")) if cprof.get("headcount") else None,
-            ("créée en %s" % cprof["founded"]) if cprof.get("founded") else None,
-            ("siège à %s" % cprof["hq_city"]) if cprof.get("hq_city") else None,
-        ] if x)
-        more = ('<a href="../entreprise/%s.html">→ Fiche complète de %s : '
-                "toutes ses offres, sa stack, ses chiffres</a>"
-                % (crec["slug"], esc(crec["name"]))) if crec.get("slug") else ""
-        about_html = (
-            '<h2>À propos de %s</h2>\n<div class="desc about"><p>%s</p>%s%s</div>' % (
-                esc(crec.get("name") or j.get("company") or ""),
-                esc(about_txt),
-                ('<p class="sub">%s</p>' % esc(cfacts)) if cfacts else "",
-                ("<p>%s</p>" % more) if more else ""))
+    about_html = _company_about_html(j.get("_company"), j.get("company") or "")
+    co_teaser_html = _company_teaser_html(j.get("_company"))
 
     cat = j.get("category")
     cat_label = CATS.get(cat, (cat, cat))[0]
@@ -796,13 +930,21 @@ def render_offer(j, similar, same_company=None):
         ],
     }
 
+    logo_html = _logo_html(j.get("logo"), j.get("company"), "logo")
+
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="../emploi/{catslug}.html">{catlabel}</a> › {title}</nav>
-<h1>{title}</h1>
-<p class="sub">{company}{cityline}</p>
-<div class="card">
+<div class="offer-head">
+  {logo}
+  <div class="txt">
+    <h1>{title}</h1>
+    <p class="sub">{company}{cityline}</p>
+  </div>
+</div>
+<div class="card offer-meta">
   <div class="k">{krow}</div>
   {stack}
+  {co_teaser}
   {apply_btn}
 </div>
 <div class="desc">{desc}</div>
@@ -811,13 +953,15 @@ def render_offer(j, similar, same_company=None):
 {about}
 {facet_link}
 {similar}
+{apply_bar}
 """.format(
         home=SITE_URL + "/", catslug=slugify(cat or "tech"), catlabel=esc(cat_label),
-        title=esc(j.get("title")), company=co_link,
+        title=esc(j.get("title")), company=co_link, logo=logo_html,
         cityline=(" — télétravail" if is_remote else (" — " + esc(city) if city else "")),
-        krow=krow, stack=stack_html, apply_btn=apply_btn,
+        krow=krow, stack=stack_html, co_teaser=co_teaser_html, apply_btn=apply_btn,
         desc=desc_html, profile=profile_html, benefits=benefits_html,
         about=about_html, facet_link=facet_link, similar=sim_html,
+        apply_bar=apply_bar_html,
     )
     head_extra = jsonld(ld) + "\n" + jsonld(crumbs)
     return shell(
@@ -825,14 +969,17 @@ def render_offer(j, similar, same_company=None):
             j.get("title"), j.get("company"),
             ", " + city if city and city != "Remote" else ""),
         description=meta_desc, canonical=canonical, head_extra=head_extra, body=body,
+        body_class="has-apply-bar" if apply_href else "",
     )
 
 
-def render_tombstone(slug, e):
+def render_tombstone(slug, e, crec=None):
     """Page kept at a vanished offer's URL: no JobPosting markup, `noindex`, and a
     redirect to the matching facet list. Google for Jobs then drops the closed
     posting; a human arriving from a stale Google result still lands somewhere
-    useful instead of a 404."""
+    useful instead of a 404. `crec` (the hiring company's record, when main()
+    can resolve one) adds a short "À propos" blurb so the page isn't just a
+    bare "gone" notice for the few seconds before the redirect fires."""
     canonical = "%s/offre/%s.html" % (SITE_URL, slug)
     cat = e.get("category")
     cat_label = CATS.get(cat, (cat, cat))[0] if cat else "tech"
@@ -842,6 +989,7 @@ def render_tombstone(slug, e):
     dest = ("%s/emploi/%s.html" % (SITE_URL, facet)) if facet else (SITE_URL + "/emploi/")
     title = e.get("title") or "Cette offre"
     company = e.get("company") or ""
+    about_html = _company_about_html(crec, company)
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Emplois</a> › offre expirée</nav>
 <h1>Offre pourvue ou expirée</h1>
@@ -851,12 +999,14 @@ def render_tombstone(slug, e):
   elle a sans doute été pourvue.</p>
   <p><a class="apply" href="{dest}">Voir les offres {catlabel} toujours ouvertes →</a></p>
 </div>
+{about}
 <p class="sub">Redirection automatique dans quelques secondes…</p>
 <script>setTimeout(function(){{location.replace({dest_js})}},5000)</script>
 """.format(
         home=SITE_URL + "/", hub=SITE_URL + "/emploi/",
         title=esc(title), co=(" chez " + esc(company)) if company else "",
         dest=esc(dest), dest_js=json.dumps(dest), catlabel=esc(cat_label),
+        about=about_html,
     )
     head_extra = ('<meta name="robots" content="noindex, follow">\n'
                   '<meta http-equiv="refresh" content="5; url=%s">' % esc(dest))
@@ -3073,9 +3223,9 @@ def main():
     except (OSError, ValueError):
         print("render_pages: no %s — skipping company pages "
               "(run jobboard/build_companies.py)" % COMPANIES, file=sys.stderr)
-    company_by_name = {c["name"]: c for c in companies}
+    company_by_key = {_company_key(c["name"]): c for c in companies}
     for j in jobs:
-        c = company_by_name.get(j.get("company"))
+        c = company_by_key.get(_company_key(j.get("company")))
         if c:
             j["_company_slug"] = c["slug"]
             j["_company"] = c
@@ -3276,8 +3426,9 @@ def main():
         if fn in offer_files:                   # somehow back in the feed — skip
             continue
         tombstone_files.add(fn)
+        crec = company_by_key.get(_company_key(e.get("company")))
         with open(os.path.join(offre_dir, fn), "w", encoding="utf-8") as fh:
-            fh.write(render_tombstone(s, e))
+            fh.write(render_tombstone(s, e, crec))
 
     os.makedirs(DATA, exist_ok=True)
     with open(OFFER_INDEX, "w", encoding="utf-8") as fh:

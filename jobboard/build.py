@@ -74,6 +74,16 @@ FULL_REMOTE_COMPANIES = {"alan", "pennylane", "aircall", "lemlist"}
 BARE_REMOTE_RX = re.compile(r"^\W*(remote|anywhere|worldwide|global)?\W*$", re.I)
 
 
+# Recruiters occasionally publish a dummy posting to preview their WTTJ page
+# layout (title flagged "[TEST]" / "NE PAS POSTULER" — e.g. La Poste Groupe,
+# Sept. 2026). Drop these before they ever reach the feed.
+TEST_POSTING_RX = re.compile(r"\btest\b.{0,20}ne pas postuler|ne pas postuler.{0,20}\btest\b", re.I)
+
+
+def _is_test_posting(title):
+    return bool(TEST_POSTING_RX.search(title or ""))
+
+
 def _remote_ok_from_france(loc):
     return bool(FR_OK_RX.search(loc)) or bool(BARE_REMOTE_RX.match(loc))
 
@@ -427,6 +437,7 @@ def main():
     merged = dedupe(wttj + ft + ats)
     # keep core + adjacent; expose the split to the UI via `category`
     merged = [m for m in merged if m.get("category")]
+    merged = [m for m in merged if not _is_test_posting(m.get("title"))]
 
     # CI guard: if a source API silently changes shape we can end up with an
     # almost-empty feed. Fail loudly instead of deploying it. Override locally
