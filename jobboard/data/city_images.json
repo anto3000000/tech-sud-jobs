@@ -32,9 +32,6 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Fontaine_de_la_Rotonde_-_Aix-en-Provence.JPG/1280px-Fontaine_de_la_Rotonde_-_Aix-en-Provence.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
-  "Antibes Area": {
-    "checked_at": 1790322269.2825532
-  },
   "Avignon": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_2_JP_Campomar.jpg",
@@ -90,14 +87,6 @@
     "height": 800,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg/1280px-Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
-  },
-  "Draguignan": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Couvent_et_Chapelle_des_Minimes_-_Draguignan_%282%29.jpg",
-    "file": "Couvent_et_Chapelle_des_Minimes_-_Draguignan_(2).jpg",
-    "height": 720,
-    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Couvent_et_Chapelle_des_Minimes_-_Draguignan_%282%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "width": 960
   },
   "Gemenos": {
     "checked_at": 1790322269.2825532,
@@ -268,7 +257,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1790506686.9644513,
+    "checked_at": 1790585901.0797114,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,

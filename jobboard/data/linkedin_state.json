@@ -1,11 +1,11 @@
 {
-  "last_generated_date": "2026-09-27",
+  "last_generated_date": "2026-09-28",
   "bucket_last_used": {
     "eng-13": "2026-09-22",
     "eng-06": "2026-09-22",
     "eng-83": "2026-09-27",
     "eng-84": "2026-09-18",
-    "eng-paca": "2026-09-18",
+    "eng-paca": "2026-09-28",
     "data-13": "2026-09-18",
     "data-06": "2026-09-18",
     "data-83": "2026-09-18",
@@ -114,7 +114,12 @@
     "naval-group-fr-charge-e-d-etudes-systemes-embarques-systemes-de-combat-dcbb29": "2026-09-27",
     "naval-group-fr-concepteur-developpeur-logiciel-java-h-f-c1ba20": "2026-09-27",
     "sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-e3b964": "2026-09-27",
-    "thales-ingenieur-e-developpement-fullstack-angular-h-f-0b859f": "2026-09-27"
+    "thales-ingenieur-e-developpement-fullstack-angular-h-f-0b859f": "2026-09-27",
+    "naval-group-fr-ingenieur-e-initie-e-systemes-embarques-armes-h-f-f67d2a": "2026-09-28",
+    "thales-ingenieur-etudes-developpement-hardware-f-h-30e686": "2026-09-28",
+    "alten-innovation-ingenieur-genie-logiciel-fullstack-044fc5": "2026-09-28",
+    "b-hive-ingenieur-electronique-numerique-f-h-b1512f": "2026-09-28",
+    "b-hive-ingenieur-fpga-f-h-6a2217": "2026-09-28"
   },
   "last_published_date": "2026-09-27"
 }
