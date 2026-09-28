@@ -1,7 +1,7 @@
 {
   "last_generated_date": "2026-09-28",
   "bucket_last_used": {
-    "eng-13": "2026-09-22",
+    "eng-13": "2026-09-28",
     "eng-06": "2026-09-22",
     "eng-83": "2026-09-27",
     "eng-84": "2026-09-18",
@@ -119,7 +119,12 @@
     "thales-ingenieur-etudes-developpement-hardware-f-h-30e686": "2026-09-28",
     "alten-innovation-ingenieur-genie-logiciel-fullstack-044fc5": "2026-09-28",
     "b-hive-ingenieur-electronique-numerique-f-h-b1512f": "2026-09-28",
-    "b-hive-ingenieur-fpga-f-h-6a2217": "2026-09-28"
+    "b-hive-ingenieur-fpga-f-h-6a2217": "2026-09-28",
+    "b-hive-referent-fpga-f-h-77d162": "2026-09-28",
+    "capgemini-ingenieur-e-informatique-industrielle-stage-3f144e": "2026-09-28",
+    "groupe-lr-technologies-developpeur-csharp-dotnet-systemes-industriels-db95d0": "2026-09-28",
+    "livecampus-developpeur-full-stack-6ff1b2": "2026-09-28",
+    "scalian-ingenieur-developpeur-labview-h-f-3042cb": "2026-09-28"
   },
   "last_published_date": "2026-09-28"
 }
