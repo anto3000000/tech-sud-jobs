@@ -1,8 +1,8 @@
 {
-  "last_generated_date": "2026-09-28",
+  "last_generated_date": "2026-09-29",
   "bucket_last_used": {
     "eng-13": "2026-09-28",
-    "eng-06": "2026-09-22",
+    "eng-06": "2026-09-29",
     "eng-83": "2026-09-27",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-09-28",
@@ -124,7 +124,12 @@
     "capgemini-ingenieur-e-informatique-industrielle-stage-3f144e": "2026-09-28",
     "groupe-lr-technologies-developpeur-csharp-dotnet-systemes-industriels-db95d0": "2026-09-28",
     "livecampus-developpeur-full-stack-6ff1b2": "2026-09-28",
-    "scalian-ingenieur-developpeur-labview-h-f-3042cb": "2026-09-28"
+    "scalian-ingenieur-developpeur-labview-h-f-3042cb": "2026-09-28",
+    "orange-ingenieur-developpeur-full-stack-h-f-8aa8f4": "2026-09-29",
+    "thales-tech-lead-web-react-f-h-e37428": "2026-09-29",
+    "dassault-systemes-ingenieur-e-recherche-prediction-des-trajectoires-de-82979e": "2026-09-29",
+    "la-securite-sociale-referent-technique-tech-lead-java-spring-f-h-fdd561": "2026-09-29",
+    "alten-backend-engineer-3e9f2c": "2026-09-29"
   },
   "last_published_date": "2026-09-28"
 }
