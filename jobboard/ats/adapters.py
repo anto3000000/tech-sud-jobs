@@ -675,13 +675,20 @@ class Macs(Adapter):
 
 
 # --------------------------------------------------------------------------- #
-#  Jobs2Web — SAP SuccessFactors Recruiting Marketing. No JSON API, but the
-#  search results are plain server-rendered HTML
-#  (<origin>/search/?q=&locationsearch=<city>&startrow=<n>), so a regex
-#  scrape works without a headless browser (confirmed live on CMA CGM).
+#  Jobs2Web — SAP SuccessFactors Recruiting Marketing. Two site generations
+#  seen in the wild:
+#   - newer sites (confirmed on CMA CGM, Sept 2026) are a React SPA backed by
+#     a JSON API at <origin>/services/recruiting/v1/jobs (POST, 10 rows/page,
+#     0-indexed `pageNumber`); the old /search/ URL still 200s but no longer
+#     renders any row server-side, so it silently looked like "0 postings".
+#   - older sites (confirmed on Naos) still serve plain server-rendered HTML
+#     at <origin>/search/?q=&locationsearch=<city>&startrow=<n>, scraped by
+#     regex without a headless browser.
+#  fetch() tries the JSON API first and falls back to the HTML scrape when
+#  the API isn't there (404/401/non-JSON) or the tenant doesn't use it.
 # --------------------------------------------------------------------------- #
 class Jobs2Web(Adapter):
-    """slug is the `locationsearch` value (a city name, e.g. 'Marseille')."""
+    """slug is the search location (a city name, e.g. 'Marseille')."""
     key = "jobs2web"
     has_api = True
     signatures = ("/platform/js/j2w/", "j2w.search", "jobtitle-link", 'id="searchresults"')
@@ -698,6 +705,11 @@ class Jobs2Web(Adapter):
     _PAGE = 25
     _CAP = 500  # safety ceiling on total postings walked for one city
 
+    _API_PAGE_SIZE = 10
+    # the description isn't in the search response; the job page is still
+    # server-rendered, just under schema.org microdata instead of a CSS class.
+    _API_DESC_RX = re.compile(r'itemprop="description"[^>]*>(.*?)<div class="jobColumnTwo"', re.S)
+
     def _detail(self, origin, href):
         r = get_text(origin + href, retries=0, timeout=15)
         if not r.ok:
@@ -705,18 +717,70 @@ class Jobs2Web(Adapter):
         m = self._DESC_RX.search(r.body)
         return _body(m.group(1)) if m else None
 
-    def fetch(self, slug, careers_origin=None):
-        if not careers_origin:
-            return FetchResult(self.key, slug, False, note="needs careers_origin (the Jobs2Web site)")
-        origin = careers_origin.rstrip("/")
-        city = slug or ""
+    def _detail_api(self, job_url):
+        r = get_text(job_url, retries=0, timeout=15)
+        if not r.ok:
+            return None
+        m = self._API_DESC_RX.search(r.body)
+        return _body(m.group(1)) if m else None
+
+    def _fetch_api(self, origin, city):
+        url = origin + "/services/recruiting/v1/jobs"
+        jobs, seen, page, total = [], set(), 0, None
+        while True:
+            body = {"locale": "en_GB", "pageNumber": page, "sortBy": "", "keywords": "",
+                    "location": city, "facetFilters": {}, "brand": "", "skills": [],
+                    "categoryId": 0, "alertId": "", "rcmCandidateId": ""}
+            r = post_json(url, body, retries=1, timeout=20)
+            if not r.ok:
+                return None  # not this generation of Jobs2Web (or a real outage) -> let caller fall back
+            try:
+                data = r.json()
+            except ValueError:
+                return None
+            if not isinstance(data, dict) or "totalJobs" not in data:
+                return None
+            if total is None:
+                total = data["totalJobs"]
+            rows = data.get("jobSearchResult") or []
+            if not rows:
+                break
+            new = 0
+            for row in rows:
+                resp = row.get("response") or {}
+                jid = resp.get("id")
+                if not jid or jid in seen:
+                    continue
+                seen.add(jid)
+                new += 1
+                title = unescape(resp.get("unifiedStandardTitle") or "").strip()
+                url_title = resp.get("urlTitle") or resp.get("unifiedUrlTitle") or ""
+                locale = (resp.get("supportedLocales") or ["en_GB"])[0]
+                job_url = "%s/job/%s/%s-%s" % (origin, url_title, jid, locale)
+                # a classify() hit gates the extra per-job GET; every row is
+                # still returned (unfiltered) so the pipeline's own PACA/tech
+                # filter in build.py stays the single source of truth.
+                desc = self._detail_api(job_url) if _classify(title) else None
+                jobs.append(Job(title, job_url,
+                                location=", ".join(resp.get("jobLocationShort") or []).strip() or None,
+                                department=", ".join(resp.get("filter1") or []) or None,
+                                contract=", ".join(resp.get("RCM_SCHEDULE") or []) or None,
+                                published_at=_dmy_date(resp.get("unifiedStandardStart")),
+                                description=desc, raw={"id": jid}))
+            page += 1
+            if not new or len(jobs) >= self._CAP or page * self._API_PAGE_SIZE >= (total or 0):
+                break
+        return FetchResult(self.key, city, True, jobs, endpoint=url,
+                           note="0 postings" if not jobs else None)
+
+    def _fetch_html(self, origin, city):
         jobs, seen, offset, first_total = [], set(), 0, None
         while True:
             url = "%s/search/?q=&locationsearch=%s&startrow=%d" % (
                 origin, quote(city), offset)
             r = get_text(url, retries=1, timeout=20)
             if not r.ok:
-                return FetchResult(self.key, slug, False, endpoint=url, note="HTTP %s" % r.status)
+                return FetchResult(self.key, city, False, endpoint=url, note="HTTP %s" % r.status)
             if offset == 0:
                 m = self._TOTAL_RX.search(r.body)
                 first_total = int(m.group(1)) if m else 0
@@ -731,9 +795,6 @@ class Jobs2Web(Adapter):
                 seen.add(href)
                 new += 1
                 title = unescape(m.group("title")).strip()
-                # a classify() hit gates the extra per-job GET; every row is
-                # still returned (unfiltered) so the pipeline's own PACA/tech
-                # filter in build.py stays the single source of truth.
                 desc = self._detail(origin, href) if _classify(title) else None
                 jobs.append(Job(title, origin + href,
                                 location=unescape(m.group("location")).strip(),
@@ -743,8 +804,18 @@ class Jobs2Web(Adapter):
             offset += self._PAGE
             if not new or offset >= first_total or offset >= self._CAP:
                 break
-        return FetchResult(self.key, slug, True, jobs, endpoint="%s/search/" % origin,
+        return FetchResult(self.key, city, True, jobs, endpoint="%s/search/" % origin,
                            note="0 postings" if not jobs else None)
+
+    def fetch(self, slug, careers_origin=None):
+        if not careers_origin:
+            return FetchResult(self.key, slug, False, note="needs careers_origin (the Jobs2Web site)")
+        origin = careers_origin.rstrip("/")
+        city = slug or ""
+        api_result = self._fetch_api(origin, city)
+        if api_result is not None:
+            return api_result
+        return self._fetch_html(origin, city)
 
 
 # --------------------------------------------------------------------------- #
@@ -1334,6 +1405,14 @@ class AmazonJobs(Adapter):
 def _amazon_date(v):
     try:
         return datetime.strptime(v, "%B %d, %Y").replace(tzinfo=timezone.utc).isoformat(timespec="seconds")
+    except (TypeError, ValueError):
+        return None
+
+
+def _dmy_date(v):
+    """dd/mm/yyyy (Jobs2Web's unifiedStandardStart) -> ISO8601, pass-through otherwise."""
+    try:
+        return datetime.strptime(v, "%d/%m/%Y").replace(tzinfo=timezone.utc).isoformat(timespec="seconds")
     except (TypeError, ValueError):
         return None
 
