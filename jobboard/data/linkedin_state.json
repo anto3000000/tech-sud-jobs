@@ -7,7 +7,7 @@
     "eng-84": "2026-09-18",
     "eng-paca": "2026-09-28",
     "data-13": "2026-09-30",
-    "data-06": "2026-09-18",
+    "data-06": "2026-09-30",
     "data-83": "2026-09-18",
     "data-paca": "2026-09-18",
     "data-84": "2026-09-18",
@@ -134,7 +134,12 @@
     "bertin-technologies-ia-developpement-dun-algorithme-didentification-de-fa8fc0": "2026-09-30",
     "bertin-technologies-ia-developpement-et-benchmarking-dalgorithmes-de-t-9e432c": "2026-09-30",
     "capgemini-business-analyst-aeronautique-stage-96fece": "2026-09-30",
-    "capgemini-data-engineer-confirme-8e6d3a": "2026-09-30"
+    "capgemini-data-engineer-confirme-8e6d3a": "2026-09-30",
+    "septeo-backend-engineer-kotlin-data-d2a268": "2026-09-30",
+    "alten-innovation-ingenieur-data-science-801b6c": "2026-09-30",
+    "alten-innovation-ingenieur-intelligence-artificielle-generative-6bf2f7": "2026-09-30",
+    "nexton-data-engineer-gcp-python-java-h-f-12c4cb": "2026-09-30",
+    "orange-ingenieur-e-developpement-ia-automatisation-de-tests-d-api-metr-9bdd94": "2026-09-30"
   },
   "last_published_date": "2026-09-30"
 }

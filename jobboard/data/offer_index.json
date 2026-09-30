@@ -3563,10 +3563,10 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-26",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "BI Line Ops"
 },
 "cma-cgm-bi-line-ops-fd2be5": {
@@ -3623,10 +3623,10 @@
 "category": "cybersecurite",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-25",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "Cyber Operational Dashboard"
 },
 "cma-cgm-cyber-operational-dashboard-97a720": {
@@ -3673,10 +3673,10 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-25",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "data quality & control - ports & terminals procurement"
 },
 "cma-cgm-data-quality-control-ports-terminals-procurement-6d3cec": {
@@ -3723,10 +3723,10 @@
 "category": "cybersecurite",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "cybersecurite-marseille",
 "first_seen": "2026-09-25",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "Designing CMA CGM's Cyber Steering Platform"
 },
 "cma-cgm-developpeur-euse-bi-qliksense-vessel-energy-performance-1e4639": {
@@ -3813,10 +3813,10 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-26",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "Digitalization of Marketing & Sales Processes (Automation, Data Visualization, AI)"
 },
 "cma-cgm-directeur-rice-audit-international-cybersecurite-et-it-edd00d": {
@@ -3863,10 +3863,10 @@
 "category": "product",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "product-marseille",
 "first_seen": "2026-09-18",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "Global Product Owner Senior Supervisor (M/F) - CMA CGM Head Office"
 },
 "cma-cgm-global-product-owner-specialist-5ca9aa": {
@@ -3888,6 +3888,16 @@
 "first_seen": "2026-09-20",
 "last_seen": "2026-09-22",
 "title": "Global Product Owner Specialist"
+},
+"cma-cgm-global-product-owner-support-specialist-38dab7": {
+"category": "product",
+"city": "Marseille",
+"company": "CMA CGM",
+"expired_at": null,
+"facet_slug": "product-marseille",
+"first_seen": "2026-09-30",
+"last_seen": "2026-09-30",
+"title": "Global Product Owner Support Specialist"
 },
 "cma-cgm-group-data-insight-and-innovation-senior-specialist-fb7889": {
 "category": "data",
@@ -3923,10 +3933,10 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-25",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "Group IT Business Analysis"
 },
 "cma-cgm-ia-pour-la-gestion-des-connaissances-l-aide-a-la-decision-12e5a3": {
@@ -3953,20 +3963,20 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-18",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "Intern Data Reliability - Off-Manifest Rebates Department"
 },
 "cma-cgm-it-product-manager-shipping-documentation-b49390": {
 "category": "product",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "product-marseille",
 "first_seen": "2026-09-18",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "IT Product Manager - Shipping Documentation"
 },
 "cma-cgm-operations-research-engineer-1ae9a7": {
@@ -3983,10 +3993,10 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-25",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "Operations Research Engineer"
 },
 "cma-cgm-operations-research-engineer-f0fbcb": {
@@ -4023,10 +4033,10 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-25",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "Procurement & Data Analyst Assistant"
 },
 "cma-cgm-product-owner-hris-technical-c543d8": {
@@ -4083,10 +4093,10 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-09-28",
+"expired_at": null,
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-22",
-"last_seen": "2026-09-28",
+"last_seen": "2026-09-30",
 "title": "Tech Lead AI"
 },
 "commandement-de-la-cyberdefense-comcyber-administrateur-cybersecurite-a3bf1b": {
@@ -4483,10 +4493,10 @@
 "category": "data",
 "city": "Valbonne",
 "company": "Dassault Systèmes",
-"expired_at": "2026-09-30",
+"expired_at": null,
 "facet_slug": "data-valbonne",
 "first_seen": "2026-09-25",
-"last_seen": "2026-09-29",
+"last_seen": "2026-09-30",
 "title": "Ingénieur IA (F/H)"
 },
 "dassault-systemes-ingenieur-ia-f-h-9115f7": {
@@ -4553,10 +4563,10 @@
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Dassault Systèmes",
-"expired_at": "2026-09-30",
+"expired_at": null,
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-25",
-"last_seen": "2026-09-29",
+"last_seen": "2026-09-30",
 "title": "Ingenieur R&D  C++ -  STEP AP242 Ed5 prototyping (F/H)"
 },
 "dassault-systemes-ingenieur-r-d-deep-reinforcement-learning-aix-en-pro-0d6b97": {
@@ -8253,17 +8263,17 @@
 "category": "data",
 "city": "Marseille 15E Arrondissement",
 "company": "Orange",
-"expired_at": "2026-09-30",
+"expired_at": null,
 "facet_slug": "data-marseille-15e-arrondissement",
 "first_seen": "2026-09-28",
-"last_seen": "2026-09-29",
+"last_seen": "2026-09-30",
 "title": "Business Analyst"
 },
 "orange-consultant-data-bi-senior-f-h-8c1da0": {
 "category": "data",
 "city": "Marseille 15E Arrondissement",
 "company": "Orange",
-"expired_at": null,
+"expired_at": "2026-09-30",
 "facet_slug": "data-marseille-15e-arrondissement",
 "first_seen": "2026-09-26",
 "last_seen": "2026-09-30",
@@ -10119,6 +10129,16 @@
 "last_seen": "2026-09-26",
 "title": "Technico-commercial itinérant F/H/X"
 },
+"sogeti-business-analyst-specialise-dans-l-areonautique-stage-14a74b": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Sogeti",
+"expired_at": null,
+"facet_slug": "data-aix-en-provence",
+"first_seen": "2026-09-30",
+"last_seen": "2026-09-30",
+"title": "Business Analyst spécialisé dans l'aréonautique - STAGE"
+},
 "sogeti-chef-de-projet-it-7ce75a": {
 "category": "tech-adjacent",
 "city": "Aix-en-Provence",
@@ -10177,7 +10197,7 @@
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-22",
 "last_seen": "2026-09-30",
-"title": "Développeuse / Développeur Fullstack - Stage"
+"title": "Développeuse / Développeur Fullstack - STAGE"
 },
 "sogeti-developpeuse-developpeur-fullstack-stage-b71fcb": {
 "category": "eng",
