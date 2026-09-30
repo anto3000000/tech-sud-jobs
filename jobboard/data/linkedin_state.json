@@ -1,12 +1,12 @@
 {
-  "last_generated_date": "2026-09-29",
+  "last_generated_date": "2026-09-30",
   "bucket_last_used": {
     "eng-13": "2026-09-28",
     "eng-06": "2026-09-29",
     "eng-83": "2026-09-27",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-09-28",
-    "data-13": "2026-09-18",
+    "data-13": "2026-09-30",
     "data-06": "2026-09-18",
     "data-83": "2026-09-18",
     "data-paca": "2026-09-18",
@@ -129,7 +129,12 @@
     "thales-tech-lead-web-react-f-h-e37428": "2026-09-29",
     "dassault-systemes-ingenieur-e-recherche-prediction-des-trajectoires-de-82979e": "2026-09-29",
     "la-securite-sociale-referent-technique-tech-lead-java-spring-f-h-fdd561": "2026-09-29",
-    "alten-backend-engineer-3e9f2c": "2026-09-29"
+    "alten-backend-engineer-3e9f2c": "2026-09-29",
+    "assystem-data-engineer-bureau-d-etudes-h-f-53712d": "2026-09-30",
+    "bertin-technologies-ia-developpement-dun-algorithme-didentification-de-fa8fc0": "2026-09-30",
+    "bertin-technologies-ia-developpement-et-benchmarking-dalgorithmes-de-t-9e432c": "2026-09-30",
+    "capgemini-business-analyst-aeronautique-stage-96fece": "2026-09-30",
+    "capgemini-data-engineer-confirme-8e6d3a": "2026-09-30"
   },
   "last_published_date": "2026-09-29"
 }
