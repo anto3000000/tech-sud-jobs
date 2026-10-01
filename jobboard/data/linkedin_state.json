@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-09-30",
+  "last_generated_date": "2026-10-01",
   "bucket_last_used": {
     "eng-13": "2026-09-28",
     "eng-06": "2026-09-29",
@@ -8,7 +8,7 @@
     "eng-paca": "2026-09-28",
     "data-13": "2026-09-30",
     "data-06": "2026-09-30",
-    "data-83": "2026-09-18",
+    "data-83": "2026-10-01",
     "data-paca": "2026-09-18",
     "data-84": "2026-09-18",
     "product-13": "2026-09-19",
@@ -139,7 +139,12 @@
     "alten-innovation-ingenieur-data-science-801b6c": "2026-09-30",
     "alten-innovation-ingenieur-intelligence-artificielle-generative-6bf2f7": "2026-09-30",
     "nexton-data-engineer-gcp-python-java-h-f-12c4cb": "2026-09-30",
-    "orange-ingenieur-e-developpement-ia-automatisation-de-tests-d-api-metr-9bdd94": "2026-09-30"
+    "orange-ingenieur-e-developpement-ia-automatisation-de-tests-d-api-metr-9bdd94": "2026-09-30",
+    "cs-developpeur-se-cpp-qt-ia-implementation-d-un-chatbot-dans-le-produi-466d6a": "2026-10-01",
+    "naval-group-fr-business-analyst-h-f-2205d0": "2026-10-01",
+    "naval-group-fr-data-engineer-h-f-0ac53d": "2026-10-01",
+    "the-adecco-group-data-engineer-f-h-f75fa6": "2026-10-01",
+    "scalian-business-analyst-it-proxy-po-toulon-h-f-466c04": "2026-10-01"
   },
   "last_published_date": "2026-09-30"
 }

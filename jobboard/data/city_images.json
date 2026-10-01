@@ -115,6 +115,14 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/1_LaCiotat.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "width": 776
   },
+  "La Garde": {
+    "checked_at": 1790856260.25616,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:La_Garde_(Var)_by_night.jpg",
+    "file": "La Garde (Var) by night.jpg",
+    "height": 775,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/La_Garde_%28Var%29_by_night.jpg/1280px-La_Garde_%28Var%29_by_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "width": 1200
+  },
   "Marignane": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Chapelle_Notre_Dame_de_Piti%C3%A9_-_Marignane_%2813%29.JPG",
@@ -241,7 +249,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1790768320.84778,
+    "checked_at": 1790856260.25616,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
