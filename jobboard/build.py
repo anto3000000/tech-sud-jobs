@@ -168,23 +168,59 @@ def job_slug(j):
     return "%s-%s" % (base, h) if base else h
 
 
+# postal codes that show up as a bare "city" (France Travail / ATS location
+# fields); only the ones seen in the feed, extend as they appear
+CITY_POSTCODE = {"83190": "Ollioules"}
+
+# folded key (ascii, lowercase, spaces) -> canonical name. Typos, all-caps,
+# hyphen/case variants, hamlets and sites folded into their commune
+# (Montfavet = Avignon, La Vigie = La Ciotat, CEA Cadarache = Saint-Paul-lès-
+# Durance), and region-level labels collapsed to a single spelling.
+CITY_TABLE = {
+    "aix en provence": "Aix-en-Provence", "aix": "Aix-en-Provence",
+    "ais en provence": "Aix-en-Provence", "aix en provcence": "Aix-en-Provence",
+    "sophia antipolis": "Sophia Antipolis", "biot sophia antipolis": "Sophia Antipolis",
+    "valbonne crete": "Valbonne", "valbonne sophia antipolis": "Valbonne",
+    "marseille area": "Marseille",
+    "la ciotat la vigie": "La Ciotat",
+    "avignon montfavet": "Avignon", "montfavet": "Avignon",
+    "cadarache": "Saint-Paul-lès-Durance",
+    "saint paul lez durance": "Saint-Paul-lès-Durance",
+    "saint paul les durance": "Saint-Paul-lès-Durance",
+    "st paul les durance": "Saint-Paul-lès-Durance",
+    "gemenos": "Gémenos", "berre l etang": "Berre-l'Étang",
+    "penne sur huveaune": "La Penne-sur-Huveaune",
+    "la penne sur huveaune": "La Penne-sur-Huveaune",
+    "six fours les plages": "Six-Fours-les-Plages",
+    "la seyne sur mer": "La Seyne-sur-Mer", "cagnes sur mer": "Cagnes-sur-Mer",
+    "saint laurent du var": "Saint-Laurent-du-Var",
+    "mandelieu la napoule": "Mandelieu-la-Napoule",
+    "salon de provence": "Salon-de-Provence", "l isle sur la sorgue": "L'Isle-sur-la-Sorgue",
+    "les pennes mirabeau": "Les Pennes-Mirabeau", "aubagne": "Aubagne",
+    "provence alpes cote d azur": "Provence-Alpes-Côte d'Azur",
+    "provence alpes cote dazur": "Provence-Alpes-Côte d'Azur",
+}
+# "Marseille 15E Arrondissement", "Marseille 8e", "Marseille 13008" -> Marseille
+_ARRDT_RX = re.compile(r"^(marseille|paris|lyon)\s+(\d{1,2}\s*(e|er|eme)?|13\d{3})"
+                       r"(\s+arrondissement)?$")
+
+
 def canon_city(c):
     if not c:
         return None
     c = re.sub(r"\s+", " ", str(c)).strip(" ,-")
-    low = unicodedata.normalize("NFKD", c).encode("ascii", "ignore").decode().lower()
+    if c in CITY_POSTCODE:
+        return CITY_POSTCODE[c]
+    low = unicodedata.normalize("NFKD", c.replace("\u2019", "'")).encode(
+        "ascii", "ignore").decode().lower()
     low = re.sub(r"[\s'-]+", " ", low).strip()
-    table = {
-        "aix en provence": "Aix-en-Provence", "aix": "Aix-en-Provence",
-        "sophia antipolis": "Sophia Antipolis", "biot sophia antipolis": "Sophia Antipolis",
-        "la seyne sur mer": "La Seyne-sur-Mer", "cagnes sur mer": "Cagnes-sur-Mer",
-        "saint laurent du var": "Saint-Laurent-du-Var",
-        "mandelieu la napoule": "Mandelieu-la-Napoule",
-        "salon de provence": "Salon-de-Provence", "l isle sur la sorgue": "L'Isle-sur-la-Sorgue",
-        "les pennes mirabeau": "Les Pennes-Mirabeau", "aubagne": "Aubagne",
-    }
-    if low in table:
-        return table[low]
+    if low in CITY_TABLE:
+        return CITY_TABLE[low]
+    m = _ARRDT_RX.match(low)
+    if m:
+        return m.group(1).capitalize()
+    if c.isupper():           # "AVIGNON" -> "Avignon", "LA GARDE" -> "La Garde"
+        c = re.sub(r"[A-Za-zÀ-ÿ]+", lambda w: w.group(0).capitalize(), c)
     return c[:1].upper() + c[1:]
 
 
