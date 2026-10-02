@@ -587,6 +587,7 @@ footer .social svg{width:15px;height:15px;fill:currentColor}
 .cohead .lg.ph{display:flex;align-items:center;justify-content:center;font-family:"Bricolage Grotesque",sans-serif;
  font-weight:700;font-size:30px;color:var(--brand-ink);background:var(--card)}
 .cohead h1{margin:0 0 3px}
+.lead{font-size:15.5px;line-height:1.6;margin:16px 4px 4px}.lead a{color:inherit;text-decoration-color:var(--brand)}
 .badges{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 20px}
 .badges span{font-size:11.5px;background:color-mix(in srgb,var(--brand) 16%,transparent);color:var(--brand-ink);
  border:1px solid color-mix(in srgb,var(--brand) 34%,transparent);border-radius:999px;padding:3px 9px}
@@ -3067,6 +3068,138 @@ def _company_list(jobs):
     return '<ul class="jobs" id="companyJobs">%s</ul>' % "".join(_company_job_li(j) for j in jobs)
 
 
+# Search Console shows people looking for some employers under a former or
+# colloquial name ("eurocopter recrutement" lands on Airbus Helicopters) —
+# naming it once in the lead lets the page answer that query too.
+COMPANY_ALIASES = {"airbus-helicopters-logiciel-r-d": "ex-Eurocopter"}
+# "Naval Group recrute 16 développeurs, avec des offres mentionnant…"
+CAT_HEADCOUNT = {
+    "eng": ("développeur", "développeurs"), "devops": ("profil DevOps / SRE", "profils DevOps / SRE"),
+    "cybersecurite": ("profil cybersécurité", "profils cybersécurité"),
+    "architecte": ("architecte", "architectes"), "qa": ("profil QA / test", "profils QA / test"),
+    "data": ("profil data / IA", "profils data / IA"),
+    "product": ("product manager", "product managers"), "design": ("designer", "designers"),
+    "tech-adjacent": ("profil IT & support", "profils IT & support"),
+}
+_NAME_SUFFIX_RX = re.compile(r"\s*[\[(][^\])]*[\])]\s*$")
+
+
+def _display_name(name):
+    """'Naval Group [FR]' -> 'Naval Group', 'Airbus Helicopters (Logiciel / R&D)'
+    -> 'Airbus Helicopters': the qualifier is a source artefact nobody types
+    into Google, and it was eating title/H1 space."""
+    return _NAME_SUFFIX_RX.sub("", name or "").strip() or name
+
+
+def _company_cities(rec):
+    """[(display city, raw city, n)] by offer count — 'Marseille Area' -> 'Marseille'."""
+    out, seen = [], set()
+    for c, cnt in (rec.get("by_city") or {}).items():
+        if not _is_real_city(c):
+            continue
+        d = re.sub(r"\s+Area$", "", c)
+        if d not in seen:
+            seen.add(d)
+            out.append((d, c, cnt))
+    return out
+
+
+def company_title(dname, n, cities):
+    """'Naval Group recrutement : 35 offres à Ollioules, Saint-Tropez & Toulon'.
+    GSC: the clicks we miss are '<marque> recrutement <ville>' queries, so the
+    cities matter more than our own brand — drop the brand before a city."""
+    base = "%s recrutement : %d offre%s" % (dname, n, "s" if n > 1 else "")
+    brand = " | sudtechjobs"
+
+    def at(tops):
+        if len(tops) == 1:
+            return "%s à %s" % (base, tops[0])
+        return "%s à %s & %s" % (base, ", ".join(tops[:-1]), tops[-1])
+
+    tops = list(cities[:3])
+    for i in range(len(tops), 1, -1):
+        if len(at(tops[:i]) + brand) <= TITLE_MAX:
+            return at(tops[:i]) + brand
+    for i in range(len(tops), 0, -1):
+        if len(at(tops[:i])) <= TITLE_MAX + 5:
+            return at(tops[:i])
+    return base + brand
+
+
+def _company_lead(rec, dname, n, cities, live_facets):
+    """2-3 sentences computed from the live data (no filler): where, which
+    métiers, which contracts — the words the searcher typed, in prose."""
+    def city_a(d, raw):
+        h = slugify(raw)
+        return ('<a href="../emploi/%s.html">%s</a>' % (h, esc(d))) if h in live_facets else esc(d)
+
+    alias = COMPANY_ALIASES.get(rec["slug"])
+    who = "<strong>%s</strong>%s" % (esc(dname), (" (%s)" % esc(alias)) if alias else "")
+    out = []
+    remote = rec.get("remote_roles") or 0
+    if cities:
+        first = cities[0]
+        if len(cities) == 1:
+            where = "à %s" % city_a(first[0], first[1])
+        else:
+            rest = _fr_join("%s (%d)" % (city_a(d, raw), c) for d, raw, c in cities[1:4])
+            where = "principalement à %s (%d offre%s), mais aussi à %s" % (
+                city_a(first[0], first[1]), first[2], "s" if first[2] > 1 else "", rest)
+        if remote * 2 >= n:
+            where += ", avec %s ouvert%s au télétravail" % (
+                _plural(remote, "poste"), "s" if remote > 1 else "")
+        out.append("%s recrute actuellement %s tech en PACA, %s." % (
+            who, _plural(n, "profil"), where))
+    else:
+        out.append("%s recrute actuellement %s tech en PACA." % (who, _plural(n, "profil")))
+
+    cats = [(k, v) for k, v in (rec.get("by_category") or {}).items() if k in CAT_PHRASE][:3]
+    if cats:
+        def cat_a(k, v):
+            txt = "%s (%d)" % (CAT_PHRASE[k], v)
+            h = slugify(k)
+            return ('<a href="../emploi/%s.html">%s</a>' % (h, txt)) if h in live_facets else txt
+        out.append("Les recrutements concernent surtout %s." % _fr_join(cat_a(k, v) for k, v in cats))
+
+    bc = rec.get("by_contract") or {}
+    if bc:
+        top, tn = max(bc.items(), key=lambda kv: kv[1])
+        stages = bc.get("Stage", 0)
+        if tn * 2 > n:
+            noun = "des stages" if top == "Stage" else "en %s" % top
+            sent = "La majorité des postes sont %s (%d sur %d)" % (noun, tn, n)
+            if stages and top != "Stage":
+                sent += ", et %s %s aussi proposé%s" % (
+                    _plural(stages, "stage"), "sont" if stages > 1 else "est",
+                    "s" if stages > 1 else "")
+            out.append(esc(sent) + ".")
+        elif stages:
+            out.append("On compte aussi %s parmi les offres." % esc(_plural(stages, "stage")))
+    return '<p class="lead">%s</p>' % " ".join(out)
+
+
+def _cat_stack_sentences(dname, jobs):
+    """'Naval Group recrute 7 profils DevOps / SRE, avec des offres mentionnant
+    notamment Kubernetes, GitLab CI, ArgoCD…' — per-métier stack, the most
+    informative line we can write about an employer from its postings."""
+    by = {}
+    for j in jobs:
+        by.setdefault(j.get("category"), []).append(j)
+    out = []
+    for cat, js in sorted(by.items(), key=lambda kv: -len(kv[1])):
+        if cat not in CATS or len(js) < 2:
+            continue
+        st = Counter(s for j in js for s in (j.get("stack") or []))
+        top = [s for s, _ in st.most_common(6)]
+        if len(top) < 3:
+            continue
+        out.append("%s recrute %d %s, avec des offres mentionnant notamment %s." % (
+            esc(dname), len(js), esc(CAT_HEADCOUNT[cat][1]), esc(_fr_join(top))))
+        if len(out) == 3:
+            break
+    return "".join('<p class="sub">%s</p>' % x for x in out)
+
+
 def render_company(rec, jobs, generated, live_facets):
     slug = rec["slug"]
     name = rec["name"]
@@ -3074,6 +3207,9 @@ def render_company(rec, jobs, generated, live_facets):
     p = rec.get("profile") or {}
     city = rec.get("city") or ""
     n = rec.get("open_roles", len(jobs))
+    dname = _display_name(name)
+    cities = _company_cities(rec)
+    city_names = [d for d, _raw, _c in cities]
 
     # ---- header: cover banner + big logo straddling it, then badges --------
     # real WTTJ cover photo when we have one; otherwise a restrained, neutral
@@ -3187,8 +3323,11 @@ def render_company(rec, jobs, generated, live_facets):
                 chips.append('<a href="../emploi/%s.html"><b>%s</b></a>' % (fslug, label))
             else:
                 chips.append("<b>%s</b>" % label)
-        stack_html = ('<h2>Stack technique</h2>\n<div class="stack">%s</div>'
-                      % "".join(chips))
+        top = [item["name"] for item in rec["stack"][:8]]
+        intro = ('<p class="sub">Les offres tech actuellement publiées par %s mentionnent '
+                 'notamment %s.</p>' % (esc(dname), esc(_fr_join(top)))) if len(top) >= 3 else ""
+        stack_html = ('<h2>Technologies utilisées dans les offres %s</h2>\n%s<div class="stack">%s</div>'
+                      % (esc(dname), intro, "".join(chips)))
 
     # ---- breakdowns (métier / contrat / ville) ---------------------------
     # métier & contrat filter the "Offres ouvertes" list below in place (see
@@ -3202,16 +3341,18 @@ def render_company(rec, jobs, generated, live_facets):
             '<button type="button" class="chip-filter" data-cat="%s" aria-pressed="false">%s · %d</button>'
             % (esc(k), esc(CAT_LABEL.get(k, k)), v)
             for k, v in rec["by_category"].items())
-        bre.append('<h2>Par métier</h2>\n<div class="mini">%s</div>' % chips)
+        bre.append('<h2>Quels métiers tech recrute %s ?</h2>\n<div class="mini">%s</div>\n%s'
+                   % (esc(dname), chips, _cat_stack_sentences(dname, jobs)))
     if rec.get("by_contract"):
         chips = "".join(
             '<button type="button" class="chip-filter" data-contract="%s" aria-pressed="false">%s · %d</button>'
             % (esc(k), esc(k), v)
             for k, v in rec["by_contract"].items())
-        bre.append('<h2>Par contrat</h2>\n<div class="mini">%s</div>' % chips)
+        bre.append('<h2>Contrats proposés</h2>\n<div class="mini">%s</div>' % chips)
     if rec.get("by_city"):
-        bre.append("<h2>Où ils recrutent</h2>\n"
-                   + _mini_links(list(rec["by_city"].items()), live_facets, lambda c: slugify(c)))
+        bre.append("<h2>Où %s recrute-t-il ?</h2>\n" % esc(dname)
+                   + _mini_links([(d, c) for d, _raw, c in cities], live_facets,
+                                 lambda d: next((slugify(r) for dd, r, _ in cities if dd == d), None)))
     if rec.get("remote_roles"):
         bre.append('<p class="sub">%d poste%s ouvert%s au télétravail.</p>' % (
             rec["remote_roles"], "s" if rec["remote_roles"] > 1 else "",
@@ -3280,7 +3421,7 @@ def render_company(rec, jobs, generated, live_facets):
 </script>"""
 
     # ---- JSON-LD -------------------------------------------------------------
-    org_ld = {"@context": "https://schema.org", "@type": "Organization", "name": name,
+    org_ld = {"@context": "https://schema.org", "@type": "Organization", "name": dname,
               "url": dom or canonical}
     if rec.get("logo"):
         org_ld["logo"] = abs_url(rec["logo"])
@@ -3309,18 +3450,21 @@ def render_company(rec, jobs, generated, live_facets):
             {"@type": "ListItem", "position": 1, "name": "Accueil", "item": SITE_URL + "/"},
             {"@type": "ListItem", "position": 2, "name": "Entreprises",
              "item": SITE_URL + "/entreprise/"},
-            {"@type": "ListItem", "position": 3, "name": name, "item": canonical},
+            {"@type": "ListItem", "position": 3, "name": dname, "item": canonical},
         ],
     }
 
-    where = (" à " + esc(city)) if city else " en PACA"
+    where = (" à " + esc(city_names[0] if city_names else city)) if (city_names or city) else " en PACA"
+    h1_where = ("à %s" % _fr_join(city_names[:3])) if city_names else "en PACA"
+    lead_html = _company_lead(rec, dname, n, cities, live_facets)
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Entreprises</a> › {name}</nav>
 {cover}
 <div class="cohead">{logo}
-  <div><h1>Emplois tech chez {name}</h1>
+  <div><h1>{dname} recrutement : offres tech {h1_where}</h1>
   <p class="sub" style="margin:0">{n} offre{s} dev · data · produit · design{where}.</p></div>
 </div>
+{lead}
 {badges}
 <div class="card">
   {facts}
@@ -3337,7 +3481,8 @@ def render_company(rec, jobs, generated, live_facets):
 <p class="sub" style="margin-top:22px">Données agrégées depuis les offres publiées, mises à jour le {gen}.
 Une info à corriger ? <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a></p>
 """.format(
-        home=SITE_URL + "/", hub=SITE_URL + "/entreprise/", name=esc(name),
+        home=SITE_URL + "/", hub=SITE_URL + "/entreprise/", name=esc(dname),
+        dname=esc(dname), h1_where=esc(h1_where), lead=lead_html,
         cover=cover, logo=logo_html,
         n=n, s="s" if n > 1 else "", where=where,
         badges=badges_html, facts=facts_html, social=social_html, desc=desc_html,
@@ -3345,12 +3490,14 @@ Une info à corriger ? <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.
         benefits=benefits_html, sal=sal_html, jobs=jobs_html, filter_js=filter_js,
         gen=esc(generated),
     )
-    meta = "%s recrute : %d offre%s tech (dev, data, produit, design)%s sur sudtechjobs." % (
-        name, n, "s" if n > 1 else "", where)
-    if p.get("description"):
-        meta = re.sub(r"\s+", " ", p["description"])[:180]
+    # recruitment-intent snippet (the GSC queries are "<marque> recrutement
+    # <ville>"), not the company blurb — that one still goes in the JSON-LD
+    cats = [CAT_LABEL[k] for k in (rec.get("by_category") or {}) if k in CAT_LABEL][:3]
+    meta = "%s recrute : %d offre%s tech %s%s. Postes, stack et contrats, mis à jour chaque jour." % (
+        dname, n, "s" if n > 1 else "", h1_where,
+        (" (%s)" % ", ".join(cats)) if cats else "")
     head_extra = jsonld(org_ld) + "\n" + jsonld(list_ld) + "\n" + jsonld(crumbs)
-    return shell(title="%s — emplois tech%s | sudtechjobs" % (name, where),
+    return shell(title=company_title(dname, n, city_names),
                  description=meta, canonical=canonical, head_extra=head_extra, body=body)
 
 
@@ -3358,7 +3505,7 @@ def render_companies_hub(companies, generated):
     canonical = SITE_URL + "/entreprise/"
     rows = "".join(
         '<li><a href="{s}.html">{n}</a><div class="co">{meta}</div></li>'.format(
-            s=c["slug"], n=esc(c["name"]),
+            s=c["slug"], n=esc(_display_name(c["name"])),
             meta=esc(" · ".join(x for x in [
                 "%d offre%s" % (c["open_roles"], "s" if c["open_roles"] > 1 else ""),
                 c.get("city") or "",
@@ -3369,7 +3516,7 @@ def render_companies_hub(companies, generated):
     ld = {
         "@context": "https://schema.org", "@type": "ItemList",
         "itemListElement": [
-            {"@type": "ListItem", "position": i + 1, "name": c["name"],
+            {"@type": "ListItem", "position": i + 1, "name": _display_name(c["name"]),
              "url": "%s/entreprise/%s.html" % (SITE_URL, c["slug"])}
             for i, c in enumerate(companies)],
     }
