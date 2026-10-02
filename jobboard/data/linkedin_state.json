@@ -3,7 +3,7 @@
   "bucket_last_used": {
     "eng-13": "2026-09-28",
     "eng-06": "2026-09-29",
-    "eng-83": "2026-09-27",
+    "eng-83": "2026-10-02",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-09-28",
     "data-13": "2026-09-30",
@@ -140,7 +140,12 @@
     "naval-group-fr-data-engineer-h-f-0ac53d": "2026-10-01",
     "the-adecco-group-data-engineer-f-h-f75fa6": "2026-10-01",
     "scalian-business-analyst-it-proxy-po-toulon-h-f-466c04": "2026-10-01",
-    "inrae-ingenieur-e-en-calcul-et-analyses-des-donnees-dimpact-du-changem-70be58": "2026-10-02"
+    "inrae-ingenieur-e-en-calcul-et-analyses-des-donnees-dimpact-du-changem-70be58": "2026-10-02",
+    "naval-group-fr-ingenieur-systeme-guerre-electronique-h-f-25a16e": "2026-10-02",
+    "cs-developpeur-se-cpp-qt-mise-en-place-de-fonctionnalites-dans-le-prod-e3c137": "2026-10-02",
+    "naval-group-fr-ingenieur-systemes-embarques-systemes-de-combat-h-f-7704b3": "2026-10-02",
+    "sopra-steria-developpeur-se-d-applications-de-simulation-cpp-qt-defens-b9a622": "2026-10-02",
+    "scalian-ingenieur-developpement-logiciel-cpp-h-f-a5fc9d": "2026-10-02"
   },
   "last_published_date": "2026-10-02"
 }
