@@ -916,5 +916,29 @@
     "cover_image": "/brand/companies/aircall-cover.jpg",
     "logo": "/brand/companies/aircall-logo.svg",
     "_source": "Manual research 2026-09-25 (fr.wikipedia.org/wiki/Aircall, aircall.io/blog/news/series-d-funding, aircall.io/about-us, aircall.io/brand for the official logo asset, linkedin.com/company/aircall) — funding history: Series B $29M (2018), Series C $65M (2020), Series D $120M (June 2021, Goldman Sachs Asset Management-led) crossing the $1B valuation mark; total raised exceeds $225M across 6 rounds. Headcount omitted — no single verified current figure found."
+  },
+  "Gojob": {
+    "cover_image": "/brand/companies/gojob-cover.jpg",
+    "_source": "Cover = LinkedIn company banner (linkedin.com/company/gojob), fetched 2026-10-02."
+  },
+  "Wavestone": {
+    "cover_image": "/brand/companies/wavestone-cover.jpg",
+    "_source": "Cover = LinkedIn company banner (linkedin.com/company/wavestone), fetched 2026-10-02."
+  },
+  "Bertin Technologies": {
+    "cover_image": "/brand/companies/bertin-technologies-cover.jpg",
+    "_source": "Cover = LinkedIn company banner (linkedin.com/company/bertin-technologies), fetched 2026-10-02."
+  },
+  "Deloitte": {
+    "cover_image": "/brand/companies/deloitte-cover.jpg",
+    "_source": "Cover = LinkedIn company banner (linkedin.com/company/deloitte), fetched 2026-10-02."
+  },
+  "Onatera": {
+    "cover_image": "/brand/companies/onatera-cover.jpg",
+    "_source": "Cover = LinkedIn company banner (linkedin.com/company/onatera), fetched 2026-10-02."
+  },
+  "Quantilia": {
+    "cover_image": "/brand/companies/quantilia-cover.jpg",
+    "_source": "Cover = LinkedIn company banner (linkedin.com/company/quantilia), fetched 2026-10-02."
   }
 }

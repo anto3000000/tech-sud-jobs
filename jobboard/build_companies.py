@@ -24,6 +24,7 @@ import os
 import re
 import sys
 import unicodedata
+import urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 
@@ -39,6 +40,14 @@ OUT = os.path.join(SITE, "companies.json")
 # PACA postings on Welcome to the Jungle, so build_companies has no `organization`
 # payload to distill. Keyed by the exact company name as it appears in the feed.
 MANUAL_PROFILES = os.path.join(DATA, "companies_manual.json")
+
+# WTTJ cover photos are copied here once and served from sudtechjobs.com, so a
+# banner never depends on WTTJ's CDN (URL churn, deleted uploads, hotlink rules).
+# CI commits new files (see .github/workflows/jobboard.yml); an existing file is
+# never re-downloaded.
+COVER_DIR = os.path.join(SITE, "brand", "companies", "wttj")
+COVER_URL = "/brand/companies/wttj/"
+IMG_EXT = {"image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "image/gif": "gif"}
 
 # stack tokens that aren't a real signal of what a company builds
 STACK_DENY = {"claude", "excel", "notion", "slack", "google-ads", "google-analytics",
@@ -198,6 +207,34 @@ def load_wttj_org_for(job):
         return None
     j = d.get("job", d) or {}
     return distill_org(j.get("organization"))
+
+
+def localize_cover(slug, url):
+    """Return a site-local path for a remote cover photo, downloading it on
+    first sight. Falls back to the remote URL if the download fails."""
+    if not url or not url.startswith("http"):
+        return url
+    if os.path.isdir(COVER_DIR):
+        for f in os.listdir(COVER_DIR):
+            if f.rsplit(".", 1)[0] == slug:
+                return COVER_URL + f
+    try:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Mozilla/5.0 (sudtechjobs.com cover cache)",
+            "Accept": "image/jpeg,image/png,image/*;q=0.8"})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            ext = IMG_EXT.get((r.headers.get_content_type() or "").lower())
+            data = r.read()
+    except Exception as e:  # noqa: BLE001 — a missing banner must never break the build
+        print("build_companies: cover download failed for %s: %s" % (slug, e), file=sys.stderr)
+        return url
+    if not ext or len(data) < 1024:
+        return url
+    os.makedirs(COVER_DIR, exist_ok=True)
+    fname = "%s.%s" % (slug, ext)
+    with open(os.path.join(COVER_DIR, fname), "wb") as fh:
+        fh.write(data)
+    return COVER_URL + fname
 
 
 # --------------------------------------------------------------------------- #
@@ -366,10 +403,14 @@ def main():
                 if profile:
                     break
         has_wttj_profile = bool(profile)
-        if not profile and name in manual_profiles:
+        if name in manual_profiles:
             # hand-researched (see MANUAL_PROFILES) — same shape as a distilled
-            # WTTJ org, so render_pages treats it exactly like a real profile
-            profile = {k: v for k, v in manual_profiles[name].items() if not k.startswith("_")}
+            # WTTJ org, so render_pages treats it exactly like a real profile.
+            # With a WTTJ profile too, it only fills the gaps (e.g. a WTTJ page
+            # with no cover photo uploaded).
+            manual = {k: v for k, v in manual_profiles[name].items() if not k.startswith("_")}
+            profile = dict(manual, **{k: v for k, v in (profile or {}).items() if v}) \
+                if profile else manual
 
         logo = (profile or {}).get("logo") or next(
             (j.get("logo") for j in cjobs if j.get("logo")), None)
@@ -442,6 +483,11 @@ def main():
         if rec["slug"] in seen and seen[rec["slug"]] != rec["name"]:
             rec["slug"] = "%s-%s" % (rec["slug"], _slug(rec["name"])[:4] or "x")
         seen[rec["slug"]] = rec["name"]
+
+    for rec in out:
+        p = rec.get("profile") or {}
+        if p.get("cover_image"):
+            p["cover_image"] = localize_cover(rec["slug"], p["cover_image"])
 
     out.sort(key=lambda r: (-r["open_roles"], r["name"].lower()))
     payload = {

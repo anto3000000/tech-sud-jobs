@@ -92,6 +92,8 @@ jobs:
           # generated offre/emploi/entreprise pages, sitemaps, etc. are
           # gitignored and deployed straight from disk, not committed).
           git add -u jobboard/data jobboard/site
+          # new WTTJ cover photos copied by build_companies.py (kept, never re-downloaded)
+          git add jobboard/site/brand/companies/wttj
           if git diff --cached --quiet; then
             echo "feed unchanged"
           else
