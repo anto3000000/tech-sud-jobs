@@ -1341,8 +1341,39 @@ def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=
 """.format(home=SITE_URL + "/", hub=SITE_URL + "/emploi/", h1=esc(h1), header=header,
            intro=esc(intro), facets=facet_html, lis=lis,
            stats_headline=stats_headline, stats_detail=stats_detail)
-    return shell(title="%s | sudtechjobs" % h1, description=intro,
+    return shell(title=facet_title(h1, jobs), description=intro,
                  canonical=canonical, head_extra=jsonld(ld), body=body)
+
+
+# short labels for the city list in PACA-wide facet titles; Valbonne/Biot are
+# Sophia Antipolis to a searcher, "Marseille Area" is just Marseille
+_TITLE_CITY = {"Aix-en-Provence": "Aix", "Marseille Area": "Marseille",
+               "Valbonne": "Sophia", "Biot": "Sophia", "Sophia Antipolis": "Sophia"}
+TITLE_MAX = 65       # Google truncates around 60-65 chars
+
+
+def facet_title(h1, jobs):
+    """'Emplois Python en PACA : 71 offres | sudtechjobs' — the live count
+    answers the searcher's question right in the SERP (CTR). PACA-wide pages
+    also name their top cities (2+) when that still fits in TITLE_MAX."""
+    n = len(jobs)
+    base = "%s : %d offre%s" % (h1, n, "s" if n > 1 else "")
+    brand = " | sudtechjobs"
+    if h1.endswith("en PACA"):
+        tops = []
+        for c, _ in Counter(j.get("city") for j in jobs
+                            if j.get("city") and j["city"] != "Remote").most_common():
+            c = _TITLE_CITY.get(c, c)
+            if c not in tops:
+                tops.append(c)
+            if len(tops) == 4:
+                break
+        while len(tops) >= 2:           # a lone "— Aix" reads as noise
+            t = "%s — %s%s" % (base, ", ".join(tops), brand)
+            if len(t) <= TITLE_MAX:
+                return t
+            tops.pop()
+    return base + brand
 
 
 def render_hub(groups, generated):
