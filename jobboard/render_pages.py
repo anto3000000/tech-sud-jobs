@@ -196,11 +196,15 @@ def _company_key(s):
     return re.sub(r"[^a-z0-9]+", "", s.lower())
 
 
+def abs_url(u):
+    """self-hosted assets are stored as site-root paths; JSON-LD wants a full URL"""
+    return SITE_URL + u if (u or "").startswith("/") else u
+
+
 def _logo_html(src, name, css_class):
     """<img> with a `css_class` + `css_class ph` (letter placeholder) fallback.
-    Some logos (e.g. the Clearbit-by-domain fallback for ATS-only companies,
-    see build_companies.py) can 404 for a given domain — swap to the letter
-    tile on error instead of leaving a broken image icon."""
+    A logo that fails to load (e.g. a remote URL gone stale) swaps to the
+    letter tile instead of leaving a broken image icon."""
     letter = (name or "?")[:1]
     if not src:
         return '<div class="%s ph">%s</div>' % (css_class, esc(letter))
@@ -849,7 +853,7 @@ def render_offer(j, similar, same_company=None):
     if j.get("careers_url"):
         org["sameAs"] = j["careers_url"]
     if j.get("logo"):
-        org["logo"] = j["logo"]
+        org["logo"] = abs_url(j["logo"])
 
     ld = {
         "@context": "https://schema.org/",
@@ -3097,7 +3101,7 @@ def render_company(rec, jobs, generated, live_facets):
     org_ld = {"@context": "https://schema.org", "@type": "Organization", "name": name,
               "url": dom or canonical}
     if rec.get("logo"):
-        org_ld["logo"] = rec["logo"]
+        org_ld["logo"] = abs_url(rec["logo"])
     if p.get("description"):
         org_ld["description"] = p["description"]
     same_as = [u for u in p.get("socials", {}).values() if u]
@@ -3244,8 +3248,8 @@ def main():
             # (SmartRecruiters, Workday, ...) never do, so without this
             # fallback job_li() and the JobPosting JSON-LD silently show a
             # letter tile / omit the logo for roughly half the feed even
-            # though build_companies.py already resolved one (Clearbit
-            # domain guess or a manual profile) onto the company record.
+            # though build_companies.py already resolved one (WTTJ or a
+            # manual profile) onto the company record.
             j.setdefault("logo", c.get("logo"))
 
     # real photo per city for the /emploi/<ville>.html hero (city_images.py).

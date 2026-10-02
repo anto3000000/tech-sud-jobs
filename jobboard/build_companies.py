@@ -41,13 +41,16 @@ OUT = os.path.join(SITE, "companies.json")
 # payload to distill. Keyed by the exact company name as it appears in the feed.
 MANUAL_PROFILES = os.path.join(DATA, "companies_manual.json")
 
-# WTTJ cover photos are copied here once and served from sudtechjobs.com, so a
-# banner never depends on WTTJ's CDN (URL churn, deleted uploads, hotlink rules).
-# CI commits new files (see .github/workflows/jobboard.yml); an existing file is
-# never re-downloaded.
-COVER_DIR = os.path.join(SITE, "brand", "companies", "wttj")
-COVER_URL = "/brand/companies/wttj/"
-IMG_EXT = {"image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "image/gif": "gif"}
+# WTTJ cover photos and logos are copied here once and served from
+# sudtechjobs.com, so a page never depends on WTTJ's CDN (URL churn, deleted
+# uploads, hotlink rules). CI commits new files (see .github/workflows/
+# jobboard.yml); an existing file is never re-downloaded.
+IMG_DIR = os.path.join(SITE, "brand", "companies", "wttj")
+IMG_URL = "/brand/companies/wttj/"
+IMG_EXT = {"image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "image/gif": "gif",
+           "image/svg+xml": "svg"}
+LOGO_MAX = 256           # px — logos render at <= 74px CSS, so 256 covers 3x screens
+LOGO_DARK_BG = (31, 41, 55)
 
 # stack tokens that aren't a real signal of what a company builds
 STACK_DENY = {"claude", "excel", "notion", "slack", "google-ads", "google-analytics",
@@ -190,8 +193,11 @@ def distill_org(org):
         "equality_index": eq.get("equality_index"),
         "socials": socials,
         "cover_image": cover,
-        "logo": ((org.get("logo") or {}).get("thumb") or {}).get("url")
-        or (org.get("logo") or {}).get("url"),
+        # full-size (400px) rather than the 70px thumb: it's downloaded once
+        # (localize_image) and downscaled to LOGO_MAX, and the thumb is blurry
+        # at the company page's 74px on a retina screen
+        "logo": (org.get("logo") or {}).get("url")
+        or ((org.get("logo") or {}).get("thumb") or {}).get("url"),
     }
 
 
@@ -209,32 +215,64 @@ def load_wttj_org_for(job):
     return distill_org(j.get("organization"))
 
 
-def localize_cover(slug, url):
-    """Return a site-local path for a remote cover photo, downloading it on
-    first sight. Falls back to the remote URL if the download fails."""
+def _fix_logo(path):
+    """Downscale a downloaded logo to LOGO_MAX and, if it is light-on-transparent
+    (a white logo meant for a dark header — invisible on our white logo tile),
+    flatten it onto a dark background. Best effort: needs Pillow (installed in CI)."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return
+    try:
+        im = Image.open(path)
+        im.load()
+    except Exception:  # noqa: BLE001
+        return
+    changed = False
+    if max(im.size) > LOGO_MAX:
+        im.thumbnail((LOGO_MAX, LOGO_MAX))
+        changed = True
+    if im.mode in ("RGBA", "LA", "P"):
+        rgba = im.convert("RGBA")
+        px = [p for p in rgba.getdata() if p[3] > 128]
+        if px and sum(1 for p in px if min(p[:3]) > 225) > 0.9 * len(px):
+            bg = Image.new("RGBA", rgba.size, LOGO_DARK_BG + (255,))
+            bg.alpha_composite(rgba)
+            im = bg.convert("RGB")
+            changed = True
+    if changed:
+        im.save(path)
+
+
+def localize_image(name, url, logo=False):
+    """Return a site-local path for a remote image (`name` = file stem),
+    downloading it on first sight. Falls back to the remote URL if the
+    download fails."""
     if not url or not url.startswith("http"):
         return url
-    if os.path.isdir(COVER_DIR):
-        for f in os.listdir(COVER_DIR):
-            if f.rsplit(".", 1)[0] == slug:
-                return COVER_URL + f
+    if os.path.isdir(IMG_DIR):
+        for f in os.listdir(IMG_DIR):
+            if f.rsplit(".", 1)[0] == name:
+                return IMG_URL + f
     try:
         req = urllib.request.Request(url, headers={
-            "User-Agent": "Mozilla/5.0 (sudtechjobs.com cover cache)",
-            "Accept": "image/jpeg,image/png,image/*;q=0.8"})
+            "User-Agent": "Mozilla/5.0 (sudtechjobs.com image cache)",
+            "Accept": "image/jpeg,image/png,image/svg+xml,image/*;q=0.8"})
         with urllib.request.urlopen(req, timeout=20) as r:
             ext = IMG_EXT.get((r.headers.get_content_type() or "").lower())
             data = r.read()
-    except Exception as e:  # noqa: BLE001 — a missing banner must never break the build
-        print("build_companies: cover download failed for %s: %s" % (slug, e), file=sys.stderr)
+    except Exception as e:  # noqa: BLE001 — a missing image must never break the build
+        print("build_companies: image download failed for %s: %s" % (name, e), file=sys.stderr)
         return url
-    if not ext or len(data) < 1024:
+    if not ext or len(data) < 200:
         return url
-    os.makedirs(COVER_DIR, exist_ok=True)
-    fname = "%s.%s" % (slug, ext)
-    with open(os.path.join(COVER_DIR, fname), "wb") as fh:
+    os.makedirs(IMG_DIR, exist_ok=True)
+    fname = "%s.%s" % (name, ext)
+    with open(os.path.join(IMG_DIR, fname), "wb") as fh:
         fh.write(data)
-    return COVER_URL + fname
+    if logo and ext != "svg":
+        _fix_logo(os.path.join(IMG_DIR, fname))
+    return IMG_URL + fname
 
 
 # --------------------------------------------------------------------------- #
@@ -425,8 +463,6 @@ def main():
         # back to the hand-curated directory (jobboard/companies.json) for the
         # domain, then derive a logo from it so a company page is never blank.
         domain = domain or extras.get("domain")
-        if not logo and domain:
-            logo = "https://logo.clearbit.com/%s?size=160" % domain
 
         agg = aggregate(cjobs, now)
         city = (agg["by_city"] and next(iter(agg["by_city"]))) or extras.get("dir_city") \
@@ -456,6 +492,7 @@ def main():
             profile = dict(profile or {}, description=sentence1 + sentence2)
 
         rec = {
+            "_key": key,
             "slug": slug,
             "name": name,
             "logo": logo,
@@ -487,7 +524,24 @@ def main():
     for rec in out:
         p = rec.get("profile") or {}
         if p.get("cover_image"):
-            p["cover_image"] = localize_cover(rec["slug"], p["cover_image"])
+            p["cover_image"] = localize_image(rec["slug"], p["cover_image"])
+        if rec.get("logo"):
+            rec["logo"] = localize_image(rec["slug"] + "-logo", rec["logo"], logo=True)
+            if p.get("logo"):
+                p["logo"] = rec["logo"]
+
+    # point the feed's own `logo` (WTTJ thumb, read by index.html and the offer
+    # pages) at the company's self-hosted logo too
+    local_logo = {rec.pop("_key"): rec["logo"] for rec in out}
+    n_logo = 0
+    for j in jobs:
+        ll = local_logo.get(_slug(j.get("company")))
+        if ll and ll.startswith("/") and j.get("logo") != ll:
+            j["logo"] = ll
+            n_logo += 1
+    if n_logo:
+        with open(FEED, "w", encoding="utf-8") as fh:
+            json.dump(feed, fh, ensure_ascii=False, indent=2)
 
     out.sort(key=lambda r: (-r["open_roles"], r["name"].lower()))
     payload = {

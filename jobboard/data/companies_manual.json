@@ -919,23 +919,28 @@
   },
   "Gojob": {
     "cover_image": "/brand/companies/gojob-cover.jpg",
-    "_source": "Cover = LinkedIn company banner (linkedin.com/company/gojob), fetched 2026-10-02."
+    "_source": "Cover + logo = LinkedIn company banner/logo (linkedin.com/company/gojob), fetched 2026-10-02.",
+    "logo": "/brand/companies/gojob-logo.jpg"
   },
   "Wavestone": {
     "cover_image": "/brand/companies/wavestone-cover.jpg",
-    "_source": "Cover = LinkedIn company banner (linkedin.com/company/wavestone), fetched 2026-10-02."
+    "_source": "Cover + logo = LinkedIn company banner/logo (linkedin.com/company/wavestone), fetched 2026-10-02.",
+    "logo": "/brand/companies/wavestone-logo.jpg"
   },
   "Bertin Technologies": {
     "cover_image": "/brand/companies/bertin-technologies-cover.jpg",
-    "_source": "Cover = LinkedIn company banner (linkedin.com/company/bertin-technologies), fetched 2026-10-02."
+    "_source": "Cover + logo = LinkedIn company banner/logo (linkedin.com/company/bertin-technologies), fetched 2026-10-02.",
+    "logo": "/brand/companies/bertin-technologies-logo.jpg"
   },
   "Deloitte": {
     "cover_image": "/brand/companies/deloitte-cover.jpg",
-    "_source": "Cover = LinkedIn company banner (linkedin.com/company/deloitte), fetched 2026-10-02."
+    "_source": "Cover + logo = LinkedIn company banner/logo (linkedin.com/company/deloitte), fetched 2026-10-02.",
+    "logo": "/brand/companies/deloitte-logo.jpg"
   },
   "Onatera": {
     "cover_image": "/brand/companies/onatera-cover.jpg",
-    "_source": "Cover = LinkedIn company banner (linkedin.com/company/onatera), fetched 2026-10-02."
+    "_source": "Cover + logo = LinkedIn company banner/logo (linkedin.com/company/onatera), fetched 2026-10-02.",
+    "logo": "/brand/companies/onatera-logo.jpg"
   },
   "Quantilia": {
     "cover_image": "/brand/companies/quantilia-cover.jpg",
