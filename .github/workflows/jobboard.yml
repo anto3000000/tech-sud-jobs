@@ -57,6 +57,17 @@ jobs:
           echo "mode=$mode" | tee -a "$GITHUB_OUTPUT"
           [ "$mode" = rebuild ] && echo "REBUILD_ONLY=1" >> "$GITHUB_ENV" || true
 
+      - name: Sync to latest main
+        # A queued run checks out the SHA that triggered it. If the run ahead of
+        # it in the `jobboard` concurrency queue has since pushed a refreshed
+        # feed, building on the stale SHA makes "Commit refreshed feed" conflict
+        # on the generated files (jobs.json, history.jsonl, seen.json) and the
+        # run never deploys. Runs are serialized, so building on latest main is
+        # always correct. (Mode was picked above from the triggering range.)
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -98,7 +109,10 @@ jobs:
             echo "feed unchanged"
           else
             git commit -m "chore(jobboard): refresh feed $(date -u +%FT%TZ) [skip ci]"
-            git pull --rebase origin main
+            # a push landing mid-run can still touch the generated files: they
+            # were all just rebuilt by this run, so its version wins (in a
+            # rebase, "theirs" = the commit being replayed = ours)
+            git pull --rebase -X theirs origin main
             git push
           fi
 
