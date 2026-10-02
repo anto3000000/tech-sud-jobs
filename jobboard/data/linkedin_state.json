@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-10-01",
+  "last_generated_date": "2026-10-02",
   "bucket_last_used": {
     "eng-13": "2026-09-28",
     "eng-06": "2026-09-29",
@@ -10,7 +10,7 @@
     "data-06": "2026-09-30",
     "data-83": "2026-10-01",
     "data-paca": "2026-09-18",
-    "data-84": "2026-09-18",
+    "data-84": "2026-10-02",
     "product-13": "2026-09-19",
     "tech-adjacent-13": "2026-09-19",
     "tech-adjacent-06": "2026-09-20",
@@ -20,11 +20,6 @@
     "product-06": "2026-09-26"
   },
   "recent_slugs": {
-    "atos-developpeur-logiciel-telecom-c-cpp-h-f-9b1cff": "2026-09-17",
-    "tiime-head-of-security-engineer-paris-f-h-9af7c9": "2026-09-17",
-    "bpce-solutions-informatiques-developpeur-ios-f-h-106cee": "2026-09-17",
-    "bpce-solutions-informatiques-tech-lead-angular-java-h-f-916a57": "2026-09-17",
-    "linking-talents-developpeur-se-sirh-senior-h-f-16fd6f": "2026-09-17",
     "atos-developpeur-java-confirme-f-h-16ca29": "2026-09-18",
     "capgemini-analyste-soc-stage-55fa19": "2026-09-18",
     "capgemini-developpeuse-developpeur-java-stage-45cddc": "2026-09-18",
@@ -62,12 +57,12 @@
     "naval-group-fr-architecte-logiciel-liaisons-de-donnees-tactiques-h-f-95929a": "2026-09-18",
     "bpce-solutions-informatiques-manager-leader-adjoint-produit-data-solut-bfe7ed": "2026-09-18",
     "bpce-solutions-informatiques-manager-leader-adjoint-produit-data-usage-c3742e": "2026-09-18",
-    "cgi-data-engineer-snowflake-f-h-fd312b": "2026-09-18",
+    "cgi-data-engineer-snowflake-f-h-fd312b": "2026-10-02",
     "keyrus-data-engineer-databricks-h-f-nb-59841f": "2026-09-18",
     "simplon-formateur-rice-ia-data-python-mlops-b569b2": "2026-09-18",
-    "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-09-18",
-    "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-09-18",
-    "cgi-data-engineer-dbt-f-h-acd18f": "2026-09-18",
+    "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-02",
+    "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-02",
+    "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-02",
     "cma-cgm-digital-project-officer-product-owner-ports-terminals-b2eda5": "2026-09-19",
     "cma-cgm-functional-hris-product-owner-c3c1f5": "2026-09-19",
     "groupe-lr-technologies-product-owner-h-f-2243d8": "2026-09-19",
@@ -144,7 +139,8 @@
     "naval-group-fr-business-analyst-h-f-2205d0": "2026-10-01",
     "naval-group-fr-data-engineer-h-f-0ac53d": "2026-10-01",
     "the-adecco-group-data-engineer-f-h-f75fa6": "2026-10-01",
-    "scalian-business-analyst-it-proxy-po-toulon-h-f-466c04": "2026-10-01"
+    "scalian-business-analyst-it-proxy-po-toulon-h-f-466c04": "2026-10-01",
+    "inrae-ingenieur-e-en-calcul-et-analyses-des-donnees-dimpact-du-changem-70be58": "2026-10-02"
   },
   "last_published_date": "2026-10-01"
 }

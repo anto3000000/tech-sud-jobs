@@ -216,14 +216,6 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/St_Paul_L%C3%A8s_Durance_-_Fontaine_1.JPG/1280px-St_Paul_L%C3%A8s_Durance_-_Fontaine_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
-  "Saint-Paul-lez-Durance": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:St_Paul_L%C3%A8s_Durance_-_mairie_1.JPG",
-    "file": "St_Paul_Lès_Durance_-_mairie_1.JPG",
-    "height": 900,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/St_Paul_L%C3%A8s_Durance_-_mairie_1.JPG/1280px-St_Paul_L%C3%A8s_Durance_-_mairie_1.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "width": 1200
-  },
   "Saint-Tropez": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Bell_tower_of_the_church_Our_Lady_of_the_Assumption_in_Saint-Tropez%2C_France_%2852723273607%29.jpg",
@@ -249,7 +241,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1790856260.25616,
+    "checked_at": 1790933139.0692406,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
