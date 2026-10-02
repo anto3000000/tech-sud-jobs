@@ -424,6 +424,11 @@ h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:23px;l
 .offer-head .txt{min-width:0}
 .offer-head h1{margin:0 0 4px}
 .offer-head .sub{margin:0}
+/* offer cover banner — same look as the company page; the logo straddles it */
+.cover + .offer-head{align-items:flex-start;padding:0 4px}
+.cover + .offer-head .logo{width:64px;height:64px;border-radius:15px;background:#fff;padding:6px;margin-top:-44px}
+.cover + .offer-head h1{margin-top:0}
+.cover + .offer-head .logo.ph{background:var(--card);padding:0;font-size:26px}
 .facets{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 22px}
 .facets a{font-size:12.5px;background:var(--card);border:1px solid var(--line);border-radius:8px;
  padding:5px 10px;color:var(--brand-ink);box-shadow:var(--shadow)}
@@ -931,9 +936,15 @@ def render_offer(j, similar, same_company=None):
     }
 
     logo_html = _logo_html(j.get("logo"), j.get("company"), "logo")
+    # cover banner, as on the company page: the company's WTTJ cover photo when
+    # we have one, else the same neutral textured fallback
+    cover_img = ((j.get("_company") or {}).get("profile") or {}).get("cover_image")
+    cover_html = ('<div class="cover" style="background-image:url(%s)"></div>' % esc(cover_img)
+                  if cover_img else '<div class="cover cover-fallback"></div>')
 
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="../emploi/{catslug}.html">{catlabel}</a> › {title}</nav>
+{cover}
 <div class="offer-head">
   {logo}
   <div class="txt">
@@ -956,7 +967,7 @@ def render_offer(j, similar, same_company=None):
 {apply_bar}
 """.format(
         home=SITE_URL + "/", catslug=slugify(cat or "tech"), catlabel=esc(cat_label),
-        title=esc(j.get("title")), company=co_link, logo=logo_html,
+        title=esc(j.get("title")), company=co_link, logo=logo_html, cover=cover_html,
         cityline=(" — télétravail" if is_remote else (" — " + esc(city) if city else "")),
         krow=krow, stack=stack_html, co_teaser=co_teaser_html, apply_btn=apply_btn,
         desc=desc_html, profile=profile_html, benefits=benefits_html,
