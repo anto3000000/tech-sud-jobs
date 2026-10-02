@@ -1,7 +1,7 @@
 {
   "last_generated_date": "2026-10-02",
   "bucket_last_used": {
-    "eng-13": "2026-09-28",
+    "eng-13": "2026-10-02",
     "eng-06": "2026-09-29",
     "eng-83": "2026-10-02",
     "eng-84": "2026-09-18",
@@ -150,7 +150,12 @@
     "boond-senior-data-analytics-engineer-bi-100-remote-6d6277": "2026-10-02",
     "cs-developpement-dun-agent-ia-pour-generation-de-modeles-metiers-defen-54a23a": "2026-10-02",
     "cs-ingenieur-e-d-etude-developpeur-liaison-de-donnees-tactiques-logici-425a1a": "2026-10-02",
-    "naval-group-fr-data-governor-des-donnees-operationnelles-assistant-h-f-079449": "2026-10-02"
+    "naval-group-fr-data-governor-des-donnees-operationnelles-assistant-h-f-079449": "2026-10-02",
+    "atos-ingenieur-en-developpement-radio-logicielle-h-f-5d44c8": "2026-10-02",
+    "atos-ingenieur-en-firmware-fpga-h-f-245ccf": "2026-10-02",
+    "boond-ingenieur-developpeur-fullstack-php-js-100-remote-467957": "2026-10-02",
+    "cs-conception-et-developpement-d-une-passerelle-dds-web-en-cpp-et-d-un-1be49e": "2026-10-02",
+    "sopra-steria-developpement-devolutions-dans-un-mantis-customise-defens-ac6c47": "2026-10-02"
   },
   "last_published_date": "2026-10-02"
 }

@@ -1,29 +1,4 @@
 {
-  "83190": {
-    "checked_at": 1790322269.2825532
-  },
-  "AVIGNON": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Avignon,_Palais_des_Papes_depuis_Tour_Philippe_le_Bel_by_JM_Rosier.jpg",
-    "file": "Avignon, Palais des Papes depuis Tour Philippe le Bel by JM Rosier.jpg",
-    "height": 718,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Avignon%2C_Palais_des_Papes_depuis_Tour_Philippe_le_Bel_by_JM_Rosier.jpg/1280px-Avignon%2C_Palais_des_Papes_depuis_Tour_Philippe_le_Bel_by_JM_Rosier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1200
-  },
-  "AVIGNON -MONTFAVET": {
-    "checked_at": 1790322269.2825532
-  },
-  "Ais En Provence": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Aix_galericulata_(Linnaeus_1758).jpg",
-    "file": "Aix galericulata (Linnaeus 1758).jpg",
-    "height": 605,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Aix_galericulata_%28Linnaeus_1758%29.jpg/1280px-Aix_galericulata_%28Linnaeus_1758%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1200
-  },
-  "Aix-en-Provcence": {
-    "checked_at": 1790322269.2825532
-  },
   "Aix-en-Provence": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Fontaine_de_la_Rotonde_-_Aix-en-Provence.JPG",
@@ -56,14 +31,6 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Biot_%28Alpes_Maritimes%29_Jardin_Marcel_Camatte.jpg/1280px-Biot_%28Alpes_Maritimes%29_Jardin_Marcel_Camatte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
-  "Cadarache": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Photo_a%C3%A9rienne_CEA_Cadarache_vue_est_vers_ouest.jpg",
-    "file": "Photo_aérienne_CEA_Cadarache_vue_est_vers_ouest.jpg",
-    "height": 800,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Photo_a%C3%A9rienne_CEA_Cadarache_vue_est_vers_ouest.jpg/1280px-Photo_a%C3%A9rienne_CEA_Cadarache_vue_est_vers_ouest.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "width": 1200
-  },
   "Cagnes-sur-Mer": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Le_Haut-de-Cagnes_01.jpg",
@@ -88,14 +55,6 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg/1280px-Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
-  "Gemenos": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:G%C3%A9menos-vue-53.JPG",
-    "file": "Gémenos-vue-53.JPG",
-    "height": 830,
-    "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/G%C3%A9menos-vue-53.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
-    "width": 1190
-  },
   "Gémenos": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:G%C3%A9menos-vue-53.JPG",
@@ -103,9 +62,6 @@
     "height": 830,
     "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/G%C3%A9menos-vue-53.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "width": 1190
-  },
-  "LA CIOTAT - LA VIGIE": {
-    "checked_at": 1790322269.2825532
   },
   "La Ciotat": {
     "checked_at": 1790322269.2825532,
@@ -123,6 +79,14 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/La_Garde_%28Var%29_by_night.jpg/1280px-La_Garde_%28Var%29_by_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
+  "La Penne-sur-Huveaune": {
+    "checked_at": 1790942944.0141337,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:La_Penne-sur-Huveaune.JPG",
+    "file": "La_Penne-sur-Huveaune.JPG",
+    "height": 900,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/La_Penne-sur-Huveaune.JPG/1280px-La_Penne-sur-Huveaune.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 1200
+  },
   "Marignane": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Chapelle_Notre_Dame_de_Piti%C3%A9_-_Marignane_%2813%29.JPG",
@@ -138,15 +102,6 @@
     "height": 800,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Notre_Dame_de_la_Garde.jpg/1280px-Notre_Dame_de_la_Garde.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
-  },
-  "Marseille 15E Arrondissement": {
-    "checked_at": 1790418197.4035795
-  },
-  "Marseille 8E Arrondissement": {
-    "checked_at": 1790322269.2825532
-  },
-  "Marseille Area": {
-    "checked_at": 1790322269.2825532
   },
   "Martigues": {
     "checked_at": 1790322269.2825532,
@@ -180,21 +135,7 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Fa%C3%A7ade_principale_de_l%27%C3%A9glise_Saint-Laurent.JPG/1280px-Fa%C3%A7ade_principale_de_l%27%C3%A9glise_Saint-Laurent.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
-  "Penne-sur-Huveaune": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:La_Penne-sur-Huveaune.JPG",
-    "file": "La Penne-sur-Huveaune.JPG",
-    "height": 900,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/La_Penne-sur-Huveaune.JPG/1280px-La_Penne-sur-Huveaune.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1200
-  },
-  "Provence-Alpes-Cote d'Azur": {
-    "checked_at": 1790322269.2825532
-  },
   "Provence-Alpes-Côte d'Azur": {
-    "checked_at": 1790322269.2825532
-  },
-  "Provence-Alpes-Côte d’Azur": {
     "checked_at": 1790322269.2825532
   },
   "Rousset": {
@@ -205,15 +146,12 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Rousset-FR-13-moulin-3.jpg/1280px-Rousset-FR-13-moulin-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
-  "Saint Paul Lez Durance": {
-    "checked_at": 1790322269.2825532
-  },
-  "Saint-Paul-Les-Durance": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:St_Paul_L%C3%A8s_Durance_-_Fontaine_1.JPG",
-    "file": "St Paul Lès Durance - Fontaine 1.JPG",
+  "Saint-Paul-lès-Durance": {
+    "checked_at": 1790942944.0141337,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:St_Paul_L%C3%A8s_Durance_-_mairie_1.JPG",
+    "file": "St_Paul_Lès_Durance_-_mairie_1.JPG",
     "height": 900,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/St_Paul_L%C3%A8s_Durance_-_Fontaine_1.JPG/1280px-St_Paul_L%C3%A8s_Durance_-_Fontaine_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/St_Paul_L%C3%A8s_Durance_-_mairie_1.JPG/1280px-St_Paul_L%C3%A8s_Durance_-_mairie_1.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
   "Saint-Tropez": {
@@ -222,14 +160,6 @@
     "file": "Bell_tower_of_the_church_Our_Lady_of_the_Assumption_in_Saint-Tropez,_France_(52723273607).jpg",
     "height": 799,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Bell_tower_of_the_church_Our_Lady_of_the_Assumption_in_Saint-Tropez%2C_France_%2852723273607%29.jpg/1280px-Bell_tower_of_the_church_Our_Lady_of_the_Assumption_in_Saint-Tropez%2C_France_%2852723273607%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "width": 1200
-  },
-  "Six-Fours-Les-Plages": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Six-fours-les-plages-evening.jpg",
-    "file": "Six-fours-les-plages-evening.jpg",
-    "height": 349,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Six-fours-les-plages-evening.jpg/1280px-Six-fours-les-plages-evening.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
   "Six-Fours-les-Plages": {
@@ -241,7 +171,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1790940787.5033088,
+    "checked_at": 1790942944.0141337,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
@@ -263,9 +193,6 @@
     "height": 400,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/PAL61872-pano.jpg/1280px-PAL61872-pano.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
-  },
-  "Valbonne Crete": {
-    "checked_at": 1790322269.2825532
   },
   "Vitrolles": {
     "checked_at": 1790322269.2825532,
