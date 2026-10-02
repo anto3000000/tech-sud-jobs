@@ -642,6 +642,21 @@ li.job[hidden]{display:none}
 .kpi b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:25px;
  color:var(--brand-ink);line-height:1.15}
 .kpi span{display:block;font-size:11.5px;color:var(--muted);margin-top:3px}
+/* facet pages: editorial layer above the job list */
+.ed-lead p{margin:0;font-size:14.5px;line-height:1.7}
+.ed-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:0 0 20px}
+.ed-grid .card{margin:0}
+.ed-block h2{font-size:14.5px;margin:0 0 10px;text-wrap:balance}
+.ed-table{width:100%;border-collapse:collapse;font-size:13px}
+.ed-table th{text-align:left;font-weight:500;font-size:11.5px;color:var(--muted);padding:0 0 5px}
+.ed-table td{padding:5px 0;border-top:1px solid var(--line)}
+.ed-table th:last-child,.ed-table td:last-child{text-align:right;
+ font:500 12px "IBM Plex Mono",ui-monospace,monospace;color:var(--muted)}
+.ed-big{font-family:"Bricolage Grotesque",sans-serif;font-weight:700;font-size:24px;
+ color:var(--pine);margin:0;line-height:1.2}
+.ed-note{font-size:12.5px;color:var(--muted);margin:6px 0 0}
+.ed-note b{color:var(--ink)}
+.list-title{font-size:18px;margin:30px 0 12px}
 """
 
 
@@ -1171,32 +1186,15 @@ def _city_evolution(city, n_now, history):
     return lines
 
 
-def _city_stats_block(city, jobs, live_facets, generated, history):
-    """Market snapshot for a /emploi/<ville>.html page: the same kind of
-    aggregate data a company page already carries (breakdowns + salary +
-    remote share), all linking back into the site — number of offers,
-    métiers, stacks, companies, salaries, télétravail, and how the market
-    has moved recently.
-
-    Returns (headline_html, detail_html): headline is the compact KPI strip
-    shown right above the job list, detail is the full breakdown shown after
-    it — a first version put everything above the jobs and buried them under
-    a long stats card, forcing a lot of scrolling to reach the actual offers."""
+def _city_stats_block(city, jobs, generated, history):
+    """KPI strip for a /emploi/<ville>.html page (offers, companies, new this
+    week, remote share, median salary) + how the market has moved recently.
+    The breakdowns (métiers, technos, recruteurs, salaires) are the shared
+    editorial blocks from _facet_editorial."""
     n = len(jobs)
     if not n:
-        return "", ""
-    cslug = slugify(city)
-    cat_counts = Counter(j.get("category") for j in jobs if j.get("category"))
-    contract_counts = Counter(j.get("contract") for j in jobs if j.get("contract"))
-    exp_counts = Counter(j.get("experience") for j in jobs if j.get("experience"))
-    stack_counts = Counter()
-    for j in jobs:
-        for s in (j.get("stack") or []):
-            if slugify(s) not in STACK_DENY:
-                stack_counts[s] += 1
+        return ""
     company_counts = Counter(j.get("company") for j in jobs if j.get("company"))
-    company_slug = {j["company"]: j["_company_slug"] for j in jobs
-                    if j.get("company") and j.get("_company_slug")}
     remote_n = sum(1 for j in jobs if j.get("city") == "Remote"
                    or (j.get("remote_detail") or "") in ("full remote", "hybride"))
     # a real 7-day count, not job.is_new (that flag's window is 10 days —
@@ -1236,84 +1234,228 @@ def _city_stats_block(city, jobs, live_facets, generated, history):
 
     headline.extend(_city_evolution(city, n, history))
 
-    sections = []
-    if cat_counts:
+    return '<div class="card city-stats">%s</div>' % "\n".join(headline)
+
+
+# how a métier reads inside a sentence ("Les offres concernent principalement
+# le développement logiciel, la data / IA et le DevOps / SRE.")
+CAT_PHRASE = {
+    "eng": "le développement logiciel", "devops": "le DevOps / SRE",
+    "cybersecurite": "la cybersécurité", "architecte": "l’architecture SI",
+    "qa": "la QA et le test", "data": "la data / IA", "product": "le product management",
+    "design": "le design produit / UX", "tech-adjacent": "l’IT et le support",
+}
+
+
+def _fr_join(items):
+    items = list(items)
+    if len(items) <= 1:
+        return "".join(items)
+    return "%s et %s" % (", ".join(items[:-1]), items[-1])
+
+
+def _plural(n, word):
+    return "%d %s%s" % (n, word, "s" if n > 1 else "")
+
+
+def _is_real_city(c):
+    return bool(c) and c != "Remote" and "Provence-Alpes" not in c
+
+
+def _facet_editorial(jobs, ctx, live_facets):
+    """Editorial layer above a facet page's job list: a lead paragraph written
+    from the data, then "où / quels métiers / salaires / technos / qui
+    recrute" blocks — so the page reads as a reference page on its topic, not
+    a raw result list; the offers come only after.
+
+    `ctx` (built per facet in main()) says what the page is about:
+      count_tpl  sentence with {n} -> the live count ("{n} mentionnent ...")
+      of         "Python" / "Data / IA" / "tech"   (-> "d'offres Python")
+      at         question suffix ("en Python", "à Marseille", ...)
+      tech_q     the technologies question (worded differently on techno pages)
+      fixed      dimensions the facet pins: cat / city / stack / remote
+      cat, city, stack  the pinned values, when any
+    Each block is skipped when the data behind it is too thin to say anything
+    (one city, one métier, < MIN_SAMPLE salaries...).
+
+    Returns (lead_html, sections_html, meta_description)."""
+    n = len(jobs)
+    fixed = ctx.get("fixed", set())
+    cat_fixed, city_fixed, stack_fixed = ctx.get("cat"), ctx.get("city"), ctx.get("stack")
+    count_tpl = ctx["count_tpl"]
+    if n == 1:   # métier pages go live from a single offer
+        count_tpl = count_tpl.replace("ouvertes", "ouverte").replace("mentionnent", "mentionne")
+
+    # count cities by slug so case/spelling variants of one town merge
+    # ("Six-Fours-Les-Plages" / "Six-Fours-les-Plages"), shown under the
+    # most frequent spelling; "Marseille Area" is just Marseille
+    city_by_slug, city_names = Counter(), {}
+    for j in jobs:
+        c = j.get("city")
+        if _is_real_city(c):
+            c = "Marseille" if c == "Marseille Area" else c
+            city_by_slug[slugify(c)] += 1
+            city_names.setdefault(slugify(c), Counter())[c] += 1
+    city_counts = Counter({city_names[k].most_common(1)[0][0]: v
+                           for k, v in city_by_slug.items()})
+    cat_counts = Counter(j.get("category") for j in jobs if j.get("category"))
+    stack_counts = Counter()
+    for j in jobs:
+        for s in (j.get("stack") or []):
+            if s != stack_fixed and slugify(s) not in STACK_DENY:
+                stack_counts[s] += 1
+    company_counts = Counter(j.get("company") for j in jobs if j.get("company"))
+    company_slug = {j["company"]: j["_company_slug"] for j in jobs
+                    if j.get("company") and j.get("_company_slug")}
+    contract_counts = Counter(j.get("contract") for j in jobs if j.get("contract"))
+    remote_n = sum(1 for j in jobs if j.get("city") == "Remote"
+                   or (j.get("remote_detail") or "") in ("full remote", "hybride"))
+    mids = sorted((lo + hi) / 2 for p in (_parse_salary_eur(j.get("salary")) for j in jobs)
+                  if p for lo, hi in [p])
+    sal_ok = len(mids) >= MIN_SAMPLE
+    if sal_ok:
+        q1, med, q3 = statistics.quantiles(mids, n=4, method="inclusive")
+
+    show_cities = ("city" not in fixed and len(city_counts) >= 2
+                   and city_counts.most_common(1)[0][1] >= 2)
+    show_cats = "cat" not in fixed and len(cat_counts) >= 2
+    top_cities = [c for c, v in city_counts.most_common(4) if v >= 2]
+
+    # ---- lead paragraph -------------------------------------------------
+    lead = [esc(count_tpl).format(n="<b>%s</b>" % _plural(n, "offre"))]
+    if show_cities and len(top_cities) >= 2:
+        lead.append("Les principaux pôles sont %s." % _fr_join(esc(c) for c in top_cities))
+    elif show_cities:
+        tpl = "La majorité se trouve à %s." if city_counts[top_cities[0]] * 2 > n else \
+              "%s en concentre le plus."
+        lead.append(tpl % esc(top_cities[0]))
+    if show_cats:
+        main_cats = ([c for c, v in cat_counts.most_common(3) if v / n >= 0.1]
+                     or [cat_counts.most_common(1)[0][0]])
+        lead.append("Les offres concernent principalement %s." % _fr_join(
+            CAT_PHRASE.get(c, esc(CAT_LABEL.get(c, c))) for c in main_cats))
+    top_stacks = [s for s, v in stack_counts.most_common(4) if v >= 2]
+    if len(top_stacks) >= 2:
+        if stack_fixed:
+            lead.append("%s y est souvent associé à %s." % (
+                esc(stack_fixed), _fr_join(esc(s) for s in top_stacks)))
+        else:
+            lead.append("Les technologies les plus citées sont %s." % _fr_join(
+                esc(s) for s in top_stacks))
+    if contract_counts:
+        known = sum(contract_counts.values())
+        top_c, top_v = contract_counts.most_common(1)[0]
+        if known >= 3 and top_v / known >= 0.5:
+            lead.append("%d %% des offres qui précisent le contrat sont en %s." % (
+                round(100 * top_v / known), esc(top_c)))
+    if "remote" not in fixed and n >= 5 and remote_n:
+        lead.append("%d %% proposent du télétravail (hybride ou full remote)." % round(
+            100 * remote_n / n))
+    if sal_ok:
+        lead.append("Le salaire médian affiché est de %s brut/an." % _fmt_keur(med))
+    top_cos = [(c, v) for c, v in company_counts.most_common(3) if v >= 2]
+    if len(company_counts) >= 2 and top_cos:
+        lead.append("%s : %s." % (
+            "Employeurs les plus actifs" if len(top_cos) > 1 else "Employeur le plus actif",
+            _fr_join("%s (%d)" % (esc(c), v) for c, v in top_cos)))
+    lead_html = '<div class="card ed-lead"><p>%s</p></div>' % " ".join(lead)
+
+    # ---- structured blocks ---------------------------------------------
+    def first_live(*cands):
+        return next((c for c in cands if c and c in live_facets), None)
+
+    blocks = []
+    if show_cities:
+        rows = []
+        for c, v in city_counts.most_common(8):
+            cs = slugify(c)
+            h = first_live(stack_fixed and "stack-%s-%s" % (slugify(stack_fixed), cs),
+                           cat_fixed and "%s-%s" % (slugify(cat_fixed), cs), cs)
+            name = '<a href="%s.html">%s</a>' % (h, esc(c)) if h else esc(c)
+            rows.append("<tr><td>%s</td><td>%d</td></tr>" % (name, v))
+        blocks.append(
+            '<div class="card ed-block"><h2>Où trouve-t-on le plus d’offres %s&nbsp;?</h2>'
+            '<table class="ed-table"><thead><tr><th>Ville</th><th>Offres</th></tr></thead>'
+            "<tbody>%s</tbody></table></div>" % (esc(ctx["of"]), "".join(rows)))
+
+    if show_cats:
         top = cat_counts.most_common()
         maxn = top[0][1]
-        bars = "".join(
-            '<li style="--pct:%d%%"><i></i><b>%s</b><span>%d</span></li>'
-            % (round(100 * v / maxn), esc(CAT_LABEL.get(k, k)), v) for k, v in top)
-        sections.append('<h3>Les métiers qui recrutent</h3>\n<ul class="bars">%s</ul>' % bars)
+        items = []
+        for k, v in top:
+            h = first_live(city_fixed and "%s-%s" % (slugify(k), slugify(city_fixed)),
+                           "remote" in fixed and "%s-teletravail" % slugify(k), slugify(k))
+            lbl = esc(CAT_LABEL.get(k, k))
+            lbl = '<a href="%s.html">%s</a>' % (h, lbl) if h else lbl
+            items.append('<li style="--pct:%d%%"><i></i><b>%s</b><span>%d</span></li>'
+                         % (round(100 * v / maxn), lbl, v))
+        blocks.append('<div class="card ed-block"><h2>Quels métiers recrutent %s&nbsp;?</h2>'
+                      '<ul class="bars">%s</ul></div>' % (esc(ctx["at"]), "".join(items)))
 
-    if contract_counts:
-        chips = []
-        for k, v in contract_counts.most_common():
-            pct = round(100 * v / n)
-            chips.append("<span>%s · %d %% (%d)</span>" % (esc(k), pct, v))
-        sections.append('<h3>Par contrat</h3>\n<div class="mini">%s</div>' % "".join(chips))
+    # salaries: always shown — an honest "pas assez de données" still tells
+    # the reader something, and keeps every facet page the same shape
+    if sal_ok:
+        sal_body = ('<p class="ed-big">%s – %s</p>'
+                    '<p class="ed-note">Salaire observé (moitié centrale des offres) · '
+                    "médiane <b>%s</b> brut/an</p>"
+                    '<p class="ed-note">Sur %s affichant un salaire (sur %d). '
+                    "Extrêmes : %s – %s.</p>" % (
+                        _fmt_keur(q1), _fmt_keur(q3), _fmt_keur(med),
+                        _plural(len(mids), "offre"), n, _fmt_keur(mids[0]), _fmt_keur(mids[-1])))
+    elif mids:
+        sal_body = ('<p class="ed-note">%s sur %d affiche%s un salaire&nbsp;: trop peu '
+                    "pour une médiane fiable.</p>" % (
+                        _plural(len(mids), "offre"), n, "nt" if len(mids) > 1 else ""))
+    else:
+        sal_body = '<p class="ed-note">Aucune offre n’affiche de salaire pour le moment.</p>'
+    blocks.append('<div class="card ed-block"><h2>Salaires</h2>%s'
+                  '<p class="ed-note"><a href="/guide-salaires-tech-paca.html">→ Guide des '
+                  "salaires tech en PACA</a></p></div>" % sal_body)
 
+    wide = []
     if stack_counts:
-        href = lambda lbl: "stack-%s-%s" % (slugify(lbl), cslug)
-        sections.append("<h3>Top technologies</h3>\n"
-                        + _mini_links(stack_counts.most_common(14), live_facets, href))
-
-    if company_counts:
         chips = []
-        for comp, cnt in company_counts.most_common(12):
-            txt = "%s · %d" % (esc(comp), cnt)
-            slug = company_slug.get(comp)
-            chips.append('<a href="../entreprise/%s.html">%s</a>' % (slug, txt) if slug
-                        else "<span>%s</span>" % txt)
-        sections.append('<h3>Top recruteurs</h3>\n<div class="mini">%s</div>' % "".join(chips))
+        top = stack_counts.most_common(14)
+        if sum(1 for _, v in top if v >= 2) >= 4:
+            top = [(s, v) for s, v in top if v >= 2]
+        for s, v in top:
+            ss = slugify(s)
+            h = first_live(city_fixed and "stack-%s-%s" % (ss, slugify(city_fixed)), "stack-" + ss)
+            txt = "%s · %d" % (esc(s), v)
+            chips.append('<a href="%s.html">%s</a>' % (h, txt) if h else "<span>%s</span>" % txt)
+        wide.append('<div class="card ed-block"><h2>%s</h2><div class="mini">%s</div></div>'
+                    % (esc(ctx["tech_q"]), "".join(chips)))
+    if len(company_counts) >= 2:
+        chips = []
+        top = company_counts.most_common(12)
+        if sum(1 for _, v in top if v >= 2) >= 4:
+            top = [(c, v) for c, v in top if v >= 2]
+        for comp, v in top:
+            txt = "%s · %d" % (esc(comp), v)
+            sl = company_slug.get(comp)
+            chips.append('<a href="../entreprise/%s.html">%s</a>' % (sl, txt) if sl
+                         else "<span>%s</span>" % txt)
+        wide.append('<div class="card ed-block"><h2>Qui recrute %s&nbsp;?</h2>'
+                    '<div class="mini">%s</div></div>' % (esc(ctx["at"]), "".join(chips)))
 
-    # salary: computed médiane/fourchette + per-category k€ ranges, not the
-    # raw scraped strings (some ATS list an hourly rate or a single figure,
-    # which reads as noise next to real annual ranges) — same MIN_SAMPLE
-    # guard as the site-wide salary guide, so a handful of offers doesn't
-    # produce a "median" that means nothing.
-    sal_rows = []
-    for j in jobs:
-        p = _parse_salary_eur(j.get("salary"))
-        if p:
-            lo, hi = p
-            sal_rows.append({"mid": (lo + hi) / 2, "cat": j.get("category")})
-    if sal_rows:
-        mids = sorted(r["mid"] for r in sal_rows)
-        block = ["<h3>Salaire affiché</h3>\n<p class=\"sub\">%d offre%s avec salaire indiqué</p>"
-                % (len(sal_rows), "s" if len(sal_rows) > 1 else "")]
-        if len(mids) >= MIN_SAMPLE:
-            block.append('<div class="k"><span class="sal">Médiane : %s</span>'
-                         '<span class="sal">Fourchette : %s – %s</span></div>' % (
-                             _fmt_keur(statistics.median(mids)),
-                             _fmt_keur(mids[0]), _fmt_keur(mids[-1])))
-            cat_lines = []
-            for cat in ("eng", "devops", "cybersecurite", "architecte", "qa", "data", "product", "design", "tech-adjacent"):
-                cat_mids = sorted(r["mid"] for r in sal_rows if r["cat"] == cat)
-                if len(cat_mids) >= MIN_SAMPLE:
-                    cat_lines.append("<span>%s · %s – %s</span>" % (
-                        esc(CAT_LABEL.get(cat, cat)), _fmt_keur(cat_mids[0]), _fmt_keur(cat_mids[-1])))
-            if cat_lines:
-                block.append('<div class="mini">%s</div>' % "".join(cat_lines))
-        sections.append("\n".join(block))
+    sections_html = '<div class="ed-grid">%s</div>\n%s' % ("".join(blocks), "\n".join(wide))
 
-    if exp_counts:
-        order = ["Débutant", "< 1 an", "1–2 ans", "2–5 ans", "5–7 ans", "7–10 ans", "> 10 ans"]
-        pairs = sorted(exp_counts.items(), key=lambda kv: order.index(kv[0]) if kv[0] in order else 99)
-        sections.append('<h3>Par expérience</h3>\n<div class="mini">%s</div>' % "".join(
-            "<span>%s · %d</span>" % (esc(k), v) for k, v in pairs))
-
-    headline_html = '<div class="card city-stats">%s</div>' % "\n".join(headline)
-    detail_html = ('<div class="card city-stats city-stats-detail">%s</div>' % "\n".join(sections)
-                   if sections else "")
-    return headline_html, detail_html
+    # data-written meta description instead of the generic intro line
+    desc = count_tpl.format(n=_plural(n, "offre"))
+    if show_cities:
+        desc += " Surtout à %s." % _fr_join(top_cities[:3])
+    if sal_ok:
+        desc += " Salaire médian %s brut/an." % _fmt_keur(med)
+    desc += " Mis à jour chaque jour."
+    return lead_html, sections_html, desc
 
 
 def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=None,
-                  city_image=None, live_facets=None, history=None):
+                  city_image=None, live_facets=None, history=None, ctx=None):
     canonical = "%s/emploi/%s.html" % (SITE_URL, slug)
     facet_html = ""
     if siblings:
-        facet_html = '<div class="facets">%s</div>' % "".join(
+        facet_html = '<h2>Recherches associées</h2>\n<div class="facets">%s</div>' % "".join(
             '<a href="%s.html">%s</a>' % (s, esc(label)) for s, label in siblings)
     lis = "".join(job_li(j) for j in jobs)
     ld = {
@@ -1327,21 +1469,30 @@ def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=
     }
     is_city = kind == "ville" and city
     header = (_city_hero(city, city_image) if is_city else "<h1>%s</h1>" % esc(h1))
-    stats_headline, stats_detail = (
-        _city_stats_block(city, jobs, live_facets or {}, generated, history or [])
-        if is_city else ("", ""))
+    # city pages keep their KPI strip (+ évolution line); its long breakdown
+    # card is superseded by the editorial blocks, which now sit above the list
+    stats_headline = (
+        _city_stats_block(city, jobs, generated, history or [])
+        if is_city else "")
+    ctx = ctx or {"count_tpl": "{n} actuellement ouvertes.", "of": "tech", "at": "",
+                  "tech_q": "Quelles technologies sont demandées ?",
+                  "list_h2": "Les offres actuellement ouvertes"}
+    ed_lead, ed_sections, desc = _facet_editorial(jobs, ctx, live_facets or {})
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Emplois</a> › {h1}</nav>
 {header}
-<p class="sub">{intro}</p>
+<p class="sub">{intro} <a href="#offres">Voir les {n} offre{s} ↓</a></p>
+{ed_lead}
 {stats_headline}
-{facets}
+{ed_sections}
+<h2 class="list-title" id="offres">{list_h2}</h2>
 <ul class="jobs">{lis}</ul>
-{stats_detail}
+{facets}
 """.format(home=SITE_URL + "/", hub=SITE_URL + "/emploi/", h1=esc(h1), header=header,
-           intro=esc(intro), facets=facet_html, lis=lis,
-           stats_headline=stats_headline, stats_detail=stats_detail)
-    return shell(title=facet_title(h1, jobs), description=intro,
+           intro=esc(intro), facets=facet_html, lis=lis, ed_lead=ed_lead,
+           stats_headline=stats_headline, ed_sections=ed_sections,
+           list_h2=esc(ctx["list_h2"]), n=len(jobs), s="s" if len(jobs) > 1 else "")
+    return shell(title=facet_title(h1, jobs), description=desc,
                  canonical=canonical, head_extra=jsonld(ld), body=body)
 
 
@@ -3307,8 +3458,15 @@ def main():
     # slug -> dict(h1, intro, test, kind)
     facets = {}
 
-    def add_facet(slug, h1, intro, test, kind):
-        facets[slug] = {"h1": h1, "intro": intro, "test": test, "kind": kind}
+    def add_facet(slug, h1, intro, test, kind, ctx):
+        facets[slug] = {"h1": h1, "intro": intro, "test": test, "kind": kind, "ctx": ctx}
+
+    # ctx = what the page is about, for its editorial layer (_facet_editorial)
+    def ctx_for(*, count_tpl, of, at, list_h2, tech_q=None, fixed=(), cat=None,
+                city=None, stack=None):
+        return {"count_tpl": count_tpl, "of": of, "at": at, "list_h2": list_h2,
+                "tech_q": tech_q or "Quelles technologies sont demandées %s ?" % at,
+                "fixed": set(fixed), "cat": cat, "city": city, "stack": stack}
 
     cities = sorted({j["city"] for j in jobs if j.get("city") and j["city"] != "Remote"})
     stacks = {}
@@ -3319,12 +3477,18 @@ def main():
     for cat, (label, _short) in CATS.items():
         add_facet(slugify(cat), "Emplois %s en PACA" % label,
                   "Postes %s dans les entreprises tech de Provence-Alpes-Côte d'Azur." % label,
-                  (lambda c: (lambda j: j.get("category") == c))(cat), "métier")
+                  (lambda c: (lambda j: j.get("category") == c))(cat), "métier",
+                  ctx_for(count_tpl="{n} %s actuellement ouvertes en PACA." % label,
+                          of=label, at="pour les postes %s" % label, fixed=("cat",), cat=cat,
+                          list_h2="Les offres %s actuellement ouvertes" % label))
 
     for city in cities:
         add_facet(slugify(city), "Emplois tech à %s" % city,
                   "Offres dev, data, produit & design à %s et alentours." % city,
-                  (lambda c: (lambda j: j.get("city") == c))(city), "ville")
+                  (lambda c: (lambda j: j.get("city") == c))(city), "ville",
+                  ctx_for(count_tpl="{n} tech actuellement ouvertes à %s." % city,
+                          of="tech", at="à %s" % city, fixed=("city",), city=city,
+                          list_h2="Les offres tech à %s actuellement ouvertes" % city))
 
     # ---- département roll-ups (PACA) ------------------------------------
     # One page per département, aggregating its cities. Thin ones (04/05 and
@@ -3343,7 +3507,10 @@ def main():
             "Toutes les offres dev, data, produit & design des entreprises tech "
             "%s (%s) et de ses villes." % (dwhere, code),
             (lambda cd: (lambda j: CITY_DEPT.get(slugify(j.get("city") or "")) == cd))(code),
-            "département")
+            "département",
+            ctx_for(count_tpl="{n} tech actuellement ouvertes %s." % dwhere,
+                    of="tech", at=dwhere,
+                    list_h2="Les offres tech %s actuellement ouvertes" % dwhere))
 
     for cat, (label, _short) in CATS.items():
         for city in cities:
@@ -3354,14 +3521,22 @@ def main():
                     "Emplois %s à %s" % (label, city),
                     "Postes %s à %s : %d offres des boîtes tech du sud." % (label, city, n),
                     (lambda c, ci: (lambda j: j.get("category") == c and j.get("city") == ci))(cat, city),
-                    "métier×ville")
+                    "métier×ville",
+                    ctx_for(count_tpl="{n} %s actuellement ouvertes à %s." % (label, city),
+                            of=label, at="pour les postes %s à %s" % (label, city),
+                            fixed=("cat", "city"), cat=cat, city=city,
+                            list_h2="Les offres %s à %s actuellement ouvertes" % (label, city)))
 
     top_stacks = [s for s, n in sorted(stacks.items(), key=lambda x: -x[1])
                   if n >= MIN_STACK and slugify(s) not in STACK_DENY]
     for s in top_stacks:
         add_facet("stack-%s" % slugify(s), "Emplois %s en PACA" % s,
                   "Offres tech mentionnant %s dans le sud de la France." % s,
-                  (lambda st: (lambda j: st in (j.get("stack") or [])))(s), "techno")
+                  (lambda st: (lambda j: st in (j.get("stack") or [])))(s), "techno",
+                  ctx_for(count_tpl="{n} mentionnent actuellement %s dans la région." % s,
+                          of=s, at="en %s" % s, fixed=("stack",), stack=s,
+                          tech_q="Quelles technologies accompagnent %s ?" % s,
+                          list_h2="Les offres %s actuellement ouvertes" % s))
         for city in cities:
             n = sum(1 for j in jobs if s in (j.get("stack") or []) and j.get("city") == city)
             if n >= MIN_FACET:
@@ -3370,12 +3545,20 @@ def main():
                     "Emplois %s à %s" % (s, city),
                     "Postes tech %s à %s : %d offres." % (s, city, n),
                     (lambda st, ci: (lambda j: st in (j.get("stack") or []) and j.get("city") == ci))(s, city),
-                    "techno×ville")
+                    "techno×ville",
+                    ctx_for(count_tpl="{n} mentionnent actuellement %s à %s." % (s, city),
+                            of=s, at="en %s à %s" % (s, city), fixed=("stack", "city"),
+                            stack=s, city=city,
+                            tech_q="Quelles technologies accompagnent %s à %s ?" % (s, city),
+                            list_h2="Les offres %s à %s actuellement ouvertes" % (s, city)))
 
     add_facet("teletravail", "Emplois tech en télétravail dans le sud",
               "Offres full remote et télétravail des entreprises tech de PACA.",
               lambda j: j.get("city") == "Remote" or (j.get("remote") or "") in REMOTE_FULL,
-              "télétravail")
+              "télétravail",
+              ctx_for(count_tpl="{n} tech en full remote ou télétravail actuellement ouvertes.",
+                      of="en télétravail", at="en télétravail", fixed=("remote",),
+                      list_h2="Les offres en télétravail actuellement ouvertes"))
     for cat, (label, _short) in CATS.items():
         n = sum(1 for j in jobs
                 if (j.get("category") == cat)
@@ -3386,7 +3569,12 @@ def main():
                       "Postes %s full remote / télétravail, entreprises tech du sud." % label,
                       (lambda c: (lambda j: j.get("category") == c and (
                           j.get("city") == "Remote" or (j.get("remote") or "") in REMOTE_FULL)))(cat),
-                      "métier×télétravail")
+                      "métier×télétravail",
+                      ctx_for(count_tpl="{n} %s en télétravail actuellement ouvertes." % label,
+                              of="%s en télétravail" % label,
+                              at="pour les postes %s en télétravail" % label,
+                              fixed=("cat", "remote"), cat=cat,
+                              list_h2="Les offres %s en télétravail actuellement ouvertes" % label))
 
     # resolve which facets actually have enough jobs; attach jobs
     live_facets = {}
@@ -3513,7 +3701,7 @@ def main():
                                   jobs=f["jobs"], siblings=siblings_for(slug, f),
                                   generated=generated, kind=f["kind"], city=city,
                                   city_image=city_images.get(city) if city else None,
-                                  live_facets=live_facets, history=history))
+                                  live_facets=live_facets, history=history, ctx=f["ctx"]))
 
     # ---- hub -------------------------------------------------------------
     def grp(kinds, strip):
