@@ -1,5 +1,164 @@
 [
   {
+    "id": "wttj:4312314",
+    "title": "Développeur Java (H/F)",
+    "company": "Linking Talents",
+    "company_slug": "linking-talents",
+    "city": "Marseille",
+    "cities": [
+      "Marseille"
+    ],
+    "department": "Bouches-du-Rhône",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "hybride",
+    "category": "eng",
+    "profession": null,
+    "salary": "45000–50000 EUR",
+    "experience_min_years": 2,
+    "published_at": "2026-10-04T03:00:00.000+02:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/linking-talents/jobs/developpeur-java-h-f_marseille_LT_Pbd0kyx?o=LT_Pbd0kyx",
+    "source": "wttj",
+    "stack": [
+      "Java",
+      "Oracle",
+      "Zoom",
+      "SQL"
+    ],
+    "soft_skills": [
+      "Communication",
+      "Aptitude à résoudre les problèmes"
+    ],
+    "description": "Talents IT est un cabinet de recrutement national spécialisé dans\nles MÉTIERS DE L’IT ET DU DIGITAL, NOUS VOUS PROPOSONS\nRÉGULIÈREMENT DES OFFRES D’EMPLOI DANS CES DOMAINES :\nDÉVELOPPEMENT, SÉCURITÉ, INFRASTRUCTURE, R&D, DATA, PROJET,\nPRODUIT… \n\nNos consultants expérimentés vous offrent un ACCOMPAGNEMENT\nPERSONNALISÉ et des conseils avisés pour vous aider à évoluer dans\nvotre carrière.\n\nZOOM SUR VOS MISSIONS !\n\nNous recherchons un(e) Développeur(se) Java Senior pour rejoindre un\néditeur de logiciels. Vous participerez au maintien, à\nl’évolution et à l’amélioration continue d’une solution\nmétier utilisée par de nombreux clients.\n\nVOS MISSIONS :\n\n Analyser les besoins fonctionnels et techniques liés aux\névolutions de la solution SIRH ;\n Concevoir et développer de nouvelles fonctionnalités en Java ;\n Assurer la maintenance corrective et évolutive des applications ;\n Développer et faire évoluer les différents composants de la\nsolution sur la plateforme Requea ;\n Diagnostiquer et résoudre les anomalies rencontrées ;\n Participer aux choix techniques et à l’amélioration de\nl’architecture existante ;\n Garantir la qualité, la fiabilité et la maintenabilité du code ;\n Réaliser les tests unitaires, fonctionnels et techniques avant les\nmises en production ;\n Participer au déploiement et au suivi des nouvelles versions ;\n Optimiser les performances des applications et des bases de\ndonnées ;\n Effectuer des revues de code et veiller au respect des bonnes\npratiques de développement ;\n Rédiger et maintenir la documentation technique ;\n Collaborer avec les équipes fonctionnelles afin de proposer des\nsolutions adaptées aux besoins des utilisateurs ;\n Accompagner ponctuellement les développeurs moins expérimentés\net participer au partage des connaissances.",
+    "description_excerpt": "Talents IT est un cabinet de recrutement national spécialisé dans\nles MÉTIERS DE L’IT ET DU DIGITAL, NOUS VOUS PROPOSONS\nRÉGULIÈREMENT DES OFFRES D’EMPLOI DANS CES DOMAINES :\nDÉVELOPPEMENT, SÉCURITÉ, INFRASTRUCTURE, R&D, DATA, PROJET,\nPRODUIT… \n\nNos consultants expérimentés vous offrent un ACCOMPAGNEMENT\nPERSONNALISÉ et des conseils…",
+    "profile_excerpt": "PROFIL RECHERCHÉ :\n\n Vous justifiez d’au moins 4 À 5 ANNÉES D’EXPÉRIENCE EN\nDÉVELOPPEMENT JAVA, idéalement acquises au sein d’un éditeur de\nlogiciels, sur une application métier complexe ou dans un\nenvironnement SIRH.\n Vous maîtrisez JAVA ET LES ENVIRONNEMENTS JAVA/JEE, ainsi…",
+    "experience": null,
+    "education_level": "bac_3",
+    "remote_detail": "hybride",
+    "apply_url": "https://api.mytalentplug.com/job/v1/joboffer/redirect?id=00ab4e50-a06b-4d3a-b573-8c535b33b25b",
+    "ats": "external",
+    "logo": "https://cdn-images.welcometothejungle.com/mBj0Extpw89l1Mnqh5bYYzjax9goJpZ51ecmqiyI_6E/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8zMzE5LzE2NjAxMy81MTcwMTFhNy1hNGI5LTQzYTgtOTVmOC02N2Y3YjgyMjkxZjMucG5n",
+    "benefits_preview": [],
+    "benefits_count": null,
+    "start_date": null,
+    "enriched_at": "2026-10-04T11:08:48+00:00"
+  },
+  {
+    "id": "wttj:3867786",
+    "title": "Site Reliability Engineer - SRE F/H",
+    "company": "Docaposte",
+    "company_slug": "docaposte-1",
+    "city": "Sophia Antipolis",
+    "cities": [
+      "Sophia Antipolis"
+    ],
+    "department": "Maritime Alps",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "",
+    "category": "devops",
+    "profession": null,
+    "salary": null,
+    "experience_min_years": 3,
+    "published_at": "2026-10-04T00:00:00.000+02:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/docaposte-1/jobs/site-reliability-engineer-sre-f-h_sophia-antipolis_DOCAP_kLY9Zjo?o=DOCAP_kLY9Zjo",
+    "source": "wttj",
+    "stack": [
+      "Grafana",
+      "Java",
+      "Kubernetes",
+      "Git",
+      "Ansible",
+      "Jenkins",
+      "Bash",
+      "Unix",
+      "ELK",
+      "SaltStack",
+      "AWS",
+      "Docker",
+      "SQL"
+    ],
+    "soft_skills": [
+      "Autonomie",
+      "Communication",
+      "Compréhension des architectures réseau",
+      "Gestion de l’infrastructure cloud",
+      "Conformité en matière de sécurité"
+    ],
+    "description": "Rattaché au responsable de l'équipe SRE (Site Reliability Engineering), vous gérez la production opérationnelle d'applications critiques en haute disponibilité. Vous assurez la gestion du quotidien de la production, des évolutions techniques et fonctionnelles, des incidents, et le reporting dans le respect des SLA.\nEnfin, vous vous intégrez dans une démarche d'anticipation et d'industrialisation des processus et outils.\nA ce titre, vos issions principales sont : \n\n• Participer à la maintenance et l'évolution des plates-formes dans un contexte Kubernetes/Docker\n• Gérer différents environnements DC privé & Cloud\n• Sécuriser les plates-formes (Design, implémentation, configuration) et développer des outils ou adaptation de solutions en relation avec la production de services\n• Piloter et maintenir en condition opérationnelle les plates-formes en s'assurant de leur disponibilité et performance\n• Fournir une expertise technique sur les produits développés par DTS et fournir le support adéquat aux clients internes/externes\n• Fournir un support et une assistance continue aux clients ( Participation aux rotation d'astreintes 24/7)\n• Valider la mise en production des livrables au travers du développement, exécution et vérification de tests automatisés/unitaires/fonctionnels des logiciels critiques (“Smoke Test”)",
+    "description_excerpt": "Rattaché au responsable de l'équipe SRE (Site Reliability Engineering), vous gérez la production opérationnelle d'applications critiques en haute disponibilité. Vous assurez la gestion du quotidien de la production, des évolutions techniques et fonctionnelles, des incidents, et le reporting dans le respect des SLA.\nEnfin, vous vous…",
+    "profile_excerpt": "SAVOIR : \n- Issu de formation supérieure, vous justifiez d'une expérience de 5 ans minimum dans le déploiement et les opérations en production de solutions digitales.\n\nSAVOIR ETRE : \n- Curieux/force de proposition\n- Autonome\n- A l'aise avec les clients et utilisateurs\n-…",
+    "experience": null,
+    "education_level": "bac_5",
+    "remote_detail": null,
+    "apply_url": "https://docaposte-recrute.profils.org/Pages/Offre/detailoffre.aspx?idOffre=6002&idOrigine=502&LCID=1036&offerReference=2026-6002D",
+    "ats": "external",
+    "logo": "https://cdn-images.welcometothejungle.com/RwvNYjxGGPSIWzPkQsHUi14xWLITDGIuxTCwqgha-Zg/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby85NDMxLzE2NzE4MC9kYmFhODZhNy1lODg0LTRhZGUtOGRmNi1kMzYyOWRiYjlkOTEucG5n",
+    "benefits_preview": [
+      "Jours de bénévolat offerts",
+      "Prime de cooptation"
+    ],
+    "benefits_count": 3,
+    "start_date": null,
+    "enriched_at": "2026-10-04T11:08:47+00:00"
+  },
+  {
+    "id": "wttj:4312070",
+    "title": "Principal LLM Inference Engineer - F/H",
+    "company": "Atos",
+    "company_slug": "atos",
+    "city": "Sophia Antipolis",
+    "cities": [
+      "Sophia Antipolis"
+    ],
+    "department": "Maritime Alps",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "",
+    "category": "data",
+    "profession": null,
+    "salary": "80000–95000 EUR",
+    "experience_min_years": 7,
+    "published_at": "2026-10-03T14:00:00.000+02:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/principal-llm-inference-engineer-f-h_sophia-antipolis_ATOS_25JwR1r?o=ATOS_25JwR1r",
+    "source": "wttj",
+    "stack": [
+      "FastAPI",
+      "Grafana",
+      "Kubernetes",
+      "Foundation",
+      "DeepSeek",
+      "TensorRT",
+      "Helm",
+      "Docker",
+      "Llama",
+      "Python",
+      "Prometheus"
+    ],
+    "soft_skills": [
+      "Communication"
+    ],
+    "description": "• Serving et Runtime des modèles : Concevoir et optimiser la plateforme de serving basée sur vLLM, configurer le parallélisme selon l'architecture du modèle et l'interconnexion de l'infrastructure cible, et installer/maintenir llm-d pour l'inférence distribuée et désagrégée (préremplissage/décodage désagrégés, routage conscient du cache KV).\n\n • Cycle de vie et pipelines multimodaux : Maîtriser le cycle de vie des modèles en plateforme (versioning, déploiement progressif, rollback) y compris en environnements isolés, et servir des pipelines multimodaux (audio temps réel, STT, TTS, OCR) ainsi que des services d'embedding et de reranking (bases vectorielles comme Milvus).\n\n • Fiabilité, Observabilité et Benchmarking : Instrumenter la couche de serving avec Prometheus et Grafana (métriques GPU et par token, logs structurés, traçabilité), mettre en place des déploiements canary/blue-green avec portes d'évaluation automatisées, et mener des campagnes de benchmarking structurées pour suivre et réduire le coût par token et la latence de queue.\n\n • Support Avant-Vente et Dimensionnement : Fournir des données de dimensionnement et de performance défendables pour appuyer les activités d'avant-vente, les appels d'offres et la planification de capacité.",
+    "description_excerpt": "• Serving et Runtime des modèles : Concevoir et optimiser la plateforme de serving basée sur vLLM, configurer le parallélisme selon l'architecture du modèle et l'interconnexion de l'infrastructure cible, et installer/maintenir llm-d pour l'inférence distribuée et désagrégée (préremplissage/décodage désagrégés, routage conscient du cache…",
+    "profile_excerpt": "Description du profil :\n\nCompétences et qualifications\n\n • Expérience : Solide parcours (généralement 7+ ans d’expérience en ingénierie avec un temps significatif dédié au serving de modèles ML/AI) dans la construction et l’exploitation d’inférences LLM en production.\n\n •…",
+    "experience": "7–10 ans",
+    "education_level": "bac_5",
+    "remote_detail": null,
+    "apply_url": "https://atos.contactrh.com/jobs/10425/44482117",
+    "ats": "external",
+    "logo": "https://cdn-images.welcometothejungle.com/GpTmQiDECB8lhF8RFrOMACq1s4Ayk0y_FdDYmpAhE4w/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni8wOGI3YTNhMC0wZWM3LTRmNDgtYTljMi05N2VmMzRhZWJlNDAuanBn",
+    "benefits_preview": [
+      "Plan de développement professionnel",
+      "Entre 3-4 jours de télétravail",
+      "Équipe dédiée à la Diversité & inclusivité",
+      "Prime de cooptation",
+      "Compte épargne-temps (CET)"
+    ],
+    "benefits_count": 12,
+    "start_date": null,
+    "enriched_at": "2026-10-04T11:08:48+00:00"
+  },
+  {
     "id": "wttj:4311474",
     "title": "CDI - Concepteur logiciel  Scrum master  Programme Sous-Marin - H/F",
     "company": "Naval Group [FR]",
@@ -64,7 +223,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4311472",
@@ -118,7 +277,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4311471",
@@ -167,7 +326,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4209069",
@@ -224,7 +383,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4311299",
@@ -276,7 +435,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4311291",
@@ -327,7 +486,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4311129",
@@ -374,7 +533,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4310945",
@@ -441,7 +600,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4310944",
@@ -508,7 +667,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4310943",
@@ -575,7 +734,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4310901",
@@ -624,7 +783,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4310900",
@@ -673,7 +832,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4310889",
@@ -716,7 +875,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4310860",
@@ -762,7 +921,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4309623",
@@ -838,7 +997,7 @@
     ],
     "benefits_count": 22,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4309519",
@@ -881,7 +1040,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4309516",
@@ -922,7 +1081,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4309515",
@@ -960,7 +1119,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4309486",
@@ -1046,7 +1205,7 @@
     ],
     "benefits_count": 22,
     "start_date": "2026-10-04T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291458",
@@ -1104,7 +1263,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291457",
@@ -1162,7 +1321,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291456",
@@ -1220,7 +1379,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3930962",
@@ -1272,7 +1431,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:1353298",
@@ -1325,7 +1484,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4309179",
@@ -1384,7 +1543,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4309178",
@@ -1443,7 +1602,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4308904",
@@ -1510,7 +1669,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4308899",
@@ -1555,7 +1714,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4308896",
@@ -1601,7 +1760,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4308724",
@@ -1652,7 +1811,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4308707",
@@ -1700,7 +1859,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4308307",
@@ -1745,7 +1904,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4308294",
@@ -1790,7 +1949,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4308284",
@@ -1834,7 +1993,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4308174",
@@ -1881,7 +2040,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4147317",
@@ -1948,7 +2107,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:2974096",
@@ -1996,7 +2155,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4307826",
@@ -2052,7 +2211,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-09-30T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4307806",
@@ -2101,7 +2260,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4307803",
@@ -2150,7 +2309,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4307765",
@@ -2203,7 +2362,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4307764",
@@ -2259,7 +2418,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4307761",
@@ -2313,7 +2472,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4153372",
@@ -2379,7 +2538,7 @@
     ],
     "benefits_count": 25,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4153371",
@@ -2445,7 +2604,7 @@
     ],
     "benefits_count": 25,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3921707",
@@ -2500,7 +2659,7 @@
     ],
     "benefits_count": 25,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:37+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3921706",
@@ -2555,7 +2714,7 @@
     ],
     "benefits_count": 25,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3579619",
@@ -2611,7 +2770,7 @@
     ],
     "benefits_count": 25,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3579618",
@@ -2667,7 +2826,7 @@
     ],
     "benefits_count": 25,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4307436",
@@ -2716,7 +2875,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4304522",
@@ -2761,7 +2920,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4304521",
@@ -2806,7 +2965,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4306669",
@@ -2854,7 +3013,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4306668",
@@ -2900,7 +3059,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4306504",
@@ -2957,7 +3116,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4305297",
@@ -3011,7 +3170,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4305265",
@@ -3065,7 +3224,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4210784",
@@ -3113,7 +3272,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4210783",
@@ -3161,7 +3320,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4210782",
@@ -3209,7 +3368,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4206667",
@@ -3273,7 +3432,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4203426",
@@ -3332,7 +3491,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3992053",
@@ -3383,7 +3542,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4284697",
@@ -3435,7 +3594,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4174239",
@@ -3498,7 +3657,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-10-11T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4174238",
@@ -3561,7 +3720,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-10-11T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4174237",
@@ -3624,7 +3783,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-10-11T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4304291",
@@ -3673,7 +3832,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4304146",
@@ -3712,7 +3871,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4213365",
@@ -3757,7 +3916,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4102107",
@@ -3804,7 +3963,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4102032",
@@ -3850,7 +4009,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4303220",
@@ -3888,7 +4047,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-09-28T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:1669187",
@@ -3941,7 +4100,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4302300",
@@ -3990,7 +4149,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4182097",
@@ -4035,7 +4194,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4302223",
@@ -4079,7 +4238,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4302179",
@@ -4121,7 +4280,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4301875",
@@ -4177,7 +4336,7 @@
     ],
     "benefits_count": 3,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3083845",
@@ -4223,7 +4382,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:2974087",
@@ -4267,7 +4426,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:2974083",
@@ -4313,7 +4472,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:2974062",
@@ -4362,7 +4521,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:2974047",
@@ -4409,7 +4568,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:2974037",
@@ -4457,7 +4616,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3887337",
@@ -4522,7 +4681,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3880571",
@@ -4576,7 +4735,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3880566",
@@ -4629,7 +4788,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4301247",
@@ -4678,7 +4837,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4301246",
@@ -4727,7 +4886,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3966528",
@@ -4766,7 +4925,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4200846",
@@ -4812,7 +4971,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4200844",
@@ -4858,7 +5017,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4208748",
@@ -4917,7 +5076,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4192540",
@@ -4962,7 +5121,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3813645",
@@ -5013,7 +5172,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4097079",
@@ -5056,7 +5215,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4097005",
@@ -5104,7 +5263,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4096941",
@@ -5152,7 +5311,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4300040",
@@ -5210,7 +5369,7 @@
     ],
     "benefits_count": 14,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4299676",
@@ -5263,7 +5422,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4299616",
@@ -5303,7 +5462,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4299608",
@@ -5343,7 +5502,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4299602",
@@ -5383,7 +5542,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4299598",
@@ -5435,7 +5594,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4299597",
@@ -5482,7 +5641,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4298959",
@@ -5536,7 +5695,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4207015",
@@ -5580,7 +5739,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4189232",
@@ -5622,7 +5781,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:38+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4298750",
@@ -5676,7 +5835,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4298726",
@@ -5723,7 +5882,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4298119",
@@ -5772,7 +5931,7 @@
     ],
     "benefits_count": 9,
     "start_date": "2026-10-31T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4298118",
@@ -5821,7 +5980,7 @@
     ],
     "benefits_count": 9,
     "start_date": "2026-10-31T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4293835",
@@ -5861,7 +6020,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4297466",
@@ -5916,7 +6075,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4213652",
@@ -5971,7 +6130,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4297188",
@@ -6018,7 +6177,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4198835",
@@ -6063,7 +6222,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4296463",
@@ -6116,7 +6275,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3932780",
@@ -6161,7 +6320,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3544443",
@@ -6211,7 +6370,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4295200",
@@ -6263,7 +6422,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4261227",
@@ -6310,7 +6469,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4196396",
@@ -6356,7 +6515,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3847930",
@@ -6407,7 +6566,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3812823",
@@ -6469,7 +6628,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4273575",
@@ -6529,7 +6688,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4273385",
@@ -6570,7 +6729,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4269010",
@@ -6626,7 +6785,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4188007",
@@ -6677,7 +6836,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4028936",
@@ -6730,7 +6889,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4004663",
@@ -6784,7 +6943,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3938416",
@@ -6838,7 +6997,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3812851",
@@ -6897,7 +7056,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3812812",
@@ -6950,7 +7109,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3812811",
@@ -7006,7 +7165,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3655472",
@@ -7056,7 +7215,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4293978",
@@ -7103,7 +7262,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4293743",
@@ -7139,7 +7298,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4293742",
@@ -7175,7 +7334,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4108290",
@@ -7227,7 +7386,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-12-31T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4293410",
@@ -7278,7 +7437,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4200690",
@@ -7339,7 +7498,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4194336",
@@ -7400,7 +7559,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3588722",
@@ -7445,7 +7604,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291808",
@@ -7492,7 +7651,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-09-21T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4009455",
@@ -7547,7 +7706,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-26T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291727",
@@ -7600,7 +7759,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291705",
@@ -7646,7 +7805,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291704",
@@ -7692,7 +7851,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291678",
@@ -7735,7 +7894,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291646",
@@ -7805,7 +7964,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291645",
@@ -7875,7 +8034,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4153405",
@@ -7940,7 +8099,7 @@
     ],
     "benefits_count": 20,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291389",
@@ -7992,7 +8151,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291388",
@@ -8044,7 +8203,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291387",
@@ -8096,7 +8255,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4291239",
@@ -8151,7 +8310,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3496612",
@@ -8204,7 +8363,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2027-01-03T20:00:00Z",
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290890",
@@ -8253,7 +8412,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290741",
@@ -8298,7 +8457,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290677",
@@ -8349,7 +8508,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290670",
@@ -8396,7 +8555,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290669",
@@ -8441,7 +8600,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290657",
@@ -8493,7 +8652,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290247",
@@ -8536,7 +8695,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290183",
@@ -8595,7 +8754,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4198244",
@@ -8639,7 +8798,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4185276",
@@ -8702,7 +8861,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4135109",
@@ -8749,7 +8908,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290037",
@@ -8791,7 +8950,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290036",
@@ -8833,7 +8992,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290032",
@@ -8875,7 +9034,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4290031",
@@ -8917,7 +9076,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4181100",
@@ -8985,7 +9144,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4181091",
@@ -9036,7 +9195,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4181086",
@@ -9087,7 +9246,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4181085",
@@ -9149,7 +9308,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4289696",
@@ -9205,7 +9364,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4289695",
@@ -9261,7 +9420,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4289238",
@@ -9312,7 +9471,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4289206",
@@ -9351,7 +9510,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4289205",
@@ -9403,7 +9562,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4288541",
@@ -9434,10 +9593,9 @@
       "JIRA"
     ],
     "soft_skills": [
-      "Contrôle qualité",
-      "Collaboration et travail d'équipe"
+      "Contrôle qualité"
     ],
-    "description": "Et si votre stage avait de l’impact ? \n\nClassée 1ère des entreprises les plus durables au monde et 2ème au classement HappyTrainees, Schneider Electric offre une expérience enrichissante, recommandée par 92,9 % de nos stagiaires et alternants.\n\nEt ce n’est pas un hasard ! Notre culture repose sur des valeurs fortes : Inclusion, Maîtrise, Purpose, Action, Curiosité et Travail d’équipe, permettant à chaque personne de contribuer pleinement à la transformation vers un monde plus durable. \n\n Vous évoluerez dans une entreprise de 150 000 collaborateurs, présente dans plus de 100 pays et leader mondial de la gestion de l’énergie et de l’automatisation.\n\nRejoindre Schneider Electric, c’est donc bien plus qu’intégrer un grand groupe international !\n\nContexte : \n\nNotre département de Recherche et Développement à Carros a la mission de développer des solutions innovantes dans le domaine de l’automatisme pour le marché industriel. Notre équipe a la responsabilité de la création d’offre automates et systèmes d’entrées / sorties, ainsi que les solutions logicielles permettant à nos clients de configurer les produits selon leurs besoins.\n\nAfin de vérifier le comportement de ces offres logiciels et de satisfaire nos exigences qualité pour nos clients, nous mettons en place des moyens de test qui nous permettent de s’assurer du bon fonctionnement de ceux-ci tout au long du cycle de vie des produits.\n\nVos missions : \n\nDévelopper un moyen de test qui permettra de vérifier le bon fonctionnement d’un de nos livrables qui est intégré dans différentes offres EcoStruxure, pour détecter les dysfonctionnements, les instabilités et les ruptures de compatibilité éventuelle.\n\nAprès une période de prise de connaissance de l’outil Playwright, il vous appartiendra de présenter les fonctionnalités de cette solution, ainsi que ces avantages / inconvénients, puis de vous lancer dans la phase d’implémentation des scripts de test permettant de stresser notre API et de vérifier la bonne exécution de ces tests.\n\nInformations supplémentaires :\n\nLocalisation : Poste basé en France, à CARROS\n\nDurée : 6 mois\n\nDate de démarrage souhaitée : Octobre 2026\n\nDéplacements : •oui •non\n\nProfil recherché : \n\n• Spécialité - Ingénierie informatique, orienté Web\n• Diplôme visé - Formation Bac +4/5 - Ingénieur ou Master / Master 2 universitaire\n\nCompétences requises : \n• Appétence pour les activités de test et un esprit d’analyse\n• Maitrise du langage de programmation Python\n• Compétent dans l’utilisation des outils d’ingénierie (GitHub, Jira)\n• Connaissance en cybersécurité\n• Maitrise de l’anglais\n• Autonome, rigoureux, persévérant, curieux et créatif\nProchaines étapes de notre processus de sélection :\n• Votre candidature sera étudiée par le recruteur\n• Si votre profil correspond aux prérequis, vous serez contacté pour effectuer un entretien de préqualification avec le recruteur \n• Si votre candidature est retenue, elle sera alors proposée au manager / tuteur pour un entretien. \n\nA noter que vous pouvez suivre à tout moment le statut de votre candidature via votre tableau de bord candidat sur le site carrières de Schneider Electric. \n\nIci, toutes les différences font la force : Chez Schneider Electric, nous sommes engagés pour l’inclusion et la diversité, nous accueillons chaque profil avec bienveillance et ouverture. \n\nPour en savoir plus sur notre politique Diversité et Inclusion France : https://www.se.com/fr/fr/about-us/diversity-and-inclusion/ \n\nEt parce qu’une belle mission mérite aussi de belles conditions, voici ce que nous vous proposons : \n\n• Une gratification mensuelle déterminée selon votre niveau d’études (grilles Schneider au-delà du légal) \n• Une prime de fin de stage décidée par votre manager et votre tuteur en fonction de votre évaluation de fin de stage\n• Une participation aux frais de transport en commun à hauteur de 75% pour le trajet domicile-entreprise \n• Une journée d’accueil dédiée pour les stages supérieurs à 3 mois \n• D’autres avantages : \n• un accès au r",
+    "description": "Et si votre stage avait de l’impact ? \n\nClassée 1ère des entreprises les plus durables au monde et 2ème au classement HappyTrainees, Schneider Electric offre une expérience enrichissante, recommandée par 92,9 % de nos stagiaires et alternants.\n\nEt ce n’est pas un hasard ! Notre culture repose sur des valeurs fortes : Inclusion, Maîtrise, Purpose, Action, Curiosité et Travail d’équipe, permettant à chaque personne de contribuer pleinement à la transformation vers un monde plus durable. \n\n Vous évoluerez dans une entreprise de 150 000 collaborateurs, présente dans plus de 100 pays et leader mondial de la gestion de l’énergie et de l’automatisation.\n\nRejoindre Schneider Electric, c’est donc bien plus qu’intégrer un grand groupe international !\n\nContexte : \n\nNotre département de Recherche et Développement à Carros a la mission de développer des solutions innovantes dans le domaine de l’automatisme pour le marché industriel. Notre équipe a la responsabilité de la création d’offre automates et systèmes d’entrées / sorties, ainsi que les solutions logicielles permettant à nos clients de configurer les produits selon leurs besoins.\n\nAfin de vérifier le comportement de ces offres logiciels et de satisfaire nos exigences qualité pour nos clients, nous mettons en place des moyens de test qui nous permettent de s’assurer du bon fonctionnement de ceux-ci tout au long du cycle de vie des produits.\n\nVos missions : \n\nDévelopper un moyen de test qui permettra de vérifier le bon fonctionnement d’un de nos livrables qui est intégré dans différentes offres EcoStruxure, pour détecter les dysfonctionnements, les instabilités et les ruptures de compatibilité éventuelle.\n\nAprès une période de prise de connaissance de l’outil Playwright, il vous appartiendra de présenter les fonctionnalités de cette solution, ainsi que ces avantages / inconvénients, puis de vous lancer dans la phase d’implémentation des scripts de test permettant de stresser notre API et de vérifier la bonne exécution de ces tests.\n\nInformations supplémentaires :\n\nLocalisation : Poste basé en France, à CARROS\n\nDurée : 6 mois\n\nDate de démarrage souhaitée : Q1 2027\n\nDéplacements : •oui •non\n\nProfil recherché\n\n• Spécialité - Ingénierie informatique, orienté Web\n• Diplôme visé - Formation Bac +4/5 - Ingénieur ou Master / Master 2 universitaire\n\nCompétences requises : \n• Appétence pour les activités de test et un esprit d’analyse\n• Maitrise du langage de programmation Python\n• Compétent dans l’utilisation des outils d’ingénierie (GitHub, Jira)\n• Connaissance en cybersécurité\n• Maitrise de l’anglais\n• Autonome, rigoureux, persévérant, curieux et créatif\nProchaines étapes de notre processus de sélection :\n• Votre candidature sera étudiée par le recruteur\n• Si votre profil correspond aux prérequis, vous serez contacté pour effectuer un entretien de préqualification avec le recruteur \n• Si votre candidature est retenue, elle sera alors proposée au manager / tuteur pour un entretien. \n\nA noter que vous pouvez suivre à tout moment le statut de votre candidature via votre tableau de bord candidat sur le site carrières de Schneider Electric. \n\nIci, toutes les différences font la force : Chez Schneider Electric, nous sommes engagés pour l’inclusion et la diversité, nous accueillons chaque profil avec bienveillance et ouverture. \n\nEt parce qu’une belle mission mérite aussi de belles conditions, voici ce que nous vous proposons : • D’une gratification mensuelle déterminée selon votre niveau d’études (grilles Schneider au-delà du légal) \n• D’une prime de fin de stage à la discrétion du manager en fonction de votre évaluation tout au long de votre parcours \n• D’une participation aux frais de transport en commun à hauteur de 75% pour le trajet domicile-entreprise \n• D’une journée d’accueil dédiée pour les stages supérieurs à 3 mois \nD’autres avantages :• un accès au restaurant d’entreprise ou ticket restaurant pour les sites ne disposant pas de restaurant d’entreprise, \n• des activités culturelles et sp",
     "description_excerpt": "Et si votre stage avait de l’impact ? \n\nClassée 1ère des entreprises les plus durables au monde et 2ème au classement HappyTrainees, Schneider Electric offre une expérience enrichissante, recommandée par 92,9 % de nos stagiaires et alternants.\n\nEt ce n’est pas un hasard ! Notre culture repose sur des valeurs fortes : Inclusion, Maîtrise,…",
     "profile_excerpt": null,
     "experience": null,
@@ -9449,7 +9607,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4194723",
@@ -9493,7 +9651,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4185857",
@@ -9546,7 +9704,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4182096",
@@ -9592,7 +9750,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:39+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4287698",
@@ -9647,7 +9805,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4287694",
@@ -9705,7 +9863,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4287686",
@@ -9754,7 +9912,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4287681",
@@ -9809,7 +9967,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4287674",
@@ -9857,7 +10015,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4287261",
@@ -9908,7 +10066,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4287220",
@@ -9954,7 +10112,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3907117",
@@ -9998,7 +10156,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3904872",
@@ -10041,7 +10199,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4286870",
@@ -10081,7 +10239,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4286817",
@@ -10141,7 +10299,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4173804",
@@ -10188,7 +10346,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4173803",
@@ -10235,7 +10393,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4173789",
@@ -10282,7 +10440,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4173788",
@@ -10329,7 +10487,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4286643",
@@ -10380,7 +10538,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4286638",
@@ -10437,7 +10595,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4286382",
@@ -10487,7 +10645,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4222923",
@@ -10534,7 +10692,7 @@
     ],
     "benefits_count": 14,
     "start_date": "2026-11-08T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4222922",
@@ -10581,7 +10739,7 @@
     ],
     "benefits_count": 14,
     "start_date": "2026-11-08T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4222921",
@@ -10628,7 +10786,7 @@
     ],
     "benefits_count": 14,
     "start_date": "2026-11-08T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4285607",
@@ -10686,7 +10844,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4081543",
@@ -10738,7 +10896,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3924533",
@@ -10781,7 +10939,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3604497",
@@ -10848,7 +11006,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3604496",
@@ -10915,7 +11073,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3604495",
@@ -10982,7 +11140,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:40+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4284604",
@@ -11029,7 +11187,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4284577",
@@ -11078,7 +11236,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4284439",
@@ -11127,7 +11285,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4284078",
@@ -11172,7 +11330,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4283504",
@@ -11222,7 +11380,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4283494",
@@ -11272,7 +11430,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4282756",
@@ -11313,7 +11471,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4049842",
@@ -11361,7 +11519,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:3957357",
@@ -11411,7 +11569,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4282068",
@@ -11457,7 +11615,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4282067",
@@ -11508,7 +11666,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4280999",
@@ -11563,7 +11721,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4280925",
@@ -11616,7 +11774,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4280917",
@@ -11677,7 +11835,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4280910",
@@ -11748,7 +11906,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4280498",
@@ -11803,7 +11961,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4245832",
@@ -11848,7 +12006,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:47+00:00"
   },
   {
     "id": "wttj:4053308",
@@ -11904,7 +12062,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:41+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3979521",
@@ -11955,7 +12113,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3934682",
@@ -12007,7 +12165,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4280033",
@@ -12049,7 +12207,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4280032",
@@ -12095,7 +12253,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4279946",
@@ -12141,7 +12299,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4279782",
@@ -12202,7 +12360,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4279542",
@@ -12242,7 +12400,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4125368",
@@ -12303,7 +12461,7 @@
     ],
     "benefits_count": 14,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4279390",
@@ -12362,7 +12520,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4279382",
@@ -12421,7 +12579,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4279381",
@@ -12478,7 +12636,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4279305",
@@ -12527,7 +12685,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4279304",
@@ -12576,7 +12734,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4279256",
@@ -12621,7 +12779,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4277016",
@@ -12685,7 +12843,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4276878",
@@ -12747,7 +12905,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4276876",
@@ -12800,7 +12958,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4185759",
@@ -12847,7 +13005,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4185756",
@@ -12895,7 +13053,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4185735",
@@ -12943,7 +13101,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4172951",
@@ -12995,7 +13153,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4137783",
@@ -13044,7 +13202,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4088892",
@@ -13087,7 +13245,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4008134",
@@ -13134,7 +13292,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4276406",
@@ -13200,7 +13358,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4276405",
@@ -13266,7 +13424,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4276379",
@@ -13330,7 +13488,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4276378",
@@ -13394,7 +13552,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4276377",
@@ -13458,7 +13616,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4275953",
@@ -13521,7 +13679,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4275952",
@@ -13584,7 +13742,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4275951",
@@ -13647,7 +13805,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4275885",
@@ -13694,7 +13852,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4275805",
@@ -13754,7 +13912,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4275804",
@@ -13814,7 +13972,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4275803",
@@ -13874,7 +14032,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4169990",
@@ -13920,7 +14078,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:42+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3821720",
@@ -13967,7 +14125,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4274147",
@@ -14024,7 +14182,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4273594",
@@ -14072,7 +14230,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4273588",
@@ -14119,7 +14277,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4273392",
@@ -14159,7 +14317,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4273391",
@@ -14199,7 +14357,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4273390",
@@ -14239,7 +14397,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4166919",
@@ -14292,7 +14450,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4057850",
@@ -14360,7 +14518,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3973103",
@@ -14404,7 +14562,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3872619",
@@ -14452,7 +14610,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4273164",
@@ -14509,51 +14667,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
-  },
-  {
-    "id": "wttj:4272507",
-    "title": "Développeur Java (H/F)",
-    "company": "Linking Talents",
-    "company_slug": "linking-talents",
-    "city": "Marseille",
-    "cities": [
-      "Marseille"
-    ],
-    "department": "Bouches-du-Rhône",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "hybride",
-    "category": "eng",
-    "profession": null,
-    "salary": "45000–50000 EUR",
-    "experience_min_years": 2,
-    "published_at": "2026-09-11T15:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/linking-talents/jobs/developpeur-java-h-f_marseille?o=LT_4JDz0o8",
-    "source": "wttj",
-    "stack": [
-      "Java",
-      "Oracle",
-      "Zoom",
-      "SQL"
-    ],
-    "soft_skills": [
-      "Communication",
-      "Aptitude à résoudre les problèmes"
-    ],
-    "description": "Talents IT est un cabinet de recrutement national spécialisé dans\nles MÉTIERS DE L’IT ET DU DIGITAL, NOUS VOUS PROPOSONS\nRÉGULIÈREMENT DES OFFRES D’EMPLOI DANS CES DOMAINES :\nDÉVELOPPEMENT, SÉCURITÉ, INFRASTRUCTURE, R&D, DATA, PROJET,\nPRODUIT… \n\nNos consultants expérimentés vous offrent un ACCOMPAGNEMENT\nPERSONNALISÉ et des conseils avisés pour vous aider à évoluer dans\nvotre carrière.\n\nZOOM SUR VOS MISSIONS !\n\nNous recherchons un(e) Développeur(se) Java Senior pour rejoindre un\néditeur de logiciels. Vous participerez au maintien, à\nl’évolution et à l’amélioration continue d’une solution\nmétier utilisée par de nombreux clients.\n\nVOS MISSIONS :\n\n Analyser les besoins fonctionnels et techniques liés aux\névolutions de la solution SIRH ;\n Concevoir et développer de nouvelles fonctionnalités en Java ;\n Assurer la maintenance corrective et évolutive des applications ;\n Développer et faire évoluer les différents composants de la\nsolution sur la plateforme Requea ;\n Diagnostiquer et résoudre les anomalies rencontrées ;\n Participer aux choix techniques et à l’amélioration de\nl’architecture existante ;\n Garantir la qualité, la fiabilité et la maintenabilité du code ;\n Réaliser les tests unitaires, fonctionnels et techniques avant les\nmises en production ;\n Participer au déploiement et au suivi des nouvelles versions ;\n Optimiser les performances des applications et des bases de\ndonnées ;\n Effectuer des revues de code et veiller au respect des bonnes\npratiques de développement ;\n Rédiger et maintenir la documentation technique ;\n Collaborer avec les équipes fonctionnelles afin de proposer des\nsolutions adaptées aux besoins des utilisateurs ;\n Accompagner ponctuellement les développeurs moins expérimentés\net participer au partage des connaissances.",
-    "description_excerpt": "Talents IT est un cabinet de recrutement national spécialisé dans\nles MÉTIERS DE L’IT ET DU DIGITAL, NOUS VOUS PROPOSONS\nRÉGULIÈREMENT DES OFFRES D’EMPLOI DANS CES DOMAINES :\nDÉVELOPPEMENT, SÉCURITÉ, INFRASTRUCTURE, R&D, DATA, PROJET,\nPRODUIT… \n\nNos consultants expérimentés vous offrent un ACCOMPAGNEMENT\nPERSONNALISÉ et des conseils…",
-    "profile_excerpt": "PROFIL RECHERCHÉ :\n\n Vous justifiez d’au moins 4 À 5 ANNÉES D’EXPÉRIENCE EN\nDÉVELOPPEMENT JAVA, idéalement acquises au sein d’un éditeur de\nlogiciels, sur une application métier complexe ou dans un\nenvironnement SIRH.\n Vous maîtrisez JAVA ET LES ENVIRONNEMENTS JAVA/JEE, ainsi…",
-    "experience": null,
-    "education_level": "bac_3",
-    "remote_detail": "hybride",
-    "apply_url": "https://job.mytalentplug.com/api/JobOffer/redirect/?id=4b88a1e7-b12b-46c4-8032-d1e620eaeba3",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/mBj0Extpw89l1Mnqh5bYYzjax9goJpZ51ecmqiyI_6E/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8zMzE5LzE2NjAxMy81MTcwMTFhNy1hNGI5LTQzYTgtOTVmOC02N2Y3YjgyMjkxZjMucG5n",
-    "benefits_preview": [],
-    "benefits_count": null,
-    "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4192767",
@@ -14602,7 +14716,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4272003",
@@ -14659,7 +14773,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4271912",
@@ -14711,7 +14825,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4271911",
@@ -14763,7 +14877,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4271910",
@@ -14815,7 +14929,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4273242",
@@ -14877,7 +14991,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:1074554",
@@ -14939,7 +15053,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4271321",
@@ -14984,7 +15098,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4271165",
@@ -15041,7 +15155,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4270925",
@@ -15098,7 +15212,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4270921",
@@ -15166,7 +15280,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4270918",
@@ -15229,7 +15343,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3897291",
@@ -15273,7 +15387,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4103027",
@@ -15320,7 +15434,7 @@
     ],
     "benefits_count": 13,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3954104",
@@ -15386,7 +15500,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4131502",
@@ -15442,7 +15556,7 @@
     ],
     "benefits_count": 14,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4269541",
@@ -15509,7 +15623,7 @@
     ],
     "benefits_count": 14,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4169572",
@@ -15563,7 +15677,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:43+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4268346",
@@ -15625,7 +15739,7 @@
     ],
     "benefits_count": 14,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4268289",
@@ -15675,7 +15789,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4268089",
@@ -15724,7 +15838,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4268086",
@@ -15771,7 +15885,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4267957",
@@ -15820,7 +15934,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4267944",
@@ -15877,7 +15991,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4161912",
@@ -15922,7 +16036,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4267276",
@@ -15966,7 +16080,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4266534",
@@ -16032,7 +16146,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4219278",
@@ -16084,7 +16198,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4040458",
@@ -16133,7 +16247,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4040457",
@@ -16182,7 +16296,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4040456",
@@ -16231,7 +16345,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3809908",
@@ -16278,7 +16392,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4246835",
@@ -16323,7 +16437,7 @@
     ],
     "benefits_count": 14,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4265293",
@@ -16366,7 +16480,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4173330",
@@ -16410,7 +16524,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4167444",
@@ -16454,7 +16568,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3937279",
@@ -16501,7 +16615,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3683632",
@@ -16548,7 +16662,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3801799",
@@ -16594,7 +16708,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-09-20T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3801798",
@@ -16640,7 +16754,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-09-20T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4159182",
@@ -16691,7 +16805,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4049862",
@@ -16739,7 +16853,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4157080",
@@ -16787,7 +16901,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4152519",
@@ -16832,7 +16946,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4164735",
@@ -16879,7 +16993,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3901146",
@@ -16929,7 +17043,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3901143",
@@ -16976,7 +17090,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4260112",
@@ -17016,7 +17130,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4259996",
@@ -17067,7 +17181,7 @@
     ],
     "benefits_count": 6,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4259872",
@@ -17110,7 +17224,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4259841",
@@ -17160,7 +17274,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-09-30T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4259384",
@@ -17196,7 +17310,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4259383",
@@ -17232,7 +17346,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4258884",
@@ -17291,62 +17405,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
-  },
-  {
-    "id": "wttj:4258521",
-    "title": "Développeur GO / Python H/F",
-    "company": "NEXTON",
-    "company_slug": "nexton-consulting",
-    "city": "Mougins",
-    "cities": [
-      "Mougins"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "hybride",
-    "category": "eng",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": 4,
-    "published_at": "2026-09-04T00:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/nexton-consulting/jobs/developpeur-go-python-h-f_mougins?o=NEXTO_rb7z255",
-    "source": "wttj",
-    "stack": [
-      "Linux",
-      "Kubernetes",
-      "GoLang",
-      "Azure",
-      "OpenStack",
-      "AWS",
-      "Docker",
-      "Python"
-    ],
-    "soft_skills": [
-      "Communication",
-      "Gestion de l’infrastructure cloud",
-      "Aptitude à résoudre les problèmes"
-    ],
-    "description": "NEXTON recrute un Développeur GO / Python H/F, en CDI, à Mougins !\nTon futur environnement de travail :\nEn tant que Développeur GO / Python orienté Platform Engineering et Outillage Infrastructure, tu interviens dans le développement d'outils sur-mesure (CLI, automatisation, opérateurs) destinés à tourner sur des clusters Kubernetes hébergés dans le Cloud sous un environnement Linux. Au sein d'une équipe technique passionnée, tu exploites la puissance du langage Go (techno clé et native de l'écosystème Cloud Native) combinée à Python pour concevoir des extensions et automatiser des infrastructures complexes.\nTes missions :\n• Développer des outils sur-mesure : Tu conçois et développes des CLI, des automatisations et des opérateurs personnalisés pour étendre et optimiser les fonctionnalités autour de Kubernetes.\n\n• Scripting et Automatisation : Tu utilises Go comme langage cœur pour l'outillage Kubernetes et Python pour le scripting, l'automatisation avancée ou le traitement de données.\n\n• Intégrer l'écosystème Kubernetes : Tu conçois des solutions adaptées à l'architecture K8s (Pods, Services, CRD, Operators) en interagissant directement avec l'API Kubernetes.\n\n• Garantir la performance et la fiabilité : Tu t'assures du bon fonctionnement des solutions sur des clusters hébergés dans un environnement Cloud sous Linux.",
-    "description_excerpt": "NEXTON recrute un Développeur GO / Python H/F, en CDI, à Mougins !\nTon futur environnement de travail :\nEn tant que Développeur GO / Python orienté Platform Engineering et Outillage Infrastructure, tu interviens dans le développement d'outils sur-mesure (CLI, automatisation, opérateurs) destinés à tourner sur des clusters Kubernetes…",
-    "profile_excerpt": "De formation supérieure (BAC+5 ou équivalent), tu justifies d'une expérience d'au moins 5 ans en développement logiciel orienté Platform Engineering ou outillage infrastructure.\nImpératifs métier & techniques :\n• Langages : Maîtrise éprouvée de Go (Golang), langage indispensable…",
-    "experience": null,
-    "education_level": null,
-    "remote_detail": "hybride",
-    "apply_url": "https://jobs.smartrecruiters.com/NEXTON/744000147307739-developpeur-go-python-h-f?trid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/QaROZayBmsoKb36sX5yBNRVXvmNoFGLH4ReEFp5Cae0/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby85ODIyLzE2NjAwMy9hMjNhMjhlZC0zNjczLTRjODAtYTJiNi1jNTcyMGU0NGJhMzMucG5n",
-    "benefits_preview": [
-      "Afterworks, Déjeuners d'équipe, etc.",
-      "Plan d’épargne entreprise (PEE)",
-      "Prime de cooptation",
-      "Forfait mobilité durable",
-      "Plan de développement professionnel"
-    ],
-    "benefits_count": 5,
-    "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4049846",
@@ -17395,7 +17454,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:45+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4043800",
@@ -17446,63 +17505,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
-  },
-  {
-    "id": "wttj:4257863",
-    "title": "Principal LLM Inference Engineer - F/H",
-    "company": "Atos",
-    "company_slug": "atos",
-    "city": "Sophia Antipolis",
-    "cities": [
-      "Sophia Antipolis"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "",
-    "category": "data",
-    "profession": null,
-    "salary": "80000–95000 EUR",
-    "experience_min_years": 7,
-    "published_at": "2026-09-03T14:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/principal-llm-inference-engineer-f-h_sophia-antipolis?o=ATOS_z8zYKON",
-    "source": "wttj",
-    "stack": [
-      "FastAPI",
-      "Grafana",
-      "Kubernetes",
-      "Foundation",
-      "DeepSeek",
-      "TensorRT",
-      "Helm",
-      "Docker",
-      "Llama",
-      "Python",
-      "Prometheus"
-    ],
-    "soft_skills": [
-      "Communication"
-    ],
-    "description": "• Serving et Runtime des modèles : Concevoir et optimiser la plateforme de serving basée sur vLLM, configurer le parallélisme selon l'architecture du modèle et l'interconnexion de l'infrastructure cible, et installer/maintenir llm-d pour l'inférence distribuée et désagrégée (préremplissage/décodage désagrégés, routage conscient du cache KV).\n\n • Cycle de vie et pipelines multimodaux : Maîtriser le cycle de vie des modèles en plateforme (versioning, déploiement progressif, rollback) y compris en environnements isolés, et servir des pipelines multimodaux (audio temps réel, STT, TTS, OCR) ainsi que des services d'embedding et de reranking (bases vectorielles comme Milvus).\n\n • Fiabilité, Observabilité et Benchmarking : Instrumenter la couche de serving avec Prometheus et Grafana (métriques GPU et par token, logs structurés, traçabilité), mettre en place des déploiements canary/blue-green avec portes d'évaluation automatisées, et mener des campagnes de benchmarking structurées pour suivre et réduire le coût par token et la latence de queue.\n\n • Support Avant-Vente et Dimensionnement : Fournir des données de dimensionnement et de performance défendables pour appuyer les activités d'avant-vente, les appels d'offres et la planification de capacité.",
-    "description_excerpt": "• Serving et Runtime des modèles : Concevoir et optimiser la plateforme de serving basée sur vLLM, configurer le parallélisme selon l'architecture du modèle et l'interconnexion de l'infrastructure cible, et installer/maintenir llm-d pour l'inférence distribuée et désagrégée (préremplissage/décodage désagrégés, routage conscient du cache…",
-    "profile_excerpt": "Description du profil :\n\nCompétences et qualifications\n\n • Expérience : Solide parcours (généralement 7+ ans d’expérience en ingénierie avec un temps significatif dédié au serving de modèles ML/AI) dans la construction et l’exploitation d’inférences LLM en production.\n\n •…",
-    "experience": "7–10 ans",
-    "education_level": "bac_5",
-    "remote_detail": null,
-    "apply_url": "https://atos.contactrh.com/jobs/10425/44417766",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/GpTmQiDECB8lhF8RFrOMACq1s4Ayk0y_FdDYmpAhE4w/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni8wOGI3YTNhMC0wZWM3LTRmNDgtYTljMi05N2VmMzRhZWJlNDAuanBn",
-    "benefits_preview": [
-      "Plan de développement professionnel",
-      "Entre 3-4 jours de télétravail",
-      "Équipe dédiée à la Diversité & inclusivité",
-      "Prime de cooptation",
-      "Compte épargne-temps (CET)"
-    ],
-    "benefits_count": 12,
-    "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4257345",
@@ -17559,7 +17562,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4256968",
@@ -17615,7 +17618,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4256967",
@@ -17663,7 +17666,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4256706",
@@ -17712,7 +17715,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4256478",
@@ -17750,7 +17753,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4049828",
@@ -17806,7 +17809,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4023490",
@@ -17868,7 +17871,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4273248",
@@ -17930,7 +17933,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2076627",
@@ -17992,7 +17995,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2076626",
@@ -18054,7 +18057,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4255740",
@@ -18110,7 +18113,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4032902",
@@ -18165,7 +18168,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4254878",
@@ -18217,7 +18220,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4254821",
@@ -18269,7 +18272,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4254463",
@@ -18329,7 +18332,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4254374",
@@ -18383,7 +18386,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4254373",
@@ -18437,7 +18440,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4161792",
@@ -18486,7 +18489,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4161776",
@@ -18535,7 +18538,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4161412",
@@ -18587,7 +18590,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4154265",
@@ -18634,7 +18637,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4053164",
@@ -18681,7 +18684,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3924358",
@@ -18728,7 +18731,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3924324",
@@ -18775,54 +18778,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
-  },
-  {
-    "id": "wttj:4253415",
-    "title": "Consultant fonctionnel CRS & PMS H/F",
-    "company": "Septeo",
-    "company_slug": "septeo",
-    "city": "Valbonne",
-    "cities": [
-      "Valbonne"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "",
-    "category": "tech-adjacent",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": 0,
-    "published_at": "2026-09-01T13:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/septeo/jobs/consultant-fonctionnel-crs-pms-h-f_valbonne?o=SEPTE_xyJNJAm",
-    "source": "wttj",
-    "stack": [
-      "Excel"
-    ],
-    "soft_skills": [
-      "Gestion des entretiens",
-      "Communication"
-    ],
-    "description": "Septeo est un acteur de référence du software en Europe, présent à l’international et reconnu parmi le top 5 des éditeurs de logiciels sectoriels en France. En forte croissance et en transformation permanente, le groupe s’impose comme un acteur clé de l’édition logicielle grâce à la force de son collectif : des équipes déterminées, audacieuses et engagées.\nChez Septeo, l’intelligence artificielle est placée au cœur de notre évolution. Nous la concevons comme un levier de performance durable, de collaboration et d’innovation, intégrée de manière responsable dans les pratiques du quotidien et démocratisé sur l’ensemble de nos métiers. L'ambition est claire : “make intelligent software for Europe”.\n\nNotre culture repose sur des valeurs fortes : être, faire et transformer ensemble. Elle n’est pas figée; elle se vit chaque jour dans nos actions et nos décisions, à travers un équilibre entre performance, responsabilité et plaisir.\nCette ambition s’incarne dans ce que nous faisons au quotidien : concevoir des logiciels qui accompagnent les moments de vie essentiels, au service de millions de citoyens. Être présent derrière ces instants clés est une responsabilité forte. C’est la nôtre. Et peut-être bientôt la votre.\nRejoindre Septeo, c’est intégrer une aventure collective à dimension internationale, porter la transformation du groupe dans un environnement en mouvement rapide, et faire de l’IA un levier concret de création de valeur, aujourd’hui comme demain.\nPrêt(e) à faire partie de l’aventure ? \n\nJob Description\n\nNous recherchons un Consultant Fonctionnel Logiciel Hôtelier H/F, en CDI, à Valbonne / Sophia Antipolis pour notre filiale Septeo Hospitality Solutions .\nCe que nous pouvons accomplir ensemble :\nVous venez du monde de l'Hôtellerie ou du tourisme et souhaitez valoriser ce savoir-faire ?\nVous intégrerez le service client Resalys, constitué d'une dizaine de collaborateurs, qui sont les interlocuteurs privilégiés de nos clients, professionnels des résidences de vacances en France et à l’international\nGarant d’une relation de confiance, vous accompagnerez vos clients tout au long du cycle de vie du produit (depuis son implémentation jusqu’à ses évolutions majeures, en passant par le support et les formations) ​​​​​:\nVotre quotidien :\n- Prendre en charge nos clients, en réceptionnant leurs demandes d'assistance \n- Investiguer, analyser et apporter la solution la plus adaptée à leurs demandes, et en assurer le suivi jusqu’à leur résolution\n- Participer aux évolutions de la solution logicielle en détectant les besoins de nos clients et en faisant le lien avec les services concernés\n- Assurer le suivi des correctifs et des évolutions apportés à notre suite logicielle\n- Proposer des prestations privilèges répondant aux besoins des clients\n- Garantir une utilisation optimale de nos solutions en dispensant des conseils et formations sur notre logiciel\n- Construire et maintenir des relations sincères et fortes avec nos clients pour être garant de leur satisfaction \n- Aider à la mise en place et la gestion du paramétrage des premières campagnes et nouveaux clients",
-    "description_excerpt": "Septeo est un acteur de référence du software en Europe, présent à l’international et reconnu parmi le top 5 des éditeurs de logiciels sectoriels en France. En forte croissance et en transformation permanente, le groupe s’impose comme un acteur clé de l’édition logicielle grâce à la force de son collectif : des équipes déterminées,…",
-    "profile_excerpt": "Et si c’était vous qui veniez nous rejoindre ?\n• Vous êtes professionnel(le) de l'hôtellerie ou tourisme avec une expérience de minimum 3 ans en hôtellerie, résidence de vacances, hôtellerie de plein air...).\n• Vous êtes à l'aise sur les logiciels de réservations et channels…",
-    "experience": "Débutant",
-    "education_level": null,
-    "remote_detail": null,
-    "apply_url": "https://jobs.smartrecruiters.com/Septeo/744000146620319-consultant-fonctionnel-crs-pms-h-f-?oga=true&sid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/v-qvwpTzQZ1d_BcQWv8B5U9ubBfKVF_dXIClhF6WQ9M/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby85OTQ4LzE2NTY5Mi80YzQ1YjcxMC0yOGIwLTRiMzctYTg2YS1jMmY0ODljNWEwOTYucG5n",
-    "benefits_preview": [
-      "Horaires de travail flexibles",
-      "Équipe dédiée à la Diversité & inclusivité",
-      "Salle de jeux",
-      "Plan de développement professionnel",
-      "Afterworks, Déjeuners d'équipe, etc."
-    ],
-    "benefits_count": 14,
-    "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4231847",
@@ -18875,7 +18831,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4159010",
@@ -18923,7 +18879,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3937284",
@@ -18974,7 +18930,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4252051",
@@ -19030,7 +18986,7 @@
     ],
     "benefits_count": 6,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4135920",
@@ -19090,7 +19046,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-06-30T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4135919",
@@ -19150,7 +19106,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-06-30T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3886038",
@@ -19193,7 +19149,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-03-01T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3886037",
@@ -19236,7 +19192,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-03-01T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3616484",
@@ -19279,7 +19235,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-11-30T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3616483",
@@ -19322,7 +19278,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-11-30T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3599981",
@@ -19372,7 +19328,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-06-30T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3599980",
@@ -19422,7 +19378,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-06-30T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3503264",
@@ -19491,7 +19447,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-06-30T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3503263",
@@ -19560,7 +19516,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-06-30T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3753845",
@@ -19617,7 +19573,7 @@
     ],
     "benefits_count": 11,
     "start_date": "2026-06-30T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:45+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:812170",
@@ -19666,7 +19622,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:810351",
@@ -19714,7 +19670,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3962599",
@@ -19768,7 +19724,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3962594",
@@ -19826,7 +19782,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4154719",
@@ -19896,7 +19852,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2373821",
@@ -19948,7 +19904,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:45+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4249640",
@@ -19994,7 +19950,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4142833",
@@ -20051,7 +20007,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4249504",
@@ -20095,7 +20051,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4249065",
@@ -20158,7 +20114,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4248906",
@@ -20209,7 +20165,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4049903",
@@ -20255,7 +20211,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3781518",
@@ -20300,7 +20256,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4023567",
@@ -20354,7 +20310,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4023466",
@@ -20417,7 +20373,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4245835",
@@ -20465,7 +20421,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4023647",
@@ -20513,7 +20469,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4023636",
@@ -20578,7 +20534,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4023601",
@@ -20636,7 +20592,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4023588",
@@ -20688,7 +20644,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3949853",
@@ -20733,7 +20689,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4244540",
@@ -20788,7 +20744,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4244503",
@@ -20841,7 +20797,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4149638",
@@ -20897,7 +20853,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4043795",
@@ -20949,7 +20905,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4023748",
@@ -20992,7 +20948,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4243176",
@@ -21041,7 +20997,7 @@
     ],
     "benefits_count": 11,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4242551",
@@ -21101,7 +21057,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4146435",
@@ -21164,7 +21120,7 @@
     ],
     "benefits_count": 3,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4041820",
@@ -21219,7 +21175,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4041819",
@@ -21274,7 +21230,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4041818",
@@ -21329,7 +21285,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4041817",
@@ -21384,7 +21340,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3997964",
@@ -21442,7 +21398,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-09-14T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3997961",
@@ -21494,7 +21450,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4135623",
@@ -21550,7 +21506,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4135622",
@@ -21606,7 +21562,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4166912",
@@ -21656,7 +21612,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2892099",
@@ -21715,7 +21671,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2892098",
@@ -21774,7 +21730,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4238076",
@@ -21824,7 +21780,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4237964",
@@ -21881,7 +21837,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4237728",
@@ -21920,7 +21876,7 @@
     ],
     "benefits_count": 3,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4031244",
@@ -21966,7 +21922,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4236836",
@@ -22024,7 +21980,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3758232",
@@ -22080,7 +22036,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4122408",
@@ -22138,7 +22094,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3744108",
@@ -22198,7 +22154,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4134811",
@@ -22242,7 +22198,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3407194",
@@ -22293,7 +22249,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3407193",
@@ -22344,7 +22300,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3100019",
@@ -22396,7 +22352,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-03-02T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3100018",
@@ -22448,7 +22404,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-03-02T23:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2889191",
@@ -22496,7 +22452,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2889190",
@@ -22544,7 +22500,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3990400",
@@ -22614,7 +22570,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3990399",
@@ -22684,7 +22640,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3893556",
@@ -22736,7 +22692,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3893555",
@@ -22788,7 +22744,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3488253",
@@ -22838,7 +22794,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3488252",
@@ -22888,7 +22844,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2738863",
@@ -22933,7 +22889,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2738862",
@@ -22978,7 +22934,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4004733",
@@ -23040,7 +22996,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4004732",
@@ -23102,7 +23058,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4004731",
@@ -23164,7 +23120,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3781403",
@@ -23207,7 +23163,7 @@
     ],
     "benefits_count": 13,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2198983",
@@ -23265,7 +23221,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4232409",
@@ -23312,7 +23268,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4128094",
@@ -23365,7 +23321,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4025048",
@@ -23415,7 +23371,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-04-19T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3580377",
@@ -23472,7 +23428,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4230495",
@@ -23525,7 +23481,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3723081",
@@ -23573,7 +23529,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3145500",
@@ -23621,7 +23577,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4227968",
@@ -23661,7 +23617,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-08-12T22:00:00Z",
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4124699",
@@ -23712,7 +23668,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4122314",
@@ -23756,7 +23712,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4273257",
@@ -23820,7 +23776,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2739126",
@@ -23884,7 +23840,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2739125",
@@ -23948,7 +23904,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4131611",
@@ -23991,7 +23947,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4119921",
@@ -24037,7 +23993,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4109279",
@@ -24086,7 +24042,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2198970",
@@ -24142,7 +24098,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3235984",
@@ -24191,7 +24147,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4222882",
@@ -24237,7 +24193,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4222881",
@@ -24283,7 +24239,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4222880",
@@ -24329,7 +24285,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4222879",
@@ -24371,7 +24327,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4222878",
@@ -24413,7 +24369,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4222877",
@@ -24455,7 +24411,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4160233",
@@ -24498,7 +24454,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4160232",
@@ -24541,7 +24497,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4160231",
@@ -24584,7 +24540,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4221527",
@@ -24647,7 +24603,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4106856",
@@ -24710,190 +24666,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
-  },
-  {
-    "id": "wttj:3867786",
-    "title": "Site Reliability Engineer - SRE F/H",
-    "company": "Docaposte",
-    "company_slug": "docaposte-1",
-    "city": "Sophia Antipolis",
-    "cities": [
-      "Sophia Antipolis"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "",
-    "category": "devops",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": 3,
-    "published_at": "2026-08-05T00:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/docaposte-1/jobs/site-reliability-engineer-sre-f-h_sophia-antipolis_DOCAP_kLY9Zjo?o=DOCAP_kLY9Zjo",
-    "source": "wttj",
-    "stack": [
-      "Grafana",
-      "Java",
-      "Kubernetes",
-      "Git",
-      "Ansible",
-      "Jenkins",
-      "Bash",
-      "Unix",
-      "ELK",
-      "SaltStack",
-      "AWS",
-      "Docker",
-      "SQL"
-    ],
-    "soft_skills": [
-      "Autonomie",
-      "Communication",
-      "Compréhension des architectures réseau",
-      "Gestion de l’infrastructure cloud",
-      "Conformité en matière de sécurité"
-    ],
-    "description": "Rattaché au responsable de l'équipe SRE (Site Reliability Engineering), vous gérez la production opérationnelle d'applications critiques en haute disponibilité. Vous assurez la gestion du quotidien de la production, des évolutions techniques et fonctionnelles, des incidents, et le reporting dans le respect des SLA.\nEnfin, vous vous intégrez dans une démarche d'anticipation et d'industrialisation des processus et outils.\nA ce titre, vos issions principales sont : \n\n• Participer à la maintenance et l'évolution des plates-formes dans un contexte Kubernetes/Docker\n• Gérer différents environnements DC privé & Cloud\n• Sécuriser les plates-formes (Design, implémentation, configuration) et développer des outils ou adaptation de solutions en relation avec la production de services\n• Piloter et maintenir en condition opérationnelle les plates-formes en s'assurant de leur disponibilité et performance\n• Fournir une expertise technique sur les produits développés par DTS et fournir le support adéquat aux clients internes/externes\n• Fournir un support et une assistance continue aux clients ( Participation aux rotation d'astreintes 24/7)\n• Valider la mise en production des livrables au travers du développement, exécution et vérification de tests automatisés/unitaires/fonctionnels des logiciels critiques (“Smoke Test”)",
-    "description_excerpt": "Rattaché au responsable de l'équipe SRE (Site Reliability Engineering), vous gérez la production opérationnelle d'applications critiques en haute disponibilité. Vous assurez la gestion du quotidien de la production, des évolutions techniques et fonctionnelles, des incidents, et le reporting dans le respect des SLA.\nEnfin, vous vous…",
-    "profile_excerpt": "SAVOIR : \n- Issu de formation supérieure, vous justifiez d'une expérience de 5 ans minimum dans le déploiement et les opérations en production de solutions digitales.\n\nSAVOIR ETRE : \n- Curieux/force de proposition\n- Autonome\n- A l'aise avec les clients et utilisateurs\n-…",
-    "experience": null,
-    "education_level": "bac_5",
-    "remote_detail": null,
-    "apply_url": "https://docaposte-recrute.profils.org/Pages/Offre/detailoffre.aspx?idOffre=6002&idOrigine=502&LCID=1036&offerReference=2026-6002D",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/RwvNYjxGGPSIWzPkQsHUi14xWLITDGIuxTCwqgha-Zg/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby85NDMxLzE2NzE4MC9kYmFhODZhNy1lODg0LTRhZGUtOGRmNi1kMzYyOWRiYjlkOTEucG5n",
-    "benefits_preview": [
-      "Jours de bénévolat offerts",
-      "Prime de cooptation"
-    ],
-    "benefits_count": 3,
-    "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
-  },
-  {
-    "id": "wttj:4217092",
-    "title": "RESPONSABLE D'EQUIPE - DEVELOPPEMENT INFORMATIQUE (F/H)",
-    "company": "Euro Protection Surveillance",
-    "company_slug": "euro-protection-surveillance",
-    "city": "Cagnes-Sur-Mer",
-    "cities": [
-      "Cagnes-Sur-Mer"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "hybride",
-    "category": "eng",
-    "profession": null,
-    "salary": "55000–60000 EUR",
-    "experience_min_years": 5,
-    "published_at": "2026-08-04T14:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/euro-protection-surveillance/jobs/responsable-d-equipe-developpement-informatique-f-h_cagnes-sur-mer?o=EPS_dWG22jd",
-    "source": "wttj",
-    "stack": [
-      "Hibernate",
-      "Java",
-      "Oracle",
-      "GitLab",
-      "Jenkins",
-      "Elasticsearch",
-      "Excel",
-      "Kafka",
-      "Maven",
-      "Spring",
-      "Confluence",
-      "Quarkus",
-      "JIRA"
-    ],
-    "soft_skills": [
-      "Aptitudes à motiver les autres",
-      "Aisance à l'oral",
-      "Méthode Agile",
-      "Communication"
-    ],
-    "description": "En quelques mots :\n\nVous intégrerez des projets qualitatifs aux modèles complexes dans lesquels vous serez pleinement investi et en phase avec ces éléments :\n - une volonté de livrer des applications de qualité au sein d’un environnement de production fiable et performant\n - une proximité constante avec les différents experts métiers et techniques\n - une implication depuis la phase d’élaboration du besoin jusqu’à la livraison des développements\n - une autonomie adaptée et des marges de manoeuvre suffisantes pour apporter les meilleures solutions face aux besoins métier\n - une démarche d’amélioration continue (processus, métier, technique) permanente\n - l’envie de rejoindre des équipes investies et passionnées\n\nVos missions au quotidien seront :\n - Préparer et animer les différentes cérémonies liées à la vie de l’équipe\n - Analyser les activités pour en assurer la cohérence et la priorisation\n - Coordonner les équipes sur les sujets transverses en collaboration avec les autres responsables d’équipe(s)\n - Identifier et gérer les risques organisationnels tout au long du projet pour anticiper les problèmes et apporter des solutions\n - Accompagner et former les équipes sur le plan de l’organisation, des méthodes et de la communication\n - Participer à l’organisation et au recrutement dans les équipes\n - Veiller au respect des processus en place au sein du pôle Analyse et Développement\n - Participer à l’élaboration des évolutions des processus de travail et s’assurer de leur application\n - Participer et organiser les déploiements des applications sur les différents environnements et s’assurer du traitement prioritaire des anomalies de production\n\nNotre environnement technique :\n - BackEnd : Spring, Hibernate, Quarkus, Panache, Kafka\n - Bases de données : Oracle, ElasticSearch\n - FrontEnd : JavaFX\n - Architecture distribuée : Pattern CQRS\n - Concept DDD et architecture hexagonale\n - Outils : Gitlab, Maven, Jenkins (CI/CD automatisée), Jira, Confluence\n\nNotre environnement de travail :\n - Contexte Agile : SAFe, Lean Management, Kanban, …\n - Ambiance de travail collaborative",
-    "description_excerpt": "En quelques mots :\n\nVous intégrerez des projets qualitatifs aux modèles complexes dans lesquels vous serez pleinement investi et en phase avec ces éléments :\n - une volonté de livrer des applications de qualité au sein d’un environnement de production fiable et performant\n - une proximité constante avec les différents experts métiers et…",
-    "profile_excerpt": "• Expérience d’au moins six ans sur des postes à responsabilité dans des contextes similaires et titulaire d’un Bac+5 en informatique (type Master ou Ingénieur).\n - La connaissance de l’écosystème Java (Java 21 ou supérieur, Spring, Maven…) est un plus.\n - La maîtrise des outils…",
-    "experience": "5–7 ans",
-    "education_level": "bac_5",
-    "remote_detail": "hybride",
-    "apply_url": "https://job.mytalentplug.com/api/JobOffer/redirect/?id=dae0be31-9698-4cc8-9692-8b4fa2031df3",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/IF0sc2NqrDk0ruGVHSmJP7VaunjHuMLdObN-JVLQX50/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yNjY0LzE2OTQwOS85YmNkYmY0OS0xN2Y0LTQ5OTQtOWU0OC00MDgyMTAzZWE1NDcucG5n",
-    "benefits_preview": [
-      "Entre 1-2 jours de télétravail",
-      "RTT / Jour de repos",
-      "Intéressement",
-      "Participation",
-      "Plan d’épargne entreprise (PEE)",
-      "Forfait mobilité durable"
-    ],
-    "benefits_count": 14,
-    "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
-  },
-  {
-    "id": "wttj:4217077",
-    "title": "DEVELOPPEUR JAVA (F/H)",
-    "company": "Euro Protection Surveillance",
-    "company_slug": "euro-protection-surveillance",
-    "city": "Cagnes-Sur-Mer",
-    "cities": [
-      "Cagnes-Sur-Mer"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "hybride",
-    "category": "eng",
-    "profession": null,
-    "salary": "45000–55000 EUR",
-    "experience_min_years": 5,
-    "published_at": "2026-08-04T14:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/euro-protection-surveillance/jobs/developpeur-java-f-h_cagnes-sur-mer?o=EPS_Qer6Gk",
-    "source": "wttj",
-    "stack": [
-      "Hibernate",
-      "Java",
-      "Oracle",
-      "GitLab",
-      "Jenkins",
-      "Elasticsearch",
-      "Kafka",
-      "Maven",
-      "Spring",
-      "Confluence",
-      "Quarkus",
-      "Notion",
-      "JIRA"
-    ],
-    "soft_skills": [
-      "Travail d'équipe",
-      "Méthode Agile",
-      "Sensibilité culturelle",
-      "Déploiement continu"
-    ],
-    "description": "En quelques mots :\n\nVous intégrerez des projets qualitatifs aux modèles complexes dans lesquels vous serez pleinement investi et en phase avec ces éléments :\n - une volonté de livrer des applications de qualité au sein d’un environnement de production fiable et performant\n - une proximité constante avec les différents experts métiers et techniques\n - une implication depuis la phase d’élaboration du besoin jusqu’à la livraison des développements\n - une autonomie adaptée et des marges de manoeuvre suffisantes pour apporter les meilleures solutions face aux besoins métier\n - une curiosité technique et une envie de mettre la technique au service des besoins utilisateurs\n - une démarche d’amélioration continue (processus, métier, technique) permanente\n - l’envie de rejoindre des équipes investies et passionnées\n\nVos missions au quotidien seront :\n - La participation à l’élaboration des besoins métiers\n - L’estimation et la conception des solutions techniques\n - L’implémentation des solutions techniques\n - La livraison régulière des fonctionnalités ayant de la valeur métier\n - L’analyse et la correction d’anomalies\n - La participation à la validation des développements livrées (réalisation de tests unitaires, revue de code)\n\nNotre environnement technique :\n - BackEnd : Spring, Hibernate, Quarkus, Panache, Kafka\n - Bases de données : Oracle, ElasticSearch\n - FrontEnd : JavaFX\n - Architecture distribuée : Pattern CQRS\n - Concept DDD et architecture hexagonale\n - Outils : Gitlab, Maven, Jenkins (CI/CD automatisée), Jira, Confluence\n\nNotre environnement de travail :\n - Contexte Agile : SAFe, Lean Management, Kanban, …\n - Ambiance de travail collaborative",
-    "description_excerpt": "En quelques mots :\n\nVous intégrerez des projets qualitatifs aux modèles complexes dans lesquels vous serez pleinement investi et en phase avec ces éléments :\n - une volonté de livrer des applications de qualité au sein d’un environnement de production fiable et performant\n - une proximité constante avec les différents experts métiers et…",
-    "profile_excerpt": "• Expérience significative en développement Java dans des contextes similaires et titulaire d’un Bac+5 en informatique (type Master ou Ingénieur).\n - La maîtrise de l’ensemble des éléments de la stack technique n’est pas attendue, mais une bonne connaissance de l’écosystème Java…",
-    "experience": "5–7 ans",
-    "education_level": "bac_5",
-    "remote_detail": "hybride",
-    "apply_url": "https://job.mytalentplug.com/api/JobOffer/redirect/?id=7ab0ea6b-a6bc-4e06-aed7-5edff731c36e",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/IF0sc2NqrDk0ruGVHSmJP7VaunjHuMLdObN-JVLQX50/rs:auto:70::/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yNjY0LzE2OTQwOS85YmNkYmY0OS0xN2Y0LTQ5OTQtOWU0OC00MDgyMTAzZWE1NDcucG5n",
-    "benefits_preview": [
-      "Entre 1-2 jours de télétravail",
-      "RTT / Jour de repos",
-      "Intéressement",
-      "Participation",
-      "Plan d’épargne entreprise (PEE)",
-      "Forfait mobilité durable"
-    ],
-    "benefits_count": 14,
-    "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4094287",
@@ -24954,7 +24727,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4094286",
@@ -25015,7 +24788,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4094285",
@@ -25076,7 +24849,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:2854567",
@@ -25118,7 +24891,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4213660",
@@ -25169,7 +24942,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4090925",
@@ -25219,7 +24992,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4200317",
@@ -25266,7 +25039,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4200314",
@@ -25313,7 +25086,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4200311",
@@ -25363,7 +25136,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3283001",
@@ -25415,7 +25188,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3829043",
@@ -25486,7 +25259,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3828837",
@@ -25542,7 +25315,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3828807",
@@ -25595,7 +25368,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3829042",
@@ -25654,7 +25427,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3829002",
@@ -25706,7 +25479,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3828744",
@@ -25762,7 +25535,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:4083582",
@@ -25816,7 +25589,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:3921007",
@@ -25871,7 +25644,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   },
   {
     "id": "wttj:1128344",
@@ -25935,6 +25708,6 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-10-03T10:26:44+00:00"
+    "enriched_at": "2026-10-04T11:08:48+00:00"
   }
 ]

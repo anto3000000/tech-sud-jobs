@@ -1,8 +1,8 @@
 {
-  "last_generated_date": "2026-10-03",
+  "last_generated_date": "2026-10-04",
   "bucket_last_used": {
     "eng-13": "2026-10-02",
-    "eng-06": "2026-09-29",
+    "eng-06": "2026-10-04",
     "eng-83": "2026-10-02",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-03",
@@ -24,16 +24,6 @@
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-02",
     "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-02",
     "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-02",
-    "cma-cgm-digital-project-officer-product-owner-ports-terminals-b2eda5": "2026-09-19",
-    "cma-cgm-functional-hris-product-owner-c3c1f5": "2026-09-19",
-    "groupe-lr-technologies-product-owner-h-f-2243d8": "2026-09-19",
-    "scalian-product-owner-aix-en-provence-h-f-ba27ee": "2026-09-19",
-    "smile-chef-de-projet-it-product-owner-h-f-marseille-ace3a3": "2026-09-19",
-    "capgemini-consultante-consultant-fonctionnel-senior-sap-cd1e4b": "2026-09-19",
-    "onepoint-consultant-cloud-f-h-8380f6": "2026-09-19",
-    "sogeti-chef-de-projet-it-7ce75a": "2026-09-19",
-    "bpce-solutions-informatiques-chef-de-projet-si-f-h-lead-et-opportunite-15ba63": "2026-09-19",
-    "eskimoz-content-strategist-seo-geo-h-f-ad8672": "2026-09-19",
     "nexton-chef-de-projet-technique-supervision-h-f-ac8c87": "2026-09-20",
     "scalian-pmo-it-h-f-8635e7": "2026-09-20",
     "dishop-account-growth-manager-foodtech-d76145": "2026-09-20",
@@ -121,7 +111,12 @@
     "onatera-alternante-developpement-produit-et-reglementaire-complements-dd07b8": "2026-10-03",
     "sopra-steria-developpeur-euse-experimente-e-java-angular-sophia-antipo-026a59": "2026-10-03",
     "sogelink-developpeur-projet-h-f-0a0b49": "2026-10-03",
-    "alan-fullstack-software-engineer-x-f-m-c84ca6": "2026-10-03"
+    "alan-fullstack-software-engineer-x-f-m-c84ca6": "2026-10-03",
+    "alten-cpp-developer-2836b6": "2026-10-04",
+    "alten-developpeur-java-h-f-spring-boot-quarkus-e85921": "2026-10-04",
+    "thales-design-authority-solution-logiciel-logiciel-embarque-bancs-de-t-a77f9c": "2026-10-04",
+    "thales-ingenieur-developpement-confirme-cpp-systemes-critiques-f-h-45868f": "2026-10-04",
+    "schneider-electric-ingenieur-full-stack-f-h-8c0bfb": "2026-10-04"
   },
   "last_published_date": "2026-10-03"
 }
