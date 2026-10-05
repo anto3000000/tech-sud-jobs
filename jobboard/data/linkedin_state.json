@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-10-04",
+  "last_generated_date": "2026-10-05",
   "bucket_last_used": {
     "eng-13": "2026-10-02",
     "eng-06": "2026-10-04",
@@ -11,7 +11,7 @@
     "data-83": "2026-10-01",
     "data-paca": "2026-10-02",
     "data-84": "2026-10-02",
-    "product-13": "2026-09-19",
+    "product-13": "2026-10-05",
     "tech-adjacent-13": "2026-09-19",
     "tech-adjacent-06": "2026-09-20",
     "product-paca": "2026-09-21",
@@ -24,11 +24,6 @@
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-02",
     "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-02",
     "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-02",
-    "nexton-chef-de-projet-technique-supervision-h-f-ac8c87": "2026-09-20",
-    "scalian-pmo-it-h-f-8635e7": "2026-09-20",
-    "dishop-account-growth-manager-foodtech-d76145": "2026-09-20",
-    "exalt-consultant-e-chef-de-projet-moa-comptabilite-h-f-37290d": "2026-09-20",
-    "odhcom-freelancerepublik-charge-de-recrutement-it-talent-advocate-h-f-846d53": "2026-09-20",
     "cma-cgm-global-product-owner-specialist-eb1024": "2026-09-21",
     "airbus-helicopters-logiciel-r-d-digitalcampus-sap-product-manager-prod-068701": "2026-09-21",
     "cma-cgm-global-product-owner-senior-supervisor-m-f-cma-cgm-head-office-6c2ac4": "2026-09-21",
@@ -116,7 +111,12 @@
     "alten-developpeur-java-h-f-spring-boot-quarkus-e85921": "2026-10-04",
     "thales-design-authority-solution-logiciel-logiciel-embarque-bancs-de-t-a77f9c": "2026-10-04",
     "thales-ingenieur-developpement-confirme-cpp-systemes-critiques-f-h-45868f": "2026-10-04",
-    "schneider-electric-ingenieur-full-stack-f-h-8c0bfb": "2026-10-04"
+    "schneider-electric-ingenieur-full-stack-f-h-8c0bfb": "2026-10-04",
+    "cgi-product-owner-f-h-4d5824": "2026-10-05",
+    "airbus-helicopters-logiciel-r-d-it-product-manager-quality-application-16bff3": "2026-10-05",
+    "cma-cgm-global-product-owner-support-specialist-38dab7": "2026-10-05",
+    "airbus-helicopters-logiciel-r-d-extended-enterprise-product-manager-m-13e965": "2026-10-05",
+    "alan-product-builder-sales-ai-cadb36": "2026-10-05"
   },
   "last_published_date": "2026-10-04"
 }
