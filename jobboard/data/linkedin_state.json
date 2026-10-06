@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-10-05",
+  "last_generated_date": "2026-10-06",
   "bucket_last_used": {
     "eng-13": "2026-10-02",
     "eng-06": "2026-10-04",
@@ -12,7 +12,7 @@
     "data-paca": "2026-10-02",
     "data-84": "2026-10-02",
     "product-13": "2026-10-05",
-    "tech-adjacent-13": "2026-09-19",
+    "tech-adjacent-13": "2026-10-06",
     "tech-adjacent-06": "2026-09-20",
     "product-paca": "2026-09-21",
     "tech-adjacent-paca": "2026-09-21",
@@ -24,16 +24,7 @@
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-02",
     "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-02",
     "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-02",
-    "cma-cgm-global-product-owner-specialist-eb1024": "2026-09-21",
-    "airbus-helicopters-logiciel-r-d-digitalcampus-sap-product-manager-prod-068701": "2026-09-21",
-    "cma-cgm-global-product-owner-senior-supervisor-m-f-cma-cgm-head-office-6c2ac4": "2026-09-21",
-    "scalian-product-owner-avignon-h-f-00642b": "2026-09-21",
-    "scalian-product-owner-toulon-h-f-618128": "2026-09-21",
-    "alan-pre-sales-sales-engineer-5d91d4": "2026-09-21",
-    "capgemini-consultante-consultant-en-transformation-digitale-stage-cd045c": "2026-09-21",
-    "capgemini-consultante-consultant-transformation-digitale-et-ia-9d056a": "2026-09-21",
     "mc2i-consultant-en-transformation-numerique-industrie-toulon-h-f-f8ca75": "2026-09-22",
-    "n2jsoft-consultant-fonctionnel-confirme-h-f-cc0432": "2026-09-21",
     "cea-ingenieur-d-affaires-moe-realisation-d-installation-nucleaire-h-f-973ba6": "2026-09-22",
     "groupe-orlade-pmo-it-85af00": "2026-09-22",
     "la-poste-groupe-test-ne-pas-postuler-chef-de-projet-si-f-h-098d8f": "2026-09-22",
@@ -116,7 +107,12 @@
     "airbus-helicopters-logiciel-r-d-it-product-manager-quality-application-16bff3": "2026-10-05",
     "cma-cgm-global-product-owner-support-specialist-38dab7": "2026-10-05",
     "airbus-helicopters-logiciel-r-d-extended-enterprise-product-manager-m-13e965": "2026-10-05",
-    "alan-product-builder-sales-ai-cadb36": "2026-10-05"
+    "alan-product-builder-sales-ai-cadb36": "2026-10-05",
+    "capgemini-consultante-consultant-fonctionnel-plm-stage-83bf62": "2026-10-06",
+    "airbus-helicopters-logiciel-r-d-2027-charge-e-de-digitalisation-et-sup-5cf2ef": "2026-10-06",
+    "airbus-helicopters-logiciel-r-d-2027-conduit-au-changement-erp-industr-7bc9d2": "2026-10-06",
+    "capgemini-consultant-consultante-fonctionnel-le-oracle-erp-cloud-423c3d": "2026-10-06",
+    "la-plateforme-responsable-ia-automatisation-avant-vente-delivery-h-f-834ef3": "2026-10-06"
   },
   "last_published_date": "2026-10-05"
 }
