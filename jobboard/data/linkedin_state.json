@@ -1,7 +1,7 @@
 {
-  "last_generated_date": "2026-10-07",
+  "last_generated_date": "2026-10-08",
   "bucket_last_used": {
-    "eng-13": "2026-10-02",
+    "eng-13": "2026-10-08",
     "eng-06": "2026-10-04",
     "eng-83": "2026-10-02",
     "eng-84": "2026-09-18",
@@ -103,7 +103,12 @@
     "nalios-france-consultant-e-fonctionnel-odoo-69a267": "2026-10-07",
     "deloitte-ou-alternance-consultant-informatique-et-financement-de-l-inn-ed2ec1": "2026-10-07",
     "thales-senior-consultant-cloud-finops-h-f-5fd74b": "2026-10-07",
-    "nexton-chef-de-projet-technique-supervision-h-f-ac8c87": "2026-10-07"
+    "nexton-chef-de-projet-technique-supervision-h-f-ac8c87": "2026-10-07",
+    "scalian-developpeur-python-h-f-2c2242": "2026-10-08",
+    "thales-ingenieur-developpement-logiciel-embarque-pour-l-iot-f-h-5f0544": "2026-10-08",
+    "thales-responsable-plateforme-logiciel-embarque-et-validation-systeme-de5775": "2026-10-08",
+    "assystem-ingenieur-developpement-systeme-temps-reel-h-f-00d0d9": "2026-10-08",
+    "groupe-lr-technologies-developpeur-full-stack-java-react-nodejs-h-f-6e6fc1": "2026-10-08"
   },
   "last_published_date": "2026-10-07"
 }
