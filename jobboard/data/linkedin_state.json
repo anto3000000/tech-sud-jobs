@@ -5,7 +5,7 @@
     "eng-06": "2026-10-04",
     "eng-83": "2026-10-09",
     "eng-84": "2026-09-18",
-    "eng-paca": "2026-10-03",
+    "eng-paca": "2026-10-09",
     "data-13": "2026-09-30",
     "data-06": "2026-09-30",
     "data-83": "2026-10-01",
@@ -113,7 +113,12 @@
     "naval-group-fr-ingenieur-developpeur-software-h-f-cd90fa": "2026-10-09",
     "scalian-developpeur-cpp-senior-h-f-ba09db": "2026-10-09",
     "scalian-ingenieur-electronique-f-h-715b41": "2026-10-09",
-    "the-adecco-group-chef-de-projet-senior-software-embarque-h-f-bca15d": "2026-10-09"
+    "the-adecco-group-chef-de-projet-senior-software-embarque-h-f-bca15d": "2026-10-09",
+    "airbus-helicopters-logiciel-r-d-2027-stage-en-developpement-d-applicat-aaea3c": "2026-10-09",
+    "airbus-helicopters-logiciel-r-d-2027-support-et-developpement-installa-19e8a7": "2026-10-09",
+    "cea-physicien-developpement-de-scenarios-plasma-pour-les-machines-actu-8f5b8c": "2026-10-09",
+    "scalian-developpeur-labview-h-f-256788": "2026-10-09",
+    "naval-group-fr-ingenieur-e-systemes-embarques-armes-et-conduite-des-ar-a4ca91": "2026-10-09"
   },
   "last_published_date": "2026-10-09"
 }

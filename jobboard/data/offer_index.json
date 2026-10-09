@@ -633,11 +633,21 @@
 "category": "eng",
 "city": "Marseille",
 "company": "Airbus Helicopters (Logiciel / R&D)",
-"expired_at": null,
+"expired_at": "2026-10-09",
 "facet_slug": "eng-marseille",
 "first_seen": "2026-10-05",
 "last_seen": "2026-10-09",
 "title": "2027 - Support et développement ingénieur (F/H)"
+},
+"airbus-helicopters-logiciel-r-d-2027-support-et-developpement-installa-19e8a7": {
+"category": "eng",
+"city": "Marseille",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-10-09",
+"last_seen": "2026-10-09",
+"title": "2027 - Support et développement  : Installation d'essai en vol (F/H)"
 },
 "airbus-helicopters-logiciel-r-d-3d-production-manager-for-h160-tech-da-848649": {
 "category": "data",
@@ -1999,11 +2009,21 @@
 "last_seen": "2026-09-18",
 "title": "Architecte systèmes de systèmes F/H"
 },
-"atos-business-analyst-experimente-f-h-c6c3cf": {
+"atos-business-analyst-experimente-f-h-bf1878": {
 "category": "data",
 "city": "Valbonne",
 "company": "Atos",
 "expired_at": null,
+"facet_slug": "data-valbonne",
+"first_seen": "2026-10-09",
+"last_seen": "2026-10-09",
+"title": "Business Analyst Expérimenté (F/H)"
+},
+"atos-business-analyst-experimente-f-h-c6c3cf": {
+"category": "data",
+"city": "Valbonne",
+"company": "Atos",
+"expired_at": "2026-10-09",
 "facet_slug": "data-valbonne",
 "first_seen": "2026-09-09",
 "last_seen": "2026-10-09",
@@ -2023,9 +2043,19 @@
 "category": "cybersecurite",
 "city": "Aix-en-Provence",
 "company": "Atos",
-"expired_at": null,
+"expired_at": "2026-10-09",
 "facet_slug": "cybersecurite-aix-en-provence",
 "first_seen": "2026-09-09",
+"last_seen": "2026-10-09",
+"title": "Consultant CyberSécurité Sénior (F/H)"
+},
+"atos-consultant-cybersecurite-senior-f-h-5a64ad": {
+"category": "cybersecurite",
+"city": "Aix-en-Provence",
+"company": "Atos",
+"expired_at": null,
+"facet_slug": "cybersecurite-aix-en-provence",
+"first_seen": "2026-10-09",
 "last_seen": "2026-10-09",
 "title": "Consultant CyberSécurité Sénior (F/H)"
 },
@@ -2208,6 +2238,16 @@
 "first_seen": "2026-09-05",
 "last_seen": "2026-09-15",
 "title": "Ingénieur Expert en Cybersécurité des Systèmes H/F"
+},
+"atos-ingenieur-production-applicative-devops-f-h-27c0c0": {
+"category": "devops",
+"city": "Aix-en-Provence",
+"company": "Atos",
+"expired_at": null,
+"facet_slug": "devops-aix-en-provence",
+"first_seen": "2026-10-09",
+"last_seen": "2026-10-09",
+"title": "Ingénieur Production Applicative / DevOps (F/H)"
 },
 "atos-ingenieur-production-applicative-devops-f-h-34be25": {
 "category": "devops",
@@ -4063,7 +4103,7 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": null,
+"expired_at": "2026-10-09",
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-26",
 "last_seen": "2026-10-09",
@@ -4423,10 +4463,10 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": "2026-10-09",
+"expired_at": null,
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-18",
-"last_seen": "2026-10-08",
+"last_seen": "2026-10-09",
 "title": "Group Data Protection Officer"
 },
 "cma-cgm-group-it-business-analysis-45784b": {
@@ -4503,7 +4543,7 @@
 "category": "data",
 "city": "Marseille",
 "company": "CMA CGM",
-"expired_at": null,
+"expired_at": "2026-10-09",
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-25",
 "last_seen": "2026-10-09",
@@ -9443,7 +9483,7 @@
 "category": "eng",
 "city": "Biot",
 "company": "Orange",
-"expired_at": null,
+"expired_at": "2026-10-09",
 "facet_slug": "eng-biot",
 "first_seen": "2026-09-22",
 "last_seen": "2026-10-09",
@@ -9533,7 +9573,7 @@
 "category": "data",
 "city": "Marseille",
 "company": "Orange",
-"expired_at": null,
+"expired_at": "2026-10-09",
 "facet_slug": "data-marseille",
 "first_seen": "2026-09-26",
 "last_seen": "2026-10-09",
@@ -9543,7 +9583,7 @@
 "category": "tech-adjacent",
 "city": "Aix-en-Provence",
 "company": "Orange",
-"expired_at": null,
+"expired_at": "2026-10-09",
 "facet_slug": "tech-adjacent-aix-en-provence",
 "first_seen": "2026-09-26",
 "last_seen": "2026-10-09",
