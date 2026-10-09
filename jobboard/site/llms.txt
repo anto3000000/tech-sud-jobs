@@ -1,6 +1,6 @@
 # sudtechjobs
 
-> Agrégateur d'offres d'emploi tech (dev, data, produit, design, stages et alternances) des entreprises de Provence-Alpes-Côte d'Azur, de Marseille à Sophia-Antipolis. 728 offres en ligne, mises à jour chaque jour. Chaque offre renvoie vers la page carrière de l'employeur.
+> Agrégateur d'offres d'emploi tech (dev, data, produit, design, stages et alternances) des entreprises de Provence-Alpes-Côte d'Azur, de Marseille à Sophia-Antipolis. 737 offres en ligne, mises à jour chaque jour. Chaque offre renvoie vers la page carrière de l'employeur.
 
 ## Données
 
@@ -19,6 +19,7 @@
 - [Entreprises tech qui recrutent à Toulon](https://sudtechjobs.com/entreprises-qui-recrutent/toulon.html): employeurs, ESN ou direct, métiers recherchés
 - [Entreprises tech qui recrutent à Cannes](https://sudtechjobs.com/entreprises-qui-recrutent/cannes.html): employeurs, ESN ou direct, métiers recherchés
 - [Entreprises tech qui recrutent à Avignon](https://sudtechjobs.com/entreprises-qui-recrutent/avignon.html): employeurs, ESN ou direct, métiers recherchés
+- [Baromètre mensuel](https://sudtechjobs.com/barometre/): l'emploi tech en PACA mois par mois (offres, métiers, villes, recruteurs, salaires)
 - [Chiffres clés](https://sudtechjobs.com/dashboard.html): instantané du marché (volumes, télétravail, salaires, top recruteurs)
 
 ## Guides

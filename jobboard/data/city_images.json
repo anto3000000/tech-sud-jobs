@@ -98,6 +98,14 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/La_Penne-sur-Huveaune.JPG/1280px-La_Penne-sur-Huveaune.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
+  "Manosque": {
+    "checked_at": 1791558041.5580728,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Manosque.JPG",
+    "file": "Manosque.JPG",
+    "height": 900,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Manosque.JPG/1280px-Manosque.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 1200
+  },
   "Marignane": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Chapelle_Notre_Dame_de_Piti%C3%A9_-_Marignane_%2813%29.JPG",
@@ -190,7 +198,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1791554718.2660234,
+    "checked_at": 1791558041.5580728,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,

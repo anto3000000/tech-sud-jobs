@@ -197,7 +197,7 @@
 "category": "data",
 "city": "Remote",
 "company": "Alan",
-"contract": "CDD",
+"contract": "CDI",
 "first_seen": "2026-09-08",
 "last_seen": "2026-10-09",
 "remote": "remote",
@@ -296,7 +296,7 @@
 "category": "data",
 "city": "Remote",
 "company": "Alan",
-"contract": "CDD",
+"contract": "CDI",
 "first_seen": "2026-09-05",
 "last_seen": "2026-10-09",
 "remote": "remote",
@@ -2945,6 +2945,16 @@
 "source": "phenom",
 "title": "Business Analyst F/H"
 },
+"ats:phenom:d8d3dbee46": {
+"category": "tech-adjacent",
+"city": "Marseille",
+"company": "Orange",
+"contract": "CDD",
+"first_seen": "2026-10-09",
+"last_seen": "2026-10-09",
+"source": "phenom",
+"title": "Ingénieur Avant-Vente Interopérabilité H/F"
+},
 "ats:phenom:eb8d1060ce": {
 "category": "data",
 "city": "Marseille",
@@ -3134,6 +3144,16 @@
 "last_seen": "2026-10-08",
 "source": "smartrecruiters",
 "title": "Ingénieur / Développeur LabVIEW (H/F)"
+},
+"ats:smartrecruiters:2048760fa9": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Alten",
+"contract": "CDI",
+"first_seen": "2026-10-09",
+"last_seen": "2026-10-09",
+"source": "smartrecruiters",
+"title": "Developpeur JAVA / Architect JAVA"
 },
 "ats:smartrecruiters:3b1bba4e9c": {
 "category": "cybersecurite",
@@ -14571,6 +14591,16 @@
 "last_seen": "2026-10-09",
 "source": "wttj",
 "title": "Business Analyst Expérimenté (F/H)"
+},
+"wttj:4322260": {
+"category": "eng",
+"city": "Manosque",
+"company": "L’Occitane",
+"contract": "Stage",
+"first_seen": "2026-10-09",
+"last_seen": "2026-10-09",
+"source": "wttj",
+"title": "Robotique, Automatisation et Excellence Opérationnelle H/F"
 },
 "wttj:810351": {
 "category": "tech-adjacent",
