@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Emplois tech, dev, data &amp; product en PACA — sudtechjobs</title>
-<meta name="description" content="Les offres dev, data, produit &amp; design des boîtes tech de Provence-Alpes-Côte d'Azur. De Marseille à Sophia-Antipolis, sans passer par Paris.">
+<title>Emploi tech &amp; informatique en PACA : dev, data, produit | sudtechjobs</title>
+<meta name="description" content="739 offres d'emploi tech et informatique en PACA : développeur, data, IT, produit &amp; design à Marseille, Aix-en-Provence, Nice, Sophia Antipolis, Toulon. Mis à jour chaque jour.">
 <link rel="canonical" href="https://sudtechjobs.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="sudtechjobs — le job board tech du sud de la France">
-<meta property="og:description" content="Les offres dev, data, produit &amp; design des boîtes tech de PACA. De Marseille à Sophia-Antipolis, sans passer par Paris.">
+<meta property="og:title" content="Emplois tech en PACA : développeur, data, IT, produit &amp; design — sudtechjobs">
+<meta property="og:description" content="Les offres d'emploi tech et informatique de PACA, de Marseille à Sophia Antipolis, sans passer par Paris. Mis à jour chaque jour.">
 <meta property="og:url" content="https://sudtechjobs.com/">
 <meta name="twitter:card" content="summary">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="sitemap" type="application/xml" href="sitemap.xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"sudtechjobs","url":"https://sudtechjobs.com/","description":"Job board tech, data, produit & design de Provence-Alpes-Côte d'Azur — Marseille, Aix, Sophia-Antipolis, Nice, Toulon."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"sudtechjobs","url":"https://sudtechjobs.com/","description":"Offres d'emploi tech et informatique en Provence-Alpes-Côte d'Azur : développeur, data, IT, produit & design à Marseille, Aix-en-Provence, Nice, Sophia Antipolis, Toulon."}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -62,6 +62,10 @@
   header h1{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:21px;line-height:1.35;
     margin:18px 0 6px;max-width:46ch;letter-spacing:-.01em;text-wrap:balance}
   header h1 em{font-style:normal;color:var(--brand-ink)}
+  header .lede{margin:0 0 4px;max-width:70ch;font-size:13.5px;line-height:1.55;color:var(--muted)}
+  header .lede b{color:var(--ink)}
+  header .lede a{color:var(--brand-ink);text-decoration:underline;text-underline-offset:2px;
+    text-decoration-color:color-mix(in srgb,currentColor 35%,transparent)}
 
   .controls{position:sticky;top:0;z-index:8;margin:0 -20px;padding:12px 20px 14px;
     background:var(--iris), color-mix(in srgb,var(--bg) 94%,transparent);
@@ -216,6 +220,8 @@
   #cookie-notice button:hover{border-color:var(--brand)}
   @media (max-width:520px){
     header h1{font-size:11px;line-height:1.5;margin:12px 0 4px;max-width:none}
+    header .lede{font-size:11px;line-height:1.5}
+    header .lede a{display:none}
     .search + .row{margin-top:18px}
     .count{white-space:nowrap}
     .count .upd{display:none}
@@ -289,7 +295,8 @@
       <span class="wm">sudtechjobs<i>.</i></span>
       <span class="rb">RÉGION · PACA</span>
     </div>
-    <h1>Les offres <em>dev, data, produit &amp; design</em> des boîtes tech du sud. De Marseille à Sophia-Antipolis, sans passer par Paris.</h1>
+    <h1>Emplois tech en PACA&nbsp;: <em>développeur, data, IT, produit &amp; design</em></h1>
+    <p class="lede"><b id="heroCount">739</b> offres d'emploi tech à Marseille, Aix-en-Provence, Nice, Sophia Antipolis, Toulon et partout en Provence-Alpes-Côte d'Azur. Directement chez les boîtes tech du sud, sans passer par Paris. <a href="/methodologie.html">Comment les offres sont collectées</a></p>
   </header>
 
   <div class="controls">
@@ -872,6 +879,7 @@ fetch("jobs.json",{cache:"no-store"}).then(r=>r.json()).then(feed=>{
   JOBS = feed.jobs||[];
   UPDATED = feed.generated_at || "";
   $("#load").hidden = true;
+  if (feed.count) $("#heroCount").textContent = feed.count;
   const d = new Date(feed.generated_at);
   $("#foot").innerHTML = `${feed.count} offres · ${feed.companies} entreprises · `+
     `màj ${relDate(feed.generated_at)}`+

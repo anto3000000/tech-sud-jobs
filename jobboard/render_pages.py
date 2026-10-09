@@ -658,6 +658,12 @@ li.job[hidden]{display:none}
 .ed-note{font-size:12.5px;color:var(--muted);margin:6px 0 0}
 .ed-note b{color:var(--ink)}
 .list-title{font-size:18px;margin:30px 0 12px}
+.faq{margin:30px 0 8px}
+.faq h2{font-size:18px;margin:0 0 4px}
+.faq h3{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;margin:18px 0 6px;text-wrap:balance}
+.faq p{margin:0;font-size:14px;line-height:1.65}
+.faq p.ed-note{margin-top:16px;font-size:12.5px}
+.faq a{color:var(--brand-ink)}
 """
 
 
@@ -713,6 +719,7 @@ def shell(*, title, description, canonical, head_extra="", body, body_class=""):
   Écrivez-moi, ça fait toujours plaisir 🫰
   <a href="mailto:hello@sudtechjobs.com">✉️ hello@sudtechjobs.com</a>
   <br><br><a href="/a-propos.html">À propos</a> ·
+  <a href="/methodologie.html">Méthodologie</a> ·
   <a href="/mentions-legales.html">Mentions légales</a> ·
   <a href="/cgu.html">CGU</a> ·
   <a href="/confidentialite.html">Confidentialité</a>
@@ -1451,6 +1458,196 @@ def _facet_editorial(jobs, ctx, live_facets):
     return lead_html, sections_html, desc
 
 
+# --------------------------------------------------------------------------- #
+#  facet FAQ  (questions searchers actually type, answered from the data)     #
+# --------------------------------------------------------------------------- #
+# Only on the head landing pages (ville / département / métier / techno): the
+# combo pages (métier×ville...) would repeat the same questions with thinner
+# answers. Every answer is computed from the live jobs, and a question whose
+# data is too thin to answer is dropped rather than padded.
+FAQ_KINDS = ("ville", "département", "métier", "techno")
+# métier -> (noun for "emplois X", "un X" for the salary question)
+FAQ_CAT = {
+    "eng": ("développeur", "un développeur"), "devops": ("DevOps / SRE", "un DevOps / SRE"),
+    "cybersecurite": ("cybersécurité", "un poste en cybersécurité"),
+    "architecte": ("architecte", "un architecte"), "qa": ("QA / test", "un poste QA / test"),
+    "data": ("data / IA", "un poste data / IA"), "product": ("product manager", "un product manager"),
+    "design": ("design / UX", "un designer"), "tech-adjacent": ("IT & support", "un poste IT & support"),
+}
+
+
+def _salary_quartiles(jobs):
+    mids = sorted((lo + hi) / 2 for p in (_parse_salary_eur(j.get("salary")) for j in jobs)
+                  if p for lo, hi in [p])
+    if len(mids) < MIN_SAMPLE:
+        return len(mids), None
+    return len(mids), statistics.quantiles(mids, n=4, method="inclusive")
+
+
+def _faq_salary(jobs, where):
+    k, qs = _salary_quartiles(jobs)
+    if not qs:
+        return None
+    q1, med, q3 = qs
+    return ("<p>D’après les %d offres %s qui affichent un salaire, le salaire médian est de "
+            "<b>%s brut/an</b>&nbsp;; la moitié centrale des offres se situe entre %s et %s. "
+            "Ce sont les montants annoncés par les employeurs, pas des salaires réellement "
+            'perçus. <a href="/guide-salaires-tech-paca.html">Détail par métier et '
+            "expérience</a>.</p>" % (k, where, _fmt_keur(med), _fmt_keur(q1), _fmt_keur(q3)))
+
+
+def _faq_companies(jobs, n_show=6):
+    counts = Counter(j.get("company") for j in jobs if j.get("company"))
+    if len(counts) < 2:
+        return None
+    slugs = {j["company"]: j["_company_slug"] for j in jobs
+             if j.get("company") and j.get("_company_slug")}
+    items = []
+    for c, v in counts.most_common(n_show):
+        name = ('<a href="../entreprise/%s.html">%s</a>' % (slugs[c], esc(c))
+                if c in slugs else esc(c))
+        items.append("%s (%s)" % (name, _plural(v, "offre")))
+    return ("<p>%s entreprises publient en ce moment. Les plus actives&nbsp;: %s.</p>"
+            % (len(counts), _fr_join(items)))
+
+
+def _faq_cities(jobs, live_facets, prefix=""):
+    counts = Counter()
+    for j in jobs:
+        c = j.get("city")
+        if _is_real_city(c):
+            counts["Marseille" if c == "Marseille Area" else c] += 1
+    top = [(c, v) for c, v in counts.most_common(5) if v >= 2]
+    if len(top) < 2:
+        return None
+    items = []
+    for c, v in top:
+        h = next((x for x in (prefix and "%s-%s" % (prefix, slugify(c)), slugify(c))
+                  if x and x in live_facets), None)
+        name = '<a href="%s.html">%s</a>' % (h, esc(c)) if h else esc(c)
+        items.append("%s (%d)" % (name, v))
+    remote = sum(1 for j in jobs if j.get("city") == "Remote")
+    tail = (" %s en télétravail complet." % _plural(remote, "offre")) if remote else ""
+    return "<p>Les offres se concentrent à %s.%s</p>" % (_fr_join(items), tail)
+
+
+def _facet_faq(jobs, kind, ctx, live_facets):
+    """[(question, answer_html), ...] for a head facet page, [] otherwise."""
+    if kind not in FAQ_KINDS:
+        return []
+    n = len(jobs)
+    faq = []
+    if kind in ("ville", "département"):
+        at = ctx["at"]   # "à Marseille" / "dans les Bouches-du-Rhône"
+        city = ctx.get("city")
+        cats = Counter(j.get("category") for j in jobs if j.get("category"))
+        if len(cats) >= 2:
+            items = []
+            for c, v in cats.most_common(5):
+                h = city and "%s-%s" % (slugify(c), slugify(city))
+                lbl = esc(CAT_LABEL.get(c, c))
+                lbl = '<a href="%s.html">%s</a>' % (h, lbl) if h and h in live_facets else lbl
+                items.append("%s (%d)" % (lbl, v))
+            faq.append(("Quels métiers tech recrutent %s ?" % at,
+                        "<p>Sur les %d offres tech ouvertes %s, les métiers qui recrutent le "
+                        "plus sont %s.</p>" % (n, esc(at), _fr_join(items))))
+        dev = [j for j in jobs if j.get("category") == "eng"]
+        a = _faq_salary(dev, "de développeur " + esc(at))
+        if a:
+            faq.append(("Combien gagne un développeur %s ?" % at, a))
+        else:
+            a = _faq_salary(jobs, "tech " + esc(at))
+            if a:
+                faq.append(("Quel salaire pour un emploi tech %s ?" % at, a))
+        a = _faq_companies(jobs)
+        if a:
+            faq.append(("Quelles entreprises recrutent dans la tech %s ?" % at, a))
+        b = Counter(_remote_bucket(j) or ("remote" if j.get("city") == "Remote" else None)
+                    for j in jobs)
+        known = n - b[None]
+        if known >= MIN_SAMPLE:
+            some = b["remote"] + b["hybride"] + b["ponctuel"]
+            parts = ["%d %s" % (b[k], lbl) for k, lbl in (
+                ("remote", "en full remote"), ("hybride", "en hybride"),
+                ("ponctuel", "en télétravail ponctuel")) if b[k]]
+            link = (' <a href="teletravail.html">Toutes les offres tech en télétravail</a>.'
+                    if "teletravail" in live_facets else "")
+            if some:
+                ans = ("Oui. Parmi les %d offres qui précisent leur politique, %d proposent du "
+                       "télétravail&nbsp;: %s." % (known, some, _fr_join(parts)))
+            else:
+                ans = ("Pas pour l’instant&nbsp;: les %d offres qui précisent leur politique "
+                       "sont sur site." % known)
+            if some and b["sur site"]:
+                ans += " %d %s sur site." % (b["sur site"], "sont" if b["sur site"] > 1 else "est")
+            faq.append(("Y a-t-il des emplois tech en télétravail %s ?" % at,
+                        "<p>%s%s</p>" % (ans, link)))
+    elif kind == "métier":
+        cat = ctx["cat"]
+        noun, who = FAQ_CAT.get(cat, (CAT_LABEL.get(cat, cat), "un poste " + CAT_LABEL.get(cat, cat)))
+        a = _faq_cities(jobs, live_facets, prefix=slugify(cat))
+        if a:
+            faq.append(("Où sont les emplois %s en PACA ?" % noun, a))
+        a = _faq_salary(jobs, esc(noun) + " en PACA")
+        if a:
+            faq.append(("Quel salaire pour %s en PACA ?" % who, a))
+        stacks = Counter(s for j in jobs for s in (j.get("stack") or [])
+                         if slugify(s) not in STACK_DENY)
+        top = [(s, v) for s, v in stacks.most_common(8) if v >= 2]
+        if len(top) >= 3:
+            with_stack = sum(1 for j in jobs if j.get("stack"))
+            items = []
+            for st, v in top:
+                h = "stack-" + slugify(st)
+                items.append("%s (%d)" % ('<a href="%s.html">%s</a>' % (h, esc(st))
+                                          if h in live_facets else esc(st), v))
+            faq.append(("Quelles technologies sont les plus demandées pour les postes %s ?" % noun,
+                        "<p>Sur les %d offres %s dont la stack est connue, les technologies les "
+                        "plus citées sont %s.</p>" % (with_stack, esc(noun), _fr_join(items))))
+        a = _faq_companies(jobs)
+        if a:
+            faq.append(("Quelles entreprises recrutent des profils %s en PACA ?" % noun, a))
+    elif kind == "techno":
+        st = ctx["stack"]
+        a = _faq_companies(jobs)
+        if a:
+            faq.append(("Quelles entreprises recrutent des profils %s en PACA ?" % st, a))
+        a = _faq_cities(jobs, live_facets, prefix="stack-" + slugify(st))
+        if a:
+            faq.append(("Où trouver des emplois %s en PACA ?" % st,
+                        a[:-4] + " Toutes sont listées sur cette page, mise à jour chaque "
+                        "jour.</p>"))
+        a = _faq_salary(jobs, "mentionnant " + esc(st) + " en PACA")
+        if a:
+            faq.append(("Quel salaire pour un poste %s en PACA ?" % st, a))
+        cats = Counter(j.get("category") for j in jobs if j.get("category"))
+        if len(cats) >= 2:
+            faq.append(("Quels métiers demandent %s ?" % st,
+                        "<p>%s apparaît surtout dans des offres %s.</p>" % (esc(st), _fr_join(
+                            "%s (%d)" % (esc(CAT_LABEL.get(c, c)), v)
+                            for c, v in cats.most_common(4)))))
+    return faq
+
+
+def _faq_html_ld(faq):
+    if not faq:
+        return "", None
+    html = ('<section class="card faq" id="faq"><h2>Questions fréquentes</h2>%s'
+            '<p class="ed-note">Réponses calculées à partir des offres en ligne, '
+            'recalculées chaque jour. <a href="/methodologie.html">Méthodologie</a>.</p>'
+            "</section>" % "".join("<h3>%s</h3>%s" % (esc(q), a) for q, a in faq))
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question", "name": q,
+            "acceptedAnswer": {"@type": "Answer",
+                               "text": re.sub(r"<[^>]+>", "", a).replace("&nbsp;", " ")},
+        } for q, a in faq],
+    }
+    return html, ld
+
+
 def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=None,
                   city_image=None, live_facets=None, history=None, ctx=None):
     canonical = "%s/emploi/%s.html" % (SITE_URL, slug)
@@ -1479,6 +1676,7 @@ def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=
                   "tech_q": "Quelles technologies sont demandées ?",
                   "list_h2": "Les offres actuellement ouvertes"}
     ed_lead, ed_sections, desc = _facet_editorial(jobs, ctx, live_facets or {})
+    faq_html, faq_ld = _faq_html_ld(_facet_faq(jobs, kind, ctx, live_facets or {}))
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Emplois</a> › {h1}</nav>
 {header}
@@ -1488,13 +1686,14 @@ def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=
 {ed_sections}
 <h2 class="list-title" id="offres">{list_h2}</h2>
 <ul class="jobs">{lis}</ul>
+{faq}
 {facets}
 """.format(home=SITE_URL + "/", hub=SITE_URL + "/emploi/", h1=esc(h1), header=header,
-           intro=esc(intro), facets=facet_html, lis=lis, ed_lead=ed_lead,
+           intro=esc(intro), facets=facet_html, lis=lis, ed_lead=ed_lead, faq=faq_html,
            stats_headline=stats_headline, ed_sections=ed_sections,
            list_h2=esc(ctx["list_h2"]), n=len(jobs), s="s" if len(jobs) > 1 else "")
-    return shell(title=facet_title(h1, jobs), description=desc,
-                 canonical=canonical, head_extra=jsonld(ld), body=body)
+    return shell(title=facet_title(h1, jobs), description=desc, canonical=canonical,
+                 head_extra=jsonld(ld) + (jsonld(faq_ld) if faq_ld else ""), body=body)
 
 
 # short labels for the city list in PACA-wide facet titles; Valbonne/Biot are
@@ -1833,6 +2032,8 @@ disparaît ;</li>
 <li>chaque offre renvoie vers l'annonce d'origine pour postuler. Je ne reçois
 aucune candidature et aucun CV.</li>
 </ul>
+<p>Le détail (sources, fréquence, déduplication, salaires, télétravail,
+technologies) est sur la page <a href="/methodologie.html">méthodologie</a>.</p>
 <p>Je ne suis affilié à aucune des entreprises listées. Une offre en trop, une
 erreur, une demande de retrait&nbsp;? Écrivez à
 <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>, je corrige vite.</p>
@@ -1875,6 +2076,205 @@ def render_about():
         title="À propos | sudtechjobs",
         description="Qui est derrière sudtechjobs, pourquoi le site existe et d'où "
                     "viennent les offres d'emploi tech du sud de la France.",
+        canonical=canonical, head_extra=jsonld(ld), body=body)
+
+
+# --------------------------------------------------------------------------- #
+#  methodology  (/methodologie.html — how the data is collected and cleaned)  #
+# --------------------------------------------------------------------------- #
+# The wording mirrors what the pipeline actually does (build.py, classify.py,
+# wttj_enrich.py, the tombstones above): change one, change the other. The
+# numbers in it are recomputed on every build.
+METHODO_UPDATED = "9 octobre 2026"
+NEW_WINDOW_DAYS = 10   # must match build.py NEW_WINDOW_DAYS ("Nouvelle" badge)
+
+
+def compute_method_stats(jobs):
+    n = len(jobs)
+    src = Counter()
+    for j in jobs:
+        s = j.get("source")
+        src[s if s in ("wttj", "francetravail") else "direct"] += 1
+
+    def pct(k):
+        return round(100 * k / n) if n else 0
+    return {
+        "n": n,
+        "companies": len({_company_key(j.get("company")) for j in jobs if j.get("company")}),
+        "src": src,
+        "n_ats": len({j.get("source") for j in jobs} - {"wttj", "francetravail", None}),
+        "salary_pct": pct(sum(1 for j in jobs if _parse_salary_eur(j.get("salary")))),
+        "remote_pct": pct(sum(1 for j in jobs if _remote_bucket(j) or j.get("city") == "Remote")),
+        "stack_pct": pct(sum(1 for j in jobs if j.get("stack"))),
+        "new": sum(1 for j in jobs if j.get("is_new")),
+    }
+
+
+def render_methodology(jobs, generated):
+    slug = "methodologie"
+    canonical = "%s/%s.html" % (SITE_URL, slug)
+    st = compute_method_stats(jobs)
+    n, src = st["n"], st["src"]
+    home = SITE_URL + "/"
+
+    def share(k):
+        return "%d (%d&nbsp;%%)" % (src[k], round(100 * src[k] / n) if n else 0)
+
+    inner = """
+<p class="upd">Méthode mise à jour le {upd}. Chiffres recalculés à chaque mise à jour du site — dernière génération&nbsp;: {gen}.</p>
+<p class="sub">sudtechjobs est un agrégateur&nbsp;: aucune offre n’est rédigée ici. Cette page
+explique d’où viennent les {n} offres en ligne, comment elles sont triées, nettoyées et
+dédoublonnées, et comment sont calculés les chiffres affichés sur le site (salaires,
+télétravail, technologies). Elle décrit ce que fait réellement le code, limites comprises.</p>
+
+<h2>Sources</h2>
+<p>Les offres actuellement en ligne viennent de trois familles de sources&nbsp;:</p>
+<table class="ed-table"><thead><tr><th>Source</th><th>Offres</th></tr></thead><tbody>
+<tr><td>Outils de recrutement et pages carrière des entreprises, en direct ({n_ats} plateformes&nbsp;: Greenhouse, Lever, Ashby, Teamtailor, SmartRecruiters, Workday, Taleez, Recruitee…)</td><td>{direct}</td></tr>
+<tr><td>Welcome to the Jungle (index public des offres)</td><td>{wttj}</td></tr>
+<tr><td>France Travail (API officielle des offres d’emploi)</td><td>{ft}</td></tr>
+</tbody></table>
+<p>La liste des entreprises suivies en direct est construite à partir des annuaires
+de l’écosystème régional&nbsp;: French Tech Aix-Marseille, French Tech Côte d’Azur, Telecom
+Valley, Aktantis (ex-pôle SCS), Medinsoft, complétés à la main. Pour chacune, le site
+détecte l’outil de recrutement utilisé et lit son flux public. Aucune donnée n’est
+collectée derrière un compte ou un paywall.</p>
+
+<h2>Fréquence de mise à jour</h2>
+<p>Toutes les sources sont relues <b>une fois par jour</b>. Chaque passage reconstruit
+entièrement le flux&nbsp;: les nouvelles offres apparaissent, celles qui ont disparu de leur
+source sont retirées. Le badge «&nbsp;Nouvelle&nbsp;» signale une offre vue pour la première
+fois il y a moins de {new_days}&nbsp;jours ({new} en ce moment). On se fie à cette date de
+première détection plutôt qu’à la date de publication affichée par les sources, souvent
+remise à zéro lors d’une simple republication.</p>
+
+<h2>Ce qui est retenu</h2>
+<ul>
+<li><b>Zone</b>&nbsp;: l’offre doit être localisée en Provence-Alpes-Côte d’Azur (ville,
+code postal ou département 04, 05, 06, 13, 83, 84). Les offres en télétravail complet sont
+gardées seulement si elles sont accessibles depuis la France&nbsp;: un poste
+«&nbsp;Remote – US&nbsp;» ou basé à Madrid est écarté.</li>
+<li><b>Métier</b>&nbsp;: un classifieur maison (règles sur l’intitulé, en français et en
+anglais, et sur la stack technique quand elle est connue) range chaque offre dans une
+catégorie&nbsp;: développement, DevOps / SRE, cybersécurité, architecture, QA, data / IA,
+product, design, IT &amp; support. La catégorie fournie par les sources couvre trop peu
+d’offres pour s’y fier. Les offres hors tech sont écartées&nbsp;: un «&nbsp;Business
+Developer&nbsp;» est un commercial, pas un développeur&nbsp;; un «&nbsp;Business
+Analyst&nbsp;» est classé en data.</li>
+<li><b>Annonces de test</b> publiées par erreur sur les outils de recrutement sont retirées.</li>
+</ul>
+
+<h2>Déduplication</h2>
+<p>Une même offre est souvent diffusée à la fois sur l’outil de recrutement de
+l’entreprise, sur Welcome to the Jungle et sur France Travail. Deux annonces sont
+considérées comme identiques quand elles ont la même entreprise et le même intitulé,
+après normalisation (casse, accents, ponctuation, mentions H/F ou F/H, «&nbsp;CDI&nbsp;» ou
+«&nbsp;Stage&nbsp;» en préfixe). Une seule est gardée, dans cet ordre de préférence&nbsp;:</p>
+<ol>
+<li>le lien direct vers l’outil de recrutement de l’entreprise (le canal officiel)&nbsp;;</li>
+<li>puis Welcome to the Jungle, puis France Travail&nbsp;;</li>
+<li>à source égale, l’annonce qui affiche un salaire, puis la plus récente.</li>
+</ol>
+
+<h2>Offres expirées</h2>
+<p>Dès qu’une offre disparaît de sa source, elle sort du site au passage suivant&nbsp;:
+plus de liste, plus de sitemap, plus de balisage <code>JobPosting</code>. Son adresse reste
+active {tomb}&nbsp;jours sous la forme d’une page «&nbsp;offre expirée&nbsp;», non indexée, qui
+renvoie vers des offres similaires&nbsp;; ensuite elle renvoie une erreur 404. Tant qu’une
+offre reste publiée chez l’employeur, sa date de fin de validité pour les moteurs de
+recherche est repoussée.</p>
+
+<h2>Salaires</h2>
+<p>Seuls les salaires <b>affichés par l’employeur</b> dans l’annonce sont utilisés&nbsp;: rien
+n’est estimé ni déduit de l’intitulé. {sal_pct}&nbsp;% des offres en ligne en affichent un.
+Pour chaque offre, la fourchette (minimum – maximum, brut annuel en euros) est ramenée à
+son point milieu. Les chiffres publiés sur les pages et les
+<a href="{home}guide-salaires-tech-paca.html">guides</a> sont des médianes et des
+fourchettes interquartiles (la moitié centrale des offres), arrondies à 500&nbsp;€. En
+dessous de {min_sample} offres avec salaire, aucune médiane n’est affichée&nbsp;: le site
+indique seulement le nombre d’offres concernées. Ce sont les salaires des offres
+diffusées, pas les salaires réels du marché&nbsp;: les entreprises qui affichent un salaire
+ne forment pas un échantillon représentatif.</p>
+
+<h2>Localisation</h2>
+<p>Les villes sont normalisées&nbsp;: codes postaux convertis en commune, variantes
+d’orthographe et de casse fusionnées («&nbsp;AVIGNON&nbsp;», «&nbsp;Six-Fours-Les-Plages&nbsp;»),
+arrondissements de Marseille regroupés. Chaque commune est rattachée à son département
+pour les pages départementales.</p>
+
+<h2>Télétravail</h2>
+<p>Le mode de travail vient uniquement de ce que déclare la source&nbsp;: <b>full
+remote</b>, <b>hybride</b>, <b>télétravail ponctuel</b> ou <b>sur site</b>. Rien n’est
+deviné à partir du texte de l’annonce&nbsp;: quand la source ne dit rien, l’offre est
+comptée «&nbsp;non précisé&nbsp;» et sort des pourcentages. L’information est connue pour
+{remote_pct}&nbsp;% des offres. Les pages «&nbsp;télétravail&nbsp;» listent les offres en full
+remote.</p>
+
+<h2>Technologies</h2>
+<p>Les technologies (Python, React, AWS…) viennent de la liste d’outils que
+l’entreprise renseigne elle-même sur l’offre, quand la source la fournit. Elles ne sont
+pas extraites du texte libre, pour éviter les faux positifs («&nbsp;Go&nbsp;»,
+«&nbsp;R&nbsp;», un outil cité en passant). Conséquence&nbsp;: {stack_pct}&nbsp;% des offres ont
+une stack connue, et les pages par technologie ne couvrent que cette partie du marché.
+Les outils non techniques (Excel, Notion, Slack…) sont ignorés.</p>
+
+<h2>Contrats</h2>
+<p>Les types de contrat, très hétérogènes selon les sources («&nbsp;FullTime&nbsp;»,
+«&nbsp;Permanent Contract&nbsp;», «&nbsp;CDD - 7 mois&nbsp;»…), sont ramenés à une liste fermée&nbsp;:
+CDI, CDD, Stage, Alternance, VIE, Freelance, Intérim, Temps partiel. Quand l’intitulé
+parle explicitement de stage ou d’alternance, il l’emporte sur la source, qui étiquette
+parfois ces postes «&nbsp;CDI&nbsp;».</p>
+
+<h2>Entreprises</h2>
+<p>Un même employeur apparaît sous plusieurs graphies selon les sources («&nbsp;SIGNE
++&nbsp;» / «&nbsp;Signe+&nbsp;»). Les noms sont rapprochés sur une clé sans casse, accents ni
+ponctuation, et les offres regroupées sur une seule
+<a href="{home}entreprise/">fiche entreprise</a> ({companies} entreprises recrutent en ce
+moment). Les fiches sont complétées par les informations publiques de Welcome to the
+Jungle, des annuaires régionaux et de la page LinkedIn de l’entreprise, avec des
+corrections manuelles.</p>
+
+<h2>Limites</h2>
+<ul>
+<li>Le site ne voit que les offres publiées en ligne&nbsp;: les recrutements par réseau,
+cooptation ou cabinet n’apparaissent pas.</li>
+<li>Les classifications sont automatiques et peuvent se tromper sur un intitulé ambigu.</li>
+<li>Les volumes mesurent l’activité de publication, pas la santé d’une entreprise ou du
+marché&nbsp;: une entreprise peut multiplier les offres pour un même besoin.</li>
+</ul>
+<p>Une erreur, une offre mal classée, une source à ajouter ou une demande de
+retrait&nbsp;? Écrivez à <a href="mailto:hello@sudtechjobs.com">hello@sudtechjobs.com</a>.
+Les données brutes sont publiques&nbsp;: <a href="{home}jobs.json">jobs.json</a>,
+<a href="{home}feed.xml">flux RSS</a>, <a href="{home}dashboard.html">chiffres clés</a>.
+Voir aussi <a href="{home}a-propos.html">qui est derrière le site</a>.</p>
+""".format(upd=METHODO_UPDATED, gen=esc(generated), n=n, n_ats=st["n_ats"],
+           direct=share("direct"), wttj=share("wttj"), ft=share("francetravail"),
+           new_days=NEW_WINDOW_DAYS, new=st["new"], tomb=TOMBSTONE_DAYS,
+           sal_pct=st["salary_pct"], min_sample=MIN_SAMPLE, remote_pct=st["remote_pct"],
+           stack_pct=st["stack_pct"], companies=st["companies"], home=home)
+
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Méthodologie des données sudtechjobs",
+        "url": canonical,
+        "dateModified": generated,
+        "about": {"@type": "Dataset", "name": "Offres d'emploi tech en PACA — sudtechjobs",
+                  "url": SITE_URL + "/dashboard.html"},
+        "publisher": {"@type": "Organization", "name": "sudtechjobs", "url": home},
+    }
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › Méthodologie</nav>
+<h1>Méthodologie&nbsp;: comment sudtechjobs collecte les offres</h1>
+<div class="legal">
+{inner}
+</div>
+""".format(home=home, inner=inner)
+    return shell(
+        title="Méthodologie : comment sudtechjobs collecte les offres | sudtechjobs",
+        description="Sources, fréquence de mise à jour, déduplication, offres expirées, "
+                    "salaires, localisation, télétravail, technologies : comment sudtechjobs "
+                    "collecte et nettoie les offres d'emploi tech en PACA.",
         canonical=canonical, head_extra=jsonld(ld), body=body)
 
 
@@ -2101,7 +2501,7 @@ def _render_faq_guide(*, slug, breadcrumb, h1, intro, faq, generated, links_html
         "mainEntity": [{
             "@type": "Question", "name": q,
             "acceptedAnswer": {"@type": "Answer",
-                               "answerText": re.sub(r"<[^>]+>", "", a).replace("&nbsp;", " ")},
+                               "text": re.sub(r"<[^>]+>", "", a).replace("&nbsp;", " ")},
         } for q, a in faq],
     }
 
@@ -2521,7 +2921,7 @@ def render_dashboard(jobs, generated):
 {top}
 <p class="note">Un volume d’offres publiées, pas un classement qualité employeur&nbsp;: une entreprise avec du turnover peut publier plus d’offres qu’une petite structure qui recrute rarement. Détail par entreprise sur <a href="{companies}">la liste des entreprises</a>.</p>
 <h2>Données ouvertes</h2>
-<p>Ces chiffres sont recalculés depuis le flux public&nbsp;: <a href="{home}jobs.json">jobs.json</a> (offres actives), <a href="{home}feed.xml">feed.xml</a> (RSS), <a href="{home}sitemap.xml">sitemap.xml</a>. Voir aussi <a href="{home}guides/">les guides</a> (salaires, télétravail, entreprises qui recrutent) pour l’analyse détaillée.</p>
+<p>Ces chiffres sont recalculés depuis le flux public&nbsp;: <a href="{home}jobs.json">jobs.json</a> (offres actives), <a href="{home}feed.xml">feed.xml</a> (RSS), <a href="{home}sitemap.xml">sitemap.xml</a>. Voir aussi <a href="{home}guides/">les guides</a> (salaires, télétravail, entreprises qui recrutent) pour l’analyse détaillée, et <a href="{home}methodologie.html">la méthodologie</a> pour la façon dont les offres sont collectées et comptées.</p>
 </div>
 """.format(home=SITE_URL + "/", gen=esc(generated), n=n_total, kpis=kpi_html,
            cats=cat_items, depts=dept_items, top=top_html,
@@ -3547,6 +3947,22 @@ def wipe_html(dirpath, keep):
             os.remove(os.path.join(dirpath, fn))
 
 
+def patch_home_count(n):
+    """site/index.html is hand-written (not rendered here) but its H1 lede and
+    meta description quote the live offer count, so crawlers that don't run
+    the page's JS still see today's number. Rewrite just those two spots."""
+    p = os.path.join(SITE, "index.html")
+    try:
+        html = open(p, encoding="utf-8").read()
+    except OSError:
+        return
+    new = re.sub(r'(<b id="heroCount">)\d+(</b>)', r"\g<1>%d\g<2>" % n, html)
+    new = re.sub(r'(<meta name="description" content=")\d+( offres)', r"\g<1>%d\g<2>" % n, new)
+    if new != html:
+        with open(p, "w", encoding="utf-8") as fh:
+            fh.write(new)
+
+
 def main():
     if not os.path.exists(FEED):
         sys.exit("no %s — run jobboard/build.py first" % FEED)
@@ -3906,6 +4322,9 @@ def main():
                                   h1=h1, inner=inner))
     with open(os.path.join(SITE, "a-propos.html"), "w", encoding="utf-8") as fh:
         fh.write(render_about())
+    with open(os.path.join(SITE, "methodologie.html"), "w", encoding="utf-8") as fh:
+        fh.write(render_methodology(jobs, generated))
+    patch_home_count(len(jobs))
     with open(os.path.join(SITE, "dashboard.html"), "w", encoding="utf-8") as fh:
         fh.write(render_dashboard(jobs, generated))
     with open(os.path.join(SITE, "404.html"), "w", encoding="utf-8") as fh:
@@ -3941,6 +4360,9 @@ def main():
              % SITE_URL]
     pages.append('<url><loc>%s/a-propos.html</loc><changefreq>monthly</changefreq>'
                  '<priority>0.5</priority></url>' % SITE_URL)
+    pages.append('<url><loc>%s/methodologie.html</loc><lastmod>%s</lastmod>'
+                 '<changefreq>weekly</changefreq><priority>0.5</priority></url>'
+                 % (SITE_URL, today))
     pages.append('<url><loc>%s/dashboard.html</loc><lastmod>%s</lastmod>'
                  '<changefreq>daily</changefreq><priority>0.6</priority></url>'
                  % (SITE_URL, today))
@@ -4008,7 +4430,10 @@ def main():
         "## Guides\n\n%s\n\n"
         "## À propos\n\n"
         "- [À propos](%s/a-propos.html): qui est derrière le site et d'où viennent les offres\n"
-    ) % (len(jobs), SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, guide_lines, SITE_URL)
+        "- [Méthodologie](%s/methodologie.html): sources, fréquence de mise à jour, "
+        "déduplication, calcul des salaires, télétravail, technologies\n"
+    ) % (len(jobs), SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, guide_lines,
+         SITE_URL, SITE_URL)
     with open(os.path.join(SITE, "llms.txt"), "w", encoding="utf-8") as fh:
         fh.write(llms)
 

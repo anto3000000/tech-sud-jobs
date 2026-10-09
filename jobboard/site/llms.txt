@@ -27,3 +27,4 @@
 ## À propos
 
 - [À propos](https://sudtechjobs.com/a-propos.html): qui est derrière le site et d'où viennent les offres
+- [Méthodologie](https://sudtechjobs.com/methodologie.html): sources, fréquence de mise à jour, déduplication, calcul des salaires, télétravail, technologies
