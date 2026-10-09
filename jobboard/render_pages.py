@@ -488,6 +488,9 @@ h2{font-family:"Bricolage Grotesque",sans-serif;font-size:15px;margin:26px 0 8px
 .bars li>span{position:relative;color:var(--muted);font:500 11.5px "IBM Plex Mono",ui-monospace,monospace}
 .bars li i{position:absolute;inset:0;width:var(--pct);background:color-mix(in srgb,var(--brand) 22%,transparent);
  border-radius:8px;font-style:normal}
+.bars li>b em{font-style:normal;font:500 11px "IBM Plex Mono",ui-monospace,monospace;margin-left:6px}
+.bars li>b em.up{color:var(--pine)}.bars li>b em.down{color:var(--tag-design)}
+.ed-block ol{margin:0;padding-left:20px}.ed-block ol li{margin:0 0 4px}
 .evo{font-size:12.5px;color:var(--muted);margin:8px 0 0}
 .evo b{color:var(--pine)}
 .evo b.down{color:var(--tag-design)}
@@ -3083,6 +3086,315 @@ des offres réellement en ligne, pas d’un annuaire. <a href="#liste">Voir les 
                  head_extra=jsonld(ld) + (jsonld(faq_ld) if faq_ld else ""), body=body)
 
 
+# --------------------------------------------------------------------------- #
+#  Baromètre mensuel — /barometre/<mois>-<année>.html                          #
+# --------------------------------------------------------------------------- #
+# One dated page per month, computed from data/offer_ledger.json (history.py):
+# every offer with the first/last day it was live, kept for a year, so a past
+# month stays recomputable after its offers are gone. Honesty rules, because
+# the feed's coverage grew while the site was young:
+#   - the launch month (ledger starts inside it) is a snapshot only: its
+#     "new"/"closed" flows are the site's own ramp-up, not the market's;
+#   - the month in progress is provisional and never compared;
+#   - month-over-month deltas only between two complete, non-launch months.
+LEDGER = os.path.join(DATA, "offer_ledger.json")
+BARO_DIR = "barometre"
+BARO_MIN_SAL = 20      # min salaried offers for a median, overall
+BARO_MIN_SAL_CAT = 10  # ... and per métier
+CONTRACT_ORDER = ("CDI", "Stage", "Alternance", "CDD", "Freelance")
+
+
+def _month_slug(y, m):
+    return "%s-%d" % (MOIS_FR[m - 1], y)
+
+
+def _month_label(y, m):
+    return "%s %d" % (MOIS_FR[m - 1], y)
+
+
+def _month_bounds(y, m):
+    start = "%04d-%02d-01" % (y, m)
+    ny, nm = (y + 1, 1) if m == 12 else (y, m + 1)
+    end = (datetime(ny, nm, 1) - timedelta(days=1)).date().isoformat()
+    return start, end
+
+
+def _hub_of(city):
+    for hub in HIRING_HUBS:
+        if _in_hub(city, hub[3]):
+            return hub[1]
+    return "Télétravail (sans ville)" if city == "Remote" else "Reste de la région"
+
+
+def _remote_of(r):
+    v = (r.get("remote") or "").lower()
+    if v in REMOTE_FULL:
+        return "Full remote"
+    if v in ("hybride", "ponctuel"):
+        return "Hybride / ponctuel"
+    if v == "sur site":
+        return "Sur site"
+    return None
+
+
+def compute_month(ledger, y, m, ledger_start, ledger_last):
+    start, end = _month_bounds(y, m)
+    act = [r for r in ledger if r["first_seen"] <= end and r["last_seen"] >= start]
+    launch = ledger_start > start
+    in_progress = ledger_last <= end
+    flows = not launch
+    new = [r for r in act if r["first_seen"] >= start] if flows else []
+    closed = ([r for r in act if r["last_seen"] <= end and r["last_seen"] < ledger_last]
+              if flows else [])
+    companies = Counter(r.get("company") for r in act if r.get("company"))
+    new_companies = []
+    if flows:
+        before = {r.get("company") for r in ledger if r["first_seen"] < start}
+        nc = Counter(r.get("company") for r in new if r.get("company") not in before)
+        new_companies = nc.most_common()
+    sal = [p for p in (_parse_salary_eur(r.get("salary")) for r in act) if p]
+    sal_mid = [(lo + hi) / 2 for lo, hi in sal]
+    sal_by_cat = {}
+    for cat in CATS:
+        vals = [(lo + hi) / 2 for r in act if r.get("category") == cat
+                for p in [_parse_salary_eur(r.get("salary"))] if p for lo, hi in [p]]
+        if len(vals) >= BARO_MIN_SAL_CAT:
+            sal_by_cat[cat] = (statistics.median(vals), len(vals))
+    contracts = Counter()
+    for r in act:
+        c = r.get("contract") or ""
+        contracts[c if c in CONTRACT_ORDER else ("Autre" if c else "Non précisé")] += 1
+    return {
+        "y": y, "m": m, "start": start, "end": end, "launch": launch,
+        "in_progress": in_progress, "flows": flows,
+        "n": len(act), "n_new": len(new), "n_closed": len(closed),
+        "n_companies": len(companies), "top_companies": companies.most_common(10),
+        "new_companies": new_companies,
+        "by_cat": Counter(r.get("category") for r in act if r.get("category") in CATS),
+        "by_hub": Counter(_hub_of(r.get("city")) for r in act),
+        "remote": Counter(x for x in (_remote_of(r) for r in act) if x),
+        "contracts": contracts,
+        "sal_n": len(sal_mid),
+        "sal_median": statistics.median(sal_mid) if len(sal_mid) >= BARO_MIN_SAL else None,
+        "sal_by_cat": sal_by_cat,
+        "first_day": max(start, ledger_start), "last_day": min(end, ledger_last),
+    }
+
+
+def _bars(counter, total, labels=None, deltas=None, links=None):
+    if not counter:
+        return ""
+    maxn = max(counter.values())
+    items = []
+    for k, v in counter.most_common():
+        lbl = esc((labels or {}).get(k, k))
+        if links and links.get(k):
+            lbl = '<a href="%s">%s</a>' % (links[k], lbl)
+        d = ""
+        if deltas is not None and k in deltas:
+            dv = deltas[k]
+            d = ' <em class="%s">%s%d %%</em>' % ("down" if dv < 0 else "up",
+                                                  "+" if dv >= 0 else "", dv)
+        items.append('<li style="--pct:%d%%"><i></i><b>%s%s</b><span>%d · %d %%</span></li>'
+                     % (round(100 * v / maxn), lbl, d, v, round(100 * v / total)))
+    return '<ul class="bars">%s</ul>' % "".join(items)
+
+
+def _pct_deltas(cur, prev):
+    return {k: round(100 * (cur[k] - prev[k]) / prev[k]) for k in cur if prev.get(k)}
+
+
+def _co_link(name, slugs):
+    sl = slugs.get(_company_key(name))
+    nm = esc(_display_name(name))
+    return '<a href="../entreprise/%s.html">%s</a>' % (sl, nm) if sl else nm
+
+
+def render_barometre(st, prev, months, slugs, generated):
+    y, m = st["y"], st["m"]
+    label = _month_label(y, m)
+    slug = _month_slug(y, m)
+    canonical = "%s/%s/%s.html" % (SITE_URL, BARO_DIR, slug)
+    n = st["n"] or 1
+    compare = (prev is not None and not st["in_progress"] and not st["launch"]
+               and not prev["launch"])
+    cat_labels = {k: CATS[k][0] for k in CATS}
+    first_day = datetime.strptime(st["first_day"], "%Y-%m-%d")
+    last_day = datetime.strptime(st["last_day"], "%Y-%m-%d")
+
+    def fr_date(d):
+        return "%d %s %d" % (d.day, MOIS_FR[d.month - 1], d.year)
+
+    if st["launch"]:
+        status = ("Premier mois de suivi&nbsp;: le site a commencé à enregistrer les offres le "
+                  "%s. Ce mois sert de point de départ — les entrées/sorties d’offres et les "
+                  "comparaisons démarrent avec le mois suivant." % fr_date(first_day))
+    elif st["in_progress"]:
+        status = ("Mois en cours&nbsp;: chiffres provisoires au %s, recalculés chaque jour. "
+                  "L’édition devient définitive le 1<sup>er</sup> du mois suivant."
+                  % fr_date(last_day))
+    else:
+        status = "Mois clos&nbsp;: chiffres définitifs du %s au %s." % (
+            fr_date(first_day), fr_date(last_day))
+
+    top_cat, top_cat_n = st["by_cat"].most_common(1)[0] if st["by_cat"] else (None, 0)
+    hubs_named = [(h, v) for h, v in st["by_hub"].most_common()
+                  if h not in ("Reste de la région", "Télétravail (sans ville)")]
+    lead = ["En %s, <b>%d offres tech</b> (développement, data, produit, design, IT) ont été "
+            "en ligne en Provence-Alpes-Côte d’Azur, publiées par <b>%d entreprises</b>."
+            % (label, st["n"], st["n_companies"])]
+    if top_cat:
+        lead.append("Le développement logiciel reste le premier métier recherché"
+                    if top_cat == "eng" else "Le premier métier recherché est %s" % CAT_PHRASE[top_cat])
+        lead[-1] += " (%d %% des offres)." % round(100 * top_cat_n / n)
+    if hubs_named:
+        lead.append("%s concentre %d %% des offres%s." % (
+            hubs_named[0][0], round(100 * hubs_named[0][1] / n),
+            (", devant %s (%d %%)" % (hubs_named[1][0], round(100 * hubs_named[1][1] / n)))
+            if len(hubs_named) > 1 else ""))
+    if st["top_companies"]:
+        c, v = st["top_companies"][0]
+        lead.append("Premier recruteur du mois&nbsp;: %s, avec %d offres." % (_co_link(c, slugs), v))
+    if st["flows"]:
+        lead.append("%d nouvelles offres ont été publiées%s." % (
+            st["n_new"], " depuis le début du mois" if st["in_progress"] else " sur le mois"))
+    if st["sal_median"]:
+        lead.append("Salaire médian affiché&nbsp;: %s brut/an (sur %d offres avec salaire)."
+                    % (_fmt_keur(st["sal_median"]), st["sal_n"]))
+    if compare:
+        dv = round(100 * (st["n"] - prev["n"]) / prev["n"]) if prev["n"] else 0
+        lead.append("Par rapport à %s, le volume d’offres actives évolue de %s%d %%."
+                    % (_month_label(prev["y"], prev["m"]), "+" if dv >= 0 else "", dv))
+
+    def kpi(value, lab):
+        return '<div class="kpi"><b>%s</b><span>%s</span></div>' % (value, esc(lab))
+    kpis = [kpi(st["n"], "offres actives sur le mois"),
+            kpi(st["n_companies"], "entreprises qui recrutent")]
+    if st["flows"]:
+        kpis.append(kpi(st["n_new"], "nouvelles offres"))
+        if not st["in_progress"]:
+            kpis.append(kpi(st["n_closed"], "offres retirées"))
+        kpis.append(kpi(len(st["new_companies"]), "nouveaux recruteurs"))
+    if st["sal_median"]:
+        kpis.append(kpi(esc(_fmt_keur(st["sal_median"])), "salaire médian affiché"))
+
+    sections = []
+    cat_deltas = _pct_deltas(st["by_cat"], prev["by_cat"]) if compare else None
+    sections.append('<div class="card ed-block"><h2>Offres par métier</h2>%s</div>' % _bars(
+        st["by_cat"], n, cat_labels, cat_deltas,
+        {k: "../emploi/%s.html" % slugify(k) for k in CATS}))
+    hub_links = {h[1]: "../%s/%s.html" % (HIRING_DIR, h[0]) for h in HIRING_HUBS}
+    sections.append('<div class="card ed-block"><h2>Offres par bassin d’emploi</h2>%s'
+                    '<p class="ed-note">Chaque bassin regroupe sa ville et ses communes '
+                    'voisines (Valbonne et Biot dans Sophia Antipolis, Ollioules dans Toulon…).'
+                    '</p></div>' % _bars(st["by_hub"], n,
+                                         deltas=_pct_deltas(st["by_hub"], prev["by_hub"])
+                                         if compare else None, links=hub_links))
+    top = "".join("<li>%s — %d offre%s</li>" % (_co_link(c, slugs), v, "s" if v > 1 else "")
+                  for c, v in st["top_companies"])
+    sections.append('<div class="card ed-block"><h2>Les 10 entreprises qui ont le plus recruté'
+                    '</h2><ol>%s</ol><p class="ed-note">Volume d’offres publiées, pas un '
+                    'classement de qualité employeur.</p></div>' % top)
+    if st["new_companies"]:
+        nc = st["new_companies"][:12]
+        sections.append(
+            '<div class="card ed-block"><h2>Nouveaux recruteurs du mois</h2><p>%d entreprises '
+            'ont publié leur première offre tech du suivi en %s, dont %s.</p></div>'
+            % (len(st["new_companies"]), esc(label),
+               _fr_join("%s (%d)" % (_co_link(c, slugs), v) for c, v in nc)))
+    rem_total = sum(st["remote"].values())
+    contract_html = _bars(st["contracts"], n)
+    remote_html = ""
+    if rem_total >= 30:
+        remote_html = ('<h2>Télétravail</h2>%s<p class="ed-note">Sur les %d offres qui précisent '
+                       'leur politique de télétravail (%d %% du total).</p>'
+                       % (_bars(st["remote"], rem_total), rem_total, round(100 * rem_total / n)))
+    sections.append('<div class="card ed-block"><h2>Types de contrat</h2>%s%s</div>'
+                    % (contract_html, remote_html))
+    if st["sal_median"]:
+        rows = "".join("<tr><td>%s</td><td>%s · %d offres</td></tr>" % (
+            esc(CATS[c][0]), esc(_fmt_keur(v)), k)
+            for c, (v, k) in sorted(st["sal_by_cat"].items(), key=lambda x: -x[1][0]))
+        sections.append(
+            '<div class="card ed-block"><h2>Salaires affichés</h2><p class="ed-big">%s</p>'
+            '<p class="ed-note">Médiane brute annuelle sur %d offres avec salaire (%d %% des '
+            'offres du mois).</p>%s<p class="ed-note">Par métier, à partir de %d offres avec '
+            'salaire. Détail dans le <a href="../guide-salaires-tech-paca.html">guide des '
+            'salaires</a>.</p></div>' % (
+                esc(_fmt_keur(st["sal_median"])), st["sal_n"], round(100 * st["sal_n"] / n),
+                ('<table class="ed-table"><tr><th>Métier</th><th>Médiane</th></tr>%s</table>'
+                 % rows) if rows else "", BARO_MIN_SAL_CAT))
+
+    others = []
+    for o in months:
+        if (o["y"], o["m"]) == (y, m):
+            continue
+        others.append('<a href="%s.html">%s</a>' % (_month_slug(o["y"], o["m"]),
+                                                     esc(_month_label(o["y"], o["m"]).capitalize())))
+    method = (
+        "<p><b>Méthode.</b> Une offre compte pour le mois si elle a été en ligne sur "
+        "sudtechjobs au moins un jour du mois (offres tech uniquement, entreprises situées en "
+        "PACA ou recrutant en télétravail depuis la région). «&nbsp;Nouvelles&nbsp;» = vue "
+        "pour la première fois ce mois-ci&nbsp;; «&nbsp;retirées&nbsp;» = disparue du site "
+        "avant la fin du mois (pourvue, expirée ou retirée par l’employeur). Le périmètre de "
+        "collecte s’enrichit au fil des mois (nouvelles sources, nouvelles entreprises "
+        "suivies)&nbsp;: une hausse peut en partie venir de là. Sources et calculs détaillés "
+        "dans la <a href=\"../methodologie.html\">méthodologie</a>.</p>")
+
+    h1 = "Baromètre de l’emploi tech en PACA — %s" % label
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › <a href="{home}{d}/">Baromètre</a> › {lab}</nav>
+<h1>{h1}</h1>
+<p class="sub">{status}</p>
+<div class="card ed-lead"><p>{lead}</p></div>
+<div class="kpi-grid">{kpis}</div>
+<div class="ed-grid">{grid}</div>
+{wide}
+<div class="legal"><div class="note">{method}</div></div>
+<h2>Autres éditions</h2>
+<div class="facets">{others}<a href="../dashboard.html">Chiffres du jour</a><a href="../guides/">Guides</a></div>
+""".format(home=SITE_URL + "/", d=BARO_DIR, lab=esc(label.capitalize()), h1=esc(h1),
+           status=status, lead=" ".join(lead), kpis="".join(kpis),
+           grid="".join(sections[:2]), wide="\n".join(sections[2:]),
+           method=method, others="".join(others))
+
+    ld = {"@context": "https://schema.org", "@type": "Article", "headline": h1,
+          "inLanguage": "fr-FR", "datePublished": st["first_day"],
+          "dateModified": generated or st["last_day"],
+          "author": {"@type": "Organization", "name": "sudtechjobs", "url": SITE_URL + "/"},
+          "mainEntityOfPage": canonical}
+    desc = re.sub(r"<[^>]+>", "", " ".join(lead[:3])).replace("&nbsp;", " ")
+    if len(desc) > 300:
+        desc = desc[:300].rsplit(" ", 1)[0] + "…"
+    de = "d’" if label[0] in "aeiouy" else "de "
+    title = "Emploi tech PACA : le baromètre %s%s | sudtechjobs" % (de, label)
+    return slug, shell(title=title, description=desc, canonical=canonical,
+                       head_extra=jsonld(ld), body=body)
+
+
+def render_barometre_hub(months, slugs_written):
+    items = "".join(
+        '<li><a href="{s}.html"><span class="t">{lab}</span><span class="co">{n} offres tech · '
+        '{c} entreprises{note}</span></a></li>'.format(
+            s=_month_slug(st["y"], st["m"]), lab=esc(_month_label(st["y"], st["m"]).capitalize()),
+            n=st["n"], c=st["n_companies"],
+            note=" · en cours" if st["in_progress"] else (" · mois de lancement" if st["launch"] else ""))
+        for st in reversed(months))
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › Baromètre</nav>
+<h1>Baromètre mensuel de l’emploi tech en PACA</h1>
+<p class="sub">Chaque mois, l’état du marché tech en Provence-Alpes-Côte d’Azur calculé à partir de
+toutes les offres passées sur sudtechjobs&nbsp;: volume, métiers, bassins d’emploi, entreprises qui
+recrutent, contrats, télétravail, salaires affichés.</p>
+<ul class="jobs">{items}</ul>
+""".format(home=SITE_URL + "/", items=items)
+    return shell(title="Baromètre mensuel de l’emploi tech en PACA | sudtechjobs",
+                 description="Chaque mois, les chiffres de l’emploi tech en PACA : offres, "
+                             "métiers, villes, entreprises qui recrutent, salaires — calculés "
+                             "à partir des offres réelles.",
+                 canonical="%s/%s/" % (SITE_URL, BARO_DIR), body=body)
+
+
 def _parse_iso(s):
     try:
         dt = datetime.fromisoformat((s or "").replace("Z", "+00:00"))
@@ -3212,8 +3524,9 @@ def render_dashboard(jobs, generated):
 def render_guides_hub(guides, generated):
     """guides: [(slug, title, description), ...] in display order."""
     cards = "".join(
-        '<li><a href="/%s.html"><span class="t">%s</span>'
-        '<span class="co">%s</span></a></li>' % (esc(slug), esc(title), esc(desc))
+        '<li><a href="/%s"><span class="t">%s</span>'
+        '<span class="co">%s</span></a></li>' % (
+            esc(slug if slug.endswith("/") else slug + ".html"), esc(title), esc(desc))
         for slug, title, desc in guides)
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › Guides</nav>
@@ -4597,6 +4910,46 @@ def main():
         with open(os.path.join(hiring_dir, fn), "w", encoding="utf-8") as fh:
             fh.write(render_city_hiring(hub, rows, generated, live_facets, hiring_hubs))
 
+    # ---- monthly barometer -------------------------------------------------
+    baro_dir = os.path.join(SITE, BARO_DIR)
+    os.makedirs(baro_dir, exist_ok=True)
+    baro_files = set()
+    baro_months = []
+    try:
+        ledger = list(json.load(open(LEDGER, encoding="utf-8")).values())
+    except (OSError, ValueError):
+        ledger = []
+        print("render_pages: no %s — skipping the barometer (run jobboard/history.py "
+              "ledger)" % LEDGER, file=sys.stderr)
+    if ledger:
+        # the ledger keeps the category an offer had when last seen, so offers
+        # that expired before a taxonomy change (DevOps / Cyber / Architecte
+        # split out of "eng" mid-September) would skew month-to-month mixes.
+        # Re-run today's title classifier; keep the stored one when the title
+        # alone isn't conclusive (the full classify also uses the stack).
+        from classify import classify
+        for r in ledger:
+            c = classify(r.get("title") or "")
+            if c:
+                r["category"] = c
+        l_start = min(r["first_seen"] for r in ledger)
+        l_last = max(r["last_seen"] for r in ledger)
+        y, mo = int(l_start[:4]), int(l_start[5:7])
+        while "%04d-%02d" % (y, mo) <= l_last[:7]:
+            baro_months.append(compute_month(ledger, y, mo, l_start, l_last))
+            y, mo = (y + 1, 1) if mo == 12 else (y, mo + 1)
+        co_slugs = {_company_key(c["name"]): c["slug"] for c in companies
+                    if (c["slug"] + ".html") in company_files}
+        for i, st in enumerate(baro_months):
+            prev = baro_months[i - 1] if i else None
+            bslug, bhtml = render_barometre(st, prev, baro_months, co_slugs, generated)
+            baro_files.add(bslug + ".html")
+            with open(os.path.join(baro_dir, bslug + ".html"), "w", encoding="utf-8") as fh:
+                fh.write(bhtml)
+        with open(os.path.join(baro_dir, "index.html"), "w", encoding="utf-8") as fh:
+            fh.write(render_barometre_hub(baro_months, baro_files))
+        baro_files.add("index.html")
+
     # ---- legal pages (site root) ----------------------------------------
     legal = [
         ("mentions-legales", "Mentions légales | sudtechjobs",
@@ -4640,7 +4993,15 @@ def main():
     guides_dir = os.path.join(SITE, "guides")
     os.makedirs(guides_dir, exist_ok=True)
     with open(os.path.join(guides_dir, "index.html"), "w", encoding="utf-8") as fh:
-        fh.write(render_guides_hub(guides_meta, generated))
+        hub_cards = guides_meta
+        if baro_months:
+            last = baro_months[-1]
+            hub_cards = [(BARO_DIR + "/", "Baromètre mensuel de l’emploi tech en PACA",
+                          "%s : %d offres tech, %d entreprises qui recrutent. Métiers, villes, "
+                          "salaires, mois par mois." % (
+                              _month_label(last["y"], last["m"]).capitalize(), last["n"],
+                              last["n_companies"]))] + guides_meta
+        fh.write(render_guides_hub(hub_cards, generated))
 
     # ---- sitemaps + robots -------------------------------------------------
     # A sitemap index pointing at two children: the browse pages, and a dedicated
@@ -4668,6 +5029,10 @@ def main():
     for guide_slug in guide_slugs:
         pages.append('<url><loc>%s/%s.html</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
                      '<priority>0.7</priority></url>' % (SITE_URL, guide_slug, today))
+    for fn in sorted(baro_files):
+        loc = "%s/%s/%s" % (SITE_URL, BARO_DIR, "" if fn == "index.html" else fn)
+        pages.append('<url><loc>%s</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
+                     '<priority>0.7</priority></url>' % (loc, today))
     for fn in sorted(hiring_files):
         pages.append('<url><loc>%s/%s/%s</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
                      '<priority>0.7</priority></url>' % (SITE_URL, HIRING_DIR, fn, today))
@@ -4730,6 +5095,8 @@ def main():
         "- [Offres par métier et ville](%s/emploi/): pages filtrées (métier, techno, ville, télétravail)\n"
         "- [Entreprises qui recrutent](%s/entreprise/): fiches des employeurs tech de la région\n"
         "%s"
+        "- [Baromètre mensuel](%s/barometre/): l'emploi tech en PACA mois par mois (offres, "
+        "métiers, villes, recruteurs, salaires)\n"
         "- [Chiffres clés](%s/dashboard.html): instantané du marché (volumes, télétravail, salaires, top recruteurs)\n\n"
         "## Guides\n\n%s\n\n"
         "## À propos\n\n"
@@ -4737,7 +5104,7 @@ def main():
         "- [Méthodologie](%s/methodologie.html): sources, fréquence de mise à jour, "
         "déduplication, calcul des salaires, télétravail, technologies\n"
     ) % (len(jobs), SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, hiring_lines,
-         SITE_URL, guide_lines,
+         SITE_URL, SITE_URL, guide_lines,
          SITE_URL, SITE_URL)
     with open(os.path.join(SITE, "llms.txt"), "w", encoding="utf-8") as fh:
         fh.write(llms)
@@ -4837,6 +5204,7 @@ def main():
     wipe_html(emploi_dir, facet_files)
     wipe_html(entreprise_dir, company_files)
     wipe_html(hiring_dir, hiring_files)
+    wipe_html(baro_dir, baro_files)
 
     print("render_pages: %d offers, %d tombstones, %d facet pages, %d company pages, "
           "%d sitemap urls, feed.xml (%d items), %s"

@@ -33,6 +33,7 @@ Output: jobboard/data/history.jsonl, one JSON object per calendar day:
 """
 import argparse
 import collections
+import datetime
 import json
 import os
 import subprocess
@@ -43,6 +44,14 @@ ROOT = os.path.dirname(HERE)
 DATA = os.path.join(HERE, "data")
 JOBS_REL = "jobboard/data/jobs.json"
 HISTORY_PATH = os.path.join(DATA, "history.jsonl")
+# Per-offer ledger for the monthly barometer: every offer ever seen, with the
+# first/last day it was live. Unlike render_pages' offer_index (tombstones,
+# pruned 120 days after expiry) this keeps a year, so a month's page can be
+# recomputed long after its offers are gone.
+LEDGER_PATH = os.path.join(DATA, "offer_ledger.json")
+LEDGER_KEEP_DAYS = 400
+LEDGER_FIELDS = ("title", "company", "city", "category", "contract", "remote", "salary",
+                 "source")
 
 # Rough hub buckets for the monthly report — reuses the same PACA towns build.py
 # filters on, just grouped into the handful of hubs people actually ask about.
@@ -88,6 +97,42 @@ def _snapshot_from_jobs(doc):
     }
 
 
+def _load_ledger():
+    try:
+        with open(LEDGER_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
+
+
+def _write_ledger(ledger, today):
+    cutoff = (datetime.date.fromisoformat(today)
+              - datetime.timedelta(days=LEDGER_KEEP_DAYS)).isoformat()
+    ledger = {k: v for k, v in ledger.items() if v["last_seen"] >= cutoff}
+    with open(LEDGER_PATH, "w", encoding="utf-8") as f:
+        json.dump(ledger, f, ensure_ascii=False, indent=0, sort_keys=True)
+
+
+def _ledger_merge(ledger, jobs, date):
+    """Fold one day's feed into the ledger: latest fields win, first_seen is the
+    earliest of what we saw and what build.py's seen-tracker says."""
+    for j in jobs:
+        jid = j.get("id")
+        if not jid:
+            continue
+        rec = ledger.get(jid)
+        fs = (j.get("first_seen") or date)[:10]
+        if rec is None:
+            rec = ledger[jid] = {"first_seen": min(fs, date), "last_seen": date}
+        else:
+            rec["first_seen"] = min(rec["first_seen"], fs)
+            rec["last_seen"] = max(rec["last_seen"], date)
+        for k in LEDGER_FIELDS:
+            v = j.get(k)
+            if v not in (None, ""):
+                rec[k] = v
+
+
 def cmd_record(_args):
     path = os.path.join(DATA, "jobs.json")
     with open(path, encoding="utf-8") as f:
@@ -104,7 +149,11 @@ def cmd_record(_args):
     rows.append(row)
     rows.sort(key=lambda r: r["date"])
     _write_history(rows)
-    print("recorded %s: %d offers live (%s new)" % (date, row["count"], row["new_count"]))
+    ledger = _load_ledger()
+    _ledger_merge(ledger, doc.get("jobs", []), date)
+    _write_ledger(ledger, date)
+    print("recorded %s: %d offers live (%s new), ledger %d offers"
+          % (date, row["count"], row["new_count"], len(ledger)))
 
 
 def _load_history():
@@ -206,6 +255,33 @@ def _print_month_summary(offers, rows):
         print("  %-15s %4d" % (src, n))
 
 
+def cmd_ledger(_args):
+    """Rebuild offer_ledger.json from every committed data/jobs.json (one-off,
+    or to repair it) — then `record` keeps it current day by day."""
+    log = _run(["git", "log", "--format=%H|%aI", "--reverse", "--", JOBS_REL]).strip()
+    commits = [line.split("|", 1) for line in log.splitlines() if line]
+    ledger = {}
+    last = None
+    for i, (sha, iso_date) in enumerate(commits):
+        try:
+            doc = json.loads(_run(["git", "show", "%s:%s" % (sha, JOBS_REL)]))
+        except (subprocess.CalledProcessError, ValueError):
+            continue
+        last = (doc.get("generated_at") or iso_date)[:10]
+        _ledger_merge(ledger, doc.get("jobs", []), last)
+        if (i + 1) % 20 == 0:
+            print("  ...%d/%d commits (%s)" % (i + 1, len(commits), last), file=sys.stderr)
+    # the working-tree feed may be newer than the last commit
+    path = os.path.join(DATA, "jobs.json")
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            doc = json.load(f)
+        last = (doc.get("generated_at") or last)[:10]
+        _ledger_merge(ledger, doc.get("jobs", []), last)
+    _write_ledger(ledger, last)
+    print("wrote %d offers to %s" % (len(ledger), LEDGER_PATH), file=sys.stderr)
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -216,8 +292,10 @@ def main():
     bf = sub.add_parser("backfill", help="rebuild history.jsonl from git log + print summary")
     bf.add_argument("--since", help="only commits from this date (YYYY-MM-DD) onward")
 
+    sub.add_parser("ledger", help="rebuild data/offer_ledger.json from git log")
+
     args = p.parse_args()
-    {"record": cmd_record, "backfill": cmd_backfill}[args.cmd](args)
+    {"record": cmd_record, "backfill": cmd_backfill, "ledger": cmd_ledger}[args.cmd](args)
 
 
 if __name__ == "__main__":
