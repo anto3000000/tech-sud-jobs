@@ -1649,7 +1649,8 @@ def _faq_html_ld(faq):
 
 
 def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=None,
-                  city_image=None, live_facets=None, history=None, ctx=None):
+                  city_image=None, live_facets=None, history=None, ctx=None,
+                  hiring_hub=None):
     canonical = "%s/emploi/%s.html" % (SITE_URL, slug)
     facet_html = ""
     if siblings:
@@ -1677,6 +1678,10 @@ def render_facet(*, slug, h1, intro, jobs, siblings, generated, kind=None, city=
                   "list_h2": "Les offres actuellement ouvertes"}
     ed_lead, ed_sections, desc = _facet_editorial(jobs, ctx, live_facets or {})
     faq_html, faq_ld = _faq_html_ld(_facet_faq(jobs, kind, ctx, live_facets or {}))
+    if hiring_hub:
+        ed_sections += ('<p class="sub"><a href="../%s/%s.html">→ Quelles entreprises tech '
+                        'recrutent %s&nbsp;? Le détail employeur par employeur</a></p>'
+                        % (HIRING_DIR, hiring_hub[0], esc(hiring_hub[2])))
     body = """
 <nav class="bc"><a href="{home}">Accueil</a> › <a href="{hub}">Emplois</a> › {h1}</nav>
 {header}
@@ -2708,7 +2713,7 @@ def _company_link(name, slugs):
     return "<b>%s</b>" % esc(name)
 
 
-def render_hiring_guide(jobs, generated):
+def render_hiring_guide(jobs, generated, hiring_hubs=()):
     slug = "guide-entreprises-qui-recrutent-tech-paca"
     st = compute_hiring_stats(jobs)
     slugs = st["slug_by_company"]
@@ -2801,12 +2806,281 @@ def render_hiring_guide(jobs, generated):
               "Classement calculé à partir des offres réellement diffusées sur "
               "<a href=\"%s/\">sudtechjobs</a>, pas d’un baromètre marque employeur." % SITE_URL,
         faq=faq, generated=generated,
-        links_html='<p class="sub">Voir directement les offres&nbsp;? '
+        links_html=('<h2>Qui recrute dans votre ville&nbsp;?</h2><div class="facets">%s</div>'
+                    % "".join('<a href="/%s/%s.html">Entreprises qui recrutent %s</a>'
+                              % (HIRING_DIR, h[0], esc(h[2])) for h in hiring_hubs)
+                    if hiring_hubs else "")
+                   + '<p class="sub">Voir directement les offres&nbsp;? '
                    '<a href="/entreprise/">Toutes les entreprises</a>.</p>',
         title="Quelles entreprises tech recrutent le plus en PACA en 2026 | sudtechjobs",
         description="Thales, Naval Group, Alan, Sopra Steria, Capgemini : classement des "
                     "entreprises qui recrutent le plus dans la tech en PACA en ce moment, "
                     "par métier et par ville, calculé à partir des offres réelles.")
+
+
+# --------------------------------------------------------------------------- #
+#  "Quelles entreprises tech recrutent à <ville> ?" — one page per hiring hub  #
+# --------------------------------------------------------------------------- #
+# Company-first counterpart of /emploi/<ville>.html (which is offer-first): who
+# the employers are, ESN vs direct, startups vs groups, which métiers each one
+# hires for. A hub groups the towns a searcher means by that name (Valbonne and
+# Biot are "Sophia Antipolis", Ollioules is Toulon's tech park). Pages below
+# MIN_HIRING_COMPANIES aren't generated — a 2-company list isn't worth indexing;
+# they appear on their own once the feed grows.
+HIRING_DIR = "entreprises-qui-recrutent"
+MIN_HIRING_COMPANIES = 5
+HIRING_HUBS = [
+    # slug, label, "à <label>" phrase, towns (slugify'd, prefix match), area note
+    ("marseille", "Marseille", "à Marseille",
+     ("marseille", "aubagne", "la-ciotat", "gemenos", "vitrolles", "marignane",
+      "la-penne-sur-huveaune", "penne-sur-huveaune", "les-pennes-mirabeau"),
+     "Marseille et sa périphérie (Vitrolles, Marignane, Aubagne, La Ciotat, Gémenos)"),
+    ("aix-en-provence", "Aix-en-Provence", "à Aix-en-Provence",
+     ("aix-en-provence", "ais-en-provence", "meyreuil", "rousset", "fuveau",
+      "saint-paul-les-durance", "venelles", "gardanne"),
+     "Aix-en-Provence, Les Milles et le pays d’Aix (Rousset, Meyreuil, Cadarache)"),
+    ("sophia-antipolis", "Sophia Antipolis", "à Sophia Antipolis",
+     ("sophia-antipolis", "valbonne", "biot", "mougins", "antibes"),
+     "la technopole de Sophia Antipolis (Valbonne, Biot, Mougins, Antibes)"),
+    ("nice", "Nice", "à Nice",
+     ("nice", "cagnes-sur-mer", "carros", "la-trinite", "saint-laurent-du-var"),
+     "Nice et sa métropole (Carros, Cagnes-sur-Mer, Saint-Laurent-du-Var)"),
+    ("toulon", "Toulon", "à Toulon",
+     ("toulon", "ollioules", "la-seyne-sur-mer", "six-fours-les-plages", "la-garde",
+      "la-valette-du-var", "valette-du-var", "hyeres", "sanary-sur-mer"),
+     "Toulon et sa métropole (Ollioules, La Seyne-sur-Mer, Six-Fours, La Garde)"),
+    ("cannes", "Cannes", "à Cannes", ("cannes", "le-cannet", "mandelieu"),
+     "Cannes et Le Cannet"),
+    ("avignon", "Avignon", "à Avignon",
+     ("avignon", "le-pontet", "sorgues", "orange", "carpentras", "cavaillon"),
+     "Avignon et le Vaucluse"),
+]
+# company.type (build_companies.company_type) -> family used on the page
+TYPE_FAMILY = {"ESN / conseil": "esn", "Startup": "startup", "Scale-up / PME": "startup",
+               "ETI": "groupe", "Grand groupe": "groupe"}
+
+
+def _in_hub(city, towns):
+    s = slugify(city or "")
+    return bool(s) and any(s == t or s.startswith(t + "-") for t in towns)
+
+
+def compute_city_hiring(jobs, towns):
+    """Per-company rollup of the offers located in one hub — live snapshot."""
+    now = datetime.now(timezone.utc)
+    by_co = {}
+    for j in jobs:
+        if not _in_hub(j.get("city"), towns):
+            continue
+        by_co.setdefault(j.get("company") or "—", []).append(j)
+    rows = []
+    for name, cj in by_co.items():
+        crec = cj[0].get("_company") or {}
+        prof = crec.get("profile") or {}
+        seen = [d for d in (_parse_iso(j.get("first_seen") or j.get("published_at"))
+                            for j in cj) if d]
+        sal = [p for p in (_parse_salary_eur(j.get("salary")) for j in cj) if p]
+        cats = Counter(j.get("category") for j in cj if j.get("category") in CATS)
+        towns_here = Counter(j.get("city") for j in cj)
+        rows.append({
+            "name": name, "display": _display_name(name), "n": len(cj),
+            "slug": cj[0].get("_company_slug"),
+            "logo": crec.get("logo") or cj[0].get("logo"),
+            "type": crec.get("type"), "family": TYPE_FAMILY.get(crec.get("type")),
+            "sector": (prof.get("sectors") or [None])[0],
+            "headcount": prof.get("headcount"),
+            "ecosystem": (crec.get("ecosystems") or [None])[0],
+            "cats": cats.most_common(),
+            "towns": [t for t, _ in towns_here.most_common()],
+            "newest_days": min((now - d).days for d in seen) if seen else None,
+            "new_7d": sum(1 for d in seen if (now - d).days <= 7),
+            "salary": (min(lo for lo, _ in sal), max(hi for _, hi in sal)) if sal else None,
+            "remote": sum(1 for j in cj if (j.get("remote") or "") in REMOTE_FULL
+                          or (j.get("remote_detail") or "") in ("full remote", "hybride")),
+            "jobs": cj,
+        })
+    rows.sort(key=lambda r: (-r["n"], r["display"].lower()))
+    return rows
+
+
+def _hiring_co_li(r):
+    meta = []
+    meta.append('<span><b>%s</b></span>' % _plural(r["n"], "offre"))
+    for cat, n in r["cats"][:3]:
+        meta.append('<span class="tag %s">%s · %d</span>' % (cat, esc(CATS[cat][1]), n))
+    if r["salary"]:
+        lo, hi = r["salary"]
+        meta.append('<span class="sal">%s</span>' % esc(
+            _fmt_keur(lo) if lo == hi else "%s – %s" % (_fmt_keur(lo), _fmt_keur(hi))))
+    if r["remote"]:
+        meta.append("<span>%d en hybride / remote</span>" % r["remote"])
+    if r["newest_days"] is not None and r["newest_days"] <= 7:
+        meta.append('<span class="new">offre publiée cette semaine</span>')
+    sector = r["sector"]
+    if sector and r["family"] == "esn" and re.search(r"ESN|conseil", sector, re.I):
+        sector = None   # "ESN / conseil · ESN / conseil en ingénierie" says it twice
+    facts = " · ".join(esc(x) for x in [
+        r["type"], sector,
+        _fmt_headcount(r["headcount"]) if r["headcount"] else None,
+        r["ecosystem"],
+    ] if x)
+    where = ", ".join(r["towns"][:3])
+    href = "../entreprise/%s.html" % r["slug"] if r["slug"] else None
+    title = ('<a href="%s">%s</a>' % (href, esc(r["display"])) if href else esc(r["display"]))
+    return (
+        '<li class="job"><div class="head">{logo}<div class="info">'
+        '<div class="t">{title}</div><div class="co">{facts}{sep}{where}</div>'
+        '</div></div><div class="meta">{meta}</div></li>'
+    ).format(logo=_logo_html(r["logo"], r["display"], "logo"), title=title,
+             facts=facts, sep=" · " if facts and where else "", where=esc(where),
+             meta="".join(meta))
+
+
+def _hiring_name_list(rows, max_n=6):
+    out = []
+    for r in rows[:max_n]:
+        nm = esc(r["display"])
+        if r["slug"]:
+            nm = '<a href="../entreprise/%s.html">%s</a>' % (r["slug"], nm)
+        out.append("%s (%d)" % (nm, r["n"]))
+    return _fr_join(out)
+
+
+def render_city_hiring(hub, rows, generated, live_facets, other_hubs):
+    slug, label, at, _towns, area = hub
+    n_jobs = sum(r["n"] for r in rows)
+    n_co = len(rows)
+    canonical = "%s/%s/%s.html" % (SITE_URL, HIRING_DIR, slug)
+    fam = {k: [r for r in rows if r["family"] == k] for k in ("esn", "startup", "groupe")}
+    fam_jobs = {k: sum(r["n"] for r in v) for k, v in fam.items()}
+    new_co = [r for r in rows if r["new_7d"]]
+    top = rows[0]
+
+    def kpi(value, lab):
+        return '<div class="kpi"><b>%s</b><span>%s</span></div>' % (esc(str(value)), esc(lab))
+    kpis = [kpi(n_co, "entreprises qui recrutent"), kpi(n_jobs, "offres ouvertes")]
+    if new_co:
+        kpis.append(kpi(len(new_co), "ont publié cette semaine"))
+    if fam_jobs["esn"]:
+        kpis.append(kpi("%d %%" % round(100 * fam_jobs["esn"] / n_jobs), "des offres en ESN"))
+    stats = ('<div class="card city-stats"><div class="kpi-grid">%s</div>'
+             '<p class="evo">Périmètre&nbsp;: %s. Mis à jour le %s.</p></div>'
+             % ("".join(kpis), esc(area), esc(generated)))
+
+    # ---- who hires for which métier
+    cat_blocks = []
+    for cat in CATS:
+        rc = sorted(((r, dict(r["cats"]).get(cat, 0)) for r in rows), key=lambda x: -x[1])
+        rc = [(r, n) for r, n in rc if n]
+        if not rc:
+            continue
+        names = []
+        for r, n in rc[:6]:
+            nm = esc(r["display"])
+            if r["slug"]:
+                nm = '<a href="../entreprise/%s.html">%s</a>' % (r["slug"], nm)
+            names.append("%s (%d)" % (nm, n))
+        cat_blocks.append("<li><b>%s</b> — %s</li>" % (esc(CATS[cat][0]), _fr_join(names)))
+
+    # ---- FAQ (answers computed from the rows above)
+    faq = []
+    top5 = _hiring_name_list(rows, 5)
+    faq.append((
+        "Quelles entreprises tech recrutent le plus %s ?" % at,
+        "<p>%s entreprises publient en ce moment %s offres tech, data, produit ou design %s "
+        "sur sudtechjobs. Celles qui ont le plus de postes ouverts&nbsp;: %s.</p>"
+        "<p>C’est un volume d’offres publiées, pas un classement de qualité employeur.</p>"
+        % (n_co, n_jobs, at, top5)))
+    if fam["esn"]:
+        direct = [r for r in rows if r["family"] != "esn"]
+        a = ("<p>%d des %d offres (%d %%) viennent de sociétés de conseil (ESN)&nbsp;: %s. "
+             "Elles recrutent pour placer le profil en mission chez un client. "
+             % (fam_jobs["esn"], n_jobs, round(100 * fam_jobs["esn"] / n_jobs),
+                _hiring_name_list(fam["esn"], 5)))
+        if direct:
+            a += ("Le reste vient d’employeurs que sudtechjobs n’a pas identifiés comme ESN, "
+                  "dont %s — à confirmer en entretien si le poste est en direct ou en "
+                  "mission." % _hiring_name_list(direct, 5))
+        faq.append(("Les offres tech %s viennent-elles surtout d’ESN ?" % at, a + "</p>"))
+    if fam["startup"]:
+        faq.append((
+            "Quelles startups et PME tech recrutent %s ?" % at,
+            "<p>Parmi les entreprises de moins de 250 salarié·es qui recrutent %s en ce "
+            "moment&nbsp;: %s.</p>" % (at, _hiring_name_list(fam["startup"], 8))))
+    if fam["groupe"]:
+        faq.append((
+            "Quels grands groupes recrutent des profils tech %s ?" % at,
+            "<p>Côté grands groupes et ETI&nbsp;: %s.</p>" % _hiring_name_list(fam["groupe"], 8)))
+    if new_co:
+        faq.append((
+            "Qui a publié de nouvelles offres tech %s cette semaine ?" % at,
+            "<p>%s %s mis en ligne au moins une nouvelle offre %s ces 7 derniers jours"
+            "&nbsp;: %s.</p>" % (
+                _plural(len(new_co), "entreprise"), "ont" if len(new_co) > 1 else "a", at,
+                _fr_join("%s (%s)" % (
+                    ('<a href="../entreprise/%s.html">%s</a>' % (r["slug"], esc(r["display"]))
+                     if r["slug"] else esc(r["display"])),
+                    _plural(r["new_7d"], "nouvelle offre").replace("nouvelle offres", "nouvelles offres"))
+                    for r in new_co[:10]))))
+    sal_rows = [r for r in rows if r["salary"]]
+    if sal_rows:
+        faq.append((
+            "Quelles entreprises affichent un salaire %s ?" % at,
+            "<p>%d des %d entreprises affichent un salaire sur au moins une offre %s&nbsp;: %s. "
+            "Pour les médianes par métier, voir le <a href=\"/guide-salaires-tech-paca.html\">"
+            "guide des salaires tech en PACA</a>.</p>" % (
+                len(sal_rows), n_co, at, _fr_join(
+                    "%s (%s)" % (esc(r["display"]), esc(
+                        _fmt_keur(r["salary"][0]) if r["salary"][0] == r["salary"][1]
+                        else "%s – %s" % (_fmt_keur(r["salary"][0]), _fmt_keur(r["salary"][1]))))
+                    for r in sal_rows[:6]))))
+    faq_html, faq_ld = _faq_html_ld(faq)
+
+    ld = {
+        "@context": "https://schema.org", "@type": "ItemList",
+        "name": "Entreprises tech qui recrutent %s" % at,
+        "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "name": r["display"],
+             **({"url": "%s/entreprise/%s.html" % (SITE_URL, r["slug"])} if r["slug"] else {})}
+            for i, r in enumerate(rows)],
+    }
+
+    emploi_slug = slugify(label)
+    links = []
+    if emploi_slug in live_facets:
+        links.append('<a href="../emploi/%s.html">Toutes les offres tech %s</a>'
+                     % (emploi_slug, esc(at)))
+    links.extend('<a href="%s.html">Entreprises qui recrutent %s</a>' % (h[0], esc(h[2]))
+                 for h in other_hubs if h[0] != slug)
+    links.append('<a href="../guide-entreprises-qui-recrutent-tech-paca.html">'
+                 'Qui recrute en PACA</a>')
+
+    body = """
+<nav class="bc"><a href="{home}">Accueil</a> › <a href="{home}guides/">Guides</a> › <a href="{home}guide-entreprises-qui-recrutent-tech-paca.html">Entreprises qui recrutent</a> › {label}</nav>
+<h1>Quelles entreprises tech recrutent {at}&nbsp;?</h1>
+<p class="sub">{n_co} entreprises recrutent en ce moment des développeurs, profils data, produit
+ou design {at}&nbsp;: {top_name} en tête avec {top_n} offres. Liste calculée chaque jour à partir
+des offres réellement en ligne, pas d’un annuaire. <a href="#liste">Voir les {n_co} entreprises ↓</a></p>
+{stats}
+<div class="card ed-block"><h2>Qui recrute quel métier {at}&nbsp;?</h2><ul>{cat_blocks}</ul></div>
+<h2 class="list-title" id="liste">Les {n_co} entreprises qui recrutent {at}</h2>
+<ul class="jobs">{lis}</ul>
+{faq}
+<h2>Voir aussi</h2>
+<div class="facets">{links}</div>
+""".format(home=SITE_URL + "/", label=esc(label), at=esc(at), n_co=n_co,
+           top_name=esc(top["display"]), top_n=top["n"], stats=stats,
+           cat_blocks="".join(cat_blocks), lis="".join(_hiring_co_li(r) for r in rows),
+           faq=faq_html, links="".join(links))
+
+    title = "Entreprises tech qui recrutent %s en %s" % (at, generated[:4] or "2026")
+    if len(title) + len(" | sudtechjobs") <= TITLE_MAX:
+        title += " | sudtechjobs"
+    desc = ("%d entreprises tech recrutent %s : %s… %d offres dev, data, produit & design, "
+            "ESN ou en direct. Mis à jour chaque jour." % (
+                n_co, at, ", ".join(r["display"] for r in rows[:3]), n_jobs))
+    return shell(title=title, description=desc, canonical=canonical,
+                 head_extra=jsonld(ld) + (jsonld(faq_ld) if faq_ld else ""), body=body)
 
 
 def _parse_iso(s):
@@ -4010,6 +4284,17 @@ def main():
     # Optional: pages just skip that line without it.
     history = _load_history()
 
+    # company-per-city hiring pages (needs the _company stamps above)
+    hiring_live = []
+    for hub in HIRING_HUBS:
+        rows = compute_city_hiring(jobs, hub[3])
+        if len(rows) >= MIN_HIRING_COMPANIES:
+            hiring_live.append((hub, rows))
+    hiring_hubs = [h for h, _ in hiring_live]
+
+    def hiring_hub_for(city):
+        return next((h for h in hiring_hubs if _in_hub(city, h[3])), None)
+
     offre_dir = os.path.join(SITE, "offre")
     emploi_dir = os.path.join(SITE, "emploi")
     entreprise_dir = os.path.join(SITE, "entreprise")
@@ -4264,7 +4549,8 @@ def main():
                                   jobs=f["jobs"], siblings=siblings_for(slug, f),
                                   generated=generated, kind=f["kind"], city=city,
                                   city_image=city_images.get(city) if city else None,
-                                  live_facets=live_facets, history=history, ctx=f["ctx"]))
+                                  live_facets=live_facets, history=history, ctx=f["ctx"],
+                                  hiring_hub=hiring_hub_for(city) if city else None))
 
     # ---- hub -------------------------------------------------------------
     def grp(kinds, strip):
@@ -4301,6 +4587,16 @@ def main():
             fh.write(render_companies_hub(live_companies, generated))
         company_files.add("index.html")
 
+    # ---- "entreprises qui recrutent à <ville>" ---------------------------
+    hiring_dir = os.path.join(SITE, HIRING_DIR)
+    os.makedirs(hiring_dir, exist_ok=True)
+    hiring_files = set()
+    for hub, rows in hiring_live:
+        fn = hub[0] + ".html"
+        hiring_files.add(fn)
+        with open(os.path.join(hiring_dir, fn), "w", encoding="utf-8") as fh:
+            fh.write(render_city_hiring(hub, rows, generated, live_facets, hiring_hubs))
+
     # ---- legal pages (site root) ----------------------------------------
     legal = [
         ("mentions-legales", "Mentions légales | sudtechjobs",
@@ -4332,7 +4628,8 @@ def main():
 
     # ---- guides (FAQ articles, site root + /guides/ hub) -------------------
     guides_meta = []
-    for build_guide in (render_salary_guide, render_remote_guide, render_hiring_guide,
+    for build_guide in (render_salary_guide, render_remote_guide,
+                        lambda j, g: render_hiring_guide(j, g, hiring_hubs),
                         render_intern_guide, render_junior_guide, render_sophia_guide,
                         render_reconversion_guide):
         guide_slug, guide_html, card_title, card_desc = build_guide(jobs, generated)
@@ -4371,6 +4668,9 @@ def main():
     for guide_slug in guide_slugs:
         pages.append('<url><loc>%s/%s.html</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
                      '<priority>0.7</priority></url>' % (SITE_URL, guide_slug, today))
+    for fn in sorted(hiring_files):
+        pages.append('<url><loc>%s/%s/%s</loc><lastmod>%s</lastmod><changefreq>daily</changefreq>'
+                     '<priority>0.7</priority></url>' % (SITE_URL, HIRING_DIR, fn, today))
     for slug in ("mentions-legales", "cgu", "confidentialite"):
         pages.append('<url><loc>%s/%s.html</loc><changefreq>yearly</changefreq>'
                      '<priority>0.2</priority></url>' % (SITE_URL, slug))
@@ -4411,6 +4711,9 @@ def main():
         fh.write("User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n" % SITE_URL)
 
     # llms.txt — a short, curated map for LLM agents (llmstxt.org format).
+    hiring_lines = "".join(
+        "- [Entreprises tech qui recrutent %s](%s/%s/%s.html): employeurs, ESN ou direct, "
+        "métiers recherchés\n" % (h[2], SITE_URL, HIRING_DIR, h[0]) for h in hiring_hubs)
     guide_lines = "\n".join("- [%s](%s/%s.html): %s" % (t, SITE_URL, s, d)
                             for s, t, d in guides_meta)
     llms = (
@@ -4426,13 +4729,15 @@ def main():
         "## Parcourir\n\n"
         "- [Offres par métier et ville](%s/emploi/): pages filtrées (métier, techno, ville, télétravail)\n"
         "- [Entreprises qui recrutent](%s/entreprise/): fiches des employeurs tech de la région\n"
+        "%s"
         "- [Chiffres clés](%s/dashboard.html): instantané du marché (volumes, télétravail, salaires, top recruteurs)\n\n"
         "## Guides\n\n%s\n\n"
         "## À propos\n\n"
         "- [À propos](%s/a-propos.html): qui est derrière le site et d'où viennent les offres\n"
         "- [Méthodologie](%s/methodologie.html): sources, fréquence de mise à jour, "
         "déduplication, calcul des salaires, télétravail, technologies\n"
-    ) % (len(jobs), SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, guide_lines,
+    ) % (len(jobs), SITE_URL, SITE_URL, SITE_URL, SITE_URL, SITE_URL, hiring_lines,
+         SITE_URL, guide_lines,
          SITE_URL, SITE_URL)
     with open(os.path.join(SITE, "llms.txt"), "w", encoding="utf-8") as fh:
         fh.write(llms)
@@ -4531,6 +4836,7 @@ def main():
     wipe_html(offre_dir, offer_files | tombstone_files)
     wipe_html(emploi_dir, facet_files)
     wipe_html(entreprise_dir, company_files)
+    wipe_html(hiring_dir, hiring_files)
 
     print("render_pages: %d offers, %d tombstones, %d facet pages, %d company pages, "
           "%d sitemap urls, feed.xml (%d items), %s"
