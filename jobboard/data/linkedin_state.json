@@ -1,9 +1,9 @@
 {
-  "last_generated_date": "2026-10-08",
+  "last_generated_date": "2026-10-09",
   "bucket_last_used": {
     "eng-13": "2026-10-08",
     "eng-06": "2026-10-04",
-    "eng-83": "2026-10-02",
+    "eng-83": "2026-10-09",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-03",
     "data-13": "2026-09-30",
@@ -108,7 +108,12 @@
     "thales-ingenieur-developpement-logiciel-embarque-pour-l-iot-f-h-5f0544": "2026-10-08",
     "thales-responsable-plateforme-logiciel-embarque-et-validation-systeme-de5775": "2026-10-08",
     "assystem-ingenieur-developpement-systeme-temps-reel-h-f-00d0d9": "2026-10-08",
-    "groupe-lr-technologies-developpeur-full-stack-java-react-nodejs-h-f-6e6fc1": "2026-10-08"
+    "groupe-lr-technologies-developpeur-full-stack-java-react-nodejs-h-f-6e6fc1": "2026-10-08",
+    "naval-group-fr-concepteur-ihm-systemes-embarques-h-f-c32e5f": "2026-10-09",
+    "naval-group-fr-ingenieur-developpeur-software-h-f-cd90fa": "2026-10-09",
+    "scalian-developpeur-cpp-senior-h-f-ba09db": "2026-10-09",
+    "scalian-ingenieur-electronique-f-h-715b41": "2026-10-09",
+    "the-adecco-group-chef-de-projet-senior-software-embarque-h-f-bca15d": "2026-10-09"
   },
   "last_published_date": "2026-10-08"
 }
