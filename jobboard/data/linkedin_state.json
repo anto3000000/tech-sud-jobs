@@ -1,8 +1,8 @@
 {
-  "last_generated_date": "2026-10-09",
+  "last_generated_date": "2026-10-10",
   "bucket_last_used": {
     "eng-13": "2026-10-08",
-    "eng-06": "2026-10-04",
+    "eng-06": "2026-10-10",
     "eng-83": "2026-10-09",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-09",
@@ -128,7 +128,12 @@
     "pennylane-senior-tech-recruiter-m-f-e20531": "2026-10-09",
     "exalt-chef-de-projet-it-infrastructure-h-f-ba5b54": "2026-10-09",
     "smile-chef-de-projet-applicatif-senior-h-f-aix-marseille-3be421": "2026-10-09",
-    "smile-chef-de-projet-technique-moe-senior-h-f-aix-marseille-6d1506": "2026-10-09"
+    "smile-chef-de-projet-technique-moe-senior-h-f-aix-marseille-6d1506": "2026-10-09",
+    "thales-java-developper-back-end-f-h-d797c8": "2026-10-10",
+    "sogelink-software-engineer-f-h-0a0b49": "2026-10-10",
+    "alten-ingenieur-logiciel-db243b": "2026-10-10",
+    "exalt-developpeur-front-end-angular-7c3d11": "2026-10-10",
+    "orange-ingenieur-developpeur-front-h-f-46b3f2": "2026-10-10"
   },
   "last_published_date": "2026-10-09"
 }
