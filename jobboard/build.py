@@ -325,6 +325,44 @@ def _excerpt(txt, n=340):
     return (txt[:n].rsplit(" ", 1)[0] + "…") if len(txt) > n else txt
 
 
+_SENT_SPLIT = re.compile(r"(?<=[.!?…])\s+|\n+")
+_HEADING = re.compile(r"^[^.!?]{0,60}:$")
+
+
+def _sent_key(s):
+    s = unicodedata.normalize("NFKD", s.lower())
+    return re.sub(r"[^a-z0-9]+", "", s)
+
+
+def strip_company_boilerplate(jobs):
+    """Large employers prepend the same employer-brand intro to every posting
+    (Airbus: "Envie de déployer vos ailes ?…"), so every card showed the same
+    excerpt. A sentence found in 3+ of a company's postings is boilerplate
+    (one employer can run several templates: internships vs CDI): rebuild the card excerpt from what's left. The full
+    description on the offer page is untouched."""
+    by_co = {}
+    for j in jobs:
+        if j.get("description"):
+            by_co.setdefault(j.get("company_slug") or _slug(j.get("company")), []).append(j)
+    for group in by_co.values():
+        if len(group) < 3:
+            continue
+        split = []
+        counts = {}
+        for j in group:
+            sents = [s.strip() for s in _SENT_SPLIT.split(j["description"]) if s.strip()]
+            split.append(sents)
+            for k in {_sent_key(s) for s in sents}:
+                counts[k] = counts.get(k, 0) + 1
+        for j, sents in zip(group, split):
+            kept = [s for s in sents if counts.get(_sent_key(s), 0) < 3]
+            # drop orphan section labels ("Job Description:", "Votre mission :")
+            while kept and _HEADING.match(kept[0]):
+                kept.pop(0)
+            if kept and len(kept) < len(sents):
+                j["description_excerpt"] = _excerpt(" ".join(kept))
+
+
 def load_ats():
     p = os.path.join(DATA, "ats_jobs.json")
     if not os.path.exists(p):
@@ -474,6 +512,7 @@ def main():
     # keep core + adjacent; expose the split to the UI via `category`
     merged = [m for m in merged if m.get("category")]
     merged = [m for m in merged if not _is_test_posting(m.get("title"))]
+    strip_company_boilerplate(merged)
 
     # CI guard: if a source API silently changes shape we can end up with an
     # almost-empty feed. Fail loudly instead of deploying it. Override locally
