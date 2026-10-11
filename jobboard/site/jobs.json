@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-11T11:52:33+00:00",
+  "generated_at": "2026-10-11T16:36:14+00:00",
   "region": "Provence-Alpes-Côte d'Azur",
   "count": 736,
   "companies": 125,
-  "new_count": 190,
+  "new_count": 184,
   "by_category": {
     "eng": 252,
     "data": 182,
@@ -7316,7 +7316,7 @@
       "start_date": "2026-11-01T23:00:00Z",
       "enriched_at": "2026-10-11T11:26:06+00:00",
       "first_seen": "2026-10-01T12:04:19+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "solinum-agent-de-collecte-de-base-de-donnees-paca-f388af"
     },
     {
@@ -7343,7 +7343,7 @@
       "description": "Domaine : Physique du noyau, atome, molécule\n\nContrat : CDI\n\nDescription du poste : \n\nNous recherchons un(e ) ingénieur(e ) architecte de données pour l'équipe \"Développement logiciels et application web\". Avec l'augmentation du volume et de la complexité des données — motivée par des campagnes expérimentales plus longues, des mesures haute résolution et des simulations à l'échelle exaflopique — la capacité à développer des flux de travail optimisés et des stratégies d'accès aux données efficaces est devenue essentielle.\nDe plus, l'intégration de méthodes d'IA et d'apprentissage automatique dans les processus scientifiques accroît encore le besoin de pipelines de données évolutifs et robustes, capables de soutenir des analyses avancées et une prise de décision en temps réel.\nVos missions principales sont les suivantes :\n* dans le domaine des pipelines de données et de la valorisation (60% à 80%), vous :\n- concevez et développez des pipelines de données pour alimenter des datamarts\n- développez les briques d'enrichissement des données, incluant une interface graphique de visualisation et d'annotation\n- développer des outils de visualisation et des dashboards pour les utilisateurs finaux (chercheurs, data scientists)\n- contribuez à l'amélioration de l'accès et de la gestion des données dans un environnement IA croissant\n- êtes support aux utilisateurs\n* dans le socle logiciel critique (20% à 40%), vous maintenez et faites évoluer :\n- l'accès aux données expérimentales TSLIB (C++, architecture client/serveur)\n- le code de séquencement des post-traitements (Sequenceur - C++/Slurm)\nEt vous participez aux sessions expérimentales en tant que personne en charge des processus d’acquisition (5% à 10%)\n\nTitulaire d’un Bac+5 en informatique, data engineering ou domaine connexe, vous disposez d’une expérience solide en développement logiciel et en gestion des données.\nVous maîtrisez C, C++ ou Fortran depuis plus de 2 ans et disposez de bonnes bases dans un second langage, idéalement Python. Vous avez également une expérience confirmée des outils de gestion de développement (Git, GitLab, GitHub, CI/CD).\nVous justifiez d’au moins 1 an d’expérience en gestion et traitement de données, notamment en écriture et optimisation des données, traitement scientifique, nettoyage, transformation, visualisation ou validation. Vous connaissez les formats HDF5, NetCDF ou Parquet, ainsi que PostgreSQL et les principales architectures de données (data lake, data warehouse, data mart). Une expérience en optimisation de code et de performances, notamment en parallélisation, gestion mémoire ou réduction de la latence, est appréciée.\nCurieux et attiré par les enjeux scientifiques, vous vous intéressez aux simulations, à la modélisation et à l’IA. Une expérience dans un environnement de recherche ou avec des workflows IA/ML constitue un atout.\nRigoureux, réactif et autonome, vous savez prioriser les tâches et intervenir efficacement dans des délais serrés (résolution des problèmes critiques sous 48h). Adaptable, vous êtes à l’aise avec des missions variées de développement, debug, optimisation et support. Vous appréciez le travail en équipe, partagez vos connaissances et savez communiquer clairement des concepts techniques à des interlocuteurs non spécialistes.\nLa maîtrise de l'anglais technique est souhaitée.\n\n…ET CE N’EST PAS TOUT !\nLes à-côtés de votre mission principale peuvent vous intéresser :\n· Un écosystème de recherche à la pointe, dédié à des thématiques à fort enjeu sociétal,\n· Des formations pour renforcer vos compétences et booster votre carrière,\n· Un CE riche en avantages sociaux, culturels et sportifs,\n· Des avantages pratiques dont un restaurant d’entreprise,\n\nVous souhaitez faire partie de l’aventure ? Postulez dès maintenant et mettez votre énergie au service de la recherche et de l’innovation !\n\nConformément aux engagements pris par le CEA en faveur de l’intégration des personnes handicapées, cet emploi est ouvert à toutes et à tous. Le CEA propose des aménagements et/ou des possibilités d’organisation pour l’inclusion des travailleurs handicapés\n\nVille : Cadarache\n\nLangue / Niveau : \n\nAnglais : Courant",
       "description_excerpt": "Domaine : Physique du noyau, atome, molécule Contrat : CDI Description du poste : Nous recherchons un(e ) ingénieur(e ) architecte de données pour l'équipe \"Développement logiciels et application web\". Avec l'augmentation du volume et de la complexité des données — motivée par des campagnes expérimentales plus longues, des mesures haute…",
       "first_seen": "2026-10-01T12:04:19+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "cea-ingenieur-architecte-de-donnees-h-f-e3b29e",
       "logo": "/brand/companies/cea-logo.svg"
     },
@@ -7395,7 +7395,7 @@
       "start_date": null,
       "enriched_at": "2026-10-11T11:26:06+00:00",
       "first_seen": "2026-10-01T12:04:19+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "naval-group-fr-ingenieur-systemes-embarques-systemes-de-combat-h-f-7704b3"
     },
     {
@@ -7455,7 +7455,7 @@
       "start_date": null,
       "enriched_at": "2026-10-11T11:26:06+00:00",
       "first_seen": "2026-10-01T12:04:19+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "thales-ingenieur-devops-f-h-5a6965"
     },
     {
@@ -7512,7 +7512,7 @@
       "start_date": null,
       "enriched_at": "2026-10-11T11:26:06+00:00",
       "first_seen": "2026-10-01T12:04:19+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "cs-developpeur-se-cpp-qt-mise-en-place-de-fonctionnalites-dans-le-prod-e3c137"
     },
     {
@@ -7569,7 +7569,7 @@
       "start_date": null,
       "enriched_at": "2026-10-11T11:26:06+00:00",
       "first_seen": "2026-10-01T12:04:19+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "cs-developpeur-se-cpp-qt-ia-implementation-d-un-chatbot-dans-le-produi-466d6a"
     },
     {
