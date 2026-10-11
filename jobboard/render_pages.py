@@ -4535,7 +4535,7 @@ def wipe_html(dirpath, keep):
 
 
 def patch_home_count(n):
-    """site/index.html is hand-written (not rendered here) but its H1 lede and
+    """site/index.html is hand-written (not rendered here) but its "about" block and
     meta description quote the live offer count, so crawlers that don't run
     the page's JS still see today's number. Rewrite just those two spots."""
     p = os.path.join(SITE, "index.html")
