@@ -7,9 +7,6 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Fontaine_de_la_Rotonde_-_Aix-en-Provence.JPG/1280px-Fontaine_de_la_Rotonde_-_Aix-en-Provence.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
-  "Aix-en-Provence Les Milles": {
-    "checked_at": 1791289824.228739
-  },
   "Avignon": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_2_JP_Campomar.jpg",
@@ -189,6 +186,14 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Bell_tower_of_the_church_Our_Lady_of_the_Assumption_in_Saint-Tropez%2C_France_%2852723273607%29.jpg/1280px-Bell_tower_of_the_church_Our_Lady_of_the_Assumption_in_Saint-Tropez%2C_France_%2852723273607%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
+  "Six Fours": {
+    "checked_at": 1791812784.3144202,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Panorama_de_Six-Fours-les-Plages.jpg",
+    "file": "Panorama_de_Six-Fours-les-Plages.jpg",
+    "height": 557,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Panorama_de_Six-Fours-les-Plages.jpg/1280px-Panorama_de_Six-Fours-les-Plages.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 1200
+  },
   "Six-Fours-les-Plages": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Panorama_de_Six-Fours-les-Plages.jpg",
@@ -198,7 +203,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1791719553.9472692,
+    "checked_at": 1791812784.3144202,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,

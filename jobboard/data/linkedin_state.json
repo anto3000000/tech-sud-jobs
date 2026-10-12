@@ -1,12 +1,12 @@
 {
-  "last_generated_date": "2026-10-11",
+  "last_generated_date": "2026-10-12",
   "bucket_last_used": {
     "eng-13": "2026-10-08",
     "eng-06": "2026-10-10",
     "eng-83": "2026-10-09",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-09",
-    "data-13": "2026-09-30",
+    "data-13": "2026-10-12",
     "data-06": "2026-09-30",
     "data-83": "2026-10-01",
     "data-paca": "2026-10-02",
@@ -24,11 +24,6 @@
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-02",
     "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-02",
     "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-02",
-    "cgi-ingenieur-e-java-senior-f-h-e81e21": "2026-09-27",
-    "naval-group-fr-charge-e-d-etudes-systemes-embarques-systemes-de-combat-dcbb29": "2026-09-27",
-    "naval-group-fr-concepteur-developpeur-logiciel-java-h-f-c1ba20": "2026-09-27",
-    "sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-e3b964": "2026-09-27",
-    "thales-ingenieur-e-developpement-fullstack-angular-h-f-0b859f": "2026-09-27",
     "naval-group-fr-ingenieur-e-initie-e-systemes-embarques-armes-h-f-f67d2a": "2026-09-28",
     "thales-ingenieur-etudes-developpement-hardware-f-h-30e686": "2026-09-28",
     "alten-innovation-ingenieur-genie-logiciel-fullstack-044fc5": "2026-09-28",
@@ -133,7 +128,12 @@
     "groupe-orlade-pmo-it-90c9fb": "2026-10-11",
     "naval-group-fr-charge-de-support-it-h-f-9e2449": "2026-10-11",
     "mc2i-consultant-e-transformation-numerique-naval-defense-toulon-h-f-746e57": "2026-10-11",
-    "mc2i-consultant-en-transformation-numerique-industrie-toulon-h-f-f8ca75": "2026-10-11"
+    "mc2i-consultant-en-transformation-numerique-industrie-toulon-h-f-f8ca75": "2026-10-11",
+    "airbus-helicopters-logiciel-r-d-2027-ingenieur-e-en-intelligence-artif-e998da": "2026-10-12",
+    "airbus-helicopters-logiciel-r-d-2027-stage-en-integration-de-donnees-e-a981c6": "2026-10-12",
+    "gojob-data-analyst-h-f-equipe-paie-facturation-169191": "2026-10-12",
+    "groupe-lr-technologies-directeur-de-programme-data-h-f-b96fa9": "2026-10-12",
+    "the-adecco-group-business-analyst-h-f-fc5728": "2026-10-12"
   },
   "last_published_date": "2026-10-11"
 }
