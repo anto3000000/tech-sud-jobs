@@ -7,6 +7,14 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Fontaine_de_la_Rotonde_-_Aix-en-Provence.JPG/1280px-Fontaine_de_la_Rotonde_-_Aix-en-Provence.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
+  "Aubagne": {
+    "checked_at": 1791898277.3358426,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Montage_Aubagne.jpg",
+    "file": "Montage_Aubagne.jpg",
+    "height": 1681,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Montage_Aubagne.jpg/1280px-Montage_Aubagne.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 1200
+  },
   "Avignon": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_2_JP_Campomar.jpg",
@@ -53,6 +61,14 @@
     "file": "Vue_du_village_de_Carros_et_du_Mercantour_enneigé_au_nord_de_la_résidence_de_l’Estellan.jpg",
     "height": 800,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg/1280px-Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 1200
+  },
+  "Cavaillon": {
+    "checked_at": 1791898277.3358426,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Panorama_du_centre_ville_de_la_ville_de_Cavaillon.jpg",
+    "file": "Panorama_du_centre_ville_de_la_ville_de_Cavaillon.jpg",
+    "height": 675,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Panorama_du_centre_ville_de_la_ville_de_Cavaillon.jpg/1280px-Panorama_du_centre_ville_de_la_ville_de_Cavaillon.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
   "Gémenos": {
@@ -162,14 +178,6 @@
   "Provence-Alpes-Côte d'Azur": {
     "checked_at": 1790322269.2825532
   },
-  "Rousset": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Rousset-FR-13-moulin-3.jpg",
-    "file": "Rousset-FR-13-moulin-3.jpg",
-    "height": 900,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Rousset-FR-13-moulin-3.jpg/1280px-Rousset-FR-13-moulin-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-    "width": 1200
-  },
   "Saint-Paul-lès-Durance": {
     "checked_at": 1790942944.0141337,
     "commons_url": "https://commons.wikimedia.org/wiki/File:St_Paul_L%C3%A8s_Durance_-_mairie_1.JPG",
@@ -203,7 +211,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1791812784.3144202,
+    "checked_at": 1791898277.3358426,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
@@ -224,6 +232,14 @@
     "file": "PAL61872-pano.jpg",
     "height": 400,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/PAL61872-pano.jpg/1280px-PAL61872-pano.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 1200
+  },
+  "Venelles": {
+    "checked_at": 1791898277.3358426,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Clocher_de_l%27Eglise_-_Venelles_%2813%29.JPG",
+    "file": "Clocher_de_l'Eglise_-_Venelles_(13).JPG",
+    "height": 1600,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Clocher_de_l%27Eglise_-_Venelles_%2813%29.JPG/1280px-Clocher_de_l%27Eglise_-_Venelles_%2813%29.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
   "Vitrolles": {

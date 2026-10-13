@@ -1,7 +1,7 @@
 {
-  "last_generated_date": "2026-10-12",
+  "last_generated_date": "2026-10-13",
   "bucket_last_used": {
-    "eng-13": "2026-10-08",
+    "eng-13": "2026-10-13",
     "eng-06": "2026-10-10",
     "eng-83": "2026-10-09",
     "eng-84": "2026-09-18",
@@ -24,16 +24,6 @@
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-02",
     "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-02",
     "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-02",
-    "naval-group-fr-ingenieur-e-initie-e-systemes-embarques-armes-h-f-f67d2a": "2026-09-28",
-    "thales-ingenieur-etudes-developpement-hardware-f-h-30e686": "2026-09-28",
-    "alten-innovation-ingenieur-genie-logiciel-fullstack-044fc5": "2026-09-28",
-    "b-hive-ingenieur-electronique-numerique-f-h-b1512f": "2026-09-28",
-    "b-hive-ingenieur-fpga-f-h-6a2217": "2026-09-28",
-    "b-hive-referent-fpga-f-h-77d162": "2026-09-28",
-    "capgemini-ingenieur-e-informatique-industrielle-stage-3f144e": "2026-09-28",
-    "groupe-lr-technologies-developpeur-csharp-dotnet-systemes-industriels-db95d0": "2026-09-28",
-    "livecampus-developpeur-full-stack-6ff1b2": "2026-09-28",
-    "scalian-ingenieur-developpeur-labview-h-f-3042cb": "2026-09-28",
     "orange-ingenieur-developpeur-full-stack-h-f-8aa8f4": "2026-09-29",
     "thales-tech-lead-web-react-f-h-e37428": "2026-09-29",
     "dassault-systemes-ingenieur-e-recherche-prediction-des-trajectoires-de-82979e": "2026-09-29",
@@ -133,7 +123,12 @@
     "airbus-helicopters-logiciel-r-d-2027-stage-en-integration-de-donnees-e-a981c6": "2026-10-12",
     "gojob-data-analyst-h-f-equipe-paie-facturation-169191": "2026-10-12",
     "groupe-lr-technologies-directeur-de-programme-data-h-f-b96fa9": "2026-10-12",
-    "the-adecco-group-business-analyst-h-f-fc5728": "2026-10-12"
+    "the-adecco-group-business-analyst-h-f-fc5728": "2026-10-12",
+    "bertin-technologies-developpement-briques-traitement-du-signal-sur-fpg-efa504": "2026-10-13",
+    "bertin-technologies-developpement-d-un-banc-de-test-logiciel-et-materi-4d3acb": "2026-10-13",
+    "onatera-dev-produit-372303": "2026-10-13",
+    "solinum-tech-lead-responsable-technique-140195": "2026-10-13",
+    "setec-ingenieur-e-projet-systemes-embarques-et-mobilites-intelligentes-bb8419": "2026-10-13"
   },
   "last_published_date": "2026-10-12"
 }

@@ -17,6 +17,17 @@
 "source": "amazonjobs",
 "title": "Ingénieur(e) en Chef, Senior, DCEO, Data Center Engineering Operations"
 },
+"ats:ashby:02b1312226": {
+"category": "eng",
+"city": "Remote",
+"company": "Pennylane",
+"contract": "CDI",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"remote": "remote",
+"source": "ashby",
+"title": "Fullstack Software Engineer RoR/JS W/M"
+},
 "ats:ashby:0c6879567e": {
 "category": "product",
 "city": "Marseille",
@@ -27,6 +38,17 @@
 "remote": "remote",
 "source": "ashby",
 "title": "Product Builder - Sales AI"
+},
+"ats:ashby:17cc0e80d0": {
+"category": "eng",
+"city": "Remote",
+"company": "Alan",
+"contract": "CDI",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"remote": "remote",
+"source": "ashby",
+"title": "Fullstack Software Engineer (x/f/m) -Automated Resolution"
 },
 "ats:ashby:1b03db02d4": {
 "category": "tech-adjacent",
@@ -1173,7 +1195,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-10-11",
+"last_seen": "2026-10-13",
 "source": "dassault",
 "title": "Ingénieur.e Recherche – Machine learning (F/H)"
 },
@@ -1572,7 +1594,7 @@
 "company": "CMA CGM",
 "contract": "Stage",
 "first_seen": "2026-10-08",
-"last_seen": "2026-10-11",
+"last_seen": "2026-10-13",
 "source": "jobs2web",
 "title": "Cyber Innovation Intern - Applied AI & Cybersecurity"
 },
@@ -1662,7 +1684,7 @@
 "company": "CMA CGM",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-10-11",
+"last_seen": "2026-10-13",
 "source": "jobs2web",
 "title": "Procurement & Data Analyst Assistant"
 },
@@ -2902,7 +2924,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-09-27",
-"last_seen": "2026-10-10",
+"last_seen": "2026-10-13",
 "source": "phenom",
 "title": "Consultant DevOps / Platform Engineer F/H"
 },
@@ -2912,7 +2934,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-10-11",
+"last_seen": "2026-10-13",
 "source": "phenom",
 "title": "Consultant Data/BI senior F/H"
 },
@@ -2932,7 +2954,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-10-11",
+"last_seen": "2026-10-13",
 "source": "phenom",
 "title": "Ingénieur Avant-Vente Interopérabilité Biomédicale H/F"
 },
@@ -2945,6 +2967,16 @@
 "last_seen": "2026-10-13",
 "source": "phenom",
 "title": "Technicien support"
+},
+"ats:phenom:8aaa8437b3": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "Orange",
+"contract": "CDD",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"source": "phenom",
+"title": "Data Analyst domaine Etudes F/H"
 },
 "ats:phenom:ca9b3528f5": {
 "category": "tech-adjacent",
@@ -3022,7 +3054,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-10-11",
+"last_seen": "2026-10-13",
 "source": "phenom",
 "title": "Ingénieur Sécurité H/F"
 },
@@ -3062,7 +3094,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-10-11",
+"last_seen": "2026-10-13",
 "source": "phenom",
 "title": "Ingénieur Développeur Confirmé F/H"
 },
@@ -4888,6 +4920,36 @@
 "source": "smartrecruiters",
 "title": "de fin d'études - Consultant·e Cybersécurité - Marseille"
 },
+"ats:taleez:28be2e147d": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Bertin Technologies",
+"contract": "Stage",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"source": "taleez",
+"title": "DEVELOPPEMENT D'UN BANC DE TEST LOGICIEL ET MATERIEL POUR CAMERAS INFRAROUGES"
+},
+"ats:taleez:4f406d32ab": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Bertin Technologies",
+"contract": "Stage",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"source": "taleez",
+"title": "MISE EN PLACE ET INTEGRATION D’UNE STRATEGIE SECURE BOOT POUR LES FIRMWARES DE CAMERAS"
+},
+"ats:taleez:8f500281a6": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Bertin Technologies",
+"contract": "Stage",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"source": "taleez",
+"title": "DEVELOPPEMENT BRIQUES TRAITEMENT DU SIGNAL SUR FPGA"
+},
 "ats:taleez:92abd2a789": {
 "category": "data",
 "city": "Aix-en-Provence",
@@ -4907,6 +4969,16 @@
 "last_seen": "2026-10-13",
 "source": "taleez",
 "title": "IA - DEVELOPPEMENT D’UN ALGORITHME D’IDENTIFICATION DE ZONES D’INTERET SUR VEHICULES PAR IMAGERIE THERMIQUE"
+},
+"ats:taleez:e9603fb425": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Bertin Technologies",
+"contract": "Stage",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"source": "taleez",
+"title": "MISE EN PLACE D'UNE CHAINE CI/CD POUR FIRMWARES CAMERAS"
 },
 "ats:taleez:mailinblack:45def1e63f": {
 "category": "eng",
@@ -5106,6 +5178,15 @@
 "last_seen": "2026-09-14",
 "source": "teamtailor",
 "title": "Chargé de support projets et recettes applicatives  H/F"
+},
+"ats:teamtailor:f56505db48": {
+"category": "eng",
+"city": "Aix-en-Provence",
+"company": "Onatera",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"source": "teamtailor",
+"title": "Dev produit"
 },
 "ats:teamtailor:groupelrtechnologies:0aa3388a87": {
 "category": "eng",
@@ -5397,6 +5478,16 @@
 "source": "workday",
 "title": "2027 - MRO AC Business & Data Analyst - H/F"
 },
+"ats:workday:30bf1cdd4c": {
+"category": "eng",
+"city": "Sophia Antipolis",
+"company": "Thales",
+"contract": "Stage",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"source": "workday",
+"title": "Ingénieur Développement logiciel F/H"
+},
 "ats:workday:30e8989cbe": {
 "category": "data",
 "city": "Marignane",
@@ -5580,11 +5671,11 @@
 },
 "ats:workday:9f18fdc4c9": {
 "category": "eng",
-"city": "Marseille Area",
+"city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-09-26",
-"last_seen": "2026-09-28",
+"last_seen": "2026-10-13",
 "source": "workday",
 "title": "2027 - Stage Développement d’Outils Système pour la Maintenance des Hélicoptères (h/f/)"
 },
@@ -6060,6 +6151,25 @@
 "last_seen": "2026-09-28",
 "source": "workday",
 "title": "2027 - Stage en développement et industrialisation d'agents d'IA (h/f)"
+},
+"ats:workday:c0ffa8aeba": {
+"category": "product",
+"city": "Toulon",
+"company": "Thales",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"source": "workday",
+"title": "Ingénieur(e) Product Owner H/F"
+},
+"ats:workday:cc50535970": {
+"category": "data",
+"city": "Marignane",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"contract": "Stage",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"source": "workday",
+"title": "2027 Cybersécurité - Détection de vulnérabilités par Intelligence Artificielle (H/F)"
 },
 "ats:workday:ce0d32829c": {
 "category": "design",
@@ -8724,7 +8834,7 @@
 "remote": "ponctuel",
 "salary": "45000–55000 EUR",
 "source": "wttj",
-"title": "Team Lead Développeur Front-end — Marseille (H/F/X)"
+"title": "Manager - Développeur Front-end — Marseille (H/F/X)"
 },
 "wttj:4028936": {
 "category": "eng",
@@ -10251,7 +10361,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-09-21",
+"last_seen": "2026-10-13",
 "source": "wttj",
 "title": "AI UX Researcher (F/H)"
 },
@@ -11031,6 +11141,18 @@
 "salary": "38000–39000 EUR",
 "source": "wttj",
 "title": "Testeur QA (F/H)"
+},
+"wttj:4233327": {
+"category": "eng",
+"city": "Marseille",
+"company": "Solinum",
+"contract": "CDI",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"remote": "ponctuel",
+"salary": "47000–50000 EUR",
+"source": "wttj",
+"title": "Tech Lead / Responsable Technique"
 },
 "wttj:4234701": {
 "category": "eng",
@@ -13565,6 +13687,17 @@
 "source": "wttj",
 "title": "Ingénieur DevOps Expérimenté (F/H)"
 },
+"wttj:4291808": {
+"category": "devops",
+"city": "Marseille",
+"company": "PONANT EXPLORATIONS GROUP",
+"contract": "CDI",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"remote": "sur site",
+"source": "wttj",
+"title": "Administrateur Système et Réseau H/F"
+},
 "wttj:4293410": {
 "category": "devops",
 "city": "Ollioules",
@@ -14868,6 +15001,86 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-10-12",
+"last_seen": "2026-10-13",
+"remote": "sur site",
+"source": "wttj",
+"title": "Business Analyst H/F"
+},
+"wttj:4325804": {
+"category": "tech-adjacent",
+"city": "Aubagne",
+"company": "Linking Talents",
+"contract": "CDI",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"remote": "hybride",
+"salary": "25000–30000 EUR",
+"source": "wttj",
+"title": "Technicien Hotline - Bilingue Italien (H/F)"
+},
+"wttj:4325861": {
+"category": "eng",
+"city": "Nice",
+"company": "Isahit - Compte de tests",
+"contract": "CDI",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"remote": "sur site",
+"salary": "3500–5000 EUR",
+"source": "wttj",
+"title": "Backend Engineer JED-3608 test"
+},
+"wttj:4325986": {
+"category": "cybersecurite",
+"city": "Venelles",
+"company": "NXO France",
+"contract": "CDI",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"remote": "hybride",
+"salary": "55000–60000 EUR",
+"source": "wttj",
+"title": "Ingénieur(e ) Cybersécurité  H/F"
+},
+"wttj:4327053": {
+"category": "devops",
+"city": "Ollioules",
+"company": "Naval Group [FR]",
+"contract": "Stage",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"source": "wttj",
+"title": "Ingénieur Logiciel ou DevOps – Tests de robustesse (Fuzz & Chaos Testing) H/F"
+},
+"wttj:4327116": {
+"category": "devops",
+"city": "Aix-en-Provence",
+"company": "Voyage Privé",
+"contract": "CDI",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"remote": "hybride",
+"source": "wttj",
+"title": "Senior Devops Engineer / SRE - Full Remote"
+},
+"wttj:4327815": {
+"category": "tech-adjacent",
+"city": "Cavaillon",
+"company": "OZITEM",
+"contract": "Freelance",
+"first_seen": "2026-10-13",
+"last_seen": "2026-10-13",
+"remote": "sur site",
+"salary": "220 EUR",
+"source": "wttj",
+"title": "Technicien de proximité (H/F)"
+},
+"wttj:4327875": {
+"category": "data",
+"city": "Marignane",
+"company": "The Adecco Group",
+"contract": "CDI",
+"first_seen": "2026-10-13",
 "last_seen": "2026-10-13",
 "remote": "sur site",
 "source": "wttj",
