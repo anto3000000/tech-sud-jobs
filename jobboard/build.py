@@ -363,6 +363,27 @@ def strip_company_boilerplate(jobs):
                 j["description_excerpt"] = _excerpt(" ".join(kept))
 
 
+# Workday ships metro labels ("Marseille Area") for sites that are really in
+# Marignane / Vitrolles / Les Milles; the description names the actual site
+_AREA_RX = re.compile(r"\bArea\b", re.I)
+_SITE_RX = re.compile(
+    r"(?:\bsite (?:de |d['’]\s*)|\bbas[ée]e?s? (?:à|a) |\bLieu\s*:\s*|"
+    r"\bimplant[ée]e?s? (?:à|a) |\bin )"
+    r"(Aix[- ]les[- ]Milles|Aix[- ]en[- ]Provence|Marignane|Vitrolles|Marseille|"
+    r"Istres|Gémenos|La Ciotat|Toulon|Ollioules|Nice|Sophia[- ]Antipolis|Cannes|"
+    r"Valbonne|Rousset|Aubagne|Martigues)\b", re.I)
+
+
+def _site_from_description(desc):
+    m = _SITE_RX.search(desc or "")
+    if not m:
+        return None
+    site = m.group(1)
+    if re.match(r"aix[- ]les[- ]milles", site, re.I):   # Les Milles is part of Aix
+        return "Aix-en-Provence"
+    return canon_city(site)
+
+
 def load_ats():
     p = os.path.join(DATA, "ats_jobs.json")
     if not os.path.exists(p):
@@ -397,6 +418,8 @@ def load_ats():
         m = [x for x in m if _is_paca(x)] or m
         if m and m[0].strip():
             city = m[0].strip()
+        if _AREA_RX.search(loc):
+            city = _site_from_description(j.get("description")) or city
         out.append({
             "id": _ats_job_id(id_map, j.get("source_ats"), j.get("company"),
                               j.get("title"), j.get("url")),
