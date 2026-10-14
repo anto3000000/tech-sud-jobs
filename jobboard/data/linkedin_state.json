@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-10-13",
+  "last_generated_date": "2026-10-14",
   "bucket_last_used": {
     "eng-13": "2026-10-13",
     "eng-06": "2026-10-10",
@@ -7,7 +7,7 @@
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-09",
     "data-13": "2026-10-12",
-    "data-06": "2026-09-30",
+    "data-06": "2026-10-14",
     "data-83": "2026-10-01",
     "data-paca": "2026-10-02",
     "data-84": "2026-10-02",
@@ -24,11 +24,6 @@
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-02",
     "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-02",
     "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-02",
-    "orange-ingenieur-developpeur-full-stack-h-f-8aa8f4": "2026-09-29",
-    "thales-tech-lead-web-react-f-h-e37428": "2026-09-29",
-    "dassault-systemes-ingenieur-e-recherche-prediction-des-trajectoires-de-82979e": "2026-09-29",
-    "la-securite-sociale-referent-technique-tech-lead-java-spring-f-h-fdd561": "2026-09-29",
-    "alten-backend-engineer-3e9f2c": "2026-09-29",
     "assystem-data-engineer-bureau-d-etudes-h-f-53712d": "2026-09-30",
     "bertin-technologies-ia-developpement-dun-algorithme-didentification-de-fa8fc0": "2026-09-30",
     "bertin-technologies-ia-developpement-et-benchmarking-dalgorithmes-de-t-9e432c": "2026-09-30",
@@ -128,7 +123,12 @@
     "bertin-technologies-developpement-d-un-banc-de-test-logiciel-et-materi-4d3acb": "2026-10-13",
     "onatera-dev-produit-372303": "2026-10-13",
     "solinum-tech-lead-responsable-technique-140195": "2026-10-13",
-    "setec-ingenieur-e-projet-systemes-embarques-et-mobilites-intelligentes-bb8419": "2026-10-13"
+    "setec-ingenieur-e-projet-systemes-embarques-et-mobilites-intelligentes-bb8419": "2026-10-13",
+    "caisse-d-epargne-cote-d-azur-data-analyst-h-f-ae5e10": "2026-10-14",
+    "cgi-business-analyst-it-f-h-749d33": "2026-10-14",
+    "septeo-backend-data-engineer-ia-h-f-b0ae88": "2026-10-14",
+    "atos-business-analyst-experimente-f-h-bf1878": "2026-10-14",
+    "capgemini-business-analyst-expertise-travel-6baade": "2026-10-14"
   },
   "last_published_date": "2026-10-13"
 }
