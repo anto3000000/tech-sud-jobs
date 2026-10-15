@@ -1,9 +1,9 @@
 {
-  "last_generated_date": "2026-10-14",
+  "last_generated_date": "2026-10-15",
   "bucket_last_used": {
     "eng-13": "2026-10-13",
     "eng-06": "2026-10-10",
-    "eng-83": "2026-10-09",
+    "eng-83": "2026-10-15",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-09",
     "data-13": "2026-10-12",
@@ -24,16 +24,6 @@
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-02",
     "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-02",
     "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-02",
-    "assystem-data-engineer-bureau-d-etudes-h-f-53712d": "2026-09-30",
-    "bertin-technologies-ia-developpement-dun-algorithme-didentification-de-fa8fc0": "2026-09-30",
-    "bertin-technologies-ia-developpement-et-benchmarking-dalgorithmes-de-t-9e432c": "2026-09-30",
-    "capgemini-business-analyst-aeronautique-stage-96fece": "2026-09-30",
-    "capgemini-data-engineer-confirme-8e6d3a": "2026-09-30",
-    "septeo-backend-engineer-kotlin-data-d2a268": "2026-09-30",
-    "alten-innovation-ingenieur-data-science-801b6c": "2026-09-30",
-    "alten-innovation-ingenieur-intelligence-artificielle-generative-6bf2f7": "2026-09-30",
-    "nexton-data-engineer-gcp-python-java-h-f-12c4cb": "2026-09-30",
-    "orange-ingenieur-e-developpement-ia-automatisation-de-tests-d-api-metr-9bdd94": "2026-09-30",
     "cs-developpeur-se-cpp-qt-ia-implementation-d-un-chatbot-dans-le-produi-466d6a": "2026-10-01",
     "naval-group-fr-business-analyst-h-f-2205d0": "2026-10-01",
     "naval-group-fr-data-engineer-h-f-0ac53d": "2026-10-01",
@@ -128,7 +118,12 @@
     "cgi-business-analyst-it-f-h-749d33": "2026-10-14",
     "septeo-backend-data-engineer-ia-h-f-b0ae88": "2026-10-14",
     "atos-business-analyst-experimente-f-h-bf1878": "2026-10-14",
-    "capgemini-business-analyst-expertise-travel-6baade": "2026-10-14"
+    "capgemini-business-analyst-expertise-travel-6baade": "2026-10-14",
+    "naval-group-fr-ingenieur-electronique-systemes-embarques-h-f-fbe8a7": "2026-10-15",
+    "naval-group-fr-chef-de-projet-experimente-developpement-logiciel-h-f-386f8a": "2026-10-15",
+    "cgi-ingenieur-e-java-senior-f-h-e81e21": "2026-10-15",
+    "sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-e3b964": "2026-10-15",
+    "thales-ingenieur-e-developpement-fullstack-angular-h-f-0b859f": "2026-10-15"
   },
   "last_published_date": "2026-10-14"
 }
