@@ -1,11 +1,11 @@
 {
-  "last_generated_date": "2026-10-15",
+  "last_generated_date": "2026-10-16",
   "bucket_last_used": {
     "eng-13": "2026-10-13",
     "eng-06": "2026-10-10",
     "eng-83": "2026-10-15",
     "eng-84": "2026-09-18",
-    "eng-paca": "2026-10-09",
+    "eng-paca": "2026-10-16",
     "data-13": "2026-10-12",
     "data-06": "2026-10-14",
     "data-83": "2026-10-01",
@@ -24,11 +24,6 @@
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-02",
     "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-02",
     "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-02",
-    "cs-developpeur-se-cpp-qt-ia-implementation-d-un-chatbot-dans-le-produi-466d6a": "2026-10-01",
-    "naval-group-fr-business-analyst-h-f-2205d0": "2026-10-01",
-    "naval-group-fr-data-engineer-h-f-0ac53d": "2026-10-01",
-    "the-adecco-group-data-engineer-f-h-f75fa6": "2026-10-01",
-    "scalian-business-analyst-it-proxy-po-toulon-h-f-466c04": "2026-10-01",
     "inrae-ingenieur-e-en-calcul-et-analyses-des-donnees-dimpact-du-changem-70be58": "2026-10-02",
     "naval-group-fr-ingenieur-systeme-guerre-electronique-h-f-25a16e": "2026-10-02",
     "cs-developpeur-se-cpp-qt-mise-en-place-de-fonctionnalites-dans-le-prod-e3c137": "2026-10-02",
@@ -123,7 +118,12 @@
     "naval-group-fr-chef-de-projet-experimente-developpement-logiciel-h-f-386f8a": "2026-10-15",
     "cgi-ingenieur-e-java-senior-f-h-e81e21": "2026-10-15",
     "sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-e3b964": "2026-10-15",
-    "thales-ingenieur-e-developpement-fullstack-angular-h-f-0b859f": "2026-10-15"
+    "thales-ingenieur-e-developpement-fullstack-angular-h-f-0b859f": "2026-10-15",
+    "expleo-ingenieur-developpement-mecanique-h-f-3c2bc8": "2026-10-16",
+    "naval-group-fr-concepteur-ihm-web-java-h-f-5656a0": "2026-10-16",
+    "naval-group-fr-responsable-activite-ingenierie-ihm-systemes-embarques-f7354b": "2026-10-16",
+    "accenture-consultant-senior-en-systemes-avioniques-et-embarques-f-h-5bc6ea": "2026-10-16",
+    "cea-developpement-d-un-conditionneur-integre-pour-capteurs-de-pression-6b657b": "2026-10-16"
   },
   "last_published_date": "2026-10-15"
 }
