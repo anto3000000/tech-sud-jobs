@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-10-17",
+  "last_generated_date": "2026-10-18",
   "bucket_last_used": {
     "eng-13": "2026-10-13",
     "eng-06": "2026-10-17",
@@ -8,7 +8,7 @@
     "eng-paca": "2026-10-16",
     "data-13": "2026-10-12",
     "data-06": "2026-10-14",
-    "data-83": "2026-10-01",
+    "data-83": "2026-10-18",
     "data-paca": "2026-10-02",
     "data-84": "2026-10-02",
     "product-13": "2026-10-05",
@@ -20,11 +20,6 @@
     "product-06": "2026-09-26"
   },
   "recent_slugs": {
-    "naval-group-fr-concepteur-logiciel-scrum-master-programme-sous-marin-h-9afc93": "2026-10-03",
-    "onatera-alternante-developpement-produit-et-reglementaire-complements-dd07b8": "2026-10-03",
-    "sopra-steria-developpeur-euse-experimente-e-java-angular-sophia-antipo-026a59": "2026-10-03",
-    "sogelink-developpeur-projet-h-f-0a0b49": "2026-10-03",
-    "alan-fullstack-software-engineer-x-f-m-c84ca6": "2026-10-03",
     "alten-cpp-developer-2836b6": "2026-10-04",
     "alten-developpeur-java-h-f-spring-boot-quarkus-e85921": "2026-10-04",
     "thales-design-authority-solution-logiciel-logiciel-embarque-bancs-de-t-a77f9c": "2026-10-04",
@@ -108,7 +103,12 @@
     "thales-ingenieur-developpement-fpga-sur-cible-versal-h-f-23a4ce": "2026-10-17",
     "thales-ingenieur-developpement-outils-a-base-dia-sur-programme-satelli-9a6319": "2026-10-17",
     "orpi-gestionnaire-locatif-developpement-h-f-1a0431": "2026-10-17",
-    "scalian-ingenieur-qualite-developpement-h-f-f1a52e": "2026-10-17"
+    "scalian-ingenieur-qualite-developpement-h-f-f1a52e": "2026-10-17",
+    "naval-group-fr-ingenieur-e-ci-cd-generation-automatique-de-tests-par-a-6d215c": "2026-10-18",
+    "naval-group-fr-developpeur-se-agents-ia-open-lab-h-f-bbef3f": "2026-10-18",
+    "thales-data-scientist-ingenieur-ia-experimente-h-f-703ec7": "2026-10-18",
+    "cs-developpeur-se-cpp-qt-ia-implementation-d-un-chatbot-dans-le-produi-466d6a": "2026-10-18",
+    "the-adecco-group-data-engineer-f-h-f75fa6": "2026-10-18"
   },
   "last_published_date": "2026-10-17"
 }
