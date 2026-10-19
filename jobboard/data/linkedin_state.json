@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-10-18",
+  "last_generated_date": "2026-10-19",
   "bucket_last_used": {
     "eng-13": "2026-10-13",
     "eng-06": "2026-10-17",
@@ -10,7 +10,7 @@
     "data-06": "2026-10-14",
     "data-83": "2026-10-18",
     "data-paca": "2026-10-02",
-    "data-84": "2026-10-02",
+    "data-84": "2026-10-19",
     "product-13": "2026-10-05",
     "tech-adjacent-13": "2026-10-06",
     "tech-adjacent-06": "2026-10-07",
@@ -20,11 +20,6 @@
     "product-06": "2026-09-26"
   },
   "recent_slugs": {
-    "alten-cpp-developer-2836b6": "2026-10-04",
-    "alten-developpeur-java-h-f-spring-boot-quarkus-e85921": "2026-10-04",
-    "thales-design-authority-solution-logiciel-logiciel-embarque-bancs-de-t-a77f9c": "2026-10-04",
-    "thales-ingenieur-developpement-confirme-cpp-systemes-critiques-f-h-45868f": "2026-10-04",
-    "schneider-electric-ingenieur-full-stack-f-h-8c0bfb": "2026-10-04",
     "cgi-product-owner-f-h-4d5824": "2026-10-05",
     "airbus-helicopters-logiciel-r-d-it-product-manager-quality-application-16bff3": "2026-10-05",
     "cma-cgm-global-product-owner-support-specialist-38dab7": "2026-10-05",
@@ -108,7 +103,12 @@
     "naval-group-fr-developpeur-se-agents-ia-open-lab-h-f-bbef3f": "2026-10-18",
     "thales-data-scientist-ingenieur-ia-experimente-h-f-703ec7": "2026-10-18",
     "cs-developpeur-se-cpp-qt-ia-implementation-d-un-chatbot-dans-le-produi-466d6a": "2026-10-18",
-    "the-adecco-group-data-engineer-f-h-f75fa6": "2026-10-18"
+    "the-adecco-group-data-engineer-f-h-f75fa6": "2026-10-18",
+    "inrae-ingenieur-e-en-calcul-et-analyses-des-donnees-dimpact-du-changem-70be58": "2026-10-19",
+    "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-19",
+    "cgi-data-engineer-snowflake-f-h-fd312b": "2026-10-19",
+    "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-19",
+    "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-19"
   },
   "last_published_date": "2026-10-18"
 }
