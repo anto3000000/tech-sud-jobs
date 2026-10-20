@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-20T10:39:43+00:00",
+  "generated_at": "2026-10-20T15:16:56+00:00",
   "region": "Provence-Alpes-Côte d'Azur",
   "count": 766,
   "companies": 129,
-  "new_count": 173,
+  "new_count": 163,
   "by_category": {
     "eng": 269,
     "qa": 31,
@@ -6488,7 +6488,7 @@
       "description": "Nous recherchons un Analyste d'affaires passionné pour rejoindre notre équipe dynamique chez Orange Business. Vous jouerez un rôle clé dans la transformation digitale de nos clients, en les aidant à déployer des solutions innovantes en data et IA. Rejoignez-nous pour faire la différence !",
       "description_excerpt": "Nous recherchons un Analyste d'affaires passionné pour rejoindre notre équipe dynamique chez Orange Business. Vous jouerez un rôle clé dans la transformation digitale de nos clients, en les aidant à déployer des solutions innovantes en data et IA. Rejoignez-nous pour faire la différence !",
       "first_seen": "2026-10-10T11:37:33+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "orange-business-analyst-f-h-3d807c",
       "logo": "/brand/companies/orange-logo.svg"
     },
@@ -6550,7 +6550,7 @@
       "start_date": null,
       "enriched_at": "2026-10-20T10:07:13+00:00",
       "first_seen": "2026-10-10T11:37:33+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "septeo-backend-data-engineer-ia-h-f-b0ae88"
     },
     {
@@ -6602,7 +6602,7 @@
       "start_date": null,
       "enriched_at": "2026-10-20T10:07:13+00:00",
       "first_seen": "2026-10-10T11:37:33+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "naval-group-fr-architecte-logiciel-h-f-fa2f34"
     },
     {
@@ -6650,7 +6650,7 @@
       "start_date": null,
       "enriched_at": "2026-10-20T10:07:13+00:00",
       "first_seen": "2026-10-10T11:37:33+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "naval-group-fr-chef-de-projet-experimente-developpement-logiciel-h-f-386f8a"
     },
     {
@@ -6709,7 +6709,7 @@
       "start_date": null,
       "enriched_at": "2026-10-20T10:07:13+00:00",
       "first_seen": "2026-10-10T11:37:33+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "naval-group-fr-ingenieur-e-ci-cd-generation-automatique-de-tests-par-a-6d215c"
     },
     {
@@ -6763,7 +6763,7 @@
       "start_date": null,
       "enriched_at": "2026-10-20T10:07:13+00:00",
       "first_seen": "2026-10-10T11:37:33+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "thales-assistant-product-owner-f-h-7deefb"
     },
     {
@@ -6814,7 +6814,7 @@
       "start_date": null,
       "enriched_at": "2026-10-20T10:07:13+00:00",
       "first_seen": "2026-10-10T11:37:33+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "caisse-d-epargne-cote-d-azur-data-analyst-h-f-ae5e10"
     },
     {
@@ -6869,7 +6869,7 @@
       "start_date": null,
       "enriched_at": "2026-10-20T10:07:14+00:00",
       "first_seen": "2026-10-10T11:37:33+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "highco-administrateur-de-bases-de-donnees-f-h-4f873a"
     },
     {
@@ -6922,7 +6922,7 @@
       "start_date": null,
       "enriched_at": "2026-10-20T10:07:14+00:00",
       "first_seen": "2026-10-10T11:37:33+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "atos-analyste-soc-f-h-d0e57d"
     },
     {
@@ -6949,7 +6949,7 @@
       "description": "Led by Rodolphe Saadé, the CMA CGM Group, a global leader in shipping and logistics, serves more than 420 ports around the world on five continents. With its subsidiary CEVA Logistics, a world leader in logistics, and its air freight division CMA CGM AIR CARGO, the CMA CGM Group is continually innovating to offer its customers a complete and increasingly efficient range of new shipping, land, air and logistics solutions.\n\nCommitted to the energy transition in shipping, and a pioneer in the use of alternative fuels, the CMA CGM Group has set a target to become Net Zero Carbon by 2050.\nThrough the CMA CGM Foundation, the Group acts in humanitarian crises that require an emergency response by mobilizing the Group’s shipping and logistics expertise to bring humanitarian supplies around the world.\n\nPresent in 160 countries through its network of more than 400 offices and 750 warehouses, the Group employs more than 155,000 people worldwide, including 4,000 in Marseilles where its head office is located\n\n .buttontext29f683f04b11b40a a{\n border: 1px solid transparent;\n }\n .buttontext29f683f04b11b40a a:focus{\n border: 1px dashed #e41e5b !important;\n outline: none !important;\n }\n\n YOUR ROLE\n\nAs part of your studies, you are currently looking for an end-of-studies internship or thesis project (Bac+5 / engineering school or Master’s degree in thermal sciences, energetics or fluid mechanics).\n\nYou will join the Technical Department of CMA Ships. Shipping is undergoing a major transformation driven by the decarbonization of maritime transport. During this transition, CMA CGM has chosen Liquefied Natural Gas (LNG) as the marine fuel for its new fleet of container vessels. LNG is stored on board at around -158°C and at atmospheric pressure, in tanks built into the ship’s structure (“membrane” or “type C” tanks). It produces far lower emissions than conventional marine fuels such as HFO and MDO.\n\nInside the tank, LNG naturally evaporates because of heat ingress through the walls, and vessel motions (sloshing) increase this evaporation and raise tank pressure. Managing this Boil-Off Gas (BOG) is critical to the safety and operational performance of LNG-powered vessels. Your role will be to analyze operational data from the entire fuel system and develop a statistical model to optimize and minimize the gas sent to the Gas Combustion Unit (GCU). Your work will help improve technical support to vessels in service, help crews manage BOG day to day, and better anticipate events that could cause excessive gas generation or abnormal pressure rise.\n\nWHAT WILL YOU DO?\n\n• Literature review: You will study the existing literature to understand how LNG behaves inside storage tanks.\n\n• Data collection & familiarization: You will get to know the operational databases used to collect fuel system data, and collect the data you need for the study.\n\n• Fleet data analysis: You will analyze and interpret fleet data on pressure evolution and BOG generation.\n\n• Optimization & savings estimate: Using a thermodynamic approach, you will propose an optimization strategy to reduce BOG losses. You will identify the optimal pressure management profile throughout voyages and quantify the potential LNG savings.\n\n• Results & final report: You will analyze the results and write a final report.\n\nWHO ARE WE LOOKING FOR?\n\n• Education: Bac+5 level, engineering school or Master’s degree specializing in thermal sciences, energetics, fluid mechanics or modeling and numerical simulation.\n\n• Technical skills:\r\n\n• Solid knowledge of thermodynamics, thermal sciences, fluid mechanics and energetics\n\n• Skills in data analysis and database handling\n\n• Strong interest in modeling and programming; Fortran and Python required, C is a plus\n\n• Numerical analysis skills\n\n• Personal qualities: Rigorous, with critical thinking, strong analytical skills and the ability to synthesize.\n\nJOB ENVIRONMENT\n\n• Location: Head Office – Marseille\n\n• Duration: Minimum 6 months\n\n• Internship start date: Q1 2027\n\n .buttontext099e2aa1194466ff a{\n border: 1px solid transparent;\n }\n .buttontext099e2aa1194466ff a:focus{\n border: 1px dashed #e41e5b !important;\n outline: none !important;\n }\n\n Come along on CMA CGM’s adventure",
       "description_excerpt": "As part of your studies, you are currently looking for an end-of-studies internship or thesis project (Bac+5 / engineering school or Master’s degree in thermal sciences, energetics or fluid mechanics). You will join the Technical Department of CMA Ships. Shipping is undergoing a major transformation driven by the decarbonization of…",
       "first_seen": "2026-10-10T11:37:33+00:00",
-      "is_new": true,
+      "is_new": false,
       "slug": "cma-cgm-operational-data-analysis-for-optimal-boil-off-gas-management-504d2e",
       "logo": "/brand/companies/cma-cgm-logo.svg"
     },
