@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-10-20",
+  "last_generated_date": "2026-10-21",
   "bucket_last_used": {
     "eng-13": "2026-10-20",
     "eng-06": "2026-10-17",
@@ -9,7 +9,7 @@
     "data-13": "2026-10-12",
     "data-06": "2026-10-14",
     "data-83": "2026-10-18",
-    "data-paca": "2026-10-02",
+    "data-paca": "2026-10-21",
     "data-84": "2026-10-19",
     "product-13": "2026-10-05",
     "tech-adjacent-13": "2026-10-06",
@@ -20,11 +20,6 @@
     "product-06": "2026-09-26"
   },
   "recent_slugs": {
-    "capgemini-consultante-consultant-fonctionnel-plm-stage-83bf62": "2026-10-06",
-    "airbus-helicopters-logiciel-r-d-2027-charge-e-de-digitalisation-et-sup-5cf2ef": "2026-10-06",
-    "airbus-helicopters-logiciel-r-d-2027-conduit-au-changement-erp-industr-7bc9d2": "2026-10-06",
-    "capgemini-consultant-consultante-fonctionnel-le-oracle-erp-cloud-423c3d": "2026-10-06",
-    "la-plateforme-responsable-ia-automatisation-avant-vente-delivery-h-f-834ef3": "2026-10-06",
     "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-a-23aa09": "2026-10-07",
     "nalios-france-consultant-e-fonctionnel-odoo-69a267": "2026-10-07",
     "deloitte-ou-alternance-consultant-informatique-et-financement-de-l-inn-ed2ec1": "2026-10-07",
@@ -108,7 +103,12 @@
     "sopra-steria-lead-tech-java-angular-aix-en-provence-5a359a": "2026-10-20",
     "orange-ingenieur-e-developpement-augmente-e-f-h-49281d": "2026-10-20",
     "accenture-france-consultant-senior-en-systemes-avioniques-et-embarques-78313c": "2026-10-20",
-    "docoon-developpeur-fullstack-csharp-dotnet-fb74d3": "2026-10-20"
+    "docoon-developpeur-fullstack-csharp-dotnet-fb74d3": "2026-10-20",
+    "atos-ia-agentique-pour-la-migration-automatisee-de-donnees-h-f-739723": "2026-10-21",
+    "cma-cgm-data-scientist-intern-freight-rate-forecasting-5d93bd": "2026-10-21",
+    "scalian-expert-ingenieur-systeme-mbse-ia-f-h-b6b07c": "2026-10-21",
+    "thales-developpement-de-l-usage-de-l-ia-au-sein-dactivites-industriell-ab109d": "2026-10-21",
+    "thales-ia-et-developpement-logiciel-pour-les-activites-support-de-thal-a21b96": "2026-10-21"
   },
   "last_published_date": "2026-10-20"
 }
