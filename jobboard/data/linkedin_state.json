@@ -1,9 +1,9 @@
 {
-  "last_generated_date": "2026-10-21",
+  "last_generated_date": "2026-10-22",
   "bucket_last_used": {
     "eng-13": "2026-10-20",
     "eng-06": "2026-10-17",
-    "eng-83": "2026-10-15",
+    "eng-83": "2026-10-22",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-16",
     "data-13": "2026-10-12",
@@ -20,11 +20,6 @@
     "product-06": "2026-09-26"
   },
   "recent_slugs": {
-    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-a-23aa09": "2026-10-07",
-    "nalios-france-consultant-e-fonctionnel-odoo-69a267": "2026-10-07",
-    "deloitte-ou-alternance-consultant-informatique-et-financement-de-l-inn-ed2ec1": "2026-10-07",
-    "thales-senior-consultant-cloud-finops-h-f-5fd74b": "2026-10-07",
-    "nexton-chef-de-projet-technique-supervision-h-f-ac8c87": "2026-10-07",
     "scalian-developpeur-python-h-f-2c2242": "2026-10-08",
     "thales-ingenieur-developpement-logiciel-embarque-pour-l-iot-f-h-5f0544": "2026-10-08",
     "thales-responsable-plateforme-logiciel-embarque-et-validation-systeme-de5775": "2026-10-08",
@@ -108,7 +103,12 @@
     "cma-cgm-data-scientist-intern-freight-rate-forecasting-5d93bd": "2026-10-21",
     "scalian-expert-ingenieur-systeme-mbse-ia-f-h-b6b07c": "2026-10-21",
     "thales-developpement-de-l-usage-de-l-ia-au-sein-dactivites-industriell-ab109d": "2026-10-21",
-    "thales-ia-et-developpement-logiciel-pour-les-activites-support-de-thal-a21b96": "2026-10-21"
+    "thales-ia-et-developpement-logiciel-pour-les-activites-support-de-thal-a21b96": "2026-10-21",
+    "the-adecco-group-tech-lead-angular-f-h-9fab8e": "2026-10-22",
+    "naval-group-fr-developpement-d-outils-d-aide-a-l-integration-des-syste-b69909": "2026-10-22",
+    "sopra-steria-developpeur-euse-experimente-e-java-angular-toulon-b74bca": "2026-10-22",
+    "capgemini-developpeuse-developpeur-java-0ec022": "2026-10-22",
+    "naval-group-fr-concepteur-developpeur-logiciel-java-h-f-977f4c": "2026-10-22"
   },
   "last_published_date": "2026-10-21"
 }
