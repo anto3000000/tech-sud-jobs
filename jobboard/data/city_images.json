@@ -15,6 +15,9 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Antibes_in_winter_%2816352944512%29.jpg/1280px-Antibes_in_winter_%2816352944512%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
+  "Antibes Area": {
+    "checked_at": 1792752071.2961388
+  },
   "Avignon": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_2_JP_Campomar.jpg",
@@ -195,7 +198,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1792666132.8621647,
+    "checked_at": 1792752071.2961388,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
@@ -209,6 +212,9 @@
     "height": 800,
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Petite_rade_de_Toulon_%28vue_du_Mont_Faron%29.jpg/1280px-Petite_rade_de_Toulon_%28vue_du_Mont_Faron%29.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
+  },
+  "Vaison-La-Romaine": {
+    "checked_at": 1792752071.2961388
   },
   "Valbonne": {
     "checked_at": 1790322269.2825532,

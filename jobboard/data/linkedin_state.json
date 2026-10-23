@@ -1,11 +1,11 @@
 {
-  "last_generated_date": "2026-10-22",
+  "last_generated_date": "2026-10-23",
   "bucket_last_used": {
     "eng-13": "2026-10-20",
     "eng-06": "2026-10-17",
     "eng-83": "2026-10-22",
     "eng-84": "2026-09-18",
-    "eng-paca": "2026-10-16",
+    "eng-paca": "2026-10-23",
     "data-13": "2026-10-12",
     "data-06": "2026-10-14",
     "data-83": "2026-10-18",
@@ -20,11 +20,6 @@
     "product-06": "2026-09-26"
   },
   "recent_slugs": {
-    "scalian-developpeur-python-h-f-2c2242": "2026-10-08",
-    "thales-ingenieur-developpement-logiciel-embarque-pour-l-iot-f-h-5f0544": "2026-10-08",
-    "thales-responsable-plateforme-logiciel-embarque-et-validation-systeme-de5775": "2026-10-08",
-    "assystem-ingenieur-developpement-systeme-temps-reel-h-f-00d0d9": "2026-10-08",
-    "groupe-lr-technologies-developpeur-full-stack-java-react-nodejs-h-f-6e6fc1": "2026-10-08",
     "naval-group-fr-concepteur-ihm-systemes-embarques-h-f-c32e5f": "2026-10-09",
     "naval-group-fr-ingenieur-developpeur-software-h-f-cd90fa": "2026-10-09",
     "scalian-developpeur-cpp-senior-h-f-ba09db": "2026-10-09",
@@ -108,7 +103,12 @@
     "naval-group-fr-developpement-d-outils-d-aide-a-l-integration-des-syste-b69909": "2026-10-22",
     "sopra-steria-developpeur-euse-experimente-e-java-angular-toulon-b74bca": "2026-10-22",
     "capgemini-developpeuse-developpeur-java-0ec022": "2026-10-22",
-    "naval-group-fr-concepteur-developpeur-logiciel-java-h-f-977f4c": "2026-10-22"
+    "naval-group-fr-concepteur-developpeur-logiciel-java-h-f-977f4c": "2026-10-22",
+    "airbus-helicopters-logiciel-r-d-2027-developpement-d-outils-d-aide-a-l-cfa079": "2026-10-23",
+    "airbus-helicopters-logiciel-r-d-2027-developpement-logiciel-ingenieur-4bedc3": "2026-10-23",
+    "bpce-solutions-informatiques-expert-en-securite-des-developpements-mob-064471": "2026-10-23",
+    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-d-6aafa6": "2026-10-23",
+    "cs-developpeur-back-java-transport-aix-en-provence-bf7165": "2026-10-23"
   },
   "last_published_date": "2026-10-22"
 }
