@@ -1,8 +1,8 @@
 {
-  "last_generated_date": "2026-10-23",
+  "last_generated_date": "2026-10-24",
   "bucket_last_used": {
     "eng-13": "2026-10-20",
-    "eng-06": "2026-10-17",
+    "eng-06": "2026-10-24",
     "eng-83": "2026-10-22",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-23",
@@ -20,26 +20,6 @@
     "product-06": "2026-09-26"
   },
   "recent_slugs": {
-    "naval-group-fr-concepteur-ihm-systemes-embarques-h-f-c32e5f": "2026-10-09",
-    "naval-group-fr-ingenieur-developpeur-software-h-f-cd90fa": "2026-10-09",
-    "scalian-developpeur-cpp-senior-h-f-ba09db": "2026-10-09",
-    "scalian-ingenieur-electronique-f-h-715b41": "2026-10-09",
-    "the-adecco-group-chef-de-projet-senior-software-embarque-h-f-bca15d": "2026-10-09",
-    "airbus-helicopters-logiciel-r-d-2027-stage-en-developpement-d-applicat-aaea3c": "2026-10-09",
-    "airbus-helicopters-logiciel-r-d-2027-support-et-developpement-installa-19e8a7": "2026-10-09",
-    "cea-physicien-developpement-de-scenarios-plasma-pour-les-machines-actu-8f5b8c": "2026-10-09",
-    "scalian-developpeur-labview-h-f-256788": "2026-10-09",
-    "naval-group-fr-ingenieur-e-systemes-embarques-armes-et-conduite-des-ar-a4ca91": "2026-10-09",
-    "onatera-product-owner-d5dcc4": "2026-10-09",
-    "thales-product-owner-kms-f-h-c27fa8": "2026-10-09",
-    "eskimoz-chef-de-projet-contenu-relations-presse-h-f-b12984": "2026-10-09",
-    "pennylane-strategic-tech-partnerships-manager-49e1d1": "2026-10-09",
-    "thales-ux-ui-designer-f-h-25768d": "2026-10-09",
-    "orange-ingenieur-avant-vente-interoperabilite-h-f-f66927": "2026-10-09",
-    "pennylane-senior-tech-recruiter-m-f-e20531": "2026-10-09",
-    "exalt-chef-de-projet-it-infrastructure-h-f-ba5b54": "2026-10-09",
-    "smile-chef-de-projet-applicatif-senior-h-f-aix-marseille-3be421": "2026-10-09",
-    "smile-chef-de-projet-technique-moe-senior-h-f-aix-marseille-6d1506": "2026-10-09",
     "thales-java-developper-back-end-f-h-d797c8": "2026-10-10",
     "sogelink-software-engineer-f-h-0a0b49": "2026-10-10",
     "alten-ingenieur-logiciel-db243b": "2026-10-10",
@@ -108,7 +88,12 @@
     "airbus-helicopters-logiciel-r-d-2027-developpement-logiciel-ingenieur-4bedc3": "2026-10-23",
     "bpce-solutions-informatiques-expert-en-securite-des-developpements-mob-064471": "2026-10-23",
     "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-d-6aafa6": "2026-10-23",
-    "cs-developpeur-back-java-transport-aix-en-provence-bf7165": "2026-10-23"
+    "cs-developpeur-back-java-transport-aix-en-provence-bf7165": "2026-10-23",
+    "sopra-steria-developpeur-euse-experimente-e-java-angular-sophia-antipo-7a9268": "2026-10-24",
+    "orange-developpement-d-une-methode-de-modelisation-des-antennes-de-sta-aad324": "2026-10-24",
+    "thales-conception-et-developpement-logiciel-de-simulation-h-f-5871a0": "2026-10-24",
+    "thales-ingenieur-developpement-espion-simulateur-can-h-f-55c1c5": "2026-10-24",
+    "schneider-electric-ingenieur-full-stack-f-h-fca531": "2026-10-24"
   },
   "last_published_date": "2026-10-23"
 }
