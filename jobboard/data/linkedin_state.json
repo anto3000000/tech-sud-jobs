@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-10-24",
+  "last_generated_date": "2026-10-25",
   "bucket_last_used": {
     "eng-13": "2026-10-20",
     "eng-06": "2026-10-24",
@@ -11,7 +11,7 @@
     "data-83": "2026-10-18",
     "data-paca": "2026-10-21",
     "data-84": "2026-10-19",
-    "product-13": "2026-10-05",
+    "product-13": "2026-10-25",
     "tech-adjacent-13": "2026-10-06",
     "tech-adjacent-06": "2026-10-07",
     "product-paca": "2026-10-09",
@@ -20,11 +20,6 @@
     "product-06": "2026-09-26"
   },
   "recent_slugs": {
-    "thales-java-developper-back-end-f-h-d797c8": "2026-10-10",
-    "sogelink-software-engineer-f-h-0a0b49": "2026-10-10",
-    "alten-ingenieur-logiciel-db243b": "2026-10-10",
-    "exalt-developpeur-front-end-angular-7c3d11": "2026-10-10",
-    "orange-ingenieur-developpeur-front-h-f-46b3f2": "2026-10-10",
     "groupe-orlade-pmo-it-90c9fb": "2026-10-11",
     "naval-group-fr-charge-de-support-it-h-f-9e2449": "2026-10-11",
     "mc2i-consultant-e-transformation-numerique-naval-defense-toulon-h-f-746e57": "2026-10-11",
@@ -93,7 +88,12 @@
     "orange-developpement-d-une-methode-de-modelisation-des-antennes-de-sta-aad324": "2026-10-24",
     "thales-conception-et-developpement-logiciel-de-simulation-h-f-5871a0": "2026-10-24",
     "thales-ingenieur-developpement-espion-simulateur-can-h-f-55c1c5": "2026-10-24",
-    "schneider-electric-ingenieur-full-stack-f-h-fca531": "2026-10-24"
+    "schneider-electric-ingenieur-full-stack-f-h-fca531": "2026-10-24",
+    "airbus-helicopters-logiciel-r-d-et22r-innovation-product-manager-f-h-42697f": "2026-10-25",
+    "boond-senior-product-designer-full-remote-8c66b3": "2026-10-25",
+    "boond-senior-product-manager-full-remote-78a6cb": "2026-10-25",
+    "thales-assistant-product-owner-f-h-7deefb": "2026-10-25",
+    "thales-product-owner-kms-f-h-c27fa8": "2026-10-25"
   },
   "last_published_date": "2026-10-24"
 }
