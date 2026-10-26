@@ -1,7 +1,7 @@
 {
-  "last_generated_date": "2026-10-25",
+  "last_generated_date": "2026-10-26",
   "bucket_last_used": {
-    "eng-13": "2026-10-20",
+    "eng-13": "2026-10-26",
     "eng-06": "2026-10-24",
     "eng-83": "2026-10-22",
     "eng-84": "2026-09-18",
@@ -20,10 +20,6 @@
     "product-06": "2026-09-26"
   },
   "recent_slugs": {
-    "groupe-orlade-pmo-it-90c9fb": "2026-10-11",
-    "naval-group-fr-charge-de-support-it-h-f-9e2449": "2026-10-11",
-    "mc2i-consultant-e-transformation-numerique-naval-defense-toulon-h-f-746e57": "2026-10-11",
-    "mc2i-consultant-en-transformation-numerique-industrie-toulon-h-f-f8ca75": "2026-10-11",
     "airbus-helicopters-logiciel-r-d-2027-ingenieur-e-en-intelligence-artif-e998da": "2026-10-12",
     "airbus-helicopters-logiciel-r-d-2027-stage-en-integration-de-donnees-e-a981c6": "2026-10-12",
     "gojob-data-analyst-h-f-equipe-paie-facturation-169191": "2026-10-12",
@@ -93,7 +89,12 @@
     "boond-senior-product-designer-full-remote-8c66b3": "2026-10-25",
     "boond-senior-product-manager-full-remote-78a6cb": "2026-10-25",
     "thales-assistant-product-owner-f-h-7deefb": "2026-10-25",
-    "thales-product-owner-kms-f-h-c27fa8": "2026-10-25"
+    "thales-product-owner-kms-f-h-c27fa8": "2026-10-25",
+    "thales-conception-dun-banc-devaluation-des-fuites-par-canaux-auxiliair-712aa7": "2026-10-26",
+    "thales-developpement-d-algorithmes-de-detection-devenements-pour-lanal-afc29e": "2026-10-26",
+    "airbus-helicopters-logiciel-r-d-2027-ingenieur-e-developpement-dapplic-f7a362": "2026-10-26",
+    "cea-ingenieur-r-d-en-dosimetrie-en-reacteur-h-f-18a810": "2026-10-26",
+    "thalasseo-developpeurse-frontend-senior-vue-js-nuxt-h-f-e8ac62": "2026-10-26"
   },
   "last_published_date": "2026-10-25"
 }

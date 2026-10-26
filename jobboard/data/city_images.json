@@ -66,14 +66,6 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg/1280px-Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
-  "Cavaillon": {
-    "checked_at": 1791898277.3358426,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Panorama_du_centre_ville_de_la_ville_de_Cavaillon.jpg",
-    "file": "Panorama_du_centre_ville_de_la_ville_de_Cavaillon.jpg",
-    "height": 675,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Panorama_du_centre_ville_de_la_ville_de_Cavaillon.jpg/1280px-Panorama_du_centre_ville_de_la_ville_de_Cavaillon.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "width": 1200
-  },
   "Gémenos": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:G%C3%A9menos-vue-53.JPG",
@@ -198,7 +190,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1792923370.3983874,
+    "checked_at": 1793014599.4119477,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
