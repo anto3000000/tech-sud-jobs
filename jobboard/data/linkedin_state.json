@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-10-26",
+  "last_generated_date": "2026-10-27",
   "bucket_last_used": {
     "eng-13": "2026-10-26",
     "eng-06": "2026-10-24",
@@ -12,7 +12,7 @@
     "data-paca": "2026-10-21",
     "data-84": "2026-10-19",
     "product-13": "2026-10-25",
-    "tech-adjacent-13": "2026-10-06",
+    "tech-adjacent-13": "2026-10-27",
     "tech-adjacent-06": "2026-10-07",
     "product-paca": "2026-10-09",
     "tech-adjacent-paca": "2026-10-09",
@@ -20,11 +20,6 @@
     "product-06": "2026-09-26"
   },
   "recent_slugs": {
-    "airbus-helicopters-logiciel-r-d-2027-ingenieur-e-en-intelligence-artif-e998da": "2026-10-12",
-    "airbus-helicopters-logiciel-r-d-2027-stage-en-integration-de-donnees-e-a981c6": "2026-10-12",
-    "gojob-data-analyst-h-f-equipe-paie-facturation-169191": "2026-10-12",
-    "groupe-lr-technologies-directeur-de-programme-data-h-f-b96fa9": "2026-10-12",
-    "the-adecco-group-business-analyst-h-f-fc5728": "2026-10-12",
     "bertin-technologies-developpement-briques-traitement-du-signal-sur-fpg-efa504": "2026-10-13",
     "bertin-technologies-developpement-d-un-banc-de-test-logiciel-et-materi-4d3acb": "2026-10-13",
     "onatera-dev-produit-372303": "2026-10-13",
@@ -94,7 +89,12 @@
     "thales-developpement-d-algorithmes-de-detection-devenements-pour-lanal-afc29e": "2026-10-26",
     "airbus-helicopters-logiciel-r-d-2027-ingenieur-e-developpement-dapplic-f7a362": "2026-10-26",
     "cea-ingenieur-r-d-en-dosimetrie-en-reacteur-h-f-18a810": "2026-10-26",
-    "thalasseo-developpeurse-frontend-senior-vue-js-nuxt-h-f-e8ac62": "2026-10-26"
+    "thalasseo-developpeurse-frontend-senior-vue-js-nuxt-h-f-e8ac62": "2026-10-26",
+    "sopra-steria-consultant-e-fonctionnel-le-oracle-aix-en-provence-bad2fb": "2026-10-27",
+    "the-adecco-group-technicien-support-n1-h-f-a625c7": "2026-10-27",
+    "bpce-solutions-informatiques-chef-de-projet-si-f-h-distribution-parts-7f70ca": "2026-10-27",
+    "groupe-lr-technologies-chef-de-projet-technique-infrastructure-h-f-ec9dcf": "2026-10-27",
+    "wavestone-consultant-e-en-management-cybersecurite-marseille-cdi-ffb836": "2026-10-27"
   },
   "last_published_date": "2026-10-26"
 }
