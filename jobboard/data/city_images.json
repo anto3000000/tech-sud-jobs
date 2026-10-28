@@ -66,6 +66,14 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg/1280px-Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
+  "Fos-sur-Mer": {
+    "checked_at": 1793188603.7838671,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:L%27h%C3%B4tel_de_ville.jpg",
+    "file": "L'hôtel_de_ville.jpg",
+    "height": 798,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/L%27h%C3%B4tel_de_ville.jpg/1280px-L%27h%C3%B4tel_de_ville.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 1200
+  },
   "Gémenos": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:G%C3%A9menos-vue-53.JPG",
@@ -154,6 +162,9 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Fa%C3%A7ade_principale_de_l%27%C3%A9glise_Saint-Laurent.JPG/1280px-Fa%C3%A7ade_principale_de_l%27%C3%A9glise_Saint-Laurent.JPG?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
+  "Ollioules / Toulon": {
+    "checked_at": 1793188603.7838671
+  },
   "Provence-Alpes-Côte d'Azur": {
     "checked_at": 1790322269.2825532
   },
@@ -190,7 +201,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1793099312.580616,
+    "checked_at": 1793188603.7838671,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
