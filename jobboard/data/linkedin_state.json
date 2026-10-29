@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-10-28",
+  "last_generated_date": "2026-10-29",
   "bucket_last_used": {
     "eng-13": "2026-10-26",
     "eng-06": "2026-10-24",
@@ -17,14 +17,9 @@
     "product-paca": "2026-10-09",
     "tech-adjacent-paca": "2026-10-09",
     "tech-adjacent-83": "2026-10-11",
-    "product-06": "2026-09-26"
+    "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "caisse-d-epargne-cote-d-azur-data-analyst-h-f-ae5e10": "2026-10-14",
-    "cgi-business-analyst-it-f-h-749d33": "2026-10-14",
-    "septeo-backend-data-engineer-ia-h-f-b0ae88": "2026-10-14",
-    "atos-business-analyst-experimente-f-h-bf1878": "2026-10-14",
-    "capgemini-business-analyst-expertise-travel-6baade": "2026-10-14",
     "naval-group-fr-ingenieur-electronique-systemes-embarques-h-f-fbe8a7": "2026-10-15",
     "naval-group-fr-chef-de-projet-experimente-developpement-logiciel-h-f-386f8a": "2026-10-15",
     "cgi-ingenieur-e-java-senior-f-h-e81e21": "2026-10-15",
@@ -94,7 +89,11 @@
     "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-a-23aa09": "2026-10-28",
     "nalios-france-consultant-e-fonctionnel-odoo-69a267": "2026-10-28",
     "deloitte-ou-alternance-consultant-informatique-et-financement-de-l-inn-ed2ec1": "2026-10-28",
-    "capgemini-consultante-consultant-transformation-digitale-senior-0e28b6": "2026-10-28"
+    "capgemini-consultante-consultant-transformation-digitale-senior-0e28b6": "2026-10-28",
+    "accenture-product-owner-f-h-62fd3a": "2026-10-29",
+    "instant-system-product-manager-billettique-h-f-bd0ae1": "2026-10-29",
+    "exalt-product-designer-h-f-exalt-azur-64063f": "2026-10-29",
+    "exalt-product-owner-h-f-exalt-azur-d80a46": "2026-10-29"
   },
   "last_published_date": "2026-10-28"
 }

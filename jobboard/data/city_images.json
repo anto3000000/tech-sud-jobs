@@ -66,6 +66,14 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg/1280px-Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
+  "Cuers": {
+    "checked_at": 1793275615.455037,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:7.9.2011_mairie_cuers.jpg",
+    "file": "7.9.2011_mairie_cuers.jpg",
+    "height": 900,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/7.9.2011_mairie_cuers.jpg/1280px-7.9.2011_mairie_cuers.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 1200
+  },
   "Fos-sur-Mer": {
     "checked_at": 1793188603.7838671,
     "commons_url": "https://commons.wikimedia.org/wiki/File:L%27h%C3%B4tel_de_ville.jpg",
@@ -201,7 +209,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1793188603.7838671,
+    "checked_at": 1793275615.455037,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
