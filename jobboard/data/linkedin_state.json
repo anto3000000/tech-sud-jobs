@@ -1,9 +1,9 @@
 {
-  "last_generated_date": "2026-10-29",
+  "last_generated_date": "2026-10-30",
   "bucket_last_used": {
     "eng-13": "2026-10-26",
     "eng-06": "2026-10-24",
-    "eng-83": "2026-10-22",
+    "eng-83": "2026-10-30",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-23",
     "data-13": "2026-10-12",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "naval-group-fr-ingenieur-electronique-systemes-embarques-h-f-fbe8a7": "2026-10-15",
-    "naval-group-fr-chef-de-projet-experimente-developpement-logiciel-h-f-386f8a": "2026-10-15",
-    "cgi-ingenieur-e-java-senior-f-h-e81e21": "2026-10-15",
-    "sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-e3b964": "2026-10-15",
-    "thales-ingenieur-e-developpement-fullstack-angular-h-f-0b859f": "2026-10-15",
     "expleo-ingenieur-developpement-mecanique-h-f-3c2bc8": "2026-10-16",
     "naval-group-fr-concepteur-ihm-web-java-h-f-5656a0": "2026-10-16",
     "naval-group-fr-responsable-activite-ingenierie-ihm-systemes-embarques-f7354b": "2026-10-16",
@@ -93,7 +88,12 @@
     "accenture-product-owner-f-h-62fd3a": "2026-10-29",
     "instant-system-product-manager-billettique-h-f-bd0ae1": "2026-10-29",
     "exalt-product-designer-h-f-exalt-azur-64063f": "2026-10-29",
-    "exalt-product-owner-h-f-exalt-azur-d80a46": "2026-10-29"
+    "exalt-product-owner-h-f-exalt-azur-d80a46": "2026-10-29",
+    "atos-developpeur-java-systemes-tactiques-pour-les-forces-armees-f-h-d2f581": "2026-10-30",
+    "naval-group-fr-concepteur-logiciel-embarque-guerre-des-mines-h-f-f1db63": "2026-10-30",
+    "naval-group-fr-ingenieur-e-developpement-produit-logiciel-h-f-281763": "2026-10-30",
+    "sopra-steria-developpeur-se-d-applications-de-simulation-cpp-qt-defens-fab77d": "2026-10-30",
+    "sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-1b0ade": "2026-10-30"
   },
   "last_published_date": "2026-10-29"
 }
