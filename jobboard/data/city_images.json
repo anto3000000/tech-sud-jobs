@@ -154,6 +154,9 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/La_place_de_l%27%C3%A9glise_de_Meyreuil.jpg/1280px-La_place_de_l%27%C3%A9glise_de_Meyreuil.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
+  "Morières-Lès-Avignon": {
+    "checked_at": 1793445750.5705101
+  },
   "Nice": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Promenade_des_Anglais_%2822261311858%29.jpg",
@@ -209,7 +212,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1793361410.814171,
+    "checked_at": 1793445750.5705101,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,

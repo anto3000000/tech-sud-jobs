@@ -1,11 +1,11 @@
 {
-  "last_generated_date": "2026-10-30",
+  "last_generated_date": "2026-10-31",
   "bucket_last_used": {
     "eng-13": "2026-10-26",
     "eng-06": "2026-10-24",
     "eng-83": "2026-10-30",
     "eng-84": "2026-09-18",
-    "eng-paca": "2026-10-23",
+    "eng-paca": "2026-10-31",
     "data-13": "2026-10-12",
     "data-06": "2026-10-14",
     "data-83": "2026-10-18",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "expleo-ingenieur-developpement-mecanique-h-f-3c2bc8": "2026-10-16",
-    "naval-group-fr-concepteur-ihm-web-java-h-f-5656a0": "2026-10-16",
-    "naval-group-fr-responsable-activite-ingenierie-ihm-systemes-embarques-f7354b": "2026-10-16",
-    "accenture-consultant-senior-en-systemes-avioniques-et-embarques-f-h-5bc6ea": "2026-10-16",
-    "cea-developpement-d-un-conditionneur-integre-pour-capteurs-de-pression-6b657b": "2026-10-16",
     "capgemini-developpeuse-developpeur-cpp-7ffe14": "2026-10-17",
     "thales-ingenieur-developpement-fpga-sur-cible-versal-h-f-23a4ce": "2026-10-17",
     "thales-ingenieur-developpement-outils-a-base-dia-sur-programme-satelli-9a6319": "2026-10-17",
@@ -93,7 +88,12 @@
     "naval-group-fr-concepteur-logiciel-embarque-guerre-des-mines-h-f-f1db63": "2026-10-30",
     "naval-group-fr-ingenieur-e-developpement-produit-logiciel-h-f-281763": "2026-10-30",
     "sopra-steria-developpeur-se-d-applications-de-simulation-cpp-qt-defens-fab77d": "2026-10-30",
-    "sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-1b0ade": "2026-10-30"
+    "sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-1b0ade": "2026-10-30",
+    "atos-developpeur-java-systemes-tactiques-pour-les-forces-armees-f-h-7ede1e": "2026-10-31",
+    "naval-group-fr-developpement-d-un-systeme-a-logiciel-preponderant-dans-0a71da": "2026-10-31",
+    "thales-ingenieur-developpement-logiciel-bancs-de-test-simulateurs-f-h-270d56": "2026-10-31",
+    "alten-backend-engineer-experienced-permanent-contract-71492f": "2026-10-31",
+    "cea-developpement-logiciel-pour-une-baie-d-acquisition-modulaire-en-re-8adc1f": "2026-10-31"
   },
   "last_published_date": "2026-10-30"
 }
