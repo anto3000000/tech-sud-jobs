@@ -1,8 +1,8 @@
 {
-  "last_generated_date": "2026-10-31",
+  "last_generated_date": "2026-11-01",
   "bucket_last_used": {
     "eng-13": "2026-10-26",
-    "eng-06": "2026-10-24",
+    "eng-06": "2026-11-01",
     "eng-83": "2026-10-30",
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-31",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "capgemini-developpeuse-developpeur-cpp-7ffe14": "2026-10-17",
-    "thales-ingenieur-developpement-fpga-sur-cible-versal-h-f-23a4ce": "2026-10-17",
-    "thales-ingenieur-developpement-outils-a-base-dia-sur-programme-satelli-9a6319": "2026-10-17",
-    "orpi-gestionnaire-locatif-developpement-h-f-1a0431": "2026-10-17",
-    "scalian-ingenieur-qualite-developpement-h-f-f1a52e": "2026-10-17",
     "naval-group-fr-ingenieur-e-ci-cd-generation-automatique-de-tests-par-a-6d215c": "2026-10-18",
     "naval-group-fr-developpeur-se-agents-ia-open-lab-h-f-bbef3f": "2026-10-18",
     "thales-data-scientist-ingenieur-ia-experimente-h-f-703ec7": "2026-10-18",
@@ -93,7 +88,12 @@
     "naval-group-fr-developpement-d-un-systeme-a-logiciel-preponderant-dans-0a71da": "2026-10-31",
     "thales-ingenieur-developpement-logiciel-bancs-de-test-simulateurs-f-h-270d56": "2026-10-31",
     "alten-backend-engineer-experienced-permanent-contract-71492f": "2026-10-31",
-    "cea-developpement-logiciel-pour-une-baie-d-acquisition-modulaire-en-re-8adc1f": "2026-10-31"
+    "cea-developpement-logiciel-pour-une-baie-d-acquisition-modulaire-en-re-8adc1f": "2026-10-31",
+    "thales-ingenieur-developpement-automatisation-outils-informatiques-h-f-34c915": "2026-11-01",
+    "etablissement-francais-du-sang-cdd-developpeur-de-territoire-don-du-sa-bb12d6": "2026-11-01",
+    "median-technologies-ingenieur-integration-logicielle-h-f-d5943a": "2026-11-01",
+    "sopra-steria-developpeur-euse-dotnet-developpement-regional-sophia-a33a03": "2026-11-01",
+    "thales-developpement-doutils-daide-a-la-preparation-des-essais-ait-f-h-6cd973": "2026-11-01"
   },
   "last_published_date": "2026-10-31"
 }
