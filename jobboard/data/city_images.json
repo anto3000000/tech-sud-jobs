@@ -18,6 +18,14 @@
   "Antibes Area": {
     "checked_at": 1792752071.2961388
   },
+  "Arles": {
+    "checked_at": 1793628263.7648098,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:1_arles_france_2016.jpg",
+    "file": "1_arles_france_2016.jpg",
+    "height": 583,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/1_arles_france_2016.jpg/1280px-1_arles_france_2016.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 1200
+  },
   "Avignon": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_2_JP_Campomar.jpg",
@@ -212,7 +220,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1793535621.258799,
+    "checked_at": 1793628263.7648098,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
