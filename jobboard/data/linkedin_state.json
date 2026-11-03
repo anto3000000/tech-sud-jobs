@@ -1,7 +1,7 @@
 {
-  "last_generated_date": "2026-11-02",
+  "last_generated_date": "2026-11-03",
   "bucket_last_used": {
-    "eng-13": "2026-10-26",
+    "eng-13": "2026-11-03",
     "eng-06": "2026-11-01",
     "eng-83": "2026-10-30",
     "eng-84": "2026-09-18",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "inrae-ingenieur-e-en-calcul-et-analyses-des-donnees-dimpact-du-changem-70be58": "2026-10-19",
-    "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-10-19",
-    "cgi-data-engineer-snowflake-f-h-fd312b": "2026-10-19",
-    "cgi-expert-e-data-engineer-databricks-f-h-242db4": "2026-10-19",
-    "cgi-data-engineer-dbt-f-h-acd18f": "2026-10-19",
     "etablissement-francais-du-sang-developpeur-de-territoire-departement-1-af6cfd": "2026-10-20",
     "sopra-steria-lead-tech-java-angular-aix-en-provence-5a359a": "2026-10-20",
     "orange-ingenieur-e-developpement-augmente-e-f-h-49281d": "2026-10-20",
@@ -93,7 +88,12 @@
     "cma-cgm-developer-intern-ai-augmented-applications-m-f-701e72": "2026-11-02",
     "cma-cgm-global-sales-data-effectiveness-january-2027-efb3c0": "2026-11-02",
     "cs-expert-e-en-liaison-de-donnees-tactiques-ldt-defense-securite-aix-e-f83bf5": "2026-11-02",
-    "sopra-steria-data-ingenieur-e-snowflake-experimente-e-developpement-re-42c08a": "2026-11-02"
+    "sopra-steria-data-ingenieur-e-snowflake-experimente-e-developpement-re-42c08a": "2026-11-02",
+    "scalian-developpeur-logiciel-java-h-f-846974": "2026-11-03",
+    "thales-ingenieur-electronique-informatique-f-m-a255a0": "2026-11-03",
+    "cs-ingenieur-developpement-defense-securite-aix-en-provence-7e5ec6": "2026-11-03",
+    "magora-ex-groupe-odalys-analyste-developpement-f-h-cdd-remplacement-11d1d4": "2026-11-03",
+    "bpce-infogerance-technologies-expert-en-developpement-f-h-cc9d75": "2026-11-03"
   },
   "last_published_date": "2026-11-02"
 }
