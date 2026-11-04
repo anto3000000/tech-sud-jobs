@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-11-03",
+  "last_generated_date": "2026-11-04",
   "bucket_last_used": {
     "eng-13": "2026-11-03",
     "eng-06": "2026-11-01",
@@ -7,7 +7,7 @@
     "eng-84": "2026-09-18",
     "eng-paca": "2026-10-31",
     "data-13": "2026-11-02",
-    "data-06": "2026-10-14",
+    "data-06": "2026-11-04",
     "data-83": "2026-10-18",
     "data-paca": "2026-10-21",
     "data-84": "2026-10-19",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "etablissement-francais-du-sang-developpeur-de-territoire-departement-1-af6cfd": "2026-10-20",
-    "sopra-steria-lead-tech-java-angular-aix-en-provence-5a359a": "2026-10-20",
-    "orange-ingenieur-e-developpement-augmente-e-f-h-49281d": "2026-10-20",
-    "accenture-france-consultant-senior-en-systemes-avioniques-et-embarques-78313c": "2026-10-20",
-    "docoon-developpeur-fullstack-csharp-dotnet-fb74d3": "2026-10-20",
     "atos-ia-agentique-pour-la-migration-automatisee-de-donnees-h-f-739723": "2026-10-21",
     "cma-cgm-data-scientist-intern-freight-rate-forecasting-5d93bd": "2026-10-21",
     "scalian-expert-ingenieur-systeme-mbse-ia-f-h-b6b07c": "2026-10-21",
@@ -93,7 +88,12 @@
     "thales-ingenieur-electronique-informatique-f-m-a255a0": "2026-11-03",
     "cs-ingenieur-developpement-defense-securite-aix-en-provence-7e5ec6": "2026-11-03",
     "magora-ex-groupe-odalys-analyste-developpement-f-h-cdd-remplacement-11d1d4": "2026-11-03",
-    "bpce-infogerance-technologies-expert-en-developpement-f-h-cc9d75": "2026-11-03"
+    "bpce-infogerance-technologies-expert-en-developpement-f-h-cc9d75": "2026-11-03",
+    "thales-architecte-solution-logiciel-base-de-donnees-charge-utile-telec-d7b4a0": "2026-11-04",
+    "groupe-sii-ingenieur-ia-f-h-b33dce": "2026-11-04",
+    "thales-developpeur-confirme-solution-base-de-donnees-charge-utile-sate-d44ec6": "2026-11-04",
+    "schneider-electric-energy-analytics-consultant-carros-france-f-h-48193b": "2026-11-04",
+    "la-securite-sociale-expert-e-cyber-ia-data-science-f-h-076fde": "2026-11-04"
   },
   "last_published_date": "2026-11-03"
 }
