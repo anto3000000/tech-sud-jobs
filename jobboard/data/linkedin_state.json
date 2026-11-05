@@ -1,10 +1,10 @@
 {
-  "last_generated_date": "2026-11-04",
+  "last_generated_date": "2026-11-05",
   "bucket_last_used": {
     "eng-13": "2026-11-03",
     "eng-06": "2026-11-01",
     "eng-83": "2026-10-30",
-    "eng-84": "2026-09-18",
+    "eng-84": "2026-11-05",
     "eng-paca": "2026-10-31",
     "data-13": "2026-11-02",
     "data-06": "2026-11-04",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "atos-ia-agentique-pour-la-migration-automatisee-de-donnees-h-f-739723": "2026-10-21",
-    "cma-cgm-data-scientist-intern-freight-rate-forecasting-5d93bd": "2026-10-21",
-    "scalian-expert-ingenieur-systeme-mbse-ia-f-h-b6b07c": "2026-10-21",
-    "thales-developpement-de-l-usage-de-l-ia-au-sein-dactivites-industriell-ab109d": "2026-10-21",
-    "thales-ia-et-developpement-logiciel-pour-les-activites-support-de-thal-a21b96": "2026-10-21",
     "the-adecco-group-tech-lead-angular-f-h-9fab8e": "2026-10-22",
     "naval-group-fr-developpement-d-outils-d-aide-a-l-integration-des-syste-b69909": "2026-10-22",
     "sopra-steria-developpeur-euse-experimente-e-java-angular-toulon-b74bca": "2026-10-22",
@@ -93,7 +88,11 @@
     "groupe-sii-ingenieur-ia-f-h-b33dce": "2026-11-04",
     "thales-developpeur-confirme-solution-base-de-donnees-charge-utile-sate-d44ec6": "2026-11-04",
     "schneider-electric-energy-analytics-consultant-carros-france-f-h-48193b": "2026-11-04",
-    "la-securite-sociale-expert-e-cyber-ia-data-science-f-h-076fde": "2026-11-04"
+    "la-securite-sociale-expert-e-cyber-ia-data-science-f-h-076fde": "2026-11-04",
+    "inrae-de-master-m2-phenotypage-a-haut-debit-des-varietes-de-ble-avec-d-f7aa61": "2026-11-05",
+    "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-05",
+    "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-05",
+    "cgi-tech-lead-api-f-h-1d7693": "2026-11-05"
   },
   "last_published_date": "2026-11-04"
 }
