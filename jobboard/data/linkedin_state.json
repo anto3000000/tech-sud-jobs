@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-11-05",
+  "last_generated_date": "2026-11-06",
   "bucket_last_used": {
     "eng-13": "2026-11-03",
     "eng-06": "2026-11-01",
@@ -14,17 +14,12 @@
     "product-13": "2026-10-25",
     "tech-adjacent-13": "2026-10-27",
     "tech-adjacent-06": "2026-10-28",
-    "product-paca": "2026-10-09",
+    "product-paca": "2026-11-06",
     "tech-adjacent-paca": "2026-10-09",
     "tech-adjacent-83": "2026-10-11",
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "the-adecco-group-tech-lead-angular-f-h-9fab8e": "2026-10-22",
-    "naval-group-fr-developpement-d-outils-d-aide-a-l-integration-des-syste-b69909": "2026-10-22",
-    "sopra-steria-developpeur-euse-experimente-e-java-angular-toulon-b74bca": "2026-10-22",
-    "capgemini-developpeuse-developpeur-java-0ec022": "2026-10-22",
-    "naval-group-fr-concepteur-developpeur-logiciel-java-h-f-977f4c": "2026-10-22",
     "airbus-helicopters-logiciel-r-d-2027-developpement-d-outils-d-aide-a-l-cfa079": "2026-10-23",
     "airbus-helicopters-logiciel-r-d-2027-developpement-logiciel-ingenieur-4bedc3": "2026-10-23",
     "bpce-solutions-informatiques-expert-en-securite-des-developpements-mob-064471": "2026-10-23",
@@ -92,7 +87,12 @@
     "inrae-de-master-m2-phenotypage-a-haut-debit-des-varietes-de-ble-avec-d-f7aa61": "2026-11-05",
     "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-05",
     "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-05",
-    "cgi-tech-lead-api-f-h-1d7693": "2026-11-05"
+    "cgi-tech-lead-api-f-h-1d7693": "2026-11-05",
+    "thales-ux-designer-f-h-395232": "2026-11-06",
+    "pennylane-growth-product-manager-website-conversion-cce724": "2026-11-06",
+    "pennylane-product-domain-specialist-secteur-agricole-776dd9": "2026-11-06",
+    "lemlist-product-manager-billing-monetisation-2dce43": "2026-11-06",
+    "alan-founding-growth-alan-precision-2789f3": "2026-11-06"
   },
   "last_published_date": "2026-11-05"
 }

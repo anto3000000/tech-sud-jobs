@@ -211,6 +211,14 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Panorama_de_Six-Fours-les-Plages.jpg/1280px-Panorama_de_Six-Fours-les-Plages.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
+  "Six-Fours": {
+    "checked_at": 1793971935.39882,
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Panorama_de_Six-Fours-les-Plages.jpg",
+    "file": "Panorama_de_Six-Fours-les-Plages.jpg",
+    "height": 557,
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Panorama_de_Six-Fours-les-Plages.jpg/1280px-Panorama_de_Six-Fours-les-Plages.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "width": 1200
+  },
   "Six-Fours-les-Plages": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Panorama_de_Six-Fours-les-Plages.jpg",
@@ -220,7 +228,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1793886595.3190002,
+    "checked_at": 1793971935.39882,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
