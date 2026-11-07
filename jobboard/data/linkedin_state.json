@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-11-06",
+  "last_generated_date": "2026-11-07",
   "bucket_last_used": {
     "eng-13": "2026-11-03",
     "eng-06": "2026-11-01",
@@ -15,16 +15,11 @@
     "tech-adjacent-13": "2026-10-27",
     "tech-adjacent-06": "2026-10-28",
     "product-paca": "2026-11-06",
-    "tech-adjacent-paca": "2026-10-09",
+    "tech-adjacent-paca": "2026-11-07",
     "tech-adjacent-83": "2026-10-11",
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "airbus-helicopters-logiciel-r-d-2027-developpement-d-outils-d-aide-a-l-cfa079": "2026-10-23",
-    "airbus-helicopters-logiciel-r-d-2027-developpement-logiciel-ingenieur-4bedc3": "2026-10-23",
-    "bpce-solutions-informatiques-expert-en-securite-des-developpements-mob-064471": "2026-10-23",
-    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-d-6aafa6": "2026-10-23",
-    "cs-developpeur-back-java-transport-aix-en-provence-bf7165": "2026-10-23",
     "sopra-steria-developpeur-euse-experimente-e-java-angular-sophia-antipo-7a9268": "2026-10-24",
     "orange-developpement-d-une-methode-de-modelisation-des-antennes-de-sta-aad324": "2026-10-24",
     "thales-conception-et-developpement-logiciel-de-simulation-h-f-5871a0": "2026-10-24",
@@ -92,7 +87,12 @@
     "pennylane-growth-product-manager-website-conversion-cce724": "2026-11-06",
     "pennylane-product-domain-specialist-secteur-agricole-776dd9": "2026-11-06",
     "lemlist-product-manager-billing-monetisation-2dce43": "2026-11-06",
-    "alan-founding-growth-alan-precision-2789f3": "2026-11-06"
+    "alan-founding-growth-alan-precision-2789f3": "2026-11-06",
+    "alan-customer-success-manager-france-f20189": "2026-11-07",
+    "kincy-technicien-systemes-reseaux-support-it-helpdesk-h-f-profil-expat-8a6cf5": "2026-11-07",
+    "pennylane-associate-team-lead-support-financial-services-n2-chef-fe-de-238926": "2026-11-07",
+    "pennylane-associate-team-lead-support-financial-services-n2-chef-fe-de-32a99d": "2026-11-07",
+    "sogeti-chef-de-projet-it-senior-b857a6": "2026-11-07"
   },
   "last_published_date": "2026-11-05"
 }
