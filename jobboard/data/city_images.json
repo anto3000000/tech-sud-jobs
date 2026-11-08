@@ -50,14 +50,6 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Biot_%28Alpes_Maritimes%29_Jardin_Marcel_Camatte.jpg/1280px-Biot_%28Alpes_Maritimes%29_Jardin_Marcel_Camatte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
     "width": 1200
   },
-  "Cagnes-sur-Mer": {
-    "checked_at": 1790322269.2825532,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Le_Haut-de-Cagnes_01.jpg",
-    "file": "Le_Haut-de-Cagnes_01.jpg",
-    "height": 709,
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Le_Haut-de-Cagnes_01.jpg/1280px-Le_Haut-de-Cagnes_01.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
-    "width": 1200
-  },
   "Cannes": {
     "checked_at": 1790322269.2825532,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Cannes_-_port_et_croisette.jpg",
@@ -228,7 +220,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1794053816.9660172,
+    "checked_at": 1794140519.6114352,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,

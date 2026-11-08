@@ -1,9 +1,9 @@
 {
-  "last_generated_date": "2026-11-07",
+  "last_generated_date": "2026-11-08",
   "bucket_last_used": {
     "eng-13": "2026-11-03",
     "eng-06": "2026-11-01",
-    "eng-83": "2026-10-30",
+    "eng-83": "2026-11-08",
     "eng-84": "2026-11-05",
     "eng-paca": "2026-10-31",
     "data-13": "2026-11-02",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "sopra-steria-developpeur-euse-experimente-e-java-angular-sophia-antipo-7a9268": "2026-10-24",
-    "orange-developpement-d-une-methode-de-modelisation-des-antennes-de-sta-aad324": "2026-10-24",
-    "thales-conception-et-developpement-logiciel-de-simulation-h-f-5871a0": "2026-10-24",
-    "thales-ingenieur-developpement-espion-simulateur-can-h-f-55c1c5": "2026-10-24",
-    "schneider-electric-ingenieur-full-stack-f-h-fca531": "2026-10-24",
     "airbus-helicopters-logiciel-r-d-et22r-innovation-product-manager-f-h-42697f": "2026-10-25",
     "boond-senior-product-designer-full-remote-8c66b3": "2026-10-25",
     "boond-senior-product-manager-full-remote-78a6cb": "2026-10-25",
@@ -92,7 +87,12 @@
     "kincy-technicien-systemes-reseaux-support-it-helpdesk-h-f-profil-expat-8a6cf5": "2026-11-07",
     "pennylane-associate-team-lead-support-financial-services-n2-chef-fe-de-238926": "2026-11-07",
     "pennylane-associate-team-lead-support-financial-services-n2-chef-fe-de-32a99d": "2026-11-07",
-    "sogeti-chef-de-projet-it-senior-b857a6": "2026-11-07"
+    "sogeti-chef-de-projet-it-senior-b857a6": "2026-11-07",
+    "naval-group-fr-ingenieur-developpeur-software-h-f-b96535": "2026-11-08",
+    "naval-group-fr-ingenieur-electronique-systemes-embarques-h-f-be189a": "2026-11-08",
+    "sopra-steria-developpeur-se-logiciel-embarque-cpp-aeroline-toulon-841d76": "2026-11-08",
+    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-c-fe9a49": "2026-11-08",
+    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-d-6aafa6": "2026-11-08"
   },
   "last_published_date": "2026-11-07"
 }

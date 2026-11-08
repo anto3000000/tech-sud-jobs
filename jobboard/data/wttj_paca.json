@@ -1,5 +1,256 @@
 [
   {
+    "id": "wttj:4372914",
+    "title": "Business Analyst Expérimenté (F/H)",
+    "company": "Atos",
+    "company_slug": "atos",
+    "city": "Valbonne",
+    "cities": [
+      "Valbonne"
+    ],
+    "department": "Maritime Alps",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "",
+    "category": "data",
+    "profession": null,
+    "salary": null,
+    "experience_min_years": 3,
+    "published_at": "2026-11-08T12:00:00.000+01:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/business-analyst-experimente-f-h_valbonne_ATOS_Vw977RJ?o=ATOS_Vw977RJ",
+    "source": "wttj",
+    "stack": [
+      "C++",
+      "Java",
+      "Angular",
+      "JavaScript"
+    ],
+    "soft_skills": [
+      "Communication"
+    ],
+    "description": "Atos Sophia-Antipolis est situé au cœur du premier technopôle d’Europe, dans une région ensoleillée. Vous serez immergé(e) dans une entreprise innovante aux missions diverses, notamment dans les secteurs des télécommunications, du voyage, des collectivités territoriales et du sport. \n\nLe poste en quelques mots :\nAu sein d'une équipe agile de 10 personnes, vous interviendrez en tant que Business Analyst sur l'analyse et le développement de nouvelles solutions logicielles.\n\nCe que vous allez faire si vous nous rejoignez :\n • Évaluer les besoins;\n • Expression des besoins / rédaction des cahiers des charges ;\n • Construire, maintenir et partager la connaissance fonctionnelle de nos processus, de nos services et de l'utilisation des produits par les utilisateurs finaux ;\n • Analyser les exigences commerciales soumises par la gestion des produits ;\n • Consolider et articuler les besoins de l'entreprise en concepts de nouveaux produits ou de mises à niveau ;\n • Vous êtes en charge de la spécification de la taille et du travail de validation ;\n • Soutenir les parties prenantes dans la réalisation d'une analyse suffisante pour s'assurer que les exigences sont prêtes à être travaillées.\n Stack technique : \nConnaissances globales sur du Java / C++ / Angular / Javascript / HTML / CSS / Agile.",
+    "description_excerpt": "Atos Sophia-Antipolis est situé au cœur du premier technopôle d’Europe, dans une région ensoleillée. Vous serez immergé(e) dans une entreprise innovante aux missions diverses, notamment dans les secteurs des télécommunications, du voyage, des collectivités territoriales et du sport. \n\nLe poste en quelques mots :\nAu sein d'une équipe…",
+    "profile_excerpt": "Description du profil :\n\nVotre profil :\n • Titulaire d’un bac+5 ou d’un titre d’ingénieur ;\n • Vous possédez une expérience de 4 ans minimum en tant qu’Analyste fonctionnel F/H ainsi qu’une connaissance d’environnement technique. Le but est d’être capable de rédiger les…",
+    "experience": null,
+    "education_level": "bac_5",
+    "remote_detail": null,
+    "apply_url": "https://atos.contactrh.com/jobs/10425/44560498",
+    "ats": "external",
+    "logo": "https://cdn-images.welcometothejungle.com/VWbbQMz2WwzAubHAY4D-kRNnVCKQD4vGA5IiJFwvtOs/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni85MDEzYmYxNS0xMWJkLTQ3MjAtOTk1MS1lY2Y3NWRjZGM3YTcuanBn",
+    "benefits_preview": [
+      "Plan de développement professionnel",
+      "Entre 3-4 jours de télétravail",
+      "Équipe dédiée à la Diversité & inclusivité",
+      "Prime de cooptation",
+      "Compte épargne-temps (CET)"
+    ],
+    "benefits_count": 12,
+    "start_date": null,
+    "enriched_at": "2026-11-08T11:57:37+00:00"
+  },
+  {
+    "id": "wttj:4372912",
+    "title": "Consultant CyberSécurité Sénior (F/H)",
+    "company": "Atos",
+    "company_slug": "atos",
+    "city": "Aix-En-Provence",
+    "cities": [
+      "Aix-En-Provence"
+    ],
+    "department": "Bouches-du-Rhône",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "",
+    "category": "cybersecurite",
+    "profession": null,
+    "salary": null,
+    "experience_min_years": 7,
+    "published_at": "2026-11-08T12:00:00.000+01:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/consultant-cybersecurite-senior-f-h_aix-en-provence_ATOS_qVKrAJ1?o=ATOS_qVKrAJ1",
+    "source": "wttj",
+    "stack": [
+      "Splunk"
+    ],
+    "soft_skills": [
+      "Connaissances en cybersécurité",
+      "Aptitude à résoudre les problèmes"
+    ],
+    "description": "Dans le cadre du développement des activités cybersécurité en région PACA, et plus précisément des activités d'intégration, d'architecture et des projets, nous renforçons l'équipe qui est actuellement composée d'un Leader technique expérimenté et d'un consultant junior, dont les capacités sont pleinement mobilisées sur les projets en cours. \n\nObjectifs du poste :\n • Assurer l’intégration, la configuration, et le déploiement de solutions de sécurité chez nos clients, dans des environnements hétérogènes, de niveaux d'expositions variés y compris des missions sensibles. \n • Analyser les besoins de nos clients, de définir des architectures de sécurité, ainsi que d'apporter un support technique lors des phases d’implémentation ou de maintien en conditions opérationnelles.",
+    "description_excerpt": "Dans le cadre du développement des activités cybersécurité en région PACA, et plus précisément des activités d'intégration, d'architecture et des projets, nous renforçons l'équipe qui est actuellement composée d'un Leader technique expérimenté et d'un consultant junior, dont les capacités sont pleinement mobilisées sur les projets en…",
+    "profile_excerpt": "Description du profil :\n\nProfil recherché :\n- Bac+5 en cybersécurité, sécurité informatique, ou diplôme équivalent (école d’ingénieur, master)\n- 5 ans d’expérience dans des missions similaires en cabinet de conseil, ESN ou grande organisation\n- Certifications fournisseurs…",
+    "experience": "7–10 ans",
+    "education_level": "bac_5",
+    "remote_detail": null,
+    "apply_url": "https://atos.contactrh.com/jobs/10425/44560470",
+    "ats": "external",
+    "logo": "https://cdn-images.welcometothejungle.com/VWbbQMz2WwzAubHAY4D-kRNnVCKQD4vGA5IiJFwvtOs/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni85MDEzYmYxNS0xMWJkLTQ3MjAtOTk1MS1lY2Y3NWRjZGM3YTcuanBn",
+    "benefits_preview": [
+      "Plan de développement professionnel",
+      "Entre 3-4 jours de télétravail",
+      "Équipe dédiée à la Diversité & inclusivité",
+      "Prime de cooptation",
+      "Compte épargne-temps (CET)"
+    ],
+    "benefits_count": 12,
+    "start_date": null,
+    "enriched_at": "2026-11-08T11:57:37+00:00"
+  },
+  {
+    "id": "wttj:4372905",
+    "title": "Ingénieur Production Applicative / DevOps (F/H)",
+    "company": "Atos",
+    "company_slug": "atos",
+    "city": "Aix-En-Provence",
+    "cities": [
+      "Aix-En-Provence"
+    ],
+    "department": "Bouches-du-Rhône",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "hybride",
+    "category": "devops",
+    "profession": null,
+    "salary": null,
+    "experience_min_years": 4,
+    "published_at": "2026-11-08T12:00:00.000+01:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/ingenieur-production-applicative-devops-f-h_aix-en-provence_ATOS_5boOXkL?o=ATOS_5boOXkL",
+    "source": "wttj",
+    "stack": [
+      "Kubernetes",
+      "Shell",
+      "Python"
+    ],
+    "soft_skills": [
+      "Communication",
+      "Aptitude à résoudre les problèmes"
+    ],
+    "description": "Le poste en quelques mots :\nNous sommes à la recherche de notre futur·e Ingénieur Production Applicative pour assurer l’exploitation, la fiabilité et la mise en production des applications dans un environnement technique structuré. Vous interviendrez sur des plateformes industrialisées intégrant Kubernetes et des solutions d’automatisation.",
+    "description_excerpt": "Le poste en quelques mots :\nNous sommes à la recherche de notre futur·e Ingénieur Production Applicative pour assurer l’exploitation, la fiabilité et la mise en production des applications dans un environnement technique structuré. Vous interviendrez sur des plateformes industrialisées intégrant Kubernetes et des solutions…",
+    "profile_excerpt": "Description du profil :\n\nVotre profil :\n • Expérience confirmée en production applicative ou exploitation IT\n\n • Bonne maîtrise des environnements Kubernetes\n\n • Compétences en scripting Shell et/ou Python\n\n • Connaissance des processus ITIL\n\n • Expérience dans la gestion…",
+    "experience": null,
+    "education_level": "bac_5",
+    "remote_detail": "hybride",
+    "apply_url": "https://atos.contactrh.com/jobs/10425/44560275",
+    "ats": "external",
+    "logo": "https://cdn-images.welcometothejungle.com/VWbbQMz2WwzAubHAY4D-kRNnVCKQD4vGA5IiJFwvtOs/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni85MDEzYmYxNS0xMWJkLTQ3MjAtOTk1MS1lY2Y3NWRjZGM3YTcuanBn",
+    "benefits_preview": [
+      "Plan de développement professionnel",
+      "Entre 3-4 jours de télétravail",
+      "Équipe dédiée à la Diversité & inclusivité",
+      "Prime de cooptation",
+      "Compte épargne-temps (CET)"
+    ],
+    "benefits_count": 12,
+    "start_date": null,
+    "enriched_at": "2026-11-08T11:57:37+00:00"
+  },
+  {
+    "id": "wttj:4372898",
+    "title": "Ingénieur DevOps (F/H)",
+    "company": "Atos",
+    "company_slug": "atos",
+    "city": "Valbonne",
+    "cities": [
+      "Valbonne"
+    ],
+    "department": "Maritime Alps",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "hybride",
+    "category": "devops",
+    "profession": null,
+    "salary": "42000–52000 EUR",
+    "experience_min_years": 5,
+    "published_at": "2026-11-08T11:00:00.000+01:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/ingenieur-devops-f-h_valbonne_ATOS_MAlyKoe?o=ATOS_MAlyKoe",
+    "source": "wttj",
+    "stack": [
+      "Kubernetes",
+      "Terraform",
+      "Azure",
+      "AWS",
+      "Docker"
+    ],
+    "soft_skills": [
+      "Conteneurisation et orchestration",
+      "Amélioration continue",
+      "Gestion de la documentation",
+      "Infrastructure as Code (IaC)",
+      "Outils d'automatisation",
+      "Collaboration et travail d'équipe",
+      "Gestion de l’infrastructure cloud",
+      "Aptitude à résoudre les problèmes"
+    ],
+    "description": "Gestion de l'Infrastructure :\n•    Configurer et gérer des environnements cloud, y compris le réseau, le stockage et les ressources de calcul.\n•    Optimiser les coûts cloud en mettant en œuvre des pratiques exemplaires et des stratégies de gestion des ressources.\nAutomatisation et Scriptage :\n•    Développer des scripts et des outils d'automatisation pour faciliter les tâches de déploiement et de gestion de l'infrastructure.\n•   Utiliser des outils d'Infrastructure as Code (IaC) tels que Terraform ou CloudFormation pour un provisionnement d'infrastructure cohérent et répétable.\nCollaboration et Support :\n•    Travailler en étroite collaboration avec des équipes interfonctionnelles pour résoudre les problèmes, mettre en œuvre des solutions et améliorer le processus de développement global.\n•   Fournir un support pour les systèmes de production, en résolvant les incidents et en mettant en œuvre des actions correctives si nécessaire.\nDocumentation :\n•  Créer et maintenir une documentation complète pour l'architecture cloud, les processus de déploiement et les procédures opérationnelles.\n•    Partager les connaissances et les meilleures pratiques avec les membres de l'équipe pour favoriser une culture d'amélioration continue.",
+    "description_excerpt": "Gestion de l'Infrastructure :\n•    Configurer et gérer des environnements cloud, y compris le réseau, le stockage et les ressources de calcul.\n•    Optimiser les coûts cloud en mettant en œuvre des pratiques exemplaires et des stratégies de gestion des ressources.\nAutomatisation et Scriptage :\n•    Développer des scripts et des outils…",
+    "profile_excerpt": "Description du profil :\n\n•    Diplôme de master en informatique, ingénierie ou dans un domaine connexe.\n •    Expérience avérée en tant qu’Ingénieur DevOps ou dans un rôle similaire, avec une expérience pratique des plateformes cloud (Azure, AWS, GCP).\n •    Solide connaissance…",
+    "experience": "5–7 ans",
+    "education_level": "bac_5",
+    "remote_detail": "hybride",
+    "apply_url": "https://atos.contactrh.com/jobs/10425/44560105",
+    "ats": "external",
+    "logo": "https://cdn-images.welcometothejungle.com/VWbbQMz2WwzAubHAY4D-kRNnVCKQD4vGA5IiJFwvtOs/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni85MDEzYmYxNS0xMWJkLTQ3MjAtOTk1MS1lY2Y3NWRjZGM3YTcuanBn",
+    "benefits_preview": [
+      "Plan de développement professionnel",
+      "Entre 3-4 jours de télétravail",
+      "Équipe dédiée à la Diversité & inclusivité",
+      "Prime de cooptation",
+      "Compte épargne-temps (CET)"
+    ],
+    "benefits_count": 12,
+    "start_date": null,
+    "enriched_at": "2026-11-08T11:57:37+00:00"
+  },
+  {
+    "id": "wttj:4372582",
+    "title": "Ingénieur Développement Logiciel Embarqué - F/H",
+    "company": "Thales",
+    "company_slug": "thales",
+    "city": "Cannes",
+    "cities": [
+      "Cannes"
+    ],
+    "department": "Maritime Alps",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "",
+    "category": "eng",
+    "profession": null,
+    "salary": null,
+    "experience_min_years": null,
+    "published_at": "2026-11-07T23:00:00.000+01:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/thales/jobs/ingenieur-developpement-logiciel-embarque-f-h_cannes_THALE_ybVkdb9?o=THALE_ybVkdb9",
+    "source": "wttj",
+    "stack": [
+      "Linux",
+      "Yocto",
+      "Python"
+    ],
+    "soft_skills": [
+      "Communication",
+      "Intégration continue",
+      "Programmation fonctionnelle",
+      "Aptitude à résoudre les problèmes"
+    ],
+    "description": "Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d’activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l’environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d’euros par an en Recherche & Développement, notamment dans des domaines clés de l’innovation tels que l’IA, la cybersécurité, le quantique, les technologies du cloud et la 6G. Thales compte près de 85 000 collaborateurs dans 65 pays. ​\nNos engagements, vos avantages\n• Une réussite portée par notre excellence technologique, votre expérience et notre ambition partagée\n\n• Un package de rémunération attractif\n\n• Un développement des compétences en continu : parcours de formation, académies et communautés internes\n\n• Un environnement inclusif, bienveillant et respectant l’équilibre des collaborateurs\n\n• Un engagement sociétal et environnemental reconnu\n\nVotre quotidien\nLe site de Cannes est en charge de la conception des systèmes satellitaires & plateformes, de l’assemblage/intégration/test des satellites ainsi que des opérations en orbite. Le site a une expertise en instrumentation optique et en avionique.Vous êtes passionné par le développement de logiciels embarqués ? Vous souhaitez rejoindre une équipe dynamique au cœur de l'innovation spatiale ? Nous recherchons un Ingénieur Développement Logiciel Embarqué talentueux pour collaborer à des projets de pointe.\nIntégrez le Centre de Compétences Digital Solution (CCDS) France, leader dans le développement de logiciels de vol pour satellites dans les domaines de la Télécom, de l’Observation et de la Science. Nos logiciels critiques en temps réel fonctionnent 24/7 pendant plus de 15 ans, et assurent des fonctions vitales pour plus de 150 satellites en vol actuellement !\nLes logiciels de vol sont au cœur des solutions satellitaires, garantissant flexibilité et performance tout au long de leur durée de vie. Avec l'essor des constellations de satellites en orbite basse, les défis techniques associés aux logiciels embarqués foisonnent et offrent des opportunités uniques de croissance et d'innovation.\nEn tant qu’ Ingénieur Développement Logiciel embarqué, vos principales missions sont :\n• Analyser le besoin en participant à des réunions avec les ingénieries systèmes et électroniques dans le but de définir les cas d'utilisation et confirmer la faisabilité technique.\n• Contribuer à l’élaboration des spécifications : rédaction des exigences, conception d'éléments unitaires et « backlog refinement ».\n• Réaliser la programmation du logiciel, conformément à la conception établie.\n• Intégrer le composant logiciel dans le produit logiciel global et sur la cible matérielle (calculateur embarqué spécifique).\n• Réaliser des tests : automatisation des tests de différents niveaux (unitaire, intégration), implémentation de l’environnement de test associé (simulateurs, cartes électroniques, débuggeurs, analyseurs), exécution des campagnes de tests, et analyse des résultats.\n• Maintenir la chaîne d'intégration continue qui permet la compilation, l'analyse statique du code, ainsi que l'exécution des tests de régression.\n• Investiguer des problèmes techniques et proposer des solutions de résolution.\n• Proposer et implémenter des modifications du processus et des outils de la chaine outillée.\nVotre profil\nVous souhaitez participer à un projet innovant et structurant, au sein d’une équipe multidisciplinaire et internationale ?\nDiplômé d’une école d’ingénieur ou d’un cursus universitaire (Bac+5) à dominante Systèmes Embarqués ou équivalent, vous bénéficez de l’expérience et des compétences suivantes :\n• Première expérience dans le développement de logiciels embarqués Temps Réels, ou thèse réalisée sur cette thématique ;\n• Maîtrise des bases du développement logiciel bas niveau, notamment en C, et notions des drivers, firmware, boot et OS Temps Réel ;\n• Notions en scripting (Python) ",
+    "description_excerpt": "Thales est un leader mondial des hautes technologies spécialisé dans trois secteurs d’activité : Défense & Sécurité, Aéronautique & Spatial, et Cyber & Digital. Il développe des produits et solutions qui contribuent à un monde plus sûr, plus respectueux de l’environnement et plus inclusif. Le Groupe investit près de 4,5 milliards d’euros…",
+    "profile_excerpt": null,
+    "experience": null,
+    "education_level": null,
+    "remote_detail": null,
+    "apply_url": "https://careers.thalesgroup.com/fr/fr/apply?jobSeqNo=TGPTGWGLOBALR0341888EXTERNALFRFR&source=WORKDAY&apply&utm_source=jungle",
+    "ats": "external",
+    "logo": "https://cdn-images.welcometothejungle.com/iwQNU4Me0B5iYG2CAG1YrXQ9M_c_dVv0YrcV771eYhA/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8zNDQxLzE1Nzg0Mi9jNTg2ZGYxZC00ZDMzLTRlMDktOTgwZS0zOTFlMmY0YmY2MmYucG5n",
+    "benefits_preview": [
+      "Horaires de travail flexibles",
+      "Subventions CSE (Sport, Culture,...)",
+      "Congés pour enfant malade"
+    ],
+    "benefits_count": 32,
+    "start_date": null,
+    "enriched_at": "2026-11-08T11:57:37+00:00"
+  },
+  {
     "id": "wttj:4371872",
     "title": "Stage - Ingénieur R&D Vision - Hiérarchisation et pré-annotation IA de données H/F",
     "company": "Naval Group [FR]",
@@ -44,7 +295,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4371847",
@@ -96,7 +347,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4371200",
@@ -140,7 +391,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4371062",
@@ -185,7 +436,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4356495",
@@ -231,7 +482,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4356494",
@@ -277,7 +528,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4356493",
@@ -323,7 +574,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4356492",
@@ -369,7 +620,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3962599",
@@ -423,7 +674,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3962594",
@@ -481,7 +732,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4370626",
@@ -527,7 +778,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4370625",
@@ -573,7 +824,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4370624",
@@ -619,7 +870,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4370623",
@@ -665,7 +916,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4370559",
@@ -719,7 +970,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4370120",
@@ -768,7 +1019,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4033230",
@@ -810,7 +1061,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3496612",
@@ -863,7 +1114,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-01T21:00:00Z",
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3930962",
@@ -915,7 +1166,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:1353298",
@@ -968,7 +1219,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4369746",
@@ -1014,7 +1265,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4369728",
@@ -1064,7 +1315,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4319118",
@@ -1128,7 +1379,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4369323",
@@ -1199,7 +1450,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4273575",
@@ -1259,7 +1510,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:34+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4369063",
@@ -1309,7 +1560,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4369054",
@@ -1359,7 +1610,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4368995",
@@ -1407,7 +1658,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4173330",
@@ -1451,7 +1702,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4368763",
@@ -1495,7 +1746,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-04T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4368712",
@@ -1534,7 +1785,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4368567",
@@ -1578,7 +1829,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2027-01-03T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4368455",
@@ -1624,7 +1875,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2027-01-03T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4368519",
@@ -1676,7 +1927,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4368437",
@@ -1727,7 +1978,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4368436",
@@ -1778,7 +2029,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4103027",
@@ -1806,13 +2057,13 @@
       "Gestion de la qualité",
       "Collaboration et travail d'équipe"
     ],
-    "description": "L'opportunité : L'expertise au service de la Souveraineté\nRejoindre mc2i à Toulon, c'est s'engager au cœur des systèmes les plus complexes de l'industrie française. Nous accompagnons les grands maîtres d'œuvre industriels sur des enjeux de Maintien en Condition Opérationnelle (MCO) et de transformation SI durable. Ici, votre travail a un impact direct sur la résilience et la performance de la Défense Navale. \n\nVos missions & Problématiques métier\nAprès une période de formation, vous rejoindrez nos clients en évoluant sur différentes expertises métier :\n• Pilotage du MCO Naval : optimisation des cycles de maintenance et digitalisation des processus de soutien.\n\n• Gestion de projet pour les SI Critiques (PLM, gestion de configuration, maintenance/GMAO..)\n\n• Performance Industrielle\n\nFaçonnez notre futur en région : développez activement notre présence stratégique à Toulon.\n\nEnvironnement de travail \n• Présentiel : en raison des contraintes de sécurité défense, les missions sont réalisées exclusivement sur site (pas de télétravail).\n\n• Habilitation : le poste fera l'objet d'une procédure d'habilitation conformément au Code de la Défense.\n\n3ème au palmarès Great Place to Work 2025, mc2i est un lieu où il fait bon vivre et travailler.\n\nLe management de proximité est une priorité chez mc2i avec 1 manager pour 5 consultants.\n\nChez mc2i, tous les collaborateurs sont acteurs de leur parcours professionnel et construisent eux-même la carrière qui leur ressemble, pour en savoir plus cliquez ici.\n\nGrâce à nos centres d'expertise internes, vous aurez la possibilité de participer à la capitalisation des connaissances, de rencontrer les acteurs majeurs de ces domaines et d'anticiper les grandes tendances de demain tout en participant à notre veille active des éditeurs de solutions & start-up innovantes\n\nCabinet indépendant, détenu à 100% par son management, les collaborateurs intégrant notre Senior Management ont la possibilité d'investir au capital et de prendre part à l'aventure.\n\nDe nombreux avantages : Prime de participation, accès à notre CSE, FCPE, remboursement à 100% de votre titre de transport en commun, possibilité de télétravail, Une mutuelle attractive pour vous vos proches (Retrouvez la liste de tous nos avantages sociaux en bas de page).",
+    "description": "L'opportunité : L'expertise au service de la Souveraineté\nRejoindre mc2i à Toulon, c'est s'engager au cœur des systèmes les plus complexes de l'industrie française. Nous accompagnons les grands maîtres d'œuvre industriels sur des enjeux de Maintien en Condition Opérationnelle (MCO) et de transformation SI durable. Ici, votre travail a un impact direct sur la résilience et la performance de la Défense Navale. \n\nVos missions & Problématiques métier\nAprès une période de formation, vous rejoindrez nos clients en évoluant sur différentes expertises métier :\n• Pilotage du MCO Naval : optimisation des cycles de maintenance et digitalisation des processus de soutien.\n\n• Gestion de projet pour les SI Critiques (PLM, gestion de configuration, maintenance/GMAO..)\n\n• Performance Industrielle\n\nFaçonnez notre futur en région : développez activement notre présence stratégique à Toulon.\n\nEnvironnement de travail \n• Présentiel : en raison des contraintes de sécurité défense, les missions sont réalisées exclusivement sur site (pas de télétravail).\n\n• Habilitation : le poste fera l'objet d'une procédure d'habilitation conformément au Code de la Défense.\n\n3ème au palmarès Great Place to Work 2025 et labellisé Happy Trainees 2027, mc2i est un lieu où il fait bon vivre et travailler.\n\nLe management de proximité est une priorité chez mc2i avec 1 manager pour 5 consultants.\n\nChez mc2i, tous les collaborateurs sont acteurs de leur parcours professionnel et construisent eux-même la carrière qui leur ressemble, pour en savoir plus cliquez ici.\n\nGrâce à nos centres d'expertise internes, vous aurez la possibilité de participer à la capitalisation des connaissances, de rencontrer les acteurs majeurs de ces domaines et d'anticiper les grandes tendances de demain tout en participant à notre veille active des éditeurs de solutions & start-up innovantes\n\nCabinet indépendant, détenu à 100% par son management, les collaborateurs intégrant notre Senior Management ont la possibilité d'investir au capital et de prendre part à l'aventure.\n\nDe nombreux avantages : Prime de participation, accès à notre CSE, FCPE, remboursement à 100% de votre titre de transport en commun, possibilité de télétravail, Une mutuelle attractive pour vous vos proches (Retrouvez la liste de tous nos avantages sociaux en bas de page).",
     "description_excerpt": "L'opportunité : L'expertise au service de la Souveraineté\nRejoindre mc2i à Toulon, c'est s'engager au cœur des systèmes les plus complexes de l'industrie française. Nous accompagnons les grands maîtres d'œuvre industriels sur des enjeux de Maintien en Condition Opérationnelle (MCO) et de transformation SI durable. Ici, votre travail a un…",
     "profile_excerpt": "Diplômé d'un master au sein d'une école d'ingénieurs, école de commerce ou université, vous recherchez un CDI dans domaine du conseil. \n\nVos atouts pour relever ces défis\n• De l'écoute : attentif aux besoins du client durant la phase de conception, vous recueillez et analysez…",
     "experience": "Débutant",
     "education_level": "bac_5",
     "remote_detail": "sur site",
-    "apply_url": "https://www.aplitrak.com/?adid=bGVvLnNhbnRvcy4wNDU5Ny45MzgwQG1jMmlmci5hcGxpdHJhay5jb20",
+    "apply_url": "https://www.aplitrak.com/?adid=bGVvLnNhbnRvcy4wNTQ0MS45MzgwQG1jMmlmci5hcGxpdHJhay5jb20",
     "ats": "external",
     "logo": "https://cdn-images.welcometothejungle.com/9-EJZd9YiHHU4xF2Dtlg9Qteg8dF2AMxk8F0o3I9gSk/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby80MTg4LzE1Mzk2MS81N2Y4ZjU1OS0yOWMxLTRjOWQtODc5OS0zN2Y4OWIxMDhjODMucG5n",
     "benefits_preview": [
@@ -1825,7 +2076,7 @@
     ],
     "benefits_count": 13,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3954104",
@@ -1895,7 +2146,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4049828",
@@ -1951,7 +2202,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4367126",
@@ -1999,7 +2250,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4366990",
@@ -2052,7 +2303,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4366961",
@@ -2114,7 +2365,7 @@
     ],
     "benefits_count": 3,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4366954",
@@ -2160,7 +2411,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4366487",
@@ -2233,7 +2484,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:810351",
@@ -2281,7 +2532,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4366314",
@@ -2328,7 +2579,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4273252",
@@ -2376,7 +2627,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4366107",
@@ -2420,7 +2671,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4365552",
@@ -2470,7 +2721,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4365547",
@@ -2522,7 +2773,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4316945",
@@ -2567,7 +2818,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4255740",
@@ -2623,7 +2874,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4364618",
@@ -2681,7 +2932,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4364457",
@@ -2726,7 +2977,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4364456",
@@ -2766,7 +3017,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4364454",
@@ -2811,7 +3062,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4273248",
@@ -2874,7 +3125,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:2076627",
@@ -2937,7 +3188,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:2076626",
@@ -3000,7 +3251,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4364356",
@@ -3063,7 +3314,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4364354",
@@ -3123,7 +3374,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4364353",
@@ -3176,7 +3427,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4364352",
@@ -3227,7 +3478,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4364351",
@@ -3286,7 +3537,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4291389",
@@ -3338,7 +3589,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4291388",
@@ -3390,7 +3641,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4291387",
@@ -3442,7 +3693,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4132462",
@@ -3489,7 +3740,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4023490",
@@ -3559,7 +3810,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4363783",
@@ -3606,7 +3857,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4363305",
@@ -3654,7 +3905,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4363303",
@@ -3699,7 +3950,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4363287",
@@ -3744,7 +3995,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4363285",
@@ -3791,7 +4042,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4363273",
@@ -3852,7 +4103,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4363262",
@@ -3900,7 +4151,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4363207",
@@ -3954,7 +4205,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4362669",
@@ -4003,7 +4254,7 @@
     ],
     "benefits_count": 11,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4362400",
@@ -4052,7 +4303,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4362323",
@@ -4091,7 +4342,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4362166",
@@ -4150,7 +4401,7 @@
     ],
     "benefits_count": 5,
     "start_date": "2027-01-03T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4362031",
@@ -4193,7 +4444,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4362028",
@@ -4236,7 +4487,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4142833",
@@ -4293,7 +4544,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4023647",
@@ -4341,7 +4592,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4023567",
@@ -4396,7 +4647,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4023466",
@@ -4456,7 +4707,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4360166",
@@ -4502,7 +4753,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4360161",
@@ -4548,7 +4799,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4360149",
@@ -4593,7 +4844,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4256706",
@@ -4642,7 +4893,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4161776",
@@ -4691,7 +4942,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4359535",
@@ -4736,7 +4987,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4359330",
@@ -4792,7 +5043,7 @@
     ],
     "benefits_count": 35,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358957",
@@ -4846,7 +5097,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4254878",
@@ -4898,7 +5149,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4254821",
@@ -4950,7 +5201,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4161792",
@@ -4999,7 +5250,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4159010",
@@ -5047,7 +5298,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3924358",
@@ -5094,7 +5345,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:35+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358739",
@@ -5136,7 +5387,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358738",
@@ -5178,7 +5429,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358728",
@@ -5220,7 +5471,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358727",
@@ -5262,7 +5513,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358684",
@@ -5307,7 +5558,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358642",
@@ -5353,7 +5604,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358639",
@@ -5407,7 +5658,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358577",
@@ -5443,7 +5694,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358576",
@@ -5479,7 +5730,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358574",
@@ -5538,7 +5789,7 @@
     ],
     "benefits_count": 6,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4358558",
@@ -5585,7 +5836,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4357774",
@@ -5639,7 +5890,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4357236",
@@ -5687,7 +5938,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4357184",
@@ -5735,7 +5986,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4357164",
@@ -5779,7 +6030,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4357102",
@@ -5818,7 +6069,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3937284",
@@ -5869,7 +6120,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4159408",
@@ -5921,7 +6172,7 @@
     ],
     "benefits_count": 11,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4159407",
@@ -5973,7 +6224,7 @@
     ],
     "benefits_count": 11,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355954",
@@ -6030,7 +6281,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355785",
@@ -6073,7 +6324,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355774",
@@ -6121,7 +6372,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4023748",
@@ -6188,7 +6439,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4023636",
@@ -6244,7 +6495,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4023601",
@@ -6302,7 +6553,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4023588",
@@ -6362,7 +6613,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355458",
@@ -6409,7 +6660,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355451",
@@ -6459,7 +6710,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355437",
@@ -6508,7 +6759,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355427",
@@ -6554,7 +6805,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355354",
@@ -6600,7 +6851,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355305",
@@ -6649,7 +6900,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355301",
@@ -6698,7 +6949,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355300",
@@ -6747,7 +6998,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355291",
@@ -6794,7 +7045,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355285",
@@ -6847,7 +7098,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355276",
@@ -6891,7 +7142,7 @@
     ],
     "benefits_count": 18,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355193",
@@ -6936,7 +7187,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355181",
@@ -6984,7 +7235,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355178",
@@ -7034,7 +7285,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355174",
@@ -7087,7 +7338,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4355146",
@@ -7133,7 +7384,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4354828",
@@ -7182,7 +7433,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:2403839",
@@ -7229,7 +7480,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4271939",
@@ -7282,7 +7533,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334372",
@@ -7355,7 +7606,7 @@
     ],
     "benefits_count": 22,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4329596",
@@ -7424,7 +7675,7 @@
     ],
     "benefits_count": 22,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4353376",
@@ -7479,7 +7730,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4352910",
@@ -7531,7 +7782,7 @@
     ],
     "benefits_count": 19,
     "start_date": "2026-10-26T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4352781",
@@ -7571,7 +7822,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4352721",
@@ -7625,7 +7876,7 @@
     ],
     "benefits_count": 20,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4352566",
@@ -7673,7 +7924,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4259996",
@@ -7724,7 +7975,7 @@
     ],
     "benefits_count": 6,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351944",
@@ -7784,7 +8035,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351931",
@@ -7831,7 +8082,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4135622",
@@ -7887,7 +8138,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351358",
@@ -7936,7 +8187,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351354",
@@ -7986,7 +8237,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351280",
@@ -8041,7 +8292,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351275",
@@ -8092,7 +8343,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351274",
@@ -8144,7 +8395,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351273",
@@ -8193,7 +8444,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351269",
@@ -8245,7 +8496,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351267",
@@ -8303,7 +8554,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351266",
@@ -8358,7 +8609,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351237",
@@ -8408,7 +8659,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4249504",
@@ -8452,7 +8703,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4049903",
@@ -8498,7 +8749,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4351034",
@@ -8549,7 +8800,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4135623",
@@ -8605,7 +8856,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4122408",
@@ -8663,7 +8914,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3744108",
@@ -8723,7 +8974,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4349445",
@@ -8784,7 +9035,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4349442",
@@ -8836,7 +9087,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4349245",
@@ -8890,7 +9141,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4349124",
@@ -8942,7 +9193,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:36+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4348606",
@@ -8984,7 +9235,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348601",
@@ -9029,7 +9280,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348586",
@@ -9075,7 +9326,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348585",
@@ -9123,7 +9374,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348516",
@@ -9167,7 +9418,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348504",
@@ -9219,7 +9470,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348492",
@@ -9272,7 +9523,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348441",
@@ -9317,7 +9568,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348322",
@@ -9364,7 +9615,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348310",
@@ -9410,7 +9661,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348230",
@@ -9474,7 +9725,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4348221",
@@ -9529,7 +9780,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4347810",
@@ -9584,7 +9835,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4347809",
@@ -9639,7 +9890,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4347808",
@@ -9694,7 +9945,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4347053",
@@ -9740,7 +9991,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4347052",
@@ -9786,7 +10037,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4291705",
@@ -9832,7 +10083,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4291704",
@@ -9878,7 +10129,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:37+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346543",
@@ -9927,7 +10178,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346542",
@@ -9979,7 +10230,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346538",
@@ -10030,7 +10281,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4118417",
@@ -10079,7 +10330,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346380",
@@ -10122,7 +10373,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:38+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346328",
@@ -10174,7 +10425,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346317",
@@ -10217,7 +10468,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346305",
@@ -10266,7 +10517,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346301",
@@ -10308,7 +10559,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346298",
@@ -10354,7 +10605,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346286",
@@ -10398,7 +10649,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346280",
@@ -10444,7 +10695,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346277",
@@ -10491,7 +10742,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4346258",
@@ -10539,7 +10790,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4345955",
@@ -10586,7 +10837,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4345700",
@@ -10645,7 +10896,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4345514",
@@ -10688,7 +10939,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4254374",
@@ -10742,7 +10993,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4254373",
@@ -10796,7 +11047,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4344669",
@@ -10849,7 +11100,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4343654",
@@ -10908,7 +11159,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4236836",
@@ -10966,7 +11217,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4343529",
@@ -11012,7 +11263,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4343295",
@@ -11058,7 +11309,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4173125",
@@ -11105,7 +11356,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4004733",
@@ -11167,7 +11418,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4004732",
@@ -11229,7 +11480,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4004731",
@@ -11291,7 +11542,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3758232",
@@ -11347,7 +11598,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4342596",
@@ -11399,7 +11650,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2027-01-17T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3844505",
@@ -11460,7 +11711,7 @@
     ],
     "benefits_count": 11,
     "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3828559",
@@ -11521,7 +11772,7 @@
     ],
     "benefits_count": 11,
     "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4341463",
@@ -11571,7 +11822,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4341457",
@@ -11619,7 +11870,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4341427",
@@ -11669,7 +11920,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4340912",
@@ -11714,7 +11965,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4340527",
@@ -11773,7 +12024,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4340137",
@@ -11822,7 +12073,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4340136",
@@ -11871,7 +12122,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4340135",
@@ -11920,7 +12171,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4340062",
@@ -11977,7 +12228,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4340061",
@@ -12036,7 +12287,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4340060",
@@ -12093,7 +12344,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4339259",
@@ -12142,7 +12393,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4339255",
@@ -12188,7 +12439,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4339248",
@@ -12243,62 +12494,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
-  },
-  {
-    "id": "wttj:4213652",
-    "title": "CDI –Data Engineer –  H/F",
-    "company": "Naval Group [FR]",
-    "company_slug": "naval-group-fr",
-    "city": "Toulon",
-    "cities": [
-      "Toulon"
-    ],
-    "department": "Var",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "",
-    "category": "data",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": 3,
-    "published_at": "2026-10-20T02:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/naval-group-fr/jobs/cdi-data-engineer-h-f_toulon?o=NGF_4weqrga",
-    "source": "wttj",
-    "stack": [
-      "Grafana",
-      "Git",
-      "PostgreSQL",
-      "Kafka",
-      "Nifi",
-      "SQL",
-      "Jupyter",
-      "Python"
-    ],
-    "soft_skills": [
-      "Gestion des entretiens",
-      "Communication"
-    ],
-    "description": "Le site de Toulon accueille des activités de maintien en condition opérationnelle et de modernisation de navires de surface et de sous marins de la Marine nationale, d’exploitation et de maintenance des infrastructures et bases navales, et de soutien logistique de systèmes complexes.\n\nCe poste, au sein de la Direction Services qui assure le maintien en condition opérationnelle des sous-marins et bâtiments de surface, débute idéalement en janvier 2027. Vous serez intégré au service Numérique et Systèmes Informatiques Embarqués.\nL’équipe assure le pilotage et la valorisation des données plate-forme et système de combat issues de différents programmes au service de la performance opérationnelle et de l’aide à la décision pour le MCO.\n\n A ce titre, vos activités principales sont les suivantes :\n\n o Concevoir, sécuriser et automatiser les services qui transforment nos données brutes en informations stratégiques :\n-       Traitement massif : Conception des pipelines Big Data capables d’encaisser de très grosses volumétries,\n-       Temps réel : Mise en place de traitements pseudo temps réel pour une détection d’anomalies immédiate,\n-       Fiabilité : Implémentation d’algorithmes robustes,\n-       Intégration à bord des navires ou à terre.\no Contribuer à la conception des bases de données pour en garantir la qualité, la cohérence et la performance,\no Imaginer et développer des algorithmes de traitement de données adaptés aux problématiques des métiers de la maintenance, réaliser les simulations et valider les performances attendues,\no Développer des tableaux de bord pour présenter des données fiables et exploitables,\no Recueillir les besoins des experts métiers et spécifier les traitements correspondants,\no Établir le retour d’expérience et l’amélioration des traitements,\no Veiller à la sécurité et à la confidentialité des données traitées dans un contexte sensible lié au domaine naval militaire.\nLes missions ne sont pas exhaustives et peuvent évoluer dans le temps.\nLes entretiens de recrutement vous permettront d’échanger avec le manager du pôle et ainsi d’en apprendre davantage sur l’ensemble de vos missions.\nLES AVANTAGES NAVAL GROUP\n. Une rémunération attractive comprenant un salaire fixe et des éléments additionnels individuels et/ou collectifs (participation et intéressement).\n. Un comité social et économique dynamique proposant des activités sociales et culturelles, des chèques vacances, des aides financières pour la garde d'enfants (dispositif de chèques emploi-service CESU), des voyages, etc.\n. Une excellente protection sociale 5* (mutuelle et prévoyance).\n. Épargne salariale attractive (abondement sur PEG et PERCOG).\n. Un environnement de travail agréable et un accès au restaurant d'entreprise avec une participation employeur.\nLa possibilité de faire du télétravail, jusqu’à 10 jours par mois.",
-    "description_excerpt": "Le site de Toulon accueille des activités de maintien en condition opérationnelle et de modernisation de navires de surface et de sous marins de la Marine nationale, d’exploitation et de maintenance des infrastructures et bases navales, et de soutien logistique de systèmes complexes.\n\nCe poste, au sein de la Direction Services qui assure…",
-    "profile_excerpt": "Diplômé(e) d'un bac+5 (école d’ingénieur, master informatique/data), vous disposez d’une première expérience réussie en data engineering (stage, alternance, premier poste).\nLes compétences techniques recherchées :\n-       Python / SQL maîtrisés\n-       Bases de données…",
-    "experience": null,
-    "education_level": "bac_5",
-    "remote_detail": null,
-    "apply_url": "https://www.naval-group.com/fr/talents/offer/P2022-001207-2?idOrigine=115053&LCID=1036",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/LJ0l4qcU6SVd_1jNE_VcDcXGg5suuhLrtTYbLc8YCdw/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby83NjA2LzE2NzU3OC82ZTI1YWNiZi1iMjExLTQ3YTYtOGE4Ni0yMzlmOTVkZDJjYmIucG5n",
-    "benefits_preview": [
-      "Entre 1-2 jours de télétravail",
-      "Manifeste sur la diversité",
-      "Équipe dédiée à la Diversité & inclusivité",
-      "RTT / Jour de repos",
-      "Intéressement",
-      "Participation"
-    ],
-    "benefits_count": 27,
-    "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4339093",
@@ -12350,7 +12546,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4339038",
@@ -12402,7 +12598,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4339033",
@@ -12456,7 +12652,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4339032",
@@ -12509,7 +12705,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4339025",
@@ -12553,7 +12749,7 @@
     ],
     "benefits_count": 18,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4339015",
@@ -12606,7 +12802,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4338861",
@@ -12655,7 +12851,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4338735",
@@ -12720,7 +12916,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4338566",
@@ -12773,7 +12969,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3723081",
@@ -12821,7 +13017,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4337886",
@@ -12872,7 +13068,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4009455",
@@ -12927,7 +13123,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-12-30T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3990400",
@@ -12997,7 +13193,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3990399",
@@ -13067,7 +13263,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3893556",
@@ -13119,7 +13315,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3893555",
@@ -13171,7 +13367,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3893332",
@@ -13218,7 +13414,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3893331",
@@ -13265,7 +13461,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3488253",
@@ -13315,7 +13511,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3488252",
@@ -13365,7 +13561,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3407194",
@@ -13416,7 +13612,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2027-01-03T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3407193",
@@ -13467,7 +13663,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2027-01-03T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3100019",
@@ -13519,7 +13715,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-03-02T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3100018",
@@ -13571,7 +13767,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-03-02T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:2889191",
@@ -13619,7 +13815,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:2889190",
@@ -13667,7 +13863,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:2738863",
@@ -13712,7 +13908,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:2738862",
@@ -13757,7 +13953,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3580377",
@@ -13814,7 +14010,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4337168",
@@ -13860,7 +14056,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4237964",
@@ -13917,7 +14113,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4337039",
@@ -13957,7 +14153,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4337030",
@@ -14014,7 +14210,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4336813",
@@ -14062,7 +14258,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4336799",
@@ -14107,7 +14303,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4336760",
@@ -14152,7 +14348,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4336723",
@@ -14198,7 +14394,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4335952",
@@ -14245,7 +14441,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4335950",
@@ -14295,7 +14491,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4335947",
@@ -14345,7 +14541,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334921",
@@ -14396,7 +14592,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334920",
@@ -14447,7 +14643,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334471",
@@ -14513,7 +14709,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334470",
@@ -14579,7 +14775,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334469",
@@ -14645,7 +14841,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334337",
@@ -14705,7 +14901,7 @@
     ],
     "benefits_count": 20,
     "start_date": "2026-10-15T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334243",
@@ -14750,7 +14946,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334238",
@@ -14788,7 +14984,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334237",
@@ -14834,7 +15030,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4108290",
@@ -14886,7 +15082,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2027-01-07T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4082818",
@@ -14944,7 +15140,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2027-01-01T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:39+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4334025",
@@ -14989,7 +15185,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4333705",
@@ -15038,7 +15234,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4333702",
@@ -15081,7 +15277,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4333359",
@@ -15129,7 +15325,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4333285",
@@ -15171,7 +15367,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4331741",
@@ -15240,7 +15436,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4331740",
@@ -15309,7 +15505,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4331739",
@@ -15378,7 +15574,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4331581",
@@ -15433,7 +15629,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4331037",
@@ -15475,7 +15671,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4331027",
@@ -15522,7 +15718,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4331011",
@@ -15567,7 +15763,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4330965",
@@ -15619,7 +15815,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4330964",
@@ -15663,7 +15859,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4330579",
@@ -15726,7 +15922,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4330578",
@@ -15789,7 +15985,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4330577",
@@ -15852,7 +16048,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3431735",
@@ -15897,7 +16093,7 @@
     ],
     "benefits_count": 12,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3431734",
@@ -15942,7 +16138,7 @@
     ],
     "benefits_count": 12,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3431733",
@@ -15987,7 +16183,7 @@
     ],
     "benefits_count": 12,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4330070",
@@ -16027,7 +16223,7 @@
     ],
     "benefits_count": 3,
     "start_date": "2026-11-08T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4291458",
@@ -16085,7 +16281,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4291457",
@@ -16143,7 +16339,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4291456",
@@ -16201,7 +16397,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4329912",
@@ -16248,7 +16444,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4273257",
@@ -16313,7 +16509,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:2739126",
@@ -16378,7 +16574,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:2739125",
@@ -16443,7 +16639,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4329631",
@@ -16498,7 +16694,7 @@
     ],
     "benefits_count": 25,
     "start_date": "2026-12-31T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4329097",
@@ -16545,7 +16741,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4329091",
@@ -16593,7 +16789,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4329049",
@@ -16642,7 +16838,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4329044",
@@ -16687,7 +16883,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4328898",
@@ -16739,7 +16935,7 @@
     ],
     "benefits_count": 35,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4328886",
@@ -16791,7 +16987,7 @@
     ],
     "benefits_count": 35,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4328879",
@@ -16848,7 +17044,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3781403",
@@ -16891,7 +17087,7 @@
     ],
     "benefits_count": 13,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4327875",
@@ -16941,7 +17137,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-12-31T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4327116",
@@ -16999,7 +17195,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4327053",
@@ -17049,7 +17245,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4326473",
@@ -17098,7 +17294,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4326472",
@@ -17147,7 +17343,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3235984",
@@ -17196,7 +17392,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4325986",
@@ -17237,7 +17433,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4325861",
@@ -17360,7 +17556,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4325426",
@@ -17418,7 +17614,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3652854",
@@ -17459,7 +17655,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-10-14T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4221527",
@@ -17522,7 +17718,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4109279",
@@ -17571,7 +17767,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4106856",
@@ -17634,7 +17830,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4324648",
@@ -17683,7 +17879,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:3145500",
@@ -17731,7 +17927,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:37+00:00"
   },
   {
     "id": "wttj:4324448",
@@ -17789,7 +17985,7 @@
     ],
     "benefits_count": 14,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4323818",
@@ -17840,7 +18036,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4323814",
@@ -17885,7 +18081,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4323813",
@@ -17941,7 +18137,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4323641",
@@ -17992,7 +18188,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4124699",
@@ -18043,7 +18239,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4322441",
@@ -18095,7 +18291,7 @@
     ],
     "benefits_count": 16,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4322409",
@@ -18145,7 +18341,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4322260",
@@ -18183,206 +18379,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
-  },
-  {
-    "id": "wttj:4322227",
-    "title": "Business Analyst Expérimenté (F/H)",
-    "company": "Atos",
-    "company_slug": "atos",
-    "city": "Valbonne",
-    "cities": [
-      "Valbonne"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "",
-    "category": "data",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": 3,
-    "published_at": "2026-10-09T12:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/business-analyst-experimente-f-h_valbonne_ATOS_m8Gdo9e?o=ATOS_m8Gdo9e",
-    "source": "wttj",
-    "stack": [
-      "C++",
-      "Java",
-      "Angular",
-      "JavaScript"
-    ],
-    "soft_skills": [
-      "Communication"
-    ],
-    "description": "Atos Sophia-Antipolis est situé au cœur du premier technopôle d’Europe, dans une région ensoleillée. Vous serez immergé(e) dans une entreprise innovante aux missions diverses, notamment dans les secteurs des télécommunications, du voyage, des collectivités territoriales et du sport. \n\nLe poste en quelques mots :\nAu sein d'une équipe agile de 10 personnes, vous interviendrez en tant que Business Analyst sur l'analyse et le développement de nouvelles solutions logicielles.\n\nCe que vous allez faire si vous nous rejoignez :\n • Évaluer les besoins;\n • Expression des besoins / rédaction des cahiers des charges ;\n • Construire, maintenir et partager la connaissance fonctionnelle de nos processus, de nos services et de l'utilisation des produits par les utilisateurs finaux ;\n • Analyser les exigences commerciales soumises par la gestion des produits ;\n • Consolider et articuler les besoins de l'entreprise en concepts de nouveaux produits ou de mises à niveau ;\n • Vous êtes en charge de la spécification de la taille et du travail de validation ;\n • Soutenir les parties prenantes dans la réalisation d'une analyse suffisante pour s'assurer que les exigences sont prêtes à être travaillées.\n Stack technique : \nConnaissances globales sur du Java / C++ / Angular / Javascript / HTML / CSS / Agile.",
-    "description_excerpt": "Atos Sophia-Antipolis est situé au cœur du premier technopôle d’Europe, dans une région ensoleillée. Vous serez immergé(e) dans une entreprise innovante aux missions diverses, notamment dans les secteurs des télécommunications, du voyage, des collectivités territoriales et du sport. \n\nLe poste en quelques mots :\nAu sein d'une équipe…",
-    "profile_excerpt": "Description du profil :\n\nVotre profil :\n • Titulaire d’un bac+5 ou d’un titre d’ingénieur ;\n • Vous possédez une expérience de 4 ans minimum en tant qu’Analyste fonctionnel F/H ainsi qu’une connaissance d’environnement technique. Le but est d’être capable de rédiger les…",
-    "experience": null,
-    "education_level": "bac_5",
-    "remote_detail": null,
-    "apply_url": "https://atos.contactrh.com/jobs/10425/44495889",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/VWbbQMz2WwzAubHAY4D-kRNnVCKQD4vGA5IiJFwvtOs/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni85MDEzYmYxNS0xMWJkLTQ3MjAtOTk1MS1lY2Y3NWRjZGM3YTcuanBn",
-    "benefits_preview": [
-      "Plan de développement professionnel",
-      "Entre 3-4 jours de télétravail",
-      "Équipe dédiée à la Diversité & inclusivité",
-      "Prime de cooptation",
-      "Compte épargne-temps (CET)"
-    ],
-    "benefits_count": 12,
-    "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
-  },
-  {
-    "id": "wttj:4322224",
-    "title": "Consultant CyberSécurité Sénior (F/H)",
-    "company": "Atos",
-    "company_slug": "atos",
-    "city": "Aix-En-Provence",
-    "cities": [
-      "Aix-En-Provence"
-    ],
-    "department": "Bouches-du-Rhône",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "",
-    "category": "cybersecurite",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": 7,
-    "published_at": "2026-10-09T12:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/consultant-cybersecurite-senior-f-h_aix-en-provence_ATOS_5KD5o6D?o=ATOS_5KD5o6D",
-    "source": "wttj",
-    "stack": [
-      "Splunk"
-    ],
-    "soft_skills": [
-      "Connaissances en cybersécurité",
-      "Aptitude à résoudre les problèmes"
-    ],
-    "description": "Dans le cadre du développement des activités cybersécurité en région PACA, et plus précisément des activités d'intégration, d'architecture et des projets, nous renforçons l'équipe qui est actuellement composée d'un Leader technique expérimenté et d'un consultant junior, dont les capacités sont pleinement mobilisées sur les projets en cours. \n\nObjectifs du poste :\n • Assurer l’intégration, la configuration, et le déploiement de solutions de sécurité chez nos clients, dans des environnements hétérogènes, de niveaux d'expositions variés y compris des missions sensibles. \n • Analyser les besoins de nos clients, de définir des architectures de sécurité, ainsi que d'apporter un support technique lors des phases d’implémentation ou de maintien en conditions opérationnelles.",
-    "description_excerpt": "Dans le cadre du développement des activités cybersécurité en région PACA, et plus précisément des activités d'intégration, d'architecture et des projets, nous renforçons l'équipe qui est actuellement composée d'un Leader technique expérimenté et d'un consultant junior, dont les capacités sont pleinement mobilisées sur les projets en…",
-    "profile_excerpt": "Description du profil :\n\nProfil recherché :\n- Bac+5 en cybersécurité, sécurité informatique, ou diplôme équivalent (école d’ingénieur, master)\n- 5 ans d’expérience dans des missions similaires en cabinet de conseil, ESN ou grande organisation\n- Certifications fournisseurs…",
-    "experience": "7–10 ans",
-    "education_level": "bac_5",
-    "remote_detail": null,
-    "apply_url": "https://atos.contactrh.com/jobs/10425/44495848",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/VWbbQMz2WwzAubHAY4D-kRNnVCKQD4vGA5IiJFwvtOs/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni85MDEzYmYxNS0xMWJkLTQ3MjAtOTk1MS1lY2Y3NWRjZGM3YTcuanBn",
-    "benefits_preview": [
-      "Plan de développement professionnel",
-      "Entre 3-4 jours de télétravail",
-      "Équipe dédiée à la Diversité & inclusivité",
-      "Prime de cooptation",
-      "Compte épargne-temps (CET)"
-    ],
-    "benefits_count": 12,
-    "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
-  },
-  {
-    "id": "wttj:4322215",
-    "title": "Ingénieur Production Applicative / DevOps (F/H)",
-    "company": "Atos",
-    "company_slug": "atos",
-    "city": "Aix-En-Provence",
-    "cities": [
-      "Aix-En-Provence"
-    ],
-    "department": "Bouches-du-Rhône",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "hybride",
-    "category": "devops",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": 4,
-    "published_at": "2026-10-09T12:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/ingenieur-production-applicative-devops-f-h_aix-en-provence_ATOS_LqZbdY3?o=ATOS_LqZbdY3",
-    "source": "wttj",
-    "stack": [
-      "Kubernetes",
-      "Shell",
-      "Python"
-    ],
-    "soft_skills": [],
-    "description": "Le poste en quelques mots :\nNous sommes à la recherche de notre futur·e Ingénieur Production Applicative pour assurer l’exploitation, la fiabilité et la mise en production des applications dans un environnement technique structuré. Vous interviendrez sur des plateformes industrialisées intégrant Kubernetes et des solutions d’automatisation.",
-    "description_excerpt": "Le poste en quelques mots :\nNous sommes à la recherche de notre futur·e Ingénieur Production Applicative pour assurer l’exploitation, la fiabilité et la mise en production des applications dans un environnement technique structuré. Vous interviendrez sur des plateformes industrialisées intégrant Kubernetes et des solutions…",
-    "profile_excerpt": "Description du profil :\n\nVotre profil :\n • Expérience confirmée en production applicative ou exploitation IT\n\n • Bonne maîtrise des environnements Kubernetes\n\n • Compétences en scripting Shell et/ou Python\n\n • Connaissance des processus ITIL\n\n • Expérience dans la gestion…",
-    "experience": null,
-    "education_level": "bac_5",
-    "remote_detail": "hybride",
-    "apply_url": "https://atos.contactrh.com/jobs/10425/44495565",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/VWbbQMz2WwzAubHAY4D-kRNnVCKQD4vGA5IiJFwvtOs/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni85MDEzYmYxNS0xMWJkLTQ3MjAtOTk1MS1lY2Y3NWRjZGM3YTcuanBn",
-    "benefits_preview": [
-      "Plan de développement professionnel",
-      "Entre 3-4 jours de télétravail",
-      "Équipe dédiée à la Diversité & inclusivité",
-      "Prime de cooptation",
-      "Compte épargne-temps (CET)"
-    ],
-    "benefits_count": 12,
-    "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
-  },
-  {
-    "id": "wttj:4322146",
-    "title": "Ingénieur DevOps (F/H)",
-    "company": "Atos",
-    "company_slug": "atos",
-    "city": "Valbonne",
-    "cities": [
-      "Valbonne"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "hybride",
-    "category": "devops",
-    "profession": null,
-    "salary": "42000–52000 EUR",
-    "experience_min_years": 5,
-    "published_at": "2026-10-09T11:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/atos/jobs/ingenieur-devops-f-h_valbonne_ATOS_Y1Ab3bd?o=ATOS_Y1Ab3bd",
-    "source": "wttj",
-    "stack": [
-      "Kubernetes",
-      "Terraform",
-      "Azure",
-      "AWS",
-      "Docker"
-    ],
-    "soft_skills": [
-      "Conteneurisation et orchestration",
-      "Amélioration continue",
-      "Gestion de la documentation",
-      "Infrastructure as Code (IaC)",
-      "Outils d'automatisation",
-      "Collaboration et travail d'équipe",
-      "Gestion de l’infrastructure cloud",
-      "Aptitude à résoudre les problèmes"
-    ],
-    "description": "Gestion de l'Infrastructure :\n•    Configurer et gérer des environnements cloud, y compris le réseau, le stockage et les ressources de calcul.\n•    Optimiser les coûts cloud en mettant en œuvre des pratiques exemplaires et des stratégies de gestion des ressources.\nAutomatisation et Scriptage :\n•    Développer des scripts et des outils d'automatisation pour faciliter les tâches de déploiement et de gestion de l'infrastructure.\n•   Utiliser des outils d'Infrastructure as Code (IaC) tels que Terraform ou CloudFormation pour un provisionnement d'infrastructure cohérent et répétable.\nCollaboration et Support :\n•    Travailler en étroite collaboration avec des équipes interfonctionnelles pour résoudre les problèmes, mettre en œuvre des solutions et améliorer le processus de développement global.\n•   Fournir un support pour les systèmes de production, en résolvant les incidents et en mettant en œuvre des actions correctives si nécessaire.\nDocumentation :\n•  Créer et maintenir une documentation complète pour l'architecture cloud, les processus de déploiement et les procédures opérationnelles.\n•    Partager les connaissances et les meilleures pratiques avec les membres de l'équipe pour favoriser une culture d'amélioration continue.",
-    "description_excerpt": "Gestion de l'Infrastructure :\n•    Configurer et gérer des environnements cloud, y compris le réseau, le stockage et les ressources de calcul.\n•    Optimiser les coûts cloud en mettant en œuvre des pratiques exemplaires et des stratégies de gestion des ressources.\nAutomatisation et Scriptage :\n•    Développer des scripts et des outils…",
-    "profile_excerpt": "Description du profil :\n\n•    Diplôme de master en informatique, ingénierie ou dans un domaine connexe.\n •    Expérience avérée en tant qu’Ingénieur DevOps ou dans un rôle similaire, avec une expérience pratique des plateformes cloud (Azure, AWS, GCP).\n •    Solide connaissance…",
-    "experience": "5–7 ans",
-    "education_level": "bac_5",
-    "remote_detail": "hybride",
-    "apply_url": "https://atos.contactrh.com/jobs/10425/44495290",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/VWbbQMz2WwzAubHAY4D-kRNnVCKQD4vGA5IiJFwvtOs/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yODI1LzE1NjM5Ni85MDEzYmYxNS0xMWJkLTQ3MjAtOTk1MS1lY2Y3NWRjZGM3YTcuanBn",
-    "benefits_preview": [
-      "Plan de développement professionnel",
-      "Entre 3-4 jours de télétravail",
-      "Équipe dédiée à la Diversité & inclusivité",
-      "Prime de cooptation",
-      "Compte épargne-temps (CET)"
-    ],
-    "benefits_count": 12,
-    "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4181100",
@@ -18450,7 +18447,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4319816",
@@ -18508,7 +18505,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4319815",
@@ -18566,7 +18563,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4319814",
@@ -18624,7 +18621,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4319813",
@@ -18682,7 +18679,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4094287",
@@ -18743,7 +18740,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4094286",
@@ -18804,7 +18801,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4094285",
@@ -18865,7 +18862,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316941",
@@ -18914,7 +18911,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316936",
@@ -18966,7 +18963,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316934",
@@ -19015,7 +19012,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316933",
@@ -19063,7 +19060,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316931",
@@ -19112,7 +19109,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316926",
@@ -19161,7 +19158,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316825",
@@ -19205,7 +19202,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316764",
@@ -19254,7 +19251,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316759",
@@ -19294,7 +19291,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316419",
@@ -19355,7 +19352,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316418",
@@ -19416,7 +19413,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4316417",
@@ -19477,7 +19474,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3997964",
@@ -19535,7 +19532,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-10-14T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3997961",
@@ -19587,7 +19584,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4233327",
@@ -19642,7 +19639,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4233326",
@@ -19697,7 +19694,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4314731",
@@ -19746,7 +19743,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4213660",
@@ -19797,7 +19794,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4314600",
@@ -19843,7 +19840,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4314271",
@@ -19887,7 +19884,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4207436",
@@ -19932,7 +19929,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4207435",
@@ -19977,7 +19974,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3616484",
@@ -20020,7 +20017,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-11-30T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3616483",
@@ -20063,7 +20060,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-11-30T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:1705202",
@@ -20128,7 +20125,7 @@
     ],
     "benefits_count": 29,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:1705201",
@@ -20193,7 +20190,7 @@
     ],
     "benefits_count": 29,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4090925",
@@ -20243,7 +20240,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3867786",
@@ -20302,7 +20299,7 @@
     ],
     "benefits_count": 3,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4311474",
@@ -20369,7 +20366,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4311291",
@@ -20409,7 +20406,7 @@
     "experience": null,
     "education_level": null,
     "remote_detail": "sur site",
-    "apply_url": "https://jobs.smartrecruiters.com/Nexity/744000153108379-chef-de-projet-growth-marketing-acquisition-data?oga=true&sid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
+    "apply_url": "https://jobs.smartrecruiters.com/Nexity/744000159913984-chef-de-projet-growth-marketing-acquisition-data?oga=true&sid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
     "ats": "kombo",
     "logo": "https://cdn-images.welcometothejungle.com/tBA8z5JR9mfEhxctyiVCC1FECZ-9qZZ0UWERbxo3uZs/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yNDUzLzE1NTgzNS9lYjc1ZDQ0NC1lMDAwLTRhMTktYWMxMi0xMGFlOGVlMDMyNGUucG5n",
     "benefits_preview": [
@@ -20421,7 +20418,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4311129",
@@ -20468,7 +20465,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:40+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4309179",
@@ -20527,7 +20524,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4309178",
@@ -20586,7 +20583,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4308904",
@@ -20653,7 +20650,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4308899",
@@ -20698,7 +20695,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4308896",
@@ -20744,7 +20741,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4308724",
@@ -20795,7 +20792,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:42+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4308307",
@@ -20840,7 +20837,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:42+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4308294",
@@ -20885,7 +20882,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:42+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4308284",
@@ -20929,7 +20926,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:42+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4308174",
@@ -20976,7 +20973,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:42+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:2974096",
@@ -21024,7 +21021,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4305297",
@@ -21078,7 +21075,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:42+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4305265",
@@ -21132,7 +21129,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:42+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4206667",
@@ -21196,7 +21193,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4203426",
@@ -21255,7 +21252,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3992053",
@@ -21306,7 +21303,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4174239",
@@ -21369,7 +21366,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-10-11T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4174238",
@@ -21432,7 +21429,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-10-11T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4174237",
@@ -21495,7 +21492,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-10-11T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4213365",
@@ -21540,7 +21537,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4102107",
@@ -21587,7 +21584,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4303220",
@@ -21625,7 +21622,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-09-28T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:1669187",
@@ -21678,7 +21675,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4302179",
@@ -21720,7 +21717,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4301875",
@@ -21776,7 +21773,7 @@
     ],
     "benefits_count": 3,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3083845",
@@ -21822,7 +21819,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:2974087",
@@ -21866,7 +21863,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:2974083",
@@ -21912,7 +21909,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:2974062",
@@ -21961,7 +21958,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:2974047",
@@ -22008,7 +22005,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:2974037",
@@ -22056,7 +22053,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3887337",
@@ -22121,7 +22118,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3880571",
@@ -22183,7 +22180,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3880566",
@@ -22236,7 +22233,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4200846",
@@ -22282,7 +22279,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4200844",
@@ -22328,7 +22325,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4208748",
@@ -22387,7 +22384,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4192540",
@@ -22432,7 +22429,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3813645",
@@ -22483,7 +22480,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4097079",
@@ -22526,7 +22523,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4097005",
@@ -22574,7 +22571,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4096941",
@@ -22622,7 +22619,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4299676",
@@ -22675,7 +22672,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4299598",
@@ -22727,7 +22724,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4189232",
@@ -22769,7 +22766,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4298750",
@@ -22823,7 +22820,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4298119",
@@ -22872,7 +22869,7 @@
     ],
     "benefits_count": 9,
     "start_date": "2026-10-31T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4298118",
@@ -22921,7 +22918,7 @@
     ],
     "benefits_count": 9,
     "start_date": "2026-10-31T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4293835",
@@ -22961,7 +22958,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4297466",
@@ -23016,7 +23013,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4297188",
@@ -23063,7 +23060,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4296463",
@@ -23116,7 +23113,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4196396",
@@ -23162,7 +23159,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3847930",
@@ -23213,7 +23210,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3812823",
@@ -23274,7 +23271,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4269010",
@@ -23330,7 +23327,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4028936",
@@ -23382,7 +23379,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:4004663",
@@ -23436,7 +23433,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3812851",
@@ -23494,7 +23491,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:38+00:00"
   },
   {
     "id": "wttj:3812812",
@@ -23546,7 +23543,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:3812811",
@@ -23601,7 +23598,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:3655472",
@@ -23651,7 +23648,7 @@
     ],
     "benefits_count": 31,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4200690",
@@ -23712,7 +23709,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:3588722",
@@ -23757,7 +23754,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4291808",
@@ -23804,7 +23801,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-09-21T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4291646",
@@ -23874,7 +23871,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4291645",
@@ -23944,7 +23941,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4153405",
@@ -24009,7 +24006,7 @@
     ],
     "benefits_count": 20,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4291239",
@@ -24064,7 +24061,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4290890",
@@ -24113,7 +24110,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4290741",
@@ -24158,7 +24155,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4290183",
@@ -24217,7 +24214,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4185276",
@@ -24280,7 +24277,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4181091",
@@ -24331,7 +24328,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4181086",
@@ -24382,7 +24379,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4181085",
@@ -24444,7 +24441,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4289696",
@@ -24500,7 +24497,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4289695",
@@ -24556,7 +24553,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4185857",
@@ -24609,7 +24606,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4182096",
@@ -24655,7 +24652,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:3907117",
@@ -24699,7 +24696,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:3904872",
@@ -24742,7 +24739,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4286817",
@@ -24802,7 +24799,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4173804",
@@ -24849,7 +24846,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4173803",
@@ -24896,7 +24893,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4173789",
@@ -24943,7 +24940,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4173788",
@@ -24990,7 +24987,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4286382",
@@ -25040,7 +25037,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4285607",
@@ -25085,7 +25082,7 @@
     "experience": null,
     "education_level": null,
     "remote_detail": null,
-    "apply_url": "https://emea3.recruitmentplatform.com/apply-app/pages/application-form?jobId=Q7SFK026203F3VBQB7V8N8MO5-5399717&langCode=fr_FR&&sType=WelcomeToTheJungle",
+    "apply_url": "https://emea3.recruitmentplatform.com/apply-app/pages/application-form?jobId=Q7SFK026203F3VBQB7V8N8MO5-5406339&langCode=fr_FR&&sType=WelcomeToTheJungle",
     "ats": "external",
     "logo": "https://cdn-images.welcometothejungle.com/kZ1T-7HoB_dRrX22ZYK0t_CVCR8fTFW6M8GKUm4EfOc/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8zNTIyLzE3Mjc4OS8xMmI2NmU0ZS0xMzE5LTRhZGItYTc0NC1hNTE0NDMxMmM1ZmMucG5n",
     "benefits_preview": [
@@ -25098,7 +25095,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:3924533",
@@ -25141,7 +25138,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4284604",
@@ -25188,7 +25185,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4284577",
@@ -25224,7 +25221,7 @@
     "experience": "Débutant",
     "education_level": null,
     "remote_detail": null,
-    "apply_url": "https://jobs.smartrecruiters.com/Wavestone1/744000125936749-stage-de-fin-d-etudes-consultant-e-cloud-infrastructures-reseaux-workplace-marseille-?sid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
+    "apply_url": "https://jobs.smartrecruiters.com/Wavestone1/744000159460240-stage-de-fin-d-etudes-consultant-e-cloud-infrastructures-reseaux-workplace-marseille-?sid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
     "ats": "kombo",
     "logo": "https://cdn-images.welcometothejungle.com/NPNcswA7ftaQFiQXmW9qVULOUfBJZJ3-lyJMN1GoTUU/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby85MTM2LzE0OTY2Ni9iNmEwYTVhMC0yZTMzLTRiNWItYTY5Yi03MGZkNWIzYmIxNjMucG5n",
     "benefits_preview": [
@@ -25237,7 +25234,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4284439",
@@ -25286,7 +25283,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4283504",
@@ -25336,7 +25333,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4283494",
@@ -25386,7 +25383,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4056048",
@@ -25434,7 +25431,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4282756",
@@ -25475,7 +25472,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4049842",
@@ -25523,7 +25520,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:3957357",
@@ -25581,7 +25578,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:39+00:00"
   },
   {
     "id": "wttj:4280999",
@@ -25636,7 +25633,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4280917",
@@ -25697,7 +25694,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4280910",
@@ -25768,7 +25765,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4280498",
@@ -25823,7 +25820,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4245832",
@@ -25868,7 +25865,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3979521",
@@ -25919,7 +25916,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3934682",
@@ -25971,7 +25968,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4185759",
@@ -26018,7 +26015,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4185735",
@@ -26066,7 +26063,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4008134",
@@ -26113,7 +26110,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4276379",
@@ -26177,7 +26174,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4276378",
@@ -26241,7 +26238,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4276377",
@@ -26305,7 +26302,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4275953",
@@ -26368,7 +26365,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4275952",
@@ -26431,7 +26428,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4275951",
@@ -26494,7 +26491,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4275805",
@@ -26554,7 +26551,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4275804",
@@ -26614,7 +26611,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4275803",
@@ -26674,7 +26671,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4169990",
@@ -26720,7 +26717,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3821720",
@@ -26767,7 +26764,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4274147",
@@ -26824,7 +26821,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4166919",
@@ -26877,7 +26874,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3973103",
@@ -26921,7 +26918,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3872619",
@@ -26969,7 +26966,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4273164",
@@ -27026,7 +27023,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4192767",
@@ -27075,7 +27072,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4271321",
@@ -27120,7 +27117,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4271165",
@@ -27177,7 +27174,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4270925",
@@ -27234,7 +27231,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4270921",
@@ -27302,7 +27299,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3897291",
@@ -27346,7 +27343,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4131502",
@@ -27402,69 +27399,7 @@
     ],
     "benefits_count": 14,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
-  },
-  {
-    "id": "wttj:4268346",
-    "title": "RESPONSABLE D'EQUIPE - DEVELOPPEMENT INFORMATIQUE (F/H)",
-    "company": "Euro Protection Surveillance",
-    "company_slug": "euro-protection-surveillance",
-    "city": "Cagnes-Sur-Mer",
-    "cities": [
-      "Cagnes-Sur-Mer"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "hybride",
-    "category": "eng",
-    "profession": null,
-    "salary": "55000–60000 EUR",
-    "experience_min_years": 5,
-    "published_at": "2026-09-09T15:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/euro-protection-surveillance/jobs/responsable-d-equipe-developpement-informatique-f-h_cagnes-sur-mer_EPS_llWagmZ?o=EPS_llWagmZ",
-    "source": "wttj",
-    "stack": [
-      "Hibernate",
-      "Java",
-      "Oracle",
-      "GitLab",
-      "Jenkins",
-      "Elasticsearch",
-      "Excel",
-      "Kafka",
-      "Maven",
-      "Spring",
-      "Confluence",
-      "Quarkus",
-      "JIRA"
-    ],
-    "soft_skills": [
-      "Aptitudes à motiver les autres",
-      "Aisance à l'oral",
-      "Méthode Agile",
-      "Communication"
-    ],
-    "description": "En quelques mots :\n\nVous intégrerez des projets qualitatifs aux modèles complexes dans lesquels vous serez pleinement investi et en phase avec ces éléments :\n - une volonté de livrer des applications de qualité au sein d’un environnement de production fiable et performant\n - une proximité constante avec les différents experts métiers et techniques\n - une implication depuis la phase d’élaboration du besoin jusqu’à la livraison des développements\n - une autonomie adaptée et des marges de manoeuvre suffisantes pour apporter les meilleures solutions face aux besoins métier\n - une démarche d’amélioration continue (processus, métier, technique) permanente\n - l’envie de rejoindre des équipes investies et passionnées\n\nVos missions au quotidien seront :\n - Préparer et animer les différentes cérémonies liées à la vie de l’équipe\n - Analyser les activités pour en assurer la cohérence et la priorisation\n - Coordonner les équipes sur les sujets transverses en collaboration avec les autres responsables d’équipe(s)\n - Identifier et gérer les risques organisationnels tout au long du projet pour anticiper les problèmes et apporter des solutions\n - Accompagner et former les équipes sur le plan de l’organisation, des méthodes et de la communication\n - Participer à l’organisation et au recrutement dans les équipes\n - Veiller au respect des processus en place au sein du pôle Analyse et Développement\n - Participer à l’élaboration des évolutions des processus de travail et s’assurer de leur application\n - Participer et organiser les déploiements des applications sur les différents environnements et s’assurer du traitement prioritaire des anomalies de production\n\nNotre environnement technique :\n - BackEnd : Java, Spring, Hibernate, Quarkus, Panache, Kafka\n - Bases de données : Oracle, ElasticSearch\n - FrontEnd : JavaFX\n - Architecture distribuée : Pattern CQRS\n - Concept DDD et architecture hexagonale\n - Outils : Gitlab, Maven, Jenkins (CI/CD automatisée), Jira, Confluence\n\nNotre environnement de travail :\n - Contexte Agile : SAFe, Lean Management, Kanban, cycles itératifs …\n - Ambiance de travail collaborative",
-    "description_excerpt": "En quelques mots :\n\nVous intégrerez des projets qualitatifs aux modèles complexes dans lesquels vous serez pleinement investi et en phase avec ces éléments :\n - une volonté de livrer des applications de qualité au sein d’un environnement de production fiable et performant\n - une proximité constante avec les différents experts métiers et…",
-    "profile_excerpt": "• Expérience d’au moins six ans sur des postes à responsabilité dans des contextes similaires et titulaire d’un Bac+5 en informatique (type Master ou Ingénieur).\n - La connaissance de l’écosystème Java (Java 21 ou supérieur, Spring, Maven…) est un plus.\n - La maîtrise des outils…",
-    "experience": "5–7 ans",
-    "education_level": "bac_5",
-    "remote_detail": "hybride",
-    "apply_url": "https://job.mytalentplug.com/api/JobOffer/redirect/?id=b81b9b7c-d314-45d4-ad5b-548470f04f13",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/uyXLeRMlNbk1DX1q_SYPHxx6Q9Ri6XKK-c6uGvEdrjA/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yNjY0LzE2OTQwOS9iZTIwMjVlMy0wYjBmLTRkYmMtODFiNy03YzA0NzFkM2ViMzUucG5n",
-    "benefits_preview": [
-      "Entre 1-2 jours de télétravail",
-      "RTT / Jour de repos",
-      "Intéressement",
-      "Participation",
-      "Plan d’épargne entreprise (PEE)",
-      "Forfait mobilité durable"
-    ],
-    "benefits_count": 14,
-    "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4161912",
@@ -27509,73 +27444,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
-  },
-  {
-    "id": "wttj:4266534",
-    "title": "Administrateur Systèmes et réseaux - SysOps (H/F)",
-    "company": "Cba Informatique",
-    "company_slug": "lead-cba-informatique",
-    "city": "Avignon",
-    "cities": [
-      "Avignon"
-    ],
-    "department": "Vaucluse",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "",
-    "category": "devops",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": 5,
-    "published_at": "2026-09-09T00:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/lead-cba-informatique/jobs/administrateur-systemes-et-reseaux-sysops-h-f_avignon?o=CI_Zz0WN5q",
-    "source": "wttj",
-    "stack": [
-      "Grafana",
-      "GitLab",
-      "Linux",
-      "GitLab CI",
-      "Kubernetes",
-      "Fortinet",
-      "Ansible",
-      "Bash",
-      "Terraform",
-      "Dynatrace",
-      "OVH",
-      "ArgoCD",
-      "Helm",
-      "AWS",
-      "Docker",
-      "Python",
-      "Prometheus"
-    ],
-    "soft_skills": [
-      "Conteneurisation et orchestration",
-      "Amélioration continue",
-      "Communication",
-      "Gestion de réseaux",
-      "Outils d'automatisation",
-      "Administration des systèmes",
-      "Collaboration et travail d'équipe",
-      "Gestion de l’infrastructure cloud",
-      "Mécanique",
-      "Aptitude à résoudre les problèmes",
-      "Conformité en matière de sécurité"
-    ],
-    "description": "CBA Informatique Libérale, c'est 40 ans d'expertise dans l'édition de logiciels de santé, 300 collaborateurs basés à Avignon et plus de 38 000 professionnels de santé libéraux accompagnés au quotidien. Leader sur son marché, nous développons des solutions SaaS innovantes — Agathe YOU, Milo, Opaline, Horizon Libéral — qui simplifient le quotidien des infirmières et kinésithérapeutes à travers toute la France.\n Le contexte\n Chez CBA, nos applications SaaS sont utilisées par 38 000 professionnels de santé — la disponibilité et la résilience de notre infrastructure ne sont pas négociables. Dans un environnement certifié HDS et ISO 27001 , nous hébergeons sur OVH et Jaguar Network et nous poursuivons une migration vers Kubernetes .\n Dans le cadre de l'intégration d'une société récemment acquise, vous serez également en charge de la gestion et de l'optimisation de son infrastructure AWS pendant une période de transition, avant migration progressive vers nos solutions d'hébergement internes.\n Rattaché(e) au Responsable Infrastructure & Réseaux , vous rejoignez une équipe soudée sur un périmètre technique riche et varié.\n Vos missions\n Administration systèmes & réseaux \n • Administrer et maintenir les infrastructures serveurs Linux — physiques et virtualisées \n • Gérer et faire évoluer les équipements réseaux — firewalls FortiNet, Stormshield, switches, VPN \n • Assurer la supervision des infrastructures — monitoring, alerting, gestion des incidents \n • Maintenir et améliorer les outils d'observabilité — Dynatrace, Prometheus, Grafana \n • Gérer les sauvegardes, la continuité de service et les plans de reprise d'activité (PRA/PCA) \n • Gérer les accès et habilitations — Active Directory, MFA, SSO, principe du moindre privilège \n SysOps & automatisation \n • Automatiser les tâches opérationnelles — provisioning, patching, déploiements — via Ansible, Terraform et Helm \n • Contribuer aux pipelines CI/CD GitLab et ArgoCD — intégration des déploiements infra \n • Mettre en place et maintenir des runbooks et procédures opérationnelles \n • Participer à la gestion des incidents de production — diagnostic, résolution, post-mortem \n • Contribuer à l'amélioration continue de la fiabilité et des performances \n Cloud AWS \n • Administrer et optimiser les environnements AWS en run — EC2, S3, RDS, VPC, IAM, CloudWatch \n • Optimiser les coûts cloud — rightsizing, monitoring des dépenses \n • Préparer et contribuer à la migration progressive vers l'infrastructure CBA à horizon 12 mois \n Conteneurisation & infrastructure moderne \n • Participer à la migration et l'administration des clusters Kubernetes \n • Gérer et maintenir les environnements Kubernetes, Talos et Docker \n • Contribuer à l'Infrastructure as Code — Terraform, Ansible \n Sécurité & conformité \n • Appliquer les bonnes pratiques de sécurité infra — dans le respect des certifications HDS et ISO 27001 \n • Contribuer aux audits de sécurité infrastructure \n • Travailler en lien avec le RSSI sur les sujets de sécurité opérationnelle",
-    "description_excerpt": "CBA Informatique Libérale, c'est 40 ans d'expertise dans l'édition de logiciels de santé, 300 collaborateurs basés à Avignon et plus de 38 000 professionnels de santé libéraux accompagnés au quotidien. Leader sur son marché, nous développons des solutions SaaS innovantes — Agathe YOU, Milo, Opaline, Horizon Libéral — qui simplifient le…",
-    "profile_excerpt": "Formation & expérience\n• Bac+3 à Bac+5 en informatique, réseaux ou équivalent\n• 5 ans minimum d'expérience en administration systèmes & réseaux\n• Expérience en environnement SaaS ou éditeur logiciel appréciée\n• Expérience en contexte HDS ou ISO 27001 appréciée\nCompétences…",
-    "experience": "5–7 ans",
-    "education_level": "bac_5",
-    "remote_detail": null,
-    "apply_url": "https://recrutement.cbainfo.fr/fr/annonce/4587191-administrateur-systemes-et-reseaux-sysops-hf-84000-avignon?s_o=wttj#declareStep1",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/yg2X_1o1HwHBwfUp2ggOBuWJy_LA2X9IVCpLN6g2hIg/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8xNTg0LzE2NTk5Ni9hY2E4YWU0Yi0xY2EyLTRhOTQtYmY2NS03Y2IzNDcwODFiZTcucG5n",
-    "benefits_preview": [],
-    "benefits_count": null,
-    "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4219278",
@@ -27627,7 +27496,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3809908",
@@ -27674,99 +27543,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
-  },
-  {
-    "id": "wttj:3801799",
-    "title": "Account Growth Manager (Foodtech 🍔)",
-    "company": "Dishop",
-    "company_slug": "dishop",
-    "city": "Nice",
-    "cities": [
-      "Nice"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "ponctuel",
-    "category": "tech-adjacent",
-    "profession": null,
-    "salary": "30000–35000 EUR",
-    "experience_min_years": 2,
-    "published_at": "2026-09-07T11:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/dishop/jobs/account-growth-manager-foodtech_nice?o=DISHO_w22rL6R",
-    "source": "wttj",
-    "stack": [
-      "HubSpot"
-    ],
-    "soft_skills": [
-      "Développement commercial",
-      "Amélioration continue",
-      "Sens des affaires",
-      "Communication",
-      "Créativité et innovation",
-      "Gestion des performances",
-      "Collaboration et travail d'équipe"
-    ],
-    "description": "Dans le cadre de son activité grandissante, Dishop recrute un(e) Account Growth Manager\nRattaché(e) à la Direction Commerciale, vous occuperez un poste clé au sein de l’entreprise, à la croisée du développement et de la stratégie commerciale pour faire décoller les commandes de nos clients.\nVos missions principales :\n• Gestion active et développement du portefeuille clients\n -Piloter un portefeuille de clients existants avec une approche résolument orientée développement\n -Être proactif(ve) dans la relation client : contacts réguliers, points de suivi, recommandations, actions d’animation commerciale\n -Identifier les opportunités de croissance (augmentation des volumes, nouveaux usages, nouvelles fonctionnalités)\n -Mettre en place des plans d’actions pour maximiser la performance et réduire le churn\n\n• Relation client et accompagnement stratégique\n -Comprendre en profondeur les enjeux business et opérationnels de chaque client\n -Conseiller et accompagner les clients dans l’optimisation de leurs commandes et de leurs performances\n -Challenger les pratiques existantes et proposer des solutions à forte valeur ajoutée\n -Suivre les indicateurs clés de performance et piloter les résultats\n\n• Coordination interne et amélioration continue\n -Travailler en étroite collaboration avec les équipes Sales, Marketing, Support et Produit\n -Faire remonter de manière structurée les besoins, retours terrain et opportunités détectées chez les clients\n -Contribuer à l’évolution de l’offre et des process à partir des usages clients\n -Participer activement à la stratégie de croissance sur les comptes à fort potentiel\n\n• Missions transverses\n -Participer à des projets transverses liés au développement commercial et stratégique de la startup\n Être force de proposition dans l’amélioration des méthodes, outils et discours commerciaux”\n\nPourquoi Nous Rejoindre ?\nImpact sur un Marché en Transformation : Participez à la révolution de la foodtech en offrant des outils innovants qui changent la donne pour les restaurateurs et franchisés.\nImpact Social et Sociétal : Soutenez les restaurateurs et livreurs indépendants en leur fournissant des solutions technologiques qui renforcent leur autonomie et succès.\nDéfi Contre les Géants du Secteur : Intégrez une équipe agile et innovante, prête à rivaliser avec les plus grandes plateformes de livraison.\nCulture d’Entreprise Innovante : Évoluez dans un environnement stimulant où la créativité et l’expérimentation sont encouragées.\nLeader du Marché Halal : Travaillez pour une entreprise reconnue comme référence dans le secteur halal, en pleine expansion.",
-    "description_excerpt": "Dans le cadre de son activité grandissante, Dishop recrute un(e) Account Growth Manager\nRattaché(e) à la Direction Commerciale, vous occuperez un poste clé au sein de l’entreprise, à la croisée du développement et de la stratégie commerciale pour faire décoller les commandes de nos clients.\nVos missions principales :\n• Gestion active et…",
-    "profile_excerpt": "• Formation : Commercial / Management\n\n• Vous faites preuve d’un très bon relationnel\n\n• Vous avez un très bon sens commercial\n\n• Vous savez naviguer sur les sujets techniques, vous savez comprendre et restituer l’information\n\n• Maîtrise des outils bureautiques classiques,…",
-    "experience": null,
-    "education_level": "bac_2",
-    "remote_detail": "ponctuel",
-    "apply_url": null,
-    "ats": "wkit",
-    "logo": "https://cdn-images.welcometothejungle.com/cVg-URnorA52t92R7zVzyn0ewMHQfAsxSYzZPjf0Nro/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81MjgyLzE2NjcyMC8zY2ZjOWY0OS1jM2IxLTQxNzAtOGFjYy1hYWQ5NWY2NjVlZmYuanBn",
-    "benefits_preview": [],
-    "benefits_count": null,
-    "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
-  },
-  {
-    "id": "wttj:3801798",
-    "title": "Account Growth Manager (Foodtech 🍔)",
-    "company": "Dishop",
-    "company_slug": "dishop",
-    "city": "Nice",
-    "cities": [
-      "Nice"
-    ],
-    "department": "Maritime Alps",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "ponctuel",
-    "category": "tech-adjacent",
-    "profession": null,
-    "salary": "30000–35000 EUR",
-    "experience_min_years": 2,
-    "published_at": "2026-09-07T11:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/dishop/jobs/account-growth-manager-foodtech_nice?o=DISHO_w22rL6R",
-    "source": "wttj",
-    "stack": [
-      "HubSpot"
-    ],
-    "soft_skills": [
-      "Développement commercial",
-      "Amélioration continue",
-      "Sens des affaires",
-      "Communication",
-      "Créativité et innovation",
-      "Gestion des performances",
-      "Collaboration et travail d'équipe"
-    ],
-    "description": "Dans le cadre de son activité grandissante, Dishop recrute un(e) Account Growth Manager\nRattaché(e) à la Direction Commerciale, vous occuperez un poste clé au sein de l’entreprise, à la croisée du développement et de la stratégie commerciale pour faire décoller les commandes de nos clients.\nVos missions principales :\n• Gestion active et développement du portefeuille clients\n -Piloter un portefeuille de clients existants avec une approche résolument orientée développement\n -Être proactif(ve) dans la relation client : contacts réguliers, points de suivi, recommandations, actions d’animation commerciale\n -Identifier les opportunités de croissance (augmentation des volumes, nouveaux usages, nouvelles fonctionnalités)\n -Mettre en place des plans d’actions pour maximiser la performance et réduire le churn\n\n• Relation client et accompagnement stratégique\n -Comprendre en profondeur les enjeux business et opérationnels de chaque client\n -Conseiller et accompagner les clients dans l’optimisation de leurs commandes et de leurs performances\n -Challenger les pratiques existantes et proposer des solutions à forte valeur ajoutée\n -Suivre les indicateurs clés de performance et piloter les résultats\n\n• Coordination interne et amélioration continue\n -Travailler en étroite collaboration avec les équipes Sales, Marketing, Support et Produit\n -Faire remonter de manière structurée les besoins, retours terrain et opportunités détectées chez les clients\n -Contribuer à l’évolution de l’offre et des process à partir des usages clients\n -Participer activement à la stratégie de croissance sur les comptes à fort potentiel\n\n• Missions transverses\n -Participer à des projets transverses liés au développement commercial et stratégique de la startup\n Être force de proposition dans l’amélioration des méthodes, outils et discours commerciaux”\n\nPourquoi Nous Rejoindre ?\nImpact sur un Marché en Transformation : Participez à la révolution de la foodtech en offrant des outils innovants qui changent la donne pour les restaurateurs et franchisés.\nImpact Social et Sociétal : Soutenez les restaurateurs et livreurs indépendants en leur fournissant des solutions technologiques qui renforcent leur autonomie et succès.\nDéfi Contre les Géants du Secteur : Intégrez une équipe agile et innovante, prête à rivaliser avec les plus grandes plateformes de livraison.\nCulture d’Entreprise Innovante : Évoluez dans un environnement stimulant où la créativité et l’expérimentation sont encouragées.\nLeader du Marché Halal : Travaillez pour une entreprise reconnue comme référence dans le secteur halal, en pleine expansion.",
-    "description_excerpt": "Dans le cadre de son activité grandissante, Dishop recrute un(e) Account Growth Manager\nRattaché(e) à la Direction Commerciale, vous occuperez un poste clé au sein de l’entreprise, à la croisée du développement et de la stratégie commerciale pour faire décoller les commandes de nos clients.\nVos missions principales :\n• Gestion active et…",
-    "profile_excerpt": "• Formation : Commercial / Management\n\n• Vous faites preuve d’un très bon relationnel\n\n• Vous avez un très bon sens commercial\n\n• Vous savez naviguer sur les sujets techniques, vous savez comprendre et restituer l’information\n\n• Maîtrise des outils bureautiques classiques,…",
-    "experience": null,
-    "education_level": "bac_2",
-    "remote_detail": "ponctuel",
-    "apply_url": null,
-    "ats": "wkit",
-    "logo": "https://cdn-images.welcometothejungle.com/cVg-URnorA52t92R7zVzyn0ewMHQfAsxSYzZPjf0Nro/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby81MjgyLzE2NjcyMC8zY2ZjOWY0OS1jM2IxLTQxNzAtOGFjYy1hYWQ5NWY2NjVlZmYuanBn",
-    "benefits_preview": [],
-    "benefits_count": null,
-    "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4159182",
@@ -27817,7 +27594,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4049862",
@@ -27865,7 +27642,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4157080",
@@ -27913,7 +27690,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4152519",
@@ -27958,7 +27735,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3901146",
@@ -28008,7 +27785,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3901143",
@@ -28055,7 +27832,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4049846",
@@ -28104,7 +27881,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4043800",
@@ -28155,7 +27932,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:2373821",
@@ -28207,7 +27984,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4248906",
@@ -28258,7 +28035,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3781518",
@@ -28303,7 +28080,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4245835",
@@ -28351,7 +28128,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4166912",
@@ -28401,7 +28178,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:2198983",
@@ -28459,7 +28236,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:2198970",
@@ -28515,7 +28292,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:2854567",
@@ -28557,7 +28334,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4200317",
@@ -28604,7 +28381,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4200314",
@@ -28651,7 +28428,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4200311",
@@ -28701,7 +28478,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3283001",
@@ -28753,7 +28530,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3829043",
@@ -28824,7 +28601,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3828837",
@@ -28880,7 +28657,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3828807",
@@ -28933,7 +28710,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3829042",
@@ -28992,7 +28769,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3829002",
@@ -29044,7 +28821,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3828744",
@@ -29100,7 +28877,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:4083582",
@@ -29154,7 +28931,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:3921007",
@@ -29209,7 +28986,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   },
   {
     "id": "wttj:1128344",
@@ -29273,6 +29050,6 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-11-07T11:45:41+00:00"
+    "enriched_at": "2026-11-08T11:57:40+00:00"
   }
 ]
