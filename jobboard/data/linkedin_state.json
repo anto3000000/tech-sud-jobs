@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-11-08",
+  "last_generated_date": "2026-11-09",
   "bucket_last_used": {
     "eng-13": "2026-11-03",
     "eng-06": "2026-11-01",
@@ -16,15 +16,10 @@
     "tech-adjacent-06": "2026-10-28",
     "product-paca": "2026-11-06",
     "tech-adjacent-paca": "2026-11-07",
-    "tech-adjacent-83": "2026-10-11",
+    "tech-adjacent-83": "2026-11-09",
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "airbus-helicopters-logiciel-r-d-et22r-innovation-product-manager-f-h-42697f": "2026-10-25",
-    "boond-senior-product-designer-full-remote-8c66b3": "2026-10-25",
-    "boond-senior-product-manager-full-remote-78a6cb": "2026-10-25",
-    "thales-assistant-product-owner-f-h-7deefb": "2026-10-25",
-    "thales-product-owner-kms-f-h-c27fa8": "2026-10-25",
     "thales-conception-dun-banc-devaluation-des-fuites-par-canaux-auxiliair-712aa7": "2026-10-26",
     "thales-developpement-d-algorithmes-de-detection-devenements-pour-lanal-afc29e": "2026-10-26",
     "airbus-helicopters-logiciel-r-d-2027-ingenieur-e-developpement-dapplic-f7a362": "2026-10-26",
@@ -92,7 +87,12 @@
     "naval-group-fr-ingenieur-electronique-systemes-embarques-h-f-be189a": "2026-11-08",
     "sopra-steria-developpeur-se-logiciel-embarque-cpp-aeroline-toulon-841d76": "2026-11-08",
     "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-c-fe9a49": "2026-11-08",
-    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-d-6aafa6": "2026-11-08"
+    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-d-6aafa6": "2026-11-08",
+    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-c-a22fc2": "2026-11-09",
+    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-e-e1a158": "2026-11-09",
+    "la-securite-sociale-technicien-infrastructures-materiel-logiciel-h-f-f9e3e1": "2026-11-09",
+    "mc2i-consultant-e-transformation-digitale-naval-defense-toulon-h-f-746e57": "2026-11-09",
+    "mc2i-consultant-e-en-transformation-digitale-industrie-toulon-h-f-f8ca75": "2026-11-09"
   },
   "last_published_date": "2026-11-08"
 }
