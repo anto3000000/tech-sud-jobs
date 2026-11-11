@@ -1,8 +1,8 @@
 {
-  "last_generated_date": "2026-11-10",
+  "last_generated_date": "2026-11-11",
   "bucket_last_used": {
     "eng-13": "2026-11-03",
-    "eng-06": "2026-11-01",
+    "eng-06": "2026-11-11",
     "eng-83": "2026-11-08",
     "eng-84": "2026-11-05",
     "eng-paca": "2026-11-10",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "sopra-steria-consultant-e-fonctionnel-le-oracle-aix-en-provence-bad2fb": "2026-10-27",
-    "the-adecco-group-technicien-support-n1-h-f-a625c7": "2026-10-27",
-    "bpce-solutions-informatiques-chef-de-projet-si-f-h-distribution-parts-7f70ca": "2026-10-27",
-    "groupe-lr-technologies-chef-de-projet-technique-infrastructure-h-f-ec9dcf": "2026-10-27",
-    "wavestone-consultant-e-en-management-cybersecurite-marseille-cdi-ffb836": "2026-10-27",
     "thales-ingenieur-customer-success-manager-h-f-3a0a86": "2026-10-28",
     "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-a-23aa09": "2026-10-28",
     "nalios-france-consultant-e-fonctionnel-odoo-69a267": "2026-10-28",
@@ -92,7 +87,12 @@
     "atos-ingenieur-en-developpement-radio-logicielle-h-f-3d873c": "2026-11-10",
     "cs-developpeur-se-integrateur-se-dotnet-csharp-cpp-transport-aix-en-pr-2e26ed": "2026-11-10",
     "dassault-systemes-ingenieur-r-d-interoperabilite-f-h-ee01ef": "2026-11-10",
-    "inrae-modelisation-du-microclimat-sous-serre-de-tomate-pour-lenvirotyp-d3257c": "2026-11-10"
+    "inrae-modelisation-du-microclimat-sous-serre-de-tomate-pour-lenvirotyp-d3257c": "2026-11-10",
+    "accenture-developpeur-front-end-react-typescript-interaction-humain-ma-209702": "2026-11-11",
+    "accenture-france-developpeur-front-end-react-typescript-interaction-hu-73b824": "2026-11-11",
+    "meritis-developpeur-cpp-go-embarque-h-f-b3d227": "2026-11-11",
+    "meritis-developpeur-cpp-h-f-5b7a05": "2026-11-11",
+    "thales-ingenieur-developpeur-de-solutions-numeriques-web-full-stack-po-c48cf2": "2026-11-11"
   },
   "last_published_date": "2026-11-09"
 }

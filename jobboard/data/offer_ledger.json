@@ -45,7 +45,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Product Builder - Sales AI"
@@ -56,7 +56,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Fullstack Software Engineer (x/f/m) -Automated Resolution"
@@ -67,7 +67,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-10-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Growth Marketer"
@@ -78,7 +78,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Fullstack Software Engineer (x/f/m)"
@@ -89,7 +89,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Fullstack Software Engineer (x/f/m) - Agentic Platform"
@@ -111,7 +111,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-11-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Growth Engineer - Data & Tracking"
@@ -122,7 +122,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-11-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Associate Team Lead Support Financial Services N2 / Chef(fe) d’équipe Support N2 Financial Services (Télétravail depuis Marseille)"
@@ -133,7 +133,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-11-04",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Associate Team Lead Support Financial Services N2 / Chef(fe) d’équipe Support N2 Financial Services"
@@ -155,7 +155,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-09-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Data Analyst - Acquisition"
@@ -166,7 +166,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "HR Systems, Data & Automation, Team Lead"
@@ -177,10 +177,21 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Product Builder - Mo (AI health companion)"
+},
+"ats:ashby:671d934961": {
+"category": "eng",
+"city": "Remote",
+"company": "lemlist",
+"contract": "CDI",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"remote": "remote",
+"source": "ashby",
+"title": "Fullstack Developer – Taplio & TweetHunter"
 },
 "ats:ashby:6905947360": {
 "category": "cybersecurite",
@@ -188,7 +199,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-10-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Security Engineer Junior - GRC"
@@ -199,7 +210,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-10-12",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Growth Marketer"
@@ -232,7 +243,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Data Engineer"
@@ -265,7 +276,7 @@
 "company": "lemlist",
 "contract": "CDI",
 "first_seen": "2026-10-24",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "AI Growth Manager Ads"
@@ -309,7 +320,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-10-19",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Fullstack Software Engineer (x/f/m) - Alan Shop"
@@ -331,7 +342,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Fullstack Software Engineer (x/f/m) - Tech Foundations"
@@ -375,7 +386,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Portfolio analytics and forecasts actuary"
@@ -408,7 +419,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Software Engineer (Privacy) (x/f/m) - Tech Foundations"
@@ -430,7 +441,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Ops & Product Builder"
@@ -441,7 +452,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Product Lead - Growth"
@@ -463,7 +474,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Data Full Stack"
@@ -496,7 +507,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Fullstack Software Engineer (x/f/m) - Care Expert Copilot"
@@ -518,7 +529,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Pre-Sales / Sales Engineer"
@@ -539,7 +550,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Analytics and pricing expert - Insurance"
@@ -583,7 +594,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Platform Engineer (x/f/m) - Tech Foundations"
@@ -594,7 +605,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Fullstack Software Engineer (x/f/m) - Product Platform"
@@ -660,7 +671,7 @@
 "company": "Alan",
 "contract": "Stage",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "CTO Founder Associate - internship"
@@ -737,7 +748,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Application Security Engineer"
@@ -748,7 +759,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Partner Technical Solution Engineer - Connectivité, IA & API (H/F)"
@@ -759,7 +770,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Product Manager AI -  — Studio Builder"
@@ -770,7 +781,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-11-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Customer Success Manager - France 🇫🇷"
@@ -781,7 +792,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Product Domain Specialist - secteur agricole"
@@ -792,7 +803,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-10-09",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Tech Recruiter  M/F 🇫🇷🇬🇧"
@@ -803,7 +814,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Founding Growth - Alan Precision"
@@ -814,7 +825,7 @@
 "company": "lemlist",
 "contract": "CDI",
 "first_seen": "2026-10-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Product Manager - billing & monetisation"
@@ -847,7 +858,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-10-24",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Product Manager Monetization"
@@ -858,7 +869,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Growth Product Manager - Website & Conversion"
@@ -869,7 +880,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Fullstack Software Engineer - Work Environment (x/f/m)"
@@ -979,7 +990,7 @@
 "company": "lemlist",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Fullstack TS Developer (backend-oriented)"
@@ -1001,7 +1012,7 @@
 "company": "lemlist",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Staff Engineer - Fullstack JS/TS"
@@ -1023,7 +1034,7 @@
 "company": "lemlist",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Product Designer"
@@ -1034,7 +1045,7 @@
 "company": "lemlist",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Technical Lead - Fullstack JS/TS"
@@ -1045,7 +1056,7 @@
 "company": "lemlist",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Fullstack TypeScript Developer (Product Engineer)"
@@ -1078,7 +1089,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Product Designer (Confirmed/Senior) - Remote Europe 🇪🇺"
@@ -1100,7 +1111,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Product Design Manager"
@@ -1133,7 +1144,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Product Manager 🇫🇷"
@@ -1177,7 +1188,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Product Analyst"
@@ -1188,7 +1199,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Design Manager"
@@ -1210,7 +1221,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Backend Software Engineer (Ruby on Rails)"
@@ -1232,7 +1243,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Machine Learning Engineer - Embedded AI"
@@ -1298,7 +1309,7 @@
 "company": "Pennylane",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "ashby",
 "title": "Senior Fullstack Software Engineer (Ruby/React & TS)"
@@ -1340,7 +1351,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Développement - IA processus emboutissage generative 3D - Aix-en-Provence (F/H)"
 },
@@ -1350,7 +1361,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingenieur R&D Applications - Aix-en-Provence (F/H)"
 },
@@ -1360,7 +1371,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingenieur R&D  C++ -  STEP AP242 Ed5 prototyping (F/H)"
 },
@@ -1370,7 +1381,7 @@
 "company": "Dassault Systèmes",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingenieur R&D Interoperabilite (F/H)"
 },
@@ -1380,7 +1391,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingénieur.e Recherche - Landscape de compagnons IA dans la santé mentale (F/H)"
 },
@@ -1390,7 +1401,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingénieur R&D Generative IA Surfacique - Aix-en-Provence (F/H)"
 },
@@ -1400,7 +1411,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingénieur C++ / mathématiques appliqués (F/H)"
 },
@@ -1410,7 +1421,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingenieur Développement IA Agentique (F/H)"
 },
@@ -1430,7 +1441,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingénieur Avant-vente CATIA AI Engineering (F/H)"
 },
@@ -1440,7 +1451,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingenieur IA générative axée sur la physique - Aix-en-Provence (F/H)"
 },
@@ -1460,7 +1471,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingenieur R&D Generative IA - Aix-en-Provence (F/H)"
 },
@@ -1470,7 +1481,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingenieur R&D Deep Reinforcement  Learning - Aix-en-Provence (F/H)"
 },
@@ -1490,7 +1501,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingénieur.e Recherche – Machine learning (F/H)"
 },
@@ -1500,7 +1511,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingénieur.e Recherche - Prédiction des trajectoires de développement du cerveau (F/H)"
 },
@@ -1510,7 +1521,7 @@
 "company": "Dassault Systèmes",
 "contract": "CDI",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingénieur logiciel R&D – Modélisation de la connaissance (F/H)"
 },
@@ -1740,7 +1751,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-09",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingénieur.e Recherche – IA pour le médical (F/H)"
 },
@@ -1750,7 +1761,7 @@
 "company": "Dassault Systèmes",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "dassault",
 "title": "Ingénieur R&D en IA générative et simulation physique 3D (F/H)"
 },
@@ -1760,7 +1771,7 @@
 "company": "Deloitte",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "deloittefr",
 "title": "ou alternance consultant informatique et financement de l'innovation F/H"
 },
@@ -1820,7 +1831,7 @@
 "company": "Expleo",
 "contract": "CDI",
 "first_seen": "2026-10-16",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "icims_portal",
 "title": "Ingénieur développement mécanique H/F"
 },
@@ -1870,7 +1881,7 @@
 "company": "INRAE",
 "contract": "Stage",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "inrae",
 "title": "M2 - Qualification de l'effet de  pratiques agricoles régénératives sur les propriétés hydrodynamiques de sols-  Collecte et analyse de données physiques, biologiques et chimique des sols"
 },
@@ -1880,7 +1891,7 @@
 "company": "INRAE",
 "contract": "Stage",
 "first_seen": "2026-11-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "inrae",
 "title": "de master M2 : Phénotypage à haut débit des variétés de blé avec des IoT (Internet of Things)"
 },
@@ -1900,7 +1911,7 @@
 "company": "INRAE",
 "contract": "Stage",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "inrae",
 "title": "Modélisation du microclimat sous serre de tomate pour l’envirotypage : développement et évaluation d’un modèle dynamique fondé sur les bilans d’énergie et de masse."
 },
@@ -1919,7 +1930,7 @@
 "city": "Avignon",
 "company": "INRAE",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "inrae",
 "title": "Ingénieur-e en calcul et analyses des données d’impact du changement climatique"
 },
@@ -1989,7 +2000,7 @@
 "company": "CMA CGM",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-09",
+"last_seen": "2026-11-11",
 "source": "jobs2web",
 "title": "Cybersecurity Program Director"
 },
@@ -2149,7 +2160,7 @@
 "company": "CMA CGM",
 "contract": "CDI",
 "first_seen": "2026-10-24",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "jobs2web",
 "title": "Group Data Protection Expert"
 },
@@ -2519,7 +2530,7 @@
 "company": "CMA CGM",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "jobs2web",
 "title": "Tech Lead AI"
 },
@@ -2583,6 +2594,16 @@
 "source": "jobs2web",
 "title": "Group IT Business Analysis"
 },
+"ats:jobs2web:d41eceaffb": {
+"category": "data",
+"city": "Marseille",
+"company": "CMA CGM",
+"contract": "Stage",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "jobs2web",
+"title": "Data Scientist - Agentic AI & Deep Learning (RAFA Project)"
+},
 "ats:jobs2web:d5460c0a48": {
 "category": "cybersecurite",
 "city": "Marseille",
@@ -2609,7 +2630,7 @@
 "company": "CMA CGM",
 "contract": "Stage",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "jobs2web",
 "title": "Digitalization of Marketing & Sales Processes (Automation, Data Visualization, AI)"
 },
@@ -2619,7 +2640,7 @@
 "company": "CMA CGM",
 "contract": "Stage",
 "first_seen": "2026-11-09",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "jobs2web",
 "title": "Tax Reporting, Data & Transformation Internship"
 },
@@ -2669,7 +2690,7 @@
 "company": "Gojob",
 "contract": "Stage",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "lever",
 "title": "Platform Engineer (basé à Aix-en-Provence) (H/F)"
 },
@@ -2679,7 +2700,7 @@
 "company": "Gojob",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "lever",
 "title": "Software Engineer (basé à Aix-en-Provence) (H/F)"
 },
@@ -2710,7 +2731,7 @@
 "company": "Gojob",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "lever",
 "title": "Head of AI Solutions"
 },
@@ -2739,7 +2760,7 @@
 "company": "Gojob",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "lever",
 "title": "Senior / Staff Software Engineer H/F"
 },
@@ -2759,7 +2780,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Chef de projet IT Sénior"
 },
@@ -2769,7 +2790,7 @@
 "company": "Capgemini",
 "contract": "Stage",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Business Analyst Aéronautique - Stage"
 },
@@ -2779,7 +2800,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-10-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Consultante / consultant Senior GenAI / Agentique"
 },
@@ -2789,7 +2810,7 @@
 "company": "Sogeti",
 "contract": "Stage",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Développeuse / Développeur Kotlin Android IA  - STAGE"
 },
@@ -2799,7 +2820,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Consultant/ Consultante fonctionnel.le Oracle ERP Cloud"
 },
@@ -2809,7 +2830,7 @@
 "company": "Sogeti",
 "contract": "Stage",
 "first_seen": "2026-10-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Business Analyst spécialisé(e) dans l'aéronautique - STAGE"
 },
@@ -2829,7 +2850,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-10-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Business analyst expertise travel"
 },
@@ -2839,7 +2860,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Consultante / Consultant Cybersécurité Cloud"
 },
@@ -2849,7 +2870,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Cheffe/Chef de projets senior IA Agentique"
 },
@@ -2859,7 +2880,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Développeuse / Développeur ANGULAR"
 },
@@ -2869,7 +2890,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Tech Lead SAP"
 },
@@ -2889,7 +2910,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Architecte Solutions IA"
 },
@@ -2899,7 +2920,7 @@
 "company": "Capgemini",
 "contract": "Stage",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Consultante / Consultant en transformation digitale - Stage"
 },
@@ -2909,7 +2930,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Développeuse / Développeur confirmé Java fullstack"
 },
@@ -2919,7 +2940,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Business Analyst Aéronautique confirmé"
 },
@@ -2929,7 +2950,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Leader technique Fullstack Java"
 },
@@ -2939,7 +2960,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "SAP Data Migration Lead"
 },
@@ -2979,7 +3000,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Architecte Technique SAP"
 },
@@ -2989,7 +3010,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Tech Lead Databricks"
 },
@@ -3009,7 +3030,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Architecte Data / IA"
 },
@@ -3019,7 +3040,7 @@
 "company": "Capgemini",
 "contract": "Stage",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Analyste SOC - Stage"
 },
@@ -3049,7 +3070,7 @@
 "company": "Capgemini",
 "contract": "Stage",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Développeuse / Développeur Java - Stage"
 },
@@ -3059,7 +3080,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Ingénieure / Ingénieur DevOps"
 },
@@ -3069,7 +3090,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Ingénieure / Ingénieur développement Full Stack confirmé"
 },
@@ -3079,7 +3100,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Tech Lead SAP BTP"
 },
@@ -3089,7 +3110,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Leader Technique IA / Génération IA (Java / Python)"
 },
@@ -3099,7 +3120,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "CONSULTANT / CONSULTANTE DATA GOUVERNANCE"
 },
@@ -3109,7 +3130,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Consultante / Consultant transformation digitale et IA"
 },
@@ -3119,7 +3140,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Leader Technique Back-End - Java / Python"
 },
@@ -3139,7 +3160,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Consultante/consultant transformation digitale senior"
 },
@@ -3149,7 +3170,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Architecte Solution"
 },
@@ -3159,7 +3180,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Data Product Owner / Business Data Analyst"
 },
@@ -3169,7 +3190,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Associate Data Engineer"
 },
@@ -3179,7 +3200,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Architecte Cloud"
 },
@@ -3189,7 +3210,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Consultante / Consultant Senior Cybersécurité GRC"
 },
@@ -3199,7 +3220,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Consultante / Consultant Cybersécurité IAM"
 },
@@ -3209,7 +3230,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Business Analyst Salesforce"
 },
@@ -3219,7 +3240,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Lead développeuse / développeur Java full stack"
 },
@@ -3229,7 +3250,7 @@
 "company": "Sogeti",
 "contract": "Stage",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Développeuse / Développeur Fullstack IA - STAGE"
 },
@@ -3239,7 +3260,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Architecte Solutions Avant-Vente Cybersécurité"
 },
@@ -3259,7 +3280,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Developpeur Full Stack Java Angular Confirmé"
 },
@@ -3269,7 +3290,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Ingénieur Data Confirmé"
 },
@@ -3279,7 +3300,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Ingénieure Test Logiciel / Ingénieur Test Logiciel"
 },
@@ -3289,7 +3310,7 @@
 "company": "Sogeti",
 "contract": "Stage",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Développeuse / Développeur Fullstack - Stage"
 },
@@ -3299,7 +3320,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Ingénieure Test Leader / Ingénieur Test Leader"
 },
@@ -3309,7 +3330,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Développeuse/Développeur Fullstack Java"
 },
@@ -3329,7 +3350,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Data Engineer"
 },
@@ -3339,7 +3360,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Chef de Projet IT"
 },
@@ -3349,7 +3370,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Product Owner"
 },
@@ -3359,7 +3380,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Senior Software Engineer"
 },
@@ -3379,7 +3400,7 @@
 "company": "Sogeti",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "macs",
 "title": "Responsable Technique Java/Angular"
 },
@@ -3409,7 +3430,7 @@
 "company": "Orange",
 "contract": "Stage",
 "first_seen": "2026-10-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Auditeur Pentester F/H"
 },
@@ -3419,7 +3440,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-09-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Consultant DevOps / Platform Engineer F/H"
 },
@@ -3429,7 +3450,7 @@
 "company": "Orange",
 "contract": "Stage",
 "first_seen": "2026-10-19",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Ingénieur.e Développement Augmenté.e F/H"
 },
@@ -3439,7 +3460,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Consultant Data/BI senior F/H"
 },
@@ -3449,7 +3470,7 @@
 "company": "Orange",
 "contract": "Stage",
 "first_seen": "2026-10-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Ingénieur DevSecOps F/H"
 },
@@ -3479,7 +3500,7 @@
 "company": "Orange",
 "contract": "Stage",
 "first_seen": "2026-10-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Développement d'une méthode de modélisation des antennes de station de base high efficiency F/H"
 },
@@ -3489,7 +3510,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-10-30",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Technicien support"
 },
@@ -3509,7 +3530,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-10-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Analyste SOC F/H"
 },
@@ -3529,7 +3550,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Consultant Principal Data IA H/F"
 },
@@ -3579,7 +3600,7 @@
 "company": "Orange",
 "contract": "Stage",
 "first_seen": "2026-11-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Développeur / Développeuse Web Full Stack F/H"
 },
@@ -3629,7 +3650,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Ingénieur Sécurité H/F"
 },
@@ -3649,7 +3670,7 @@
 "company": "Orange",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "phenom",
 "title": "Ingénieur QA testeur"
 },
@@ -3699,7 +3720,7 @@
 "company": "Median Technologies",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "recruitee",
 "title": "Ingénieur Intégration Logicielle H/F"
 },
@@ -3709,7 +3730,7 @@
 "company": "Instant System",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "recruitee",
 "title": "Product Manager Billettique (H/F)"
 },
@@ -3719,7 +3740,7 @@
 "company": "Instant System",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "recruitee",
 "title": "Développeur senior Java back-end"
 },
@@ -3759,7 +3780,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Architecte système MBSE H/F"
 },
@@ -3769,7 +3790,7 @@
 "company": "Wavestone",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "de fin d'études - Consultant.e Cloud, Infrastructures, Réseaux & Workplace - Marseille"
 },
@@ -3779,7 +3800,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Testeur Logiciel / Ingénieur QA – Fonctionnel et Automatisation (H/F)"
 },
@@ -3789,7 +3810,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Architecte Data / IA – Services Financiers CDI (F/H) – Marseille"
 },
@@ -3799,7 +3820,7 @@
 "company": "Wavestone",
 "contract": "Stage",
 "first_seen": "2026-10-19",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "de fin d'études - Consultant.e Data/IA - Marseille"
 },
@@ -3819,7 +3840,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-10-09",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Developpeur JAVA / Architect JAVA"
 },
@@ -3829,7 +3850,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Architecte Fonctionnel Data (Environnement PLM)"
 },
@@ -3849,7 +3870,7 @@
 "company": "Wavestone",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Consultant.e en management - Cybersécurité   - Marseille - CDI"
 },
@@ -3859,7 +3880,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Delivery manager embedded systems H/F"
 },
@@ -3869,7 +3890,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur DevOps (H/F)"
 },
@@ -3879,7 +3900,7 @@
 "company": "Wavestone",
 "contract": "CDI",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Consultant.e Confirmé.e Cybersécurité - Expert.e IAM - Marseille"
 },
@@ -3889,7 +3910,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Auditeur Cybersécurité ISO 27001 Confirmé (H/F)"
 },
@@ -3899,7 +3920,7 @@
 "company": "Assystem",
 "contract": "CDI",
 "first_seen": "2026-10-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur Développement Système Temps Réel H/F"
 },
@@ -3909,7 +3930,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur Qualité Développement H/F"
 },
@@ -3919,7 +3940,7 @@
 "company": "TechnicAtome",
 "contract": "CDI",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur Informatique industrielle / Chef de projets IT F/H"
 },
@@ -3929,7 +3950,7 @@
 "company": "Wavestone",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "de fin d'études - Consultant·e Cybersécurité - Marseille"
 },
@@ -3949,7 +3970,7 @@
 "company": "Alten",
 "contract": "Stage",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Innovation : Ingénieur Data Science"
 },
@@ -3979,7 +4000,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Architecte Data / IA – Industrie CDI H/F"
 },
@@ -3999,7 +4020,7 @@
 "company": "Monext",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "smartrecruiters",
 "title": "Business Analyst Senior Monétique - F/H"
@@ -4020,7 +4041,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "EXPERT(E) VERTEX AI / ARCHITECTE SOLUTION IA SENIOR (H/F)"
 },
@@ -4030,7 +4051,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "PMO SI (H/F)"
 },
@@ -4040,7 +4061,7 @@
 "company": "Assystem",
 "contract": "CDI",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Technicien IT H/F"
 },
@@ -4050,7 +4071,7 @@
 "company": "TechnicAtome",
 "contract": "Stage",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur - Développement d'outil de simulation contrôle-commande F/H"
 },
@@ -4070,7 +4091,7 @@
 "company": "Alten",
 "contract": "Stage",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Innovation : Ingénieur Intelligence Artificielle / Reinforcement Learning"
 },
@@ -4080,7 +4101,7 @@
 "company": "Scalian",
 "contract": "Stage",
 "first_seen": "2026-11-04",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur système embarqué aéronautique H/F"
 },
@@ -4090,7 +4111,7 @@
 "company": "Monext",
 "contract": "Stage",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Cybersécurité - F/H"
 },
@@ -4100,7 +4121,7 @@
 "company": "Wavestone",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "de fin d'études - Consultant.e en management - Cybersécurité - Marseille"
 },
@@ -4110,7 +4131,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur développement & performance fournisseurs aéronautique (H/F)"
 },
@@ -4140,7 +4161,7 @@
 "company": "Scalian",
 "contract": "Stage",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur logiciel java H/F"
 },
@@ -4150,7 +4171,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur développement Web Angular Javaspring - Domaine Industriel"
 },
@@ -4180,7 +4201,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Backend Engineer"
 },
@@ -4210,7 +4231,7 @@
 "company": "Alten",
 "contract": "CDD",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur Logiciel"
 },
@@ -4220,7 +4241,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur Data Analyst / Business Analyst Data"
 },
@@ -4230,7 +4251,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Nucléaire - Ingénieur Tests & Validation Logiciel Embarqué C H/F"
 },
@@ -4260,7 +4281,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur développeur Full-stack Java/Angular"
 },
@@ -4280,7 +4301,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Business Analyst SAP (H/F)"
 },
@@ -4310,7 +4331,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Tech Lead java/angular (H/F)"
 },
@@ -4320,7 +4341,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur QA automatisation (H/F)"
 },
@@ -4350,7 +4371,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "QA - Automation test"
 },
@@ -4360,7 +4381,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Site Reliability Engineer (expérimenté, CDI)"
 },
@@ -4370,7 +4391,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Nucléaire - Ingénieur V&V Logiciels embarqué H/F"
 },
@@ -4380,7 +4401,7 @@
 "company": "Alten",
 "contract": "CDD",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "IT Business Analyst"
 },
@@ -4390,7 +4411,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Chef de projet infrastructure (H/F)"
 },
@@ -4400,7 +4421,7 @@
 "company": "Alten",
 "contract": "CDD",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur Java (H/F) – Spring Boot / Quarkus"
 },
@@ -4410,7 +4431,7 @@
 "company": "Alten",
 "contract": "CDD",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "C++ Developer"
 },
@@ -4430,7 +4451,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "DevOps Engineer (experienced, permanent contract)"
 },
@@ -4440,7 +4461,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Data Engineer – Plateforme Data Engineering"
 },
@@ -4450,7 +4471,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "DevOps"
 },
@@ -4490,7 +4511,7 @@
 "company": "Assystem",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur/Chef de Projet Infrastructures Ferroviaires Senior H/F"
 },
@@ -4570,7 +4591,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur conception électronique de puissance H/F"
 },
@@ -4580,7 +4601,7 @@
 "company": "TechnicAtome",
 "contract": "Stage",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur - Développement d'un système d'analyse et supervision d'évènements de sécurité pour les systèmes industriels F/H"
 },
@@ -4590,7 +4611,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-11-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur IA (expérimenté, CDI)"
 },
@@ -4600,7 +4621,7 @@
 "company": "Bosch",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "H/F/N: Architecte Système, IP manager"
 },
@@ -4610,7 +4631,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-10-12",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur logiciel C++ (expérimenté, CDI)"
 },
@@ -4620,7 +4641,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Testeur logiciel aéronautique H/F"
 },
@@ -4630,7 +4651,7 @@
 "company": "TechnicAtome",
 "contract": "Stage",
 "first_seen": "2026-09-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur - Développement d’un modèle thermohydraulique pour simuler le comportement d’un pressuriseur (F/H)"
 },
@@ -4640,7 +4661,7 @@
 "company": "TechnicAtome",
 "contract": "CDI",
 "first_seen": "2026-11-04",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Administrateur Système Windows F/H"
 },
@@ -4650,7 +4671,7 @@
 "company": "Alten",
 "contract": "CDI",
 "first_seen": "2026-10-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Backend Engineer (experienced, permanent contract)"
 },
@@ -4720,7 +4741,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Expert ingénieur système MBSE & IA - F/H"
 },
@@ -4730,7 +4751,7 @@
 "company": "TechnicAtome",
 "contract": "Stage",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Outil de gestion des données de configuration de systèmes automates (H/F)"
 },
@@ -4740,7 +4761,7 @@
 "company": "Alten",
 "contract": "Stage",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Innovation : Ingénieur DevOps"
 },
@@ -4750,7 +4771,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur python H/F"
 },
@@ -4780,7 +4801,7 @@
 "company": "Eurofins",
 "contract": "Stage",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur.e Robotique & Automatisation en stage"
 },
@@ -4820,7 +4841,7 @@
 "company": "TechnicAtome",
 "contract": "CDI",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur logiciels contrôle-commande - F/H"
 },
@@ -4830,7 +4851,7 @@
 "company": "Wavestone",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Consultant·e Cybersécurité - Marseille - CDI"
 },
@@ -4870,7 +4891,7 @@
 "company": "Monext",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Product Manager - (F/H)"
 },
@@ -4880,7 +4901,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Testeur Logiciel - AIX EN PROVENCE (H/F)"
 },
@@ -4983,7 +5004,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur Validation Systèmes Embarqués – Défense (F/H)"
 },
@@ -4993,7 +5014,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Project Quality Assurance Manager F/H"
 },
@@ -5003,7 +5024,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur JAVA - AVIGNON (H/F)"
 },
@@ -5013,7 +5034,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur PHP Symfony Nucléaire"
 },
@@ -5023,7 +5044,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Data Analyst Senior Power BI / GCP (H/F)"
 },
@@ -5033,7 +5054,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Testeur Logiciel - AVIGNON  (H/F)"
 },
@@ -5053,7 +5074,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Architecte logiciel H/F"
 },
@@ -5063,7 +5084,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Product Owner - AVIGNON (H/F)"
 },
@@ -5073,7 +5094,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Administrateur Bases de Données (DBA N2) H/F"
 },
@@ -5083,7 +5104,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur JAVA - MARSEILLE (H/F)"
 },
@@ -5093,7 +5114,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "smartrecruiters",
 "title": "Ingénieur Electronique de Puissance Nucléaire"
@@ -5114,7 +5135,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur développement logiciel C++ H/F"
 },
@@ -5124,7 +5145,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "PMO IT (H/F)"
 },
@@ -5144,7 +5165,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "smartrecruiters",
 "title": "Chargé d'Etudes Composants Electroniques - Nucléaire"
@@ -5155,7 +5176,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur C# - VITROLLES (H/F)"
 },
@@ -5165,7 +5186,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Docteur - Développeur logiciel d'applications scientifiques - Langage Fortran"
 },
@@ -5185,7 +5206,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Business Analyst Salesforce (H/F)"
 },
@@ -5215,7 +5236,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur C++ / Rust H/F"
 },
@@ -5225,7 +5246,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur JAVA - VITROLLES (H/F)"
 },
@@ -5235,7 +5256,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur logiciel embarqué C/C++ H/F"
 },
@@ -5245,7 +5266,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur/se java - F/H"
 },
@@ -5255,7 +5276,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur DevOps - H/F"
 },
@@ -5276,7 +5297,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur C# - AVIGNON (H/F)"
 },
@@ -5297,7 +5318,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur java - F/H"
 },
@@ -5307,7 +5328,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Consultant Cybersécurité H/F"
 },
@@ -5317,7 +5338,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur C# - MARTIGUES (H/F)"
 },
@@ -5327,7 +5348,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Business Analyst IT / Proxy PO - AIX EN PROVENCE (H/F)"
 },
@@ -5337,7 +5358,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur C++ senior - H/F"
 },
@@ -5347,7 +5368,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur développement logiciel embarqué - F/H"
 },
@@ -5357,7 +5378,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur embarqué - F/H"
 },
@@ -5388,7 +5409,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur test et validation ferroviaire H/F"
 },
@@ -5398,7 +5419,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "PMO Data F/H"
 },
@@ -5418,7 +5439,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur angular H/F"
 },
@@ -5428,7 +5449,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Architecte technique infrastructure IT - TOULON (H/F)"
 },
@@ -5458,7 +5479,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur Liaisons de Données Tactiques (LDT) (H/F)"
 },
@@ -5468,7 +5489,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Business Analyst IT / Proxy PO - TOULON (H/F)"
 },
@@ -5478,7 +5499,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Product Owner - AIX EN PROVENCE (H/F)"
 },
@@ -5498,7 +5519,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur C# - AIX EN PROVENCE (H/F)"
 },
@@ -5508,7 +5529,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "smartrecruiters",
 "title": "Ingénieur validation et vérification/Ingénieure validation et vérification"
@@ -5519,7 +5540,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur/se Rust - F/H"
 },
@@ -5529,7 +5550,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur logiciel embarqué  H/F"
 },
@@ -5539,7 +5560,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur électronique aéronautique H/F"
 },
@@ -5559,7 +5580,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur/se Python - F/H"
 },
@@ -5569,7 +5590,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Product Owner - TOULON (H/F)"
 },
@@ -5579,7 +5600,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Data Manager Nucléaire"
 },
@@ -5589,7 +5610,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Lead tech C/C++ H/F"
 },
@@ -5599,7 +5620,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur Streaming Vidéo Temps Réel & Cybersécurité - F/H"
 },
@@ -5609,7 +5630,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur java aéronautique H/F"
 },
@@ -5629,7 +5650,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Architecte technique infrastructure IT - ORANGE (H/F)"
 },
@@ -5639,7 +5660,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Data Engineer H/F"
 },
@@ -5649,7 +5670,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "DevOps - F/H"
 },
@@ -5659,7 +5680,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur JAVA - AIX EN PROVENCE (H/F)"
 },
@@ -5669,7 +5690,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Développeur C++ H/F"
 },
@@ -5679,7 +5700,7 @@
 "company": "Scalian",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "PMO  Cybersecurity Compliance F/H"
 },
@@ -5751,7 +5772,7 @@
 "company": "TechnicAtome",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "smartrecruiters",
 "title": "Ingénieur Electronique Numérique F/H"
 },
@@ -5821,7 +5842,7 @@
 "company": "Bertin Technologies",
 "contract": "Stage",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "taleez",
 "title": "DEVELOPPEMENT D'UN BANC DE TEST LOGICIEL ET MATERIEL POUR CAMERAS INFRAROUGES"
 },
@@ -5831,7 +5852,7 @@
 "company": "Bertin Technologies",
 "contract": "Stage",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "taleez",
 "title": "MISE EN PLACE ET INTEGRATION D’UNE STRATEGIE SECURE BOOT POUR LES FIRMWARES DE CAMERAS H/F"
 },
@@ -5841,7 +5862,7 @@
 "company": "Bertin Technologies",
 "contract": "Stage",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "taleez",
 "title": "DEVELOPPEMENT BRIQUES TRAITEMENT DU SIGNAL SUR FPGA H/F"
 },
@@ -5871,7 +5892,7 @@
 "company": "Bertin Technologies",
 "contract": "Stage",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "taleez",
 "title": "MISE EN PLACE D'UNE CHAINE CI/CD POUR FIRMWARES CAMERAS H/F"
 },
@@ -5921,7 +5942,7 @@
 "company": "CEA",
 "contract": "Stage",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "talentsoft_rss",
 "title": "Modélisation par intelligence artificielle des combustibles nucléaires à l'échelle atomique H/F"
 },
@@ -5951,7 +5972,7 @@
 "company": "CEA",
 "contract": "CDI",
 "first_seen": "2026-11-04",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "talentsoft_rss",
 "title": "Ingénieur Sécurité d'Installation H/F"
 },
@@ -5971,7 +5992,7 @@
 "company": "CEA",
 "contract": "Stage",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "talentsoft_rss",
 "title": "Incertitude de métamodèles de Machine Learning pour le calcul de débit de dose H/F"
 },
@@ -5981,7 +6002,7 @@
 "company": "CEA",
 "contract": "Stage",
 "first_seen": "2026-10-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "talentsoft_rss",
 "title": "Développement  logiciel pour une baie  d'acquisition modulaire  en réacteur de  recherche H/F"
 },
@@ -6011,7 +6032,7 @@
 "company": "CEA",
 "contract": "Stage",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "talentsoft_rss",
 "title": "Développement d'une expérience pour la mesure du point de fusion du combustible H/F"
 },
@@ -6020,7 +6041,7 @@
 "city": "Marseille",
 "company": "Kincy",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "remote",
 "source": "teamtailor",
 "title": "Technicien Systèmes & Réseaux – Support IT / Helpdesk (H/F) - Profil expatrié"
@@ -6039,7 +6060,7 @@
 "city": "Marseille",
 "company": "La Plateforme",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Responsable IA & Automatisation – Avant-vente & Delivery (H/F)"
 },
@@ -6058,7 +6079,7 @@
 "company": "Onatera",
 "contract": "Stage",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Développement Produit - Réglementation H/F"
 },
@@ -6067,7 +6088,7 @@
 "city": "Marseille",
 "company": "Smile",
 "first_seen": "2026-10-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Chef de Projet Applicatif Senior H/F – Aix / Marseille"
 },
@@ -6076,7 +6097,7 @@
 "city": "Marseille",
 "company": "Smile",
 "first_seen": "2026-10-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Chef de Projet Technique (MOE) Senior H/F – Aix / Marseille"
 },
@@ -6103,7 +6124,7 @@
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
 "first_seen": "2026-10-16",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Chef de Projet Applicatif H/F"
 },
@@ -6141,7 +6162,7 @@
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Support Informatique Client N1 – Produits Connectés (H/F)H/F"
 },
@@ -6196,7 +6217,7 @@
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Chef de projet technique infrastructure H/F"
 },
@@ -6205,7 +6226,7 @@
 "city": "Aix-en-Provence",
 "company": "Onatera",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Dev produit"
 },
@@ -6214,7 +6235,7 @@
 "city": "Aix-en-Provence",
 "company": "Groupe LR Technologies",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Ingénieur Cybersécurité Splunk (H/F)"
 },
@@ -6313,7 +6334,7 @@
 "city": "Marseille",
 "company": "Kincy",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Administrateur Systèmes et Réseaux expérimenté (H/F)"
 },
@@ -6332,7 +6353,7 @@
 "city": "Marseille",
 "company": "Kincy",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Ingénieur Commercial IT Sénior - Infogérance & Intégration IT"
 },
@@ -6370,7 +6391,7 @@
 "city": "Marseille",
 "company": "Kincy",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Consultant(e) / Chef de Projet infrastructures IT (H/F)"
 },
@@ -6388,7 +6409,7 @@
 "city": "Aix-en-Provence",
 "company": "Onatera",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "teamtailor",
 "title": "Product Owner"
 },
@@ -6416,7 +6437,7 @@
 "company": "VINCI Energies",
 "contract": "CDI",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "vincienergies",
 "title": "DevOps senior F/H"
 },
@@ -6475,7 +6496,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Customer Success Manager – (H/F)"
 },
@@ -6494,7 +6515,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur traitement du signal et machine learning (H/F)"
 },
@@ -6504,7 +6525,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Développement de l'usage de l'IA au sein d’activités industrielles et ingénierie - H/F"
 },
@@ -6513,7 +6534,7 @@
 "city": "Vitrolles",
 "company": "Accenture",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Consultant senior en systèmes avioniques et embarqués F/H"
 },
@@ -6533,7 +6554,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Data & Intelligence Artificielle – (H/F)"
 },
@@ -6572,7 +6593,7 @@
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "#ET22R Innovation product manager (f/h)"
 },
@@ -6582,7 +6603,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement, Automatisation outils informatiques – (H/F)"
 },
@@ -6592,7 +6613,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-16",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Finance Data Analyst (m/f)"
 },
@@ -6602,7 +6623,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-11-04",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027- Energy Management : Analyse de données, performance énergétique et Réglementation( h / f)"
 },
@@ -6612,7 +6633,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-19",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Analyse des données business et politique Commerciale (h/f)"
 },
@@ -6622,7 +6643,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Développeur Fullstack & Ingénieur AI – Outillage FinOps pour les Clouds Souverains"
 },
@@ -6631,7 +6652,7 @@
 "city": "Aix-en-Provence",
 "company": "Thales",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Platform Engineer AWS (H/F)"
 },
@@ -6641,7 +6662,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Compression de données hyperspectrales : conception, simulation et performances – application aux missions CHIME et/ou S3NGO  – (H/F)"
 },
@@ -6661,7 +6682,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-24",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur de recherche – Analyse Topologique des Données appliquée à l’analyse d’images hyper-spectrales et aux séries temporelles multivariées – (H/F)"
 },
@@ -6680,7 +6701,7 @@
 "city": "La Ciotat",
 "company": "Thales",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Senior Data Engineer (F/H)"
 },
@@ -6689,7 +6710,7 @@
 "city": "La Ciotat",
 "company": "Thales",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Expert Cybersécurité Mobile / Pentester (F/H)"
 },
@@ -6698,7 +6719,7 @@
 "city": "Cannes",
 "company": "Thales",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Développeur Confirmé Solution Base de Données Charge Utile Satellite de Telecom - IRIS² - F/H"
 },
@@ -6708,7 +6729,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement logiciel F/H"
 },
@@ -6737,7 +6758,7 @@
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Corporate Cybersecurity & Compliance Specialist"
 },
@@ -6746,7 +6767,7 @@
 "city": "Cannes",
 "company": "Thales",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Simulateur 0g pour banc robotique de RDV en orbite – (H/F)"
 },
@@ -6774,7 +6795,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement Espion/Simulateur CAN – (H/F)"
 },
@@ -6783,7 +6804,7 @@
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "#ET22A Business Analyst - Design Integration Process (DIP) 3DEXP (m/f)"
 },
@@ -6842,7 +6863,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-09",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Conduit au Changement ERP & Industrialisation (h/f)"
 },
@@ -6852,7 +6873,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Conception d’un banc d’évaluation des fuites par canaux auxiliaires sur FPGA F/H"
 },
@@ -6862,7 +6883,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Intégration de l’Intelligence Artificielle dans la chaîne de validation des logiciels embarqués satellites – (H/F)"
 },
@@ -6871,7 +6892,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "first_seen": "2026-10-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Java developper Back-End (F/H)"
 },
@@ -6880,7 +6901,7 @@
 "city": "Cannes",
 "company": "Thales",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement Logiciel Bancs de Test & Simulateurs  – F/H"
 },
@@ -6900,7 +6921,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur pour le Développement de mécanismes spatiaux – (H/F)"
 },
@@ -6910,7 +6931,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Développeur de solutions numériques (App WEB & IA)- F/H"
 },
@@ -6938,7 +6959,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Intelligence Artificielle System – (H/F)"
 },
@@ -6947,7 +6968,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "first_seen": "2026-09-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Etudes & Développement Hardware F/H"
 },
@@ -6957,7 +6978,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Stage en Cybersécurité : Gouvernance et Conformité (H/F)"
 },
@@ -6976,7 +6997,7 @@
 "city": "Aix-en-Provence",
 "company": "Thales",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Senior Consultant Transformation digitale H/F"
 },
@@ -6995,7 +7016,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Technicien développement de supports de formation d’outils d’inspection et de mesure des instruments d’optique – (H/F)"
 },
@@ -7004,7 +7025,7 @@
 "city": "La Ciotat",
 "company": "Thales",
 "first_seen": "2026-11-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Responsable Risques et Conformité Cybersécurité (F/H)"
 },
@@ -7023,7 +7044,7 @@
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-11-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "#ET22R Ingénieur Systèmes pour l’architecture des données de Maintenance (f/h)"
 },
@@ -7043,7 +7064,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Développement d'algorithmes de détection d’évènements pour l’analyse par canaux auxiliaires F/H"
 },
@@ -7052,7 +7073,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Sécurité Système F/H"
 },
@@ -7072,7 +7093,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-08",
-"last_seen": "2026-10-21",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Développement d’estimateurs de charges mécaniques par Intelligence Artificielle (f/h)"
 },
@@ -7100,7 +7121,7 @@
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-10-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Business Analyst - TD and Maint. Eng. Solutions - Transversal Services (d/f/m)"
 },
@@ -7110,7 +7131,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développeur de Solutions Numériques Web Full Stack pour la digitalisation des activités industrielles – (H/F)"
 },
@@ -7120,7 +7141,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Informatique – Conception et déploiement d’un système informatique pour observation de satellites (H/F)"
 },
@@ -7130,7 +7151,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Automatisation des outils IT et Résilience Data Center (h/f)"
 },
@@ -7140,18 +7161,37 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Informatique, Conception et Développement Web des Interfaces web de contrôle de satellites – (H/F)"
+},
+"ats:workday:99c4783bd8": {
+"category": "data",
+"city": "Marignane",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "workday",
+"title": "#ET20R - Senior AI & Engineering Transformation Lead (h/f)"
 },
 "ats:workday:99cba0b2a9": {
 "category": "data",
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-09-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "3D PRODUCTION MANAGER for H160 Tech Data and Service Bulletin (M/F)"
+},
+"ats:workday:9baf52287e": {
+"category": "eng",
+"city": "Biot",
+"company": "Accenture",
+"contract": "Stage",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "workday",
+"title": "Développeur Front-End React / TypeScript - Interaction Humain Machine - F/H"
 },
 "ats:workday:9c8cf10213": {
 "category": "eng",
@@ -7159,7 +7199,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Technicien – Développeur Web – (H/F)"
 },
@@ -7168,7 +7208,7 @@
 "city": "Cannes",
 "company": "Thales",
 "first_seen": "2026-11-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement Logiciel Embarqué - F/H"
 },
@@ -7188,7 +7228,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Data Management des données de certification (H/F)"
 },
@@ -7197,7 +7237,7 @@
 "city": "Aix-en-Provence",
 "company": "Thales",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Data Engineer (H/F)"
 },
@@ -7217,7 +7257,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Votre profil  Stage – Intelligence Artificielle & Analyse de données – (H/F)"
 },
@@ -7237,7 +7277,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur - Intégration d’une boucle fermée de rendez-vous orbital entre un banc robotique et un banc avionique – (H/F)"
 },
@@ -7246,7 +7286,7 @@
 "city": "Vitrolles",
 "company": "Accenture",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Architecte Solution / Technique PLM F/H - Marseille"
 },
@@ -7255,7 +7295,7 @@
 "city": "Vitrolles",
 "company": "Accenture",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Consultant Fonctionnel PLM/3DExperience F/H - Marseille"
 },
@@ -7283,7 +7323,7 @@
 "city": "Toulon",
 "company": "Thales",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur développeur JAVA (H/F)"
 },
@@ -7302,7 +7342,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Synthèse et vérification de propriétés fonctionnelles pour les systèmes embarqués F/H"
 },
@@ -7551,7 +7591,7 @@
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "SAP Product Manager Production (M/F)"
 },
@@ -7569,7 +7609,7 @@
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "#DigitalCampus SAP Product Manager Production (f/m)"
 },
@@ -7587,7 +7627,7 @@
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "#DIGITAL CAMPUS - Solution & Data Architect (d/f/m)"
 },
@@ -7596,7 +7636,7 @@
 "city": "Marseille",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Embedded Software: Database engineer (m/f)"
 },
@@ -7615,7 +7655,7 @@
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "#ET20R Ingénieur développement CND Aéronautique - Niveau 2 et 3 (f/h)"
 },
@@ -7634,7 +7674,7 @@
 "city": "Aix-en-Provence",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Architecte systèmes (F/H)"
 },
@@ -7688,7 +7728,7 @@
 "city": "Marseille",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "#DIGITALCAMPUS Platform Engineer (Infrastructure & Automation)"
 },
@@ -7708,7 +7748,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement FPGA sur cible VERSAL – (H/F)"
 },
@@ -7747,7 +7787,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Ingénieur(e) Développement d’application Web pour optimiser des tâches complexes  (h/f)"
 },
@@ -7757,7 +7797,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Stage en développement et industrialisation d'agents d'IA (h/f)"
 },
@@ -7766,7 +7806,7 @@
 "city": "Toulon",
 "company": "Thales",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur(e) Product Owner H/F"
 },
@@ -7776,7 +7816,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur DevOps/Cloud - F/H"
 },
@@ -7785,7 +7825,7 @@
 "city": "Cannes",
 "company": "Thales",
 "first_seen": "2026-11-04",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Architecte Solution Logiciel – Base de Données Charge Utile Telecom - IRIS² - F/H"
 },
@@ -7795,7 +7835,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Développement logiciel : ingénieur en simulation de systèmes (h/f)"
 },
@@ -7815,7 +7855,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Développement d’outils d’aide à la préparation des essais AIT - F/H"
 },
@@ -7825,7 +7865,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "UX/UI Designer - F/H"
 },
@@ -7835,7 +7875,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Intelligence artificielle Safety et contrôle des Défaillances  spatiales – (H/F)"
 },
@@ -7881,7 +7921,7 @@
 "city": "Marignane",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "PLM Business Analyst - Electrical Systems (EWIS) (M/F)"
 },
@@ -7908,7 +7948,7 @@
 "city": "Marseille",
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Airbus Protect - Architecte Cybersécurité Entreprise - (All Gender)"
 },
@@ -7918,7 +7958,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Développement d'outils d'aide à la décision environnementale (Hélicoptères) (h/f)"
 },
@@ -7927,7 +7967,7 @@
 "city": "Meyreuil",
 "company": "Thales",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Responsable Plateforme Logiciel Embarqué et Validation Système (F/H)"
 },
@@ -7936,7 +7976,7 @@
 "city": "Biot",
 "company": "Accenture",
 "first_seen": "2026-10-09",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "QA Engineer - H/F"
 },
@@ -7955,7 +7995,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Architecte Cloud GCP/S3NS (H/F)"
 },
@@ -7974,7 +8014,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-09",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 - Stage en  Développement d'application mobile (H/F)"
 },
@@ -8003,7 +8043,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Technicien – Data Analyst et Amélioration Continue – (H/F)"
 },
@@ -8041,7 +8081,7 @@
 "city": "La Ciotat",
 "company": "Thales",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Product Owner Krypton (F/H)"
 },
@@ -8051,7 +8091,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement outils à base d’IA sur programme satellite – H/F"
 },
@@ -8061,7 +8101,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Intelligence Artificielle pour la capitalisation des données d'offres- H/F"
 },
@@ -8079,7 +8119,7 @@
 "city": "La Ciotat",
 "company": "Thales",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement Logiciel Embarqué pour l'IoT (F/H)"
 },
@@ -8089,7 +8129,7 @@
 "company": "Airbus Helicopters (Logiciel / R&D)",
 "contract": "Stage",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "2027 – Assistant(e) de Projet Transformation & Performance Réseau Support Technique (h/f)"
 },
@@ -8102,6 +8142,15 @@
 "last_seen": "2026-11-04",
 "source": "workday",
 "title": "Conception et développement logiciel de simulation – (H/F)"
+},
+"ats:workday:ffcb5e00a8": {
+"category": "cybersecurite",
+"city": "Sophia Antipolis",
+"company": "Thales",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "workday",
+"title": "Ingénieur sécurité et marquage CE (H/F)"
 },
 "ats:workday:nvidialabsophia:027f270b99": {
 "category": "eng",
@@ -8287,7 +8336,7 @@
 "city": "Aix-en-Provence",
 "company": "Onepoint",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Product Owner / Product Manager Data H/F"
 },
@@ -8296,7 +8345,7 @@
 "city": "Aix-en-Provence",
 "company": "Onepoint",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Consultant en Data Management F/H"
 },
@@ -8305,7 +8354,7 @@
 "city": "Aix-en-Provence",
 "company": "Onepoint",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Architecte Data / AWS F/H"
 },
@@ -8314,7 +8363,7 @@
 "city": "Aix-en-Provence",
 "company": "Onepoint",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Architecte Cloud F/H"
 },
@@ -8341,7 +8390,7 @@
 "city": "Aix-en-Provence",
 "company": "Onepoint",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Consultant Cloud F/H"
 },
@@ -8350,7 +8399,7 @@
 "city": "Valbonne",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement Java DevOps - Systèmes Critiques (F/H)"
 },
@@ -8368,7 +8417,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Architecte logiciel - domaine Sonar F/H"
 },
@@ -8377,7 +8426,7 @@
 "city": "Cannes",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Design Authority Solution Logiciel (Logiciel embarqué / Bancs de test / Simulateurs) - F/H"
 },
@@ -8413,7 +8462,7 @@
 "city": "Toulon",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur(e) développement fullstack Angular H/F"
 },
@@ -8422,7 +8471,7 @@
 "city": "Valbonne",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Validation Vérification logiciel - Systèmes Critiques (FH)"
 },
@@ -8431,7 +8480,7 @@
 "city": "Valbonne",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement Java - Systèmes Critiques (F/H)"
 },
@@ -8458,7 +8507,7 @@
 "city": "Sophia Antipolis",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Architecte solutions logicielles pour plateformes Hardware  H/F"
 },
@@ -8548,7 +8597,7 @@
 "city": "Aix-en-Provence",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Senior consultant Data et IA H/F"
 },
@@ -8575,7 +8624,7 @@
 "city": "Valbonne",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Développement Confirmé Java - Systèmes Critiques (F/H)"
 },
@@ -8602,7 +8651,7 @@
 "city": "La Ciotat",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "DevSecOps Engineer confirmé (H/F)"
 },
@@ -8639,7 +8688,7 @@
 "city": "Cannes",
 "company": "Thales",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "workday",
 "title": "Ingénieur Electronique vidéo pour Chaînes Optroniques"
 },
@@ -8696,7 +8745,7 @@
 "company": "DGA Tech France Travail",
 "contract": "CDD",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 45000 Euros à 56000 Euros",
 "source": "francetravail",
 "title": "CHEF(FE) DE PROJET DATA GOUVERNANCE"
@@ -8707,7 +8756,7 @@
 "company": "DGA Tech France Travail",
 "contract": "CDD",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 45000 Euros à 56000 Euros",
 "source": "francetravail",
 "title": "CHEF(FE) DE PROJET QUALITÉ DES DONNÉES"
@@ -8718,7 +8767,7 @@
 "company": "RH Développement",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 38000 Euros à 45000 Euros",
 "source": "francetravail",
 "title": "DEVELOPPEUR BACK-END"
@@ -8740,7 +8789,7 @@
 "company": "RH Développement",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 40000 Euros à 55000 Euros",
 "source": "francetravail",
 "title": "DÉVELOPPEUR(SE) EXPÉRIMENTÉ(E)"
@@ -8751,7 +8800,7 @@
 "company": "RH Développement",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 40000 Euros à 65000 Euros",
 "source": "francetravail",
 "title": "Développeur PHP Full-stack Symfony Vue.JS"
@@ -8794,7 +8843,7 @@
 "company": "Achat Solutions",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 40000 Euros à 50000 Euros",
 "source": "francetravail",
 "title": "INGÉNIEUR QA AUTOMATISATION"
@@ -8816,7 +8865,7 @@
 "company": "DSI SOLUTIONS",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "francetravail",
 "title": "Chargé de Projet ERP Flux Interventions"
 },
@@ -8826,7 +8875,7 @@
 "company": "Signe+",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 50000 Euros à 80000 Euros",
 "source": "francetravail",
 "title": "Consultant fonctionnel SAP FI/CO"
@@ -8837,7 +8886,7 @@
 "company": "Signe+",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 50000 Euros à 80000 Euros",
 "source": "francetravail",
 "title": "Consultant fonctionnel SAP SD/MM"
@@ -8848,7 +8897,7 @@
 "company": "Signe+",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 40000 Euros à 55000 Euros",
 "source": "francetravail",
 "title": "Ingénieur développement embarqué"
@@ -8859,7 +8908,7 @@
 "company": "SIGNE +",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 45000 Euros à 80000 Euros",
 "source": "francetravail",
 "title": "Consultant Technique ERP IFS RH Confirmé"
@@ -8870,7 +8919,7 @@
 "company": "Signe+",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 85000 Euros à 85000 Euros",
 "source": "francetravail",
 "title": "Architecte solutions IA"
@@ -8881,7 +8930,7 @@
 "company": "Akanea",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "francetravail",
 "title": "DÉVELOPPEUR"
 },
@@ -8891,7 +8940,7 @@
 "company": "Edl",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "francetravail",
 "title": "Consultant fonctionnel BackOffice"
 },
@@ -8901,7 +8950,7 @@
 "company": "DSI INFRASTRUCTURE",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "Annuel de 45000 Euros à 45000 Euros",
 "source": "francetravail",
 "title": "Chef de Projet Informatique Operations"
@@ -8912,7 +8961,7 @@
 "company": "FLYING EYE",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "francetravail",
 "title": "Administrateur Infrastructure & Sécurité"
 },
@@ -8922,7 +8971,7 @@
 "company": "INFORCA",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "francetravail",
 "title": "Développeur Java Back-End"
 },
@@ -8944,7 +8993,7 @@
 "company": "La Sécurité Sociale",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "40000–48000 EUR",
 "source": "wttj",
 "title": "PRODUCT OWNER / REFERENT·E FONCTIONNEL·LE / BUSINESS ANALYST"
@@ -8967,7 +9016,7 @@
 "company": "FERCHAU France",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "35000–45000 EUR",
 "source": "wttj",
@@ -8979,7 +9028,7 @@
 "company": "FASST",
 "contract": "CDI",
 "first_seen": "2026-10-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "full remote",
 "salary": "48000–60000 EUR",
 "source": "wttj",
@@ -9001,7 +9050,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-09-16",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur Java Angular (H/F)"
 },
@@ -9011,7 +9060,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Testeur Robot Framework (H/F)"
 },
@@ -9021,7 +9070,7 @@
 "company": "FERCHAU France",
 "contract": "Stage",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Étude des outils de design des panneaux de contrôle pour cockpits hélicoptères – UI/IHM (H/F)"
@@ -9044,7 +9093,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "38000–50000 EUR",
 "source": "wttj",
@@ -9056,7 +9105,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Cybersécurité (H/F)"
 },
@@ -9066,7 +9115,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "40000–50000 EUR",
 "source": "wttj",
@@ -9112,7 +9161,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Lead Tech Talend H/F/NB Aix en Provence"
@@ -9123,7 +9172,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Chef de Projet Technique Data H/F/NB (13 et 06)"
@@ -9134,7 +9183,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Data Analyst expérimenté (H/F/NB)"
@@ -9145,7 +9194,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Expert Data - Architectures Cloud & On premise  (H/F/NB)"
@@ -9156,7 +9205,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Career Manager Data H/F/NB Aix en Provence"
@@ -9167,7 +9216,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Lead Tech Talend H/F/NB"
@@ -9202,7 +9251,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Chef de projet Data gouvernance H/F/NB Marseille"
@@ -9213,7 +9262,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "37000–48000 EUR",
 "source": "wttj",
@@ -9225,7 +9274,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Leader Technique DATA – Informatica IDMC - DCoE France"
@@ -9236,7 +9285,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Consultant Power BI confirmé - Sud-Est H/F/NB (Aix-en-Provence & Sophia-Antipolis)"
@@ -9247,7 +9296,7 @@
 "company": "Walter Learning",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "80000 EUR",
 "source": "wttj",
@@ -9281,7 +9330,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "38000–48000 EUR",
 "source": "wttj",
@@ -9293,7 +9342,7 @@
 "company": "Tilak Healthcare",
 "contract": "CDI",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "full remote",
 "salary": "45000–55000 EUR",
 "source": "wttj",
@@ -9328,7 +9377,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "38000–48000 EUR",
 "source": "wttj",
@@ -9351,7 +9400,7 @@
 "company": "Roads",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "full remote",
 "salary": "40000–50000 EUR",
 "source": "wttj",
@@ -9375,7 +9424,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Administrateur systèmes et réseaux (H/F)"
 },
@@ -9405,7 +9454,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Concepteur IHM Systèmes embarqués H/F"
 },
@@ -9437,7 +9486,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "DevSecOps Engineer – Customer Success - H/F"
 },
@@ -9459,7 +9508,7 @@
 "company": "CS",
 "contract": "Stage",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur/e d'étude développeur/se Simulateurs d’entraînement tactique trajectoires kml • joystick • unreal engine"
 },
@@ -9469,7 +9518,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "40000–45000 EUR",
 "source": "wttj",
@@ -9481,7 +9530,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "45000–55000 EUR",
 "source": "wttj",
@@ -9504,7 +9553,7 @@
 "company": "SETEC",
 "contract": "Stage",
 "first_seen": "2026-10-12",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Ingénieur(e) Projet Systèmes Embarqués et Mobilités Intelligentes"
@@ -9558,7 +9607,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Modern data architect cloud / On premise (H/F/NB)"
@@ -9602,7 +9651,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Architecte Logiciel H/F"
 },
@@ -9624,7 +9673,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Tech Lead Java Fullstack - Assurance de personnes  (H/F)"
 },
@@ -9634,7 +9683,7 @@
 "company": "EPSA",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Consultant technique en financement de l'innovation AIX H/F"
 },
@@ -9741,7 +9790,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Architecte Logiciel Drones C++ (H/F)"
 },
@@ -9782,7 +9831,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Chef(fe) de projet technique - Infrastructure & Cloud - Aix-en-Provence"
@@ -9817,7 +9866,7 @@
 "company": "Free Pro",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "48000–63000 EUR",
 "source": "wttj",
 "title": "Lead Developer Back-End"
@@ -9828,7 +9877,7 @@
 "company": "Free Pro",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "38000–50000 EUR",
 "source": "wttj",
 "title": "Développeur Front-End"
@@ -9839,7 +9888,7 @@
 "company": "Free Pro",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "42000–55000 EUR",
 "source": "wttj",
 "title": "Développeur Back-End"
@@ -9850,7 +9899,7 @@
 "company": "Free Pro",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "26000–30000 EUR",
 "source": "wttj",
 "title": "Technicien Support Systèmes ou Réseaux"
@@ -9861,7 +9910,7 @@
 "company": "Free Pro",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "50000–55000 EUR",
 "source": "wttj",
 "title": "Référent Technique SRE (Site Reliability Engineer)/ Cloud Linux"
@@ -9872,7 +9921,7 @@
 "company": "Free Pro",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "40000–55000 EUR",
 "source": "wttj",
 "title": "Développeur Full stack"
@@ -9883,7 +9932,7 @@
 "company": "Thalasseo",
 "contract": "CDI",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "40000–45000 EUR",
 "source": "wttj",
@@ -9895,7 +9944,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Software Solutions Engineer – Java Fullstack / React (F/H)"
 },
@@ -9925,7 +9974,7 @@
 "company": "Docaposte",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Site Reliability Engineer - SRE F/H"
 },
@@ -9945,7 +9994,7 @@
 "company": "Quantilia",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "Financial Data Analyst - H/F"
@@ -9956,7 +10005,7 @@
 "company": "Quantilia",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "IA & Data Engineering"
@@ -9979,7 +10028,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "DevOps/SRE (H/F)"
 },
@@ -9989,7 +10038,7 @@
 "company": "Quantilia",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "Développeur Backend / Fullstack"
@@ -10000,7 +10049,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-10-19",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "QA Automatisation (H/F) - eXalt Azur"
@@ -10011,7 +10060,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "40000–50000 EUR",
 "source": "wttj",
@@ -10063,7 +10112,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Expert cybersécurité (H/F)"
 },
@@ -10073,7 +10122,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de projet IT (H/F)"
 },
@@ -10083,7 +10132,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Data Engineer GCP (H/F)"
 },
@@ -10139,7 +10188,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Business Analyst IT  (H/F)"
 },
@@ -10172,7 +10221,7 @@
 "company": "FERCHAU France",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "36000–50000 EUR",
 "source": "wttj",
 "title": "Ingénieur Développement Simulations (m/f/d)"
@@ -10227,7 +10276,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Ingénieur(e) EPP / EDR - Cybersécurité - Aix en Provence"
@@ -10248,11 +10297,11 @@
 "company": "The Product Crew",
 "contract": "Freelance",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-09",
+"last_seen": "2026-11-11",
 "remote": "full remote",
-"salary": "60000–120000 EUR",
+"salary": "100000–200000 EUR",
 "source": "wttj",
-"title": "Tech / Product Recruiter Indépendant(e) - Engineering, AI, Product"
+"title": "Tech Recruiter - Engineering, AI, Product"
 },
 "wttj:3931985": {
 "category": "qa",
@@ -10280,11 +10329,11 @@
 "company": "The Product Crew",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-09-05",
+"last_seen": "2026-11-11",
 "remote": "full remote",
 "salary": "60000–100000 EUR",
 "source": "wttj",
-"title": "TPC Freelance - Tech / Product Recruiter & Business Developer - H/F [Full Remote Possible]"
+"title": "Tech Recruiter - TPC Freelance"
 },
 "wttj:3934682": {
 "category": "devops",
@@ -10312,7 +10361,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Développement Confirmé Node.js Fullstack / React (F/H)"
 },
@@ -10374,7 +10423,7 @@
 "company": "mc2i",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Consultant(e) en transformation digitale - Industrie Toulon H/F"
@@ -10385,7 +10434,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Site Reliability Engineer (F/H)"
 },
@@ -10405,7 +10454,7 @@
 "company": "Wyll",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "40000–60000 EUR",
 "source": "wttj",
@@ -10417,7 +10466,7 @@
 "company": "Wyll",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "40000–60000 EUR",
 "source": "wttj",
@@ -10527,7 +10576,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "36000–47000 EUR",
 "source": "wttj",
@@ -10539,7 +10588,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Tech Lead - Java Angular - Développement Régional - Aix-en-provence"
@@ -10561,7 +10610,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Développeur C++ Temps Réel H/F"
@@ -10572,7 +10621,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–41000 EUR",
 "source": "wttj",
@@ -10606,7 +10655,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–41000 EUR",
 "source": "wttj",
@@ -10630,7 +10679,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "42000–50000 EUR",
 "source": "wttj",
@@ -10642,7 +10691,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "41000–47000 EUR",
 "source": "wttj",
@@ -10654,7 +10703,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "45000–50000 EUR",
 "source": "wttj",
@@ -10666,7 +10715,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–45000 EUR",
 "source": "wttj",
@@ -10678,7 +10727,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "45000–50000 EUR",
 "source": "wttj",
@@ -10690,7 +10739,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "42000–50000 EUR",
 "source": "wttj",
@@ -10702,7 +10751,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–52000 EUR",
 "source": "wttj",
@@ -10714,7 +10763,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–45000 EUR",
 "source": "wttj",
@@ -10790,7 +10839,7 @@
 "company": "Hiphen",
 "contract": "CDD",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "30000–35000 EUR",
 "source": "wttj",
@@ -10857,7 +10906,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–45000 EUR",
 "source": "wttj",
@@ -10879,7 +10928,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "35000–48000 EUR",
 "source": "wttj",
@@ -10903,7 +10952,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "36000–48000 EUR",
 "source": "wttj",
@@ -10915,7 +10964,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "35000–45000 EUR",
 "source": "wttj",
@@ -10927,7 +10976,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–52000 EUR",
 "source": "wttj",
@@ -10939,7 +10988,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Technical Product Owner (F/H)"
 },
@@ -11016,7 +11065,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur.e Développement Produit Logiciel (H/F)"
 },
@@ -11132,7 +11181,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Ingénieur DevOps H/F"
@@ -11153,7 +11202,7 @@
 "company": "Free Pro",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "60000–70000 EUR",
 "source": "wttj",
 "title": "Ingénieur Cybersécurité"
@@ -11184,7 +11233,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Intégrateur Solutions Cyber - H/F"
 },
@@ -11205,7 +11254,7 @@
 "company": "CS",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur/se Logiciel C++ - Défense & Sécurité - Aix en Provence"
 },
@@ -11215,7 +11264,7 @@
 "company": "CS",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur/se Logiciel C++/Qt - Défense & Sécurité - Aix en Provence"
 },
@@ -11225,7 +11274,7 @@
 "company": "CS",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur/se Logiciel C++ Senior - Défense & Sécurité - Aix en Provence"
 },
@@ -11246,7 +11295,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Leader technique - Java - Services Publics - Aix en Provence"
@@ -11257,7 +11306,7 @@
 "company": "mc2i",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Consultant(e) Transformation Digitale - Naval & Défense - Toulon  H/F"
@@ -11278,7 +11327,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de projet SI/ (H/F) - Sécurité Financière"
 },
@@ -11288,7 +11337,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Développeur Java H/F"
@@ -11299,7 +11348,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–55000 EUR",
 "source": "wttj",
@@ -11367,7 +11416,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-16",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Responsable activité Ingenierie IHM Systèmes embarqués H/F"
 },
@@ -11397,7 +11446,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "DevSecOps Iaas Paas - H/F"
 },
@@ -11407,7 +11456,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Leader technique expérimenté/e - Spring Boot & Angular - Aeroline - Aix-en-provence"
@@ -11450,7 +11499,7 @@
 "company": "Septeo",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Data Engineer Sénior H/F"
 },
@@ -11484,7 +11533,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–48000 EUR",
 "source": "wttj",
@@ -11539,7 +11588,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur DevOps - F/H"
 },
@@ -11624,7 +11673,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "DevSecOps Engineer - H/F"
 },
@@ -11686,7 +11735,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chargé.e d'études systèmes embarqués Armes-sous-marines et drones (H/F)"
 },
@@ -11718,7 +11767,7 @@
 "company": "La Sécurité Sociale",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "45000–55000 EUR",
 "source": "wttj",
@@ -11762,7 +11811,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Responsable Système Cloud Infrastructures Numériques Embarquées H/F"
 },
@@ -11782,7 +11831,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "DEVOPS CI & Assemblage – Intégrateur Logiciel H/F"
 },
@@ -11792,7 +11841,7 @@
 "company": "Thalasseo",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "SEO/GEO & Growth Manager"
@@ -11837,7 +11886,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-11-01",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Senior Consultant Cloud / FinOps H/F"
 },
@@ -11867,7 +11916,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Responsable Intégration Vérification Validation Infrastructure Informatique Embarqué H/F"
 },
@@ -11919,7 +11968,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Business Analyst Bancaire Senior (H/F)"
 },
@@ -11929,7 +11978,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Testeur / QA Automaticien (H/F)"
 },
@@ -11983,7 +12032,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Responsable du département Ingénierie Développement Logiciel - H/F"
 },
@@ -12046,7 +12095,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "Ingénieur Systèmes & Équipements Électroniques H/F"
@@ -12057,7 +12106,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "Ingénieur électronique d’essais H/F"
@@ -12068,7 +12117,7 @@
 "company": "Docoon",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "50000–58000 EUR",
 "source": "wttj",
@@ -12102,7 +12151,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "AI engineer (H/F/NB)"
@@ -12113,7 +12162,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Data Trust & AI Governance Manager (H/F/NB)"
@@ -12124,7 +12173,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Software Engineer (H/F/NB)"
@@ -12156,7 +12205,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Architecte système CMS H/F"
 },
@@ -12176,7 +12225,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de Projet SI (F/H)"
 },
@@ -12186,7 +12235,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Release Manager Logiciel – AI Engineering Solutions (F/H)"
 },
@@ -12206,7 +12255,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Responsable Technique et Concepteur Hardware Electronique d’acquisition F/H"
 },
@@ -12226,7 +12275,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur logiciel simulation H/F"
 },
@@ -12311,7 +12360,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDD",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Systèmes Embarqués Lutte Air Surface à logiciel prépondérant H/F"
 },
@@ -12332,7 +12381,7 @@
 "company": "Trainsweateat",
 "contract": "Stage",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Chef de Projet Web SEO"
@@ -12416,7 +12465,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "37000–45000 EUR",
 "source": "wttj",
@@ -12528,7 +12577,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Architecte transverse - Cybersécurité - Aix-en-Provence"
@@ -12559,7 +12608,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur(e) initié(e) systèmes embarqués Armes (H/F)"
 },
@@ -12580,7 +12629,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-09-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de Projet SI (F/H) - Lead et Opportunités"
 },
@@ -12600,7 +12649,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Tech Lead Mainframe (H/F)"
 },
@@ -12631,7 +12680,7 @@
 "company": "Hello Pomelo",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "Product Builder - Expérience Digitale (DXP)"
@@ -12689,7 +12738,7 @@
 "company": "Volta Medical",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "80000–90000 EUR",
 "source": "wttj",
@@ -12764,7 +12813,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Consultant(e) Sécurité des SI - GRC - Cybersécurité - Aix-En-Provence"
 },
@@ -12805,7 +12854,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Architecte Système d'Information INDS( H/F)"
 },
@@ -12844,13 +12893,23 @@
 "source": "wttj",
 "title": "RESPONSABLE D'EQUIPE - DEVELOPPEMENT INFORMATIQUE (F/H)"
 },
+"wttj:4219272": {
+"category": "devops",
+"city": "Valbonne",
+"company": "Meritis",
+"contract": "CDI",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "wttj",
+"title": "Devops (H/F)"
+},
 "wttj:4219278": {
 "category": "devops",
 "city": "Valbonne",
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-09-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur SRE/Observabilité (H/F)"
 },
@@ -12949,7 +13008,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de projet SI - Relais Squad Eurotitres F/H"
 },
@@ -13171,7 +13230,7 @@
 "company": "Solinum",
 "contract": "CDI",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "47000–50000 EUR",
 "source": "wttj",
@@ -13300,7 +13359,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur SRE (F/H)"
 },
@@ -13574,7 +13633,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur C++ (H/F)"
 },
@@ -13698,7 +13757,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Développement C++ - Systèmes Critiques (H/F)"
 },
@@ -13980,7 +14039,7 @@
 "company": "Voyage Privé",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "full remote",
 "source": "wttj",
 "title": "Data Analyst (Data Partner) – m/f/d"
@@ -14033,7 +14092,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Analyste Gestion des Vulnérabilités - Cybersécurité - Aix en Provence"
@@ -14199,7 +14258,7 @@
 "company": "Rofim",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Chef de Projet — Déploiement Interopérabilité"
@@ -14601,7 +14660,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-09-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Tech Lead Angular/Java (H/F)"
 },
@@ -14611,7 +14670,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-09-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur iOS (F/H)"
 },
@@ -14632,7 +14691,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Ingénieur(e) DevOps - Digital Platform Services - Biot"
@@ -14683,7 +14742,7 @@
 "company": "Accenture France",
 "contract": "CDI",
 "first_seen": "2026-09-11",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "QA Engineer - H/F"
 },
@@ -14735,7 +14794,7 @@
 "company": "Keyrus",
 "contract": "CDI",
 "first_seen": "2026-09-12",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Data Engineer Databricks (H/F/NB)"
@@ -14758,7 +14817,7 @@
 "company": "Eskimoz",
 "contract": "CDI",
 "first_seen": "2026-09-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "30000–42000 EUR",
 "source": "wttj",
@@ -14770,7 +14829,7 @@
 "company": "Eskimoz",
 "contract": "CDI",
 "first_seen": "2026-09-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "44000–55000 EUR",
 "source": "wttj",
@@ -14867,7 +14926,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-12",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur DevSecOps - H/F"
 },
@@ -14888,7 +14947,7 @@
 "company": "Eskimoz",
 "contract": "CDI",
 "first_seen": "2026-09-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "42000–52000 EUR",
 "source": "wttj",
@@ -14910,7 +14969,7 @@
 "company": "Eskimoz",
 "contract": "CDI",
 "first_seen": "2026-09-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "30000–40000 EUR",
 "source": "wttj",
@@ -14922,7 +14981,7 @@
 "company": "Eskimoz",
 "contract": "CDI",
 "first_seen": "2026-09-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "32000–44000 EUR",
 "source": "wttj",
@@ -15134,7 +15193,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-16",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Ingénieur(e) DevOps - Aix-en-Provence"
@@ -15167,7 +15226,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-09-16",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "DevOps Engineer - Aix-en-Provence"
@@ -15211,7 +15270,7 @@
 "company": "CS",
 "contract": "CDI",
 "first_seen": "2026-09-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Responsable Avant-vente Liaisons de données tactiques - Défense et Sécurité - Aix en Provence"
 },
@@ -15221,7 +15280,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur  logiciel - H/F"
 },
@@ -15284,7 +15343,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Techlead API/Java - ESPACE CLIENT PARTICULIER &amp; EI"
 },
@@ -15305,7 +15364,7 @@
 "company": "SMG swiss marketplace group (ex Ricardo)",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Data Engineer | Hybrid work"
@@ -15337,7 +15396,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-09-18",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Tech Lead Java / Angular (H/F)"
@@ -15520,7 +15579,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-21",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Chef de Projet SI Workplace"
@@ -15553,7 +15612,7 @@
 "company": "Cba Informatique",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "QA Manager (H/F)"
 },
@@ -15616,7 +15675,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Architecte solution - H/F"
 },
@@ -15626,7 +15685,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "38000–40000 EUR",
 "source": "wttj",
@@ -15649,7 +15708,7 @@
 "company": "Viaxoft",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "40000–56000 EUR",
 "source": "wttj",
@@ -15661,7 +15720,7 @@
 "company": "Viaxoft",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "48000–56000 EUR",
 "source": "wttj",
@@ -15673,7 +15732,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Développeur front end Angular"
@@ -15695,7 +15754,7 @@
 "company": "Hubcycle",
 "contract": "CDI",
 "first_seen": "2026-09-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "full remote",
 "source": "wttj",
 "title": "Nutraceuticals Senior Product Manager"
@@ -15716,7 +15775,7 @@
 "company": "PONANT EXPLORATIONS GROUP",
 "contract": "CDI",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Administrateur Système et Réseau H/F"
@@ -15748,7 +15807,7 @@
 "company": "AGPM",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Ingénieur cybersécurité GRC H/F"
@@ -15802,7 +15861,7 @@
 "company": "LIVECAMPUS",
 "contract": "Alternance",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "DEVELOPPEUR FULL STACK"
@@ -15835,7 +15894,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur - H/F"
 },
@@ -15845,7 +15904,7 @@
 "company": "Commandement de la Cyberdéfense (COMCYBER)",
 "contract": "CDD",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Administrateur cybersécurité [Militaire]"
@@ -15908,7 +15967,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Responsable de la Sécurité des Systèmes d'Information (RSSI) H/F"
 },
@@ -15951,7 +16010,7 @@
 "company": "Voyage Privé",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Senior Analytics Engineer - m/f/d"
@@ -15983,7 +16042,7 @@
 "company": "Docaposte",
 "contract": "CDI",
 "first_seen": "2026-09-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur de Production/Site Reliability Engineering (SRE) F/H"
 },
@@ -16013,7 +16072,7 @@
 "company": "PONANT EXPLORATIONS GROUP",
 "contract": "CDI",
 "first_seen": "2026-09-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "45000–50000 EUR",
 "source": "wttj",
@@ -16069,7 +16128,7 @@
 "company": "CS",
 "contract": "Stage",
 "first_seen": "2026-10-01",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur / se C++/QT - IA - Implémentation d'un chatbot dans le produit BOREADES - Défense & Sécurité - Toulon"
 },
@@ -16079,7 +16138,7 @@
 "company": "CS",
 "contract": "Stage",
 "first_seen": "2026-10-01",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur/ se C++ Qt - Mise en place de fonctionnalités dans le produit BOREADES - Défense & Sécurité - Toulon"
 },
@@ -16195,7 +16254,7 @@
 "company": "CS",
 "contract": "Stage",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur(e) d'étude développeur - Liaison de données tactiques - Logiciel d’extraction de trames LDT - Défense & Sécurité - Aix en Provence"
 },
@@ -16215,7 +16274,7 @@
 "company": "CS",
 "contract": "Stage",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur(e) d'étude développeur - Liaison de données tactiques - Passerelle d'interconnexion de simulateurs - Défense & Sécurité - Aix en Provence"
 },
@@ -16225,7 +16284,7 @@
 "company": "CS",
 "contract": "Stage",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur(e) d'étude développeur - Liaison de données tactiques - Logiciel de conception de Réseau L16 - Défense & Sécurité - Aix en Provence"
 },
@@ -16235,7 +16294,7 @@
 "company": "CS",
 "contract": "Stage",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Conception et développement d'une passerelle DDS-Web en C++ et d'une bibliothèque JavaScript associée - Défense & Sécurité - Aix en Provence"
 },
@@ -16256,7 +16315,7 @@
 "company": "Sopra Steria",
 "contract": "Stage",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développement d’évolutions dans un Mantis customisé - Défense & Sécurité - Aix-en-Provence"
 },
@@ -16266,7 +16325,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Data Governor des données Opérationnelles - assistant - H/F"
 },
@@ -16276,7 +16335,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Système Guerre électronique (H/F)"
 },
@@ -16286,7 +16345,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Developpeur DevSecOps Programme Sous-Marin - H/F"
 },
@@ -16296,7 +16355,7 @@
 "company": "Sogelink",
 "contract": "CDI",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Software Engineer Back-end Java f/h"
 },
@@ -16348,11 +16407,11 @@
 "company": "Boond",
 "contract": "CDI",
 "first_seen": "2026-10-02",
-"last_seen": "2026-11-01",
+"last_seen": "2026-11-11",
 "remote": "full remote",
 "salary": "60000–75000 EUR",
 "source": "wttj",
-"title": "Senior Data Analytics Engineer / BI - 100% remote"
+"title": "Senior Data Analytics Engineer - 100% remote"
 },
 "wttj:4310860": {
 "category": "data",
@@ -16391,7 +16450,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-10-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–48000 EUR",
 "source": "wttj",
@@ -16446,7 +16505,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Concepteur logiciel  Scrum master  Programme Sous-Marin - H/F"
 },
@@ -16666,7 +16725,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Product Owner KMS (F/H)"
 },
@@ -16686,7 +16745,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur genie logiciel & IA - plateforme d'agents - H/F"
 },
@@ -16716,7 +16775,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Business Analyst - MCO des Navires - H/F"
 },
@@ -16726,7 +16785,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Data & IA - Dashboards intelligents d'aide à la décision - H/F"
 },
@@ -16736,7 +16795,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur DevOps - Kubernetes - H/F"
 },
@@ -16756,7 +16815,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur(e) Systèmes Embarqués Armes et Conduite des Armes (H/F)"
 },
@@ -16776,7 +16835,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Cyber - Fuzzing & protocoles maritimes - H/F"
 },
@@ -16796,7 +16855,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Cyber - Détection d'anomalies réseau - H/F"
 },
@@ -16826,7 +16885,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Développeur Software - H/F"
 },
@@ -16836,7 +16895,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-10-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "48000–55000 EUR",
 "source": "wttj",
@@ -16922,7 +16981,7 @@
 "company": "HIGHCO",
 "contract": "CDI",
 "first_seen": "2026-10-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "Administrateur de Bases De Données F/H"
@@ -16965,7 +17024,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Assistant Product Owner - F/H"
 },
@@ -16975,7 +17034,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur(e) CI/CD & Génération Automatique de Tests par Agents IA H/F"
 },
@@ -16985,7 +17044,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de projet expérimenté développement logiciel (H/F)"
 },
@@ -17015,7 +17074,7 @@
 "company": "Septeo",
 "contract": "CDI",
 "first_seen": "2026-10-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Backend & Data Engineer IA H/F"
 },
@@ -17093,7 +17152,7 @@
 "company": "Isahit - Compte de tests",
 "contract": "CDI",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "3500–5000 EUR",
 "source": "wttj",
@@ -17105,7 +17164,7 @@
 "company": "NXO France",
 "contract": "CDI",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "55000–60000 EUR",
 "source": "wttj",
@@ -17117,7 +17176,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Logiciel ou DevOps – Tests de robustesse (Fuzz & Chaos Testing) H/F"
 },
@@ -17127,7 +17186,7 @@
 "company": "Voyage Privé",
 "contract": "CDI",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Senior Devops Engineer / SRE - Full Remote"
@@ -17150,7 +17209,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-10-13",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Business Analyst H/F"
@@ -17173,7 +17232,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "80000–100000 EUR",
 "source": "wttj",
@@ -17185,7 +17244,7 @@
 "company": "RTE, Le réseau de transport d'électricité",
 "contract": "Stage",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur d'outils informatiques et numériques F/H"
 },
@@ -17195,7 +17254,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur développement Outils RF F/H"
 },
@@ -17225,7 +17284,7 @@
 "company": "Boond",
 "contract": "CDI",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "full remote",
 "salary": "55000–70000 EUR",
 "source": "wttj",
@@ -17237,7 +17296,7 @@
 "company": "CVE",
 "contract": "Stage",
 "first_seen": "2026-10-14",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Data, Performance & Reporting Exploitation PV – H/F"
 },
@@ -17247,7 +17306,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Administratrice / Administrateur Systèmes & Réseaux"
 },
@@ -17257,7 +17316,7 @@
 "company": "Orpi",
 "contract": "CDI",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "30000–35000 EUR",
 "source": "wttj",
@@ -17290,7 +17349,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur en intelligence artificielle F/H"
 },
@@ -17311,7 +17370,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Intégrateur Données CAO contrôle commande N4 H/F"
@@ -17322,7 +17381,7 @@
 "company": "Docoon",
 "contract": "CDI",
 "first_seen": "2026-10-15",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "40000–55000 EUR",
 "source": "wttj",
@@ -17356,7 +17415,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Responsable de l’équipe Gestion de Configuration et Data-management F/H"
 },
@@ -17366,7 +17425,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développement d'un système à logiciel prépondérant dans le domaine Optronique H/F"
 },
@@ -17417,7 +17476,7 @@
 "company": "Accenture France",
 "contract": "CDI",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "Consultant senior en systèmes avioniques et embarqués F/H"
@@ -17428,7 +17487,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeuse/Développeur Java"
 },
@@ -17438,7 +17497,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieure / Ingénieur QA"
 },
@@ -17448,7 +17507,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeuse/Développeur C++"
 },
@@ -17458,7 +17517,7 @@
 "company": "La Sécurité Sociale",
 "contract": "CDI",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "50000–62000 EUR",
 "source": "wttj",
@@ -17482,7 +17541,7 @@
 "company": "Docoon",
 "contract": "CDI",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "40000–55000 EUR",
 "source": "wttj",
@@ -17494,7 +17553,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-17",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Concepteur Développeur Logiciel JAVA H/F"
 },
@@ -17514,7 +17573,7 @@
 "company": "Thales",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Account Manager Cybersécurité (H/F)"
 },
@@ -17567,7 +17626,7 @@
 "company": "Passage Du Désir",
 "contract": "CDI",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Chargé.e SEO / GEO"
@@ -17578,7 +17637,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de Projet SI (Gouvernance Data) (F/H)"
 },
@@ -17588,7 +17647,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Architecte Sécurité du Cloud - Cybersécurité - Aix-en-Provence"
@@ -17599,7 +17658,7 @@
 "company": "Etablissement français du sang",
 "contract": "CDI",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "20000–30000 EUR",
 "source": "wttj",
 "title": "Développeur de territoire don du sang :13 Bouches du Rhône F/H"
@@ -17610,7 +17669,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Lead Tech - Java & Angular - Aix-en-provence"
@@ -17621,7 +17680,7 @@
 "company": "Sopra Steria",
 "contract": "Stage",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur(e) DevOps - Toulon"
 },
@@ -17631,7 +17690,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Développeur/euse Expérimenté/e - Java & Angular - Toulon"
@@ -17642,7 +17701,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Gestion de projet pour le développement d'un projet de pilotage augmenté (IA) - H/F"
 },
@@ -17652,7 +17711,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-20",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développement d'outils d'aide à l'intégration des systèmes de combat H/F"
 },
@@ -17775,7 +17834,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Tech Lead Angular F/H"
@@ -17786,7 +17845,7 @@
 "company": "CS",
 "contract": "Stage",
 "first_seen": "2026-10-22",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développement d’un agent IA pour génération de modèles métiers - Défense & Sécurité - Aix-en-Provence"
 },
@@ -17807,7 +17866,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur DevSecOps pour les systèmes de navigation - H/F"
 },
@@ -17817,7 +17876,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur DevOps Expérimenté (F/H)"
 },
@@ -17847,7 +17906,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Expert en sécurité des développements mobile et Web (F/H)"
 },
@@ -17879,7 +17938,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingenieur de développement F/H"
 },
@@ -17909,7 +17968,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Architecte Logiciel Drones (H/F)"
 },
@@ -17919,7 +17978,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Administrateur système (H/F)"
 },
@@ -17929,7 +17988,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur.e Développement logiciel Back-end (H/F)"
 },
@@ -17939,7 +17998,7 @@
 "company": "Crédit Agricole",
 "contract": "CDI",
 "first_seen": "2026-10-23",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Architecte Solution IT Sénior H/F"
@@ -17950,7 +18009,7 @@
 "company": "Tiime",
 "contract": "CDI",
 "first_seen": "2026-10-24",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "full remote",
 "source": "wttj",
 "title": "Analytics Engineer - Full Remote (F/H)"
@@ -17961,7 +18020,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-10-24",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Business Analyst (F/H) - BANCARISATION ET TENUE DE COMPTE MYSYS (F/H)"
 },
@@ -17971,7 +18030,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-10-24",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de projet SI F/H - DISTRIBUTION PARTS SOCIALES ET TITRES"
 },
@@ -18003,7 +18062,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-10-24",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Architecte Cloud - Digital Platform Services - Biot"
@@ -18014,7 +18073,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-10-24",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Développeur/euse Expérimenté/e - Java & Angular - Sophia Antipolis"
@@ -18025,7 +18084,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-10-24",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Business Analyst - Aix-en-Provence"
@@ -18046,7 +18105,7 @@
 "company": "SMG swiss marketplace group (ex Ricardo)",
 "contract": "CDI",
 "first_seen": "2026-10-25",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Senior Software Engineer — Mobile Focus"
 },
@@ -18056,7 +18115,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "Stage",
 "first_seen": "2026-10-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur Solutions IA &amp; Workflows (F/H)"
 },
@@ -18066,7 +18125,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "Stage",
 "first_seen": "2026-10-26",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Data Scientist F/H - AIX-EN-PROVENCE"
 },
@@ -18076,7 +18135,7 @@
 "company": "The Adecco Group",
 "contract": "CDI",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Technicien Support N1 H/F"
@@ -18087,7 +18146,7 @@
 "company": "VINCI Energies en France",
 "contract": "CDI",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "DevOps senior F/H"
 },
@@ -18097,7 +18156,7 @@
 "company": "Sopra Steria",
 "contract": "Stage",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Développeur/se Java - Biot"
@@ -18108,7 +18167,7 @@
 "company": "Sopra Steria",
 "contract": "Stage",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur/se d'applications de simulation C++/Qt - Défense & Sécurité - Toulon"
 },
@@ -18118,7 +18177,7 @@
 "company": "Sopra Steria",
 "contract": "Stage",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Consultant(e) fonctionnel(le) Oracle - Aix-en-Provence"
 },
@@ -18128,7 +18187,7 @@
 "company": "Sopra Steria",
 "contract": "Stage",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur/se .NET - BL Région - Aix-en-Provence"
 },
@@ -18138,7 +18197,7 @@
 "company": "Sopra Steria",
 "contract": "Stage",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Ingénieur(e) Data - Aéroline - Aix-en-Provence"
@@ -18149,7 +18208,7 @@
 "company": "Sopra Steria",
 "contract": "Stage",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur/se Fullstack Java/Angular - Aéroline - Toulon"
 },
@@ -18159,7 +18218,7 @@
 "company": "Sopra Steria",
 "contract": "Stage",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur/euse Java - Aix-en-Provence"
 },
@@ -18169,7 +18228,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Architecte Cybersécurité - Tech Lead - H/F"
 },
@@ -18179,7 +18238,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-27",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur.e DevSecOps (H/F)"
 },
@@ -18189,7 +18248,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Ingénieure / Ingénieur DevSecOps"
@@ -18200,7 +18259,7 @@
 "company": "La Sécurité Sociale",
 "contract": "CDD",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "2207 EUR",
 "source": "wttj",
@@ -18212,7 +18271,7 @@
 "company": "Capgemini",
 "contract": "Stage",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Consultante / Consultant fonctionnel PLM - Stage"
@@ -18223,7 +18282,7 @@
 "company": "BPCE INFOGERANCE & TECHNOLOGIES",
 "contract": "CDI",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Expert en Développement (F/H)"
@@ -18245,7 +18304,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-10-28",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de Projet SI (F/H) - Pôle Clients"
 },
@@ -18255,7 +18314,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Ingénieur/Ingénieure Physical AI"
@@ -18266,7 +18325,7 @@
 "company": "CS",
 "contract": "Stage",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur/ Développement - Défense & Sécurité - Aix-en-Provence"
 },
@@ -18298,7 +18357,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Consultant(e) Fonctionnel(le) Oracle - Solutions & Expertises - Aix-en-Provence"
@@ -18309,7 +18368,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Chef/fe de Projet - Cybersécurité - Aix-en-Provence"
@@ -18320,7 +18379,7 @@
 "company": "Etablissement français du sang",
 "contract": "CDD",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "20000–30000 EUR",
 "source": "wttj",
 "title": "CDD : Développeur de territoire don du sang :06 Alpes maritimes F/H"
@@ -18331,7 +18390,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "INGÉNIEUR CYBERSÉCURITÉ & INTELLIGENCE ARTIFICIELLE  - F/H"
 },
@@ -18341,7 +18400,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Developpement outils IA F/H"
 },
@@ -18362,7 +18421,7 @@
 "company": "MAGORA (ex Groupe Odalys)",
 "contract": "CDD",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Analyste Développement F/H- CDD Remplacement"
 },
@@ -18372,7 +18431,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Practice Leader DevSecOps - H/F"
 },
@@ -18382,7 +18441,7 @@
 "company": "Walter Learning",
 "contract": "CDI",
 "first_seen": "2026-10-29",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "50000–70000 EUR",
 "source": "wttj",
@@ -18394,7 +18453,7 @@
 "company": "CS",
 "contract": "CDD",
 "first_seen": "2026-10-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Expert/e en Liaison de Données tactiques (LDT) - Défense & Sécurité - Aix-en-Provence"
 },
@@ -18426,7 +18485,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-10-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur électronique informatique F/M"
 },
@@ -18436,7 +18495,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-30",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Concepteur logiciel embarqué Guerre des mines (H/F)"
 },
@@ -18457,7 +18516,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Architecte Logiciel - Systèmes tactiques de défense (H/F)"
@@ -18468,7 +18527,7 @@
 "company": "Ekstend Group",
 "contract": "Stage",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chargé(e) SEO H/F"
 },
@@ -18478,7 +18537,7 @@
 "company": "Sessùn",
 "contract": "CDD",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "Chef(fe) de projet informatique applicatif Retail en CDD - H/F"
@@ -18489,7 +18548,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Développeur Java - Systèmes tactiques pour les forces armées F/H"
@@ -18500,7 +18559,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Architecte systèmes de systèmes F/H"
@@ -18511,7 +18570,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "60000–70000 EUR",
 "source": "wttj",
@@ -18523,7 +18582,7 @@
 "company": "N2jsoft",
 "contract": "CDI",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Chef(fe) de projet déploiement logiciel"
@@ -18534,7 +18593,7 @@
 "company": "RTE, Le réseau de transport d'électricité",
 "contract": "Stage",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chargé de projets Intelligence Artificielle et Data F/H"
 },
@@ -18544,7 +18603,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-10-31",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Technicien analyse fonctionnelle - base de données H/F"
 },
@@ -18587,7 +18646,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-11-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Architecte Solutions logiciel Aéronautique/Défense"
 },
@@ -18597,7 +18656,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-11-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Architecte logiciel embarqué bas niveau"
 },
@@ -18607,7 +18666,7 @@
 "company": "LUMA Arles",
 "contract": "CDI",
 "first_seen": "2026-11-02",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "50000–60000 EUR",
 "source": "wttj",
@@ -18619,7 +18678,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Network & Security Engineer Senior Aix-en-Provence"
@@ -18630,7 +18689,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "Cloud DevOps Engineer Senior Sophia-Antipolis"
@@ -18641,7 +18700,7 @@
 "company": "Bleu",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Référent(e) Sécurité et Sûreté Data Center"
@@ -18672,7 +18731,7 @@
 "company": "Thales",
 "contract": "Stage",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "UX Designer F/H"
 },
@@ -18682,7 +18741,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Concepteur Logiciel Intelligence Drone Embarquée (H/F)"
 },
@@ -18692,7 +18751,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "35000–40000 EUR",
 "source": "wttj",
@@ -18704,7 +18763,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "43000–50000 EUR",
 "source": "wttj",
@@ -18716,7 +18775,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "45000–50000 EUR",
 "source": "wttj",
@@ -18728,7 +18787,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "45000–52000 EUR",
 "source": "wttj",
@@ -18740,7 +18799,7 @@
 "company": "Groupe SII",
 "contract": "CDI",
 "first_seen": "2026-11-03",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "40000–45000 EUR",
 "source": "wttj",
@@ -18752,7 +18811,7 @@
 "company": "Capgemini",
 "contract": "Stage",
 "first_seen": "2026-11-04",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Business Analyst - Stage"
@@ -18763,7 +18822,7 @@
 "company": "Solinum",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "39000–41400 EUR",
 "source": "wttj",
@@ -18785,7 +18844,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-11-04",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Concepteur OS Linux et DevSecOps H/F"
 },
@@ -18795,7 +18854,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-11-04",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Manager DevSecOps - Customer Success - H/F"
 },
@@ -18817,7 +18876,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-11-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Ingénieure / Ingénieur développement Java Full Stack confirmé"
@@ -18828,7 +18887,7 @@
 "company": "CS",
 "contract": "CDI",
 "first_seen": "2026-11-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur/e SSI-Cybersécurité - Défense & Sécurité - Aix-en-Provence"
 },
@@ -18838,7 +18897,7 @@
 "company": "Docaposte",
 "contract": "CDI",
 "first_seen": "2026-11-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur DevOps / SRE F/H"
 },
@@ -18848,7 +18907,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-11-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur/se logiciel embarqué - C++ - Aéroline - Toulon"
 },
@@ -18858,7 +18917,7 @@
 "company": "eXalt",
 "contract": "CDI",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "source": "wttj",
 "title": "PMO – Bureau d’études Électronique (H/F)"
@@ -18869,7 +18928,7 @@
 "company": "Greenerwave",
 "contract": "Stage",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "1150 EUR",
 "source": "wttj",
@@ -18881,7 +18940,7 @@
 "company": "Capgemini",
 "contract": "CDI",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Data Architect"
@@ -18892,7 +18951,7 @@
 "company": "Greenerwave",
 "contract": "Stage",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "salary": "1150 EUR",
 "source": "wttj",
@@ -18904,7 +18963,7 @@
 "company": "SETEC",
 "contract": "Stage",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Ingénieur stagiaire Domaine de l'innovation numérique H/F (Rétro-ingénierie des infrastructures - Nuages de points, IA, Data)"
@@ -18915,7 +18974,7 @@
 "company": "Sopra Steria",
 "contract": "CDI",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Data Ingénieur(e) Snowflake expérimenté(e) – Développement Régional - Aix-en-Provence"
@@ -18926,7 +18985,7 @@
 "company": "BPCE Solutions informatiques",
 "contract": "CDI",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur (F/H) - Produit Souscriptions Digitales"
 },
@@ -18936,7 +18995,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Systèmes Embarqués Détection Sous-Marine - (H/F) H/F"
 },
@@ -18946,7 +19005,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Electronique Systèmes Embarqués H/F"
 },
@@ -18956,7 +19015,7 @@
 "company": "Atos",
 "contract": "Stage",
 "first_seen": "2026-11-06",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développement Logiciel - Défense (H/F)"
 },
@@ -18966,7 +19025,7 @@
 "company": "Atos",
 "contract": "Stage",
 "first_seen": "2026-11-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "cybersécurité des protocoles réseaux sans-fil H/F"
@@ -18977,7 +19036,7 @@
 "company": "Walter Learning",
 "contract": "CDI",
 "first_seen": "2026-11-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "55000–65000 EUR",
 "source": "wttj",
@@ -18999,7 +19058,7 @@
 "company": "Naval Group [FR]",
 "contract": "CDI",
 "first_seen": "2026-11-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Intégrateur.trice logiciel DevOps H/F"
 },
@@ -19009,7 +19068,7 @@
 "company": "Naval Group [FR]",
 "contract": "Stage",
 "first_seen": "2026-11-07",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur R&D Vision - Hiérarchisation et pré-annotation IA de données H/F"
 },
@@ -19019,7 +19078,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-11-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "salary": "42000–52000 EUR",
 "source": "wttj",
@@ -19031,7 +19090,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-11-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Ingénieur Production Applicative / DevOps (F/H)"
@@ -19042,7 +19101,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-11-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Consultant CyberSécurité Sénior (F/H)"
 },
@@ -19052,7 +19111,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-11-08",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Business Analyst Expérimenté (F/H)"
 },
@@ -19062,7 +19121,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-11-09",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "hybride",
 "source": "wttj",
 "title": "Analyste SOC (F/H)"
@@ -19073,7 +19132,7 @@
 "company": "La Sécurité Sociale",
 "contract": "CDI",
 "first_seen": "2026-11-09",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "TechLead Plateform Engineering F/H"
@@ -19084,7 +19143,7 @@
 "company": "OREVE",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "sur site",
 "source": "wttj",
 "title": "Technicien support IT H/F"
@@ -19095,7 +19154,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur Expert en Cybersécurité des Systèmes H/F"
 },
@@ -19105,7 +19164,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur Logiciel Télécom C/C++ H/F"
 },
@@ -19115,7 +19174,7 @@
 "company": "Atos",
 "contract": "Stage",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "IA Agentique pour la migration automatisée de données H/F"
 },
@@ -19125,7 +19184,7 @@
 "company": "Atos",
 "contract": "Stage",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "ingénieur en développement radio-logicielle H/F"
 },
@@ -19135,7 +19194,7 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Administrateur systèmes infra virtualisées H/F"
 },
@@ -19145,7 +19204,7 @@
 "company": "CS",
 "contract": "Stage",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur(se) Intégrateur(se) .NET / C# / C++ - Transport - Aix-en-Provence"
 },
@@ -19155,7 +19214,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Lead Data engineer GCP (H/F)"
 },
@@ -19165,7 +19224,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de Projet / Business Analyst Senior (H/F)"
 },
@@ -19175,7 +19234,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur embarqué C++ (H/F)"
 },
@@ -19185,7 +19244,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Développeur C++/Go embarqué (H/F)"
 },
@@ -19195,7 +19254,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Product Owner IA (H/F)"
 },
@@ -19205,7 +19264,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Ingénieur DevOps (H/F)"
 },
@@ -19215,7 +19274,7 @@
 "company": "Meritis",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "source": "wttj",
 "title": "Chef de Projet Cybersécurité (H/F)"
 },
@@ -19225,10 +19284,82 @@
 "company": "Atos",
 "contract": "CDI",
 "first_seen": "2026-11-10",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "salary": "55000–65000 EUR",
 "source": "wttj",
 "title": "Architecte logiciel H/F"
+},
+"wttj:4376564": {
+"category": "product",
+"city": "Marseille",
+"company": "Job Link Group",
+"contract": "CDI",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"remote": "ponctuel",
+"salary": "50000–65000 EUR",
+"source": "wttj",
+"title": "Product Owner & AI Lead H/F"
+},
+"wttj:4376808": {
+"category": "data",
+"city": "Aix-en-Provence",
+"company": "CS",
+"contract": "Stage",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "wttj",
+"title": "Ingénieur/e IA – Reinforcement Learning - Défense & Sécurité - Aix-en-Provence"
+},
+"wttj:4376848": {
+"category": "data",
+"city": "Biot",
+"company": "Sopra Steria",
+"contract": "Stage",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "wttj",
+"title": "Business Analyst - Services Publics - Biot"
+},
+"wttj:4376996": {
+"category": "data",
+"city": "Valbonne",
+"company": "Meritis",
+"contract": "CDI",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "wttj",
+"title": "Ingénieur IA Générative - LLM et Agents (H/F)"
+},
+"wttj:4377171": {
+"category": "data",
+"city": "Carros",
+"company": "Schneider Electric",
+"contract": "Stage",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "wttj",
+"title": "Data analyst – Pilotage des activités Services – F/H"
+},
+"wttj:4377636": {
+"category": "devops",
+"city": "Ollioules",
+"company": "Naval Group [FR]",
+"contract": "CDI",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "wttj",
+"title": "Ingénieur Développement Logiciel et DEVOPS Système de Direction de Combat H/F"
+},
+"wttj:4377964": {
+"category": "eng",
+"city": "Biot",
+"company": "Accenture France",
+"contract": "Stage",
+"first_seen": "2026-11-11",
+"last_seen": "2026-11-11",
+"source": "wttj",
+"title": "Développeur Front-End React / TypeScript - Interaction Humain Machine - F/H"
 },
 "wttj:810351": {
 "category": "tech-adjacent",
@@ -19236,7 +19367,7 @@
 "company": "Eskimoz",
 "contract": "CDI",
 "first_seen": "2026-09-05",
-"last_seen": "2026-11-10",
+"last_seen": "2026-11-11",
 "remote": "ponctuel",
 "salary": "40000 EUR",
 "source": "wttj",
