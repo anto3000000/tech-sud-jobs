@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-11-11",
+  "last_generated_date": "2026-11-12",
   "bucket_last_used": {
     "eng-13": "2026-11-03",
     "eng-06": "2026-11-11",
@@ -8,7 +8,7 @@
     "eng-paca": "2026-11-10",
     "data-13": "2026-11-02",
     "data-06": "2026-11-04",
-    "data-83": "2026-10-18",
+    "data-83": "2026-11-12",
     "data-paca": "2026-10-21",
     "data-84": "2026-10-19",
     "product-13": "2026-10-25",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "thales-ingenieur-customer-success-manager-h-f-3a0a86": "2026-10-28",
-    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-a-23aa09": "2026-10-28",
-    "nalios-france-consultant-e-fonctionnel-odoo-69a267": "2026-10-28",
-    "deloitte-ou-alternance-consultant-informatique-et-financement-de-l-inn-ed2ec1": "2026-10-28",
-    "capgemini-consultante-consultant-transformation-digitale-senior-0e28b6": "2026-10-28",
     "accenture-product-owner-f-h-62fd3a": "2026-10-29",
     "instant-system-product-manager-billettique-h-f-bd0ae1": "2026-10-29",
     "exalt-product-designer-h-f-exalt-azur-64063f": "2026-10-29",
@@ -92,7 +87,12 @@
     "accenture-france-developpeur-front-end-react-typescript-interaction-hu-73b824": "2026-11-11",
     "meritis-developpeur-cpp-go-embarque-h-f-b3d227": "2026-11-11",
     "meritis-developpeur-cpp-h-f-5b7a05": "2026-11-11",
-    "thales-ingenieur-developpeur-de-solutions-numeriques-web-full-stack-po-c48cf2": "2026-11-11"
+    "thales-ingenieur-developpeur-de-solutions-numeriques-web-full-stack-po-c48cf2": "2026-11-11",
+    "naval-group-fr-ingenieur-r-d-vision-hierarchisation-et-pre-annotation-3d0c7f": "2026-11-12",
+    "naval-group-fr-technicien-analyse-fonctionnelle-base-de-donnees-h-f-0bcd21": "2026-11-12",
+    "cs-developpeur-se-cpp-qt-ia-implementation-d-un-chatbot-dans-le-produi-466d6a": "2026-11-12",
+    "the-adecco-group-data-engineer-f-h-f75fa6": "2026-11-12",
+    "scalian-business-analyst-it-proxy-po-toulon-h-f-466c04": "2026-11-12"
   },
   "last_published_date": "2026-11-11"
 }

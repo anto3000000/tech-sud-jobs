@@ -1,5 +1,214 @@
 [
   {
+    "id": "wttj:3753845",
+    "title": "Consultant(e) fonctionnel Odoo",
+    "company": "Nalios France",
+    "company_slug": "nalios-france",
+    "city": "Cannes",
+    "cities": [
+      "Cannes",
+      "Nantes",
+      "Paris",
+      "Rouen"
+    ],
+    "department": "Maritime Alps",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "hybride",
+    "category": "tech-adjacent",
+    "profession": null,
+    "salary": "40000–60000 EUR",
+    "experience_min_years": 2,
+    "published_at": "2026-11-12T08:00:00.000+01:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/nalios-france/jobs/consultant-fonctionnel-odoo?o=NALIO_19jqWX8",
+    "source": "wttj",
+    "stack": [
+      "Python",
+      "Odoo"
+    ],
+    "soft_skills": [
+      "Rédaction technique",
+      "Gestion de projets",
+      "Aptitudes techniques",
+      "Intégration de technologies",
+      "Aisance à l'oral",
+      "Communication",
+      "Gestion de la qualité",
+      "Efficacité opérationnelle"
+    ],
+    "description": "📋Découvrir et cadrer les projets\n• Identifier les véritables besoins du client et comprendre sa problématique\n\n• Animer des ateliers métier pour cartographier l’organisation, les processus et les besoins fonctionnels\n\n• Analyser et optimiser les processus existants : évaluer les pratiques actuelles, identifier les inefficacités\n\n• Être force de proposition pour les améliorations possibles\n\n• Rédiger les spécifications fonctionnelles et techniques\n\n⚙️ Configurer et implémenter Odoo\n• Effectuer le paramétrage avancé d’Odoo sur l’ensemble de la chaîne de valeur (CRM, Ventes, Achats, Stock, Production, Comptabilité, etc.)\n\n• Concevoir et configurer des solutions Odoo personnalisées adaptées aux besoins spécifiques des clients\n\n• Collaborer avec les équipes techniques pour les développements et intégrations API nécessaires\n\n• Assurer la qualité des livrables et leur conformité aux attentes des utilisateurs\n\n👥 Accompagner et former les utilisateurs\n• Former les utilisateurs finaux sur l’utilisation efficace des applications Odoo\n\n• Préparer et animer des démonstrations adaptées aux besoins spécifiques de chaque projet\n\n• Assurer le support post-implémentation et garantir l’adoption par les utilisateurs\n\n• Gérer les retours clients et les évolutions en post-production\n\n🤝 Assurer la relation client\n• Conseiller et orienter les clients dans leur stratégie de digitalisation\n\n• Assurer le suivi régulier des projets avec une communication claire auprès des parties prenantes\n\n• Collaborer avec les experts-comptables si nécessaire pour faciliter l’implémentation comptable\n\n• Participer à l’élaboration de propositions commerciales",
+    "description_excerpt": "📋Découvrir et cadrer les projets\n• Identifier les véritables besoins du client et comprendre sa problématique\n\n• Animer des ateliers métier pour cartographier l’organisation, les processus et les besoins fonctionnels\n\n• Analyser et optimiser les processus existants : évaluer les pratiques actuelles, identifier les inefficacités\n\n• Être…",
+    "profile_excerpt": "• 2-4 ans minimum d’expérience en tant que Consultant Fonctionnel ou Chef de Projet ERP\n\n• Expérience avérée sur Odoo (fonctionnalités, configuration de modules)\n\n• Connaissance solide des processus métier en vente, achat, stocks, comptabilité, production(au moins 2-3…",
+    "experience": null,
+    "education_level": "bac_5",
+    "remote_detail": "hybride",
+    "apply_url": null,
+    "ats": "wkit",
+    "logo": "https://cdn-images.welcometothejungle.com/n1oPFHqwlKuMCMlUBEhhrfMSBe6BWK-Sm3X428BSSrg/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby85NzYxLzE3MjkyNS83ZjdkMTg0MS1mY2YwLTQwYTEtYTU5YS04NDVhMjUwNzQ4Y2QucG5n",
+    "benefits_preview": [
+      "Afterworks, Déjeuners d'équipe, etc.",
+      "Team building",
+      "Subventions CSE (Sport, Culture,...)",
+      "Entre 1-2 jours de télétravail",
+      "Allocation sportive"
+    ],
+    "benefits_count": 11,
+    "start_date": "2026-06-30T22:00:00Z",
+    "enriched_at": "2026-11-12T13:47:57+00:00"
+  },
+  {
+    "id": "wttj:4311291",
+    "title": "Chef de projet Growth Marketing Acquisition & Data",
+    "company": "Nexity",
+    "company_slug": "nexity",
+    "city": "Nice",
+    "cities": [
+      "Nice"
+    ],
+    "department": "Maritime Alps",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "sur site",
+    "category": "data",
+    "profession": null,
+    "salary": "40000–50000 EUR",
+    "experience_min_years": 4,
+    "published_at": "2026-11-12T00:00:00.000+01:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/nexity/jobs/chef-de-projet-growth-marketing-acquisition-data_nice?o=NEXIT_y1LrPY2",
+    "source": "wttj",
+    "stack": [
+      "Excel",
+      "Perl"
+    ],
+    "soft_skills": [
+      "Amélioration continue",
+      "Créativité et innovation",
+      "Outils d'automatisation",
+      "Segmentation de la clientèle",
+      "Analyse des performances",
+      "Outils de marketing automation"
+    ],
+    "description": "Filiales du groupe Nexity, Perl et iSelection sont des acteurs de référence de l'investissement immobilier patrimonial depuis plus de 25 ans.\nNous accompagnons les professionnels du patrimoine dans la sélection de solutions immobilières adaptées aux objectifs de leurs clients. Chaque année, plusieurs milliers de prospects, investisseurs et partenaires interagissent avec nos marques à travers différents canaux digitaux et commerciaux.\nDans un contexte de transformation et d'accélération de notre activité B2C, nous souhaitons renforcer notre capacité à exploiter la donnée pour mieux comprendre les comportements de nos prospects, optimiser nos parcours de conversion et améliorer la performance commerciale de nos équipes.\nPour accompagner cette ambition, nous recherchons un(e) Chef de projet Growth Marketing & Data, capable de combiner marketing digital, analyse de données, automatisation et intelligence artificielle afin de construire une véritable « machine » de génération et de conversion des leads.\nJob Description\nDans le cadre de notre développement, nous recherchons notre futur(e) Chef de projet Growth Marketing & Data.\nRattaché(e) au Responsable Marketing Digital, votre rôle sera de piloter l'ensemble du cycle de vie des prospects :\nAcquisition → Qualification → Nurturing → Conversion → Réactivation → Analyse\nVous pilotez l'identification des leviers de croissance, l'exploitation de la donnée et l'optimisation des parcours clients afin d'améliorer la conversion des prospects. Votre rôle consiste à transformer les analyses en actions concrètes génératrices de performance commerciale.\nGrowth marketing & optimisation des parcours clients\n• Analyser les parcours prospects et identifier les leviers d'amélioration de la conversion.\n• Optimiser les dispositifs d'acquisition et de génération de leads (campagnes digitales, landing pages, formulaires, partenariats, retargeting).\n• Concevoir et piloter des expérimentations pour améliorer en continu les performances marketing et commerciales.\nData & pilotage de la performance\n• Structurer et fiabiliser les données nécessaires au pilotage de l'activité.\n• Définir, suivre et analyser les indicateurs clés de performance.\n• Produire des tableaux de bord et recommandations à destination des équipes Marketing, Commerciales et de la Direction.\nQualification, nurturing & automatisation\n• Développer des mécanismes de segmentation, scoring et qualification des prospects.\n• Mettre en place des scénarios automatisés de nurturing, relance et réactivation.\n• Optimiser la transmission des leads aux équipes commerciales et leur transformation.\nOutils, stack marketing & IA \n• Construire une architecture data et marketing simple, pragmatique et évolutive, adaptée à un environnement non doté de CRM structuré.\n• Identifier et déployer les outils les plus pertinents en privilégiant des solutions légères, no-code et automatisées.\n• Exploiter les opportunités offertes par l'intelligence artificielle pour améliorer la connaissance client, les parcours prospects et la performance commerciale.",
+    "description_excerpt": "Filiales du groupe Nexity, Perl et iSelection sont des acteurs de référence de l'investissement immobilier patrimonial depuis plus de 25 ans.\nNous accompagnons les professionnels du patrimoine dans la sélection de solutions immobilières adaptées aux objectifs de leurs clients. Chaque année, plusieurs milliers de prospects, investisseurs…",
+    "profile_excerpt": "Formation & expérience\n• Bac+5 en marketing, digital, data ou école de commerce.\n• Expérience de 5 ans minimum en Growth Marketing, CRM/Data ou marketing automation.\n• Parcours idéalement acquis en startup, scale-up, fintech, proptech, assurtech ou PME en croissance.\n•…",
+    "experience": null,
+    "education_level": null,
+    "remote_detail": "sur site",
+    "apply_url": "https://jobs.smartrecruiters.com/Nexity/744000159913984-chef-de-projet-growth-marketing-acquisition-data?oga=true&sid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
+    "ats": "kombo",
+    "logo": "https://cdn-images.welcometothejungle.com/tBA8z5JR9mfEhxctyiVCC1FECZ-9qZZ0UWERbxo3uZs/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8yNDUzLzE1NTgzNS9lYjc1ZDQ0NC1lMDAwLTRhMTktYWMxMi0xMGFlOGVlMDMyNGUucG5n",
+    "benefits_preview": [
+      "Entre 1-2 jours de télétravail",
+      "Prime de cooptation",
+      "Partenariat avec des associations",
+      "Plan d’épargne entreprise (PEE)",
+      "Équipe dédiée à la Diversité & inclusivité"
+    ],
+    "benefits_count": 17,
+    "start_date": null,
+    "enriched_at": "2026-11-12T13:47:57+00:00"
+  },
+  {
+    "id": "wttj:4280925",
+    "title": "Expert(e) OpenShift / GenAI  - Aix en Provence",
+    "company": "Sopra Steria",
+    "company_slug": "sopra-steria",
+    "city": "Aix-En-Provence",
+    "cities": [
+      "Aix-En-Provence"
+    ],
+    "department": "Bouches-du-Rhône",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "hybride",
+    "category": "data",
+    "profession": null,
+    "salary": null,
+    "experience_min_years": null,
+    "published_at": "2026-11-11T23:00:00.000+01:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/sopra-steria/jobs/expert-openshift-genai-aix-en-provence_aix-en-provence_SS_wyd1Z3Z?o=SS_wyd1Z3Z",
+    "source": "wttj",
+    "stack": [
+      "Grafana",
+      "Kubernetes",
+      "ArgoCD",
+      "Discord",
+      "Helm",
+      "Kubeflow",
+      "OpenShift",
+      "Prometheus"
+    ],
+    "soft_skills": [
+      "Travail d'équipe",
+      "Aptitude à résoudre les problèmes"
+    ],
+    "description": "L’opportunité à saisir !\nVous intégrerez l'entreprise Sopra Steria au sein de l’entité Digital Platform Services, avec une équipe dynamique dans un environnement stimulant.\nSuivant les missions qui vous sont confiées, vous êtes amené(e) à évoluer au sein d'équipes internes Sopra Steria dans des prestations de type Infogérance ou vous êtes directement intégré(e) à des équipes client. Vous êtes accompagné(e) par une équipe dynamique qui vous fera prendre activement part au projet dans son ensemble.\nTout au long de votre parcours dans le Groupe vous êtes accompagné(e) par votre manager unique, présent en lien de proximité sur votre mission et qui vous accompagne dans votre évolution de carrière.\nL’esprit d’équipe étant primordial chez Sopra Steria, plusieurs évènements par an sont organisés afin de nous rassembler et partager des moments de convivialité : afterworks, petit déjeuners, challenges (au boulot à vélo…) et compétitions internes (sportives sur United Heroes ou gaming sur Discord), communautés techniques….\nPour Sopra Steria ce qui compte avant tout c’est la qualité de vie de ses collaborateurs car l’environnement de travail est important, c’est pour cela que l’entreprise est certifiée Great Place To Work.\nUne fois que vous aurez un pied chez nous, c’est à vous de choisir où mettre le deuxième. #libredansmonjob\nVotre rôle et vos missions :\nDans un contexte de forte accélération autour de l’IA, nous accompagnons nos clients dans la mise en œuvre de plateformes GenAI industrielles basées sur OpenShift & MLOps.\nDans ce cadre, nous recherchons un expert technique senior pour renforcer nos équipes.\nVos missions :\nAu cœur de la plateforme, vous intervenez sur l’ensemble du cycle de vie :\n• RUN & Support• Gestion des incidents N1 à N3 (incl. utilisateurs Data Science)\n• Supervision de clusters (nodes, pods, GPU, composants critiques)\n• Patching et upgrades OpenShift\n\n• Administration & exploitation• Gestion des workloads, namespaces, quotas\n• Réseau (Ingress, policies) et stockage (ODF, NVMe, GPU nodes)\n• Administration hybride (VMware & BareMetal)\n\n• GenAI & MLOps• Exploitation OpenShift AI (workbenches, ModelMesh)\n• Optimisation GPU (NVIDIA, MIG)\n• Pipelines ML (Kubeflow / RHODS)\n\n• CI/CD & industrialisation• Déploiement via Helm\n• GitOps (ArgoCD)\n• Pipelines Tekton\n\n• Sécurité & observabilité• RBAC, OpenShift ACS, conformité\n• Monitoring (Prometheus, Grafana) & logging\n\n• Transmission• Formation et accompagnement des équipes\n• Structuration des bonnes pratiques et documentation\n\nExpertise technique attendue :\n• Expertise OpenShift / Kubernetes\n• Expérience sur des plateformes Cloud et infrastructures hybrides\n• Compétences en MLOps / IA appréciées (GPU, model serving, pipelines)\n• Capacité à intervenir sur des environnements critiques et complexes\n• Goût pour la transmission des savoirs et le rôle de référent technique\nPourquoi nous rejoindre ?\n• Projets à forte valeur autour de l’IA et des infrastructures de nouvelle génération\n• Environnement technique riche : cloud, Kubernetes, data & AI\n• Possibilités d’évolution et de montée en expertise\n• Intégration dans un collectif reconnu pour son excellence technologique\nCe que nous proposons : \n• Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.\n• Un forfait avantages intéressants : une mutuelle, un CSE, des titres restaurants, un accord\nd'intérêt, des primes vacances et cooptation.\n• Des opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble.\n• Des centaines de formations pour développer vos compétences et évoluer au sein du Groupe\n• Des plateformes de formations en autonomie pour préparer vos certifications et accompagner votre développement personnel \n• La possibilité de s'engager auprès de notre fondation ou de notre partenaire « Vendredi ».\n• L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore…).\nInformations supplémentairesEmpl",
+    "description_excerpt": "L’opportunité à saisir !\nVous intégrerez l'entreprise Sopra Steria au sein de l’entité Digital Platform Services, avec une équipe dynamique dans un environnement stimulant.\nSuivant les missions qui vous sont confiées, vous êtes amené(e) à évoluer au sein d'équipes internes Sopra Steria dans des prestations de type Infogérance ou vous…",
+    "profile_excerpt": "Diplômé(e) d'un Bac+5 et délivré(e) d'une école d'Ingénieur(e) ou équivalent, vous justifiez d'au moins 10 ans d'expérience professionnelle dans une fonction similaire.\nVous avez un bon niveau d'anglais.\nVous êtes autonome, rigoureux(se) et pragmatique.\nVous avez également un…",
+    "experience": null,
+    "education_level": null,
+    "remote_detail": "hybride",
+    "apply_url": "https://jobs.smartrecruiters.com/SopraSteria1/744000149662118-expert-e-openshift-genai-aix-en-provence?oga=true&sid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
+    "ats": "external",
+    "logo": "https://cdn-images.welcometothejungle.com/3-lPBQHExo-vD6vVdZXNypnl6FjMsQQvX0_3XpwwM8I/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby83Mjk1LzE0OTcyNy9hODAyNDc1YS1jMWY1LTQ4M2UtOWY2ZC00M2ZkYzZiNzE5ZjQucG5n",
+    "benefits_preview": [
+      "Entre 1-2 jours de télétravail",
+      "Financement des certifications",
+      "Plan de développement professionnel",
+      "Prime de cooptation"
+    ],
+    "benefits_count": 27,
+    "start_date": null,
+    "enriched_at": "2026-11-12T13:47:57+00:00"
+  },
+  {
+    "id": "wttj:3821720",
+    "title": "Chef(fe) de projet technique - Infrastructure & Cloud - Aix-en-Provence",
+    "company": "Sopra Steria",
+    "company_slug": "sopra-steria",
+    "city": "Aix-En-Provence",
+    "cities": [
+      "Aix-En-Provence"
+    ],
+    "department": "Bouches-du-Rhône",
+    "region": "Provence-Alpes-Cote d'Azur",
+    "contract": "CDI",
+    "remote": "hybride",
+    "category": "tech-adjacent",
+    "profession": null,
+    "salary": null,
+    "experience_min_years": null,
+    "published_at": "2026-11-11T23:00:00.000+01:00",
+    "url": "https://www.welcometothejungle.com/fr/companies/sopra-steria/jobs/chef-fe-de-projet-technique-infrastructure-cloud-aix-en-provence_aix-en-provence_SS_zkwkm10?o=SS_zkwkm10",
+    "source": "wttj",
+    "stack": [],
+    "soft_skills": [
+      "Travail d'équipe",
+      "Leadership d'équipe transverse",
+      "Communication",
+      "Collaboration et travail d'équipe",
+      "Aptitude à résoudre les problèmes"
+    ],
+    "description": "L'opportunité à saisir !\nVous intégrez l'entreprise Sopra Steria au sein de l'entité Digital Platform Services, avec une équipe dynamique dans un environnement stimulant.\nSuivant les missions qui vous sont confiées, vous êtes amené(e) à évoluer au sein d'équipes internes Sopra Steria dans des prestations de type Infogérance ou vous êtes directement intégré(e) à des équipes client. Vous êtes accompagné(e) par une équipe dynamique qui vous fera prendre activement part au projet dans son ensemble.\nTout au long de votre parcours dans le Groupe vous êtes accompagné(e) par votre  manager unique , présent(e) en lien de proximité sur votre mission et qui vous accompagne dans votre évolution de carrière.\nL'esprit d'équipe étant primordial chez Sopra Steria, plusieurs événements par an sont organisés afin de nous rassembler et partager des moments de convivialité : afterworks, petits déjeuners, challenges et compétitions internes (sportives ou gaming), communautés techniques….\nPour Sopra Steria ce qui compte avant tout c'est la qualité de vie de ses collaborateurs car l'environnement de travail est important, c'est pour cela que l'entreprise est certifiée Great Place To Work.\nUne fois que vous aurez un pied chez nous, c'est à vous de choisir où mettre le deuxième. #libredansmonjob\nVotre rôle et vos missions :\nNous recherchons un Chef(fe) de Projet Technique pour rejoindre notre équipe dédiée à la production applicative au sein de notre département du SI interne. Si vous êtes passionné(e) par les défis techniques et possédez une solide expérience en ingénierie de production ou en infrastructure, cette opportunité est faite pour vous !\nVous travaillez dans un environnement de travail stimulant au sein d'une équipe dynamique, avec des projets variés et innovants.\nEn tant que Chef(fe) de projet Infrastructure, vous :\n• Pilotez des projets techniques en garantissant le respect des délais, des coûts et de la qualité.\n• Assurez la coordination entre les équipes techniques et les parties prenantes.\n• Analysez et résolvez les problématiques techniques rencontrées durant les projets.\n• Participez à l’évolution et à l’optimisation de notre infrastructure et de nos applications.\n• Encadrez et formez les membres de l’équipe sur les nouvelles technologies et pratiques.\n• Analysez de l'impact du changement\n• Identifiez les parties prenantes affectées par le changement\n• Évaluez les impacts organisationnels, humains et opérationnels\n• Réalisez des diagnostics de maturité au changement\n• Élaborez la stratégie de conduite du changement\n• Définissez et comprenez les objectifs de transformation\n• Construisez un plan de conduite du changement (roadmap)\n• Déterminez les leviers d'adhésion (communication, formation, accompagnement)\n• Suivez le plan de communication interne\n• Créez des supports pour accompagner l'orchestration des changements\n• Coordonnez avec les autres équipes projet\n• Travaillez en lien avec les différentes équipes IT\n• Participez aux comités de pilotage\nCe que nous proposons : \n• Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.\n• Un forfait avantages intéressants : une mutuelle, un CSE, des titres restaurants, un accordd'intérêt, des primes vacances et cooptation.\n\n• Des opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble.\n• Des centaines de formations pour développer vos compétences et évoluer au sein du Groupe\n• Des plateformes de formations en autonomie pour préparer vos certifications et accompagner votre développement personnel \n• La possibilité de s'engager auprès de notre fondation ou de notre partenaire « Vendredi ».\n• L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore…).\nAdditional InformationEmployeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C’est pourquoi, attachés",
+    "description_excerpt": "L'opportunité à saisir !\nVous intégrez l'entreprise Sopra Steria au sein de l'entité Digital Platform Services, avec une équipe dynamique dans un environnement stimulant.\nSuivant les missions qui vous sont confiées, vous êtes amené(e) à évoluer au sein d'équipes internes Sopra Steria dans des prestations de type Infogérance ou vous êtes…",
+    "profile_excerpt": "Votre profil : \nDiplômé(e) d'un Bac+5, d'une école d'Ingénieur(e) ou équivalent, vous justifiez d'au moins 5 ans d'expérience professionnelle dans une fonction similaire.\nVous avez une expérience significative en tant qu'ingénieur(e) de production ou ingénieur(e)…",
+    "experience": null,
+    "education_level": null,
+    "remote_detail": "hybride",
+    "apply_url": "https://jobs.smartrecruiters.com/SopraSteria1/744000103885974-chef-fe-de-projet-technique-infrastructure-cloud-aix-en-provence?oga=true&sid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
+    "ats": "external",
+    "logo": "https://cdn-images.welcometothejungle.com/3-lPBQHExo-vD6vVdZXNypnl6FjMsQQvX0_3XpwwM8I/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby83Mjk1LzE0OTcyNy9hODAyNDc1YS1jMWY1LTQ4M2UtOWY2ZC00M2ZkYzZiNzE5ZjQucG5n",
+    "benefits_preview": [
+      "Entre 1-2 jours de télétravail",
+      "Financement des certifications",
+      "Plan de développement professionnel",
+      "Prime de cooptation"
+    ],
+    "benefits_count": 27,
+    "start_date": null,
+    "enriched_at": "2026-11-12T13:47:57+00:00"
+  },
+  {
     "id": "wttj:4377964",
     "title": "Stagiaire  Développeur Front-End React / TypeScript - Interaction Humain Machine - F/H",
     "company": "Accenture France",
@@ -58,7 +267,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4377636",
@@ -110,7 +319,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:06+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4377171",
@@ -157,7 +366,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:06+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4376996",
@@ -206,7 +415,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:06+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4219272",
@@ -263,7 +472,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:06+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4043800",
@@ -314,7 +523,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:06+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4376903",
@@ -371,7 +580,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4376888",
@@ -416,7 +625,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4376848",
@@ -478,7 +687,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4376808",
@@ -521,7 +730,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:06+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3872619",
@@ -569,7 +778,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3934176",
@@ -626,7 +835,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4376564",
@@ -671,7 +880,7 @@
     ],
     "benefits_count": 13,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4376532",
@@ -714,7 +923,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4376531",
@@ -755,7 +964,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4376530",
@@ -793,7 +1002,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4309623",
@@ -867,7 +1076,7 @@
     ],
     "benefits_count": 22,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4375873",
@@ -924,7 +1133,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4374639",
@@ -972,7 +1181,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4374615",
@@ -1027,7 +1236,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4374590",
@@ -1072,7 +1281,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4374562",
@@ -1119,7 +1328,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4374555",
@@ -1169,7 +1378,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4374549",
@@ -1213,7 +1422,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4374548",
@@ -1272,7 +1481,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4245835",
@@ -1320,7 +1529,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4219278",
@@ -1372,7 +1581,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:07+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4166912",
@@ -1422,7 +1631,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4049862",
@@ -1470,7 +1679,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3919308",
@@ -1515,7 +1724,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3901146",
@@ -1565,7 +1774,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3901143",
@@ -1612,7 +1821,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3901141",
@@ -1659,7 +1868,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3886454",
@@ -1715,7 +1924,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3512028",
@@ -1763,7 +1972,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:2854567",
@@ -1805,7 +2014,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:2373821",
@@ -1857,7 +2066,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:2198983",
@@ -1915,7 +2124,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4374324",
@@ -1960,7 +2169,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4271321",
@@ -2005,7 +2214,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3897291",
@@ -2049,7 +2258,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4373947",
@@ -2108,7 +2317,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4356495",
@@ -2154,7 +2363,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4356494",
@@ -2200,7 +2409,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4356493",
@@ -2246,7 +2455,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4356492",
@@ -2292,7 +2501,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4373855",
@@ -2341,7 +2550,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4373854",
@@ -2390,7 +2599,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4373853",
@@ -2447,7 +2656,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4373852",
@@ -2506,7 +2715,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4364479",
@@ -2555,7 +2764,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2027-01-31T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4364478",
@@ -2604,7 +2813,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2027-01-31T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3930962",
@@ -2656,7 +2865,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4373822",
@@ -2697,7 +2906,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-08T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4276379",
@@ -2761,7 +2970,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4276378",
@@ -2825,7 +3034,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4276377",
@@ -2889,7 +3098,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4275953",
@@ -2952,7 +3161,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4275952",
@@ -3015,7 +3224,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4275951",
@@ -3078,7 +3287,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4275805",
@@ -3138,7 +3347,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4275804",
@@ -3198,7 +3407,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4275803",
@@ -3258,7 +3467,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:3599981",
@@ -3308,7 +3517,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-06-30T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3599980",
@@ -3358,7 +3567,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-06-30T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4373724",
@@ -3425,7 +3634,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:08+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3990400",
@@ -3495,7 +3704,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3990399",
@@ -3565,7 +3774,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3893556",
@@ -3617,7 +3826,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3893555",
@@ -3669,7 +3878,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3893332",
@@ -3716,7 +3925,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3893331",
@@ -3763,7 +3972,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3488253",
@@ -3813,7 +4022,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3488252",
@@ -3863,7 +4072,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3407194",
@@ -3914,7 +4123,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2027-01-03T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3407193",
@@ -3965,7 +4174,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2027-01-03T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3100019",
@@ -4017,7 +4226,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-03-02T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:3100018",
@@ -4069,7 +4278,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-03-02T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4291646",
@@ -4139,7 +4348,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4291645",
@@ -4209,7 +4418,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:2889191",
@@ -4257,7 +4466,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:2889190",
@@ -4305,7 +4514,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:2738863",
@@ -4350,7 +4559,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:2738862",
@@ -4395,7 +4604,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4159182",
@@ -4446,7 +4655,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4157080",
@@ -4494,7 +4703,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4152519",
@@ -4539,7 +4748,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4049846",
@@ -4588,7 +4797,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:57+00:00"
   },
   {
     "id": "wttj:4271165",
@@ -4645,7 +4854,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4372943",
@@ -4695,7 +4904,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4372914",
@@ -4744,7 +4953,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4372912",
@@ -4791,7 +5000,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4372905",
@@ -4840,7 +5049,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4372898",
@@ -4897,7 +5106,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4372582",
@@ -4946,7 +5155,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4371872",
@@ -4993,7 +5202,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4371847",
@@ -5045,7 +5254,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4371200",
@@ -5089,7 +5298,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:3962599",
@@ -5143,7 +5352,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:3962594",
@@ -5201,7 +5410,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4370626",
@@ -5247,7 +5456,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4370625",
@@ -5293,7 +5502,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4370624",
@@ -5339,7 +5548,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4370623",
@@ -5385,7 +5594,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4370559",
@@ -5439,7 +5648,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4370120",
@@ -5488,7 +5697,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4033230",
@@ -5530,7 +5739,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:3496612",
@@ -5583,7 +5792,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-01T21:00:00Z",
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4369746",
@@ -5629,7 +5838,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4369728",
@@ -5679,7 +5888,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4319118",
@@ -5743,7 +5952,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4369323",
@@ -5814,7 +6023,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4369063",
@@ -5864,7 +6073,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4369054",
@@ -5914,7 +6123,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4368995",
@@ -5962,7 +6171,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4173330",
@@ -6006,7 +6215,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4368763",
@@ -6050,7 +6259,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-04T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4368712",
@@ -6089,7 +6298,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4368567",
@@ -6133,7 +6342,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2027-01-03T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4368455",
@@ -6179,7 +6388,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2027-01-03T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4368519",
@@ -6231,7 +6440,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4368437",
@@ -6282,7 +6491,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4368436",
@@ -6333,7 +6542,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4103027",
@@ -6380,7 +6589,7 @@
     ],
     "benefits_count": 13,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:3954104",
@@ -6450,7 +6659,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4049828",
@@ -6506,7 +6715,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4367126",
@@ -6554,7 +6763,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4366990",
@@ -6607,7 +6816,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4366961",
@@ -6669,7 +6878,7 @@
     ],
     "benefits_count": 3,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4366954",
@@ -6715,7 +6924,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4366487",
@@ -6788,7 +6997,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:810351",
@@ -6836,7 +7045,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4366314",
@@ -6883,7 +7092,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4273252",
@@ -6931,7 +7140,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4366107",
@@ -6975,7 +7184,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4365552",
@@ -7025,7 +7234,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4365547",
@@ -7077,7 +7286,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4316945",
@@ -7122,7 +7331,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:09+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4255740",
@@ -7178,7 +7387,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4364618",
@@ -7236,7 +7445,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4364457",
@@ -7281,7 +7490,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4364456",
@@ -7321,7 +7530,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4364454",
@@ -7366,7 +7575,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4273248",
@@ -7429,7 +7638,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:2076627",
@@ -7492,7 +7701,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:2076626",
@@ -7555,7 +7764,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4364356",
@@ -7618,7 +7827,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4364354",
@@ -7678,7 +7887,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4364353",
@@ -7731,7 +7940,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4364352",
@@ -7782,7 +7991,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4364351",
@@ -7841,7 +8050,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:58+00:00"
   },
   {
     "id": "wttj:4291389",
@@ -7893,7 +8102,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4291388",
@@ -7945,7 +8154,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4291387",
@@ -7997,7 +8206,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4132462",
@@ -8044,7 +8253,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4023490",
@@ -8114,7 +8323,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4363783",
@@ -8161,7 +8370,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4363305",
@@ -8209,7 +8418,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4363303",
@@ -8254,7 +8463,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4363287",
@@ -8299,7 +8508,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4363285",
@@ -8346,7 +8555,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4363207",
@@ -8400,7 +8609,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4362669",
@@ -8449,7 +8658,7 @@
     ],
     "benefits_count": 11,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4362400",
@@ -8498,7 +8707,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4362323",
@@ -8537,7 +8746,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4362166",
@@ -8596,7 +8805,7 @@
     ],
     "benefits_count": 5,
     "start_date": "2027-01-03T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4362031",
@@ -8639,7 +8848,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4362028",
@@ -8682,7 +8891,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:10+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4142833",
@@ -8739,7 +8948,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4023647",
@@ -8787,7 +8996,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4023567",
@@ -8842,7 +9051,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4023466",
@@ -8902,7 +9111,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4256706",
@@ -8951,7 +9160,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4161776",
@@ -9000,7 +9209,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4359535",
@@ -9045,7 +9254,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4359330",
@@ -9101,7 +9310,7 @@
     ],
     "benefits_count": 35,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358957",
@@ -9155,7 +9364,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4254878",
@@ -9207,7 +9416,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4254821",
@@ -9259,7 +9468,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4161792",
@@ -9308,7 +9517,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4159010",
@@ -9356,7 +9565,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:3924358",
@@ -9403,7 +9612,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358739",
@@ -9445,7 +9654,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358738",
@@ -9487,7 +9696,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358728",
@@ -9529,7 +9738,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358727",
@@ -9571,7 +9780,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358684",
@@ -9616,7 +9825,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358642",
@@ -9662,7 +9871,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358639",
@@ -9716,7 +9925,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358577",
@@ -9752,7 +9961,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358576",
@@ -9788,7 +9997,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358574",
@@ -9847,7 +10056,7 @@
     ],
     "benefits_count": 6,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4358558",
@@ -9894,7 +10103,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4357774",
@@ -9948,7 +10157,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4357236",
@@ -9996,7 +10205,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4357184",
@@ -10044,7 +10253,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4357102",
@@ -10083,7 +10292,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:3937284",
@@ -10134,7 +10343,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4159408",
@@ -10186,7 +10395,7 @@
     ],
     "benefits_count": 11,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4159407",
@@ -10238,7 +10447,7 @@
     ],
     "benefits_count": 11,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4355954",
@@ -10295,7 +10504,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4355785",
@@ -10338,7 +10547,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4023748",
@@ -10405,7 +10614,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4023636",
@@ -10461,7 +10670,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4023601",
@@ -10519,7 +10728,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4023588",
@@ -10579,7 +10788,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4355458",
@@ -10626,7 +10835,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355451",
@@ -10676,7 +10885,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:47:59+00:00"
   },
   {
     "id": "wttj:4355437",
@@ -10725,7 +10934,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355427",
@@ -10771,7 +10980,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355354",
@@ -10817,7 +11026,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355305",
@@ -10866,7 +11075,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355301",
@@ -10915,7 +11124,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355300",
@@ -10964,7 +11173,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355291",
@@ -11011,7 +11220,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355285",
@@ -11064,7 +11273,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355276",
@@ -11108,7 +11317,7 @@
     ],
     "benefits_count": 18,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355193",
@@ -11153,7 +11362,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355181",
@@ -11201,7 +11410,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4355146",
@@ -11247,7 +11456,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4354828",
@@ -11296,7 +11505,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:2403839",
@@ -11343,7 +11552,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4271939",
@@ -11396,7 +11605,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4329596",
@@ -11465,7 +11674,7 @@
     ],
     "benefits_count": 22,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4353376",
@@ -11520,7 +11729,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4352910",
@@ -11572,7 +11781,7 @@
     ],
     "benefits_count": 19,
     "start_date": "2026-10-26T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4352781",
@@ -11612,7 +11821,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4352721",
@@ -11666,7 +11875,7 @@
     ],
     "benefits_count": 20,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4352566",
@@ -11714,7 +11923,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:11+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4259996",
@@ -11765,7 +11974,7 @@
     ],
     "benefits_count": 6,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351944",
@@ -11825,7 +12034,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351931",
@@ -11872,7 +12081,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4135622",
@@ -11928,7 +12137,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351358",
@@ -11977,7 +12186,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351354",
@@ -12027,7 +12236,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351280",
@@ -12082,7 +12291,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351275",
@@ -12133,7 +12342,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351274",
@@ -12185,7 +12394,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351273",
@@ -12234,7 +12443,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:12+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351269",
@@ -12286,7 +12495,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351267",
@@ -12344,7 +12553,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351266",
@@ -12399,7 +12608,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351237",
@@ -12449,7 +12658,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4249504",
@@ -12493,7 +12702,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4049903",
@@ -12539,7 +12748,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4351034",
@@ -12590,7 +12799,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4135623",
@@ -12646,7 +12855,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4122408",
@@ -12704,7 +12913,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:3744108",
@@ -12764,7 +12973,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4349445",
@@ -12825,7 +13034,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4349442",
@@ -12877,7 +13086,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4349245",
@@ -12931,7 +13140,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4349124",
@@ -12983,7 +13192,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4348606",
@@ -13025,7 +13234,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4348586",
@@ -13071,7 +13280,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4348585",
@@ -13119,7 +13328,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4348516",
@@ -13163,7 +13372,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4348504",
@@ -13215,7 +13424,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4348492",
@@ -13268,7 +13477,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4348322",
@@ -13315,7 +13524,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4348310",
@@ -13361,7 +13570,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4348230",
@@ -13425,7 +13634,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4348221",
@@ -13480,7 +13689,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4347810",
@@ -13535,7 +13744,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4347809",
@@ -13590,7 +13799,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4347808",
@@ -13645,7 +13854,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4347053",
@@ -13691,7 +13900,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4347052",
@@ -13737,7 +13946,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4291705",
@@ -13783,7 +13992,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4291704",
@@ -13829,7 +14038,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4346543",
@@ -13878,7 +14087,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346542",
@@ -13930,7 +14139,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346538",
@@ -13981,7 +14190,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4118417",
@@ -14030,7 +14239,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346380",
@@ -14073,7 +14282,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346317",
@@ -14116,7 +14325,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346305",
@@ -14165,7 +14374,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346301",
@@ -14207,7 +14416,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346298",
@@ -14253,7 +14462,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346286",
@@ -14297,7 +14506,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346280",
@@ -14343,7 +14552,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346277",
@@ -14390,7 +14599,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4346258",
@@ -14438,7 +14647,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4345700",
@@ -14497,61 +14706,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
-  },
-  {
-    "id": "wttj:4254374",
-    "title": "Product Owner",
-    "company": "Onatera",
-    "company_slug": "onatera",
-    "city": "Aix-En-Provence",
-    "cities": [
-      "Aix-En-Provence"
-    ],
-    "department": "Bouches-du-Rhône",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "hybride",
-    "category": "product",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": null,
-    "published_at": "2026-10-23T00:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/onatera/jobs/product-owner_aix-en-provence?o=ONATE_PAX5epm",
-    "source": "wttj",
-    "stack": [
-      "GitHub",
-      "Notion",
-      "Figma",
-      "JIRA"
-    ],
-    "soft_skills": [
-      "Gestion des parties prenantes",
-      "Gestion de projets",
-      "Méthode Agile",
-      "Communication",
-      "Programmation fonctionnelle",
-      "Accessibilité"
-    ],
-    "description": "Dans le cadre du développement de nos équipes, nous recrutons un(e) Product Owner pour accompagner la conception et l’évolution de nos produits digitaux.\nVous souhaitez évoluer dans un environnement où l’expérience client, l’innovation et l’amélioration continue sont au centre des projets ? Rejoignez une équipe dynamique et passionnée, au sein d’une entreprise en pleine croissance.\nVos missions\nEn tant que Product Owner, vous contribuez à la définition de la vision produit et à la création de solutions utiles, simples et performantes pour nos clients et nos équipes :\n• Piloter la réalisation et la préparation des projets à venir en relation directe avec le CTO et les parties prenantes\n\n• Maintenir et prioriser le backlog en arbitrant valeur business, expérience client et effort technique\n\n• Recueillir et challenger les besoins des parties prenantes internes\n\n• Rédiger des user stories claires avec critères d'acceptation testables, et les affiner avec l'équipe de développement\n\n• Découper les fonctionnalités en incréments livrables rapidement, définir les MVP et les itérations suivantes\n\n• Animer les rituels agiles (affinage, revue, planification) et assurer une présence quotidienne auprès des développeurs\n\n• Piloter le cycle de vie des fonctionnalités de bout en bout : conception, recette, mise en production, mesure\n\n• Suivre les KPI e-commerce (conversion, panier moyen, tunnel de commande, etc...)\n\nProfil recherché\nCe poste est ouvert à une personne passionnée par les produits digitaux, l’expérience utilisateur et le travail en équipe :\n• Expérience confirmée de Product Owner sur un site e-commerce\n\n• Maîtrise des méthodes agiles et de leurs outils\n\n• Culture des enjeux e-commerce : tunnel de conversion, moyens de paiement, gestion catalogue, promotions, logistique, CRM/emailing\n\n• Pratique courante des outils d'analyse (GA4 ou équivalent, dashboards, A/B testing)\n\n• Aisance avec les outils de gestion de projet et de documentation (GitHub Projects, Jira, Notion ou équivalents)\n\n• Compréhension des contraintes techniques du web (API, performance, SEO, dette technique)\n\n• Sensibilité aux outils d'IA générative et à leur usage dans le travail produit (rédaction, analyse, prototypage)\n\n• Réaliser ou ajuster des maquettes et wireframes sur Figma pour illustrer les besoins auprès de l'équipe — un plus apprécié\n\nQualités recherchées\n• Métier: Sens de la priorisation, orientation utilisateur, penser data, Agile\n\n• Communication: Écoute, clarté, pédagogie\n\n• Relation avec la tech: Respect de l'expertise des devs, bases techniques, disponibilité\n\n• Posture: Humilité, autonomie, résistance à la pression\n\nCe poste est ouvert aux personnes en situation de handicap.\nDécouvrez nos dernières actualités sur notre page LinkedIn & abonnez-vous -> Onatera",
-    "description_excerpt": "Dans le cadre du développement de nos équipes, nous recrutons un(e) Product Owner pour accompagner la conception et l’évolution de nos produits digitaux.\nVous souhaitez évoluer dans un environnement où l’expérience client, l’innovation et l’amélioration continue sont au centre des projets ? Rejoignez une équipe dynamique et passionnée,…",
-    "profile_excerpt": null,
-    "experience": null,
-    "education_level": null,
-    "remote_detail": "hybride",
-    "apply_url": "https://recrutement.onatera.com/jobs/8303229-product-owner?utm_source=welcometothejungle",
-    "ats": "kombo",
-    "logo": "https://cdn-images.welcometothejungle.com/HAe9ucGH--7x2IzHjpURfCMlKpuU-I0nj_-V7IVRuGo/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8wOTU5LzE2ODU0NC81ZmNlYjgxNi0zYzMyLTQ5MTgtOTZkZi05YzdiYWViNzE2NjIuanBn",
-    "benefits_preview": [
-      "Entre 1-2 jours de télétravail",
-      "Prime PACS ou mariage",
-      "Chèques cadeaux",
-      "Afterworks, Déjeuners d'équipe, etc.",
-      "Collations à volonté"
-    ],
-    "benefits_count": 5,
-    "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4254373",
@@ -14605,7 +14760,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4344669",
@@ -14658,7 +14813,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4343654",
@@ -14717,7 +14872,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4236836",
@@ -14775,7 +14930,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4343295",
@@ -14821,7 +14976,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4004733",
@@ -14883,7 +15038,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4004732",
@@ -14945,7 +15100,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4004731",
@@ -15007,7 +15162,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:3758232",
@@ -15063,7 +15218,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:00+00:00"
   },
   {
     "id": "wttj:4342596",
@@ -15115,7 +15270,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2027-01-17T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:3844505",
@@ -15176,7 +15331,7 @@
     ],
     "benefits_count": 11,
     "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:3828559",
@@ -15237,7 +15392,7 @@
     ],
     "benefits_count": 11,
     "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4341463",
@@ -15287,7 +15442,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4341457",
@@ -15335,7 +15490,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4341427",
@@ -15385,7 +15540,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4339259",
@@ -15434,7 +15589,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4339255",
@@ -15480,7 +15635,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4339248",
@@ -15535,7 +15690,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4339093",
@@ -15587,7 +15742,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4339038",
@@ -15639,7 +15794,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4339033",
@@ -15693,7 +15848,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4339032",
@@ -15746,7 +15901,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4339025",
@@ -15790,7 +15945,7 @@
     ],
     "benefits_count": 18,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4339015",
@@ -15843,7 +15998,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4338861",
@@ -15892,7 +16047,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4338735",
@@ -15957,7 +16112,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4338566",
@@ -16010,7 +16165,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:3723081",
@@ -16058,7 +16213,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4009455",
@@ -16113,7 +16268,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-12-30T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:3580377",
@@ -16170,7 +16325,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4237964",
@@ -16227,7 +16382,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4337039",
@@ -16267,7 +16422,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4337030",
@@ -16324,7 +16479,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4336813",
@@ -16372,7 +16527,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4336799",
@@ -16417,7 +16572,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4336760",
@@ -16462,7 +16617,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4336723",
@@ -16508,7 +16663,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4335952",
@@ -16555,7 +16710,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4335950",
@@ -16605,7 +16760,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4335947",
@@ -16655,58 +16810,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
-  },
-  {
-    "id": "wttj:4334921",
-    "title": "Stage Développement Produit - Réglementation H/F",
-    "company": "Onatera",
-    "company_slug": "onatera",
-    "city": "Aix-En-Provence",
-    "cities": [
-      "Aix-En-Provence"
-    ],
-    "department": "Bouches-du-Rhône",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "Stage",
-    "remote": "sur site",
-    "category": "eng",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": null,
-    "published_at": "2026-10-17T00:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/onatera/jobs/stage-developpement-produit-reglementation-h-f_aix-en-provence?o=ONATE_rPP00xO",
-    "source": "wttj",
-    "stack": [],
-    "soft_skills": [
-      "Gestion de projets",
-      "Gestion de la documentation",
-      "Gestion des données",
-      "Communication",
-      "Accessibilité",
-      "Développement de produits",
-      "Conformité réglementaire",
-      "Gestion de la conformité"
-    ],
-    "description": "Vous êtes à la recherche d'un stage de 6 mois à compter de janvier 2027 et vous avez envie de rejoindre une aventure dans laquelle chaque effort contribue au développement d'Onatera ? Rejoignez notre équipe pour un stage Développement Produit & Réglementation (H/F).\nAux côtés de nos cheffes de projet, vous prenez en charge la partie opérationnelle du développement produit : suivi des projets, étiquetage, conformité réglementaire et fiabilité des données dans l'ERP. Un poste au cœur de la qualité de nos compléments alimentaires, où la rigueur fait toute la différence.\nVos missions\nDéveloppement produit\n• Appuyer les cheffes de projet dans le suivi des projets de développement : planning, jalons, relances et coordination avec les fournisseurs, laboratoires et équipes internes\n\n• Centraliser et mettre à jour les informations clés de chaque projet (formules, composants, packaging, documents de référence) pour garantir une vision partagée\n\nGestion et suivi des étiquettes\n• Centraliser les besoins de création ou de modification d'étiquettes, rédiger les briefs et les transmettre aux équipes graphiques\n\n• Coordonner les échanges entre équipes internes, graphistes, fournisseurs et imprimeurs, et organiser les cycles de corrections et de validation\n\n• Garantir la disponibilité des bonnes versions de fichiers pour chaque interlocuteur et dans l'ERP, archiver les versions validées et participer au suivi des achats liés aux supports d'étiquetage\n\nRéglementaire et conformité\n• Relire et valider les étiquetages et supports produits d'un point de vue réglementaire\n\n• Contrôler la conformité des documents et cahiers des charges fournisseurs, identifier les non-conformités et suivre leur résolution\n\n• Participer à la constitution des dossiers réglementaires produits et assurer une veille sur les évolutions concernant les compléments alimentaires et leurs ingrédients\n\nGestion des données et ERP\n• Créer et mettre à jour les nomenclatures, fiches articles, matières premières et composants dans l'ERP, en lien avec les évolutions de formules, fournisseurs ou packaging\n\n• Contrôler la cohérence entre formules, nomenclatures, cahiers des charges, étiquettes et documents fournisseurs, et contribuer à la fiabilisation des données produits\n\nVotre profil\n• En formation Bac +4/+5 (école d'ingénieur agro/agroalimentaire, master en réglementation, nutrition, pharmacie ou équivalent)\n\n• Rigoureux·euse, méticuleux·euse et très organisé·e, capable de suivre plusieurs sujets en parallèle\n\n• À l'aise avec les tâches administratives et documentaires, le travail structuré et le suivi de process, y compris les tâches répétitives nécessaires à la fiabilité et à la conformité des produits\n\n• Doté·e d'un bon esprit d'analyse : vous repérez une incohérence ou une erreur dans un document\n\n• À l'aise pour communiquer avec des interlocuteurs variés : fournisseurs, graphistes, imprimeurs, équipes internes\n\n• Autonome et force de proposition\n\nCe que vous apprendrez\n• Le cycle de vie d'un complément alimentaire, de la formule à la mise sur le marché\n\n• La réglementation applicable aux compléments alimentaires et à leur étiquetage\n\n• La gestion de données produits dans un ERP et la coordination d'un écosystème de fournisseurs, graphistes et imprimeurs\n\nLe poste est ouvert aux personnes en situation d'handicap",
-    "description_excerpt": "Vous êtes à la recherche d'un stage de 6 mois à compter de janvier 2027 et vous avez envie de rejoindre une aventure dans laquelle chaque effort contribue au développement d'Onatera ? Rejoignez notre équipe pour un stage Développement Produit & Réglementation (H/F).\nAux côtés de nos cheffes de projet, vous prenez en charge la partie…",
-    "profile_excerpt": null,
-    "experience": null,
-    "education_level": null,
-    "remote_detail": "sur site",
-    "apply_url": "https://recrutement.onatera.com/jobs/8560934-stage-developpement-produit-reglementation-h-f?utm_source=welcometothejungle",
-    "ats": "kombo",
-    "logo": "https://cdn-images.welcometothejungle.com/HAe9ucGH--7x2IzHjpURfCMlKpuU-I0nj_-V7IVRuGo/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8wOTU5LzE2ODU0NC81ZmNlYjgxNi0zYzMyLTQ5MTgtOTZkZi05YzdiYWViNzE2NjIuanBn",
-    "benefits_preview": [
-      "Entre 1-2 jours de télétravail",
-      "Prime PACS ou mariage",
-      "Chèques cadeaux",
-      "Afterworks, Déjeuners d'équipe, etc.",
-      "Collations à volonté"
-    ],
-    "benefits_count": 5,
-    "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4334920",
@@ -16757,7 +16861,7 @@
     ],
     "benefits_count": 5,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4334471",
@@ -16823,7 +16927,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4334470",
@@ -16889,7 +16993,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4334469",
@@ -16955,7 +17059,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-15T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4334337",
@@ -17015,7 +17119,7 @@
     ],
     "benefits_count": 20,
     "start_date": "2026-10-15T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4334243",
@@ -17060,7 +17164,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4334238",
@@ -17098,7 +17202,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4334237",
@@ -17144,7 +17248,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:13+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4108290",
@@ -17196,7 +17300,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2027-01-07T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4082818",
@@ -17254,7 +17358,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2027-01-01T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4334025",
@@ -17299,7 +17403,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4333359",
@@ -17347,7 +17451,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4333285",
@@ -17389,7 +17493,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4331741",
@@ -17458,7 +17562,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4331740",
@@ -17527,7 +17631,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4331739",
@@ -17596,7 +17700,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4331581",
@@ -17651,7 +17755,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4331037",
@@ -17693,7 +17797,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:01+00:00"
   },
   {
     "id": "wttj:4331027",
@@ -17740,7 +17844,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4331011",
@@ -17785,7 +17889,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4330965",
@@ -17837,7 +17941,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4330964",
@@ -17881,7 +17985,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4330579",
@@ -17944,7 +18048,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4330578",
@@ -18007,7 +18111,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4330577",
@@ -18070,7 +18174,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:3431735",
@@ -18115,7 +18219,7 @@
     ],
     "benefits_count": 12,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:3431734",
@@ -18160,7 +18264,7 @@
     ],
     "benefits_count": 12,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:3431733",
@@ -18205,7 +18309,7 @@
     ],
     "benefits_count": 12,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4330070",
@@ -18245,7 +18349,7 @@
     ],
     "benefits_count": 3,
     "start_date": "2026-11-08T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4291458",
@@ -18303,7 +18407,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4291457",
@@ -18361,7 +18465,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4291456",
@@ -18419,7 +18523,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4329912",
@@ -18466,7 +18570,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4273257",
@@ -18531,7 +18635,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:2739126",
@@ -18596,7 +18700,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:2739125",
@@ -18661,7 +18765,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4329631",
@@ -18716,7 +18820,7 @@
     ],
     "benefits_count": 25,
     "start_date": "2026-12-31T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4329097",
@@ -18763,7 +18867,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4329091",
@@ -18811,7 +18915,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4329049",
@@ -18860,7 +18964,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4329044",
@@ -18905,7 +19009,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4328898",
@@ -18938,13 +19042,13 @@
       "Communication",
       "Aptitude à résoudre les problèmes"
     ],
-    "description": "Donnez la bonne énergie à votre avenir, formez-vous avec RTE ! \nRTE est le gestionnaire du réseau français de transport d’électricité. En charge du plus grand réseau haute et très haute tension d’Europe, nous avons la responsabilité de garantir à plus de 67 millions de consommateurs, aux industries et aux distributeurs, une alimentation électrique fiable, 24h/24.  \nEn coulisse, plus de 10 000 hommes et femmes orchestrent en temps réel l’équilibre entre production et consommation d’électricité, conduisent les flux, réalisent la maintenance des installations, innovent, mais aussi pilotent les projets qui transforment le réseau, main dans la main avec les territoires. Notre moteur collectif : mettre nos expertises au service de l’intérêt général et d’un futur durable où l’électricité sera la principale énergie. \nRTE place la santé et la sécurité de ses collaborateurs, prestataires et partenaires au premier plan, en faisant de la prévention des risques un pilier de sa culture d’entreprise. Convaincus que la diversité est une richesse, nous étudions toutes les candidatures avec la même attention, y compris celles de personnes en situation de handicap, pour construire des équipes représentatives d’une société pleinement inclusive.  \nInvesti d'une mission de service public, RTE respecte le principe de neutralité religieuse et politique. \nJob Description\nLieu : 99 Rue de Lyon, Marseille, France\nDurée et/ou période du stage : de 2 à 6 mois à partir de janvier 2027\nLa Direction Transformation et Exploitation du Système Électrique de RTE recrute un(e) :\nStagiaire en développement informatique et outils numériques à Marseille (13)\nLa Direction Transformation et Exploitation du Système Électrique contribue à garantir la sûreté et la performance du réseau de transport d’électricité. Au sein de cette direction, le Centre Opérationnel du Système Électrique, composé d’une centaine de personnes et situé à Marseille, veille au bon fonctionnement du réseau et à la gestion des flux d’énergie, en intégrant également les enjeux liés aux télécommunications.\nPour répondre aux besoins des équipes opérationnelles, RTE s’appuie sur de nombreux outils informatiques et applications issus de son système d’information industriel. Le développement de nouvelles fonctionnalités et d’outils adaptés aux besoins des utilisateurs contribue à améliorer les pratiques et à accompagner l’évolution des activités.\nVos missions :\nRattaché(e) au Centre Opérationnel du Système Électrique, vous rejoindrez une équipe de proximité d’une quinzaine de personnes, composée de professionnels aux compétences complémentaires. En lien avec les développeurs et les utilisateurs, vous participerez à la conception, au développement et au déploiement d’outils numériques destinés à faciliter l’exploitation du réseau électrique.\nVos principales activités seront les suivantes :\n• Développer et faire évoluer des applications existantes, en participant à la programmation de nouvelles fonctionnalités avec l’appui de l’équipe de développeurs.\n• Concevoir de nouveaux outils numériques répondant aux besoins des équipes opérationnelles, notamment à l’aide de Python ou de R (Shiny), et utiliser les outils de gestion de versions tels que GitLab.\n• Recueillir et analyser les besoins des utilisateurs, en échangeant avec les équipes concernées à l’échelle nationale, afin de comprendre leurs attentes et leurs contraintes.\n• Contribuer à la conception de maquettes et de prototypes, par exemple avec Figma, pour aider les utilisateurs à préciser leurs besoins et à définir les fonctionnalités attendues.\n• Étudier les besoins en développement informatique et contribuer à l’évaluation de la pertinence et de la valeur ajoutée des solutions envisagées.\n• Participer au déploiement des outils développés, accompagner leur prise en main par les utilisateurs, contribuer à leur formation et recueillir leurs retours d’expérience afin d’identifier les axes d’amélioration.\nCe stage vous permettra de développer vos compéte",
+    "description": "Donnez la bonne énergie à votre avenir, formez-vous avec RTE ! \nRTE est le gestionnaire du réseau français de transport d’électricité. En charge du plus grand réseau haute et très haute tension d’Europe, nous avons la responsabilité de garantir à plus de 67 millions de consommateurs, aux industries et aux distributeurs, une alimentation électrique fiable, 24h/24.  \nEn coulisse, plus de 10 000 hommes et femmes orchestrent en temps réel l’équilibre entre production et consommation d’électricité, conduisent les flux, réalisent la maintenance des installations, innovent, mais aussi pilotent les projets qui transforment le réseau, main dans la main avec les territoires. Notre moteur collectif : mettre nos expertises au service de l’intérêt général et d’un futur durable où l’électricité sera la principale énergie. \nRTE place la santé et la sécurité de ses collaborateurs, prestataires et partenaires au premier plan, en faisant de la prévention des risques un pilier de sa culture d’entreprise. Convaincus que la diversité est une richesse, nous étudions toutes les candidatures avec la même attention, y compris celles de personnes en situation de handicap, pour construire des équipes représentatives d’une société pleinement inclusive.  \nInvesti d'une mission de service public, RTE respecte le principe de neutralité religieuse et politique. \nJob Description\nLieu : 99 Rue de Lyon, Marseille, France\nDurée et/ou période du stage : de 2 à 6 mois à partir de janvier 2027\nLa Direction Transformation et Exploitation du Système Électrique de RTE recrute un(e) :\nStagiaire - Développeur d'outils informatiques et numériques à Marseille (13)\nLa Direction Transformation et Exploitation du Système Électrique contribue à garantir la sûreté et la performance du réseau de transport d’électricité. Au sein de cette direction, le Centre Opérationnel du Système Électrique, composé d’une centaine de personnes et situé à Marseille, veille au bon fonctionnement du réseau et à la gestion des flux d’énergie, en intégrant également les enjeux liés aux télécommunications.\nPour répondre aux besoins des équipes opérationnelles, RTE s’appuie sur de nombreux outils informatiques et applications issus de son système d’information industriel. Le développement de nouvelles fonctionnalités et d’outils adaptés aux besoins des utilisateurs contribue à améliorer les pratiques et à accompagner l’évolution des activités.\nVos missions :\nRattaché(e) au Centre Opérationnel du Système Électrique, vous rejoindrez une équipe de proximité d’une quinzaine de personnes, composée de professionnels aux compétences complémentaires. En lien avec les développeurs et les utilisateurs, vous participerez à la conception, au développement et au déploiement d’outils numériques destinés à faciliter l’exploitation du réseau électrique.\nVos principales activités seront les suivantes :\n• Développer et faire évoluer des applications existantes, en participant à la programmation de nouvelles fonctionnalités avec l’appui de l’équipe de développeurs.\n• Concevoir de nouveaux outils numériques répondant aux besoins des équipes opérationnelles, notamment à l’aide de Python ou de R (Shiny), et utiliser les outils de gestion de versions tels que GitLab.\n• Recueillir et analyser les besoins des utilisateurs, en échangeant avec les équipes concernées à l’échelle nationale, afin de comprendre leurs attentes et leurs contraintes.\n• Contribuer à la conception de maquettes et de prototypes, par exemple avec Figma, pour aider les utilisateurs à préciser leurs besoins et à définir les fonctionnalités attendues.\n• Étudier les besoins en développement informatique et contribuer à l’évaluation de la pertinence et de la valeur ajoutée des solutions envisagées.\n• Participer au déploiement des outils développés, accompagner leur prise en main par les utilisateurs, contribuer à leur formation et recueillir leurs retours d’expérience afin d’identifier les axes d’amélioration.\nCe stage vous permettra de développer vos compéte",
     "description_excerpt": "Donnez la bonne énergie à votre avenir, formez-vous avec RTE ! \nRTE est le gestionnaire du réseau français de transport d’électricité. En charge du plus grand réseau haute et très haute tension d’Europe, nous avons la responsabilité de garantir à plus de 67 millions de consommateurs, aux industries et aux distributeurs, une alimentation…",
     "profile_excerpt": "Vous êtes actuellement en troisième année de licence (Bac+3) en Informatique, MIAGE ou dans une formation équivalente, et vous recherchez un stage de validation de votre année.\nVous souhaitez approfondir vos compétences en développement informatique et découvrir comment les…",
     "experience": "Débutant",
     "education_level": null,
     "remote_detail": null,
-    "apply_url": "https://jobs.smartrecruiters.com/RTE1/744000155449351-stage-charge-en-developpement-informatique-et-outils-numeriques-f-h?trid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
+    "apply_url": "https://jobs.smartrecruiters.com/RTE1/744000160649279-stage-developpeur-d-outils-informatiques-et-numeriques-f-h?trid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
     "ats": "kombo",
     "logo": "https://cdn-images.welcometothejungle.com/b3MemrZNdjBnd5vJrG9pJrf7pv4fhRY8NsDgtYoQyps/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby80MDM3LzE1MjE4MC9lZTY1ODQ5YS1iNzkxLTQzZTAtOGI0Ni01M2M1M2Q4YWIwZTgucG5n",
     "benefits_preview": [
@@ -18957,7 +19061,7 @@
     ],
     "benefits_count": 35,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4328886",
@@ -18990,13 +19094,13 @@
       "Communication",
       "Aptitude à résoudre les problèmes"
     ],
-    "description": "Donnez la bonne énergie à votre avenir, formez-vous avec RTE ! \nRTE est le gestionnaire du réseau français de transport d’électricité. En charge du plus grand réseau haute et très haute tension d’Europe, nous avons la responsabilité de garantir à plus de 67 millions de consommateurs, aux industries et aux distributeurs, une alimentation électrique fiable, 24h/24.  \nEn coulisse, plus de 10 000 hommes et femmes orchestrent en temps réel l’équilibre entre production et consommation d’électricité, conduisent les flux, réalisent la maintenance des installations, innovent, mais aussi pilotent les projets qui transforment le réseau, main dans la main avec les territoires. Notre moteur collectif : mettre nos expertises au service de l’intérêt général et d’un futur durable où l’électricité sera la principale énergie. \nRTE place la santé et la sécurité de ses collaborateurs, prestataires et partenaires au premier plan, en faisant de la prévention des risques un pilier de sa culture d’entreprise. Convaincus que la diversité est une richesse, nous étudions toutes les candidatures avec la même attention, y compris celles de personnes en situation de handicap, pour construire des équipes représentatives d’une société pleinement inclusive.  \nInvesti d'une mission de service public, RTE respecte le principe de neutralité religieuse et politique. \nJob Description\nLieu : 99 Rue de Lyon, Marseille, France\nDurée et/ou période du stage : de 2 à 6 mois à partir de janvier 2027\nLa Direction Transformation et Exploitation du Système Électrique de RTE recrute un(e) :\nStagiaire en développement informatique et outils numériques à Marseille (13)\nLa Direction Transformation et Exploitation du Système Électrique contribue à garantir la sûreté et la performance du réseau de transport d’électricité. Au sein de cette direction, le Centre Opérationnel du Système Électrique, composé d’une centaine de personnes et situé à Marseille, veille au bon fonctionnement du réseau et à la gestion des flux d’énergie, en intégrant également les enjeux liés aux télécommunications.\nPour répondre aux besoins des équipes opérationnelles, RTE s’appuie sur de nombreux outils informatiques et applications issus de son système d’information industriel. Le développement de nouvelles fonctionnalités et d’outils adaptés aux besoins des utilisateurs contribue à améliorer les pratiques et à accompagner l’évolution des activités.\nVos missions :\nRattaché(e) au Centre Opérationnel du Système Électrique, vous rejoindrez une équipe de proximité d’une quinzaine de personnes, composée de professionnels aux compétences complémentaires. En lien avec les développeurs et les utilisateurs, vous participerez à la conception, au développement et au déploiement d’outils numériques destinés à faciliter l’exploitation du réseau électrique.\nVos principales activités seront les suivantes :\n• Développer et faire évoluer des applications existantes, en participant à la programmation de nouvelles fonctionnalités avec l’appui de l’équipe de développeurs.\n• Concevoir de nouveaux outils numériques répondant aux besoins des équipes opérationnelles, notamment à l’aide de Python ou de R (Shiny), et utiliser les outils de gestion de versions tels que GitLab.\n• Recueillir et analyser les besoins des utilisateurs, en échangeant avec les équipes concernées à l’échelle nationale, afin de comprendre leurs attentes et leurs contraintes.\n• Contribuer à la conception de maquettes et de prototypes, par exemple avec Figma, pour aider les utilisateurs à préciser leurs besoins et à définir les fonctionnalités attendues.\n• Étudier les besoins en développement informatique et contribuer à l’évaluation de la pertinence et de la valeur ajoutée des solutions envisagées.\n• Participer au déploiement des outils développés, accompagner leur prise en main par les utilisateurs, contribuer à leur formation et recueillir leurs retours d’expérience afin d’identifier les axes d’amélioration.\nCe stage vous permettra de développer vos compéte",
+    "description": "Donnez la bonne énergie à votre avenir, formez-vous avec RTE ! \nRTE est le gestionnaire du réseau français de transport d’électricité. En charge du plus grand réseau haute et très haute tension d’Europe, nous avons la responsabilité de garantir à plus de 67 millions de consommateurs, aux industries et aux distributeurs, une alimentation électrique fiable, 24h/24.  \nEn coulisse, plus de 10 000 hommes et femmes orchestrent en temps réel l’équilibre entre production et consommation d’électricité, conduisent les flux, réalisent la maintenance des installations, innovent, mais aussi pilotent les projets qui transforment le réseau, main dans la main avec les territoires. Notre moteur collectif : mettre nos expertises au service de l’intérêt général et d’un futur durable où l’électricité sera la principale énergie. \nRTE place la santé et la sécurité de ses collaborateurs, prestataires et partenaires au premier plan, en faisant de la prévention des risques un pilier de sa culture d’entreprise. Convaincus que la diversité est une richesse, nous étudions toutes les candidatures avec la même attention, y compris celles de personnes en situation de handicap, pour construire des équipes représentatives d’une société pleinement inclusive.  \nInvesti d'une mission de service public, RTE respecte le principe de neutralité religieuse et politique. \nJob Description\nLieu : 99 Rue de Lyon, Marseille, France\nDurée et/ou période du stage : de 2 à 6 mois à partir de janvier 2027\nLa Direction Transformation et Exploitation du Système Électrique de RTE recrute un(e) :\nStagiaire - Développeur d'outils informatiques et numériques à Marseille (13)\nLa Direction Transformation et Exploitation du Système Électrique contribue à garantir la sûreté et la performance du réseau de transport d’électricité. Au sein de cette direction, le Centre Opérationnel du Système Électrique, composé d’une centaine de personnes et situé à Marseille, veille au bon fonctionnement du réseau et à la gestion des flux d’énergie, en intégrant également les enjeux liés aux télécommunications.\nPour répondre aux besoins des équipes opérationnelles, RTE s’appuie sur de nombreux outils informatiques et applications issus de son système d’information industriel. Le développement de nouvelles fonctionnalités et d’outils adaptés aux besoins des utilisateurs contribue à améliorer les pratiques et à accompagner l’évolution des activités.\nVos missions :\nRattaché(e) au Centre Opérationnel du Système Électrique, vous rejoindrez une équipe de proximité d’une quinzaine de personnes, composée de professionnels aux compétences complémentaires. En lien avec les développeurs et les utilisateurs, vous participerez à la conception, au développement et au déploiement d’outils numériques destinés à faciliter l’exploitation du réseau électrique.\nVos principales activités seront les suivantes :\n• Développer et faire évoluer des applications existantes, en participant à la programmation de nouvelles fonctionnalités avec l’appui de l’équipe de développeurs.\n• Concevoir de nouveaux outils numériques répondant aux besoins des équipes opérationnelles, notamment à l’aide de Python ou de R (Shiny), et utiliser les outils de gestion de versions tels que GitLab.\n• Recueillir et analyser les besoins des utilisateurs, en échangeant avec les équipes concernées à l’échelle nationale, afin de comprendre leurs attentes et leurs contraintes.\n• Contribuer à la conception de maquettes et de prototypes, par exemple avec Figma, pour aider les utilisateurs à préciser leurs besoins et à définir les fonctionnalités attendues.\n• Étudier les besoins en développement informatique et contribuer à l’évaluation de la pertinence et de la valeur ajoutée des solutions envisagées.\n• Participer au déploiement des outils développés, accompagner leur prise en main par les utilisateurs, contribuer à leur formation et recueillir leurs retours d’expérience afin d’identifier les axes d’amélioration.\nCe stage vous permettra de développer vos compéte",
     "description_excerpt": "Donnez la bonne énergie à votre avenir, formez-vous avec RTE ! \nRTE est le gestionnaire du réseau français de transport d’électricité. En charge du plus grand réseau haute et très haute tension d’Europe, nous avons la responsabilité de garantir à plus de 67 millions de consommateurs, aux industries et aux distributeurs, une alimentation…",
     "profile_excerpt": "Vous êtes actuellement en troisième année de licence (Bac+3) en Informatique, MIAGE ou dans une formation équivalente, et vous recherchez un stage de validation de votre année.\nVous souhaitez approfondir vos compétences en développement informatique et découvrir comment les…",
     "experience": "Débutant",
     "education_level": null,
     "remote_detail": null,
-    "apply_url": "https://jobs.smartrecruiters.com/RTE1/744000155450329-stage-charge-en-developpement-informatique-et-outils-numeriques-f-h?trid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
+    "apply_url": "https://jobs.smartrecruiters.com/RTE1/744000160649549-stage-developpeur-d-outils-informatiques-et-numeriques-f-h?trid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
     "ats": "kombo",
     "logo": "https://cdn-images.welcometothejungle.com/b3MemrZNdjBnd5vJrG9pJrf7pv4fhRY8NsDgtYoQyps/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby80MDM3LzE1MjE4MC9lZTY1ODQ5YS1iNzkxLTQzZTAtOGI0Ni01M2M1M2Q4YWIwZTgucG5n",
     "benefits_preview": [
@@ -19009,7 +19113,7 @@
     ],
     "benefits_count": 35,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4328879",
@@ -19066,7 +19170,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:3781403",
@@ -19109,7 +19213,7 @@
     ],
     "benefits_count": 13,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:02+00:00"
   },
   {
     "id": "wttj:4327875",
@@ -19159,7 +19263,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-12-31T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4327116",
@@ -19217,7 +19321,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4327053",
@@ -19267,56 +19371,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
-  },
-  {
-    "id": "wttj:4326473",
-    "title": "Dev produit",
-    "company": "Onatera",
-    "company_slug": "onatera",
-    "city": "Aix-En-Provence",
-    "cities": [
-      "Aix-En-Provence"
-    ],
-    "department": "Bouches-du-Rhône",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "hybride",
-    "category": "eng",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": null,
-    "published_at": "2026-10-13T00:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/onatera/jobs/dev-produit_aix-en-provence?o=ONATE_ko0gAbl",
-    "source": "wttj",
-    "stack": [
-      "Monday"
-    ],
-    "soft_skills": [
-      "Coordination de la production",
-      "Communication",
-      "Planification de projets",
-      "Conformité réglementaire"
-    ],
-    "description": "Onatera est une marque française de référence dans l'univers de la santé naturelle, spécialisée en compléments alimentaires, micronutrition et cosmétiques naturels. Acteur digital natif en forte croissance, Onatera combine exigence scientifique, naturalité, pédagogie client et excellence opérationnelle. Dans un marché en forte évolution (réglementaire, scientifique et concurrentielle), la marque poursuit son ambition : proposer des produits engagés, efficaces, différenciants et alignés avec les attentes croissantes des consommateurs en matière de santé et de bien-être.\nLe poste\nVous pilotez le développement des produits Onatera, de l'idée à la mise sur le marché, sur l'ensemble de l'offre : compléments alimentaires, micronutrition et cosmétiques naturels.\nVos missions principales :\n• Concevoir les formules avec les sous-traitants et sourcer des ingrédients innovants et conformes.\n\n• Nourrir l'offre par une veille active : marché, publications scientifiques, salons, collaborations.\n\n• Planifier les nouveautés et les refontes, décomposer chaque projet en étapes clés et livrer dans les délais de la roadmap.\n\n• Délivrer les cahiers des charges à la Production et synchroniser les premières commandes avec les Approvisionnements et les Achats.\n\n• Garantir la conformité technico-réglementaire des produits finis : validation, étiquetage, déclarations.\n\n• Piloter les étapes de validation (formule, coût de revient, packaging, identité visuelle) et gérer les BAT.\n\n• Suivre la satisfaction client (avis, réclamations, SAV), mettre en place les actions correctives et optimiser l'équilibre qualité, coût et prix de vente.\n\nVous travaillez avec le marketing, le graphisme, la production, les achats, les approvisionnements et les sous-traitants. Vous gérez les BAT en autonomie sur les déclinaisons et avec les chefs de produit marketing sur les nouveautés. Vous tenez à jour les outils et bases produit : Monday, NAV, PLM, codes-barres et codes étiquettes.\nLe profil recherché\n• Expérience : 3 ans minimum sur un poste similaire dans le secteur des compléments alimentaires\n\n• Gestion de projet : capacité à piloter plusieurs projets simultanément et à coordonner des équipes pluridisciplinaires (marketing, graphisme, sous-traitants, production).\n\n• Formulation et sourcing : conception de formules en collaboration avec les sous-traitants et sourcing d'ingrédients spécifiques.\n\n• Réglementation : maîtrise des normes applicables pour assurer la conformité globale des produits, ainsi que des outils réglementaires de type Compl'alim.\n\n• Veille scientifique et marché : capacité à exploiter des publications scientifiques et à identifier les tendances propres à la micronutrition.\n\n• Analyse de l'offre : analyse des résultats produits (satisfaction, qualité) et arbitrage coût/qualité/prix.\n\n• Outils : maîtrise d'un logiciel de gestion de projet (type Monday) et d'un ERP (NAV), utilisation d'un outil PLM.\n\n• Compétences comportementales : rigueur et sens de l'organisation, pédagogie et écoute, capacité à fédérer des interlocuteurs internes et externes, créativité orientée solution.\n\nVous vous reconnaissez dans les valeurs d'Onatera : esprit entrepreneurial, exigence, transmission et partage, fiabilité. Une connaissance de l'univers santé et nature, ou une affinité avec celui-ci, est un plus.\nLes conditions\n• Contrat : CDI\n\n• Temps de travail : Temps plein\n\n• Lieu : Aix en provence, 2 jours de télétravail\n\nPOURQUOI ONATERA ?\n• 🚀 Une entreprise en forte croissance, portée par des projets ambitieux et innovants\n\n• 🤝 Une équipe à taille humaine, engagée, exigeante et bienveillante\n\n• 💰 Une rémunération attractive\n\n• 🍽️ Tickets restaurant de 9 €, cofinancés à 50 % par l'employeur\n\n• 🩺 Une excellente complémentaire santé avec Alan\n\n• 🌱 L'opportunité de contribuer à une marque porteuse de sens, au service du bien-être\n\n• 🎁 Prime de cooptation\n\nLe processus de recrutement\n• Échange téléphonique de préqualification\n\n• Entretien RH\n\n• Cas pratique\n\n• Prise de références, a",
-    "description_excerpt": "Onatera est une marque française de référence dans l'univers de la santé naturelle, spécialisée en compléments alimentaires, micronutrition et cosmétiques naturels. Acteur digital natif en forte croissance, Onatera combine exigence scientifique, naturalité, pédagogie client et excellence opérationnelle. Dans un marché en forte évolution…",
-    "profile_excerpt": null,
-    "experience": null,
-    "education_level": null,
-    "remote_detail": "hybride",
-    "apply_url": "https://recrutement.onatera.com/jobs/7621172-dev-produit?utm_source=welcometothejungle",
-    "ats": "kombo",
-    "logo": "https://cdn-images.welcometothejungle.com/HAe9ucGH--7x2IzHjpURfCMlKpuU-I0nj_-V7IVRuGo/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8wOTU5LzE2ODU0NC81ZmNlYjgxNi0zYzMyLTQ5MTgtOTZkZi05YzdiYWViNzE2NjIuanBn",
-    "benefits_preview": [
-      "Entre 1-2 jours de télétravail",
-      "Prime PACS ou mariage",
-      "Chèques cadeaux",
-      "Afterworks, Déjeuners d'équipe, etc.",
-      "Collations à volonté"
-    ],
-    "benefits_count": 5,
-    "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4326472",
@@ -19337,35 +19392,7 @@
     "experience_min_years": null,
     "published_at": "2026-10-13T00:00:00.000+02:00",
     "url": "https://www.welcometothejungle.com/fr/companies/onatera/jobs/dev-produit_aix-en-provence?o=ONATE_ko0gAbl",
-    "source": "wttj",
-    "stack": [
-      "Monday"
-    ],
-    "soft_skills": [
-      "Coordination de la production",
-      "Communication",
-      "Planification de projets",
-      "Conformité réglementaire"
-    ],
-    "description": "Onatera est une marque française de référence dans l'univers de la santé naturelle, spécialisée en compléments alimentaires, micronutrition et cosmétiques naturels. Acteur digital natif en forte croissance, Onatera combine exigence scientifique, naturalité, pédagogie client et excellence opérationnelle. Dans un marché en forte évolution (réglementaire, scientifique et concurrentielle), la marque poursuit son ambition : proposer des produits engagés, efficaces, différenciants et alignés avec les attentes croissantes des consommateurs en matière de santé et de bien-être.\nLe poste\nVous pilotez le développement des produits Onatera, de l'idée à la mise sur le marché, sur l'ensemble de l'offre : compléments alimentaires, micronutrition et cosmétiques naturels.\nVos missions principales :\n• Concevoir les formules avec les sous-traitants et sourcer des ingrédients innovants et conformes.\n\n• Nourrir l'offre par une veille active : marché, publications scientifiques, salons, collaborations.\n\n• Planifier les nouveautés et les refontes, décomposer chaque projet en étapes clés et livrer dans les délais de la roadmap.\n\n• Délivrer les cahiers des charges à la Production et synchroniser les premières commandes avec les Approvisionnements et les Achats.\n\n• Garantir la conformité technico-réglementaire des produits finis : validation, étiquetage, déclarations.\n\n• Piloter les étapes de validation (formule, coût de revient, packaging, identité visuelle) et gérer les BAT.\n\n• Suivre la satisfaction client (avis, réclamations, SAV), mettre en place les actions correctives et optimiser l'équilibre qualité, coût et prix de vente.\n\nVous travaillez avec le marketing, le graphisme, la production, les achats, les approvisionnements et les sous-traitants. Vous gérez les BAT en autonomie sur les déclinaisons et avec les chefs de produit marketing sur les nouveautés. Vous tenez à jour les outils et bases produit : Monday, NAV, PLM, codes-barres et codes étiquettes.\nLe profil recherché\n• Expérience : 3 ans minimum sur un poste similaire dans le secteur des compléments alimentaires\n\n• Gestion de projet : capacité à piloter plusieurs projets simultanément et à coordonner des équipes pluridisciplinaires (marketing, graphisme, sous-traitants, production).\n\n• Formulation et sourcing : conception de formules en collaboration avec les sous-traitants et sourcing d'ingrédients spécifiques.\n\n• Réglementation : maîtrise des normes applicables pour assurer la conformité globale des produits, ainsi que des outils réglementaires de type Compl'alim.\n\n• Veille scientifique et marché : capacité à exploiter des publications scientifiques et à identifier les tendances propres à la micronutrition.\n\n• Analyse de l'offre : analyse des résultats produits (satisfaction, qualité) et arbitrage coût/qualité/prix.\n\n• Outils : maîtrise d'un logiciel de gestion de projet (type Monday) et d'un ERP (NAV), utilisation d'un outil PLM.\n\n• Compétences comportementales : rigueur et sens de l'organisation, pédagogie et écoute, capacité à fédérer des interlocuteurs internes et externes, créativité orientée solution.\n\nVous vous reconnaissez dans les valeurs d'Onatera : esprit entrepreneurial, exigence, transmission et partage, fiabilité. Une connaissance de l'univers santé et nature, ou une affinité avec celui-ci, est un plus.\nLes conditions\n• Contrat : CDI\n\n• Temps de travail : Temps plein\n\n• Lieu : Aix en provence, 2 jours de télétravail\n\nPOURQUOI ONATERA ?\n• 🚀 Une entreprise en forte croissance, portée par des projets ambitieux et innovants\n\n• 🤝 Une équipe à taille humaine, engagée, exigeante et bienveillante\n\n• 💰 Une rémunération attractive\n\n• 🍽️ Tickets restaurant de 9 €, cofinancés à 50 % par l'employeur\n\n• 🩺 Une excellente complémentaire santé avec Alan\n\n• 🌱 L'opportunité de contribuer à une marque porteuse de sens, au service du bien-être\n\n• 🎁 Prime de cooptation\n\nLe processus de recrutement\n• Échange téléphonique de préqualification\n\n• Entretien RH\n\n• Cas pratique\n\n• Prise de références, a",
-    "description_excerpt": "Onatera est une marque française de référence dans l'univers de la santé naturelle, spécialisée en compléments alimentaires, micronutrition et cosmétiques naturels. Acteur digital natif en forte croissance, Onatera combine exigence scientifique, naturalité, pédagogie client et excellence opérationnelle. Dans un marché en forte évolution…",
-    "profile_excerpt": null,
-    "experience": null,
-    "education_level": null,
-    "remote_detail": "hybride",
-    "apply_url": "https://recrutement.onatera.com/jobs/7621172-dev-produit?utm_source=welcometothejungle",
-    "ats": "kombo",
-    "logo": "https://cdn-images.welcometothejungle.com/HAe9ucGH--7x2IzHjpURfCMlKpuU-I0nj_-V7IVRuGo/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby8wOTU5LzE2ODU0NC81ZmNlYjgxNi0zYzMyLTQ5MTgtOTZkZi05YzdiYWViNzE2NjIuanBn",
-    "benefits_preview": [
-      "Entre 1-2 jours de télétravail",
-      "Prime PACS ou mariage",
-      "Chèques cadeaux",
-      "Afterworks, Déjeuners d'équipe, etc.",
-      "Collations à volonté"
-    ],
-    "benefits_count": 5,
-    "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "source": "wttj"
   },
   {
     "id": "wttj:3235984",
@@ -19414,7 +19441,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4325986",
@@ -19455,7 +19482,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4325861",
@@ -19559,7 +19586,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-10-14T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4221527",
@@ -19622,7 +19649,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4109279",
@@ -19671,7 +19698,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4106856",
@@ -19734,7 +19761,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4324648",
@@ -19783,7 +19810,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:3145500",
@@ -19831,7 +19858,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4324448",
@@ -19889,7 +19916,7 @@
     ],
     "benefits_count": 14,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4323818",
@@ -19940,7 +19967,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4323814",
@@ -19985,7 +20012,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4323813",
@@ -20041,7 +20068,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4323641",
@@ -20092,7 +20119,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4124699",
@@ -20143,7 +20170,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4322441",
@@ -20195,7 +20222,7 @@
     ],
     "benefits_count": 16,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4181100",
@@ -20263,7 +20290,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4319816",
@@ -20321,7 +20348,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4319815",
@@ -20379,7 +20406,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4319814",
@@ -20437,7 +20464,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4319813",
@@ -20495,7 +20522,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4094287",
@@ -20556,7 +20583,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4094286",
@@ -20617,7 +20644,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4094285",
@@ -20678,7 +20705,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4316941",
@@ -20727,7 +20754,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4316936",
@@ -20779,7 +20806,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4316934",
@@ -20828,7 +20855,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4316933",
@@ -20876,7 +20903,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4316931",
@@ -20925,7 +20952,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4316926",
@@ -20974,7 +21001,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4316825",
@@ -21018,7 +21045,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4316764",
@@ -21067,7 +21094,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4316759",
@@ -21107,7 +21134,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4316419",
@@ -21168,7 +21195,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4316418",
@@ -21229,7 +21256,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4316417",
@@ -21290,7 +21317,7 @@
     ],
     "benefits_count": 10,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:14+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3997964",
@@ -21348,7 +21375,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-10-14T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:3997961",
@@ -21400,7 +21427,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4233327",
@@ -21455,7 +21482,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4233326",
@@ -21510,7 +21537,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4314731",
@@ -21559,7 +21586,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4213660",
@@ -21610,7 +21637,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:03+00:00"
   },
   {
     "id": "wttj:4314600",
@@ -21656,7 +21683,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4314271",
@@ -21700,7 +21727,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4207436",
@@ -21745,7 +21772,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4207435",
@@ -21790,7 +21817,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3616484",
@@ -21833,7 +21860,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-11-30T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3616483",
@@ -21876,137 +21903,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2025-11-30T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:15+00:00"
-  },
-  {
-    "id": "wttj:1705202",
-    "title": "Tech lead Sénior F/H",
-    "company": "FASST",
-    "company_slug": "fasst",
-    "city": "Marseille",
-    "cities": [
-      "Ajaccio",
-      "Amiens",
-      "Angoulême",
-      "Besançon",
-      "Bordeaux",
-      "Caen",
-      "Châlons-En-Champagne",
-      "Clermont-Ferrand",
-      "Dijon",
-      "Lille",
-      "Limoges",
-      "Lyon",
-      "Marseille",
-      "Metz",
-      "Montpellier",
-      "Nantes",
-      "Orléans",
-      "Paris",
-      "Poitiers",
-      "Rennes",
-      "Rouen",
-      "Strasbourg",
-      "Toulouse"
-    ],
-    "department": "Bouches-du-Rhône",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "full remote",
-    "category": "eng",
-    "profession": "Dev Fullstack",
-    "salary": "48000–60000 EUR",
-    "experience_min_years": 5,
-    "published_at": "2026-10-05T09:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/fasst/jobs/tech-lead-senior-f-h_angouleme?o=FASST_z8AxkjO",
-    "source": "wttj",
-    "stack": [],
-    "soft_skills": [],
-    "description": "En tant que Tech Lead F/H Sénior, vous vous impliquez dans notre développement entouré des équipes de développeurs sur l’ensemble du cycle de vie d’un ou plusieurs projets clients. Vous gérez les délais et êtes responsable du rendu final.\nVous reportez efficacement et écoutez les avis de vos pairs. Vous êtes responsable de la prise de décisions au niveau du chantier technique du projet dans lequel vous intervenez. En deux mots, vous garantissez la réussite des projets par la mise en place de solutions innovantes, créatrices de valeur.\nVous êtes responsable du foisonnement de votre portefeuille de clients. Vous participez à la vie de votre practice, Vous faites preuve d’un leadership reconnu sur vos missions.\nEn fonction de votre expertise métier, vous aurez les responsabilités suivantes :\n• Participer activement à la conception d’applications et d’évolutions en échange avec le Chef de projet MOA.(démarche agile ou cycle en V)\n\n• Accompagner techniquement et être le référent des développeurs junior dans le cadre de projets agiles.\n\n• Prise en charge de tâches de développement dans le cadre de nos projets, mise en place de solutions pour nos assureurs au sein d’une équipe Scrum.\n\n• Faire le Packaging, la gestion du code source et le déploiement des composants.\n\n• Participer à la définition et à la conception des API.\n\n• Contribuer aux choix d’architectures en collaboration avec le pôle architecture.\n\n• Contribuer à la démarche d’innovation.\n\n• Développer des bonnes pratiques DevOps dans l’entreprise.\n\n• Garantir la formation et l’accompagnement des équipes de développement.\n\n• Participer aux avant-ventes (rédaction de réponses à appels d’offres : analyse des besoins, dimensionnement, chiffrage,…).\n\nPour accompagner notre forte croissance, nous recherchons des Tech Lead avec plus de 6 ans d’expérience souhaitant s’impliquer dans notre développement sur nos sites de Bordeaux ou Angoulême en hybride ou en 100% télétravail",
-    "description_excerpt": "En tant que Tech Lead F/H Sénior, vous vous impliquez dans notre développement entouré des équipes de développeurs sur l’ensemble du cycle de vie d’un ou plusieurs projets clients. Vous gérez les délais et êtes responsable du rendu final.\nVous reportez efficacement et écoutez les avis de vos pairs. Vous êtes responsable de la prise de…",
-    "profile_excerpt": "Vous devez avoir obligatoirement une première expérience en tant que Tech Lead Sénior sur une stack javascript (NodeJS, ReactJS…), sur un système de contrôle de version (Git, GitHub, GitLab) et dans la mesure du possible, sur l’utilisation d’infra d’intégration continue.\nVous…",
-    "experience": "5–7 ans",
-    "education_level": "bac_3",
-    "remote_detail": "full remote",
-    "apply_url": null,
-    "ats": "wkit",
-    "logo": "https://cdn-images.welcometothejungle.com/8oSpVdsXYGrTU8DrBHk8b9SZym_m5j6EYRF2UzMeOTY/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby84NzA3LzE2MjY2OC9iN2E5ZTZlMC0zNTBkLTQ0ZWItODQ5Zi1hMDY0ZmQwOGNmOTAucG5n",
-    "benefits_preview": [
-      "Ouvert au télétravail total",
-      "Horaires de travail flexibles",
-      "RTT / Jour de repos",
-      "Salle de jeux",
-      "Team building",
-      "Mutuelle santé prise en charge à 100%"
-    ],
-    "benefits_count": 29,
-    "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
-  },
-  {
-    "id": "wttj:1705201",
-    "title": "Tech lead Sénior F/H",
-    "company": "FASST",
-    "company_slug": "fasst",
-    "city": "Marseille",
-    "cities": [
-      "Ajaccio",
-      "Amiens",
-      "Angoulême",
-      "Besançon",
-      "Bordeaux",
-      "Caen",
-      "Châlons-En-Champagne",
-      "Clermont-Ferrand",
-      "Dijon",
-      "Lille",
-      "Limoges",
-      "Lyon",
-      "Marseille",
-      "Metz",
-      "Montpellier",
-      "Nantes",
-      "Orléans",
-      "Paris",
-      "Poitiers",
-      "Rennes",
-      "Rouen",
-      "Strasbourg",
-      "Toulouse"
-    ],
-    "department": "Bouches-du-Rhône",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "full remote",
-    "category": "eng",
-    "profession": "Dev Fullstack",
-    "salary": "48000–60000 EUR",
-    "experience_min_years": 5,
-    "published_at": "2026-10-05T09:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/fasst/jobs/tech-lead-senior-f-h_angouleme?o=FASST_z8AxkjO",
-    "source": "wttj",
-    "stack": [],
-    "soft_skills": [],
-    "description": "En tant que Tech Lead F/H Sénior, vous vous impliquez dans notre développement entouré des équipes de développeurs sur l’ensemble du cycle de vie d’un ou plusieurs projets clients. Vous gérez les délais et êtes responsable du rendu final.\nVous reportez efficacement et écoutez les avis de vos pairs. Vous êtes responsable de la prise de décisions au niveau du chantier technique du projet dans lequel vous intervenez. En deux mots, vous garantissez la réussite des projets par la mise en place de solutions innovantes, créatrices de valeur.\nVous êtes responsable du foisonnement de votre portefeuille de clients. Vous participez à la vie de votre practice, Vous faites preuve d’un leadership reconnu sur vos missions.\nEn fonction de votre expertise métier, vous aurez les responsabilités suivantes :\n• Participer activement à la conception d’applications et d’évolutions en échange avec le Chef de projet MOA.(démarche agile ou cycle en V)\n\n• Accompagner techniquement et être le référent des développeurs junior dans le cadre de projets agiles.\n\n• Prise en charge de tâches de développement dans le cadre de nos projets, mise en place de solutions pour nos assureurs au sein d’une équipe Scrum.\n\n• Faire le Packaging, la gestion du code source et le déploiement des composants.\n\n• Participer à la définition et à la conception des API.\n\n• Contribuer aux choix d’architectures en collaboration avec le pôle architecture.\n\n• Contribuer à la démarche d’innovation.\n\n• Développer des bonnes pratiques DevOps dans l’entreprise.\n\n• Garantir la formation et l’accompagnement des équipes de développement.\n\n• Participer aux avant-ventes (rédaction de réponses à appels d’offres : analyse des besoins, dimensionnement, chiffrage,…).\n\nPour accompagner notre forte croissance, nous recherchons des Tech Lead avec plus de 6 ans d’expérience souhaitant s’impliquer dans notre développement sur nos sites de Bordeaux ou Angoulême en hybride ou en 100% télétravail",
-    "description_excerpt": "En tant que Tech Lead F/H Sénior, vous vous impliquez dans notre développement entouré des équipes de développeurs sur l’ensemble du cycle de vie d’un ou plusieurs projets clients. Vous gérez les délais et êtes responsable du rendu final.\nVous reportez efficacement et écoutez les avis de vos pairs. Vous êtes responsable de la prise de…",
-    "profile_excerpt": "Vous devez avoir obligatoirement une première expérience en tant que Tech Lead Sénior sur une stack javascript (NodeJS, ReactJS…), sur un système de contrôle de version (Git, GitHub, GitLab) et dans la mesure du possible, sur l’utilisation d’infra d’intégration continue.\nVous…",
-    "experience": "5–7 ans",
-    "education_level": "bac_3",
-    "remote_detail": "full remote",
-    "apply_url": null,
-    "ats": "wkit",
-    "logo": "https://cdn-images.welcometothejungle.com/8oSpVdsXYGrTU8DrBHk8b9SZym_m5j6EYRF2UzMeOTY/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby84NzA3LzE2MjY2OC9iN2E5ZTZlMC0zNTBkLTQ0ZWItODQ5Zi1hMDY0ZmQwOGNmOTAucG5n",
-    "benefits_preview": [
-      "Ouvert au télétravail total",
-      "Horaires de travail flexibles",
-      "RTT / Jour de repos",
-      "Salle de jeux",
-      "Team building",
-      "Mutuelle santé prise en charge à 100%"
-    ],
-    "benefits_count": 29,
-    "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4090925",
@@ -22056,7 +21953,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3867786",
@@ -22115,7 +22012,7 @@
     ],
     "benefits_count": 3,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4311474",
@@ -22182,7 +22079,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4311129",
@@ -22229,7 +22126,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4309179",
@@ -22288,7 +22185,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4309178",
@@ -22347,7 +22244,7 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4308904",
@@ -22414,7 +22311,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4308899",
@@ -22459,7 +22356,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4308896",
@@ -22505,7 +22402,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4308724",
@@ -22556,7 +22453,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4308307",
@@ -22601,7 +22498,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4308294",
@@ -22646,7 +22543,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4308284",
@@ -22690,7 +22587,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4308174",
@@ -22737,7 +22634,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:2974096",
@@ -22785,7 +22682,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4305297",
@@ -22839,7 +22736,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4305265",
@@ -22893,7 +22790,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4206667",
@@ -22957,7 +22854,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4203426",
@@ -23016,7 +22913,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3992053",
@@ -23067,7 +22964,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4174239",
@@ -23130,7 +23027,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-10-11T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4174238",
@@ -23193,7 +23090,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-10-11T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4174237",
@@ -23256,7 +23153,7 @@
     ],
     "benefits_count": 7,
     "start_date": "2026-10-11T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4213365",
@@ -23301,7 +23198,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4102107",
@@ -23348,7 +23245,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4303220",
@@ -23386,7 +23283,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-09-28T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:1669187",
@@ -23439,7 +23336,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4302179",
@@ -23481,7 +23378,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4301875",
@@ -23537,7 +23434,7 @@
     ],
     "benefits_count": 3,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:15+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3083845",
@@ -23583,7 +23480,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:2974087",
@@ -23627,7 +23524,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:2974083",
@@ -23673,7 +23570,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:2974062",
@@ -23722,7 +23619,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:2974047",
@@ -23769,7 +23666,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:2974037",
@@ -23817,7 +23714,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3887337",
@@ -23882,7 +23779,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3880571",
@@ -23944,7 +23841,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3880566",
@@ -23997,7 +23894,7 @@
     ],
     "benefits_count": 4,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4200846",
@@ -24043,7 +23940,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4208748",
@@ -24102,7 +23999,7 @@
     ],
     "benefits_count": 23,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4192540",
@@ -24158,7 +24055,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3813645",
@@ -24209,7 +24106,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4097079",
@@ -24252,7 +24149,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4097005",
@@ -24300,7 +24197,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4096941",
@@ -24348,7 +24245,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4299676",
@@ -24401,7 +24298,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4299598",
@@ -24453,7 +24350,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4298750",
@@ -24507,7 +24404,7 @@
     ],
     "benefits_count": 12,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4298119",
@@ -24556,7 +24453,7 @@
     ],
     "benefits_count": 9,
     "start_date": "2026-10-31T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4298118",
@@ -24605,7 +24502,7 @@
     ],
     "benefits_count": 9,
     "start_date": "2026-10-31T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4293835",
@@ -24645,7 +24542,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4297466",
@@ -24700,7 +24597,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4296463",
@@ -24753,7 +24650,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4196396",
@@ -24799,7 +24696,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3847930",
@@ -24850,7 +24747,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4200690",
@@ -24911,7 +24808,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3588722",
@@ -24956,7 +24853,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4291808",
@@ -25003,7 +24900,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": "2026-09-21T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:05+00:00"
   },
   {
     "id": "wttj:4153405",
@@ -25068,7 +24965,7 @@
     ],
     "benefits_count": 20,
     "start_date": "2026-08-31T22:00:00Z",
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:05+00:00"
   },
   {
     "id": "wttj:4291239",
@@ -25123,7 +25020,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-10-25T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:05+00:00"
   },
   {
     "id": "wttj:4290890",
@@ -25172,7 +25069,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:05+00:00"
   },
   {
     "id": "wttj:4290741",
@@ -25217,7 +25114,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:05+00:00"
   },
   {
     "id": "wttj:4290183",
@@ -25276,7 +25173,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:05+00:00"
   },
   {
     "id": "wttj:4185276",
@@ -25339,7 +25236,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4181091",
@@ -25390,7 +25287,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4181086",
@@ -25441,7 +25338,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4181085",
@@ -25503,7 +25400,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4289696",
@@ -25559,7 +25456,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:05+00:00"
   },
   {
     "id": "wttj:4289695",
@@ -25615,7 +25512,7 @@
     ],
     "benefits_count": 17,
     "start_date": "2026-11-30T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:16+00:00"
+    "enriched_at": "2026-11-12T13:48:05+00:00"
   },
   {
     "id": "wttj:4185857",
@@ -25668,7 +25565,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4182096",
@@ -25714,7 +25611,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4286817",
@@ -25774,7 +25671,7 @@
     ],
     "benefits_count": 28,
     "start_date": "2026-11-01T23:00:00Z",
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4173804",
@@ -25821,7 +25718,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4173803",
@@ -25868,7 +25765,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4173789",
@@ -25915,7 +25812,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4173788",
@@ -25962,7 +25859,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4286382",
@@ -26012,7 +25909,7 @@
     ],
     "benefits_count": 17,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4285607",
@@ -26070,7 +25967,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3924533",
@@ -26118,7 +26015,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4284604",
@@ -26165,7 +26062,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4284577",
@@ -26214,7 +26111,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4284439",
@@ -26263,7 +26160,7 @@
     ],
     "benefits_count": 47,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4283504",
@@ -26313,7 +26210,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4283494",
@@ -26363,7 +26260,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4056048",
@@ -26411,7 +26308,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:05+00:00"
   },
   {
     "id": "wttj:4282756",
@@ -26452,7 +26349,7 @@
     "benefits_preview": [],
     "benefits_count": null,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4049842",
@@ -26500,7 +26397,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3957357",
@@ -26558,7 +26455,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4280999",
@@ -26613,7 +26510,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4280917",
@@ -26674,7 +26571,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4280910",
@@ -26745,7 +26642,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3979521",
@@ -26796,7 +26693,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4185759",
@@ -26843,7 +26740,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4185735",
@@ -26891,7 +26788,7 @@
     ],
     "benefits_count": 32,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4169990",
@@ -26937,54 +26834,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
-  },
-  {
-    "id": "wttj:3821720",
-    "title": "Chef(fe) de projet technique - Infrastructure & Cloud - Aix-en-Provence",
-    "company": "Sopra Steria",
-    "company_slug": "sopra-steria",
-    "city": "Aix-En-Provence",
-    "cities": [
-      "Aix-En-Provence"
-    ],
-    "department": "Bouches-du-Rhône",
-    "region": "Provence-Alpes-Cote d'Azur",
-    "contract": "CDI",
-    "remote": "hybride",
-    "category": "tech-adjacent",
-    "profession": null,
-    "salary": null,
-    "experience_min_years": null,
-    "published_at": "2026-09-14T00:00:00.000+02:00",
-    "url": "https://www.welcometothejungle.com/fr/companies/sopra-steria/jobs/chef-fe-de-projet-technique-infrastructure-cloud-aix-en-provence_aix-en-provence_SS_zkwkm10?o=SS_zkwkm10",
-    "source": "wttj",
-    "stack": [],
-    "soft_skills": [
-      "Travail d'équipe",
-      "Leadership d'équipe transverse",
-      "Communication",
-      "Collaboration et travail d'équipe",
-      "Aptitude à résoudre les problèmes"
-    ],
-    "description": "L'opportunité à saisir !\nVous intégrez l'entreprise Sopra Steria au sein de l'entité Digital Platform Services, avec une équipe dynamique dans un environnement stimulant.\nSuivant les missions qui vous sont confiées, vous êtes amené(e) à évoluer au sein d'équipes internes Sopra Steria dans des prestations de type Infogérance ou vous êtes directement intégré(e) à des équipes client. Vous êtes accompagné(e) par une équipe dynamique qui vous fera prendre activement part au projet dans son ensemble.\nTout au long de votre parcours dans le Groupe vous êtes accompagné(e) par votre  manager unique , présent(e) en lien de proximité sur votre mission et qui vous accompagne dans votre évolution de carrière.\nL'esprit d'équipe étant primordial chez Sopra Steria, plusieurs événements par an sont organisés afin de nous rassembler et partager des moments de convivialité : afterworks, petits déjeuners, challenges et compétitions internes (sportives ou gaming), communautés techniques….\nPour Sopra Steria ce qui compte avant tout c'est la qualité de vie de ses collaborateurs car l'environnement de travail est important, c'est pour cela que l'entreprise est certifiée Great Place To Work.\nUne fois que vous aurez un pied chez nous, c'est à vous de choisir où mettre le deuxième. #libredansmonjob\nVotre rôle et vos missions :\nNous recherchons un Chef(fe) de Projet Technique pour rejoindre notre équipe dédiée à la production applicative au sein de notre département du SI interne. Si vous êtes passionné(e) par les défis techniques et possédez une solide expérience en ingénierie de production ou en infrastructure, cette opportunité est faite pour vous !\nVous travaillez dans un environnement de travail stimulant au sein d'une équipe dynamique, avec des projets variés et innovants.\nEn tant que Chef(fe) de projet Infrastructure, vous :\n• Pilotez des projets techniques en garantissant le respect des délais, des coûts et de la qualité.\n• Assurez la coordination entre les équipes techniques et les parties prenantes.\n• Analysez et résolvez les problématiques techniques rencontrées durant les projets.\n• Participez à l’évolution et à l’optimisation de notre infrastructure et de nos applications.\n• Encadrez et formez les membres de l’équipe sur les nouvelles technologies et pratiques.\n• Analysez de l'impact du changement\n• Identifiez les parties prenantes affectées par le changement\n• Évaluez les impacts organisationnels, humains et opérationnels\n• Réalisez des diagnostics de maturité au changement\n• Élaborez la stratégie de conduite du changement\n• Définissez et comprenez les objectifs de transformation\n• Construisez un plan de conduite du changement (roadmap)\n• Déterminez les leviers d'adhésion (communication, formation, accompagnement)\n• Suivez le plan de communication interne\n• Créez des supports pour accompagner l'orchestration des changements\n• Coordonnez avec les autres équipes projet\n• Travaillez en lien avec les différentes équipes IT\n• Participez aux comités de pilotage\nCe que nous proposons : \n• Un accord télétravail pour télétravailler jusqu'à 2 jours par semaine selon vos missions.\n• Un forfait avantages intéressants : une mutuelle, un CSE, des titres restaurants, un accordd'intérêt, des primes vacances et cooptation.\n\n• Des opportunités de carrières multiples : plus de 30 familles de métiers, autant de passerelles à imaginer ensemble.\n• Des centaines de formations pour développer vos compétences et évoluer au sein du Groupe\n• Des plateformes de formations en autonomie pour préparer vos certifications et accompagner votre développement personnel \n• La possibilité de s'engager auprès de notre fondation ou de notre partenaire « Vendredi ».\n• L'opportunité de rejoindre le collectif Tech'Me UP (formations, conférences, veille, et bien plus encore…).\nAdditional InformationEmployeur inclusif et engagé, notre société œuvre chaque jour pour lutter contre toute forme de discrimination et favoriser un environnement de travail respectueux. C’est pourquoi, attachés",
-    "description_excerpt": "L'opportunité à saisir !\nVous intégrez l'entreprise Sopra Steria au sein de l'entité Digital Platform Services, avec une équipe dynamique dans un environnement stimulant.\nSuivant les missions qui vous sont confiées, vous êtes amené(e) à évoluer au sein d'équipes internes Sopra Steria dans des prestations de type Infogérance ou vous êtes…",
-    "profile_excerpt": "Votre profil : \nDiplômé(e) d'un Bac+5, d'une école d'Ingénieur(e) ou équivalent, vous justifiez d'au moins 5 ans d'expérience professionnelle dans une fonction similaire.\nVous avez une expérience significative en tant qu'ingénieur(e) de production ou ingénieur(e)…",
-    "experience": null,
-    "education_level": null,
-    "remote_detail": "hybride",
-    "apply_url": "https://jobs.smartrecruiters.com/SopraSteria1/744000103885974-chef-fe-de-projet-technique-infrastructure-cloud-aix-en-provence?oga=true&sid=9fa97eed-f39f-400a-9fc4-128b3ed356c4",
-    "ats": "external",
-    "logo": "https://cdn-images.welcometothejungle.com/3-lPBQHExo-vD6vVdZXNypnl6FjMsQQvX0_3XpwwM8I/rs:auto:70/q:85/czM6Ly93dHRqLXByb2R1Y3Rpb24vdXBsb2Fkcy9vcmdhbml6YXRpb24vbG9nby83Mjk1LzE0OTcyNy9hODAyNDc1YS1jMWY1LTQ4M2UtOWY2ZC00M2ZkYzZiNzE5ZjQucG5n",
-    "benefits_preview": [
-      "Entre 1-2 jours de télétravail",
-      "Financement des certifications",
-      "Plan de développement professionnel",
-      "Prime de cooptation"
-    ],
-    "benefits_count": 27,
-    "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4274147",
@@ -27041,7 +26891,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4166919",
@@ -27094,7 +26944,7 @@
     ],
     "benefits_count": 24,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4273164",
@@ -27151,7 +27001,7 @@
     ],
     "benefits_count": 21,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4192767",
@@ -27200,7 +27050,7 @@
     ],
     "benefits_count": 7,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4270925",
@@ -27257,7 +27107,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4270921",
@@ -27325,7 +27175,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4131502",
@@ -27381,7 +27231,7 @@
     ],
     "benefits_count": 14,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:17+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4161912",
@@ -27426,7 +27276,7 @@
     ],
     "benefits_count": 27,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3283001",
@@ -27478,7 +27328,7 @@
     ],
     "benefits_count": 8,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3829043",
@@ -27549,7 +27399,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3828837",
@@ -27605,7 +27455,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3828807",
@@ -27658,7 +27508,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3829042",
@@ -27717,7 +27567,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3829002",
@@ -27769,7 +27619,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3828744",
@@ -27825,7 +27675,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:4083582",
@@ -27879,7 +27729,7 @@
     ],
     "benefits_count": 28,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:3921007",
@@ -27934,7 +27784,7 @@
     ],
     "benefits_count": 9,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:04+00:00"
   },
   {
     "id": "wttj:1128344",
@@ -27998,6 +27848,6 @@
     ],
     "benefits_count": 20,
     "start_date": null,
-    "enriched_at": "2026-11-11T12:45:18+00:00"
+    "enriched_at": "2026-11-12T13:48:05+00:00"
   }
 ]
