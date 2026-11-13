@@ -1,7 +1,7 @@
 {
-  "last_generated_date": "2026-11-12",
+  "last_generated_date": "2026-11-13",
   "bucket_last_used": {
-    "eng-13": "2026-11-03",
+    "eng-13": "2026-11-13",
     "eng-06": "2026-11-11",
     "eng-83": "2026-11-08",
     "eng-84": "2026-11-05",
@@ -20,10 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "accenture-product-owner-f-h-62fd3a": "2026-10-29",
-    "instant-system-product-manager-billettique-h-f-bd0ae1": "2026-10-29",
-    "exalt-product-designer-h-f-exalt-azur-64063f": "2026-10-29",
-    "exalt-product-owner-h-f-exalt-azur-d80a46": "2026-10-29",
     "atos-developpeur-java-systemes-tactiques-pour-les-forces-armees-f-h-d2f581": "2026-10-30",
     "naval-group-fr-concepteur-logiciel-embarque-guerre-des-mines-h-f-f1db63": "2026-10-30",
     "naval-group-fr-ingenieur-e-developpement-produit-logiciel-h-f-281763": "2026-10-30",
@@ -92,7 +88,12 @@
     "naval-group-fr-technicien-analyse-fonctionnelle-base-de-donnees-h-f-0bcd21": "2026-11-12",
     "cs-developpeur-se-cpp-qt-ia-implementation-d-un-chatbot-dans-le-produi-466d6a": "2026-11-12",
     "the-adecco-group-data-engineer-f-h-f75fa6": "2026-11-12",
-    "scalian-business-analyst-it-proxy-po-toulon-h-f-466c04": "2026-11-12"
+    "scalian-business-analyst-it-proxy-po-toulon-h-f-466c04": "2026-11-12",
+    "alten-industrialisation-et-adaptation-d-un-logiciel-embarque-stm32-h-f-5b0e56": "2026-11-13",
+    "cs-ingenieur-e-developpeur-se-scientifique-nucleaire-aix-en-provence-7046ea": "2026-11-13",
+    "cea-post-doc-developpement-de-methodes-d-analyse-des-radionucleides-a-b6c836": "2026-11-13",
+    "bpce-solutions-informatiques-developpeur-f-h-produit-souscriptions-dig-683825": "2026-11-13",
+    "exalt-pmo-bureau-detudes-electronique-h-f-aed1a5": "2026-11-13"
   },
   "last_published_date": "2026-11-12"
 }
