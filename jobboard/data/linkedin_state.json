@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-11-15",
+  "last_generated_date": "2026-11-16",
   "bucket_last_used": {
     "eng-13": "2026-11-13",
     "eng-06": "2026-11-11",
@@ -10,7 +10,7 @@
     "data-06": "2026-11-04",
     "data-83": "2026-11-12",
     "data-paca": "2026-11-14",
-    "data-84": "2026-10-19",
+    "data-84": "2026-11-16",
     "product-13": "2026-10-25",
     "tech-adjacent-13": "2026-10-27",
     "tech-adjacent-06": "2026-10-28",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "thales-ingenieur-developpement-automatisation-outils-informatiques-h-f-34c915": "2026-11-01",
-    "etablissement-francais-du-sang-cdd-developpeur-de-territoire-don-du-sa-bb12d6": "2026-11-01",
-    "median-technologies-ingenieur-integration-logicielle-h-f-d5943a": "2026-11-01",
-    "sopra-steria-developpeur-euse-dotnet-developpement-regional-sophia-a33a03": "2026-11-01",
-    "thales-developpement-doutils-daide-a-la-preparation-des-essais-ait-f-h-6cd973": "2026-11-01",
     "alten-ingenieur-ia-experimente-cdi-a77959": "2026-11-02",
     "cma-cgm-developer-intern-ai-augmented-applications-m-f-701e72": "2026-11-02",
     "cma-cgm-global-sales-data-effectiveness-january-2027-efb3c0": "2026-11-02",
@@ -93,7 +88,12 @@
     "naval-group-fr-ingenieur-systemes-embarques-detection-sous-marine-h-f-74f9cf": "2026-11-15",
     "sopra-steria-developpeur-se-d-applications-de-simulation-cpp-qt-defens-fab77d": "2026-11-15",
     "sopra-steria-developpeur-se-fullstack-java-angular-aeroline-toulon-1b0ade": "2026-11-15",
-    "the-adecco-group-tech-lead-angular-f-h-9fab8e": "2026-11-15"
+    "the-adecco-group-tech-lead-angular-f-h-9fab8e": "2026-11-15",
+    "hiphen-data-processing-client-support-specialist-ebc030": "2026-11-16",
+    "inrae-ingenieur-e-en-calcul-et-analyses-des-donnees-dimpact-du-changem-70be58": "2026-11-16",
+    "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-11-16",
+    "cgi-data-engineer-snowflake-f-h-fd312b": "2026-11-16",
+    "cgi-data-engineer-dbt-f-h-acd18f": "2026-11-16"
   },
   "last_published_date": "2026-11-15"
 }
