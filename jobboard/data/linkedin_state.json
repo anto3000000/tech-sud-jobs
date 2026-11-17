@@ -1,10 +1,10 @@
 {
-  "last_generated_date": "2026-11-16",
+  "last_generated_date": "2026-11-17",
   "bucket_last_used": {
     "eng-13": "2026-11-13",
     "eng-06": "2026-11-11",
     "eng-83": "2026-11-15",
-    "eng-84": "2026-11-05",
+    "eng-84": "2026-11-17",
     "eng-paca": "2026-11-10",
     "data-13": "2026-11-02",
     "data-06": "2026-11-04",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "alten-ingenieur-ia-experimente-cdi-a77959": "2026-11-02",
-    "cma-cgm-developer-intern-ai-augmented-applications-m-f-701e72": "2026-11-02",
-    "cma-cgm-global-sales-data-effectiveness-january-2027-efb3c0": "2026-11-02",
-    "cs-expert-e-en-liaison-de-donnees-tactiques-ldt-defense-securite-aix-e-f83bf5": "2026-11-02",
-    "sopra-steria-data-ingenieur-e-snowflake-experimente-e-developpement-re-42c08a": "2026-11-02",
     "scalian-developpeur-logiciel-java-h-f-846974": "2026-11-03",
     "thales-ingenieur-electronique-informatique-f-m-a255a0": "2026-11-03",
     "cs-ingenieur-developpement-defense-securite-aix-en-provence-7e5ec6": "2026-11-03",
@@ -36,9 +31,9 @@
     "schneider-electric-energy-analytics-consultant-carros-france-f-h-48193b": "2026-11-04",
     "la-securite-sociale-expert-e-cyber-ia-data-science-f-h-076fde": "2026-11-04",
     "inrae-de-master-m2-phenotypage-a-haut-debit-des-varietes-de-ble-avec-d-f7aa61": "2026-11-05",
-    "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-05",
-    "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-05",
-    "cgi-tech-lead-api-f-h-1d7693": "2026-11-05",
+    "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-17",
+    "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-17",
+    "cgi-tech-lead-api-f-h-1d7693": "2026-11-17",
     "thales-ux-designer-f-h-395232": "2026-11-06",
     "pennylane-growth-product-manager-website-conversion-cce724": "2026-11-06",
     "pennylane-product-domain-specialist-secteur-agricole-776dd9": "2026-11-06",
@@ -93,7 +88,8 @@
     "inrae-ingenieur-e-en-calcul-et-analyses-des-donnees-dimpact-du-changem-70be58": "2026-11-16",
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-11-16",
     "cgi-data-engineer-snowflake-f-h-fd312b": "2026-11-16",
-    "cgi-data-engineer-dbt-f-h-acd18f": "2026-11-16"
+    "cgi-data-engineer-dbt-f-h-acd18f": "2026-11-16",
+    "cgi-developpeur-se-f-h-57b896": "2026-11-17"
   },
   "last_published_date": "2026-11-16"
 }
