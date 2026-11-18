@@ -1,11 +1,11 @@
 {
-  "last_generated_date": "2026-11-17",
+  "last_generated_date": "2026-11-18",
   "bucket_last_used": {
     "eng-13": "2026-11-13",
     "eng-06": "2026-11-11",
     "eng-83": "2026-11-15",
     "eng-84": "2026-11-17",
-    "eng-paca": "2026-11-10",
+    "eng-paca": "2026-11-18",
     "data-13": "2026-11-02",
     "data-06": "2026-11-04",
     "data-83": "2026-11-12",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "scalian-developpeur-logiciel-java-h-f-846974": "2026-11-03",
-    "thales-ingenieur-electronique-informatique-f-m-a255a0": "2026-11-03",
-    "cs-ingenieur-developpement-defense-securite-aix-en-provence-7e5ec6": "2026-11-03",
-    "magora-ex-groupe-odalys-analyste-developpement-f-h-cdd-remplacement-11d1d4": "2026-11-03",
-    "bpce-infogerance-technologies-expert-en-developpement-f-h-cc9d75": "2026-11-03",
     "thales-architecte-solution-logiciel-base-de-donnees-charge-utile-telec-d7b4a0": "2026-11-04",
     "groupe-sii-ingenieur-ia-f-h-b33dce": "2026-11-04",
     "thales-developpeur-confirme-solution-base-de-donnees-charge-utile-sate-d44ec6": "2026-11-04",
@@ -89,7 +84,12 @@
     "scalian-administrateur-bases-de-donnees-dba-n2-h-f-17e248": "2026-11-16",
     "cgi-data-engineer-snowflake-f-h-fd312b": "2026-11-16",
     "cgi-data-engineer-dbt-f-h-acd18f": "2026-11-16",
-    "cgi-developpeur-se-f-h-57b896": "2026-11-17"
+    "cgi-developpeur-se-f-h-57b896": "2026-11-17",
+    "airbus-helicopters-logiciel-r-d-digitalcampus-java-tech-lead-applicati-be0069": "2026-11-18",
+    "cgi-ingenieur-e-csharp-f-h-641c17": "2026-11-18",
+    "meritis-developpeur-c-cpp-logiciel-embarque-h-f-70f02f": "2026-11-18",
+    "meritis-developpeur-cpp-go-embarque-h-f-1db050": "2026-11-18",
+    "thales-ingenieur-integration-dune-boucle-fermee-de-rendez-vous-orbital-aebefa": "2026-11-18"
   },
   "last_published_date": "2026-11-17"
 }
