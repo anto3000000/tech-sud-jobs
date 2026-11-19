@@ -1,8 +1,8 @@
 {
-  "last_generated_date": "2026-11-18",
+  "last_generated_date": "2026-11-19",
   "bucket_last_used": {
     "eng-13": "2026-11-13",
-    "eng-06": "2026-11-11",
+    "eng-06": "2026-11-19",
     "eng-83": "2026-11-15",
     "eng-84": "2026-11-17",
     "eng-paca": "2026-11-18",
@@ -20,11 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "thales-architecte-solution-logiciel-base-de-donnees-charge-utile-telec-d7b4a0": "2026-11-04",
-    "groupe-sii-ingenieur-ia-f-h-b33dce": "2026-11-04",
-    "thales-developpeur-confirme-solution-base-de-donnees-charge-utile-sate-d44ec6": "2026-11-04",
-    "schneider-electric-energy-analytics-consultant-carros-france-f-h-48193b": "2026-11-04",
-    "la-securite-sociale-expert-e-cyber-ia-data-science-f-h-076fde": "2026-11-04",
     "inrae-de-master-m2-phenotypage-a-haut-debit-des-varietes-de-ble-avec-d-f7aa61": "2026-11-05",
     "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-17",
     "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-17",
@@ -89,7 +84,12 @@
     "cgi-ingenieur-e-csharp-f-h-641c17": "2026-11-18",
     "meritis-developpeur-c-cpp-logiciel-embarque-h-f-70f02f": "2026-11-18",
     "meritis-developpeur-cpp-go-embarque-h-f-1db050": "2026-11-18",
-    "thales-ingenieur-integration-dune-boucle-fermee-de-rendez-vous-orbital-aebefa": "2026-11-18"
+    "thales-ingenieur-integration-dune-boucle-fermee-de-rendez-vous-orbital-aebefa": "2026-11-18",
+    "thales-pre-developpement-dun-systeme-re-armable-automatique-pour-appli-c4eb01": "2026-11-19",
+    "sopra-steria-developpeur-euse-experimente-e-java-angular-sophia-antipo-fa8644": "2026-11-19",
+    "la-securite-sociale-techlead-plateform-engineering-f-h-373448": "2026-11-19",
+    "greenerwave-hardware-engineer-f-m-internship-ed20a9": "2026-11-19",
+    "greenerwave-ingenieur-hardware-f-h-stage-5cec8d": "2026-11-19"
   },
   "last_published_date": "2026-11-18"
 }
