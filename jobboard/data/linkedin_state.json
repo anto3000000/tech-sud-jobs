@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-11-19",
+  "last_generated_date": "2026-11-20",
   "bucket_last_used": {
     "eng-13": "2026-11-13",
     "eng-06": "2026-11-19",
@@ -11,7 +11,7 @@
     "data-83": "2026-11-12",
     "data-paca": "2026-11-14",
     "data-84": "2026-11-16",
-    "product-13": "2026-10-25",
+    "product-13": "2026-11-20",
     "tech-adjacent-13": "2026-10-27",
     "tech-adjacent-06": "2026-10-28",
     "product-paca": "2026-11-06",
@@ -20,7 +20,6 @@
     "product-06": "2026-10-29"
   },
   "recent_slugs": {
-    "inrae-de-master-m2-phenotypage-a-haut-debit-des-varietes-de-ble-avec-d-f7aa61": "2026-11-05",
     "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-17",
     "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-17",
     "cgi-tech-lead-api-f-h-1d7693": "2026-11-17",
@@ -89,7 +88,12 @@
     "sopra-steria-developpeur-euse-experimente-e-java-angular-sophia-antipo-fa8644": "2026-11-19",
     "la-securite-sociale-techlead-plateform-engineering-f-h-373448": "2026-11-19",
     "greenerwave-hardware-engineer-f-m-internship-ed20a9": "2026-11-19",
-    "greenerwave-ingenieur-hardware-f-h-stage-5cec8d": "2026-11-19"
+    "greenerwave-ingenieur-hardware-f-h-stage-5cec8d": "2026-11-19",
+    "exalt-product-owner-ba-e-commerce-f-h-073623": "2026-11-20",
+    "magora-ex-groupe-odalys-product-owner-f-h-cdi-1618c0": "2026-11-20",
+    "omnidoc-senior-product-manager-1c2b63": "2026-11-20",
+    "job-link-group-product-owner-ai-lead-h-f-af7532": "2026-11-20",
+    "meritis-product-owner-ia-h-f-165e36": "2026-11-20"
   },
   "last_published_date": "2026-11-19"
 }
