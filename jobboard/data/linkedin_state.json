@@ -1,7 +1,7 @@
 {
-  "last_generated_date": "2026-11-20",
+  "last_generated_date": "2026-11-21",
   "bucket_last_used": {
-    "eng-13": "2026-11-13",
+    "eng-13": "2026-11-21",
     "eng-06": "2026-11-19",
     "eng-83": "2026-11-15",
     "eng-84": "2026-11-17",
@@ -23,11 +23,6 @@
     "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-17",
     "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-17",
     "cgi-tech-lead-api-f-h-1d7693": "2026-11-17",
-    "thales-ux-designer-f-h-395232": "2026-11-06",
-    "pennylane-growth-product-manager-website-conversion-cce724": "2026-11-06",
-    "pennylane-product-domain-specialist-secteur-agricole-776dd9": "2026-11-06",
-    "lemlist-product-manager-billing-monetisation-2dce43": "2026-11-06",
-    "alan-founding-growth-alan-precision-2789f3": "2026-11-06",
     "alan-customer-success-manager-france-f20189": "2026-11-07",
     "kincy-technicien-systemes-reseaux-support-it-helpdesk-h-f-profil-expat-8a6cf5": "2026-11-07",
     "pennylane-associate-team-lead-support-financial-services-n2-chef-fe-de-238926": "2026-11-07",
@@ -93,7 +88,12 @@
     "magora-ex-groupe-odalys-product-owner-f-h-cdi-1618c0": "2026-11-20",
     "omnidoc-senior-product-manager-1c2b63": "2026-11-20",
     "job-link-group-product-owner-ai-lead-h-f-af7532": "2026-11-20",
-    "meritis-product-owner-ia-h-f-165e36": "2026-11-20"
+    "meritis-product-owner-ia-h-f-165e36": "2026-11-20",
+    "alten-developpeur-back-end-h-f-6e5723": "2026-11-21",
+    "alten-scrum-master-f-h-b27c65": "2026-11-21",
+    "sogeti-developpeuse-developpeur-fullstack-java-angular-4b1dee": "2026-11-21",
+    "groupe-sii-developpeur-java-springboot-f-h-4eb152": "2026-11-21",
+    "open-developpeur-front-angular-h-f-698786": "2026-11-21"
   },
   "last_published_date": "2026-11-20"
 }
