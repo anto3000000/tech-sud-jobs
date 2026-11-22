@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-11-21",
+  "last_generated_date": "2026-11-22",
   "bucket_last_used": {
     "eng-13": "2026-11-21",
     "eng-06": "2026-11-19",
@@ -12,7 +12,7 @@
     "data-paca": "2026-11-14",
     "data-84": "2026-11-16",
     "product-13": "2026-11-20",
-    "tech-adjacent-13": "2026-10-27",
+    "tech-adjacent-13": "2026-11-22",
     "tech-adjacent-06": "2026-10-28",
     "product-paca": "2026-11-06",
     "tech-adjacent-paca": "2026-11-07",
@@ -23,11 +23,6 @@
     "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-17",
     "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-17",
     "cgi-tech-lead-api-f-h-1d7693": "2026-11-17",
-    "alan-customer-success-manager-france-f20189": "2026-11-07",
-    "kincy-technicien-systemes-reseaux-support-it-helpdesk-h-f-profil-expat-8a6cf5": "2026-11-07",
-    "pennylane-associate-team-lead-support-financial-services-n2-chef-fe-de-238926": "2026-11-07",
-    "pennylane-associate-team-lead-support-financial-services-n2-chef-fe-de-32a99d": "2026-11-07",
-    "sogeti-chef-de-projet-it-senior-b857a6": "2026-11-07",
     "naval-group-fr-ingenieur-developpeur-software-h-f-b96535": "2026-11-08",
     "naval-group-fr-ingenieur-electronique-systemes-embarques-h-f-be189a": "2026-11-08",
     "sopra-steria-developpeur-se-logiciel-embarque-cpp-aeroline-toulon-841d76": "2026-11-08",
@@ -93,7 +88,12 @@
     "alten-scrum-master-f-h-b27c65": "2026-11-21",
     "sogeti-developpeuse-developpeur-fullstack-java-angular-4b1dee": "2026-11-21",
     "groupe-sii-developpeur-java-springboot-f-h-4eb152": "2026-11-21",
-    "open-developpeur-front-angular-h-f-698786": "2026-11-21"
+    "open-developpeur-front-angular-h-f-698786": "2026-11-21",
+    "nexton-chef-de-projet-acquisition-digitale-traffic-manager-h-f-dcf586": "2026-11-22",
+    "voyage-prive-seo-growth-performance-analyst-m-f-d-d8ffc8": "2026-11-22",
+    "kincy-consultant-e-it-junior-pilotage-gouvernance-du-s-i-h-f-d58c70": "2026-11-22",
+    "airbus-helicopters-logiciel-r-d-chef-de-projet-deploiement-operationne-b6bcac": "2026-11-22",
+    "groupe-solly-azar-webmaster-referenceur-seo-h-f-af2d3a": "2026-11-22"
   },
   "last_published_date": "2026-11-21"
 }
