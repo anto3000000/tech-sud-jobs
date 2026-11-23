@@ -1,9 +1,9 @@
 {
-  "last_generated_date": "2026-11-22",
+  "last_generated_date": "2026-11-23",
   "bucket_last_used": {
     "eng-13": "2026-11-21",
     "eng-06": "2026-11-19",
-    "eng-83": "2026-11-15",
+    "eng-83": "2026-11-23",
     "eng-84": "2026-11-17",
     "eng-paca": "2026-11-18",
     "data-13": "2026-11-02",
@@ -23,11 +23,6 @@
     "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-17",
     "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-17",
     "cgi-tech-lead-api-f-h-1d7693": "2026-11-17",
-    "naval-group-fr-ingenieur-developpeur-software-h-f-b96535": "2026-11-08",
-    "naval-group-fr-ingenieur-electronique-systemes-embarques-h-f-be189a": "2026-11-08",
-    "sopra-steria-developpeur-se-logiciel-embarque-cpp-aeroline-toulon-841d76": "2026-11-08",
-    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-c-fe9a49": "2026-11-08",
-    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-d-6aafa6": "2026-11-08",
     "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-c-a22fc2": "2026-11-09",
     "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-e-e1a158": "2026-11-09",
     "la-securite-sociale-technicien-infrastructures-materiel-logiciel-h-f-f9e3e1": "2026-11-09",
@@ -93,7 +88,12 @@
     "voyage-prive-seo-growth-performance-analyst-m-f-d-d8ffc8": "2026-11-22",
     "kincy-consultant-e-it-junior-pilotage-gouvernance-du-s-i-h-f-d58c70": "2026-11-22",
     "airbus-helicopters-logiciel-r-d-chef-de-projet-deploiement-operationne-b6bcac": "2026-11-22",
-    "groupe-solly-azar-webmaster-referenceur-seo-h-f-af2d3a": "2026-11-22"
+    "groupe-solly-azar-webmaster-referenceur-seo-h-f-af2d3a": "2026-11-22",
+    "b-hive-ingenieur-conception-electronique-analogique-radiofrequence-8e2f3d": "2026-11-23",
+    "b-hive-ingenieur-developpement-logiciel-embarque-fpga-6850c2": "2026-11-23",
+    "expleo-technicien-integration-systemes-electriques-et-electroniques-em-f9baa4": "2026-11-23",
+    "expleo-ingenieur-developpement-logiciel-h-f-7f4e65": "2026-11-23",
+    "naval-group-fr-ingenieur-systeme-embarque-h-f-48c202": "2026-11-23"
   },
   "last_published_date": "2026-11-22"
 }
