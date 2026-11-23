@@ -9,7 +9,8 @@ Inputs (whichever exist):
     jobboard/data/ats_jobs.json           Layer 3  (fetch_jobs.py output, raw shape)
 
 Steps: normalize -> keep PACA + Tech/Data/Product -> de-duplicate
-(company+title; a direct-ATS link beats a WTTJ link) -> sort newest first.
+(company+title; a direct-ATS link beats a WTTJ link) -> drop postings whose
+link 404s (LINKCHECK=0 skips) -> sort newest first.
 
 Outputs:
     jobboard/site/jobs.json          feed for the static site
@@ -19,8 +20,12 @@ import hashlib
 import json
 import os
 import re
+import socket
 import sys
 import unicodedata
+import urllib.error
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -473,6 +478,64 @@ def dedupe(rows):
     return list(best.values())
 
 
+LINK_UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+           "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
+# more than this share of dead links = our network is broken, not the offers
+MAX_DEAD_SHARE = 0.25
+
+
+def _link_dead(url):
+    """True only when the posting is certainly gone: 404 / 410, or a host
+    that doesn't resolve. 403s (Cloudflare on SmartRecruiters / WTTJ),
+    timeouts, TLS quirks and 5xx are kept — we can't tell from here."""
+    if not url:
+        return False
+    req = urllib.request.Request(url, headers={"User-Agent": LINK_UA, "Accept": "text/html"})
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            resp.read(1024)
+        return False
+    except urllib.error.HTTPError as e:
+        return e.code in (404, 410)
+    except urllib.error.URLError as e:
+        return isinstance(e.reason, socket.gaierror)
+    except Exception:  # noqa: BLE001 - network layer, keep the job on doubt
+        return False
+
+
+def drop_dead_links(jobs):
+    """Expired postings linger in source feeds (France Travail keeps pointing at
+    410'd join.com offers, WTTJ at a removed apply page): check every outbound
+    link once per build. A dead `apply_url` falls back to `url` (the WTTJ page);
+    a dead `url` with nothing else to point at drops the job. LINKCHECK=0 skips."""
+    urls = sorted({u for j in jobs for u in (j.get("url"), j.get("apply_url")) if u})
+    with ThreadPoolExecutor(24) as ex:
+        dead = {u for u, d in zip(urls, ex.map(_link_dead, urls)) if d}
+    print("  link check : %d/%d dead" % (len(dead), len(urls)), file=sys.stderr)
+    if urls and len(dead) > MAX_DEAD_SHARE * len(urls):
+        print("  link check : too many dead links — network issue? keeping all", file=sys.stderr)
+        return jobs
+    out, total, dropped = [], {}, {}
+    for j in jobs:
+        src = j.get("source")
+        total[src] = total.get(src, 0) + 1
+        if j.get("apply_url") in dead:
+            j["apply_url"] = None
+        if j.get("url") in dead and not j.get("apply_url"):
+            dropped[src] = dropped.get(src, 0) + 1
+            print("    drop %s  %s" % (src, j.get("url")), file=sys.stderr)
+            continue
+        out.append(j)
+    # a source losing most of its links at once = a broken URL builder in the
+    # adapter (Workday, Nov 2026: 93/93 links 404'd), not mass expiry -> make
+    # it show up as a warning on the GitHub Actions run
+    for src, n in sorted(dropped.items()):
+        if n >= 3 and n > 0.3 * total[src]:
+            print("::warning title=Dead links::%s: %d/%d job links 404 — check the "
+                  "adapter's URL format" % (src, n, total[src]))
+    return out
+
+
 SEEN_PATH = os.path.join(DATA, "seen.json")
 NEW_WINDOW_DAYS = 10
 
@@ -536,6 +599,9 @@ def main():
     merged = [m for m in merged if m.get("category")]
     merged = [m for m in merged if not _is_test_posting(m.get("title"))]
     strip_company_boilerplate(merged)
+
+    if os.environ.get("LINKCHECK", "1") != "0":
+        merged = drop_dead_links(merged)
 
     # CI guard: if a source API silently changes shape we can end up with an
     # almost-empty feed. Fail loudly instead of deploying it. Override locally

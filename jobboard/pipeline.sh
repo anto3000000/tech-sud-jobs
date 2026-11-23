@@ -9,7 +9,8 @@ cd "$(dirname "$0")/.."
 # data already committed in jobboard/data. ~1 min instead of ~18.
 REBUILD_ONLY="${REBUILD_ONLY:-0}"
 if [ "$REBUILD_ONLY" = "1" ]; then
-  echo "REBUILD_ONLY=1 — skipping fetch layers, alerts and LinkedIn"
+  echo "REBUILD_ONLY=1 — skipping fetch layers, link check, alerts and LinkedIn"
+  export LINKCHECK=0
 else
 
 echo "::group::WTTJ browse (layer 1)"

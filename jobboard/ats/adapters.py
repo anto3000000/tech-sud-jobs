@@ -324,7 +324,12 @@ class Recruitee(Adapter):
             loc = j.get("location") or ", ".join(
                 x for x in (j.get("city"), j.get("country")) if x
             )
-            jobs.append(Job(j.get("title"), j.get("careers_url") or j.get("careers_apply_url"),
+            # careers_url follows the company's custom domain, which can be a
+            # dead CNAME (Instant System: instants-system.jobs.com doesn't
+            # resolve) — the <slug>.recruitee.com page always serves.
+            jurl = ("https://%s.recruitee.com/o/%s" % (slug, j["slug"]) if j.get("slug")
+                    else j.get("careers_url") or j.get("careers_apply_url"))
+            jobs.append(Job(j.get("title"), jurl,
                             location=loc or None,
                             department=j.get("department"),
                             contract=j.get("employment_type_code") or j.get("kind"),
@@ -539,7 +544,9 @@ class Taleez(Adapter):
                     loc = j.get("location") or {}
                     loc_s = ", ".join(x for x in (loc.get("city"), loc.get("region")) if x)
                     jslug = j.get("slug")
-                    jurl = "%s/j/%s" % (origin, jslug) if jslug else origin
+                    # the public posting lives on taleez.com/apply/<slug>, not
+                    # under the careers origin (<origin>/j/<slug> 404s)
+                    jurl = "https://taleez.com/apply/%s" % jslug if jslug else origin
                     jobs.append(Job(j.get("label") or j.get("title"), jurl,
                                     location=loc_s or None,
                                     department=loc.get("department"),
@@ -624,7 +631,9 @@ class Workday(Adapter):
             new = 0
             for p in postings:
                 ext = p.get("externalPath")
-                jurl = ("https://%s%s" % (host, ext)) if ext else None
+                # externalPath is site-relative ("/job/..."): without the site
+                # segment every posting link 404s
+                jurl = ("https://%s/%s%s" % (host, site, ext)) if ext else None
                 if not jurl or jurl in seen:
                     continue
                 seen.add(jurl)
