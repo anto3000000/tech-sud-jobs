@@ -949,6 +949,16 @@
 "last_seen": "2026-11-23",
 "title": "Airbus Protect - Architecte Cybersécurité Entreprise - (All Gender)"
 },
+"airbus-helicopters-logiciel-r-d-airbus-protect-manufacturing-innovatio-18948a": {
+"category": "eng",
+"city": "Marseille",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"expired_at": null,
+"facet_slug": "eng-marseille",
+"first_seen": "2026-11-23",
+"last_seen": "2026-11-23",
+"title": "Airbus Protect - Manufacturing Innovation & Robotics Leader - (All Gender)"
+},
 "airbus-helicopters-logiciel-r-d-aircraft-technical-services-product-ma-c4e36b": {
 "category": "product",
 "city": "Marignane",
@@ -1733,10 +1743,10 @@
 "category": "product",
 "city": "Marseille",
 "company": "Alan",
-"expired_at": "2026-11-16",
+"expired_at": null,
 "facet_slug": "product-marseille",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-15",
+"last_seen": "2026-11-23",
 "title": "Product Builder - Sales AI"
 },
 "alan-product-designer-eb9e6a": {
@@ -7223,10 +7233,10 @@
 "category": "data",
 "city": "Valbonne",
 "company": "Dassault Systèmes",
-"expired_at": "2026-11-21",
+"expired_at": null,
 "facet_slug": "data-valbonne",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-20",
+"last_seen": "2026-11-23",
 "title": "Ingénieur.e Recherche – IA pour le médical (F/H)"
 },
 "dassault-systemes-ingenieur-e-recherche-landscape-de-compagnons-ia-dan-a4034c": {
@@ -7273,7 +7283,7 @@
 "category": "eng",
 "city": "Valbonne",
 "company": "Dassault Systèmes",
-"expired_at": null,
+"expired_at": "2026-11-23",
 "facet_slug": "eng-valbonne",
 "first_seen": "2026-09-25",
 "last_seen": "2026-11-23",
@@ -7373,7 +7383,7 @@
 "category": "eng",
 "city": "Aix-en-Provence",
 "company": "Dassault Systèmes",
-"expired_at": null,
+"expired_at": "2026-11-23",
 "facet_slug": "eng-aix-en-provence",
 "first_seen": "2026-09-25",
 "last_seen": "2026-11-23",
@@ -7623,7 +7633,7 @@
 "category": "data",
 "city": "Aix-en-Provence",
 "company": "DGA Tech France Travail",
-"expired_at": null,
+"expired_at": "2026-11-23",
 "facet_slug": "data-aix-en-provence",
 "first_seen": "2026-09-08",
 "last_seen": "2026-11-23",
@@ -7633,7 +7643,7 @@
 "category": "data",
 "city": "Aix-en-Provence",
 "company": "DGA Tech France Travail",
-"expired_at": null,
+"expired_at": "2026-11-23",
 "facet_slug": "data-aix-en-provence",
 "first_seen": "2026-09-08",
 "last_seen": "2026-11-23",
@@ -8573,7 +8583,7 @@
 "category": "devops",
 "city": "Biot",
 "company": "FLYING EYE",
-"expired_at": null,
+"expired_at": "2026-11-23",
 "facet_slug": "devops-biot",
 "first_seen": "2026-09-08",
 "last_seen": "2026-11-23",
@@ -9623,7 +9633,7 @@
 "category": "eng",
 "city": "Nice",
 "company": "INFORCA",
-"expired_at": null,
+"expired_at": "2026-11-23",
 "facet_slug": "eng-nice",
 "first_seen": "2026-09-08",
 "last_seen": "2026-11-23",
@@ -10064,7 +10074,7 @@
 "city": "Biot",
 "company": "La Sécurité Sociale",
 "expired_at": null,
-"facet_slug": "devops-biot",
+"facet_slug": "devops",
 "first_seen": "2026-10-17",
 "last_seen": "2026-11-23",
 "title": "Ingénieur Plateforme Cloud privé Kubernetes (H/F)"
@@ -12599,6 +12609,16 @@
 "last_seen": "2026-09-16",
 "title": "Développeur Foncier Immobilier d'Entreprise H/F - Alternance 12 mois"
 },
+"nexqt-geodata-scientist-junior-mobilite-routiere-carbone-dans-les-terr-f45552": {
+"category": "data",
+"city": "Marseille",
+"company": "NEXQT",
+"expired_at": null,
+"facet_slug": "data-marseille",
+"first_seen": "2026-11-23",
+"last_seen": "2026-11-23",
+"title": "GeoData Scientist Junior – Mobilité routière & Carbone dans les territoires"
+},
 "nexton-chef-de-projet-acquisition-digitale-traffic-manager-h-f-dcf586": {
 "category": "tech-adjacent",
 "city": "Aix-en-Provence",
@@ -13973,11 +13993,21 @@
 "category": "product",
 "city": "Remote",
 "company": "Pennylane",
-"expired_at": null,
+"expired_at": "2026-11-23",
 "facet_slug": "product",
 "first_seen": "2026-11-23",
 "last_seen": "2026-11-23",
 "title": "Senior Product Manager - Autopilot Growth"
+},
+"pennylane-senior-product-manager-bookkeeping-4736e3": {
+"category": "product",
+"city": "Remote",
+"company": "Pennylane",
+"expired_at": null,
+"facet_slug": "product",
+"first_seen": "2026-11-23",
+"last_seen": "2026-11-23",
+"title": "Senior Product Manager - Bookkeeping"
 },
 "pennylane-senior-product-manager-monetization-f3e1d8": {
 "category": "product",
@@ -16954,7 +16984,7 @@
 "city": "Biot",
 "company": "Sopra Steria",
 "expired_at": null,
-"facet_slug": "devops-biot",
+"facet_slug": "devops",
 "first_seen": "2026-09-10",
 "last_seen": "2026-11-23",
 "title": "Ingénieur(e) DevOps - Digital Platform Services - Biot"

@@ -45,7 +45,7 @@
 "company": "Alan",
 "contract": "CDI",
 "first_seen": "2026-09-26",
-"last_seen": "2026-11-15",
+"last_seen": "2026-11-23",
 "remote": "remote",
 "source": "ashby",
 "title": "Product Builder - Sales AI"
@@ -884,6 +884,17 @@
 "remote": "remote",
 "source": "ashby",
 "title": "Product Manager - billing & monetisation"
+},
+"ats:ashby:cf6bd855f2": {
+"category": "product",
+"city": "Remote",
+"company": "Pennylane",
+"contract": "CDI",
+"first_seen": "2026-11-23",
+"last_seen": "2026-11-23",
+"remote": "remote",
+"source": "ashby",
+"title": "Senior Product Manager - Bookkeeping"
 },
 "ats:ashby:d0f8c6fc73": {
 "category": "data",
@@ -1817,7 +1828,7 @@
 "company": "Dassault Systèmes",
 "contract": "Stage",
 "first_seen": "2026-09-25",
-"last_seen": "2026-11-20",
+"last_seen": "2026-11-23",
 "source": "dassault",
 "title": "Ingénieur.e Recherche – IA pour le médical (F/H)"
 },
@@ -7522,6 +7533,15 @@
 "last_seen": "2026-10-21",
 "source": "workday",
 "title": "New ERP - Global Program Delivery Manager (d/f/m)"
+},
+"ats:workday:8e4b9d898a": {
+"category": "eng",
+"city": "Marseille",
+"company": "Airbus Helicopters (Logiciel / R&D)",
+"first_seen": "2026-11-23",
+"last_seen": "2026-11-23",
+"source": "workday",
+"title": "Airbus Protect - Manufacturing Innovation & Robotics Leader - (All Gender)"
 },
 "ats:workday:94ed9b3870": {
 "category": "data",
@@ -20609,6 +20629,17 @@
 "salary": "630–1300 EUR",
 "source": "wttj",
 "title": "de fin d’études – CSM Solution CYBER (F/H)"
+},
+"wttj:4396597": {
+"category": "data",
+"city": "Marseille",
+"company": "NEXQT",
+"contract": "Stage",
+"first_seen": "2026-11-23",
+"last_seen": "2026-11-23",
+"remote": "hybride",
+"source": "wttj",
+"title": "GeoData Scientist Junior – Mobilité routière & Carbone dans les territoires"
 },
 "wttj:810351": {
 "category": "tech-adjacent",
