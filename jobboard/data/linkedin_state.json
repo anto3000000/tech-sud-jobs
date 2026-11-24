@@ -1,5 +1,5 @@
 {
-  "last_generated_date": "2026-11-23",
+  "last_generated_date": "2026-11-24",
   "bucket_last_used": {
     "eng-13": "2026-11-21",
     "eng-06": "2026-11-19",
@@ -13,7 +13,7 @@
     "data-84": "2026-11-16",
     "product-13": "2026-11-20",
     "tech-adjacent-13": "2026-11-22",
-    "tech-adjacent-06": "2026-10-28",
+    "tech-adjacent-06": "2026-11-24",
     "product-paca": "2026-11-06",
     "tech-adjacent-paca": "2026-11-07",
     "tech-adjacent-83": "2026-11-09",
@@ -23,11 +23,6 @@
     "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-17",
     "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-17",
     "cgi-tech-lead-api-f-h-1d7693": "2026-11-17",
-    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-c-a22fc2": "2026-11-09",
-    "civils-de-la-defense-ministere-des-armees-et-des-anciens-combattants-e-e1a158": "2026-11-09",
-    "la-securite-sociale-technicien-infrastructures-materiel-logiciel-h-f-f9e3e1": "2026-11-09",
-    "mc2i-consultant-e-transformation-digitale-naval-defense-toulon-h-f-746e57": "2026-11-09",
-    "mc2i-consultant-e-en-transformation-digitale-industrie-toulon-h-f-f8ca75": "2026-11-09",
     "atos-developpeur-logiciel-telecom-c-cpp-h-f-610345": "2026-11-10",
     "atos-ingenieur-en-developpement-radio-logicielle-h-f-3d873c": "2026-11-10",
     "cs-developpeur-se-integrateur-se-dotnet-csharp-cpp-transport-aix-en-pr-2e26ed": "2026-11-10",
@@ -98,7 +93,12 @@
     "bpce-solutions-informatiques-business-analyst-f-h-6455a4": "2026-11-23",
     "vinci-energies-en-france-chef-fe-de-projet-innovation-ia-f-h-08f4a2": "2026-11-23",
     "cgi-pmo-data-analyst-f-h-48fe2d": "2026-11-23",
-    "cve-charge-de-gestion-documentaire-et-donnees-contractuelles-h-f-16c207": "2026-11-23"
+    "cve-charge-de-gestion-documentaire-et-donnees-contractuelles-h-f-16c207": "2026-11-23",
+    "thales-ingenieur-customer-success-manager-h-f-3a0a86": "2026-11-24",
+    "nalios-france-consultant-e-fonctionnel-odoo-69a267": "2026-11-24",
+    "deloitte-ou-alternance-consultant-informatique-et-financement-de-l-inn-ed2ec1": "2026-11-24",
+    "capgemini-consultante-consultant-transformation-digitale-senior-0e28b6": "2026-11-24",
+    "scalian-pmo-it-h-f-8635e7": "2026-11-24"
   },
   "last_published_date": "2026-11-23"
 }
