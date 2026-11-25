@@ -95,14 +95,6 @@
     "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/1_LaCiotat.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
     "width": 776
   },
-  "La Fare-Les-Oliviers": {
-    "checked_at": 1795185170.4778457,
-    "commons_url": "https://commons.wikimedia.org/wiki/File:Garibaldi-La_Fare_les_Oliviers.jpg",
-    "file": "Garibaldi-La Fare les Oliviers.jpg",
-    "height": 819,
-    "url": "https://upload.wikimedia.org/wikipedia/commons/2/27/Garibaldi-La_Fare_les_Oliviers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-    "width": 1200
-  },
   "La Garde": {
     "checked_at": 1790856260.25616,
     "commons_url": "https://commons.wikimedia.org/wiki/File:La_Garde_(Var)_by_night.jpg",
@@ -219,7 +211,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1795537336.5519013,
+    "checked_at": 1795622951.7707794,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,
