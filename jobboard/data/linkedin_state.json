@@ -1,11 +1,11 @@
 {
-  "last_generated_date": "2026-11-25",
+  "last_generated_date": "2026-11-26",
   "bucket_last_used": {
     "eng-13": "2026-11-21",
     "eng-06": "2026-11-19",
     "eng-83": "2026-11-23",
     "eng-84": "2026-11-17",
-    "eng-paca": "2026-11-18",
+    "eng-paca": "2026-11-26",
     "data-13": "2026-11-23",
     "data-06": "2026-11-25",
     "data-83": "2026-11-12",
@@ -23,11 +23,6 @@
     "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-17",
     "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-17",
     "cgi-tech-lead-api-f-h-1d7693": "2026-11-17",
-    "accenture-developpeur-front-end-react-typescript-interaction-humain-ma-209702": "2026-11-11",
-    "accenture-france-developpeur-front-end-react-typescript-interaction-hu-73b824": "2026-11-11",
-    "meritis-developpeur-cpp-go-embarque-h-f-b3d227": "2026-11-11",
-    "meritis-developpeur-cpp-h-f-5b7a05": "2026-11-11",
-    "thales-ingenieur-developpeur-de-solutions-numeriques-web-full-stack-po-c48cf2": "2026-11-11",
     "naval-group-fr-ingenieur-r-d-vision-hierarchisation-et-pre-annotation-3d0c7f": "2026-11-12",
     "naval-group-fr-technicien-analyse-fonctionnelle-base-de-donnees-h-f-0bcd21": "2026-11-12",
     "cs-developpeur-se-cpp-qt-ia-implementation-d-un-chatbot-dans-le-produi-466d6a": "2026-11-12",
@@ -98,7 +93,12 @@
     "vinci-energies-en-france-chef-fe-de-projet-innovation-ia-f-h-5b699e": "2026-11-25",
     "preventeo-ingenieur-logiciel-ia-preventeo-intelligence-f-h-7604c9": "2026-11-25",
     "meritis-business-analyst-h-f-a5d4dc": "2026-11-25",
-    "schneider-electric-data-analyst-pilotage-des-activites-services-f-h-8fd351": "2026-11-25"
+    "schneider-electric-data-analyst-pilotage-des-activites-services-f-h-8fd351": "2026-11-25",
+    "amentum-clean-energy-france-sas-ingenieur-robotique-h-f-aix-en-provenc-5908ee": "2026-11-26",
+    "capgemini-developpeuse-developpeur-java-stage-f92b6e": "2026-11-26",
+    "capgemini-ingenieur-e-informatique-industrielle-stage-169d9c": "2026-11-26",
+    "la-bellenergie-backend-developer-h-f-fdebce": "2026-11-26",
+    "schneider-electric-technicien-tests-et-reparation-en-electronique-h-f-827be5": "2026-11-26"
   },
   "last_published_date": "2026-11-24"
 }
