@@ -63,6 +63,9 @@
     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg/1280px-Vue_du_village_de_Carros_et_du_Mercantour_enneig%C3%A9_au_nord_de_la_r%C3%A9sidence_de_l%E2%80%99Estellan.jpg?utm_source=fr.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
     "width": 1200
   },
+  "Cassis": {
+    "checked_at": 1795794059.8864012
+  },
   "Cuers": {
     "checked_at": 1794838424.6590807,
     "commons_url": "https://commons.wikimedia.org/wiki/File:7.9.2011_mairie_cuers.jpg",
@@ -211,7 +214,7 @@
     "width": 1200
   },
   "Sophia Antipolis": {
-    "checked_at": 1795708021.0403118,
+    "checked_at": 1795794059.8864012,
     "commons_url": "https://commons.wikimedia.org/wiki/File:Sophia_Antipolis.jpg",
     "file": "Sophia Antipolis.jpg",
     "height": 675,

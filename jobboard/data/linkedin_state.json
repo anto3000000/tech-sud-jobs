@@ -1,8 +1,8 @@
 {
-  "last_generated_date": "2026-11-26",
+  "last_generated_date": "2026-11-27",
   "bucket_last_used": {
     "eng-13": "2026-11-21",
-    "eng-06": "2026-11-19",
+    "eng-06": "2026-11-27",
     "eng-83": "2026-11-23",
     "eng-84": "2026-11-17",
     "eng-paca": "2026-11-26",
@@ -23,11 +23,6 @@
     "scalian-developpeur-csharp-avignon-h-f-7cc781": "2026-11-17",
     "scalian-developpeur-java-avignon-h-f-7787b3": "2026-11-17",
     "cgi-tech-lead-api-f-h-1d7693": "2026-11-17",
-    "naval-group-fr-ingenieur-r-d-vision-hierarchisation-et-pre-annotation-3d0c7f": "2026-11-12",
-    "naval-group-fr-technicien-analyse-fonctionnelle-base-de-donnees-h-f-0bcd21": "2026-11-12",
-    "cs-developpeur-se-cpp-qt-ia-implementation-d-un-chatbot-dans-le-produi-466d6a": "2026-11-12",
-    "the-adecco-group-data-engineer-f-h-f75fa6": "2026-11-12",
-    "scalian-business-analyst-it-proxy-po-toulon-h-f-466c04": "2026-11-12",
     "alten-industrialisation-et-adaptation-d-un-logiciel-embarque-stm32-h-f-5b0e56": "2026-11-13",
     "cs-ingenieur-e-developpeur-se-scientifique-nucleaire-aix-en-provence-7046ea": "2026-11-13",
     "cea-post-doc-developpement-de-methodes-d-analyse-des-radionucleides-a-b6c836": "2026-11-13",
@@ -98,7 +93,12 @@
     "capgemini-developpeuse-developpeur-java-stage-f92b6e": "2026-11-26",
     "capgemini-ingenieur-e-informatique-industrielle-stage-169d9c": "2026-11-26",
     "la-bellenergie-backend-developer-h-f-fdebce": "2026-11-26",
-    "schneider-electric-technicien-tests-et-reparation-en-electronique-h-f-827be5": "2026-11-26"
+    "schneider-electric-technicien-tests-et-reparation-en-electronique-h-f-827be5": "2026-11-26",
+    "atos-developpeur-full-stack-java-h-f-6a9c94": "2026-11-27",
+    "thales-ingenieur-integration-systemes-embarques-f-h-842378": "2026-11-27",
+    "thales-software-engineering-manager-f-h-bcc6f6": "2026-11-27",
+    "schneider-electric-assistant-ingenieur-scrum-master-f-h-8e605d": "2026-11-27",
+    "groupe-sii-developpeur-cpp-java-f-h-380430": "2026-11-27"
   },
   "last_published_date": "2026-11-26"
 }
